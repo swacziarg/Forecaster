@@ -14,10 +14,10 @@ export type KalshiMarketConfig = {
 }
 
 export const KALSHI_SOURCE_CATALOG: KalshiMarketConfig[] = [
-  { id: 'fed-september-2026', ticker: 'KXFEDDECISION-26SEP-H0', eventTicker: 'KXFEDDECISION-26SEP', seriesTicker: 'KXFEDDECISION', label: 'Fed decision in September', category: 'Economics' },
-  { id: 'iran-nuclear-deal-2026', ticker: 'KXUSAIRANAGREEMENT-27-26OCT', eventTicker: 'KXUSAIRANAGREEMENT-27', seriesTicker: 'KXUSAIRANAGREEMENT', label: 'US–Iran nuclear deal', category: 'Politics' },
-  { id: 'anthropic-ipo-october', ticker: 'KXIPOANTHROPIC-DATE-26OCT01', eventTicker: 'KXIPOANTHROPIC-DATE', seriesTicker: 'KXIPOANTHROPIC', label: 'Anthropic IPO by October', category: 'Technology' },
-  { id: 'odyssey-best-picture', ticker: 'KXOSCARPIC-27-ODY', eventTicker: 'KXOSCARPIC-27', seriesTicker: 'KXOSCARPIC', label: 'The Odyssey wins Best Picture', category: 'Entertainment' },
+  { id: 'canada-liberal-majority-2025', ticker: 'KXCANCOALITION-30-L', eventTicker: 'KXCANCOALITION-30', seriesTicker: 'KXCANCOALITION', label: 'Canada: Liberal majority government', category: 'Politics' },
+  { id: 'fed-december-2025-cut', ticker: 'KXFEDDECISION-25DEC-C25', eventTicker: 'KXFEDDECISION-25DEC', seriesTicker: 'KXFEDDECISION', label: 'Fed cuts 25 bps in December 2025', category: 'Economics' },
+  { id: 'one-battle-best-picture-2026', ticker: 'KXOSCARPIC-26-ONE', eventTicker: 'KXOSCARPIC-26', seriesTicker: 'KXOSCARPIC', label: 'One Battle After Another wins Best Picture', category: 'Entertainment' },
+  { id: 'seattle-football-champion-2026', ticker: 'KXSB-26-SEA', eventTicker: 'KXSB-26', seriesTicker: 'KXSB', label: 'Seattle wins the 2026 pro-football championship', category: 'Sports' },
 ]
 
 export type KalshiMarket = {
@@ -31,12 +31,15 @@ export type KalshiMarket = {
   settlement_ts?: string
   status?: string
   result?: string
+  volume_fp?: string
+  open_interest_fp?: string
   last_price_dollars?: string
   last_price?: number
   [key: string]: unknown
 }
 
 type KalshiQuote = {
+  close?: string
   close_dollars?: string
 }
 
@@ -60,8 +63,11 @@ export type KalshiPricePoint = MarketPoint & {
 }
 
 class KalshiApiError extends Error {
-  constructor(public readonly status: number, message: string) {
+  readonly status: number
+
+  constructor(status: number, message: string) {
     super(message)
+    this.status = status
   }
 }
 
@@ -142,13 +148,13 @@ const numeric = (value: unknown) => {
 const priceFrom = (candle: KalshiCandle) => {
   const price = candle.price ?? {}
   const tradedPrice = [price.close, price.close_dollars, price.mean, price.mean_dollars, price.open, price.open_dollars]
-    .find((value) => value !== undefined)
+    .find((value) => value !== undefined && value !== null)
   if (tradedPrice !== undefined) {
     const parsed = numeric(tradedPrice)
     return parsed <= 1 ? parsed * 100 : parsed
   }
-  const bid = numeric(candle.yes_bid?.close_dollars)
-  const ask = numeric(candle.yes_ask?.close_dollars)
+  const bid = numeric(candle.yes_bid?.close_dollars ?? candle.yes_bid?.close)
+  const ask = numeric(candle.yes_ask?.close_dollars ?? candle.yes_ask?.close)
   if (bid > 0 && ask > 0) return (bid + ask) * 50
   return Math.max(bid, ask) * 100
 }

@@ -14,12 +14,27 @@ const assert = (condition: unknown, message: string) => {
 }
 
 const approximately = (left: number, right: number, tolerance = 0.000001) => Math.abs(left - right) <= tolerance
+const briefing = {
+  status: 'A test status.',
+  developments: ['A test development.'],
+  yesCase: 'A test argument for YES.',
+  noCase: 'A test argument against YES.',
+  stakes: 'A test consequence.',
+  sources: [{ label: 'Test source', url: 'https://example.com' }],
+}
 const factor = (id: string, index: number): FactorDefinition => ({
   id,
   label: `Factor ${index + 1}`,
   shortLabel: `F${index + 1}`,
   description: 'A test factor.',
+  observation: 'A test scenario lens.',
   cue: 'If this factor is informative, it makes the event…',
+  narrative: {
+    context: 'A test event context.',
+    yesCase: 'A test case for YES.',
+    noCase: 'A test case against YES.',
+    consequence: 'A test consequence.',
+  },
   observations: {
     '60d': { reading: '0.2 signal', context: 'Test reading.', signal: 0.2 },
     '45d': { reading: '0.2 signal', context: 'Test reading.', signal: 0.2 },
@@ -41,11 +56,16 @@ const testScenario: Scenario = {
   resolutionTimestamp: '2027-01-01T00:00:00.000Z',
   outcome: true,
   outcomeLabel: 'Kalshi settled YES.',
+  resolutionBriefing: {
+    summary: 'A test result.',
+    consequence: 'A test consequence.',
+    sources: [{ label: 'Test result source', url: 'https://example.com/result' }],
+  },
   checkpoints: [
-    { id: '60d', label: '60 days before', shortLabel: '60d', date: 'Nov 2, 2026', cutoffTimestamp: '2026-11-02T00:00:00.000Z', marketProbability: 40 },
-    { id: '45d', label: '45 days before', shortLabel: '45d', date: 'Nov 17, 2026', cutoffTimestamp: '2026-11-17T00:00:00.000Z', marketProbability: 45 },
-    { id: '30d', label: '30 days before', shortLabel: '30d', date: 'Dec 2, 2026', cutoffTimestamp: '2026-12-02T00:00:00.000Z', marketProbability: 50 },
-    { id: '15d', label: '15 days before', shortLabel: '15d', date: 'Dec 17, 2026', cutoffTimestamp: '2026-12-17T00:00:00.000Z', marketProbability: 55 },
+    { id: '60d', label: '60 days before', shortLabel: '60d', date: 'Nov 2, 2026', cutoffTimestamp: '2026-11-02T00:00:00.000Z', marketProbability: 40, briefing },
+    { id: '45d', label: '45 days before', shortLabel: '45d', date: 'Nov 17, 2026', cutoffTimestamp: '2026-11-17T00:00:00.000Z', marketProbability: 45, briefing },
+    { id: '30d', label: '30 days before', shortLabel: '30d', date: 'Dec 2, 2026', cutoffTimestamp: '2026-12-02T00:00:00.000Z', marketProbability: 50, briefing },
+    { id: '15d', label: '15 days before', shortLabel: '15d', date: 'Dec 17, 2026', cutoffTimestamp: '2026-12-17T00:00:00.000Z', marketProbability: 55, briefing },
   ],
   marketHistory: [
     { label: '60d', probability: 40 },

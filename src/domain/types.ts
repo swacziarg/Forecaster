@@ -3,6 +3,26 @@ export type Direction = 'more_likely' | 'neutral' | 'less_likely'
 export type ScenarioCategory = 'Economics' | 'Politics' | 'Technology' | 'Entertainment' | 'Sports'
 export type CheckpointId = '60d' | '45d' | '30d' | '15d'
 
+export type BriefingSource = {
+  label: string
+  url: string
+}
+
+export type CheckpointBriefing = {
+  status: string
+  developments: string[]
+  yesCase: string
+  noCase: string
+  stakes: string
+  sources: BriefingSource[]
+}
+
+export type ResolutionBriefing = {
+  summary: string
+  consequence: string
+  sources: BriefingSource[]
+}
+
 export type Checkpoint = {
   id: CheckpointId
   label: string
@@ -10,6 +30,7 @@ export type Checkpoint = {
   date: string
   cutoffTimestamp: string
   marketProbability: number
+  briefing: CheckpointBriefing
 }
 
 export type FactorObservation = {
@@ -18,12 +39,21 @@ export type FactorObservation = {
   signal: number
 }
 
+export type FactorNarrative = {
+  context: string
+  yesCase: string
+  noCase: string
+  consequence: string
+}
+
 export type FactorDefinition = {
   id: string
   label: string
   shortLabel: string
   description: string
+  observation: string
   cue: string
+  narrative: FactorNarrative
   observations: Record<CheckpointId, FactorObservation>
 }
 
@@ -58,6 +88,7 @@ export type Scenario = {
   resolutionTimestamp: string
   outcome: boolean | null
   outcomeLabel: string
+  resolutionBriefing: ResolutionBriefing
   checkpoints: Checkpoint[]
   marketHistory: MarketPoint[]
   factors: FactorDefinition[]

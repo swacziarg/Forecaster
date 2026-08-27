@@ -51,11 +51,12 @@ const categoryClass: Record<Scenario['categoryTone'], string> = {
 const formatProbability = (value: number) => `${Math.round(value * 100)}%`
 const formatDelta = (value: number) => `${value >= 0 ? '+' : ''}${Math.round(value * 100)} pts`
 const formatScore = (value: number) => value.toFixed(2)
+const formatContracts = (value: number) => `${Math.round(value).toLocaleString()} contracts`
 
 function Header({ view, profileEnabled, onHome, onProfile }: { view: View; profileEnabled: boolean; onHome: () => void; onProfile: () => void }) {
   return (
     <header className="topbar">
-      <button className="brand" onClick={onHome} aria-label="Back to live Kalshi markets">
+      <button className="brand" onClick={onHome} aria-label="Back to resolved Kalshi markets">
         <span className="brand-symbol" aria-hidden="true"><span /><span /><span /></span>
         <span>forecast<span className="brand-dot">.</span></span>
       </button>
@@ -63,7 +64,7 @@ function Header({ view, profileEnabled, onHome, onProfile }: { view: View; profi
         <button className={view === 'home' ? 'nav-link is-active' : 'nav-link'} onClick={onHome}>Markets</button>
         <button className={view === 'profile' ? 'nav-link is-active' : 'nav-link'} disabled={!profileEnabled} onClick={onProfile}>Your run</button>
       </nav>
-      <div className="live-status"><span className="status-dot" /> Kalshi live data</div>
+      <div className="live-status"><span className="status-dot" /> Kalshi verified history</div>
     </header>
   )
 }
@@ -75,7 +76,7 @@ function AppFrame({ view, profileEnabled, onHome, onProfile, children }: { view:
       <main>{children}</main>
       <footer className="site-footer">
         <span>forecast<span className="brand-dot">.</span></span>
-        <span>Live market signals, one decision at a time.</span>
+        <span>Resolved market replays, one decision at a time.</span>
         <span><span className="status-dot" /> Kalshi only</span>
       </footer>
     </div>
@@ -83,7 +84,7 @@ function AppFrame({ view, profileEnabled, onHome, onProfile, children }: { view:
 }
 
 function LoadingView() {
-  return <div className="page state-page"><div className="state-card"><span className="live-label"><i /> Connecting to Kalshi</span><h1>Loading live markets.</h1><p>Fetching current prices and market history for the four selected contracts.</p><div className="state-loader" /></div></div>
+  return <div className="page state-page"><div className="state-card"><span className="live-label"><i /> Connecting to Kalshi</span><h1>Loading resolved markets.</h1><p>Verifying settlement, traded volume, and market history for four historical contracts.</p><div className="state-loader" /></div></div>
 }
 
 function ErrorView({ message, onRetry }: { message: string; onRetry: () => void }) {
@@ -98,11 +99,11 @@ function HomeView({ scenarios, onStart, onRefresh }: { scenarios: Scenario[]; on
         <div className="intro-copy">
           <p className="eyebrow eyebrow-accent">A focused forecasting instrument</p>
           <h1>Forecast what happens next.</h1>
-          <p>Start with a live Kalshi probability, decide which signals matter, and lock your read across four checkpoints.</p>
+          <p>Replay a major settled event from four historical Kalshi snapshots, decide which event-specific hypotheses matter, and lock your read before revealing the result.</p>
           <button className="primary-button primary-button-large" onClick={() => onStart(firstScenario)}>Start forecasting <ArrowRight size={17} /></button>
         </div>
         <div className="intro-facts" aria-label="How forecasting works">
-          <div><strong>04</strong><span>live markets</span></div>
+          <div><strong>04</strong><span>settled markets</span></div>
           <div><strong>04</strong><span>checkpoints</span></div>
           <div><strong>100</strong><span>points to allocate</span></div>
         </div>
@@ -111,15 +112,16 @@ function HomeView({ scenarios, onStart, onRefresh }: { scenarios: Scenario[]; on
       <section className="market-board" aria-labelledby="market-board-title">
         <div className="section-heading board-heading">
           <div>
-            <div className="eyebrow-row"><p className="eyebrow">Live market board</p><span className="subtle-live"><i /> Live</span></div>
+            <div className="eyebrow-row"><p className="eyebrow">Historical market board</p><span className="subtle-live"><i /> Verified</span></div>
             <h2 id="market-board-title">Choose a market</h2>
           </div>
           <div className="board-heading-actions"><span className="board-count">{scenarios.length} markets</span><button className="reset-link" onClick={onRefresh}><RotateCcw size={13} /> Refresh</button></div>
         </div>
         <div className="scenario-grid">{scenarios.map((scenario) => <ScenarioCard key={scenario.id} scenario={scenario} onStart={onStart} />)}</div>
         <details className="source-details">
-          <summary><Info size={15} /> About the live data</summary>
-          <p>Prices, market history, and settlement state come directly from Kalshi. Factor readings are transparent diagnostics calculated from each market’s own Kalshi candlesticks.</p>
+          <summary><Info size={15} /> Verified market sources</summary>
+          <p>Settlement, close dates, contract volume, and candlesticks come directly from Kalshi’s historical market API. Every factor is an explicitly labeled scenario lens whose numeric proxy uses only that contract’s Kalshi history.</p>
+          <div className="source-market-list">{scenarios.map((scenario) => <div key={scenario.id}><a href={scenario.source.sourceUrl} target="_blank" rel="noreferrer">{scenario.source.ticker}</a><span>{scenario.outcome ? 'YES' : 'NO'} · settled {scenario.resolutionDate} · {formatContracts(scenario.source.volume)}</span></div>)}</div>
         </details>
       </section>
     </div>
@@ -127,13 +129,14 @@ function HomeView({ scenarios, onStart, onRefresh }: { scenarios: Scenario[]; on
 }
 
 function ScenarioCard({ scenario, onStart }: { scenario: Scenario; onStart: (scenario: Scenario) => void }) {
-  const latest = scenario.marketHistory[scenario.marketHistory.length - 1]?.probability ?? scenario.checkpoints[scenario.checkpoints.length - 1].marketProbability
+  const latest = [...scenario.marketHistory].reverse().find((point) => !point.resolution)?.probability ?? scenario.checkpoints[scenario.checkpoints.length - 1].marketProbability
   return (
     <article className="scenario-card">
       <p className={`category-tag ${categoryClass[scenario.categoryTone]}`}>{scenario.category}</p>
       <h3>{scenario.question}</h3>
-      <div className="market-card-probability"><strong>{Math.round(latest)}%</strong><span>current Kalshi probability</span></div>
-      <div className="scenario-card-footer"><div><span>Closes</span><strong>{scenario.resolutionDate}</strong></div><button className="card-action" onClick={() => onStart(scenario)}>Forecast this market <ArrowRight size={15} /></button></div>
+      <div className="market-card-probability"><strong>{Math.round(latest)}%</strong><span>final pre-settlement Kalshi price</span></div>
+      <div className={`scenario-proof ${scenario.outcome ? 'proof-yes' : 'proof-no'}`}><span>Settled {scenario.outcome ? 'YES' : 'NO'}</span><span>{formatContracts(scenario.source.volume)}</span></div>
+      <div className="scenario-card-footer"><div><span>Settled</span><strong>{scenario.resolutionDate}</strong></div><button className="card-action" onClick={() => onStart(scenario)}>Forecast this market <ArrowRight size={15} /></button></div>
     </article>
   )
 }
@@ -165,11 +168,13 @@ function FactorEditor({ factor, index, observation, importance, direction, disab
         <div className="factor-heading"><span className="factor-number">{String(index + 1).padStart(2, '0')}</span><div><div className="factor-name"><h3>{factor.label}</h3><button className="help-button" title={factor.description} aria-label={`About ${factor.label}`}><CircleHelp size={14} /></button></div><p className="factor-observation"><Activity size={13} /> {observation.reading}</p></div></div>
         <label className="points-input" htmlFor={inputId}><span>Points</span><input id={inputId} type="number" min="0" max="100" step="1" value={importance} disabled={disabled} onChange={(event) => onImportanceChange(Number(event.target.value))} aria-label={`${factor.label} importance points`} /></label>
       </div>
+      <p className="factor-lens">{factor.observation}</p>
+      <div className="factor-context"><span>Event context</span><p>{factor.narrative.context}</p></div>
       <div className="factor-controls">
         <div className="importance-control"><input className="importance-range" type="range" min="0" max="100" step="1" value={importance} disabled={disabled} onChange={(event) => onImportanceChange(Number(event.target.value))} aria-label={`${factor.label} relative importance`} /><div className="range-caption"><span>0</span><span>100 points</span></div></div>
         <div className="direction-control"><span className="control-label">Direction</span><div className="direction-buttons" role="group" aria-label={`${factor.label} direction`}>{(['more_likely', 'neutral', 'less_likely'] as Direction[]).map((option) => <button key={option} className={`direction-button ${direction === option ? `selected-${option}` : ''}`} disabled={disabled} onClick={() => onDirectionChange(option)} aria-pressed={direction === option}>{directionIcon(option)}<span>{directionLabels[option]}</span></button>)}</div></div>
       </div>
-      <details className="factor-details"><summary>Why this signal matters</summary><p>{factor.description} {observation.context}</p><p>{factor.cue}</p></details>
+      <details className="factor-details" open><summary>Why this signal matters</summary><p>{factor.description} {observation.context}</p><div className="factor-argument-grid"><p><strong>Argument for YES</strong>{factor.narrative.yesCase}</p><p><strong>Argument against YES</strong>{factor.narrative.noCase}</p></div><p className="factor-consequence"><strong>Consequence</strong>{factor.narrative.consequence}</p><p className="factor-cue"><strong>Your prompt</strong>{factor.cue}</p></details>
     </article>
   )
 }
@@ -197,6 +202,34 @@ function ForecastPanel({ scenario, checkpointId, forecast, locked, complete, onL
   )
 }
 
+function WorldBriefing({ checkpoint }: { checkpoint: Scenario['checkpoints'][number] }) {
+  const { briefing } = checkpoint
+  return (
+    <section className="world-briefing" aria-labelledby={`world-briefing-${checkpoint.id}`}>
+      <div className="world-briefing-head">
+        <div>
+          <p className="eyebrow eyebrow-accent">The world at this checkpoint</p>
+          <h2 id={`world-briefing-${checkpoint.id}`}>What was known by {checkpoint.date}</h2>
+        </div>
+        <span className="briefing-cutoff"><LockKeyhole size={13} /> No later knowledge</span>
+      </div>
+      <p className="briefing-status">{briefing.status}</p>
+      <div className="briefing-evidence">
+        <div>
+          <span className="briefing-label">What had happened</span>
+          <ul>{briefing.developments.map((development) => <li key={development}>{development}</li>)}</ul>
+        </div>
+        <div className="briefing-arguments">
+          <article className="argument-card argument-yes"><span>Argument for YES</span><p>{briefing.yesCase}</p></article>
+          <article className="argument-card argument-no"><span>Argument against YES</span><p>{briefing.noCase}</p></article>
+        </div>
+      </div>
+      <div className="briefing-stakes"><span className="briefing-label">Why it mattered</span><p>{briefing.stakes}</p></div>
+      <div className="briefing-sources"><span>Sources for checkpoint facts</span>{briefing.sources.map((source) => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label} <ArrowRight size={11} /></a>)}</div>
+    </section>
+  )
+}
+
 function PlayView({ scenario, scenarioIndex, scenarioCount, model, activeIndex, run, onBack, onReset, onSelectCheckpoint, onImportanceChange, onDirectionChange, onLock, onReveal }: { scenario: Scenario; scenarioIndex: number; scenarioCount: number; model: HumanMentalModel; activeIndex: number; run: ForecastRun; onBack: () => void; onReset: () => void; onSelectCheckpoint: (index: number) => void; onImportanceChange: (id: string, value: number) => void; onDirectionChange: (id: string, direction: Direction) => void; onLock: () => void; onReveal: () => void }) {
   const checkpoint = scenario.checkpoints[activeIndex]
   const activeDecision = run.decisions.find((decision) => decision.checkpointId === checkpoint.id)
@@ -207,14 +240,15 @@ function PlayView({ scenario, scenarioIndex, scenarioCount, model, activeIndex, 
   const total = totalImportance(displayModel)
   return (
     <div className="page play-page">
-      <div className="page-topline"><button className="back-link" onClick={onBack}><ArrowLeft size={14} /> Live markets</button><span className="ticker-label">{scenario.source.ticker}</span></div>
+      <div className="page-topline"><button className="back-link" onClick={onBack}><ArrowLeft size={14} /> Resolved markets</button><span className="ticker-label">{scenario.source.ticker}</span></div>
       <section className="play-header"><div><div className="play-kicker"><span className={`category-tag ${categoryClass[scenario.categoryTone]}`}>{scenario.category}</span><span>Market {scenarioIndex + 1} of {scenarioCount}</span></div><h1>{scenario.question}</h1></div><div className="market-snapshot"><div><span>Kalshi at checkpoint</span><strong>{Math.round(checkpoint.marketProbability)}%</strong></div><div><span>Checkpoint date</span><strong>{checkpoint.date}</strong></div></div></section>
       <div className="progress-summary"><span>Checkpoint {activeIndex + 1} of {scenario.checkpoints.length}</span><strong>{run.decisions.length} locked</strong></div>
       <CheckpointNav scenario={scenario} activeIndex={activeIndex} decisions={run.decisions} onSelect={onSelectCheckpoint} />
       {complete && <div className="ready-banner"><div><span className="ready-icon"><Check size={16} /></span><span><strong>Four checkpoints complete.</strong> {scenario.outcome === null ? 'The contract is OPEN and awaiting settlement.' : 'The settled outcome is ready to reveal.'}</span></div><button onClick={onReveal}>{scenario.outcome === null ? 'Review path' : 'Reveal outcome'} <ArrowRight size={15} /></button></div>}
-      <details className="data-details"><summary><LockKeyhole size={14} /> What information is available?</summary><p>{checkpoint.date} is the edge of the world. This checkpoint uses only Kalshi information available by that date; later readings stay hidden until they unlock.</p></details>
+      <WorldBriefing checkpoint={checkpoint} />
+      <details className="data-details"><summary><LockKeyhole size={14} /> How this briefing affects the model</summary><p>The sourced briefing helps you reason, but it does not enter the numeric forecast engine. Factor signals still use only this contract’s Kalshi history available by {checkpoint.date}; scenario hypotheses are clearly separated from observed events.</p></details>
       <div className="play-grid">
-        <section className="model-panel"><div className="model-panel-head"><div><p className="eyebrow">{isCurrent ? 'Build your model' : 'Locked decision'}</p><h2>What matters here?</h2><p>Give each Kalshi-derived signal a weight, then choose its direction.</p></div><button className="reset-link" onClick={onReset}><RotateCcw size={13} /> Restart</button></div><AllocationSummary scenario={scenario} model={displayModel} /><div className="factor-list">{scenario.factors.map((factor, index) => <FactorEditor key={factor.id} factor={factor} index={index} observation={factor.observations[checkpoint.id]} importance={displayModel.beliefs[factor.id]?.importance ?? 0} direction={displayModel.beliefs[factor.id]?.direction ?? 'neutral'} disabled={!isCurrent} onImportanceChange={(value) => onImportanceChange(factor.id, value)} onDirectionChange={(direction) => onDirectionChange(factor.id, direction)} />)}</div><div className={`budget-footer ${Math.round(total) === 100 ? 'budget-good' : 'budget-bad'}`}><span>{Math.round(total) === 100 ? <Check size={14} /> : <Info size={14} />}</span><strong>{Math.round(total) === 100 ? 'Your 100-point model is ready.' : `${Math.round(total)} points allocated — adjust to 100.`}</strong></div></section>
+        <section className="model-panel"><div className="model-panel-head"><div><p className="eyebrow">{isCurrent ? 'Build your model' : 'Locked decision'}</p><h2>What matters here?</h2><p>Weight each event-specific hypothesis, then decide how its market-only proxy should move your forecast.</p></div><button className="reset-link" onClick={onReset}><RotateCcw size={13} /> Restart</button></div><AllocationSummary scenario={scenario} model={displayModel} /><div className="factor-list">{scenario.factors.map((factor, index) => <FactorEditor key={factor.id} factor={factor} index={index} observation={factor.observations[checkpoint.id]} importance={displayModel.beliefs[factor.id]?.importance ?? 0} direction={displayModel.beliefs[factor.id]?.direction ?? 'neutral'} disabled={!isCurrent} onImportanceChange={(value) => onImportanceChange(factor.id, value)} onDirectionChange={(direction) => onDirectionChange(factor.id, direction)} />)}</div><div className={`budget-footer ${Math.round(total) === 100 ? 'budget-good' : 'budget-bad'}`}><span>{Math.round(total) === 100 ? <Check size={14} /> : <Info size={14} />}</span><strong>{Math.round(total) === 100 ? 'Your 100-point model is ready.' : `${Math.round(total)} points allocated — adjust to 100.`}</strong></div></section>
         <ForecastPanel scenario={scenario} checkpointId={checkpoint.id} forecast={forecast} locked={!isCurrent} complete={complete} onLock={onLock} onReveal={onReveal} />
       </div>
     </div>
@@ -253,8 +287,9 @@ function ResultsView({ scenario, run, onReplay, onChooseAnother, onProfile }: { 
   const marketMove = finalDecision.marketProbability - firstDecision.marketProbability
   return (
     <div className="page results-page">
-      <div className="page-topline"><button className="back-link" onClick={onChooseAnother}><ArrowLeft size={14} /> Live markets</button><span className="ticker-label">{scenario.source.ticker}</span></div>
+      <div className="page-topline"><button className="back-link" onClick={onChooseAnother}><ArrowLeft size={14} /> Resolved markets</button><span className="ticker-label">{scenario.source.ticker}</span></div>
       <section className="result-header"><div><p className="eyebrow eyebrow-accent">{settled ? 'Settled market' : 'Open market'}</p><h1>{settled ? 'The market settled.' : 'OPEN — awaiting settlement.'}</h1><p>{settled ? scenario.outcomeLabel : 'Your four forecasts are locked. Kalshi has not reported an outcome yet, so scoring remains pending.'}</p></div><div className={`result-state ${settled ? scenario.outcome ? 'state-yes' : 'state-no' : 'state-open'}`}><span>{settled ? 'Outcome' : 'Status'}</span><strong>{settled ? scenario.outcome ? 'YES' : 'NO' : 'OPEN'}</strong><small>{scenario.resolutionDate}</small></div></section>
+      <section className="resolution-briefing" aria-labelledby="resolution-briefing-title"><div><p className="eyebrow eyebrow-accent">The event in context</p><h2 id="resolution-briefing-title">What actually happened</h2></div><div className="resolution-briefing-copy"><p><strong>{scenario.resolutionBriefing.summary}</strong></p><p>{scenario.resolutionBriefing.consequence}</p></div><div className="resolution-briefing-sources">{scenario.resolutionBriefing.sources.map((source) => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label} <ArrowRight size={11} /></a>)}</div></section>
       <section className="result-insights" aria-label="Forecast summary"><div><span>Final forecast</span><strong>{formatProbability(finalDecision.userProbability)}</strong><small>Kalshi {formatProbability(finalDecision.marketProbability)} · {formatDelta(finalDecision.userProbability - finalDecision.marketProbability)}</small></div><div><span>Market movement</span><strong>{formatDelta(marketMove)}</strong><small>{formatProbability(firstDecision.marketProbability)} to {formatProbability(finalDecision.marketProbability)}</small></div><div><span>Strongest factor</span><strong>{strongest?.belief?.importance ?? 0} pts</strong><small>{strongest?.factor.label ?? 'No factor selected'}</small></div><div><span>{settled ? 'Forecast score' : 'Settlement score'}</span><strong>{forecastReport ? formatScore(forecastReport.user.brier) : 'Pending'}</strong><small>{forecastReport ? `Kalshi ${formatScore(forecastReport.market.brier)} · ${forecastReport.userBeatMarketCount}/${forecastReport.checkpoints} beats` : 'Scoring begins after Kalshi settles'}</small></div></section>
       <section className="trajectory-section"><div className="section-heading compact-heading"><div><p className="eyebrow">The path</p><h2>Your forecast vs Kalshi</h2></div><span>One clear question: how did your read move?</span></div><div className="trajectory-card"><TrajectoryChart scenario={scenario} decisions={run.decisions} /></div></section>
       <div className="results-note"><Info size={15} /><span>{settled ? 'Lower Brier scores are better. Your score uses the same settled outcome as the Kalshi baseline.' : 'OPEN means the contract is still active. Your locked forecasts stay on record until the live market settles.'}</span></div>
@@ -274,7 +309,7 @@ function ProfileView({ scenario, run, onPlay }: { scenario: Scenario; run: Forec
       <section className="profile-header"><div><p className="eyebrow eyebrow-accent">Reflection, not a history</p><h1>What did your model prioritize?</h1><p>This view is built only from your locked decisions for {scenario.shortTitle}. Nothing here implies a saved cross-market profile.</p></div><div className="lock-count"><strong>{run.decisions.length}/4</strong><span>checkpoints locked</span></div></section>
       <section className="profile-summary"><div><span>Final deviation</span><strong className={finalDelta >= 0 ? 'positive-text' : 'negative-text'}>{formatDelta(finalDelta)}</strong><small>Your last forecast vs Kalshi</small></div><div><span>Final forecast</span><strong>{formatProbability(finalDecision.userProbability)}</strong><small>Kalshi {formatProbability(finalDecision.marketProbability)}</small></div><div><span>Market state</span><strong>{scenario.outcome === null ? 'OPEN' : scenario.outcome ? 'YES' : 'NO'}</strong><small>{scenario.outcome === null ? 'Awaiting settlement' : 'Settled by Kalshi'}</small></div></section>
       <section className="profile-factors"><div className="section-heading compact-heading"><div><p className="eyebrow">Your strongest factors</p><h2>Final weights and directions</h2></div><Scale size={18} /></div><div className="factor-summary-list">{rankedFactors.map(({ factor, belief }, index) => <div key={factor.id}><span className="factor-summary-number">{String(index + 1).padStart(2, '0')}</span><strong>{factor.label}</strong><span className="factor-summary-direction">{directionLabels[belief?.direction ?? 'neutral']}</span><b>{belief?.importance ?? 0} pts</b></div>)}</div><p className="profile-small-note"><Info size={13} /> The factors are derived from Kalshi candlesticks; the weights and directions are yours.</p></section>
-      <div className="profile-market-line"><div><span>Market in focus</span><strong>{scenario.question}</strong></div><span>{scenario.category} · closes {scenario.resolutionDate}</span></div>
+      <div className="profile-market-line"><div><span>Market in focus</span><strong>{scenario.question}</strong></div><span>{scenario.category} · settled {scenario.resolutionDate}</span></div>
       <div className="profile-actions"><button className="primary-button primary-button-large" onClick={onPlay}>Forecast another market <ArrowRight size={16} /></button></div>
     </div>
   )
