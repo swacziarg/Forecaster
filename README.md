@@ -21,8 +21,9 @@ live market API.
 1. Read the facts and hypothesized electoral mechanism for each event.
 2. Drag the ten events from the strongest positive effect on Trump's winning
    chance to the strongest negative effect.
-3. Scrub hour by hour across the market chart. Numbered circles are ranked
-   events; amber diamonds explain large diffuse or market-structure moves.
+3. Zoom from the full campaign to 30-, 14-, or 7-day views, then scrub hour by
+   hour. Numbered circles are ordered events; amber diamonds explain large
+   diffuse or market-structure moves.
 4. Reveal the market's signed ordering and compare it with the personal order.
 5. Inspect the observed move, adjust expert attribution, and review the
    counterfactual probability, competing explanation, and dated source.
@@ -76,8 +77,9 @@ Each curated event also links to a dated historical source in
   priors, interpretations, competing explanations, and source links.
 - `src/domain/eventStudy.ts` parses the series and computes robust windows,
   observed moves, attributed effects, and counterfactual probabilities.
-- `src/App.tsx` renders the sortable ranking, hourly chart scrubber, contextual
-  move markers, comparison state, attribution panel, and methodology drawer.
+- `src/App.tsx` renders the signed sortable spectrum, zoomable hourly chart,
+  contextual move markers, comparison state, attribution panel, and
+  methodology drawer.
 - `src/domain/eventStudy.test.ts` covers parsing, summaries, event windows, and
   ranking operations, ranking scores, and full and partial attribution.
 

@@ -15,6 +15,7 @@ import {
   RotateCcw,
   Trophy,
   X,
+  ZoomIn,
 } from 'lucide-react'
 import { electionEvents, electionMarket, loadElectionMarketSeries, marketMoveNotes } from './data/election2024.ts'
 import {
@@ -67,13 +68,39 @@ function CampaignChart({ points, impacts, order, selectedId, scrubIndex, onScrub
   const width = 1080
   const height = 288
   const margin = { left: 44, right: 18, top: 24, bottom: 38 }
-  const minTime = Date.parse(points[0].timestamp)
-  const maxTime = Date.parse(points[points.length - 1].timestamp)
-  const minProbability = 0.4
-  const maxProbability = 0.75
+  const totalStartTime = Date.parse(points[0].timestamp)
+  const totalEndTime = Date.parse(points[points.length - 1].timestamp)
+  const totalHours = Math.ceil((totalEndTime - totalStartTime) / (60 * 60 * 1000))
+  const [zoomHours, setZoomHours] = useState<number | null>(null)
+  const [zoomAnchorIndex, setZoomAnchorIndex] = useState(scrubIndex)
+  const selectedImpact = impacts.find((impact) => impact.id === selectedId)
+
+  useEffect(() => {
+    if (selectedImpact) setZoomAnchorIndex(nearestPointIndex(points, selectedImpact.timestamp))
+  }, [points, selectedImpact])
+
+  const anchorTime = Date.parse(points[zoomAnchorIndex].timestamp)
+  const requestedSpan = (zoomHours ?? totalHours) * 60 * 60 * 1000
+  const unclampedStart = anchorTime - requestedSpan / 2
+  const windowStartTime = zoomHours === null ? totalStartTime : Math.min(Math.max(unclampedStart, totalStartTime), totalEndTime - requestedSpan)
+  const windowEndTime = zoomHours === null ? totalEndTime : Math.min(windowStartTime + requestedSpan, totalEndTime)
+  const visibleStartIndex = Math.max(0, points.findIndex((point) => Date.parse(point.timestamp) >= windowStartTime))
+  let visibleEndIndex = points.length - 1
+  while (visibleEndIndex > visibleStartIndex && Date.parse(points[visibleEndIndex].timestamp) > windowEndTime) visibleEndIndex -= 1
+  const visiblePoints = points.slice(visibleStartIndex, visibleEndIndex + 1)
+  const minTime = Date.parse(visiblePoints[0].timestamp)
+  const maxTime = Date.parse(visiblePoints[visiblePoints.length - 1].timestamp)
+  const visibleProbabilities = visiblePoints.map((point) => point.probability)
+  const observedMin = Math.min(...visibleProbabilities)
+  const observedMax = Math.max(...visibleProbabilities)
+  const paddedRange = Math.max(0.08, observedMax - observedMin + 0.03)
+  const probabilityCenter = (observedMin + observedMax) / 2
+  const minProbability = Math.max(0, probabilityCenter - paddedRange / 2)
+  const maxProbability = Math.min(1, probabilityCenter + paddedRange / 2)
   const x = (timestamp: string) => margin.left + (Date.parse(timestamp) - minTime) / (maxTime - minTime) * (width - margin.left - margin.right)
   const y = (probability: number) => margin.top + (maxProbability - probability) / (maxProbability - minProbability) * (height - margin.top - margin.bottom)
-  const sampled = points.filter((_, index) => index % 3 === 0 || index === points.length - 1)
+  const samplingInterval = zoomHours === null ? 3 : 1
+  const sampled = visiblePoints.filter((_, index) => index % samplingInterval === 0 || index === visiblePoints.length - 1)
   const path = sampled.map((point, index) => `${index === 0 ? 'M' : 'L'}${x(point.timestamp).toFixed(1)},${y(point.probability).toFixed(1)}`).join(' ')
   const rank = new Map(order.map((id, index) => [id, index + 1]))
   const scrubPoint = points[scrubIndex]
@@ -88,7 +115,11 @@ function CampaignChart({ points, impacts, order, selectedId, scrubIndex, onScrub
     .sort((a, b) => a.distance - b.distance)[0]?.note
   const contextTitle = nearbyEvent?.title ?? nearbyNote?.title ?? 'No single event assigned'
   const contextText = nearbyEvent?.mechanism ?? nearbyNote?.explanation ?? 'This hour is treated as ordinary or diffuse repricing rather than being forced into a headline explanation.'
-  const monthTicks = ['2024-06-01T00:00:00Z', '2024-07-01T00:00:00Z', '2024-08-01T00:00:00Z', '2024-09-01T00:00:00Z', '2024-10-01T00:00:00Z', '2024-11-01T00:00:00Z']
+  const timeTicks = Array.from({ length: 6 }, (_, index) => minTime + (maxTime - minTime) * index / 5)
+  const probabilityTicks = Array.from({ length: 4 }, (_, index) => minProbability + (maxProbability - minProbability) * index / 3)
+  const formatAxisDate = (timestamp: number) => new Date(timestamp).toLocaleDateString('en-US', zoomHours === null
+    ? { month: 'short', timeZone: 'UTC' }
+    : { month: 'short', day: 'numeric', timeZone: 'UTC' })
 
   const selectEvent = (impact: EventImpact) => {
     onSelect(impact.id)
@@ -100,8 +131,8 @@ function CampaignChart({ points, impacts, order, selectedId, scrubIndex, onScrub
     const viewX = (event.clientX - bounds.left) / bounds.width * width
     const ratio = Math.min(Math.max((viewX - margin.left) / (width - margin.left - margin.right), 0), 1)
     const targetTime = minTime + ratio * (maxTime - minTime)
-    let nearestIndex = 0
-    for (let index = 1; index < points.length; index += 1) {
+    let nearestIndex = visibleStartIndex
+    for (let index = visibleStartIndex + 1; index <= visibleEndIndex; index += 1) {
       if (Math.abs(Date.parse(points[index].timestamp) - targetTime) < Math.abs(Date.parse(points[nearestIndex].timestamp) - targetTime)) nearestIndex = index
     }
     onScrub(nearestIndex)
@@ -112,27 +143,33 @@ function CampaignChart({ points, impacts, order, selectedId, scrubIndex, onScrub
     scrubFromPointer(event)
   }
 
+  const selectZoom = (hours: number | null) => {
+    setZoomAnchorIndex(scrubIndex)
+    setZoomHours(hours)
+  }
+
   return <div className="chart-wrap">
+    <div className="chart-zoom" role="group" aria-label="Chart zoom"><span><ZoomIn size={14} /> Zoom</span>{[{ label: 'All', hours: null }, { label: '30d', hours: 720 }, { label: '14d', hours: 336 }, { label: '7d', hours: 168 }].map((option) => <button className={zoomHours === option.hours ? 'is-active' : ''} key={option.label} onClick={() => selectZoom(option.hours)}>{option.label}</button>)}<small>{formatAxisDate(minTime)} – {formatAxisDate(maxTime)}</small></div>
     <svg className="campaign-chart" viewBox={`0 0 ${width} ${height}`} role="img" aria-label="Trump election probability with ten ranked events and four contextual market moves">
-      <g className="chart-grid">{[0.4, 0.5, 0.6, 0.7].map((tick) => <g key={tick}><line x1={margin.left} x2={width - margin.right} y1={y(tick)} y2={y(tick)} /><text x="0" y={y(tick) + 4}>{formatProbability(tick)}</text></g>)}</g>
-      <path className="price-area" d={`${path} L${x(points[points.length - 1].timestamp)},${y(minProbability)} L${x(points[0].timestamp)},${y(minProbability)} Z`} />
+      <g className="chart-grid">{probabilityTicks.map((tick) => <g key={tick}><line x1={margin.left} x2={width - margin.right} y1={y(tick)} y2={y(tick)} /><text x="0" y={y(tick) + 4}>{formatProbability(tick)}</text></g>)}</g>
+      <path className="price-area" d={`${path} L${x(visiblePoints[visiblePoints.length - 1].timestamp)},${y(minProbability)} L${x(visiblePoints[0].timestamp)},${y(minProbability)} Z`} />
       <path className="price-line" d={path} />
       <rect className="chart-scrub-surface" x={margin.left} y={margin.top} width={width - margin.left - margin.right} height={height - margin.top - margin.bottom} onPointerDown={startGraphScrub} onPointerMove={(event) => { if (event.currentTarget.hasPointerCapture(event.pointerId)) scrubFromPointer(event) }} onPointerUp={(event) => event.currentTarget.releasePointerCapture(event.pointerId)} />
-      {monthTicks.map((tick) => <text className="month-label" key={tick} x={x(tick)} y={height - 9} textAnchor="middle">{new Date(tick).toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' })}</text>)}
-      {marketMoveNotes.map((note) => {
+      {timeTicks.map((tick) => <text className="month-label" key={tick} x={margin.left + (tick - minTime) / (maxTime - minTime) * (width - margin.left - margin.right)} y={height - 9} textAnchor="middle">{formatAxisDate(tick)}</text>)}
+      {marketMoveNotes.filter((note) => Date.parse(note.timestamp) >= minTime && Date.parse(note.timestamp) <= maxTime).map((note) => {
         const point = points[nearestPointIndex(points, note.timestamp)]
         const cx = x(note.timestamp)
         const cy = y(point.probability)
         return <g className="context-marker" key={note.id} role="button" tabIndex={0} aria-label={note.title} onClick={() => onScrub(nearestPointIndex(points, note.timestamp))} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') onScrub(nearestPointIndex(points, note.timestamp)) }}><path d={`M${cx},${cy - 6} L${cx + 6},${cy} L${cx},${cy + 6} L${cx - 6},${cy} Z`} /></g>
       })}
-      {impacts.map((impact) => {
+      {impacts.filter((impact) => Date.parse(impact.timestamp) >= minTime && Date.parse(impact.timestamp) <= maxTime).map((impact) => {
         const point = points[nearestPointIndex(points, impact.timestamp)]
         const selected = impact.id === selectedId
         return <g className={`event-marker ${selected ? 'is-selected' : ''}`} key={impact.id} role="button" tabIndex={0} aria-label={`${impact.title}, your rank ${rank.get(impact.id)}`} onClick={() => selectEvent(impact)} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') selectEvent(impact) }}><line x1={x(impact.timestamp)} x2={x(impact.timestamp)} y1={margin.top} y2={height - margin.bottom} /><circle cx={x(impact.timestamp)} cy={y(point.probability)} r={selected ? 9 : 7} /><text x={x(impact.timestamp)} y={y(point.probability) + 4} textAnchor="middle">{rank.get(impact.id)}</text></g>
       })}
       <g className="scrub-cursor" aria-hidden="true"><line x1={x(scrubPoint.timestamp)} x2={x(scrubPoint.timestamp)} y1={margin.top} y2={height - margin.bottom} /><circle cx={x(scrubPoint.timestamp)} cy={y(scrubPoint.probability)} r="5" /></g>
     </svg>
-    <div className="scrubber"><input aria-label="Explore hourly market probability" type="range" min="0" max={points.length - 1} value={scrubIndex} onInput={(event) => onScrub(Number(event.currentTarget.value))} onChange={(event) => onScrub(Number(event.target.value))} /><div className="scrub-readout"><div><span>{formatScrubTime(scrubPoint.timestamp)}</span><strong>{formatProbability(scrubPoint.probability)} Trump</strong></div><div><div className="scrub-context-heading"><strong>{contextTitle}</strong>{nearbyEvent && <button onClick={() => onSelect(nearbyEvent.id)}>Open event</button>}{nearbyNote && !nearbyEvent && <a href={nearbyNote.source.url} target="_blank" rel="noreferrer">Evidence <ExternalLink size={11} /></a>}</div><p>{contextText}</p></div></div></div>
+    <div className="scrubber"><input aria-label="Explore hourly market probability" type="range" min={visibleStartIndex} max={visibleEndIndex} value={Math.min(Math.max(scrubIndex, visibleStartIndex), visibleEndIndex)} onInput={(event) => onScrub(Number(event.currentTarget.value))} onChange={(event) => onScrub(Number(event.target.value))} /><div className="scrub-readout"><div><span>{formatScrubTime(scrubPoint.timestamp)}</span><strong>{formatProbability(scrubPoint.probability)} Trump</strong></div><div><div className="scrub-context-heading"><strong>{contextTitle}</strong>{nearbyEvent && <button onClick={() => onSelect(nearbyEvent.id)}>Open event</button>}{nearbyNote && !nearbyEvent && <a href={nearbyNote.source.url} target="_blank" rel="noreferrer">Evidence <ExternalLink size={11} /></a>}</div><p>{contextText}</p></div></div></div>
   </div>
 }
 
@@ -201,7 +238,7 @@ function RankingBoard({ impacts, order, selectedId, revealed, onMove, onSelect, 
 }
 
 function MethodDrawer({ onClose }: { onClose: () => void }) {
-  return <div className="drawer-backdrop" onMouseDown={onClose}><aside className="method-drawer" role="dialog" aria-modal="true" aria-labelledby="method-title" onMouseDown={(event) => event.stopPropagation()}><button className="drawer-close" onClick={onClose} aria-label="Close methodology"><X size={20} /></button><span className="eyebrow">Methodology</span><h2 id="method-title">Separate judgment from measurable movement</h2><ol><li><strong>Order by direction</strong><p>Place events from the strongest positive effect on Trump's winning chance to the strongest negative effect.</p></li><li><strong>Scrub the market</strong><p>Move hour by hour across the contract. Numbered circles are ordered events; diamonds explain large diffuse or market-structure moves.</p></li><li><strong>Compare windows</strong><p>Before is the prior 12-hour median, immediate is the first six hours, and stabilized is the median from 18 to 36 hours after. A separate 48–72 hour measure exposes slower follow-through without quietly changing the ranking window.</p></li><li><strong>Attribute carefully</strong><p>The expert share applies to the change in log odds. The rest remains concurrent or unexplained information.</p></li><li><strong>Do not add the rows</strong><p>Windows overlap and market response is not the same as eventual persuasion or turnout impact.</p></li></ol><div className="method-warning"><Info size={17} /><p>A market can miss a real slow-moving effect and react to trading flow with no campaign event. The interface preserves both possibilities.</p></div><a className="source-link" href={electionMarket.datasetUrl} target="_blank" rel="noreferrer"><span><small>Official API documentation</small>Polymarket CLOB price history</span><ExternalLink size={16} /></a></aside></div>
+  return <div className="drawer-backdrop" onMouseDown={onClose}><aside className="method-drawer" role="dialog" aria-modal="true" aria-labelledby="method-title" onMouseDown={(event) => event.stopPropagation()}><button className="drawer-close" onClick={onClose} aria-label="Close methodology"><X size={20} /></button><span className="eyebrow">Methodology</span><h2 id="method-title">Separate judgment from measurable movement</h2><ol><li><strong>Order by direction</strong><p>Place events from the strongest positive effect on Trump's winning chance to the strongest negative effect.</p></li><li><strong>Zoom and scrub</strong><p>Focus on a 30-, 14-, or 7-day window, then move hour by hour. Numbered circles are ordered events; diamonds explain large diffuse or market-structure moves.</p></li><li><strong>Compare windows</strong><p>Before is the prior 12-hour median, immediate is the first six hours, and stabilized is the median from 18 to 36 hours after. A separate 48–72 hour measure exposes slower follow-through without quietly changing the ranking window.</p></li><li><strong>Attribute carefully</strong><p>The expert share applies to the change in log odds. The rest remains concurrent or unexplained information.</p></li><li><strong>Do not add the rows</strong><p>Windows overlap and market response is not the same as eventual persuasion or turnout impact.</p></li></ol><div className="method-warning"><Info size={17} /><p>A market can miss a real slow-moving effect and react to trading flow with no campaign event. The interface preserves both possibilities.</p></div><a className="source-link" href={electionMarket.datasetUrl} target="_blank" rel="noreferrer"><span><small>Official API documentation</small>Polymarket CLOB price history</span><ExternalLink size={16} /></a></aside></div>
 }
 
 function ElectionStudy({ points }: { points: MarketSeriesPoint[] }) {

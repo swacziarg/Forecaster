@@ -91,6 +91,14 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
 .chart-legend b { background: var(--red); border: 2px solid white; box-shadow: 0 0 0 1px var(--red); display: inline-block; height: 8px; width: 8px; }
 .chart-legend em { background: var(--amber); display: inline-block; height: 8px; transform: rotate(45deg); width: 8px; }
 .chart-wrap { margin-top: 2px; width: 100%; }
+.chart-zoom { align-items: center; display: flex; gap: 0; min-height: 32px; padding: 3px 0 0; }
+.chart-zoom > span { align-items: center; color: var(--muted); display: inline-flex; font-size: 9px; font-weight: 800; gap: 5px; margin-right: 8px; text-transform: uppercase; }
+.chart-zoom button { background: var(--panel); border: 1px solid var(--line); border-right: 0; color: var(--muted); font-size: 9px; font-weight: 800; min-height: 25px; min-width: 39px; padding: 3px 8px; }
+.chart-zoom button:last-of-type { border-right: 1px solid var(--line); }
+.chart-zoom button:hover { background: var(--green-soft); color: var(--green); }
+.chart-zoom button.is-active { background: var(--green-dark); border-color: var(--green-dark); color: white; }
+.chart-zoom button.is-active + button { border-left-color: var(--green-dark); }
+.chart-zoom small { color: var(--faint); font-size: 8px; margin-left: auto; text-transform: uppercase; }
 .campaign-chart { display: block; height: 268px; overflow: visible; width: 100%; }
 .chart-grid line { stroke: #e3e8e4; stroke-width: 1; }
 .chart-grid text, .month-label { fill: var(--faint); font-size: 10px; }
@@ -278,6 +286,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
   .panel-heading, .section-heading { align-items: flex-start; flex-direction: column; gap: 8px; }
   .campaign-chart { min-height: 210px; }
   .chart-legend { flex-wrap: wrap; }
+  .chart-zoom small { display: none; }
   .scrub-readout { gap: 9px; grid-template-columns: 112px minmax(0, 1fr); }
   .chart-caption { gap: 6px; }
   .chart-caption span { text-align: left !important; }

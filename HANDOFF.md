@@ -8,8 +8,8 @@ study. Runtime uses a versioned local dataset and requires no API credentials.
 1. Read the facts and electoral mechanism for ten campaign events.
 2. Drag events from the strongest positive effect on Trump's winning chance to
    the strongest negative effect.
-3. Scrub the complete hourly price chart and inspect ranked event markers or
-   amber contextual markers for large moves without a clean event attribution.
+3. Zoom the hourly price chart to 30, 14, or 7 days, scrub the focused range,
+   and inspect event or amber context markers.
 4. Reveal the market's signed positive-to-negative order and personal spectrum
    match score.
 5. Select an event to compare its 12-hour pre-event, immediate six-hour,
@@ -34,8 +34,8 @@ study. Runtime uses a versioned local dataset and requires no API credentials.
 
 ## Verification
 
-`npm test` covers the market-series parser, attribution math, ranking movement,
-and ranking score. `npm run build` performs the TypeScript and production-bundle
-checks. The UI has been verified at 1440x900 and 1366x768, including ranking,
-comparison reveal, chart scrubbing, event selection, counterfactual updates,
-and the methodology drawer.
+`npm test` covers the market-series parser, attribution math, spectrum movement,
+and match score. `npm run build` performs the TypeScript and production-bundle
+checks. The UI has been verified at 1440x900 and 1366x768, including ordering,
+comparison reveal, chart zoom and scrubbing, event selection, counterfactual
+updates, and the methodology drawer.
