@@ -26,17 +26,24 @@ live market API.
    counterfactual probability, competing explanation, and dated source.
 
 The set deliberately includes high-salience events with little immediate
-market response, such as the Joe Rogan interview and vice-presidential debate.
-This keeps public attention separate from measurable repricing.
+market response. The Joe Rogan interview, for example, was flat in the
+standardized window but had positive follow-through two to three days later.
+Showing both keeps public attention and slow repricing visible without changing
+the comparison window event by event.
 
 ## How impact is measured
 
-For each event, the study compares three robust price windows:
+For each event, the study compares four robust price windows:
 
 - **Before:** median Trump probability during the 12 hours before the event.
 - **Immediate:** median during the first six hours after the event.
 - **Stabilized:** median from 18 to 36 hours after the event.
+- **Follow-through:** median from 48 to 72 hours after the event.
 - **Observed movement:** stabilized probability minus the pre-event median.
+
+The absolute observed movement determines the market ranking. Follow-through
+is displayed separately to reveal slower changes while avoiding a
+best-looking-window choice for individual events.
 
 The expert-attribution control estimates how much of the observed repricing
 belongs to the named event. It applies that share to the change in log odds,

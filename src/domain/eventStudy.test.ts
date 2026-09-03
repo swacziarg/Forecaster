@@ -7,7 +7,7 @@ const assert = (condition: unknown, message: string) => {
 const equal = (actual: unknown, expected: unknown, message: string) => assert(actual === expected, `${message}: expected ${String(expected)}, received ${String(actual)}`)
 
 const start = Date.parse('2024-01-01T00:00:00Z')
-const points: MarketSeriesPoint[] = Array.from({ length: 80 }, (_, index) => ({
+const points: MarketSeriesPoint[] = Array.from({ length: 110 }, (_, index) => ({
   timestamp: new Date(start + index * 60 * 60 * 1000).toISOString(),
   probability: index < 24 ? 0.4 : 0.5,
 }))
@@ -30,7 +30,9 @@ assert(Math.abs(summary.netMovement - 0.1) < 1e-9, 'summarizes the campaign move
 const fullImpact = calculateEventImpact(points, event)
 equal(fullImpact.beforeProbability, 0.4, 'uses the pre-event median')
 equal(fullImpact.stabilizedProbability, 0.5, 'uses the stabilized median')
+equal(fullImpact.followThroughProbability, 0.5, 'uses the 48-to-72-hour median')
 assert(Math.abs(fullImpact.observedMovement - 0.1) < 1e-9, 'calculates observed movement')
+assert(Math.abs(fullImpact.followThroughMovement - 0.1) < 1e-9, 'calculates follow-through movement')
 assert(Math.abs(fullImpact.attributedImpact - 0.1) < 1e-9, 'attributes the full movement')
 assert(Math.abs(fullImpact.counterfactualProbability - 0.4) < 1e-9, 'reverses the full log-odds shock')
 

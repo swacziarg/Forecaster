@@ -10,8 +10,8 @@ study. Runtime uses a versioned local dataset and requires no API credentials.
 3. Scrub the complete hourly price chart and inspect ranked event markers or
    amber contextual markers for large moves without a clean event attribution.
 4. Reveal the absolute-movement market ranking and personal rank-match score.
-5. Select an event to compare its 12-hour pre-event, immediate six-hour, and
-   stabilized 18-36-hour windows.
+5. Select an event to compare its 12-hour pre-event, immediate six-hour,
+   stabilized 18-36-hour, and separate 48-72-hour follow-through windows.
 6. Adjust expert attribution, inspect the counterfactual probability, and open
    the dated historical source.
 
@@ -25,6 +25,8 @@ study. Runtime uses a versioned local dataset and requires no API credentials.
 - The personal ranking measures total expected electoral consequence. The
   market comparison ranks absolute short-window repricing; those concepts can
   legitimately differ.
+- The 48-72-hour follow-through measure exposes delayed movement but does not
+  change the consistently applied 18-36-hour market ranking.
 - The local dataset is the reproducible source of truth. Its provenance and
   license are documented in `public/data/README.md`.
 

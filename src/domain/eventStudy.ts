@@ -34,12 +34,14 @@ export type EventImpact = ImpactEventDefinition & {
   beforeProbability: number
   immediateProbability: number
   stabilizedProbability: number
+  followThroughProbability: number
   immediateMovement: number
   observedMovement: number
+  followThroughMovement: number
   attributedImpact: number
   counterfactualProbability: number
   attributionShare: number
-  samples: { before: number; immediate: number; stabilized: number }
+  samples: { before: number; immediate: number; stabilized: number; followThrough: number }
 }
 
 export type CampaignSummary = {
@@ -105,9 +107,11 @@ export const calculateEventImpact = (points: MarketSeriesPoint[], event: ImpactE
   const beforeSamples = samplesBetween(points, eventTime - 12 * hour, eventTime)
   const immediateSamples = samplesBetween(points, eventTime, eventTime + 6 * hour)
   const stabilizedSamples = samplesBetween(points, eventTime + 18 * hour, eventTime + 36 * hour)
+  const followThroughSamples = samplesBetween(points, eventTime + 48 * hour, eventTime + 72 * hour)
   const beforeProbability = median(beforeSamples)
   const immediateProbability = median(immediateSamples)
   const stabilizedProbability = median(stabilizedSamples)
+  const followThroughProbability = median(followThroughSamples)
   const share = clamp(attributionShare, 0, 100)
   const attributedLogOdds = (logit(stabilizedProbability) - logit(beforeProbability)) * share / 100
   const counterfactualProbability = sigmoid(logit(stabilizedProbability) - attributedLogOdds)
@@ -118,11 +122,13 @@ export const calculateEventImpact = (points: MarketSeriesPoint[], event: ImpactE
     beforeProbability,
     immediateProbability,
     stabilizedProbability,
+    followThroughProbability,
     immediateMovement: immediateProbability - beforeProbability,
     observedMovement: stabilizedProbability - beforeProbability,
+    followThroughMovement: followThroughProbability - beforeProbability,
     attributedImpact: stabilizedProbability - counterfactualProbability,
     counterfactualProbability,
-    samples: { before: beforeSamples.length, immediate: immediateSamples.length, stabilized: stabilizedSamples.length },
+    samples: { before: beforeSamples.length, immediate: immediateSamples.length, stabilized: stabilizedSamples.length, followThrough: followThroughSamples.length },
   }
 }
 
