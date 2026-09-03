@@ -212,20 +212,21 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
 .ranking-score { align-items: center; color: var(--muted); display: inline-flex; font-size: 10px; gap: 5px; }
 .ranking-score svg { color: var(--amber); }
 .ranking-score b { color: var(--ink); font-size: 14px; }
-.reset-button, .rank-controls button, .drawer-close { align-items: center; background: transparent; border: 1px solid var(--line); color: var(--muted); display: inline-flex; justify-content: center; }
+.reset-button, .drawer-close { align-items: center; background: transparent; border: 1px solid var(--line); color: var(--muted); display: inline-flex; justify-content: center; }
 .reset-button { height: 40px; width: 40px; }
-.reset-button:hover, .rank-controls button:hover:not(:disabled), .drawer-close:hover { background: var(--green-soft); color: var(--green); }
+.reset-button:hover, .drawer-close:hover { background: var(--green-soft); color: var(--green); }
 .ranking-instruction { color: var(--muted); font-size: 10px; line-height: 1.4; margin: 8px 0 11px; }
 .ranking-workspace { display: grid; grid-template-columns: 76px minmax(0, 1fr); }
 .spectrum-axis { align-items: center; background: linear-gradient(to bottom, var(--green-soft) 0 39%, #f1f2ef 46% 54%, var(--red-soft) 61% 100%); border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); color: var(--muted); display: grid; font-size: 8px; font-weight: 850; grid-template-rows: auto 1fr auto 1fr auto; justify-items: center; padding: 9px 6px; text-align: center; text-transform: uppercase; }
 .spectrum-axis i { background: linear-gradient(var(--green), var(--line-dark), var(--red)); height: 100%; min-height: 22px; width: 2px; }
 .spectrum-axis i:nth-of-type(1) { background: linear-gradient(var(--green), var(--line-dark)); }
 .spectrum-axis i:nth-of-type(2) { background: linear-gradient(var(--line-dark), var(--red)); }
-.ranking-list { border-top: 1px solid var(--line); }
-.ranking-row { align-items: center; border-bottom: 1px solid var(--line); display: grid; gap: 8px; grid-template-columns: 28px 18px minmax(220px, 1fr) 88px 82px 54px; min-height: 66px; padding: 6px 7px; }
+.ranking-list { background: #f5f7f4; border: 1px solid var(--line); display: grid; gap: 6px; padding: 6px; }
+.ranking-row { align-items: center; background: var(--panel); border: 1px solid var(--line); cursor: grab; display: grid; gap: 9px; grid-template-columns: 38px 20px minmax(220px, 1fr) 88px 82px; min-height: 68px; padding: 7px 8px; user-select: none; }
 .ranking-row.is-selected { background: var(--green-soft); box-shadow: inset 3px 0 0 var(--green); }
 .ranking-row.is-dragging { opacity: .45; }
-.ranking-number { color: var(--faint); font-family: var(--serif); font-size: 19px; text-align: center; }
+.ranking-number { align-items: center; background: white; border: 1px solid var(--line-dark); color: var(--faint); display: inline-flex; font-family: var(--serif); font-size: 18px; height: 36px; justify-content: center; padding: 0; width: 36px; }
+.ranking-number:hover, .ranking-number[aria-expanded="true"] { background: var(--blue-soft); border-color: var(--blue); color: var(--blue) !important; }
 .ranking-row.rank-positive .ranking-number { color: var(--green); }
 .ranking-row.rank-negative .ranking-number { color: var(--red); }
 .ranking-row.rank-neutral .ranking-number { color: var(--faint); }
@@ -239,9 +240,14 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
 .market-rank small { color: var(--muted); display: block; font-size: 8px; text-transform: uppercase; }
 .market-rank strong { display: block; font-size: 11px; margin-top: 2px; }
 .market-rank span { color: var(--blue); display: block; font-size: 8px; font-weight: 750; margin-top: 2px; }
-.rank-controls { display: flex; gap: 3px; }
-.rank-controls button { height: 25px; padding: 0; width: 25px; }
-.rank-controls button:disabled { cursor: not-allowed; opacity: .28; }
+.position-picker { align-items: center; background: var(--blue-soft); border-top: 1px solid #c6d7df; cursor: default; display: grid; gap: 12px; grid-column: 1 / -1; grid-template-columns: 160px minmax(0, 1fr); margin: 1px -8px -7px; padding: 9px 10px 10px; }
+.position-picker > div:first-child strong { display: block; font-size: 10px; }
+.position-picker > div:first-child span { align-items: center; color: var(--muted); display: flex; font-size: 8px; gap: 5px; margin-top: 3px; text-transform: uppercase; }
+.position-picker > div:first-child i { background: linear-gradient(to right, var(--green), var(--line-dark), var(--red)); display: inline-block; flex: 1; height: 2px; }
+.position-picker > div:last-child { display: grid; gap: 4px; grid-template-columns: repeat(10, minmax(28px, 1fr)); }
+.position-picker button { background: white; border: 1px solid #aebfc7; color: var(--ink); font-size: 11px; font-weight: 850; height: 34px; padding: 0; }
+.position-picker button:hover { background: var(--green-dark); border-color: var(--green-dark); color: white; }
+.position-picker button.is-current { background: var(--blue); border-color: var(--blue); color: white; }
 
 .drawer-backdrop { background: rgba(19,34,28,.34); inset: 0; position: fixed; z-index: 20; }
 .method-drawer { background: var(--panel); box-shadow: -15px 0 45px rgba(20,32,27,.2); height: 100%; max-width: 480px; overflow-y: auto; padding: 36px 30px; position: absolute; right: 0; top: 0; width: min(92vw, 480px); }
@@ -261,7 +267,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
   .summary-strip { grid-template-columns: repeat(3, 1fr); }
   .summary-strip > div:nth-child(4) { display: none; }
   .study-grid { grid-template-columns: minmax(0, 1fr) 320px; }
-  .ranking-row { grid-template-columns: 26px 16px minmax(170px, 1fr) 78px 72px 54px; }
+  .ranking-row { grid-template-columns: 36px 18px minmax(170px, 1fr) 78px 74px; }
   .ranking-title span { display: none; }
 }
 
@@ -297,10 +303,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
   .reveal-button { flex: 1; }
   .ranking-workspace { grid-template-columns: 50px minmax(0, 1fr); }
   .spectrum-axis { font-size: 7px; padding-left: 3px; padding-right: 3px; }
-  .ranking-row { gap: 6px; grid-template-columns: 24px 14px minmax(0, 1fr) 64px 50px; }
+  .ranking-row { gap: 6px; grid-template-columns: 34px 15px minmax(0, 1fr) 70px; }
+  .ranking-number { height: 32px; width: 32px; }
   .ranking-row > .direction-tag { display: none; }
   .impact-sealed { font-size: 7px; }
-  .rank-controls { flex-direction: column; }
+  .position-picker { gap: 7px; grid-template-columns: 1fr; }
+  .position-picker > div:last-child { grid-template-columns: repeat(5, 1fr); }
   .impact-detail { padding: 14px; }
   .method-drawer { padding: 34px 20px; }
 }

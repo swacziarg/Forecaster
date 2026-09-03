@@ -19,8 +19,9 @@ live market API.
 ## Product flow
 
 1. Read the facts and hypothesized electoral mechanism for each event.
-2. Drag the ten events from the strongest positive effect on Trump's winning
-   chance to the strongest negative effect.
+2. Drag event cards, or click a card's numbered position box, to order the ten
+   events from the strongest positive effect on Trump's winning chance to the
+   strongest negative effect.
 3. Zoom from the full campaign to 30-, 14-, or 7-day views, then scrub hour by
    hour. Numbered circles are ordered events; amber diamonds explain large
    diffuse or market-structure moves.

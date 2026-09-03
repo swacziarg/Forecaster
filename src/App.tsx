@@ -1,8 +1,6 @@
 import { useEffect, useMemo, useState, type DragEvent, type PointerEvent as ReactPointerEvent, type ReactNode } from 'react'
 import {
-  ArrowDown,
   ArrowRight,
-  ArrowUp,
   BarChart3,
   BookOpen,
   CalendarDays,
@@ -168,7 +166,7 @@ function CampaignChart({ points, impacts, order, selectedId, scrubIndex, onScrub
       {impacts.filter((impact) => Date.parse(impact.timestamp) >= minTime && Date.parse(impact.timestamp) <= maxTime).map((impact) => {
         const point = points[nearestPointIndex(points, impact.timestamp)]
         const selected = impact.id === selectedId
-        return <g className={`event-marker ${selected ? 'is-selected' : ''}`} key={impact.id} role="button" tabIndex={0} aria-label={`${impact.title}, your rank ${rank.get(impact.id)}`} onClick={() => selectEvent(impact)} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') selectEvent(impact) }}><line x1={x(impact.timestamp)} x2={x(impact.timestamp)} y1={margin.top} y2={height - margin.bottom} /><circle cx={x(impact.timestamp)} cy={y(point.probability)} r={selected ? 9 : 7} /><text x={x(impact.timestamp)} y={y(point.probability) + 4} textAnchor="middle">{rank.get(impact.id)}</text></g>
+        return <g className={`event-marker ${selected ? 'is-selected' : ''}`} key={impact.id} role="button" tabIndex={0} aria-label={`${impact.title}, your position ${rank.get(impact.id)}`} onClick={() => selectEvent(impact)} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') selectEvent(impact) }}><line x1={x(impact.timestamp)} x2={x(impact.timestamp)} y1={margin.top} y2={height - margin.bottom} /><circle cx={x(impact.timestamp)} cy={y(point.probability)} r={selected ? 9 : 7} /><text x={x(impact.timestamp)} y={y(point.probability) + 4} textAnchor="middle">{rank.get(impact.id)}</text></g>
       })}
       <g className="scrub-cursor" aria-hidden="true"><line x1={x(scrubPoint.timestamp)} x2={x(scrubPoint.timestamp)} y1={margin.top} y2={height - margin.bottom} /><circle cx={x(scrubPoint.timestamp)} cy={y(scrubPoint.probability)} r="5" /></g>
     </svg>
@@ -212,6 +210,7 @@ function RankingBoard({ impacts, order, selectedId, revealed, onMove, onSelect, 
   onReset: () => void
 }) {
   const [draggedId, setDraggedId] = useState<string | null>(null)
+  const [positionPickerId, setPositionPickerId] = useState<string | null>(null)
   const byId = new Map(impacts.map((impact) => [impact.id, impact]))
   const marketOrder = rankBySignedImpact(impacts).map((impact) => impact.id)
   const marketRank = new Map(marketOrder.map((id, index) => [id, index + 1]))
@@ -225,16 +224,16 @@ function RankingBoard({ impacts, order, selectedId, revealed, onMove, onSelect, 
 
   return <section className="ranking-section" aria-labelledby="ranking-title">
     <div className="section-heading"><div><span className="eyebrow">Your signed forecast</span><h2 id="ranking-title">Most positive to most negative</h2></div><div className="ranking-actions">{revealed && <span className="ranking-score"><Trophy size={15} /><b>{score}%</b> spectrum match</span>}<button className="reset-button" onClick={onReset} title="Reset ranking" aria-label="Reset ranking"><RotateCcw size={16} /></button>{!revealed && <button className="reveal-button" onClick={onReveal}><Eye size={16} /> Compare with market</button>}</div></div>
-    <p className="ranking-instruction">Place each event by the direction and strength of its expected effect on Trump's chance of winning.</p>
+    <p className="ranking-instruction">Drag an event card, or click its numbered box to place it. Top is most positive for Trump; bottom is most negative.</p>
     <div className="ranking-workspace"><div className="spectrum-axis" aria-hidden="true"><span>Most positive</span><i /><span>Neutral</span><i /><span>Most negative</span></div><div className="ranking-list">{order.map((id, index) => {
       const impact = byId.get(id)!
       const spectrumBand = index < 4 ? 'rank-positive' : index > 5 ? 'rank-negative' : 'rank-neutral'
-      return <article className={`ranking-row ${spectrumBand} ${id === selectedId ? 'is-selected' : ''} ${id === draggedId ? 'is-dragging' : ''}`} key={id} draggable onDragStart={() => setDraggedId(id)} onDragEnd={() => setDraggedId(null)} onDragOver={(event) => event.preventDefault()} onDrop={(event) => drop(event, index)}>
-        <span className="ranking-number">{index + 1}</span><GripVertical className="drag-handle" size={17} aria-hidden="true" />
+      return <article className={`ranking-row ${spectrumBand} ${id === selectedId ? 'is-selected' : ''} ${id === draggedId ? 'is-dragging' : ''}`} key={id} draggable onDragStart={() => { setDraggedId(id); setPositionPickerId(null) }} onDragEnd={() => setDraggedId(null)} onDragOver={(event) => event.preventDefault()} onDrop={(event) => drop(event, index)}>
+        <button className="ranking-number" aria-label={`Choose a position for ${impact.shortTitle}`} aria-expanded={positionPickerId === id} onClick={() => setPositionPickerId((current) => current === id ? null : id)}>{index + 1}</button><GripVertical className="drag-handle" size={19} aria-hidden="true" />
         <button className="ranking-title" onClick={() => onSelect(id)}><small>{impact.dateLabel} · {impact.category}</small><strong>{impact.shortTitle}</strong><span>{impact.mechanism}</span></button>
         <span className={`direction-tag direction-${impact.expectedDirection.toLowerCase().replace(' ', '-')}`}>{impact.expectedDirection}</span>
         {revealed ? <div className="market-rank"><small>Market #{marketRank.get(id)}</small><strong className={impact.observedMovement >= 0 ? 'positive' : 'negative'}>{formatImpact(impact.observedMovement)}</strong><span>72h {formatImpact(impact.followThroughMovement)}</span></div> : <span className="impact-sealed">Impact hidden</span>}
-        <div className="rank-controls"><button disabled={index === 0} onClick={() => onMove(id, index - 1)} aria-label={`Move ${impact.shortTitle} up`} title="Move up"><ArrowUp size={14} /></button><button disabled={index === order.length - 1} onClick={() => onMove(id, index + 1)} aria-label={`Move ${impact.shortTitle} down`} title="Move down"><ArrowDown size={14} /></button></div>
+        {positionPickerId === id && <div className="position-picker" role="group" aria-label={`Place ${impact.shortTitle}`}><div><strong>Choose a position</strong><span>Most positive <i /> Most negative</span></div><div>{order.map((_, destinationIndex) => <button className={destinationIndex === index ? 'is-current' : ''} key={destinationIndex} onClick={() => { onMove(id, destinationIndex); setPositionPickerId(null) }} aria-label={`Position ${destinationIndex + 1}`}>{destinationIndex + 1}</button>)}</div></div>}
       </article>
     })}</div></div>
   </section>

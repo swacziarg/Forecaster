@@ -6,8 +6,9 @@ study. Runtime uses a versioned local dataset and requires no API credentials.
 ## Product flow
 
 1. Read the facts and electoral mechanism for ten campaign events.
-2. Drag events from the strongest positive effect on Trump's winning chance to
-   the strongest negative effect.
+2. Drag event cards or use their ten-position click picker to order events from
+   the strongest positive effect on Trump's winning chance to the strongest
+   negative effect.
 3. Zoom the hourly price chart to 30, 14, or 7 days, scrub the focused range,
    and inspect event or amber context markers.
 4. Reveal the market's signed positive-to-negative order and personal spectrum
