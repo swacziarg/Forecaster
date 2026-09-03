@@ -129,8 +129,6 @@ export const calculateEventImpact = (points: MarketSeriesPoint[], event: ImpactE
 export const calculateEventImpacts = (points: MarketSeriesPoint[], events: ImpactEventDefinition[], attributionShares: Record<string, number> = {}) => events
   .map((event) => calculateEventImpact(points, event, attributionShares[event.id] ?? event.attributionShare))
 
-export const largestObservedImpact = (impacts: EventImpact[]) => impacts.reduce((largest, impact) => Math.abs(impact.observedMovement) > Math.abs(largest.observedMovement) ? impact : largest)
-
 export const rankByObservedImpact = (impacts: EventImpact[]) => [...impacts]
   .sort((a, b) => Math.abs(b.observedMovement) - Math.abs(a.observedMovement))
 
