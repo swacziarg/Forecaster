@@ -1,4 +1,4 @@
-import { calculateEventImpact, parseHourlyMarketCsv, summarizeCampaign, type ImpactEventDefinition, type MarketSeriesPoint } from './eventStudy.ts'
+import { calculateEventImpact, moveRankedItem, parseHourlyMarketCsv, rankByObservedImpact, scoreImpactRanking, summarizeCampaign, type ImpactEventDefinition, type MarketSeriesPoint } from './eventStudy.ts'
 
 const assert = (condition: unknown, message: string) => {
   if (!condition) throw new Error(`Test failed: ${message}`)
@@ -13,7 +13,7 @@ const points: MarketSeriesPoint[] = Array.from({ length: 80 }, (_, index) => ({
 }))
 
 const event: ImpactEventDefinition = {
-  id: 'test', title: 'Test event', shortTitle: 'Test', timestamp: new Date(start + 24 * 60 * 60 * 1000).toISOString(), dateLabel: 'Jan 2', category: 'Campaign', summary: '', interpretation: '', competingExplanation: '', confidence: 'High', attributionShare: 100,
+  id: 'test', title: 'Test event', shortTitle: 'Test', timestamp: new Date(start + 24 * 60 * 60 * 1000).toISOString(), dateLabel: 'Jan 2', category: 'Campaign', summary: '', mechanism: '', expectedDirection: 'Ambiguous', interpretation: '', competingExplanation: '', confidence: 'High', attributionShare: 100,
   source: { label: 'Source', publisher: 'Publisher', url: 'https://example.com', publishedAt: '2024-01-02T00:00:00Z' },
 }
 
@@ -39,5 +39,17 @@ assert(halfImpact.attributedImpact > 0, 'partial attribution has a positive effe
 assert(halfImpact.attributedImpact < 0.1, 'partial attribution stays below the observed movement')
 assert(halfImpact.counterfactualProbability > 0.4, 'partial counterfactual stays above the starting price')
 assert(halfImpact.counterfactualProbability < 0.5, 'partial counterfactual stays below the stabilized price')
+
+equal(moveRankedItem(['a', 'b', 'c'], 'c', 0).join(','), 'c,a,b', 'moves a ranked item upward')
+equal(moveRankedItem(['a', 'b', 'c'], 'a', 2).join(','), 'b,c,a', 'moves a ranked item downward')
+
+const ranked = rankByObservedImpact([
+  { ...fullImpact, id: 'small', observedMovement: 0.02 },
+  { ...fullImpact, id: 'large-negative', observedMovement: -0.08 },
+  { ...fullImpact, id: 'medium', observedMovement: 0.04 },
+])
+equal(ranked.map((item) => item.id).join(','), 'large-negative,medium,small', 'ranks market moves by absolute impact')
+equal(scoreImpactRanking(['a', 'b', 'c', 'd'], ['a', 'b', 'c', 'd']), 100, 'scores an exact ranking at 100')
+equal(scoreImpactRanking(['d', 'c', 'b', 'a'], ['a', 'b', 'c', 'd']), 0, 'scores a reversed even-length ranking at zero')
 
 console.log('event study tests passed')

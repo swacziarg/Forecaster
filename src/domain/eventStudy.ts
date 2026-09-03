@@ -4,6 +4,7 @@ export type MarketSeriesPoint = {
 }
 
 export type ImpactConfidence = 'High' | 'Medium' | 'Low'
+export type ExpectedDirection = 'Helps Trump' | 'Hurts Trump' | 'Ambiguous'
 
 export type ImpactSource = {
   label: string
@@ -18,8 +19,10 @@ export type ImpactEventDefinition = {
   shortTitle: string
   timestamp: string
   dateLabel: string
-  category: 'Debate' | 'Campaign' | 'Candidate change' | 'Polling'
+  category: 'Debate' | 'Campaign' | 'Candidate change' | 'Polling' | 'Legal' | 'Media'
   summary: string
+  mechanism: string
+  expectedDirection: ExpectedDirection
   interpretation: string
   competingExplanation: string
   confidence: ImpactConfidence
@@ -128,3 +131,24 @@ export const calculateEventImpacts = (points: MarketSeriesPoint[], events: Impac
 
 export const largestObservedImpact = (impacts: EventImpact[]) => impacts.reduce((largest, impact) => Math.abs(impact.observedMovement) > Math.abs(largest.observedMovement) ? impact : largest)
 
+export const rankByObservedImpact = (impacts: EventImpact[]) => [...impacts]
+  .sort((a, b) => Math.abs(b.observedMovement) - Math.abs(a.observedMovement))
+
+export const moveRankedItem = (order: string[], id: string, destinationIndex: number) => {
+  const sourceIndex = order.indexOf(id)
+  if (sourceIndex < 0) return order
+  const next = [...order]
+  next.splice(sourceIndex, 1)
+  next.splice(clamp(destinationIndex, 0, next.length), 0, id)
+  return next
+}
+
+export const scoreImpactRanking = (userOrder: string[], marketOrder: string[]) => {
+  if (userOrder.length !== marketOrder.length || new Set(userOrder).size !== userOrder.length || marketOrder.some((id) => !userOrder.includes(id))) {
+    throw new Error('Impact rankings must contain the same unique events.')
+  }
+  const marketRanks = new Map(marketOrder.map((id, index) => [id, index]))
+  const distance = userOrder.reduce((total, id, index) => total + Math.abs(index - marketRanks.get(id)!), 0)
+  const maximumDistance = Math.floor(userOrder.length * userOrder.length / 2)
+  return Math.round((1 - distance / maximumDistance) * 100)
+}
