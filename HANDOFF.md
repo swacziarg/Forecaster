@@ -1,27 +1,32 @@
-# Forecast handoff
+# eventlens handoff
 
-This repository is now a single-market forecasting replay for **Will the Seattle win the 2026 Pro Football Championship?** It is Kalshi-only: live public market metadata and historical candlesticks are fetched through the Vite proxy, and the app has no alternate, fixture, mock, or synthetic data path.
+This repository contains a single 2024 election event-attribution study. It
+replaces the previous Seattle championship replay and has no Kalshi or live API
+runtime dependency.
 
-## Current flow
+## Product flow
 
-- `src/App.tsx`: loading → Seattle checkpoint play → settlement results.
-- `src/data/kalshi.ts`: Kalshi API adapter, historical-market lookup, and candlestick normalization.
-- `src/data/kalshiScenarios.ts`: one-market qualification plus the Seattle world briefings and five event-specific factors.
-- `src/domain/engine.ts`: four-checkpoint model, exact 100-point allocation, locked decisions, and Brier/log-loss scoring.
+1. Orient on the full Trump probability series and resolved market metadata.
+2. Select one of six annotated campaign events from the chart or event list.
+3. Compare the 12-hour pre-event median with immediate and stabilized windows.
+4. Adjust the expert-attribution share to separate the named event from
+   concurrent or unexplained information.
+5. Read the resulting attributed effect and counterfactual probability, then
+   inspect the historical source and competing explanation.
 
-## Verified market
+## Important constraints
 
-- Ticker: `KXSB-26-SEA`
-- Result: YES
-- Settled: February 9, 2026
-- Traded volume: 85,214,022 contracts
-
-Runtime validation rejects the market if Kalshi does not report a past close, a past settlement, a YES/NO result, at least 500,000 contracts, or enough history for four distinct checkpoints.
-
-## Seattle factor model
-
-The five factors are quarterback health, defensive efficiency, playoff path, major roster shock, and matchup adaptability. The interface separates factors known at the checkpoint from factors still unresolved, while Kalshi is presented as historical context for what traders believed. Each factor includes an event-specific explanation, one-line market observation, direction prompt, argument for and against YES, consequence, and the existing numeric signal used by the forecast engine. The roster-shock factor is explicitly marked as a scenario hypothesis; it never claims an injury or transaction without verified input.
+- The event-study output describes prediction-market repricing, not proven
+  causality.
+- Event windows may overlap and are not additive.
+- Expert attribution defaults are editorial assumptions and remain visible and
+  adjustable in the interface.
+- The local dataset is the reproducible source of truth. Its provenance and
+  license are documented in `public/data/README.md`.
 
 ## Verification
 
-`npm run build` and `npm test` should pass before handoff. The live smoke path should load the Seattle market, lock 60d/45d/30d/15d, reveal the settled YES result, and show the score and event context.
+`npm test` covers the market-series parser and attribution math. `npm run build`
+performs the TypeScript and production-bundle checks. The UI has been verified
+at 1440x900 and 1366x768, including event selection, counterfactual updates,
+and the methodology drawer.

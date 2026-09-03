@@ -1,6 +1,8 @@
-# Forecast
+# eventlens
 
-A focused historical reasoning exercise built around one resolved Kalshi market: **Will the Seattle win the 2026 Pro Football Championship?** The app replays four pre-settlement snapshots, shows what the market thought at each date, asks you to weigh five Seattle-specific factors, and reveals the verified result and how closely your final weights matched the model.
+An interactive event study of the 2024 U.S. presidential election. The app
+uses 3,791 hourly observations from Polymarket's Trump winner contract to show
+how the market repriced around six major campaign events.
 
 ## Run
 
@@ -9,32 +11,48 @@ npm install
 npm run dev
 ```
 
-The Vite app uses `/api/kalshi` as a local proxy to Kalshi’s public trade API. No credentials, alternate provider, mock data, or synthetic fallback is used.
+The application runs entirely from the versioned dataset in
+`public/data/polymarket-2024-hourly.csv`. It does not require credentials or a
+live market API.
 
-## The market
+## How impact is measured
 
-The app fails loudly unless the single configured market loads from Kalshi with:
+For each event, the study compares three robust price windows:
 
-- a past close and settlement timestamp;
-- a verified YES/NO result;
-- at least 500,000 traded contracts; and
-- enough daily candlesticks for distinct 60d, 45d, 30d, and 15d checkpoints.
+- **Before:** median Trump probability during the 12 hours before the event.
+- **Immediate:** median during the first six hours after the event.
+- **Stabilized:** median from 18 to 36 hours after the event.
+- **Observed movement:** stabilized probability minus the pre-event median.
 
-The configured historical ticker is `KXSB-26-SEA`. During development it was verified as YES, settled February 9, 2026, with 85,214,022 traded contracts.
+The expert-attribution control estimates how much of the observed repricing
+belongs to the named event. It applies that share to the change in log odds,
+then reverses it to produce a counterfactual stabilized probability. The
+control is deliberately explicit because nearby news, anticipation, and
+liquidity can also move a prediction market.
 
-## How the replay works
+These are market-implied effects, not causal estimates. Event windows can
+overlap and their effects should not be added together.
 
-- The question is always the Seattle championship market; there is no market board or second scenario.
-- Each checkpoint shows the date, what was known then, the historical market YES price, the argument for and against YES, why the moment mattered, and source links.
-- Five factors are specific to the Seattle title path: quarterback health, defensive efficiency, playoff path, major roster shock, and matchup adaptability. The first three are marked as known then; the last two as unresolved then.
-- Each factor has a short market-context observation. It describes what traders believed, not independent evidence that the factor occurred.
-- You allocate exactly 100 points, choose each factor’s effect on YES, lock four decisions, then see the actual settlement, trajectory, Brier score, and model-match score.
+## Data and sources
+
+The hourly series is the MIT-licensed `polymarket2024` dataset from Sebastian
+Stockl's `eventclock` package. Its upstream reconstruction uses Polymarket's
+public CLOB price-history endpoint at 60-minute fidelity. Full provenance,
+checksums, and license text are in `public/data/README.md`.
+
+Each curated event also links to a dated historical source in
+`src/data/election2024.ts`. The market metadata points to Polymarket's resolved
+2024 presidential election contract.
 
 ## Architecture
 
-- `src/data/kalshi.ts` is the Kalshi-only adapter and historical candlestick normalizer.
-- `src/data/kalshiScenarios.ts` qualifies the Seattle market and builds its checkpoint briefings, factor narratives, and market history.
-- `src/domain/engine.ts` contains the probability model, locked-decision snapshots, and scoring logic.
-- `src/App.tsx` owns the single-market flow from loading through results.
+- `src/data/election2024.ts` defines the market, event timestamps, expert
+  priors, interpretations, competing explanations, and source links.
+- `src/domain/eventStudy.ts` parses the series and computes robust windows,
+  observed moves, attributed effects, and counterfactual probabilities.
+- `src/App.tsx` renders the campaign chart, event selector, attribution panel,
+  and methodology drawer.
+- `src/domain/eventStudy.test.ts` covers parsing, summaries, event windows, and
+  full and partial attribution.
 
-Kalshi is shown as the historical baseline for comparison. The existing forecast engine still uses the selected contract’s historical prices and the user’s factor weights/directions to produce each locked probability; the final model-match score compares the user’s weights with the reference model.
+Run `npm test` and `npm run build` before handoff.
