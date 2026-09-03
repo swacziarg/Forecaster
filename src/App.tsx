@@ -1,169 +1,78 @@
-import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
-import { ArrowDown, ArrowRight, ArrowUp, Check, ChevronDown, ExternalLink, Info, LockKeyhole, Minus, RotateCcw, X } from 'lucide-react'
-import { calculateForecast, modelFromScenario, rebalanceImportance, scoreForecastPath, setDirection, totalImportance } from './domain/engine.ts'
-import type { CheckpointId, Direction, FactorDefinition, ForecastDecision, ForecastResult, ForecastRun, HumanMentalModel, Scenario } from './domain/types.ts'
-import { loadSeattleScenario } from './data/kalshiScenarios.ts'
+import { useEffect, useMemo, useState, type ReactNode } from 'react'
+import { ArrowRight, BarChart3, BookOpen, CalendarDays, ChevronDown, Database, ExternalLink, Info, RotateCcw, SlidersHorizontal, X } from 'lucide-react'
+import { electionEvents, electionMarket, loadElectionMarketSeries } from './data/election2024.ts'
+import { calculateEventImpacts, largestObservedImpact, summarizeCampaign, type EventImpact, type MarketSeriesPoint } from './domain/eventStudy.ts'
 
-type View = 'play' | 'results'
-
-const directionLabels: Record<Direction, string> = { more_likely: 'YES', neutral: 'Neutral', less_likely: 'NO' }
-const factorAvailability: Record<string, 'known' | 'unresolved'> = {
-  'quarterback-form': 'known',
-  'defensive-efficiency': 'known',
-  'playoff-path': 'known',
-  'roster-shock': 'unresolved',
-  'matchup-adaptability': 'unresolved',
-}
-const formatProbability = (value: number) => `${Math.round(value * 100)}%`
-const formatDelta = (value: number) => `${value >= 0 ? '+' : ''}${Math.round(value * 100)} pts`
-const formatScore = (value: number) => value.toFixed(2)
-const formatContracts = (value: number) => `${Math.round(value).toLocaleString()} contracts`
-
-type SourceSelection = { label: string; url: string; date: string; claim: string }
-type SnapshotFact = { label: string; value: string; detail: string }
-
-const snapshotFacts: Record<CheckpointId, SnapshotFact[]> = {
-  '60d': [
-    { label: 'Record', value: '10–3', detail: 'Through Week 14' },
-    { label: 'Division', value: 'NFC West race', detail: 'Contending for first' },
-    { label: 'Playoff position', value: 'Firmly in', detail: 'Postseason berth in reach' },
-    { label: 'Recent form', value: '3 straight wins', detail: 'Momentum entering Week 15' },
-    { label: 'Team strength', value: '+161', detail: 'League-best point differential' },
-    { label: 'Defense', value: '2 games', detail: 'No touchdowns allowed' },
-  ],
-  '45d': [
-    { label: 'Record', value: '12–3', detail: 'Three games remaining' },
-    { label: 'Division', value: '1st in NFC West', detail: 'After beating the Rams' },
-    { label: 'Conference', value: 'No. 1 seed', detail: 'Bye and home field in reach' },
-    { label: 'Playoff position', value: 'Berth clinched', detail: 'Postseason guaranteed' },
-    { label: 'Recent result', value: '38–37 OT', detail: 'Comeback win vs. Rams' },
-  ],
-  '30d': [
-    { label: 'Record', value: '14–3', detail: 'Best season in team history' },
-    { label: 'Division', value: 'NFC West champs', detail: 'Division secured' },
-    { label: 'Conference', value: 'No. 1 seed', detail: 'Home field secured' },
-    { label: 'Playoff path', value: 'First-round bye', detail: 'Three wins required' },
-    { label: 'Team strength', value: 'League best', detail: 'Point differential' },
-  ],
-  '15d': [
-    { label: 'Playoff stage', value: 'NFC title game', detail: 'One win from Super Bowl' },
-    { label: 'Last result', value: '41–6', detail: 'Divisional win vs. 49ers' },
-    { label: 'Next opponent', value: '12–5 Rams', detail: 'Division rival at home' },
-    { label: 'Recent defense', value: '0 touchdowns', detail: 'Allowed in divisional round' },
-    { label: 'Wins needed', value: '2', detail: 'To settle the market YES' },
-  ],
-}
-
-const factorKnownThen: Record<string, Record<CheckpointId, string>> = {
-  'quarterback-form': { '60d': 'Starter healthy and available through Week 14.', '45d': 'Quarterback led a 16-point fourth-quarter comeback.', '30d': 'Continuity held through a 14–3 regular season.', '15d': 'Starter remained available entering the NFC title game.' },
-  'defensive-efficiency': { '60d': 'Two consecutive games without allowing a touchdown.', '45d': 'Defense supported a 12–3 record and top conference position.', '30d': 'Seattle finished with the league’s best point differential.', '15d': 'Three takeaways and no touchdowns allowed in a 41–6 win.' },
-  'playoff-path': { '60d': 'Division and conference seeding were still unresolved.', '45d': 'Seattle held the No. 1 seed with a bye within reach.', '30d': 'The No. 1 seed, a bye, and home field were secured.', '15d': 'Seattle needed two wins, beginning with the Rams at home.' },
-  'roster-shock': { '60d': 'No verified roster-changing event is represented by market volume.', '45d': 'No verified roster-changing event is represented by market volume.', '30d': 'No verified roster-changing event is represented by market volume.', '15d': 'No verified roster-changing event is represented by market volume.' },
-  'matchup-adaptability': { '60d': 'Seattle had shown strength across several regular-season game scripts.', '45d': 'A one-point overtime win showed both resilience and thin margins.', '30d': 'The bracket was not yet set despite the secured top seed.', '15d': 'The Rams had nearly beaten Seattle in the December meeting.' },
-}
-
-const startingModelFromScenario = (scenario: Scenario): HumanMentalModel => {
-  const factorIds = scenario.factors.map((factor) => factor.id)
-  const base = Math.floor(100 / Math.max(factorIds.length, 1))
-  const remainder = 100 - base * factorIds.length
-  const beliefs = Object.fromEntries(factorIds.map((factorId, index) => [factorId, {
-    factorId,
-    importance: base + (index < remainder ? 1 : 0),
-    direction: 'neutral' as Direction,
-  }]))
-  return { beliefs, totalImportance: totalImportance({ beliefs, totalImportance: 0 }) }
-}
-
-const modelMatchScore = (scenario: Scenario, model: HumanMentalModel) => {
-  const referenceModel = modelFromScenario(scenario)
-  const totalDifference = scenario.factors.reduce((sum, factor) => sum + Math.abs((model.beliefs[factor.id]?.importance ?? 0) - (referenceModel.beliefs[factor.id]?.importance ?? 0)), 0)
-  return Math.max(0, Math.round(100 - totalDifference / 2))
-}
+const formatProbability = (value: number) => `${(value * 100).toFixed(value * 100 % 1 === 0 ? 0 : 1)}%`
+const formatImpact = (value: number) => `${value >= 0 ? '+' : '−'}${Math.abs(value * 100).toFixed(1)} pts`
+const formatVolume = (value: number) => `$${(value / 1_000_000_000).toFixed(2)}B`
 
 function AppFrame({ children }: { children: ReactNode }) {
-  return <div className="app-shell"><header className="topbar"><span className="brand"><span className="brand-symbol" aria-hidden="true"><span /><span /><span /></span><span>forecast<span className="brand-dot">.</span></span></span><span className="topbar-note">Historical replay</span></header><main>{children}</main><footer className="site-footer"><span>Kalshi provides the historical market context. Source links open the underlying record.</span></footer></div>
+  return <div className="app-shell"><header className="topbar"><a className="brand" href="#top"><span className="brand-symbol" aria-hidden="true"><span /><span /><span /></span><span>eventlens<span className="brand-dot">.</span></span></a><span className="topbar-note">Market movement, explained</span></header><main id="top">{children}</main></div>
 }
 
-function LoadingView() { return <div className="page state-page"><div className="state-card"><span className="state-kicker"><i /> Historical replay</span><h1>Loading Seattle’s resolved market.</h1><p>Checking the settled result and the market’s price history.</p><div className="state-loader" /></div></div> }
-function ErrorView({ message, onRetry }: { message: string; onRetry: () => void }) { return <div className="page state-page"><div className="state-card state-card-error"><span className="eyebrow eyebrow-accent"><Info size={15} /> Kalshi connection issue</span><h1>Seattle’s market could not load.</h1><p>{message}</p><button className="primary-button" onClick={onRetry}><RotateCcw size={16} /> Try again</button><small>Nothing is substituted when live data is unavailable.</small></div></div> }
-
-function CheckpointNav({ scenario, activeIndex, decisions, onSelect }: { scenario: Scenario; activeIndex: number; decisions: ForecastDecision[]; onSelect: (index: number) => void }) {
-  const active = scenario.checkpoints[activeIndex]
-  return <section className="checkpoint-panel" aria-label="Historical forecast checkpoints"><div className="checkpoint-primary"><span className="replay-badge">Historical replay</span><strong>{active.date} — {active.label}</strong><small>You are forecasting with information available through {active.date}.</small></div><ol className="checkpoint-track">{scenario.checkpoints.map((checkpoint, index) => { const locked = decisions.some((decision) => decision.checkpointId === checkpoint.id); const available = index <= decisions.length; return <li key={checkpoint.id}><button className={`checkpoint ${activeIndex === index ? 'is-active' : ''} ${locked ? 'is-locked' : ''}`} disabled={!available} onClick={() => onSelect(index)} aria-current={activeIndex === index ? 'step' : undefined} title={checkpoint.briefing.status}><span className="checkpoint-dot">{locked ? <Check size={13} /> : index + 1}</span><span><strong>{checkpoint.shortLabel}</strong><small>{Math.round(checkpoint.marketProbability)}%</small></span></button></li> })}</ol></section>
+function LoadingView() {
+  return <div className="state-page"><div className="state-card"><span className="state-kicker"><i /> 2024 election study</span><h1>Loading the campaign market.</h1><p>Preparing 3,791 hourly observations and six event windows.</p><div className="state-loader" /></div></div>
 }
 
-function SourceButton({ source, checkpoint, claim, onOpen }: { source: { label: string; url: string }; checkpoint: Scenario['checkpoints'][number]; claim: string; onOpen: (source: SourceSelection) => void }) {
-  return <button className="source-button" onClick={() => onOpen({ ...source, date: checkpoint.date, claim })}>{source.label}<ArrowRight size={13} /></button>
+function ErrorView({ message }: { message: string }) {
+  return <div className="state-page"><div className="state-card state-card-error"><Info size={18} /><h1>The election study could not load.</h1><p>{message}</p><button className="primary-button" onClick={() => window.location.reload()}><RotateCcw size={16} /> Retry</button></div></div>
 }
 
-function WorldBriefing({ checkpoint, onSource }: { checkpoint: Scenario['checkpoints'][number]; onSource: (source: SourceSelection) => void }) {
-  const { briefing } = checkpoint
-  const [expanded, setExpanded] = useState(false)
-  return <section className={`world-briefing ${expanded ? 'is-expanded' : ''}`} aria-labelledby={`world-briefing-${checkpoint.id}`}><div className="briefing-heading"><div><span className="evidence-label">Sourced historical evidence</span><h2 id={`world-briefing-${checkpoint.id}`}>What was known on {checkpoint.date}</h2></div><button className="context-toggle" onClick={() => setExpanded((value) => !value)} aria-expanded={expanded}>{expanded ? 'Close full context' : 'See full context'}<ChevronDown size={16} /></button></div><p className="briefing-status">{briefing.status}</p><div className="fact-grid">{snapshotFacts[checkpoint.id].map((fact) => <article className="fact-tile" key={fact.label}><span>{fact.label}</span><strong>{fact.value}</strong><small>{fact.detail}</small></article>)}</div>{expanded && <div className="full-context"><div className="context-column"><span className="context-title">Standings & playoff path</span><p>{briefing.status}</p><p>{briefing.stakes}</p></div><div className="context-column"><span className="context-title">Schedule & recent performance</span><ul>{briefing.developments.map((item) => <li key={item}>{item}</li>)}</ul></div><div className="context-column"><span className="context-title">Availability & rankings</span><p>No later injury or availability information is included. Rankings and team-strength claims are limited to the record dated below.</p><span className="as-known">As known on {checkpoint.date}</span></div><div className="context-sources"><span className="context-title">Historical sources</span>{briefing.sources.map((source) => <SourceButton key={source.url} source={source} checkpoint={checkpoint} claim={briefing.status} onOpen={onSource} />)}</div></div>}</section>
+function CampaignChart({ points, impacts, selectedId, onSelect }: { points: MarketSeriesPoint[]; impacts: EventImpact[]; selectedId: string; onSelect: (id: string) => void }) {
+  const width = 1080
+  const height = 300
+  const margin = { left: 44, right: 18, top: 22, bottom: 42 }
+  const minTime = Date.parse(points[0].timestamp)
+  const maxTime = Date.parse(points[points.length - 1].timestamp)
+  const minProbability = 0.4
+  const maxProbability = 0.75
+  const x = (timestamp: string) => margin.left + (Date.parse(timestamp) - minTime) / (maxTime - minTime) * (width - margin.left - margin.right)
+  const y = (probability: number) => margin.top + (maxProbability - probability) / (maxProbability - minProbability) * (height - margin.top - margin.bottom)
+  const sampled = points.filter((_, index) => index % 3 === 0 || index === points.length - 1)
+  const path = sampled.map((point, index) => `${index === 0 ? 'M' : 'L'}${x(point.timestamp).toFixed(1)},${y(point.probability).toFixed(1)}`).join(' ')
+  const nearestPoint = (timestamp: string) => points.reduce((nearest, point) => Math.abs(Date.parse(point.timestamp) - Date.parse(timestamp)) < Math.abs(Date.parse(nearest.timestamp) - Date.parse(timestamp)) ? point : nearest)
+  const monthTicks = ['2024-06-01T00:00:00Z', '2024-07-01T00:00:00Z', '2024-08-01T00:00:00Z', '2024-09-01T00:00:00Z', '2024-10-01T00:00:00Z', '2024-11-01T00:00:00Z']
+
+  return <div className="chart-wrap"><svg className="campaign-chart" viewBox={`0 0 ${width} ${height}`} role="img" aria-label="Trump election probability from June through November 2024 with six annotated campaign events"><g className="chart-grid">{[0.4, 0.5, 0.6, 0.7].map((tick) => <g key={tick}><line x1={margin.left} x2={width - margin.right} y1={y(tick)} y2={y(tick)} /><text x="0" y={y(tick) + 4}>{formatProbability(tick)}</text></g>)}</g><path className="price-area" d={`${path} L${x(points[points.length - 1].timestamp)},${y(minProbability)} L${x(points[0].timestamp)},${y(minProbability)} Z`} /><path className="price-line" d={path} />{monthTicks.map((tick) => <text className="month-label" key={tick} x={x(tick)} y={height - 11} textAnchor="middle">{new Date(tick).toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' })}</text>)}{impacts.map((impact, index) => { const point = nearestPoint(impact.timestamp); const selected = impact.id === selectedId; return <g className={`event-marker ${selected ? 'is-selected' : ''}`} key={impact.id} role="button" tabIndex={0} aria-label={`${impact.title}, ${formatImpact(impact.observedMovement)}`} onClick={() => onSelect(impact.id)} onKeyDown={(event) => { if (event.key === 'Enter' || event.key === ' ') onSelect(impact.id) }}><line x1={x(impact.timestamp)} x2={x(impact.timestamp)} y1={margin.top} y2={height - margin.bottom} /><circle cx={x(impact.timestamp)} cy={y(point.probability)} r={selected ? 9 : 7} /><text x={x(impact.timestamp)} y={y(point.probability) + 4} textAnchor="middle">{index + 1}</text></g>})}</svg></div>
 }
 
-function AllocationSummary({ scenario, model }: { scenario: Scenario; model: HumanMentalModel }) {
-  const total = Math.round(totalImportance(model))
-  return <div className="allocation-summary"><div className="allocation-heading"><span className="eyebrow">Your 100 points</span><strong>{total}<small> / 100</small></strong></div><div className="allocation-bar" aria-label="Point allocation by factor">{scenario.factors.map((factor) => <span key={factor.id} style={{ width: `${model.beliefs[factor.id]?.importance ?? 0}%` }} title={`${factor.label}: ${model.beliefs[factor.id]?.importance ?? 0} points`} />)}</div><div className="allocation-legend">{scenario.factors.map((factor) => <span key={factor.id}><b>{model.beliefs[factor.id]?.importance ?? 0}</b> {factor.shortLabel}</span>)}</div></div>
+function MovementCell({ label, value, accent }: { label: string; value: number; accent?: boolean }) {
+  return <div className={accent ? 'movement-cell is-accent' : 'movement-cell'}><span>{label}</span><strong>{formatProbability(value)}</strong></div>
 }
 
-function FactorEditor({ factor, observation, importance, direction, disabled, onImportanceChange, onDirectionChange }: { factor: FactorDefinition; observation: FactorDefinition['observations'][CheckpointId]; importance: number; direction: Direction; disabled: boolean; onImportanceChange: (value: number) => void; onDirectionChange: (direction: Direction) => void }) {
-  const inputId = `importance-${factor.id}`
-  const directionIcon = (option: Direction) => option === 'more_likely' ? <ArrowUp size={14} /> : option === 'less_likely' ? <ArrowDown size={14} /> : <Minus size={14} />
-  const availability = factorAvailability[factor.id] ?? 'unresolved'
-  const marketReading = observation.reading.replace('Kalshi proxy:', 'Market view:')
-  return <article className={`factor-card ${disabled ? 'is-disabled' : ''}`}><div className="factor-card-heading"><div><span className={`factor-kind factor-kind-${availability}`}>{availability === 'known' ? 'Known then' : 'Unresolved then'}</span><h3>{factor.label}</h3></div><label className="points-input" htmlFor={inputId}><span>points</span><input id={inputId} type="number" min="0" max="100" step="1" value={importance} disabled={disabled} onChange={(event) => onImportanceChange(Number(event.target.value))} aria-label={`${factor.label} importance points`} /></label></div><p className="factor-description">{factor.description}</p><p className="factor-observation"><span>Market context</span>{marketReading}</p><input className="importance-range" type="range" min="0" max="100" step="1" value={importance} disabled={disabled} onChange={(event) => onImportanceChange(Number(event.target.value))} aria-label={`${factor.label} relative importance`} /><div className="direction-control"><span className="control-label">Effect on YES</span><div className="direction-buttons" role="group" aria-label={`${factor.label} effect on YES`}>{(['more_likely', 'neutral', 'less_likely'] as Direction[]).map((option) => <button key={option} className={`direction-button ${direction === option ? `selected-${option}` : ''}`} disabled={disabled} onClick={() => onDirectionChange(option)} aria-pressed={direction === option}>{directionIcon(option)}<span>{directionLabels[option]}</span></button>)}</div></div><p className="factor-why"><strong>Why it matters</strong>{factor.narrative.consequence}</p><details className="factor-details"><summary>Arguments & prompt</summary><p className="factor-context">{factor.narrative.context}</p><div className="factor-argument-grid"><p><strong>YES argument</strong>{factor.narrative.yesCase}</p><p><strong>NO argument</strong>{factor.narrative.noCase}</p></div><p className="factor-cue"><strong>Your prompt</strong>{factor.cue}</p></details></article>
+function ImpactDetail({ impact, onShareChange }: { impact: EventImpact; onShareChange: (value: number) => void }) {
+  const positive = impact.observedMovement >= 0
+  return <aside className="impact-detail" aria-label="Selected event analysis"><div className="detail-kicker"><span>{impact.category}</span><time dateTime={impact.timestamp}>{impact.dateLabel}, 2024</time></div><h2>{impact.title}</h2><p className="detail-summary">{impact.summary}</p><div className="movement-flow"><MovementCell label="Before" value={impact.beforeProbability} /><ArrowRight size={16} /><MovementCell label="Immediate" value={impact.immediateProbability} /><ArrowRight size={16} /><MovementCell label="Stabilized" value={impact.stabilizedProbability} accent /></div><div className="observed-impact"><div><span>Observed market movement</span><small>Stabilized minus pre-event median</small></div><strong className={positive ? 'positive' : 'negative'}>{formatImpact(impact.observedMovement)}</strong></div><div className="attribution-control"><div className="attribution-heading"><label htmlFor="attribution-share">Expert attribution to this event</label><strong>{impact.attributionShare}%</strong></div><input id="attribution-share" type="range" min="0" max="100" step="5" value={impact.attributionShare} onChange={(event) => onShareChange(Number(event.target.value))} /><div className="range-labels"><span>None</span><span>All of the move</span></div></div><div className="counterfactual-box"><span>Estimated effect attributable to event</span><strong className={impact.attributedImpact >= 0 ? 'positive' : 'negative'}>{formatImpact(impact.attributedImpact)}</strong><p>Without this event, the stabilized estimate is <b>{formatProbability(impact.counterfactualProbability)}</b>, instead of {formatProbability(impact.stabilizedProbability)}.</p></div><div className="confidence-row"><span className={`confidence-dot confidence-${impact.confidence.toLowerCase()}`} /><div><strong>{impact.confidence} confidence</strong><small>{impact.samples.before + impact.samples.immediate + impact.samples.stabilized} hourly observations across the three windows</small></div></div><details className="analysis-notes" open><summary>Expert interpretation <ChevronDown size={16} /></summary><p>{impact.interpretation}</p><strong>Competing explanation</strong><p>{impact.competingExplanation}</p></details><a className="source-link" href={impact.source.url} target="_blank" rel="noreferrer"><span><small>{impact.source.publisher}</small>{impact.source.label}</span><ExternalLink size={16} /></a><p className="causality-note"><Info size={14} />This estimates market-implied impact, not proven causality.</p></aside>
 }
 
-function ForecastPanel({ scenario, checkpointId, forecast, locked, complete, onLock, onReveal }: { scenario: Scenario; checkpointId: CheckpointId; forecast: ForecastResult; locked: boolean; complete: boolean; onLock: () => void; onReveal: () => void }) {
-  const checkpointLabel = scenario.checkpoints.find((item) => item.id === checkpointId)?.shortLabel
-  return <aside className="forecast-panel" aria-label="Your forecast"><div className="forecast-heading"><div><span className="eyebrow">Your forecast</span><h2>{locked ? 'Locked' : 'Make your call'}</h2></div><LockKeyhole size={20} /></div><p className="forecast-context">Market baseline at this checkpoint: <strong>{formatProbability(forecast.marketProbability)} YES.</strong></p><div className="forecast-big"><strong>{formatProbability(forecast.userProbability)}</strong><span>Your probability</span></div><div className="forecast-comparison"><div><span>You</span><strong>{formatProbability(forecast.userProbability)}</strong></div><div><span>Market</span><strong>{formatProbability(forecast.marketProbability)}</strong></div><div><span>Difference</span><strong className={forecast.probabilityDelta >= 0 ? 'positive-text' : 'negative-text'}>{formatDelta(forecast.probabilityDelta)}</strong></div></div><div className="probability-meter"><div className="meter-track"><span className="meter-fill" style={{ width: `${forecast.userProbability * 100}%` }} /><span className="meter-market" style={{ left: `${forecast.marketProbability * 100}%` }} /><span className="meter-you" style={{ left: `${forecast.userProbability * 100}%` }} /></div><div className="meter-scale"><span>0%</span><span>50%</span><span>100%</span></div></div><div className="impact-section"><span className="eyebrow">How your weights move it</span>{forecast.contributions.map((item) => <div className="impact-row" key={item.factorId}><span>{item.label}</span><strong className={item.probabilityDelta >= 0 ? 'positive-text' : 'negative-text'}>{formatDelta(item.probabilityDelta)}</strong></div>)}</div><div className="forecast-action-area">{!locked && !complete && <button className="lock-button" onClick={onLock}><LockKeyhole size={18} /> Lock {checkpointLabel} forecast</button>}{locked && !complete && <div className="locked-message"><Check size={17} /><span><strong>{checkpointLabel} is locked.</strong><small>Next: open the following checkpoint.</small></span></div>}{locked && complete && <><div className="locked-message"><Check size={17} /><span><strong>All four forecasts are locked.</strong><small>The settled result is ready.</small></span></div><button className="lock-button" onClick={onReveal}>Reveal result <ArrowRight size={17} /></button></>}</div></aside>
+function EventList({ impacts, selectedId, onSelect }: { impacts: EventImpact[]; selectedId: string; onSelect: (id: string) => void }) {
+  return <section className="event-list-section" aria-labelledby="events-title"><div className="section-heading"><div><span className="eyebrow">Six measured windows</span><h2 id="events-title">The campaign’s defining events</h2></div><p>Ranked chronologically. Impact is the stabilized probability minus the 12-hour pre-event median.</p></div><div className="event-list">{impacts.map((impact, index) => <button key={impact.id} className={`event-row ${impact.id === selectedId ? 'is-selected' : ''}`} onClick={() => onSelect(impact.id)}><span className="event-number">{String(index + 1).padStart(2, '0')}</span><span className="event-row-title"><small>{impact.dateLabel} · {impact.category}</small><strong>{impact.shortTitle}</strong></span><span className="event-price-path">{formatProbability(impact.beforeProbability)} <ArrowRight size={13} /> {formatProbability(impact.stabilizedProbability)}</span><span className={impact.observedMovement >= 0 ? 'event-delta positive' : 'event-delta negative'}>{formatImpact(impact.observedMovement)}</span><span className="event-confidence">{impact.confidence}</span><ArrowRight className="event-arrow" size={16} /></button>)}</div></section>
 }
 
-function TrajectoryChart({ scenario, decisions }: { scenario: Scenario; decisions: ForecastDecision[] }) {
-  const width = 760; const height = 270; const left = 42; const right = 20; const top = 18; const bottom = 38; const plotWidth = width - left - right; const plotHeight = height - top - bottom
-  const xFor = (index: number) => left + index / Math.max(scenario.marketHistory.length - 1, 1) * plotWidth
-  const yFor = (probability: number) => top + (100 - probability) / 100 * plotHeight
-  const marketPoints = scenario.marketHistory.map((point, index) => `${xFor(index)},${yFor(point.probability)}`).join(' ')
-  const userPoints = decisions.map((decision, index) => `${xFor(index)},${yFor(decision.userProbability * 100)}`).join(' ')
-  const checkpointPoints = scenario.marketHistory.slice(0, scenario.checkpoints.length).map((point, index) => ({ x: xFor(index), y: yFor(point.probability), label: scenario.checkpoints[index]?.shortLabel ?? point.label }))
-  const userCheckpointPoints = decisions.map((decision, index) => ({ x: xFor(index), y: yFor(decision.userProbability * 100), label: decision.checkpointId }))
-  const resolutionIndex = scenario.marketHistory.findIndex((point) => point.resolution)
-  const resolutionPoint = resolutionIndex >= 0 ? { x: xFor(resolutionIndex), y: yFor(scenario.marketHistory[resolutionIndex].probability) } : null
-  const xLabels = scenario.marketHistory.map((point, index) => ({ point, index })).filter(({ index, point }) => index < scenario.checkpoints.length || index === scenario.marketHistory.length - 1 || point.resolution)
-  return <div className="trajectory-wrap"><div className="chart-legend"><span><i className="chart-line market-line" /> Market</span><span><i className="chart-line user-line" /> You</span>{resolutionPoint && <span className="chart-resolution">● Result</span>}</div><svg className="trajectory-chart" viewBox={`0 0 ${width} ${height}`} role="img" aria-label="Your forecast compared with the market probability across four checkpoints"><g className="chart-grid">{[0, 25, 50, 75, 100].map((value) => <g key={value}><line x1={left} x2={width - right} y1={yFor(value)} y2={yFor(value)} /><text x="0" y={yFor(value) + 4}>{value}%</text></g>)}</g>{resolutionPoint && <line className="resolution-line" x1={resolutionPoint.x} x2={resolutionPoint.x} y1={top} y2={height - bottom} />}<polyline className="market-polyline" points={marketPoints} /><polyline className="user-polyline" points={userPoints} />{checkpointPoints.map((point) => <circle key={`m-${point.label}`} className="market-point" cx={point.x} cy={point.y} r="4" />)}{userCheckpointPoints.map((point) => <circle key={`u-${point.label}`} className="user-point" cx={point.x} cy={point.y} r="4.5" />)}{resolutionPoint && <g><circle className={`resolution-point ${scenario.outcome ? 'outcome-yes' : 'outcome-no'}`} cx={resolutionPoint.x} cy={resolutionPoint.y} r="7" /><text className="resolution-label" x={resolutionPoint.x - 31} y={Math.max(top + 14, resolutionPoint.y - 14)}>{scenario.outcome ? 'YES' : 'NO'}</text></g>}{xLabels.map(({ point, index }) => <text className="chart-x-label" key={`${point.label}-${index}`} x={xFor(index)} y={height - 9} textAnchor="middle">{index < scenario.checkpoints.length ? scenario.checkpoints[index]?.shortLabel : point.resolution ? 'Result' : 'Latest'}</text>)}</svg></div>
+function MethodDrawer({ onClose }: { onClose: () => void }) {
+  return <div className="drawer-backdrop" onMouseDown={onClose}><aside className="method-drawer" role="dialog" aria-modal="true" aria-labelledby="method-title" onMouseDown={(event) => event.stopPropagation()}><button className="drawer-close" onClick={onClose} aria-label="Close methodology"><X size={20} /></button><span className="eyebrow">Methodology</span><h2 id="method-title">From a price move to an attributed effect</h2><ol><li><strong>Before</strong><p>Median Trump probability during the 12 hours before the event.</p></li><li><strong>Immediate</strong><p>Median probability during the first six hours after the timestamp.</p></li><li><strong>Stabilized</strong><p>Median probability from 18 to 36 hours after the event, reducing the influence of a single volatile trade.</p></li><li><strong>Observed movement</strong><p>Stabilized probability minus the pre-event median.</p></li><li><strong>Attributed impact</strong><p>The expert share is applied to the change in log odds. The remaining movement is treated as concurrent or unexplained information.</p></li></ol><div className="method-warning"><Info size={17} /><p>Event windows can overlap and are not additive. These estimates describe how the market repriced around an event; they do not establish that the event caused the entire move.</p></div><a className="source-link" href={electionMarket.datasetUrl} target="_blank" rel="noreferrer"><span><small>Dataset provenance</small>eventclock hourly Polymarket series</span><ExternalLink size={16} /></a></aside></div>
 }
 
-function ResultsView({ scenario, run, onReplay }: { scenario: Scenario; run: ForecastRun; onReplay: () => void }) {
-  const settled = scenario.outcome !== null
-  const forecastReport = settled ? scoreForecastPath(run.decisions, scenario.outcome as boolean) : null
-  const lastModel = run.decisions[run.decisions.length - 1].model
-  const firstDecision = run.decisions[0]; const finalDecision = run.decisions[run.decisions.length - 1]; const marketMove = finalDecision.marketProbability - firstDecision.marketProbability; const modelMatch = modelMatchScore(scenario, lastModel)
-  return <div className="page results-page"><section className="result-header"><div><span className="eyebrow eyebrow-accent">The answer</span><h1>{settled ? scenario.outcome ? 'YES' : 'NO' : 'OPEN'}</h1><p>{settled ? scenario.outcomeLabel : 'The market is not settled, so scoring remains pending.'}</p></div><div className={`result-state ${settled ? scenario.outcome ? 'state-yes' : 'state-no' : 'state-open'}`}><span>Settled</span><strong>{settled ? scenario.outcome ? 'YES' : 'NO' : 'OPEN'}</strong><small>{scenario.resolutionDate}</small></div></section><section className="resolution-briefing" aria-labelledby="resolution-briefing-title"><div><span className="eyebrow eyebrow-accent">What happened</span><h2 id="resolution-briefing-title">The final result</h2></div><div className="resolution-briefing-copy"><p><strong>{scenario.resolutionBriefing.summary}</strong></p><p>{scenario.resolutionBriefing.consequence}</p></div><div className="resolution-briefing-sources">{scenario.resolutionBriefing.sources.map((source) => <a key={source.url} href={source.url} target="_blank" rel="noreferrer">{source.label} <ArrowRight size={13} /></a>)}</div></section><section className="result-insights" aria-label="Forecast summary"><div><span>Final forecast</span><strong>{formatProbability(finalDecision.userProbability)}</strong><small>Market {formatProbability(finalDecision.marketProbability)} · {formatDelta(finalDecision.userProbability - finalDecision.marketProbability)}</small></div><div><span>Model match</span><strong>{modelMatch}%</strong><small>How close your final weights were to the model</small></div><div><span>Forecast score</span><strong>{forecastReport ? formatScore(forecastReport.user.brier) : 'Pending'}</strong><small>{forecastReport ? `Lower is better · Market ${formatScore(forecastReport.market.brier)}` : 'Scoring begins after settlement'}</small></div><div><span>Market movement</span><strong>{formatDelta(marketMove)}</strong><small>{formatProbability(firstDecision.marketProbability)} to {formatProbability(finalDecision.marketProbability)}</small></div></section><section className="trajectory-section"><div className="section-heading compact-heading"><div><span className="eyebrow">Forecast path</span><h2>Your read vs the market</h2></div></div><div className="trajectory-card"><TrajectoryChart scenario={scenario} decisions={run.decisions} /></div></section><div className="results-actions"><button className="secondary-button" onClick={onReplay}><RotateCcw size={17} /> Replay Seattle market</button></div></div>
-}
+function ElectionStudy({ points }: { points: MarketSeriesPoint[] }) {
+  const [selectedId, setSelectedId] = useState('assassination-attempt')
+  const [shares, setShares] = useState<Record<string, number>>({})
+  const [showMethod, setShowMethod] = useState(false)
+  const impacts = useMemo(() => calculateEventImpacts(points, electionEvents, shares), [points, shares])
+  const summary = useMemo(() => summarizeCampaign(points), [points])
+  const selected = impacts.find((impact) => impact.id === selectedId) ?? impacts[0]
+  const largest = largestObservedImpact(impacts)
 
-function PlayView({ scenario, model, activeIndex, run, onReset, onSelectCheckpoint, onImportanceChange, onDirectionChange, onLock, onReveal }: { scenario: Scenario; model: HumanMentalModel; activeIndex: number; run: ForecastRun; onReset: () => void; onSelectCheckpoint: (index: number) => void; onImportanceChange: (id: string, value: number) => void; onDirectionChange: (id: string, direction: Direction) => void; onLock: () => void; onReveal: () => void }) {
-  const checkpoint = scenario.checkpoints[activeIndex]
-  const activeDecision = run.decisions.find((decision) => decision.checkpointId === checkpoint.id)
-  const isCurrent = activeIndex === run.decisions.length && run.decisions.length < scenario.checkpoints.length
-  const displayModel = activeDecision?.model ?? model
-  const forecast = useMemo(() => calculateForecast(scenario, checkpoint.id, displayModel), [scenario, checkpoint.id, displayModel])
-  const complete = run.decisions.length === scenario.checkpoints.length
-  return <div className="page play-page"><section className="event-header"><div><h1>{scenario.question}</h1><p>Historical Kalshi replay: weigh what was known then.</p></div><div className="event-meta"><div><span>Ticker</span><strong>{scenario.source.ticker}</strong></div><div><span>Settled</span><strong>{scenario.resolutionDate}</strong></div><div><span>Result</span><strong className={scenario.outcome ? 'positive-text' : 'negative-text'}>{scenario.outcome ? 'YES' : 'NO'}</strong></div><div><span>Verified volume</span><strong>{formatContracts(scenario.source.volume)}</strong></div></div></section><CheckpointNav scenario={scenario} activeIndex={activeIndex} decisions={run.decisions} onSelect={onSelectCheckpoint} />{complete && <div className="ready-banner"><span><Check size={17} /> Four checkpoints complete. The settled result is ready.</span><button onClick={onReveal}>Reveal result <ArrowRight size={16} /></button></div>}<div className="workspace-grid"><div className="decision-column"><WorldBriefing checkpoint={checkpoint} /><section className="model-panel" aria-labelledby="decision-title"><div className="model-panel-head"><div><span className="eyebrow">Your model</span><h2 id="decision-title">What drove a title?</h2></div><button className="reset-link" onClick={onReset}><RotateCcw size={15} /> Restart</button></div><AllocationSummary scenario={scenario} model={displayModel} /><div className="factor-grid">{scenario.factors.map((factor) => <FactorEditor key={factor.id} factor={factor} observation={factor.observations[checkpoint.id]} importance={displayModel.beliefs[factor.id]?.importance ?? 0} direction={displayModel.beliefs[factor.id]?.direction ?? 'neutral'} disabled={!isCurrent} onImportanceChange={(value) => onImportanceChange(factor.id, value)} onDirectionChange={(direction) => onDirectionChange(factor.id, direction)} />)}</div></section></div><ForecastPanel scenario={scenario} checkpointId={checkpoint.id} forecast={forecast} locked={!isCurrent} complete={complete} onLock={onLock} onReveal={onReveal} /></div></div>
+  return <div className="study-page"><section className="study-header"><div><span className="event-kicker">2024 U.S. presidential election</span><h1>{electionMarket.question}</h1><p>Six high-information events measured against 3,791 hourly prices from Trump’s Polymarket contract.</p></div><div className="header-actions"><button className="method-button" onClick={() => setShowMethod(true)}><BookOpen size={16} /> Methodology</button><a className="market-button" href={electionMarket.marketUrl} target="_blank" rel="noreferrer">Original market <ExternalLink size={15} /></a></div></section><section className="summary-strip" aria-label="Campaign market summary"><div><CalendarDays size={16} /><span>Study period<strong>{electionMarket.period}</strong></span></div><div><Database size={16} /><span>Hourly observations<strong>{summary.observations.toLocaleString()}</strong></span></div><div><BarChart3 size={16} /><span>Campaign range<strong>{formatProbability(summary.lowProbability)}–{formatProbability(summary.highProbability)}</strong></span></div><div><SlidersHorizontal size={16} /><span>Largest measured event<strong>{largest.shortTitle} · {formatImpact(largest.observedMovement)}</strong></span></div><div className="resolution-stat"><span>Resolved<strong>{electionMarket.outcome}</strong></span><small>{formatVolume(electionMarket.volume)} traded</small></div></section><div className="study-grid"><div className="study-main"><section className="chart-panel" aria-labelledby="chart-title"><div className="panel-heading"><div><span className="eyebrow">Market-implied probability</span><h2 id="chart-title">Trump’s path from June to Election Day</h2></div><div className="chart-legend"><span><i />Trump wins</span><span><b />Measured event</span></div></div><CampaignChart points={points} impacts={impacts} selectedId={selectedId} onSelect={setSelectedId} /><div className="chart-caption"><span>Opened study window at <strong>{formatProbability(summary.firstProbability)}</strong></span><span>Election-night endpoint <strong>{formatProbability(summary.finalProbability)}</strong></span><span>Net movement <strong className={summary.netMovement >= 0 ? 'positive' : 'negative'}>{formatImpact(summary.netMovement)}</strong></span></div></section><EventList impacts={impacts} selectedId={selectedId} onSelect={setSelectedId} /></div><ImpactDetail impact={selected} onShareChange={(value) => setShares((current) => ({ ...current, [selected.id]: value }))} /></div>{showMethod && <MethodDrawer onClose={() => setShowMethod(false)} />}</div>
 }
 
 export default function App() {
-  const [view, setView] = useState<View>('play'); const [scenario, setScenario] = useState<Scenario | null>(null); const [loading, setLoading] = useState(true); const [error, setError] = useState<string | null>(null); const [model, setModel] = useState<HumanMentalModel | null>(null); const [activeIndex, setActiveIndex] = useState(0); const [run, setRun] = useState<ForecastRun | null>(null)
-  const loadRequestRef = useRef(0)
-  const loadScenario = async () => { const requestId = ++loadRequestRef.current; setLoading(true); setError(null); try { const next = await loadSeattleScenario(); if (requestId !== loadRequestRef.current) return; setScenario(next); setModel(startingModelFromScenario(next)); setActiveIndex(0); setRun({ scenarioId: next.id, decisions: [], startedAt: new Date().toISOString() }); setView('play') } catch (caught) { if (requestId === loadRequestRef.current) setError(caught instanceof Error ? caught.message : 'The Kalshi data request failed.') } finally { if (requestId === loadRequestRef.current) setLoading(false) } }
-  useEffect(() => { void loadScenario() }, [])
-  const scrollTop = () => window.scrollTo({ top: 0, behavior: 'smooth' })
-  const restart = () => { if (!scenario) return; setModel(startingModelFromScenario(scenario)); setActiveIndex(0); setRun({ scenarioId: scenario.id, decisions: [], startedAt: new Date().toISOString() }); setView('play'); scrollTop() }
-  const isCurrent = Boolean(scenario && model && run && activeIndex === run.decisions.length && run.decisions.length < scenario.checkpoints.length)
-  const updateImportance = (factorId: string, value: number) => { if (!isCurrent || !scenario || !model) return; setModel((current) => current ? rebalanceImportance(current, factorId, value, scenario.factors.map((factor) => factor.id)) : current) }
-  const updateDirection = (factorId: string, direction: Direction) => { if (!isCurrent) return; setModel((current) => current ? setDirection(current, factorId, direction) : current) }
-  const lock = () => { if (!isCurrent || !scenario || !model || !run) return; const checkpoint = scenario.checkpoints[activeIndex]; const forecast = calculateForecast(scenario, checkpoint.id, model); const snapshot: HumanMentalModel = { beliefs: Object.fromEntries(Object.entries(model.beliefs).map(([id, belief]) => [id, { ...belief }])), totalImportance: totalImportance(model) }; const decision: ForecastDecision = { checkpointId: checkpoint.id, cutoffDate: checkpoint.date, marketProbability: forecast.marketProbability, userProbability: forecast.userProbability, model: snapshot, contributions: forecast.contributions.map((item) => ({ ...item })) }; const nextDecisions = [...run.decisions, decision]; setRun((current) => current ? ({ ...current, decisions: nextDecisions, completedAt: nextDecisions.length === scenario.checkpoints.length ? new Date().toISOString() : undefined }) : current); if (activeIndex < scenario.checkpoints.length - 1) setActiveIndex(activeIndex + 1) }
-  const reviewPath = () => { if (!scenario || !run || run.decisions.length !== scenario.checkpoints.length) return; setView('results'); scrollTop() }
-  const content = loading ? <LoadingView /> : error ? <ErrorView message={error} onRetry={() => void loadScenario()} /> : !scenario || !model || !run ? <ErrorView message="Seattle’s Kalshi market is unavailable." onRetry={() => void loadScenario()} /> : view === 'play' ? <PlayView scenario={scenario} model={model} activeIndex={activeIndex} run={run} onReset={restart} onSelectCheckpoint={setActiveIndex} onImportanceChange={updateImportance} onDirectionChange={updateDirection} onLock={lock} onReveal={reviewPath} /> : <ResultsView scenario={scenario} run={run} onReplay={restart} />
-  return <AppFrame>{content}</AppFrame>
+  const [points, setPoints] = useState<MarketSeriesPoint[] | null>(null)
+  const [error, setError] = useState<string | null>(null)
+
+  useEffect(() => {
+    loadElectionMarketSeries().then(setPoints).catch((caught) => setError(caught instanceof Error ? caught.message : 'The dataset could not be read.'))
+  }, [])
+
+  return <AppFrame>{error ? <ErrorView message={error} /> : points ? <ElectionStudy points={points} /> : <LoadingView />}</AppFrame>
 }
