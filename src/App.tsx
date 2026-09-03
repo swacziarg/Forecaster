@@ -29,7 +29,10 @@ import {
 } from './domain/eventStudy.ts'
 
 const formatProbability = (value: number) => `${(value * 100).toFixed(value * 100 % 1 === 0 ? 0 : 1)}%`
-const formatImpact = (value: number) => `${value >= 0 ? '+' : '-'}${Math.abs(value * 100).toFixed(1)} pts`
+const formatImpact = (value: number) => {
+  const roundedPoints = Math.round(Math.abs(value) * 1000 + 1e-9) / 10
+  return `${value >= 0 ? '+' : '-'}${roundedPoints.toFixed(1)} pts`
+}
 const formatVolume = (value: number) => `$${(value / 1_000_000_000).toFixed(2)}B`
 const formatScrubTime = (timestamp: string) => new Date(timestamp).toLocaleString('en-US', {
   month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'UTC', timeZoneName: 'short',
