@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type DragEvent, type ReactNode } from 'react'
+import { useEffect, useMemo, useState, type DragEvent, type PointerEvent as ReactPointerEvent, type ReactNode } from 'react'
 import {
   ArrowDown,
   ArrowRight,
@@ -95,11 +95,29 @@ function CampaignChart({ points, impacts, order, selectedId, scrubIndex, onScrub
     onScrub(nearestPointIndex(points, impact.timestamp))
   }
 
+  const scrubFromPointer = (event: ReactPointerEvent<SVGRectElement>) => {
+    const bounds = event.currentTarget.getBoundingClientRect()
+    const viewX = (event.clientX - bounds.left) / bounds.width * width
+    const ratio = Math.min(Math.max((viewX - margin.left) / (width - margin.left - margin.right), 0), 1)
+    const targetTime = minTime + ratio * (maxTime - minTime)
+    let nearestIndex = 0
+    for (let index = 1; index < points.length; index += 1) {
+      if (Math.abs(Date.parse(points[index].timestamp) - targetTime) < Math.abs(Date.parse(points[nearestIndex].timestamp) - targetTime)) nearestIndex = index
+    }
+    onScrub(nearestIndex)
+  }
+
+  const startGraphScrub = (event: ReactPointerEvent<SVGRectElement>) => {
+    event.currentTarget.setPointerCapture(event.pointerId)
+    scrubFromPointer(event)
+  }
+
   return <div className="chart-wrap">
     <svg className="campaign-chart" viewBox={`0 0 ${width} ${height}`} role="img" aria-label="Trump election probability with ten ranked events and four contextual market moves">
       <g className="chart-grid">{[0.4, 0.5, 0.6, 0.7].map((tick) => <g key={tick}><line x1={margin.left} x2={width - margin.right} y1={y(tick)} y2={y(tick)} /><text x="0" y={y(tick) + 4}>{formatProbability(tick)}</text></g>)}</g>
       <path className="price-area" d={`${path} L${x(points[points.length - 1].timestamp)},${y(minProbability)} L${x(points[0].timestamp)},${y(minProbability)} Z`} />
       <path className="price-line" d={path} />
+      <rect className="chart-scrub-surface" x={margin.left} y={margin.top} width={width - margin.left - margin.right} height={height - margin.top - margin.bottom} onPointerDown={startGraphScrub} onPointerMove={(event) => { if (event.currentTarget.hasPointerCapture(event.pointerId)) scrubFromPointer(event) }} onPointerUp={(event) => event.currentTarget.releasePointerCapture(event.pointerId)} />
       {monthTicks.map((tick) => <text className="month-label" key={tick} x={x(tick)} y={height - 9} textAnchor="middle">{new Date(tick).toLocaleDateString('en-US', { month: 'short', timeZone: 'UTC' })}</text>)}
       {marketMoveNotes.map((note) => {
         const point = points[nearestPointIndex(points, note.timestamp)]
@@ -114,7 +132,7 @@ function CampaignChart({ points, impacts, order, selectedId, scrubIndex, onScrub
       })}
       <g className="scrub-cursor" aria-hidden="true"><line x1={x(scrubPoint.timestamp)} x2={x(scrubPoint.timestamp)} y1={margin.top} y2={height - margin.bottom} /><circle cx={x(scrubPoint.timestamp)} cy={y(scrubPoint.probability)} r="5" /></g>
     </svg>
-    <div className="scrubber"><input aria-label="Explore hourly market probability" type="range" min="0" max={points.length - 1} value={scrubIndex} onChange={(event) => onScrub(Number(event.target.value))} /><div className="scrub-readout"><div><span>{formatScrubTime(scrubPoint.timestamp)}</span><strong>{formatProbability(scrubPoint.probability)} Trump</strong></div><div><div className="scrub-context-heading"><strong>{contextTitle}</strong>{nearbyEvent && <button onClick={() => onSelect(nearbyEvent.id)}>Open event</button>}{nearbyNote && !nearbyEvent && <a href={nearbyNote.source.url} target="_blank" rel="noreferrer">Evidence <ExternalLink size={11} /></a>}</div><p>{contextText}</p></div></div></div>
+    <div className="scrubber"><input aria-label="Explore hourly market probability" type="range" min="0" max={points.length - 1} value={scrubIndex} onInput={(event) => onScrub(Number(event.currentTarget.value))} onChange={(event) => onScrub(Number(event.target.value))} /><div className="scrub-readout"><div><span>{formatScrubTime(scrubPoint.timestamp)}</span><strong>{formatProbability(scrubPoint.probability)} Trump</strong></div><div><div className="scrub-context-heading"><strong>{contextTitle}</strong>{nearbyEvent && <button onClick={() => onSelect(nearbyEvent.id)}>Open event</button>}{nearbyNote && !nearbyEvent && <a href={nearbyNote.source.url} target="_blank" rel="noreferrer">Evidence <ExternalLink size={11} /></a>}</div><p>{contextText}</p></div></div></div>
   </div>
 }
 

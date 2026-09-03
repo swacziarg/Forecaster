@@ -96,6 +96,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
 .chart-grid text, .month-label { fill: var(--faint); font-size: 10px; }
 .price-area { fill: #eaf2ec; opacity: .78; }
 .price-line { fill: none; stroke: var(--green); stroke-linejoin: round; stroke-width: 2.4; }
+.chart-scrub-surface { cursor: crosshair; fill: transparent; touch-action: none; }
 .event-marker, .context-marker { cursor: pointer; }
 .event-marker line { stroke: #c8d2cb; stroke-dasharray: 3 4; stroke-width: 1; }
 .event-marker circle { fill: var(--red); stroke: white; stroke-width: 3; transition: r .15s ease; }
