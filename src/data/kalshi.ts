@@ -14,9 +14,6 @@ export type KalshiMarketConfig = {
 }
 
 export const KALSHI_SOURCE_CATALOG: KalshiMarketConfig[] = [
-  { id: 'canada-liberal-majority-2025', ticker: 'KXCANCOALITION-30-L', eventTicker: 'KXCANCOALITION-30', seriesTicker: 'KXCANCOALITION', label: 'Canada: Liberal majority government', category: 'Politics' },
-  { id: 'fed-december-2025-cut', ticker: 'KXFEDDECISION-25DEC-C25', eventTicker: 'KXFEDDECISION-25DEC', seriesTicker: 'KXFEDDECISION', label: 'Fed cuts 25 bps in December 2025', category: 'Economics' },
-  { id: 'one-battle-best-picture-2026', ticker: 'KXOSCARPIC-26-ONE', eventTicker: 'KXOSCARPIC-26', seriesTicker: 'KXOSCARPIC', label: 'One Battle After Another wins Best Picture', category: 'Entertainment' },
   { id: 'seattle-football-champion-2026', ticker: 'KXSB-26-SEA', eventTicker: 'KXSB-26', seriesTicker: 'KXSB', label: 'Seattle wins the 2026 pro-football championship', category: 'Sports' },
 ]
 

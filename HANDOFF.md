@@ -1,47 +1,27 @@
-# Handoff
+# Forecast handoff
 
-## Current product
+This repository is now a single-market forecasting replay for **Will the Seattle win the 2026 Pro Football Championship?** It is Kalshi-only: live public market metadata and historical candlesticks are fetched through the Vite proxy, and the app has no alternate, fixture, mock, or synthetic data path.
 
-The repository is a focused Factor Understanding forecasting game powered by four high-volume, resolved Kalshi markets. It validates the catalog at runtime, shows a clear error when a market is unresolved, future-dated, under the volume threshold, missing history, or unreachable, and has no alternate data source.
+## Current flow
 
-The root app includes:
+- `src/App.tsx`: loading → Seattle checkpoint play → settlement results.
+- `src/data/kalshi.ts`: Kalshi API adapter, historical-market lookup, and candlestick normalization.
+- `src/data/kalshiScenarios.ts`: one-market qualification plus the Seattle world briefings and five event-specific factors.
+- `src/domain/engine.ts`: four-checkpoint model, exact 100-point allocation, locked decisions, and Brier/log-loss scoring.
 
-- src/App.tsx: resolved market board → checkpoint play → settlement results → current-run profile.
-- src/domain/types.ts: market, factor, mental-model, decision, and scoring contracts.
-- src/domain/engine.ts: pure probability translation, exact-budget rebalancing, and settlement scoring.
-- src/data/kalshi.ts: public Kalshi market metadata and daily candlestick adapter.
-- src/data/kalshiScenarios.ts: catalog qualification, sourced checkpoint briefings, per-market factor configuration, and Kalshi-only numeric proxies.
-- src/styles.css: responsive visual system.
-- src/domain/engine.test.ts: core invariant and formula tests.
+## Verified market
 
-## Selected markets
+- Ticker: `KXSB-26-SEA`
+- Result: YES
+- Settled: February 9, 2026
+- Traded volume: 85,214,022 contracts
 
-- KXCANCOALITION-30-L — Canadian Liberal majority: NO; 3,256,198 contracts; settled May 27, 2025.
-- KXFEDDECISION-25DEC-C25 — December 2025 25 bp Fed cut: YES; 12,184,561 contracts; settled Dec 10, 2025.
-- KXOSCARPIC-26-ONE — One Battle After Another for Best Picture: YES; 5,042,079 contracts; settled Mar 16, 2026.
-- KXSB-26-SEA — Seattle as 2026 pro-football champion: YES; 85,214,022 contracts; settled Feb 9, 2026.
+Runtime validation rejects the market if Kalshi does not report a past close, a past settlement, a YES/NO result, at least 500,000 contracts, or enough history for four distinct checkpoints.
+
+## Seattle factor model
+
+The five factors are quarterback health, defensive efficiency, playoff path, major roster shock, and matchup adaptability. The interface separates factors known at the checkpoint from factors still unresolved, while Kalshi is presented as historical context for what traders believed. Each factor includes an event-specific explanation, one-line market observation, direction prompt, argument for and against YES, consequence, and the existing numeric signal used by the forecast engine. The roster-shock factor is explicitly marked as a scenario hypothesis; it never claims an injury or transaction without verified input.
 
 ## Verification
 
-Run these from the repository root:
-
-    npm run build
-    npm test
-
-The app uses the Vite proxy at /api/kalshi and the public Kalshi historical market-data API. Every checkpoint has a date-bounded world briefing with sourced status, observed developments, cases for and against YES, and outcome stakes. Each factor card also carries event context, its own YES/NO argument, and consequence. None of this editorial context enters the engine; factor effects remain transparent transforms of the selected market’s own candlesticks.
-
-Settlement-aware handling remains for robustness, but the featured catalog rejects unresolved contracts. The profile summarizes only the current run and does not invent cross-market history.
-
-## Known limitations
-
-- The current interaction assumes four checkpoints and five factors per market.
-- The app does not yet persist decisions across page reloads.
-- The trajectory chart is a lightweight inline SVG.
-- An active market cannot receive a forecast score until it settles.
-
-## Next steps
-
-1. Revalidate volumes and Kalshi historical availability if the provider changes its retention or schema.
-2. Add persistence for locked decisions and cross-market profile aggregation.
-3. Add explicit provenance and uncertainty for any future non-price signals.
-4. Re-run the build, tests, and live-browser smoke test after provider changes.
+`npm run build` and `npm test` should pass before handoff. The live smoke path should load the Seattle market, lock 60d/45d/30d/15d, reveal the settled YES result, and show the score and event context.
