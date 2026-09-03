@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "build": "tsc -b && vite build",
-    "test": "node --experimental-strip-types src/domain/engine.test.ts && node --experimental-strip-types src/data/kalshi.test.ts",
+    "test": "node --experimental-strip-types src/domain/engine.test.ts && node --experimental-strip-types src/domain/eventStudy.test.ts && node --experimental-strip-types src/data/kalshi.test.ts",
     "preview": "vite preview --host 127.0.0.1"
   },
   "dependencies": {

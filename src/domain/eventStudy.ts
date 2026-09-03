@@ -1,0 +1,130 @@
+export type MarketSeriesPoint = {
+  timestamp: string
+  probability: number
+}
+
+export type ImpactConfidence = 'High' | 'Medium' | 'Low'
+
+export type ImpactSource = {
+  label: string
+  publisher: string
+  url: string
+  publishedAt: string
+}
+
+export type ImpactEventDefinition = {
+  id: string
+  title: string
+  shortTitle: string
+  timestamp: string
+  dateLabel: string
+  category: 'Debate' | 'Campaign' | 'Candidate change' | 'Polling'
+  summary: string
+  interpretation: string
+  competingExplanation: string
+  confidence: ImpactConfidence
+  attributionShare: number
+  source: ImpactSource
+}
+
+export type EventImpact = ImpactEventDefinition & {
+  beforeProbability: number
+  immediateProbability: number
+  stabilizedProbability: number
+  immediateMovement: number
+  observedMovement: number
+  attributedImpact: number
+  counterfactualProbability: number
+  attributionShare: number
+  samples: { before: number; immediate: number; stabilized: number }
+}
+
+export type CampaignSummary = {
+  firstProbability: number
+  finalProbability: number
+  netMovement: number
+  lowProbability: number
+  highProbability: number
+  observations: number
+}
+
+const clamp = (value: number, min: number, max: number) => Math.min(Math.max(value, min), max)
+const logit = (probability: number) => Math.log(clamp(probability, 0.000001, 0.999999) / (1 - clamp(probability, 0.000001, 0.999999)))
+const sigmoid = (value: number) => 1 / (1 + Math.exp(-value))
+
+const median = (values: number[]) => {
+  if (values.length === 0) throw new Error('An event window has no market observations.')
+  const ordered = [...values].sort((a, b) => a - b)
+  const middle = Math.floor(ordered.length / 2)
+  return ordered.length % 2 ? ordered[middle] : (ordered[middle - 1] + ordered[middle]) / 2
+}
+
+const samplesBetween = (points: MarketSeriesPoint[], start: number, end: number) => points
+  .filter((point) => {
+    const timestamp = Date.parse(point.timestamp)
+    return timestamp >= start && timestamp < end
+  })
+  .map((point) => point.probability)
+
+export const parseHourlyMarketCsv = (csv: string): MarketSeriesPoint[] => {
+  const lines = csv.trim().split(/\r?\n/)
+  if (lines[0] !== 'time,q') throw new Error('Election market data has an unexpected header.')
+
+  const points = lines.slice(1).map((line, index) => {
+    const [timestamp, rawProbability] = line.split(',')
+    const probability = Number(rawProbability)
+    if (!timestamp || !Number.isFinite(Date.parse(timestamp)) || !Number.isFinite(probability) || probability <= 0 || probability >= 1) {
+      throw new Error(`Election market data has an invalid row at line ${index + 2}.`)
+    }
+    return { timestamp, probability }
+  })
+
+  if (points.length < 3000) throw new Error('Election market data is incomplete.')
+  return points.sort((a, b) => Date.parse(a.timestamp) - Date.parse(b.timestamp))
+}
+
+export const summarizeCampaign = (points: MarketSeriesPoint[]): CampaignSummary => {
+  if (points.length === 0) throw new Error('Election market data is empty.')
+  const probabilities = points.map((point) => point.probability)
+  return {
+    firstProbability: probabilities[0],
+    finalProbability: probabilities[probabilities.length - 1],
+    netMovement: probabilities[probabilities.length - 1] - probabilities[0],
+    lowProbability: Math.min(...probabilities),
+    highProbability: Math.max(...probabilities),
+    observations: points.length,
+  }
+}
+
+export const calculateEventImpact = (points: MarketSeriesPoint[], event: ImpactEventDefinition, attributionShare = event.attributionShare): EventImpact => {
+  const eventTime = Date.parse(event.timestamp)
+  const hour = 60 * 60 * 1000
+  const beforeSamples = samplesBetween(points, eventTime - 12 * hour, eventTime)
+  const immediateSamples = samplesBetween(points, eventTime, eventTime + 6 * hour)
+  const stabilizedSamples = samplesBetween(points, eventTime + 18 * hour, eventTime + 36 * hour)
+  const beforeProbability = median(beforeSamples)
+  const immediateProbability = median(immediateSamples)
+  const stabilizedProbability = median(stabilizedSamples)
+  const share = clamp(attributionShare, 0, 100)
+  const attributedLogOdds = (logit(stabilizedProbability) - logit(beforeProbability)) * share / 100
+  const counterfactualProbability = sigmoid(logit(stabilizedProbability) - attributedLogOdds)
+
+  return {
+    ...event,
+    attributionShare: share,
+    beforeProbability,
+    immediateProbability,
+    stabilizedProbability,
+    immediateMovement: immediateProbability - beforeProbability,
+    observedMovement: stabilizedProbability - beforeProbability,
+    attributedImpact: stabilizedProbability - counterfactualProbability,
+    counterfactualProbability,
+    samples: { before: beforeSamples.length, immediate: immediateSamples.length, stabilized: stabilizedSamples.length },
+  }
+}
+
+export const calculateEventImpacts = (points: MarketSeriesPoint[], events: ImpactEventDefinition[], attributionShares: Record<string, number> = {}) => events
+  .map((event) => calculateEventImpact(points, event, attributionShares[event.id] ?? event.attributionShare))
+
+export const largestObservedImpact = (impacts: EventImpact[]) => impacts.reduce((largest, impact) => Math.abs(impact.observedMovement) > Math.abs(largest.observedMovement) ? impact : largest)
+
