@@ -1,8 +1,8 @@
 # eventlens
 
-An interactive event study of the 2024 U.S. presidential election. The app
-uses 3,791 hourly observations from Polymarket's Trump winner contract to show
-how the market repriced around six major campaign events.
+An interactive event-ranking study of the 2024 U.S. presidential election. The
+app uses 3,863 hourly observations from Polymarket's Trump winner contract to
+compare a user's ranking of ten campaign events with the market response.
 
 ## Run
 
@@ -14,6 +14,20 @@ npm run dev
 The application runs entirely from the versioned dataset in
 `public/data/polymarket-2024-hourly.csv`. It does not require credentials or a
 live market API.
+
+## Product flow
+
+1. Read the facts and hypothesized electoral mechanism for each event.
+2. Drag the ten events into a personal most-to-least consequential ranking.
+3. Scrub hour by hour across the market chart. Numbered circles are ranked
+   events; amber diamonds explain large diffuse or market-structure moves.
+4. Reveal the market ranking and compare it with the personal order.
+5. Inspect the observed move, adjust expert attribution, and review the
+   counterfactual probability, competing explanation, and dated source.
+
+The set deliberately includes high-salience events with little immediate
+market response, such as the Joe Rogan interview and vice-presidential debate.
+This keeps public attention separate from measurable repricing.
 
 ## How impact is measured
 
@@ -35,10 +49,12 @@ overlap and their effects should not be added together.
 
 ## Data and sources
 
-The hourly series is the MIT-licensed `polymarket2024` dataset from Sebastian
-Stockl's `eventclock` package. Its upstream reconstruction uses Polymarket's
-public CLOB price-history endpoint at 60-minute fidelity. Full provenance,
-checksums, and license text are in `public/data/README.md`.
+The core hourly series is the MIT-licensed `polymarket2024` dataset from
+Sebastian Stockl's `eventclock` package. Its upstream reconstruction uses
+Polymarket's public CLOB price-history endpoint at 60-minute fidelity. A direct
+May 29-31 extract from that endpoint adds the full window around Trump's May 30
+conviction. Full provenance, checksums, and license text are in
+`public/data/README.md`.
 
 Each curated event also links to a dated historical source in
 `src/data/election2024.ts`. The market metadata points to Polymarket's resolved
@@ -50,9 +66,9 @@ Each curated event also links to a dated historical source in
   priors, interpretations, competing explanations, and source links.
 - `src/domain/eventStudy.ts` parses the series and computes robust windows,
   observed moves, attributed effects, and counterfactual probabilities.
-- `src/App.tsx` renders the campaign chart, event selector, attribution panel,
-  and methodology drawer.
+- `src/App.tsx` renders the sortable ranking, hourly chart scrubber, contextual
+  move markers, comparison state, attribution panel, and methodology drawer.
 - `src/domain/eventStudy.test.ts` covers parsing, summaries, event windows, and
-  full and partial attribution.
+  ranking operations, ranking scores, and full and partial attribution.
 
 Run `npm test` and `npm run build` before handoff.
