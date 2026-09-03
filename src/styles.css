@@ -106,6 +106,9 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
 .price-line { fill: none; stroke: var(--green); stroke-linejoin: round; stroke-width: 2.4; }
 .chart-scrub-surface { cursor: crosshair; fill: transparent; touch-action: none; }
 .event-marker, .context-marker { cursor: pointer; }
+.event-marker:focus, .context-marker:focus { outline: none; }
+.event-marker:focus-visible circle { stroke: var(--blue); stroke-width: 5; }
+.context-marker:focus-visible path { stroke: var(--blue); stroke-width: 4; }
 .event-marker line { stroke: #c8d2cb; stroke-dasharray: 3 4; stroke-width: 1; }
 .event-marker circle { fill: var(--red); stroke: white; stroke-width: 3; transition: r .15s ease; }
 .event-marker text { fill: white; font-size: 8px; font-weight: 850; pointer-events: none; }
