@@ -1,4 +1,4 @@
-import { calculateEventImpact, moveRankedItem, parseHourlyMarketCsv, rankByObservedImpact, scoreImpactRanking, summarizeCampaign, type ImpactEventDefinition, type MarketSeriesPoint } from './eventStudy.ts'
+import { calculateEventImpact, moveRankedItem, parseHourlyMarketCsv, rankBySignedImpact, scoreImpactRanking, summarizeCampaign, type ImpactEventDefinition, type MarketSeriesPoint } from './eventStudy.ts'
 
 const assert = (condition: unknown, message: string) => {
   if (!condition) throw new Error(`Test failed: ${message}`)
@@ -45,12 +45,12 @@ assert(halfImpact.counterfactualProbability < 0.5, 'partial counterfactual stays
 equal(moveRankedItem(['a', 'b', 'c'], 'c', 0).join(','), 'c,a,b', 'moves a ranked item upward')
 equal(moveRankedItem(['a', 'b', 'c'], 'a', 2).join(','), 'b,c,a', 'moves a ranked item downward')
 
-const ranked = rankByObservedImpact([
+const ranked = rankBySignedImpact([
   { ...fullImpact, id: 'small', observedMovement: 0.02 },
   { ...fullImpact, id: 'large-negative', observedMovement: -0.08 },
   { ...fullImpact, id: 'medium', observedMovement: 0.04 },
 ])
-equal(ranked.map((item) => item.id).join(','), 'large-negative,medium,small', 'ranks market moves by absolute impact')
+equal(ranked.map((item) => item.id).join(','), 'medium,small,large-negative', 'ranks market moves from most positive to most negative')
 equal(scoreImpactRanking(['a', 'b', 'c', 'd'], ['a', 'b', 'c', 'd']), 100, 'scores an exact ranking at 100')
 equal(scoreImpactRanking(['d', 'c', 'b', 'a'], ['a', 'b', 'c', 'd']), 0, 'scores a reversed even-length ranking at zero')
 

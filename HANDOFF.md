@@ -6,10 +6,12 @@ study. Runtime uses a versioned local dataset and requires no API credentials.
 ## Product flow
 
 1. Read the facts and electoral mechanism for ten campaign events.
-2. Drag events into a predicted most-to-least consequential ranking.
+2. Drag events from the strongest positive effect on Trump's winning chance to
+   the strongest negative effect.
 3. Scrub the complete hourly price chart and inspect ranked event markers or
    amber contextual markers for large moves without a clean event attribution.
-4. Reveal the absolute-movement market ranking and personal rank-match score.
+4. Reveal the market's signed positive-to-negative order and personal spectrum
+   match score.
 5. Select an event to compare its 12-hour pre-event, immediate six-hour,
    stabilized 18-36-hour, and separate 48-72-hour follow-through windows.
 6. Adjust expert attribution, inspect the counterfactual probability, and open
@@ -22,9 +24,9 @@ study. Runtime uses a versioned local dataset and requires no API credentials.
 - Event windows may overlap and are not additive.
 - Expert attribution defaults are editorial assumptions and remain visible and
   adjustable in the interface.
-- The personal ranking measures total expected electoral consequence. The
-  market comparison ranks absolute short-window repricing; those concepts can
-  legitimately differ.
+- The personal order measures expected direction and strength. The market
+  comparison orders signed short-window repricing from positive to negative;
+  the two can legitimately differ.
 - The 48-72-hour follow-through measure exposes delayed movement but does not
   change the consistently applied 18-36-hour market ranking.
 - The local dataset is the reproducible source of truth. Its provenance and

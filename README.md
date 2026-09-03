@@ -2,7 +2,8 @@
 
 An interactive event-ranking study of the 2024 U.S. presidential election. The
 app uses 3,863 hourly observations from Polymarket's Trump winner contract to
-compare a user's ranking of ten campaign events with the market response.
+compare a user's positive-to-negative ordering of ten campaign events with the
+market response.
 
 ## Run
 
@@ -18,10 +19,11 @@ live market API.
 ## Product flow
 
 1. Read the facts and hypothesized electoral mechanism for each event.
-2. Drag the ten events into a personal most-to-least consequential ranking.
+2. Drag the ten events from the strongest positive effect on Trump's winning
+   chance to the strongest negative effect.
 3. Scrub hour by hour across the market chart. Numbered circles are ranked
    events; amber diamonds explain large diffuse or market-structure moves.
-4. Reveal the market ranking and compare it with the personal order.
+4. Reveal the market's signed ordering and compare it with the personal order.
 5. Inspect the observed move, adjust expert attribution, and review the
    counterfactual probability, competing explanation, and dated source.
 
@@ -41,7 +43,8 @@ For each event, the study compares four robust price windows:
 - **Follow-through:** median from 48 to 72 hours after the event.
 - **Observed movement:** stabilized probability minus the pre-event median.
 
-The absolute observed movement determines the market ranking. Follow-through
+The signed observed movement determines the market order, from the largest
+increase in Trump's probability to the largest decrease. Follow-through
 is displayed separately to reveal slower changes while avoiding a
 best-looking-window choice for individual events.
 

@@ -135,8 +135,8 @@ export const calculateEventImpact = (points: MarketSeriesPoint[], event: ImpactE
 export const calculateEventImpacts = (points: MarketSeriesPoint[], events: ImpactEventDefinition[], attributionShares: Record<string, number> = {}) => events
   .map((event) => calculateEventImpact(points, event, attributionShares[event.id] ?? event.attributionShare))
 
-export const rankByObservedImpact = (impacts: EventImpact[]) => [...impacts]
-  .sort((a, b) => Math.abs(b.observedMovement) - Math.abs(a.observedMovement))
+export const rankBySignedImpact = (impacts: EventImpact[]) => [...impacts]
+  .sort((a, b) => b.observedMovement - a.observedMovement)
 
 export const moveRankedItem = (order: string[], id: string, destinationIndex: number) => {
   const sourceIndex = order.indexOf(id)
