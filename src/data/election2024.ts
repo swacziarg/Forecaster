@@ -1,5 +1,6 @@
 import type { ImpactEventDefinition, MarketSeriesPoint } from '../domain/eventStudy.ts'
-import { parseHourlyMarketCsv } from '../domain/eventStudy.ts'
+import { LEGACY_ELECTION_PROFILE, parseHourlyMarketCsv } from '../domain/eventStudy.ts'
+import type { Source, Study, StudyEvent } from '../domain/study.ts'
 
 export const electionMarket = {
   question: 'Which events mattered most in the 2024 presidential election?',
@@ -135,4 +136,53 @@ export async function loadElectionMarketSeries(): Promise<MarketSeriesPoint[]> {
   const response = await fetch('/data/polymarket-2024-hourly.csv')
   if (!response.ok) throw new Error(`Election market history could not load (${response.status}).`)
   return parseHourlyMarketCsv(await response.text())
+}
+
+const electionSources: Source[] = electionEvents.map((event) => ({
+  id: `${event.id}-source`, title: event.source.label, publisher: event.source.publisher, url: event.source.url,
+  publishedAt: event.source.publishedAt, retrievedAt: '2026-09-03T00:00:00Z', snapshotHash: `legacy-source-${event.id}`, correctionStatus: 'none',
+}))
+
+const directionMap = { 'Helps Trump': 'positive', 'Hurts Trump': 'negative', Ambiguous: 'ambiguous' } as const
+
+const generalizedElectionEvents: StudyEvent[] = electionEvents.map((event) => {
+  const contemporaneous = Date.parse(event.source.publishedAt) <= Date.parse(event.timestamp)
+  return {
+    id: event.id, title: event.title, shortTitle: event.shortTitle, occurredAt: event.timestamp, informationKnownAt: event.timestamp,
+    precision: 'hour', timezone: 'UTC', dateLabel: event.dateLabel, category: event.category, mechanism: event.mechanism,
+    expectedDirection: directionMap[event.expectedDirection],
+    claims: [{ id: `${event.id}-summary`, text: event.summary, knownAt: contemporaneous ? event.timestamp : event.source.publishedAt, sourceIds: [`${event.id}-source`], visibility: contemporaneous ? 'pre-reveal' : 'retrospective' }],
+    sourceRoles: [{ sourceId: `${event.id}-source`, role: contemporaneous ? 'primary' : 'retrospective' }],
+    retrospectiveInterpretation: event.interpretation, competingExplanation: event.competingExplanation,
+    attributionAssessment: event.confidence === 'High' ? 'likely dominant' : event.confidence === 'Medium' ? 'mixed' : 'weak',
+    legacy: { confidence: event.confidence, attributionShare: event.attributionShare },
+  }
+})
+
+export const electionStudy: Study = {
+  id: 'election-2024-v1', slug: 'election-2024-v1', category: 'Politics', version: 1, status: 'published', legacyException: true,
+  question: electionMarket.question,
+  orientation: 'Order ten pivotal campaign moments by how you expected each one to change Donald Trump’s chance of winning—before seeing what the market did.',
+  market: {
+    id: 'polymarket-presidential-election-winner-2024-trump', provider: electionMarket.provider, title: electionMarket.contract,
+    rules: 'Resolves YES if Donald Trump wins the 2024 U.S. presidential election.', openedAt: '2024-01-04T00:00:00Z', closedAt: '2024-11-05T23:00:00Z', settledAt: '2024-11-06T00:00:00Z', status: 'settled',
+    resolutionSourceUrl: electionMarket.marketUrl, marketUrl: electionMarket.marketUrl, volume: electionMarket.volume,
+  },
+  contract: { id: electionMarket.tokenId, proposition: 'Donald Trump wins the 2024 U.S. presidential election', nativeSide: 'YES', selectedPerspective: 'YES', resolution: 'YES' },
+  dataset: {
+    id: 'polymarket-2024-hourly-v1', provider: electionMarket.provider, path: '/data/polymarket-2024-hourly.csv',
+    rawPath: '/data/election-2024/raw-prices-history.json', marketMetadataPath: '/data/election-2024/raw-market.json', manifestPath: '/data/election-2024/manifest.json',
+    rawSha256: '7ad5dd028509d5b58617d24cf3f594053f4b70cc76c5d681a1130d10afafff0d', marketMetadataSha256: '7c59b9a4930ed53711cdb971d7f0c15e3a403c4f18e711fa0381ac7b8b993636', normalizedSha256: 'd2cff3685d3201dc572000484a41fe0f4460d7b41e8a4b0acf654827e01ce320',
+    retrievedAt: '2026-09-04T03:44:58.746Z', coverageStart: '2024-05-29T00:00:04Z', coverageEnd: '2024-11-05T23:00:02Z', fullMarketLifetime: false, cadenceMinutes: 60, transformVersion: 'legacy-csv-v1', provenanceUrl: electionMarket.datasetUrl,
+    requestParameters: 'token_id=21742633143463906290569050155826241533067272736897614950488156847949938836455; fidelity=60; 10-day chunks; start=2024-05-29T00:00:00Z; end=2024-11-06T00:00:00Z',
+  },
+  measurementProfile: LEGACY_ELECTION_PROFILE,
+  presentation: {
+    topicLabel: '2024 U.S. presidential election', selectedContractShort: 'Trump wins', selectedContractLong: electionMarket.contract,
+    seriesLabel: 'Trump win probability', positiveLabel: 'Helps Trump', negativeLabel: 'Hurts Trump', neutralLabel: 'Ambiguous', eventNoun: 'campaign moment', timezone: 'UTC', accent: '#0d6847',
+    zoomChoices: [{ label: 'All', hours: null }, { label: '30d', hours: 720 }, { label: '14d', hours: 336 }, { label: '7d', hours: 168 }],
+  },
+  sources: electionSources, events: generalizedElectionEvents,
+  contextMarkers: marketMoveNotes.map((note) => ({ id: note.id, timestamp: note.timestamp, title: note.title, explanation: note.explanation, sourceUrl: note.source.url })),
+  publishedAt: '2026-09-03T00:00:00Z',
 }

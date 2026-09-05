@@ -1,42 +1,37 @@
-# eventlens handoff
+# Current launch edition — September 5, 2026
 
-This repository contains a single 2024 election event-ranking and attribution
-study. Runtime uses a versioned local dataset and requires no API credentials.
+The user approved “24 days that ended Biden’s campaign” as the first-ever edition. Five cards cover the June debate, July 8 refusal, July 10 Pelosi/Clooney episode, July 13 shooting and July 17 renewed pressure. The YES contract measures Biden withdrawing. `docs/editorial/biden-dropout-2024-review.md` records the source cutoffs and caveats. The hourly snapshot has 692 observations; every selected calculation window is usable. Exact same-window moves are +12.5, −17.0, +15.75, −11.75 and +48.0 percentage points respectively, with ten comparable pairs.
 
-## Product flow
+The July 21 announcement is a source-linked post-reveal conclusion and chart context marker, excluded from ranking. Later July 17 reporting is retrospective context, never pre-reveal evidence for Schiff’s earlier statement. The root serves the launch daily during its 24-hour window; its exact link remains playable as an archive afterward. No second daily is invented. Source, snapshot, routing, scoring, cutoff and storage-isolation checks pass with the existing suite and production build.
 
-1. Read the facts and electoral mechanism for ten campaign events.
-2. Drag event cards or use their ten-position click picker to order events from
-   the strongest positive effect on Trump's winning chance to the strongest
-   negative effect.
-3. Zoom the hourly price chart to 30, 14, or 7 days, scrub the focused range,
-   and inspect event or amber context markers.
-4. Reveal the market's signed positive-to-negative order and personal spectrum
-   match score.
-5. Select an event to compare its 12-hour pre-event, immediate six-hour,
-   stabilized 18-36-hour, and separate 48-72-hour follow-through windows.
-6. Adjust expert attribution, inspect the counterfactual probability, and open
-   the dated historical source.
+# EventLens handoff
 
-## Important constraints
+The app contains a generalized, versioned study engine, six studies, and a separate daily-puzzle registry. The root route resolves the current UTC publication window; `/studies/election-2024-v1` opens the original election study with its ten events and exact calculations preserved. `/studies` is the portfolio index; the launch study is `/studies/biden-dropout-24-days`; the other routes are `/studies/oscars-best-picture-2026`, `/studies/fed-september-2024`, `/studies/eagles-super-bowl-lix`, and `/studies/bitcoin-100k-2024`.
 
-- The event-study output describes prediction-market repricing, not proven
-  causality.
-- Event windows may overlap and are not additive.
-- Expert attribution defaults are editorial assumptions and remain visible and
-  adjustable in the interface.
-- The personal order measures expected direction and strength. The market
-  comparison orders signed short-window repricing from positive to negative;
-  the two can legitimately differ.
-- The 48-72-hour follow-through measure exposes delayed movement but does not
-  change the consistently applied 18-36-hour market ranking.
-- The local dataset is the reproducible source of truth. Its provenance and
-  license are documented in `public/data/README.md`.
+The critical product invariant is the hindsight firewall. Before a ranking is locked, do not expose price history, event-response markers, resolution, market endpoints, retrospective claims, later sources, or calculated movement. Revealed rankings are immutable. Reset starts a new sealed attempt.
 
-## Verification
+The daily registry is `src/data/dailyPuzzles.ts`; scheduling, evidence selection, scoring, and share outcomes are in `src/domain/dailyGame.ts`; validated local attempts and derived stats are in `src/domain/dailyStorage.ts`. Release timestamps are UTC. A daily window lasts at most 24 hours and does not silently change an already-open attempt. Exact `?daily=<id>` links support released archive puzzles, while unknown and future IDs receive explicit states. The UI only shows a countdown when a next registry entry exists.
 
-`npm test` covers the market-series parser, attribution math, spectrum movement,
-and match score. `npm run build` performs the TypeScript and production-bundle
-checks. The UI has been verified at 1440x900 and 1366x768, including ordering,
-comparison reveal, chart zoom and scrubbing, event selection, counterfactual
-updates, and the methodology drawer.
+Daily cards must resolve to at least one eligible pre-reveal claim and source. Do not add a daily event merely because the generalized study has a summary: the claim and every cited source must pass the information cutoff. The published Biden daily set contains five eligible events. Its shooting card has its own contemporary broadcast evidence; the original election study’s retrospective-only shooting claim is not reused.
+
+Local persistence uses one versioned attempt record per puzzle and scoring version. The submitted order/result is authoritative. Draft writes re-read storage so another tab's completed result wins, and stats are reconstructed from valid on-time submissions. Archive plays and late completions never extend daily streaks. Storage-unavailable, damaged, and obsolete records degrade to an explicit notice instead of crashing.
+
+Daily scoring is `pairwise-anchor-1pt-v1`: responses within one percentage point of the strongest response in the current group tie, then the next group starts with the first response outside that range. This anchor rule prevents a chain of nearby values from merging endpoints farther apart than the threshold. Tied pairs and indeterminate events are excluded from comparable pairs and disclosed. A zero-comparison result is unscored. Share tiles count fully completed 20-point bands, so a 56 score fills two bands, while the exact score is always shown separately.
+
+The strict validator requires five to ten events for new studies, event timezone/precision, parseable source timestamps, an archived URL or snapshot identifier, valid source references and pre-reveal claim cutoffs. Runtime data must come from a versioned local snapshot whose SHA-256 digest is verified before use.
+
+The election and Biden dropout studies are `published`. The launch edition is #001, `2026-09-05-biden-dropout`, released September 5 at 05:00 UTC. The September 4 election demo is no longer a daily registry entry; its market study remains available. Oscars, Fed, Eagles, and Bitcoin remain `editorial-review` until an independent editor completes source archiving/corroboration and signs the inclusion decisions. No puzzle after #001 is scheduled, so the product honestly reports an exhausted queue after its release window. Publishing the next daily therefore remains a content/editorial blocker, not an engineering fallback. All selected calculation windows are usable. Known data limitations are documented in `docs/data-provenance.md`; notably, Polymarket returned five Eagles prices above 1.0 after resolution, so they were rejected and the dataset is labeled partial-lifetime.
+
+Run `npm test`, `npx tsc -b --pretty false`, `npm run build`, and `git diff --check` before handoff. The historical election fixture must remain at 3,863 observations, one duplicate hourly bucket, two missing hourly buckets and the ten golden response values asserted in `src/domain/eventStudy.test.ts`.
+
+## Verification status
+
+The completed daily-game verification used the local Vite app in the in-app browser. First-play layouts were inspected at 320×760, 390×844, 430×860, and 1280×720 with no horizontal page overflow. Daily identity remained visible, mobile headlines and cards stayed compact, detail disclosures expanded in place, controls retained 44px targets, and the submit action remained in normal document flow instead of covering cards.
+
+Keyboard verification covered arrow-button ranking, live move announcements, visible focus, focus staying with the moved control, Help and Stats focus containment, inert background content, Escape dismissal, exact-trigger focus restoration, and result-heading focus after submission. Pointer verification covered card-wide pickup away from the grip, release beyond the card list, drag reordering, and canceled drag cleanup. Drag listeners are installed at document level immediately on pickup; pointer cancellation, browser blur, hidden-document transitions, and a returning mouse with no pressed button all clear the drag safely. The original study's ten position buttons were also checked at 320px and wrapped into two rows inside the viewport.
+
+The result screen includes a responsive diverging-bar chart at 320px through desktop. It labels each movement as a change in market-implied probability, shows the reference and stabilized levels, spells out “percentage points,” and explicitly distinguishes those movements from the player's game score.
+
+Submission was checked through reveal, refresh, exact shared-link restoration, Copy feedback, and two same-origin tabs; a completed attempt in one tab replaced the stale draft in the other. Invalid links showed an explicit unknown state, the root route showed the exhausted schedule after the only window ended, and the released puzzle remained playable as an archive without claiming daily streak credit. Native-share cancellation, unsupported share, unavailable clipboard, and share failure are deterministic unit tests; no external service was invoked during browser testing. Final browser console warning and error logs were empty.
+
+The final required commands passed: `npm test`, `npx tsc -b --pretty false`, `npm run build`, and `git diff --check`.

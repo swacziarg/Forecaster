@@ -1,0 +1,28 @@
+{
+  "provider": "Polymarket",
+  "tokenId": "106191328358576540351439267765925450329859429577455659884974413809922495874408",
+  "marketSlug": "fed-decreases-interest-rates-by-50-bps-after-september-2024-meeting",
+  "retrievedAt": "2026-09-04T03:44:31.385Z",
+  "request": {
+    "endpoint": "https://clob.polymarket.com/prices-history",
+    "startTs": 1721930400,
+    "endTs": 1726783200,
+    "fidelityMinutes": 60,
+    "chunkSeconds": 864000,
+    "chunks": 6
+  },
+  "coverageStart": "2024-07-25T19:00:00.000Z",
+  "coverageEnd": "2024-09-18T21:00:00.000Z",
+  "rawSha256": "be919d763a5464a2d6198c7cb0ebb7f7ec8d99c1243f50e4bf4f0e2b0a5f67dd",
+  "marketMetadataSha256": "efaad084b9ff1cfdbdb481fd9c00450aa23c38ddf8cec55912ff2664eb9ae72e",
+  "normalizedSha256": "070e10e264ba2f78b4dff984b6fb22d6f2a45305375a71de24c458dfc0dd0d26",
+  "rawObservations": 1323,
+  "normalizedObservations": 1323,
+  "duplicateCadenceBuckets": 0,
+  "missingBucketCount": 0,
+  "missingBuckets": [],
+  "rejectedProbabilities": 0,
+  "transformVersion": "polymarket-hourly-v1",
+  "markPolicy": "Use each API history price as a traded mark; sort chronologically and keep the latest source observation in each UTC hour. Do not fill missing hours.",
+  "provenanceUrl": "https://docs.polymarket.com/api-reference/markets/get-prices-history"
+}

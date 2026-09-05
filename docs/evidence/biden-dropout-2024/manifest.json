@@ -1,0 +1,58 @@
+[
+  {
+    "id": "debate",
+    "url": "https://transcripts.cnn.com/show/se/date/2024-06-27/segment/06",
+    "retrievedAt": "2026-09-05T17:25:21.601Z",
+    "snapshotHash": "e54bbb4ac25ed4ee434f7db87fe56088a96e3603432a3dd708891a1db7bb5b61",
+    "path": "docs/evidence/biden-dropout-2024/debate.html"
+  },
+  {
+    "id": "letter",
+    "url": "https://transcripts.cnn.com/show/ctw/date/2024-07-08/segment/01",
+    "retrievedAt": "2026-09-05T17:25:21.604Z",
+    "snapshotHash": "059f51260069795a68b723ffb6f2a6fd85cdfee5941ace913753938ad3787d5f",
+    "path": "docs/evidence/biden-dropout-2024/letter.html"
+  },
+  {
+    "id": "pelosi-clooney",
+    "url": "https://transcripts.cnn.com/show/cnc/date/2024-07-10/segment/09",
+    "retrievedAt": "2026-09-05T17:25:21.607Z",
+    "snapshotHash": "f7cc4734910aab89af45a20fc79d4d7b65065c499e9308f809cdc1322e4d1457",
+    "path": "docs/evidence/biden-dropout-2024/pelosi-clooney.html"
+  },
+  {
+    "id": "shooting",
+    "url": "https://transcripts.cnn.com/show/cnr/date/2024-07-13/segment/08",
+    "retrievedAt": "2026-09-05T17:25:21.607Z",
+    "snapshotHash": "4108d635e69bc8b700d6402210932f9ffe5cea8175974140abff9f51ca852196",
+    "path": "docs/evidence/biden-dropout-2024/shooting.html"
+  },
+  {
+    "id": "schiff",
+    "url": "https://transcripts.cnn.com/show/cnc/date/2024-07-17/segment/10",
+    "retrievedAt": "2026-09-05T17:25:21.605Z",
+    "snapshotHash": "62006d7c17baa8dab38284bb3b0e8590580b79365c10050229e56ab5e4a2f695",
+    "path": "docs/evidence/biden-dropout-2024/schiff.html"
+  },
+  {
+    "id": "pressure",
+    "url": "https://transcripts.cnn.com/show/se/date/2024-07-17/segment/01",
+    "retrievedAt": "2026-09-05T17:25:21.828Z",
+    "snapshotHash": "66d2898b81c5df3e799009ca8a2f6c509532d799fd9d5facab8714d1a2e89fc8",
+    "path": "docs/evidence/biden-dropout-2024/pressure.html"
+  },
+  {
+    "id": "biden-letter",
+    "url": "https://www.presidency.ucsb.edu/documents/letter-the-democratic-party-intention-accept-the-presidential-nomination",
+    "retrievedAt": "2026-09-05T17:25:21.605Z",
+    "snapshotHash": "6cdd9786e4b1894897d69fce2027be49fed7db8e6133e528f94dfac52b60c667",
+    "path": "docs/evidence/biden-dropout-2024/biden-letter.html"
+  },
+  {
+    "id": "withdrawal",
+    "url": "https://www.presidency.ucsb.edu/documents/letter-the-nation-announcing-decision-not-seek-reelection",
+    "retrievedAt": "2026-09-05T17:25:21.705Z",
+    "snapshotHash": "bd1a557ae4356a2aba2a404a6b68d2e0abf410ab3b712b9a0600669cfd3df71f",
+    "path": "docs/evidence/biden-dropout-2024/withdrawal.html"
+  }
+]

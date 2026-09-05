@@ -1,0 +1,19 @@
+{
+  "provider": "Kalshi",
+  "ticker": "KXOSCARPIC-26-ONE",
+  "retrievedAt": "2026-09-04T00:54:08.144Z",
+  "request": "GET /trade-api/v2/historical/markets/KXOSCARPIC-26-ONE/candlesticks?start_ts=1758549600&end_ts=1773633600&period_interval=60",
+  "rawSha256": "b1f4bf26a54a512af052fd91af8272ef820881570b4a6d37db673cf5150f1131",
+  "marketMetadataSha256": "151d9ff463871c5d7c0598a1b30e3d2457899cbf2040b85941afee36ca73292c",
+  "normalizedSha256": "498a7ba35bb74924845de951b1a281ecf70382f4aff74f62f0529537c072eb54",
+  "rawCandles": 4168,
+  "normalizedObservations": 4168,
+  "duplicateCadenceBuckets": 0,
+  "missingBucketCount": 21,
+  "rejectedProbabilities": 0,
+  "coverageStart": "2025-09-22T15:00:00.000Z",
+  "coverageEnd": "2026-03-16T03:00:00.000Z",
+  "transformVersion": "kalshi-hourly-v1",
+  "markPolicy": "Use the candle close when traded; otherwise use the closing bid/ask midpoint only when spread is at most 20 points.",
+  "provenanceUrl": "https://docs.kalshi.com/api-reference/historical/get-historical-market-candlesticks"
+}

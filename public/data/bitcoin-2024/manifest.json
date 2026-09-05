@@ -1,0 +1,32 @@
+{
+  "provider": "Polymarket",
+  "tokenId": "64903093311385616430821497488306433314807585397286521531639186532059591846310",
+  "marketSlug": "will-bitcoin-hit-100k-in-2024",
+  "retrievedAt": "2026-09-04T03:44:35.958Z",
+  "request": {
+    "endpoint": "https://clob.polymarket.com/prices-history",
+    "startTs": 1709564400,
+    "endTs": 1733464800,
+    "fidelityMinutes": 60,
+    "chunkSeconds": 864000,
+    "chunks": 28
+  },
+  "coverageStart": "2024-03-04T17:00:00.000Z",
+  "coverageEnd": "2024-12-05T04:00:00.000Z",
+  "rawSha256": "856e5338c22d56b08c21e7cbdb4da8f00e97cba4055a58be7e6572a4bd13b533",
+  "marketMetadataSha256": "f248b962c27c8fda3a51a16710aa2580eca15c3d95a97aa04dda9063699d40f7",
+  "normalizedSha256": "5d7aa54719ff32af2892aaba94fa6b33adc714bf558d82691a480c75bfbbab69",
+  "rawObservations": 6610,
+  "normalizedObservations": 6609,
+  "duplicateCadenceBuckets": 1,
+  "missingBucketCount": 3,
+  "missingBuckets": [
+    "2024-05-01T19:00:00.000Z",
+    "2024-07-21T18:00:00.000Z",
+    "2024-11-05T22:00:00.000Z"
+  ],
+  "rejectedProbabilities": 0,
+  "transformVersion": "polymarket-hourly-v1",
+  "markPolicy": "Use each API history price as a traded mark; sort chronologically and keep the latest source observation in each UTC hour. Do not fill missing hours.",
+  "provenanceUrl": "https://docs.polymarket.com/api-reference/markets/get-prices-history"
+}

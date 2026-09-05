@@ -1,4 +1,15 @@
-# 2024 presidential election market data
+# EventLens market data
+
+Each study retains an official raw provider response, a provider-neutral hourly CSV, and a manifest with request parameters, coverage, audit results, transformation version, and SHA-256 digests. Runtime code reads only the frozen normalized CSV.
+
+- `biden-dropout-2024/` retains the 692-observation launch snapshot, official market metadata and three raw history chunks. Source snapshots are retained outside the public bundle under `docs/evidence/biden-dropout-2024/`.
+- `election-2024/` retains the fresh official API response and manifest for the untouched legacy CSV at `polymarket-2024-hourly.csv`.
+- `oscars-2026/` retains Kalshi candlesticks and the normalized trade/quote snapshot.
+- `fed-2024/`, `eagles-2025/`, and `bitcoin-2024/` retain chunked Polymarket responses and normalized snapshots.
+
+The cross-study audit and limitations are documented in [`../../docs/data-provenance.md`](../../docs/data-provenance.md).
+
+## 2024 presidential election market data
 
 `polymarket-2024-hourly.csv` contains 3,863 hourly observations for the
 Polymarket contract "Will Donald Trump win the 2024 US presidential election?"
@@ -21,6 +32,8 @@ downloaded directly from the same endpoint on September 3, 2026 so the May 30
 conviction has complete before and after windows. The token ID is:
 
 `21742633143463906290569050155826241533067272736897614950488156847949938836455`
+
+A fresh September 4, 2026 raw response is retained at `election-2024/raw-prices-history.json`. Its hourly content independently reproduces the same observation inventory, but the original normalized fixture remains byte-for-byte unchanged to preserve every legacy calculation.
 
 ## License
 
