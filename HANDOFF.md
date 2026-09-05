@@ -4,7 +4,7 @@ The user approved “24 days that ended Biden’s campaign” as the first-ever 
 
 The July 21 announcement is a source-linked post-reveal conclusion and chart context marker, excluded from ranking. Later July 17 reporting is retrospective context, never pre-reveal evidence for Schiff’s earlier statement. The root serves the launch daily during its 24-hour window; its exact link remains playable as an archive afterward. No second daily is invented. Source, snapshot, routing, scoring, cutoff and storage-isolation checks pass with the existing suite and production build.
 
-# EventLens handoff
+# NexusPoint handoff
 
 The app contains a generalized, versioned study engine, six studies, and a separate daily-puzzle registry. The root route resolves the current UTC publication window; `/studies/election-2024-v1` opens the original election study with its ten events and exact calculations preserved. `/studies` is the portfolio index; the launch study is `/studies/biden-dropout-24-days`; the other routes are `/studies/oscars-best-picture-2026`, `/studies/fed-september-2024`, `/studies/eagles-super-bowl-lix`, and `/studies/bitcoin-100k-2024`.
 

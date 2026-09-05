@@ -1,4 +1,4 @@
-# EventLens market data
+# NexusPoint market data
 
 Each study retains an official raw provider response, a provider-neutral hourly CSV, and a manifest with request parameters, coverage, audit results, transformation version, and SHA-256 digests. Runtime code reads only the frozen normalized CSV.
 

@@ -25,31 +25,31 @@ const event = ({ fact, sourceIds, ...definition }: Definition): StudyEvent => ({
 
 const events: StudyEvent[] = [
   event({
-    id: 'debate', title: 'Biden loses his train of thought in the Trump debate', shortTitle: 'The debate',
+    id: 'debate', title: 'Biden loses his train of thought in the presidential debate', shortTitle: 'Biden falters in the Trump debate',
     occurredAt: '2024-06-28T01:00:00Z', informationKnownAt: '2024-06-28T02:00:00Z', precision: 'interval', dateLabel: 'Jun 27', category: 'Debate',
-    fact: 'During the televised debate, Biden pauses and struggles to finish an answer about spending and health care. Trump challenges his ability to lead.', sourceIds: ['debate'],
+    fact: 'Facing Donald Trump in their first televised debate of 2024, Biden pauses and struggles to finish an answer about spending and health care. Trump challenges his ability to lead.', sourceIds: ['debate'],
     expectedDirection: 'positive', mechanism: 'A difficult unscripted performance can intensify pressure to replace the nominee.',
     retrospectiveInterpretation: 'Withdrawal odds rose after the debate. The following day’s calls for Biden to leave also fall inside the measurement period, so the move represents the debate and its immediate fallout.',
     competingExplanation: 'Post-debate commentary, campaign responses and the next day’s New York Times editorial arrived before the stabilized window ended.', attributionAssessment: 'mixed',
   }),
   event({
-    id: 'stay-in-race', title: 'Biden tells Democrats he is staying in the race', shortTitle: 'Biden refuses to quit',
+    id: 'stay-in-race', title: 'Biden tells Democrats he won’t leave the presidential race', shortTitle: 'Biden vows to stay in the race',
     occurredAt: '2024-07-08T13:00:00Z', informationKnownAt: '2024-07-08T13:20:00Z', precision: 'interval', dateLabel: 'Jul 8', category: 'Campaign statement',
-    fact: 'In a letter to congressional Democrats, Biden says he will continue his campaign and argues that primary voters have already chosen him.', sourceIds: ['biden-letter', 'letter'],
+    fact: 'Responding to calls to step aside, Biden writes to congressional Democrats that he will keep running against Trump. He argues that Democratic primary voters chose him and the party should unite behind him.', sourceIds: ['biden-letter', 'letter'],
     expectedDirection: 'negative', mechanism: 'A direct refusal makes a voluntary withdrawal seem less imminent and challenges party officials to oppose their nominee openly.',
     retrospectiveInterpretation: 'The refusal was followed by a substantial fall in withdrawal odds. Biden’s television appearance and expressions of support were part of the same effort to hold the party together.',
     competingExplanation: 'His Morning Joe call and public support from Democratic leaders overlapped this window; the letter’s effect cannot be isolated.', attributionAssessment: 'mixed',
   }),
   event({
-    id: 'pelosi-clooney', title: 'Pelosi leaves the decision open; Clooney urges Biden to quit', shortTitle: 'Pelosi and Clooney',
+    id: 'pelosi-clooney', title: 'Pelosi leaves Biden’s candidacy in question; Clooney calls for a new nominee', shortTitle: 'Pelosi questions the decision; Clooney urges exit',
     occurredAt: '2024-07-10T11:40:00Z', informationKnownAt: '2024-07-10T18:30:00Z', precision: 'interval', dateLabel: 'Jul 10', category: 'Party and donor pressure',
-    fact: 'Nancy Pelosi says Biden must decide whether to run. George Clooney, who recently hosted a fundraiser for him, publicly calls for a different Democratic nominee.', sourceIds: ['pelosi-clooney'],
+    fact: 'Despite Biden’s pledge to stay, former House Speaker Nancy Pelosi says he still needs to decide whether to run. Actor and Democratic fundraiser George Clooney publicly urges the party to choose someone else.', sourceIds: ['pelosi-clooney'],
     expectedDirection: 'positive', mechanism: 'Public doubts from an influential party leader and a prominent fundraiser can reopen a decision the campaign says is settled.',
     retrospectiveInterpretation: 'The market repriced toward withdrawal after the combined intervention. This is one news episode: its movement cannot be split into separate Pelosi and Clooney scores.',
     competingExplanation: 'Senator Peter Welch called for withdrawal that evening. The NATO press conference and further Democratic reactions followed during the next-day window.', attributionAssessment: 'mixed',
   }),
   event({
-    id: 'trump-shooting', title: 'Trump survives a shooting at his Pennsylvania rally', shortTitle: 'The Trump shooting',
+    id: 'trump-shooting', title: 'Trump survives a shooting at his Pennsylvania campaign rally', shortTitle: 'Trump survives a rally shooting',
     occurredAt: '2024-07-13T22:11:00Z', informationKnownAt: '2024-07-14T00:00:00Z', precision: 'interval', dateLabel: 'Jul 13', category: 'Campaign shock',
     fact: 'Gunfire interrupts Trump’s rally in Butler, Pennsylvania. Secret Service agents evacuate him, and the agency says he is safe.', sourceIds: ['shooting'],
     expectedDirection: 'ambiguous', mechanism: 'The attack can interrupt pressure on Biden by changing the news agenda, while also changing Democrats’ assessment of the election.',
@@ -57,7 +57,7 @@ const events: StudyEvent[] = [
     competingExplanation: 'Democratic discussions continued privately, and preparations for the Republican convention also shaped the news cycle.', attributionAssessment: 'mixed',
   }),
   event({
-    id: 'renewed-pressure', title: 'Adam Schiff calls on Biden to step aside', shortTitle: 'Pressure returns',
+    id: 'renewed-pressure', title: 'Democratic congressman Adam Schiff calls on Biden to end his campaign', shortTitle: 'Schiff urges Biden to end his campaign',
     occurredAt: '2024-07-17T17:00:00Z', informationKnownAt: '2024-07-17T19:00:00Z', precision: 'interval', dateLabel: 'Jul 17', category: 'Party pressure',
     fact: 'Congressman Adam Schiff publicly urges Biden to leave the race, saying he doubts Biden can defeat Trump and believes another Democrat should take over.', sourceIds: ['schiff'],
     expectedDirection: 'positive', mechanism: 'A prominent Democrat renewing the public call for withdrawal can signal that the party’s pressure campaign is resuming.',
@@ -74,7 +74,7 @@ export const bidenDropoutStudy: Study = {
   contract: { id: '80466862227762400456474037114326989569691448086113369690204721936360568404468', proposition: 'Joe Biden withdraws from the 2024 presidential race', nativeSide: 'YES', selectedPerspective: 'YES', resolution: 'YES' },
   dataset: { id: 'polymarket-biden-dropout-2024-hourly-v1', provider: 'Polymarket', path: '/data/biden-dropout-2024/polymarket-hourly.csv', rawPath: '/data/biden-dropout-2024/raw-prices-history.json', marketMetadataPath: '/data/biden-dropout-2024/raw-market.json', manifestPath: '/data/biden-dropout-2024/manifest.json', rawSha256: '6396d9b434a2be58274b87eca54ea58e17c3780418baafba708f24b6e0379742', marketMetadataSha256: 'cdda7d0ea5750729c77870539c75ccd2379102d308a3356be155c97e3bc5276e', normalizedSha256: 'd04cd03d112e168ba79881d9588edce07dbe6a77f5dc96539492571e179f6fdd', retrievedAt, coverageStart: '2024-06-23T00:00:00.000Z', coverageEnd: '2024-07-21T20:00:00.000Z', fullMarketLifetime: false, cadenceMinutes: 60, transformVersion: 'polymarket-hourly-v1', provenanceUrl: 'https://docs.polymarket.com/api-reference/markets/get-prices-history', requestParameters: 'token_id=80466862227762400456474037114326989569691448086113369690204721936360568404468; fidelity=60; start=2024-06-23T00:00:00Z; end=2024-07-22T00:00:00Z; 10-day chunks' },
   measurementProfile: MONTHS_PROFILE,
-  presentation: { topicLabel: '24 days that ended Biden’s campaign', selectedContractShort: 'Biden drops out', selectedContractLong: 'Biden withdraws from the 2024 presidential race', seriesLabel: 'Biden withdrawal probability', positiveLabel: 'Raises dropout chance', negativeLabel: 'Lowers dropout chance', neutralLabel: 'Ambiguous', eventNoun: 'campaign headline', timezone: 'America/New_York', accent: '#3d5bd8', zoomChoices: [{ label: 'All', hours: null }, { label: '14d', hours: 336 }, { label: '7d', hours: 168 }, { label: '3d', hours: 72 }] },
+  presentation: { topicLabel: '24 days that ended Biden’s campaign', selectedContractShort: 'Biden drops out', selectedContractLong: 'Biden withdraws from the 2024 presidential race', seriesLabel: 'Biden withdrawal probability', positiveLabel: 'More likely to drop out', negativeLabel: 'More likely to stay in', positiveShortLabel: 'Drop out', negativeShortLabel: 'Stay in', neutralLabel: 'Ambiguous', eventNoun: 'campaign headline', timezone: 'America/New_York', accent: '#3d5bd8', zoomChoices: [{ label: 'All', hours: null }, { label: '14d', hours: 336 }, { label: '7d', hours: 168 }, { label: '3d', hours: 72 }] },
   sources, events,
   conclusion: { title: 'July 21: Biden withdraws', text: 'Twenty-four days after the debate, Biden announced that he would end his reelection campaign. The withdrawal market resolved YES. His final announcement is the ending of this story, rather than one of the five ranked headlines.', sourceId: 'withdrawal' },
   contextMarkers: [

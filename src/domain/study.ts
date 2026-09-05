@@ -75,6 +75,8 @@ export type StudyPresentation = {
   seriesLabel: string
   positiveLabel: string
   negativeLabel: string
+  positiveShortLabel?: string
+  negativeShortLabel?: string
   neutralLabel: string
   eventNoun: string
   timezone: string

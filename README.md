@@ -1,10 +1,10 @@
-# EventLens
+# NexusPoint
 
-EventLens is a quick daily prediction-market puzzle. A player ranks five sourced historical headlines from the biggest rise in a selected contract's odds to the biggest fall, reveals a tie-aware score, and can share a spoiler-free result. The detailed market study remains available as optional post-game exploration.
+NexusPoint is a quick daily prediction-market puzzle. A player ranks five sourced historical headlines from the biggest rise in a selected contract's odds to the biggest fall, reveals a tie-aware score, and can share a spoiler-free result. The detailed market study remains available as optional post-game exploration.
 
 Six local, reproducible studies are registered:
 
-- `/` — the five-card EventLens daily game, launching with “24 days that ended Biden’s campaign.”
+- `/` — the five-card NexusPoint daily game, launching with “24 days that ended Biden’s campaign.”
 - `/studies/biden-dropout-24-days` — Biden’s 2024 withdrawal, five events, published.
 - `/studies/election-2024-v1` — the full 2024 U.S. election study, published.
 - `/studies/oscars-best-picture-2026` — 2026 Best Picture, five events, editorial review.

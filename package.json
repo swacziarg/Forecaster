@@ -7,7 +7,10 @@
     "dev": "vite --host 127.0.0.1",
     "build": "tsc -b && vite build",
     "test": "node --experimental-strip-types src/domain/eventStudy.test.ts && node --experimental-strip-types src/domain/dailyGame.test.ts",
-    "preview": "vite preview --host 127.0.0.1"
+    "preview": "vite preview --host 127.0.0.1",
+    "build:cloudflare": "npm test && npm run build",
+    "deploy": "wrangler deploy",
+    "deploy:preview": "wrangler versions upload"
   },
   "dependencies": {
     "lucide-react": "latest",
@@ -20,6 +23,7 @@
     "@types/react-dom": "latest",
     "@vitejs/plugin-react": "latest",
     "typescript": "latest",
-    "vite": "latest"
+    "vite": "latest",
+    "wrangler": "4.129.0"
   }
 }
