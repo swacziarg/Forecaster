@@ -458,8 +458,9 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
 .daily-card:first-child::before { height: calc(100% - var(--rank-center) + 5px); top: var(--rank-center); }
 .daily-card:last-child::before { height: calc(var(--rank-center) + 4px); }
 .daily-card-rank { align-self: start; align-items: center; background: #173f31; border: 4px solid #fffefa; border-radius: 50%; color: white; display: flex; font-family: var(--serif); font-size: 1.1rem; height: 48px; justify-content: center; position: relative; width: 48px; z-index: 1; }
-.daily-rank-select, .daily-rank-chevron, .daily-touch-hint { display: none; }
+.daily-touch-hint { display: none; }
 .daily-card-copy { min-width: 0; }
+.daily-card-rank, .daily-card-meta, .daily-card h3 { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
 .daily-card-meta { align-items: center; color: #788078; display: flex; font-size: .75rem; font-weight: 750; gap: 8px; letter-spacing: .03em; text-transform: uppercase; }
 .daily-card-meta span { border-left: 1px solid #d6d4ca; padding-left: 8px; }
 .daily-card h3 { font-family: var(--serif); font-size: 1.35rem; font-weight: 600; line-height: 1.1; margin: 5px 0 4px; }
@@ -609,24 +610,18 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
   .daily-ranking-layout { gap: 4px; grid-template-columns: 16px minmax(0, 1fr); margin-top: 0; }
   .daily-spectrum { font-size: .72rem; }
   .daily-card-list { gap: 5px; }
-  .daily-card { --rank-center: 27px; align-items: center; cursor: auto; gap: 7px; grid-template-columns: 44px minmax(0, 1fr); min-height: 96px; padding: 4px 7px 4px 4px; }
-  .daily-card::before { height: calc(100% + 6px); left: 25px; }
+  .daily-card { --rank-center: 28px; align-items: center; cursor: auto; gap: 8px; grid-template-columns: 34px minmax(0, 1fr) 44px; padding: 10px 8px; }
+  .daily-card::before { height: calc(100% + 6px); left: 24px; }
   .daily-card:first-child::before { height: calc(100% - var(--rank-center) + 5px); }
   .daily-card:last-child::before { height: calc(var(--rank-center) + 4px); }
-  .daily-card-rank { align-self: start; border-width: 3px; font-size: 1rem; height: 44px; width: 44px; }
-  .daily-card-rank:has(select) > span { visibility: hidden; }
-  .daily-rank-select { appearance: none; background: transparent; border: 0; border-radius: 50%; color: white; cursor: pointer; display: block; font-family: var(--serif); font-size: 1rem; height: 44px; left: -3px; padding: 0 0 5px; position: absolute; text-align: center; top: -3px; width: 44px; }
-  .daily-rank-select:focus-visible { outline: 2px solid #a64434; outline-offset: 2px; }
-  .daily-rank-select option { background: #fffefa; color: #1c2a24; }
-  .daily-rank-chevron { bottom: 2px; display: block; pointer-events: none; position: absolute; }
-  .daily-card-meta { flex-wrap: wrap; font-size: .6rem; gap: 3px 5px; }
+  .daily-card-rank { border-width: 3px; font-size: 1rem; height: 34px; width: 34px; }
+  .daily-card-meta { flex-wrap: wrap; font-size: .64rem; gap: 3px 5px; }
   .daily-card-meta span { padding-left: 5px; }
-  .daily-card h3 { font-size: 1rem; line-height: 1.12; margin: 3px 0 0; }
+  .daily-card h3 { font-size: 1.05rem; line-height: 1.14; margin: 4px 0; }
   .daily-card-details { margin-top: 2px; }
-  .daily-card-details > summary { font-size: .7rem; min-height: 28px; }
-  .daily-move-controls { grid-template-columns: 44px; left: 4px; position: absolute; top: 48px; }
-  .daily-move-controls .daily-drag-handle, .daily-preview-controls .daily-preview-grip { background: #fffefa; border-color: transparent; }
-  .daily-move-controls [data-move-control], .daily-preview-controls > span:not(.daily-preview-grip) { display: none; }
+  .daily-card-details > summary { font-size: .72rem; min-height: 28px; }
+  .daily-move-controls { gap: 4px; grid-template-columns: 44px; }
+  .daily-move-controls .daily-drag-handle, .daily-preview-controls .daily-preview-grip { display: none; }
   .daily-preview-detail { font-size: .72rem; min-height: 26px; }
   .daily-submit-dock { border-top: 1px solid #d6d4ca; margin: 14px -10px 0; padding: 13px 12px calc(10px + env(safe-area-inset-bottom)); }
   .daily-submit-dock .daily-primary-button { width: min(100%, 420px); }

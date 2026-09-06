@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState, type PointerEvent as ReactPointerEvent, type ReactNode } from 'react'
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type TouchEvent as ReactTouchEvent, type ReactNode } from 'react'
 import { ArrowDown, ArrowRight, ArrowUp, BarChart3, BookOpen, Check, ChevronDown, Clock3, Copy, ExternalLink, Flame, GripVertical, HelpCircle, LockKeyhole, Share2, Trophy, X } from 'lucide-react'
 import type { StudyRegistration } from './data/studies.ts'
 import { calculateStudyImpacts, createTieGroups, moveRankedItem, type MarketSeriesPoint, type StudyEventImpact } from './domain/eventStudy.ts'
@@ -91,12 +91,14 @@ function Stats({ puzzles, returnFocus, onClose }: { puzzles: readonly DailyPuzzl
 }
 
 function Help({ puzzle, study, returnFocus, onClose }: { puzzle: DailyPuzzle; study: Study; returnFocus: HTMLElement | null; onClose: () => void }) {
-  return <Modal title="How to play" returnFocus={returnFocus} onClose={onClose}><ol className="daily-rules"><li><span>1</span><p><strong>Read the five headlines.</strong> Open Brief &amp; sources for more context and the original reporting or statement.</p></li><li><span>2</span><p><strong>Rank the market reaction.</strong> On a touchscreen, swipe cards to scroll and drag the grip to reorder. On mobile, you can also tap a rank number to choose a position. With a mouse, drag the card or use its arrow buttons. Top: {study.presentation.positiveLabel}. Bottom: {study.presentation.negativeLabel}. Rank the largest shifts toward each end.</p></li><li><span>3</span><p><strong>Reveal once.</strong> Your score is the share of comparable pairs that match the market order. Responses within {formatThreshold(puzzle.scoring.tieThreshold)} of the strongest response in a group are tied.</p></li></ol><p className="daily-modal-note">This is a historical market puzzle. Measured movements are associations, not proof that a headline caused a price change.</p></Modal>
+  return <Modal title="How to play" returnFocus={returnFocus} onClose={onClose}><ol className="daily-rules"><li><span>1</span><p><strong>Read the five headlines.</strong> Open Brief &amp; sources for more context and the original reporting or statement.</p></li><li><span>2</span><p><strong>Rank the market reaction.</strong> Swipe to scroll. Hold a tile briefly, then drag it to reorder, or use the arrow buttons. With a mouse, drag the card directly. Top: {study.presentation.positiveLabel}. Bottom: {study.presentation.negativeLabel}. Rank the largest shifts toward each end.</p></li><li><span>3</span><p><strong>Reveal once.</strong> Your score is the share of comparable pairs that match the market order. Responses within {formatThreshold(puzzle.scoring.tieThreshold)} of the strongest response in a group are tied.</p></li></ol><p className="daily-modal-note">This is a historical market puzzle. Measured movements are associations, not proof that a headline caused a price change.</p></Modal>
 }
 
 function Topbar({ puzzle, onHelp, onStats }: { puzzle: DailyPuzzle; onHelp: (trigger: HTMLElement) => void; onStats: (trigger: HTMLElement) => void }) {
   return <header className="daily-topbar"><a className="daily-brand" href="/"><span className="brand-symbol" aria-hidden="true"><span /><span /><span /></span><span>NexusPoint</span></a><div className="daily-number">Daily <b>#{String(puzzle.number).padStart(3, '0')}</b></div><nav aria-label="Daily game"><button aria-label="Help" onClick={(event) => onHelp(event.currentTarget)}><HelpCircle size={17} /> <span>Help</span></button><button aria-label="Stats" onClick={(event) => onStats(event.currentTarget)}><BarChart3 size={17} /> <span>Stats</span></button></nav></header>
 }
+
+type DragStart = { cardElement: HTMLElement; clientY: number; pointerId: number | null; touchId?: number }
 
 type DragPosition = { id: string; clientY: number; left: number; offsetY: number; width: number; height: number }
 
@@ -109,10 +111,11 @@ function DragPreview({ card, index, position }: { card: PreRevealCard; index: nu
   </div>
 }
 
-function Card({ card, index, total, isDragging, onMove, onDragStart }: {
+function Card({ card, index, total, isDragging, onMove, onDragStart, onDragHold }: {
   card: PreRevealCard; index: number; total: number;
   isDragging: boolean; onMove: (id: string, index: number) => void;
-  onDragStart: (id: string, pointerEvent: ReactPointerEvent<HTMLElement>) => void
+  onDragStart: (id: string, start: DragStart) => void;
+  onDragHold: (id: string, touchEvent: ReactTouchEvent<HTMLElement>) => void
 }) {
   const cardRef = useRef<HTMLElement>(null)
   const previousTop = useRef<number | null>(null)
@@ -140,16 +143,16 @@ function Card({ card, index, total, isDragging, onMove, onDragStart }: {
     focusAfterMove.current = control
     onMove(event.id, destination)
   }
-  return <article ref={cardRef} className={`daily-card ${isDragging ? 'is-drag-placeholder' : ''}`} data-daily-id={event.id} onPointerDown={(pointerEvent) => {
-    if (!pointerEvent.isPrimary || pointerEvent.button !== 0) return
+  return <article ref={cardRef} className={`daily-card ${isDragging ? 'is-drag-placeholder' : ''}`} data-daily-id={event.id} onTouchStart={(touchEvent) => onDragHold(event.id, touchEvent)} onContextMenu={(contextEvent) => {
+    if (!(contextEvent.target as HTMLElement).closest('a, details')) contextEvent.preventDefault()
+  }} onPointerDown={(pointerEvent) => {
+    if (pointerEvent.pointerType === 'touch' || !pointerEvent.isPrimary || pointerEvent.button !== 0) return
     const target = pointerEvent.target as HTMLElement
-    if (target.closest('a, details, select, button:not(.daily-drag-handle)')) return
-    // Leave touch/pen gestures to the browser unless they start on the grip.
-    if (pointerEvent.pointerType !== 'mouse' && !target.closest('.daily-drag-handle')) return
+    if (target.closest('a, details, button:not(.daily-drag-handle)')) return
     pointerEvent.preventDefault()
-    onDragStart(event.id, pointerEvent)
+    onDragStart(event.id, { cardElement: pointerEvent.currentTarget, clientY: pointerEvent.clientY, pointerId: pointerEvent.pointerId })
   }}>
-    <div className="daily-card-rank"><span aria-hidden="true">{index + 1}</span><select className="daily-rank-select" aria-label={`Position for ${event.shortTitle}`} value={index} onChange={(changeEvent) => onMove(event.id, Number(changeEvent.target.value))}>{Array.from({ length: total }, (_, position) => <option key={position} value={position}>{position + 1}</option>)}</select><ChevronDown className="daily-rank-chevron" size={10} aria-hidden="true" /></div>
+    <div className="daily-card-rank" aria-hidden="true">{index + 1}</div>
     <div className="daily-card-copy"><div className="daily-card-meta"><time dateTime={event.occurredAt}>{event.dateLabel}</time><span>{event.category}</span></div><h3>{event.title}</h3><details className="daily-card-details"><summary>Brief &amp; sources <ChevronDown size={14} /></summary><p>{card.brief}</p><div>{card.sources.map((source) => <a key={source.id} href={source.url} target="_blank" rel="noreferrer" onClick={(clickEvent) => clickEvent.stopPropagation()}>{source.publisher} <ExternalLink size={13} /></a>)}</div></details></div>
     <div className="daily-move-controls" aria-label={`Move ${event.shortTitle}`}><button ref={upRef} data-move-control="up" onClick={() => moveAndRestoreFocus(index - 1, 'up')} disabled={index === 0} aria-label={`Move ${event.shortTitle} up`}><ArrowUp size={19} /></button><button className="daily-drag-handle" aria-label={`Drag ${event.shortTitle}`} aria-pressed={isDragging}><GripVertical size={20} /></button><button ref={downRef} data-move-control="down" onClick={() => moveAndRestoreFocus(index + 1, 'down')} disabled={index === total - 1} aria-label={`Move ${event.shortTitle} down`}><ArrowDown size={19} /></button></div>
   </article>
@@ -268,6 +271,7 @@ export function DailyGame({ registration, points, puzzle, playMode, nextPuzzle, 
   const dragStartOrder = useRef<string[]>([])
   const activePointerId = useRef<number | null>(null)
   const cleanupDragListeners = useRef<(() => void) | null>(null)
+  const cleanupHold = useRef<(() => void) | null>(null)
   orderRef.current = order
   const byId = useMemo(() => new Map(cards.map((card) => [card.event.id, card])), [cards])
   const scored = useMemo(() => scoreDailyOrder(order, impacts, puzzle.scoring), [impacts, order, puzzle.scoring])
@@ -288,6 +292,7 @@ export function DailyGame({ registration, points, puzzle, playMode, nextPuzzle, 
       if (event.key !== dailyAttemptKey(puzzle)) return
       const saved = readDailyAttempt(browserStorage(), puzzle)
       if (saved.status === 'valid' && saved.attempt.submission) {
+        cleanupHold.current?.()
         cleanupDragListeners.current?.()
         cleanupDragListeners.current = null
         activePointerId.current = null
@@ -354,15 +359,14 @@ export function DailyGame({ registration, points, puzzle, playMode, nextPuzzle, 
     dragPositionRef.current = null
     setDragPosition(null)
   }
-  const startDrag = (id: string, pointerEvent: ReactPointerEvent<HTMLElement>) => {
+  const startDrag = (id: string, start: DragStart) => {
     if (submission || dragPositionRef.current) return
-    const cardElement = pointerEvent.currentTarget.closest<HTMLElement>('[data-daily-id]')
-    if (!cardElement) return
+    const { cardElement, clientY, pointerId, touchId } = start
     cleanupDragListeners.current?.()
     const rect = cardElement.getBoundingClientRect()
-    const nextPosition = { id, clientY: pointerEvent.clientY, left: rect.left, offsetY: pointerEvent.clientY - rect.top, width: rect.width, height: Math.min(rect.height, 140) }
+    const nextPosition = { id, clientY, left: rect.left, offsetY: clientY - rect.top, width: rect.width, height: Math.min(rect.height, 140) }
     dragStartOrder.current = [...orderRef.current]
-    activePointerId.current = pointerEvent.pointerId
+    activePointerId.current = pointerId
     dragPositionRef.current = nextPosition
     setDragPosition(nextPosition)
     document.body.classList.add('daily-is-sorting')
@@ -377,10 +381,26 @@ export function DailyGame({ registration, points, puzzle, playMode, nextPuzzle, 
     }
     const onPointerUp = (event: PointerEvent) => { if (pointerMatches(event)) endDrag(id, false) }
     const onPointerCancel = (event: PointerEvent) => { if (pointerMatches(event)) endDrag(id, true) }
+    const onTouchMove = (event: TouchEvent) => {
+      const touch = [...event.touches].find((candidate) => candidate.identifier === touchId)
+      if (!touch) return
+      if (event.touches.length !== 1) { endDrag(id, true); return }
+      // A non-passive touch listener lets a held tile drag without taking over ordinary swipes.
+      event.preventDefault()
+      moveDrag(id, touch.clientY)
+    }
+    const onTouchEnd = (event: TouchEvent) => {
+      if ([...event.changedTouches].some((touch) => touch.identifier === touchId)) endDrag(id, event.type === 'touchcancel')
+    }
+    const onAdditionalTouch = (event: TouchEvent) => { if (event.touches.length > 1) endDrag(id, true) }
     const onKeyDown = (event: KeyboardEvent) => { if (event.key === 'Escape') { event.preventDefault(); endDrag(id, true) } }
     const onWindowBlur = () => endDrag(id, true)
     const onVisibilityChange = () => { if (document.visibilityState === 'hidden') endDrag(id, true) }
     const cleanup = () => {
+      document.removeEventListener('touchmove', onTouchMove, true)
+      document.removeEventListener('touchend', onTouchEnd, true)
+      document.removeEventListener('touchcancel', onTouchEnd, true)
+      document.removeEventListener('touchstart', onAdditionalTouch, true)
       document.removeEventListener('pointermove', onPointerMove, true)
       document.removeEventListener('pointerup', onPointerUp, true)
       document.removeEventListener('pointercancel', onPointerCancel, true)
@@ -389,6 +409,12 @@ export function DailyGame({ registration, points, puzzle, playMode, nextPuzzle, 
       window.removeEventListener('blur', onWindowBlur)
     }
     cleanupDragListeners.current = cleanup
+    if (touchId !== undefined) {
+      document.addEventListener('touchmove', onTouchMove, { capture: true, passive: false })
+      document.addEventListener('touchend', onTouchEnd, true)
+      document.addEventListener('touchcancel', onTouchEnd, true)
+      document.addEventListener('touchstart', onAdditionalTouch, true)
+    }
     document.addEventListener('pointermove', onPointerMove, { capture: true, passive: false })
     document.addEventListener('pointerup', onPointerUp, true)
     document.addEventListener('pointercancel', onPointerCancel, true)
@@ -396,7 +422,44 @@ export function DailyGame({ registration, points, puzzle, playMode, nextPuzzle, 
     document.addEventListener('visibilitychange', onVisibilityChange)
     window.addEventListener('blur', onWindowBlur)
   }
+  const holdToDrag = (id: string, event: ReactTouchEvent<HTMLElement>) => {
+    cleanupHold.current?.()
+    if (submission || dragPositionRef.current || event.touches.length !== 1) return
+    if ((event.target as HTMLElement).closest('a, details, button:not(.daily-drag-handle)')) return
+    const touch = event.touches[0]
+    const start = { cardElement: event.currentTarget, clientY: touch.clientY, pointerId: null, touchId: touch.identifier }
+    const startX = touch.clientX
+    const cancel = () => {
+      window.clearTimeout(timer)
+      document.removeEventListener('touchmove', onMove, true)
+      document.removeEventListener('touchend', cancel, true)
+      document.removeEventListener('touchcancel', cancel, true)
+      document.removeEventListener('touchstart', cancel, true)
+      document.removeEventListener('scroll', cancel, true)
+      document.removeEventListener('visibilitychange', cancel)
+      window.removeEventListener('blur', cancel)
+      cleanupHold.current = null
+    }
+    const onMove = (moveEvent: TouchEvent) => {
+      const current = [...moveEvent.touches].find((candidate) => candidate.identifier === start.touchId)
+      if (!current || Math.hypot(current.clientX - startX, current.clientY - start.clientY) > 8) cancel()
+    }
+    const timer = window.setTimeout(() => {
+      cancel()
+      startDrag(id, start)
+      setAnnouncement(`${byId.get(id)?.event.shortTitle ?? 'Headline'} picked up. Drag to a new position.`)
+    }, 350)
+    cleanupHold.current = cancel
+    document.addEventListener('touchmove', onMove, { capture: true, passive: false })
+    document.addEventListener('touchend', cancel, true)
+    document.addEventListener('touchcancel', cancel, true)
+    document.addEventListener('touchstart', cancel, true)
+    document.addEventListener('scroll', cancel, true)
+    document.addEventListener('visibilitychange', cancel)
+    window.addEventListener('blur', cancel)
+  }
   useEffect(() => () => {
+    cleanupHold.current?.()
     cleanupDragListeners.current?.()
     document.body.classList.remove('daily-is-sorting')
   }, [])
@@ -421,6 +484,6 @@ export function DailyGame({ registration, points, puzzle, playMode, nextPuzzle, 
   const overlays = <>{modal === 'help' && <Help puzzle={puzzle} study={study} returnFocus={modalTrigger} onClose={() => setModal(null)} />}{modal === 'stats' && <Stats puzzles={puzzles} returnFocus={modalTrigger} onClose={() => setModal(null)} />}</>
   const page = submission
     ? <><Topbar puzzle={puzzle} onHelp={(trigger) => openModal('help', trigger)} onStats={(trigger) => openModal('stats', trigger)} /><Result study={study} puzzle={puzzle} puzzles={puzzles} nextPuzzle={nextPuzzle} impacts={impacts} submission={submission} now={now} onHelp={(trigger) => openModal('help', trigger)} onStats={(trigger) => openModal('stats', trigger)} /></>
-    : <><Topbar puzzle={puzzle} onHelp={(trigger) => openModal('help', trigger)} onStats={(trigger) => openModal('stats', trigger)} /><main className="daily-game"><header className="daily-game-heading"><span>{puzzle.topic} · Daily #{String(puzzle.number).padStart(3, '0')}</span><h1>{puzzle.question}</h1><p>{puzzle.instruction}</p>{playMode === 'archive' && <p className="daily-archive-note">Archive play does not count toward the current daily streak.</p>}</header><p className="daily-touch-hint">Swipe to scroll · Drag the grip or tap a number to rank</p><div className="daily-ranking-layout"><div className="daily-spectrum" aria-hidden="true"><span>{study.presentation.positiveShortLabel ?? study.presentation.positiveLabel}</span><i /><span>{study.presentation.negativeShortLabel ?? study.presentation.negativeLabel}</span></div><section ref={listRef} className={`daily-card-list ${dragPosition ? 'is-sorting' : ''}`} aria-label={`Rank the five headlines. Top: ${study.presentation.positiveLabel}. Bottom: ${study.presentation.negativeLabel}.`}>{order.map((id, index) => <Card key={id} card={byId.get(id)!} index={index} total={order.length} isDragging={dragPosition?.id === id} onMove={move} onDragStart={startDrag} />)}</section></div><div className="daily-submit-dock"><button className="daily-primary-button" onClick={submit}>Reveal my score <ArrowRight size={19} /></button><span><LockKeyhole size={12} /> {playMode === 'daily' ? 'One official submission' : 'Archive result only'}</span></div><Footer puzzle={puzzle} nextPuzzle={nextPuzzle} puzzles={puzzles} now={now} submitted={false} /><p className="sr-status" aria-live="polite">{announcement}</p></main>{dragPosition && <DragPreview card={byId.get(dragPosition.id)!} index={order.indexOf(dragPosition.id)} position={dragPosition} />}</>
+    : <><Topbar puzzle={puzzle} onHelp={(trigger) => openModal('help', trigger)} onStats={(trigger) => openModal('stats', trigger)} /><main className="daily-game"><header className="daily-game-heading"><span>{puzzle.topic} · Daily #{String(puzzle.number).padStart(3, '0')}</span><h1>{puzzle.question}</h1><p>{puzzle.instruction}</p>{playMode === 'archive' && <p className="daily-archive-note">Archive play does not count toward the current daily streak.</p>}</header><p className="daily-touch-hint">Hold a tile to drag · Or use the arrows</p><div className="daily-ranking-layout"><div className="daily-spectrum" aria-hidden="true"><span>{study.presentation.positiveShortLabel ?? study.presentation.positiveLabel}</span><i /><span>{study.presentation.negativeShortLabel ?? study.presentation.negativeLabel}</span></div><section ref={listRef} className={`daily-card-list ${dragPosition ? 'is-sorting' : ''}`} aria-label={`Rank the five headlines. Top: ${study.presentation.positiveLabel}. Bottom: ${study.presentation.negativeLabel}.`}>{order.map((id, index) => <Card key={id} card={byId.get(id)!} index={index} total={order.length} isDragging={dragPosition?.id === id} onMove={move} onDragStart={startDrag} onDragHold={holdToDrag} />)}</section></div><div className="daily-submit-dock"><button className="daily-primary-button" onClick={submit}>Reveal my score <ArrowRight size={19} /></button><span><LockKeyhole size={12} /> {playMode === 'daily' ? 'One official submission' : 'Archive result only'}</span></div><Footer puzzle={puzzle} nextPuzzle={nextPuzzle} puzzles={puzzles} now={now} submitted={false} /><p className="sr-status" aria-live="polite">{announcement}</p></main>{dragPosition && <DragPreview card={byId.get(dragPosition.id)!} index={order.indexOf(dragPosition.id)} position={dragPosition} />}</>
   return <div className="daily-shell"><div data-daily-background>{page}{persistenceMessage && <p className="daily-persistence-note" role="status">{persistenceMessage}</p>}</div>{overlays}</div>
 }
