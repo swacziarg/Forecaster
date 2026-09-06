@@ -17,7 +17,7 @@ No live market API or credentials are required at runtime.
 
 ## Hosting
 
-Cloudflare deployment settings live in `wrangler.jsonc`. The intended GitHub integration publishes `swacziarg/Forecaster` from `main`, using `npm run build:cloudflare` to test and build before `npm run deploy`. See [Cloudflare hosting](docs/cloudflare-hosting.md) for connection settings and preview deployment behavior.
+Cloudflare deployment settings live in `wrangler.jsonc`. The connected GitHub integration publishes `swacziarg/Forecaster` from `main`, using `npm run build:cloudflare` to test and build before `npm run deploy`. Other branches upload preview versions. See [Cloudflare hosting](docs/cloudflare-hosting.md) for connection settings and deployment verification.
 
 ## Run and verify
 

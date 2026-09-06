@@ -4,7 +4,7 @@ NexusPoint targets Cloudflare Workers Static Assets. `wrangler.jsonc` publishes 
 
 ## GitHub automatic deployment
 
-Connect the existing GitHub repository through Cloudflare Workers Builds with these settings:
+The GitHub repository is connected through Cloudflare Workers Builds with these settings:
 
 | Setting | Value |
 | --- | --- |
@@ -17,13 +17,17 @@ Connect the existing GitHub repository through Cloudflare Workers Builds with th
 | Preview deploy command | `npm run deploy:preview` |
 | Node.js | `24`, from `.node-version` |
 
-The build command runs the evidence and game tests before building the site. Wrangler is pinned in the lockfile. Once the repository connection is enabled, pushes to `main` build and publish production; enabled non-production branch builds upload preview versions without replacing production. Cloudflare manages the build credential through its Git integration; no Cloudflare API token belongs in this repository.
+The build command runs the evidence and game tests before building the site. Wrangler is pinned in the lockfile. Pushes to `main` trigger a production build and deploy; non-production branch pushes trigger preview uploads without replacing production. Both triggers watch all repository paths and use the test-inclusive build command. Cloudflare manages the build credential through its Git integration; no Cloudflare API token belongs in this repository.
 
 ### Connection status, September 5, 2026 (Chicago)
 
-The production Worker and HTTPS custom domain are live. Automatic deployment is **not connected yet**. The Workers Builds API returned no triggers for the `nexuspoint` Worker and no build tokens. Creating the repository connection returned Cloudflare error `8000008`: the project is disconnected from the Git account. The MCP connection cannot manage account API tokens, and the GitHub repository has no Actions secrets configured. A local Wrangler OAuth login is available for direct deployment, but it is not a CI credential.
+The GitHub authorization was completed and the following Workers Builds triggers are connected to `swacziarg/Forecaster`:
 
-To finish, open the NexusPoint Worker in Cloudflare, go to Settings → Build → Connect, and authorize the Cloudflare GitHub app for **only `swacziarg/Forecaster`**. Select `main` and use the settings above. Complete the build-token setup in Cloudflare, then confirm a successful build for the current GitHub commit. Finally verify a later push starts a build automatically and that the deployed homepage matches that commit. Until those checks pass, do not describe automatic deployment as enabled.
+- Production: `5d2c0528-2a9b-445e-acdc-16edaddf3b30`, includes only `main`.
+- Preview: `f79a551f-b4ff-455a-912c-085965e78fe0`, includes all branches except `main`.
+- Worker tag: `8eaa5ef9223d4e229d15525ffffd9c7e`.
+
+To verify a deployment, match the GitHub commit hash to its successful Cloudflare build, check the build logs for passing evidence/game tests and a successful production deployment, and check the public HTTPS homepage and sharing assets. A configured trigger alone is not proof of a successful deployment. A local Wrangler OAuth login remains available for explicit manual deployments.
 
 ## Sharing assets
 
