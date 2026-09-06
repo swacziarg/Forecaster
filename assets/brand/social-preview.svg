@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <title>NexusPoint — Big news. Bigger swings.</title>
+  <desc>Rank five headlines by how prediction-market odds moved. An abstract stack of five headline cards accompanies the NexusPoint wordmark.</desc>
+  <rect width="1200" height="630" fill="#f3f5f1"/>
+  <rect y="0" width="1200" height="8" fill="#123d2f"/>
+  <path d="M785 8h415v622H785z" fill="#e8eee8"/>
+  <g transform="translate(64 57)">
+    <rect width="48" height="48" rx="8" fill="#123d2f"/>
+    <path fill="#cae3d1" d="M10 27h7v12h-7zm11-10h7v22h-7zm11-9h7v31h-7z"/>
+    <text x="63" y="35" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="700" fill="#1d2924">NexusPoint</text>
+  </g>
+  <text x="64" y="209" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="2.6" fill="#176846">THE DAILY PREDICTION-MARKET PUZZLE</text>
+  <g font-family="Georgia, 'Times New Roman', serif" font-size="83" fill="#123d2f" letter-spacing="-3">
+    <text x="60" y="309">Big news.</text>
+    <text x="60" y="399">Bigger swings.</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#627068">
+    <text x="64" y="455">Rank five headlines by how</text>
+    <text x="64" y="490">prediction-market odds moved.</text>
+  </g>
+  <text x="64" y="572" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#123d2f">nexuspoint.lol</text>
+  <path d="M233 565h25m-8-8 8 8-8 8" fill="none" stroke="#123d2f" stroke-width="2.5"/>
+  <g transform="translate(833 67)" font-family="Arial, Helvetica, sans-serif">
+    <text x="0" y="20" font-size="13" font-weight="700" letter-spacing="2" fill="#627068">FIVE HEADLINES. YOUR CALL.</text>
+    <g transform="translate(0 49)">
+      <rect x="3" y="5" width="307" height="76" rx="8" fill="#d6ddd8"/>
+      <rect width="307" height="76" rx="8" fill="#fff"/>
+      <rect width="5" height="76" rx="2" fill="#176846"/>
+      <text x="23" y="48" font-size="24" font-weight="700" fill="#176846">1</text>
+      <path d="M64 28h149M64 45h118" stroke="#b9c5bd" stroke-width="7"/>
+      <path d="M267 49V25m-8 8 8-8 8 8" fill="none" stroke="#176846" stroke-width="3"/>
+    </g>
+    <g transform="translate(0 141)">
+      <rect x="3" y="5" width="307" height="76" rx="8" fill="#d6ddd8"/>
+      <rect width="307" height="76" rx="8" fill="#fff"/>
+      <text x="23" y="48" font-size="24" font-weight="700" fill="#627068">2</text>
+      <path d="M64 28h130M64 45h160" stroke="#cbd4cd" stroke-width="7"/>
+      <g fill="#b9c5bd"><circle cx="264" cy="32" r="2"/><circle cx="274" cy="32" r="2"/><circle cx="264" cy="42" r="2"/><circle cx="274" cy="42" r="2"/></g>
+    </g>
+    <g transform="translate(0 233)">
+      <rect x="3" y="5" width="307" height="76" rx="8" fill="#d6ddd8"/>
+      <rect width="307" height="76" rx="8" fill="#fff"/>
+      <text x="23" y="48" font-size="24" font-weight="700" fill="#627068">3</text>
+      <path d="M64 28h159M64 45h103" stroke="#cbd4cd" stroke-width="7"/>
+      <g fill="#b9c5bd"><circle cx="264" cy="32" r="2"/><circle cx="274" cy="32" r="2"/><circle cx="264" cy="42" r="2"/><circle cx="274" cy="42" r="2"/></g>
+    </g>
+    <g transform="translate(0 325)">
+      <rect x="3" y="5" width="307" height="76" rx="8" fill="#d6ddd8"/>
+      <rect width="307" height="76" rx="8" fill="#fff"/>
+      <text x="23" y="48" font-size="24" font-weight="700" fill="#627068">4</text>
+      <path d="M64 28h120M64 45h143" stroke="#cbd4cd" stroke-width="7"/>
+      <g fill="#b9c5bd"><circle cx="264" cy="32" r="2"/><circle cx="274" cy="32" r="2"/><circle cx="264" cy="42" r="2"/><circle cx="274" cy="42" r="2"/></g>
+    </g>
+    <g transform="translate(0 417)">
+      <rect x="3" y="5" width="307" height="76" rx="8" fill="#d6ddd8"/>
+      <rect width="307" height="76" rx="8" fill="#fff"/>
+      <rect width="5" height="76" rx="2" fill="#b55240"/>
+      <text x="23" y="48" font-size="24" font-weight="700" fill="#b55240">5</text>
+      <path d="M64 28h148M64 45h126" stroke="#b9c5bd" stroke-width="7"/>
+      <path d="M267 25v24m-8-8 8 8 8-8" fill="none" stroke="#b55240" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
