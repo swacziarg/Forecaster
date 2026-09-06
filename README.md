@@ -33,7 +33,7 @@ npm run dev
 ## Product flow
 
 1. Read five neutral, factual headlines and their sources.
-2. Rank them by dragging anywhere on a card or by using its keyboard-operable arrow buttons. Links, detail disclosures, and buttons remain independently clickable.
+2. Rank them with the grip or, on mobile, tap a rank number to choose any position. Swipe the card body to scroll. Mouse users can also drag anywhere on the card or use its keyboard-operable arrow buttons. Links, detail disclosures, and buttons remain independently clickable.
 3. Reveal once. A validated, versioned attempt record is saved by puzzle ID on the device when browser storage is available.
 4. See a prominent score out of 100, the two orders, a before/after probability chart, one takeaway, and tie treatment. Market movement is labeled in full as percentage points and kept distinct from the game score.
 5. Share through the device share sheet or copy a spoiler-free text result linked to that exact puzzle. Tiles represent completed 20-point score bands; the exact score is separate.

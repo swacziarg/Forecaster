@@ -453,11 +453,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
 .daily-spectrum i { background: linear-gradient(180deg, #176846 0 44%, #c8c8bf 50%, #b55240 56% 100%); width: 6px; }
 .daily-card-list { display: grid; gap: 8px; }
 .daily-card-list.is-sorting { user-select: none; }
-.daily-card { --rank-center: 37px; align-items: center; background: #fffefa; border: 1px solid #d7d5cb; box-shadow: 0 1px 0 rgba(24, 44, 35, .04); cursor: grab; display: grid; gap: 14px; grid-template-columns: 48px minmax(0, 1fr) auto; min-width: 0; padding: 13px 14px 13px 10px; position: relative; touch-action: none; }
+.daily-card { --rank-center: 37px; align-items: center; background: #fffefa; border: 1px solid #d7d5cb; box-shadow: 0 1px 0 rgba(24, 44, 35, .04); cursor: grab; display: grid; gap: 14px; grid-template-columns: 48px minmax(0, 1fr) auto; min-width: 0; padding: 13px 14px 13px 10px; position: relative; touch-action: pan-y pinch-zoom; }
 .daily-card::before { background: #b55240; content: ''; height: calc(100% + 9px); left: 33px; position: absolute; top: -4px; width: 2px; z-index: 0; }
 .daily-card:first-child::before { height: calc(100% - var(--rank-center) + 5px); top: var(--rank-center); }
 .daily-card:last-child::before { height: calc(var(--rank-center) + 4px); }
 .daily-card-rank { align-self: start; align-items: center; background: #173f31; border: 4px solid #fffefa; border-radius: 50%; color: white; display: flex; font-family: var(--serif); font-size: 1.1rem; height: 48px; justify-content: center; position: relative; width: 48px; z-index: 1; }
+.daily-rank-select, .daily-rank-chevron, .daily-touch-hint { display: none; }
 .daily-card-copy { min-width: 0; }
 .daily-card-meta { align-items: center; color: #788078; display: flex; font-size: .75rem; font-weight: 750; gap: 8px; letter-spacing: .03em; text-transform: uppercase; }
 .daily-card-meta span { border-left: 1px solid #d6d4ca; padding-left: 8px; }
@@ -598,20 +599,34 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
   .daily-topbar nav button { padding: 0; width: 44px; }
   .daily-topbar nav button span { display: none; }
   .daily-topbar nav button svg { height: 20px; width: 20px; }
-  .daily-game { padding: 23px 10px calc(52px + env(safe-area-inset-bottom)); }
+  .daily-game { padding: 14px 10px calc(32px + env(safe-area-inset-bottom)); }
   .daily-result { padding: 28px 12px calc(52px + env(safe-area-inset-bottom)); }
   .daily-game-heading > span { font-size: .66rem; }
-  .daily-game-heading h1 { font-size: clamp(2rem, 10vw, 2.55rem); line-height: .98; margin-bottom: 9px; max-width: 360px; }
-  .daily-game-heading p { font-size: .88rem; line-height: 1.42; max-width: 340px; }
-  .daily-ranking-layout { gap: 6px; grid-template-columns: 20px minmax(0, 1fr); margin-top: 20px; }
-  .daily-card { --rank-center: 30px; align-items: start; gap: 8px; grid-template-columns: 38px minmax(0, 1fr); padding: 10px 8px 9px 6px; }
-  .daily-card::before { left: 26px; }
-  .daily-card-rank { border-width: 3px; font-size: 1rem; height: 40px; width: 40px; }
-  .daily-card-meta { font-size: .65rem; }
-  .daily-card h3 { font-size: 1.08rem; margin-top: 3px; }
+  .daily-game-heading h1 { font-size: clamp(1.7rem, 7.5vw, 2.2rem); line-height: 1; margin: 7px auto; max-width: 360px; }
+  .daily-game-heading p { font-size: .8rem; line-height: 1.35; max-width: 340px; }
+  .daily-game-heading .daily-archive-note { font-size: .7rem !important; margin-top: 6px !important; padding: 4px 8px; }
+  .daily-touch-hint { color: #59665f; display: block; font-size: .7rem; line-height: 1.4; margin: 10px 0 6px; text-align: center; }
+  .daily-ranking-layout { gap: 4px; grid-template-columns: 16px minmax(0, 1fr); margin-top: 0; }
+  .daily-spectrum { font-size: .72rem; }
+  .daily-card-list { gap: 5px; }
+  .daily-card { --rank-center: 27px; align-items: center; cursor: auto; gap: 7px; grid-template-columns: 44px minmax(0, 1fr); min-height: 96px; padding: 4px 7px 4px 4px; }
+  .daily-card::before { height: calc(100% + 6px); left: 25px; }
+  .daily-card:first-child::before { height: calc(100% - var(--rank-center) + 5px); }
+  .daily-card:last-child::before { height: calc(var(--rank-center) + 4px); }
+  .daily-card-rank { align-self: start; border-width: 3px; font-size: 1rem; height: 44px; width: 44px; }
+  .daily-card-rank:has(select) > span { visibility: hidden; }
+  .daily-rank-select { appearance: none; background: transparent; border: 0; border-radius: 50%; color: white; cursor: pointer; display: block; font-family: var(--serif); font-size: 1rem; height: 44px; left: -3px; padding: 0 0 5px; position: absolute; text-align: center; top: -3px; width: 44px; }
+  .daily-rank-select:focus-visible { outline: 2px solid #a64434; outline-offset: 2px; }
+  .daily-rank-select option { background: #fffefa; color: #1c2a24; }
+  .daily-rank-chevron { bottom: 2px; display: block; pointer-events: none; position: absolute; }
+  .daily-card-meta { flex-wrap: wrap; font-size: .6rem; gap: 3px 5px; }
+  .daily-card-meta span { padding-left: 5px; }
+  .daily-card h3 { font-size: 1rem; line-height: 1.12; margin: 3px 0 0; }
   .daily-card-details { margin-top: 2px; }
-  .daily-card-details > summary { font-size: .72rem; min-height: 26px; }
-  .daily-move-controls { grid-column: 2; grid-template-columns: repeat(3, 44px); }
+  .daily-card-details > summary { font-size: .7rem; min-height: 28px; }
+  .daily-move-controls { grid-template-columns: 44px; left: 4px; position: absolute; top: 48px; }
+  .daily-move-controls .daily-drag-handle, .daily-preview-controls .daily-preview-grip { background: #fffefa; border-color: transparent; }
+  .daily-move-controls [data-move-control], .daily-preview-controls > span:not(.daily-preview-grip) { display: none; }
   .daily-preview-detail { font-size: .72rem; min-height: 26px; }
   .daily-submit-dock { border-top: 1px solid #d6d4ca; margin: 14px -10px 0; padding: 13px 12px calc(10px + env(safe-area-inset-bottom)); }
   .daily-submit-dock .daily-primary-button { width: min(100%, 420px); }
