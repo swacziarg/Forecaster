@@ -1,0 +1,60 @@
+[
+  {
+    "key": "trump-iowa-cnn.html",
+    "url": "https://transcripts.cnn.com/show/cnr/date/2024-11-02/segment/08",
+    "retrievedAt": "2026-09-06T05:44:52.283926+00:00",
+    "bytes": 45513,
+    "sha256": "1ad80d8fe3c5fcdf853458e504dab6556557c387356d50a4941319fdb0e11152",
+    "path": "evidence/trump-iowa-cnn.html"
+  },
+  {
+    "key": "nyc-primary-cnn.html",
+    "url": "https://transcripts.cnn.com/show/lcl/date/2025-06-24/segment/01",
+    "retrievedAt": "2026-09-06T05:44:52.313242+00:00",
+    "bytes": 52207,
+    "sha256": "d5292cf4d645506a17e013a8ba59f7cb93ce7035755fd5d4ff5b3c92c45f08f2",
+    "path": "evidence/nyc-primary-cnn.html"
+  },
+  {
+    "key": "tiktok-dec6-index.html",
+    "url": "https://transcripts.cnn.com/date/2024-12-06",
+    "retrievedAt": "2026-09-06T05:44:52.232547+00:00",
+    "bytes": 22955,
+    "sha256": "24c18291e1c9fcb37e169702e5389ad3157a1fbc6716a7c48be69d027e889197",
+    "path": "evidence/tiktok-dec6-index.html"
+  },
+  {
+    "key": "tiktok-ending.html",
+    "url": "https://transcripts.cnn.com/show/cnr/date/2025-01-19/segment/04",
+    "retrievedAt": "2026-09-06T05:44:52.317182+00:00",
+    "bytes": 53228,
+    "sha256": "d8cc9e3b16fb6160586876a6a0fe69eba909dc64fa0c5ac3f0e4cb1b292ba7dd",
+    "path": "evidence/tiktok-ending.html"
+  },
+  {
+    "key": "anora-sag.html",
+    "url": "https://www.actorawards.org/media/news/releases/outstanding-film-and-television-performances-honored-31st-annual-screen-actors",
+    "retrievedAt": "2026-09-06T05:44:52.892437+00:00",
+    "bytes": 33984,
+    "sha256": "30e17053d46f2d056ec8a390a153ff4c51e8a68efa25a847d05019ab65ea3852",
+    "path": "evidence/anora-sag.html"
+  },
+  {
+    "key": "anora-nominations.html",
+    "url": "https://press.oscars.org/news/97th-oscarsr-nominations-announced",
+    "error": "HTTP Error 403: Forbidden",
+    "retrievedAt": "2026-09-06T05:44:52.485344+00:00"
+  },
+  {
+    "key": "anora-critics.html",
+    "url": "https://www.criticschoice.com/2025/02/07/anora-wins-best-picture-at-the-30th-annual-critics-choice-awards/",
+    "error": "HTTP Error 404: Not Found",
+    "retrievedAt": "2026-09-06T05:44:52.867058+00:00"
+  },
+  {
+    "key": "eagles-ending.html",
+    "url": "https://www.philadelphiaeagles.com/news/super-bowl-lix-game-recap-eagles-vs-chiefs",
+    "error": "HTTP Error 404: Not Found",
+    "retrievedAt": "2026-09-06T05:44:52.714347+00:00"
+  }
+]

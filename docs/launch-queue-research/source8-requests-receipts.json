@@ -1,0 +1,18 @@
+[
+  {
+    "key": "anora-nominations-broadcaster.html",
+    "url": "https://www.bellmedia.ca/the-lede/press/97th-oscars-nominations-announced/",
+    "retrievedAt": "2026-09-06T14:24:49.148357+00:00",
+    "bytes": 224581,
+    "sha256": "ca8e3ff83e612c3e968007e87a18907c1eb9ccf0b6556cffc1f373df538b6592",
+    "path": "evidence/anora-nominations-broadcaster.html"
+  },
+  {
+    "key": "anora-nominations-abc.html",
+    "url": "https://abc.com/news/2e100609-67b5-4a02-bcb3-f1b2ed134da0/category/3590739",
+    "retrievedAt": "2026-09-06T14:24:49.077853+00:00",
+    "bytes": 291804,
+    "sha256": "1b999c5ab902839f218391106afa32a9f47acdd51979c731b20cb4db8022093f",
+    "path": "evidence/anora-nominations-abc.html"
+  }
+]

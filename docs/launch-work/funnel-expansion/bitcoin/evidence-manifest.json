@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "topic": "bitcoin",
+  "preparedAt": "2026-09-06T20:25:00Z",
+  "captureMethod": "Authoritative public pages were opened through the web source tool. Each retained capture is a compact passage record with URL, retrieval time, location, exact stored passage, and passage hash. The restricted shell could not resolve external DNS; failed curl attempts produced no evidence files and are not used as sources.",
+  "sourceCaptures": [
+    { "sourceId": "hkex-spot-etfs", "path": "captures/hkex-spot-etfs.json", "status": "captured", "sourceRole": "primary", "passageSha256": "108b94810c828bc4fbc1f6cebaeebbc905ec3c6d4524be91cf5c50ffbd85502f" },
+    { "sourceId": "mtgox-repayments", "path": "captures/mtgox-repayments.json", "status": "captured", "sourceRole": "primary", "passageSha256": "f62545f3ef8f7d4fa09173f7b5fb2d7df395d59b1d3b92452fdf0c1660e8c618" },
+    { "sourceId": "fed-september-cut", "path": "captures/fed-september-cut.json", "status": "captured", "sourceRole": "primary", "passageSha256": "a4e76c8c139022f63fb64c186498213a983068b5a9fbd4015062de99d3a0e9f6" },
+    { "sourceId": "ap-election-call", "path": "captures/ap-election.json", "status": "captured", "sourceRole": "primary", "passageSha256": "04b93c69c99aa2cefa5103ceabba0f637189472b64565703d6e27864a4590018" },
+    { "sourceId": "mstr-8k-2024-11-11", "path": "captures/mstr-purchase.json", "status": "captured", "sourceRole": "primary", "passageSha256": "850f1efead8c2916346d4862fd807024bdb225c4f576f15764a931f965b6df06" },
+    { "sourceId": "mstr-exhibit-99-1", "path": "captures/mstr-exhibit-99-1.json", "status": "captured", "sourceRole": "corroborating", "passageSha256": "3abe1e5868bd9a78d9dc55164423eb450807bd5c96266804e8bbb9bb0300dc00" }
+  ],
+  "temporalReview": {
+    "exactMinuteAnchors": ["fed-50-cut", "ap-election-call"],
+    "dayOrInheritedAnchors": ["hkex-spot-etfs", "mtgox-repayments", "mstr-8k-2024-11-11"],
+    "status": "reviewable-with-explicit-timing-gates",
+    "note": "The candidate preserves the existing study's hour/minute informationKnownAt values for reproducible calculations. The new captures prove the factual occurrence and public day; they do not silently upgrade day-level pages to exact intraday publication times. Independent review must confirm or amend those three inherited anchors before publication."
+  },
+  "datasetArtifacts": [
+    { "path": "public/data/bitcoin-2024/polymarket-hourly.csv", "sha256": "5d7aa54719ff32af2892aaba94fa6b33adc714bf558d82691a480c75bfbbab69", "role": "normalized selected-perspective probability series" },
+    { "path": "public/data/bitcoin-2024/raw-prices-history.json", "sha256": "856e5338c22d56b08c21e7cbdb4da8f00e97cba4055a58be7e6572a4bd13b533", "role": "retained provider response" },
+    { "path": "public/data/bitcoin-2024/raw-market.json", "sha256": "f248b962c27c8fda3a51a16710aa2580eca15c3d95a97aa04dda9063699d40f7", "role": "retained market metadata / reveal context" },
+    { "path": "public/data/bitcoin-2024/manifest.json", "sha256": "5a829238df3f561d902aa1c00a29068b75be33dfabeb8409bd7cdfac2541c554", "role": "dataset manifest" },
+    { "path": "docs/launch-queue-research/evidence/bitcoin-audit.json", "sha256": "c13cb3407b5d0536f0ea6eaaacf60aabb97c93c006984c4a0fc052871e112f80", "role": "retained audit" }
+  ],
+  "eligibility": {
+    "candidateEventCount": 5,
+    "eligiblePreRevealClaims": 5,
+    "requiredWindows": 25,
+    "usableWindows": 25,
+    "comparablePairs": 9,
+    "tieGroups": 4,
+    "status": "all selected events have source-backed pre-reveal claims and all calculated windows are usable under the unchanged validator/profile"
+  },
+  "resolutionCapture": { "sourceId": "market-resolution", "path": "public/data/bitcoin-2024/raw-market.json", "status": "retained-local-json", "sha256": "f248b962c27c8fda3a51a16710aa2580eca15c3d95a97aa04dda9063699d40f7", "visibility": "reveal-only" }
+}

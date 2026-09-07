@@ -1,0 +1,218 @@
+{
+  "anchoredAt": "2026-09-06T13:55:03.114602+00:00",
+  "beforeFreshEventScoring": true,
+  "policy": "Public source cutoffs chosen independently of odds. No anchor sweeps or best-move optimization. All Anora anchors are day-end eligibility scenarios, NOT verified public timestamps. Later timestamp corrections require a new documented version and no card substitutions.",
+  "finalists": {
+    "eagles": [
+      {
+        "id": "falcons-collapse",
+        "evaluationAnchor": "2024-09-17T04:59:45.324Z",
+        "sourceFile": "eagles-falcons.html",
+        "basis": "Team recap last-modified time; original publication 03:09Z may precede the final score. Conservative public cutoff, not final whistle.",
+        "informationKnownAt": "2024-09-17T04:59:45.324Z",
+        "timestampVerified": true
+      },
+      {
+        "id": "barkley-record",
+        "evaluationAnchor": "2024-11-25T06:51:48.356Z",
+        "sourceFile": "eagles-rams-record.html",
+        "basis": "Team article publication and modification agree. Several hours after the game; record developed during play.",
+        "informationKnownAt": "2024-11-25T06:51:48.356Z",
+        "timestampVerified": true
+      },
+      {
+        "id": "hurts-concussion",
+        "evaluationAnchor": "2024-12-22T23:26:58.564Z",
+        "sourceFile": "eagles-concussion.html",
+        "basis": "Team live recap last-modified cutoff; injury and loss are one cluster.",
+        "informationKnownAt": "2024-12-22T23:26:58.564Z",
+        "timestampVerified": true
+      },
+      {
+        "id": "snow-playoff",
+        "evaluationAnchor": "2025-01-20T01:37:49.106Z",
+        "sourceFile": "eagles-snow.html",
+        "basis": "Team live recap last-modified cutoff, later than final whistle.",
+        "informationKnownAt": "2025-01-20T01:37:49.106Z",
+        "timestampVerified": true
+      },
+      {
+        "id": "nfc-title",
+        "evaluationAnchor": "2025-01-27T03:14:55.431Z",
+        "sourceFile": "eagles-nfc.html",
+        "basis": "Team analysis last-modified cutoff; also after AFC outcome.",
+        "informationKnownAt": "2025-01-27T03:14:55.431Z",
+        "timestampVerified": true
+      }
+    ],
+    "trump": [
+      {
+        "id": "conviction",
+        "evaluationAnchor": "2024-05-30T21:15:07Z",
+        "sourceFile": "trump-conviction.html",
+        "basis": "Next bracket after live courthouse reporting of all 34 guilty verdicts; upper bound, not exact verdict instant.",
+        "informationKnownAt": "2024-05-30T21:15:07Z",
+        "timestampVerified": true
+      },
+      {
+        "id": "butler",
+        "evaluationAnchor": "2024-07-14T00:00:00Z",
+        "sourceFile": "trump-shooting.html",
+        "basis": "End of 19:00\u201320:00 EDT live broadcast containing the survival report and official response.",
+        "informationKnownAt": "2024-07-14T00:00:00Z",
+        "timestampVerified": true
+      },
+      {
+        "id": "rfk-endorsement",
+        "evaluationAnchor": "2024-08-23T19:30:00Z",
+        "sourceFile": "trump-rfk.html",
+        "basis": "End of 15:00\u201315:30 EDT broadcast carrying Kennedy\u2019s own speech.",
+        "informationKnownAt": "2024-08-23T19:30:00Z",
+        "timestampVerified": true
+      },
+      {
+        "id": "harris-debate",
+        "evaluationAnchor": "2024-09-11T03:58:00Z",
+        "sourceFile": "trump-debate.html",
+        "basis": "ABC original transcript publication; live debate occurred earlier; page later updated at 16:24:39Z. Narrow claim is only that the debate took place. First-broadcast end/archive still requires confirmation.",
+        "informationKnownAt": "2024-09-11T03:58:00Z",
+        "timestampVerified": true
+      },
+      {
+        "id": "iowa-poll",
+        "evaluationAnchor": "2024-11-03T00:00:00Z",
+        "sourceFile": "trump-iowa-cnn.html",
+        "basis": "End of 19:00\u201320:00 EDT broadcast with poll publisher USA Today editor discussing 47\u201344 finding; actual release earlier.",
+        "informationKnownAt": "2024-11-03T00:00:00Z",
+        "timestampVerified": true
+      }
+    ],
+    "tiktok": [
+      {
+        "id": "trump-elected",
+        "evaluationAnchor": "2024-11-06T10:34:00Z",
+        "sourceFile": "ap-trump-call.html",
+        "basis": "AP\u2019s own documented 05:34 EST presidential call. AP retrospective page preserves its original announcement. Prior save-TikTok pledge is excluded from pre-reveal claim pending contemporary primary source.",
+        "informationKnownAt": "2024-11-06T10:34:00Z",
+        "timestampVerified": true
+      },
+      {
+        "id": "appeal-lost",
+        "evaluationAnchor": "2024-12-06T16:00:00Z",
+        "sourceFile": "tiktok-dec6-correct.html",
+        "basis": "End of 10:30\u201311:00 EST live court coverage; ruling date independently recorded on Supreme Court docket.",
+        "informationKnownAt": "2024-12-06T16:00:00Z",
+        "timestampVerified": true
+      },
+      {
+        "id": "supreme-review",
+        "evaluationAnchor": "2024-12-18T19:00:00Z",
+        "sourceFile": "tiktok-dec18-cnn.html",
+        "basis": "End of 13:30\u201314:00 EST broadcast reporting order; order PDF verifies substance, docket date.",
+        "informationKnownAt": "2024-12-18T19:00:00Z",
+        "timestampVerified": true
+      },
+      {
+        "id": "trump-pause",
+        "evaluationAnchor": "2024-12-27T23:00:00Z",
+        "sourceFile": "tiktok-dec27-cnn.html",
+        "basis": "End of 17:00\u201318:00 EST broadcast publicly reproducing Trump brief; filing filename alone not treated as public release time.",
+        "informationKnownAt": "2024-12-27T23:00:00Z",
+        "timestampVerified": true
+      },
+      {
+        "id": "supreme-argument",
+        "evaluationAnchor": "2025-01-10T17:38:00Z",
+        "sourceFile": "tiktok-argument.pdf",
+        "basis": "Official oral-argument transcript ends at 12:38 EST, after 10:08 start. Public live-audio page corroborates public proceeding.",
+        "informationKnownAt": "2025-01-10T17:38:00Z",
+        "timestampVerified": true
+      }
+    ],
+    "nyc": [
+      {
+        "id": "aoc-endorsement",
+        "evaluationAnchor": "2025-06-05T12:27:13.349Z",
+        "sourceFile": "nyc-aoc-post.json",
+        "basis": "Candidate\u2019s public Bluesky record indexedAt; createdAt 12:27:11.326Z.",
+        "informationKnownAt": "2025-06-05T12:27:13.349Z",
+        "timestampVerified": true
+      },
+      {
+        "id": "primary-breakthrough",
+        "evaluationAnchor": "2025-06-25T04:00:00Z",
+        "sourceFile": "nyc-primary-cnn.html",
+        "basis": "End of 23:00\u201300:00 EDT broadcast reporting Cuomo concession; primary concession video also embedded on FOX5 page, first-post metadata precedes update.",
+        "informationKnownAt": "2025-06-25T04:00:00Z",
+        "timestampVerified": true
+      },
+      {
+        "id": "cuomo-independent",
+        "evaluationAnchor": "2025-07-14T19:03:00Z",
+        "sourceFile": "nyc-cuomo.html",
+        "basis": "NY1 publication and modification match; reproduces candidate\u2019s own announcement video and quotes.",
+        "informationKnownAt": "2025-07-14T19:03:00Z",
+        "timestampVerified": true
+      },
+      {
+        "id": "adams-exit",
+        "evaluationAnchor": "2025-09-28T17:18:00Z",
+        "sourceFile": "nyc-adams-ny1.html",
+        "basis": "NY1 publication and modification match at 13:18 EDT, with original Adams video/post embedded and reproduced. Court record separately dates original post to 13:11 EDT; that earlier time is not the chosen cutoff.",
+        "informationKnownAt": "2025-09-28T17:18:00Z",
+        "timestampVerified": true
+      },
+      {
+        "id": "hochul-endorsement",
+        "evaluationAnchor": "2025-09-15T00:31:00Z",
+        "sourceFile": "nyc-hochul.html",
+        "basis": "NY1 publication and modification match; embeds governor\u2019s own endorsement post dated Sep14. URL day differs from publication.",
+        "informationKnownAt": "2025-09-15T00:31:00Z",
+        "timestampVerified": true
+      }
+    ],
+    "anora-kalshi": [
+      {
+        "id": "globes-shutout",
+        "evaluationAnchor": "2025-01-06T08:00:00Z",
+        "sourceFile": "anora-globes.html",
+        "basis": "Eligibility scenario only: end of local ceremony date in America/Los_Angeles. Actual first-public completion unverified; official results page published Jan7.",
+        "informationKnownAt": null,
+        "timestampVerified": false
+      },
+      {
+        "id": "oscar-nominations",
+        "evaluationAnchor": "2025-01-24T08:00:00Z",
+        "sourceFile": "anora-nominations.html",
+        "basis": "Eligibility scenario only: end of local nomination date. Official Jan23 05:30 PST schedule is not proof of completion. Download blocked.",
+        "informationKnownAt": null,
+        "timestampVerified": false
+      },
+      {
+        "id": "guild-weekend",
+        "evaluationAnchor": "2025-02-10T08:00:00Z",
+        "sourceFile": "anora-pga.html",
+        "basis": "Eligibility scenario only: end of final cluster date. Actual weekend completion cutoff needs DGA/PGA/CCA archive; PGA publication Feb9 07:02:42Z, later modified.",
+        "informationKnownAt": null,
+        "timestampVerified": false
+      },
+      {
+        "id": "bafta-conclave",
+        "evaluationAnchor": "2025-02-17T00:00:00Z",
+        "sourceFile": "anora-bafta.html",
+        "basis": "Eligibility scenario only: end of Feb16 London date; official results verified via web, download blocked.",
+        "informationKnownAt": null,
+        "timestampVerified": false
+      },
+      {
+        "id": "sag-conclave",
+        "evaluationAnchor": "2025-02-24T08:00:00Z",
+        "sourceFile": "anora-sag.html",
+        "basis": "Eligibility scenario only: end of Feb23 Los Angeles date; official results day established, exact completion time missing.",
+        "informationKnownAt": null,
+        "timestampVerified": false
+      }
+    ]
+  },
+  "revisionReason": "Before any fresh event score: contemporary NY1 page found, matching publication/modification at 13:18 EDT Sep28 and reproducing Adams original video statement. Replace provisional court-derived 13:11 anchor with directly retained public reproduction cutoff, seven minutes later; no price-driven adjustment."
+}

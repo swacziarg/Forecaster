@@ -1,0 +1,685 @@
+{
+  "method": "Calculated chronological maximum rises and drawdowns of UTC daily medians with >=12 actual retained hourly observations. Exclude the entire specified UTC resolving-announcement/result date and later. These broad suitability summaries are NOT scored headline moves or causal estimates; not a timestamp selection rule. GTA cutoff is first official 2026 delay, even though contractual settlement occurred months later.",
+  "candidates": {
+    "trump": {
+      "exclusiveEndingDateUTC": "2024-11-05",
+      "days": 188,
+      "maximumRise": {
+        "pp": 25.999999999999996,
+        "from": {
+          "date": "2024-05-09",
+          "median": 0.445,
+          "observations": 24,
+          "min": 0.445,
+          "max": 0.455
+        },
+        "to": {
+          "date": "2024-07-15",
+          "median": 0.705,
+          "observations": 24,
+          "min": 0.695,
+          "max": 0.715
+        }
+      },
+      "maximumDrawdown": {
+        "pp": 26.349999999999994,
+        "from": {
+          "date": "2024-07-15",
+          "median": 0.705,
+          "observations": 24,
+          "min": 0.695,
+          "max": 0.715
+        },
+        "to": {
+          "date": "2024-08-16",
+          "median": 0.4415,
+          "observations": 24,
+          "min": 0.4405,
+          "max": 0.4525
+        }
+      },
+      "minimumDailyMedian": {
+        "date": "2024-08-16",
+        "median": 0.4415,
+        "observations": 24,
+        "min": 0.4405,
+        "max": 0.4525
+      },
+      "maximumDailyMedian": {
+        "date": "2024-07-15",
+        "median": 0.705,
+        "observations": 24,
+        "min": 0.695,
+        "max": 0.715
+      }
+    },
+    "eagles": {
+      "exclusiveEndingDateUTC": "2025-02-09",
+      "days": 214,
+      "maximumRise": {
+        "pp": 43.3,
+        "from": {
+          "date": "2024-10-19",
+          "median": 0.0435,
+          "observations": 24,
+          "min": 0.043,
+          "max": 0.0445
+        },
+        "to": {
+          "date": "2025-02-08",
+          "median": 0.4765,
+          "observations": 24,
+          "min": 0.472,
+          "max": 0.4785
+        }
+      },
+      "maximumDrawdown": {
+        "pp": 6.075000000000001,
+        "from": {
+          "date": "2024-12-16",
+          "median": 0.16725,
+          "observations": 24,
+          "min": 0.1545,
+          "max": 0.175
+        },
+        "to": {
+          "date": "2025-01-10",
+          "median": 0.1065,
+          "observations": 24,
+          "min": 0.1045,
+          "max": 0.1085
+        }
+      },
+      "minimumDailyMedian": {
+        "date": "2024-10-19",
+        "median": 0.0435,
+        "observations": 24,
+        "min": 0.043,
+        "max": 0.0445
+      },
+      "maximumDailyMedian": {
+        "date": "2025-02-08",
+        "median": 0.4765,
+        "observations": 24,
+        "min": 0.472,
+        "max": 0.4785
+      }
+    },
+    "chiefs": {
+      "exclusiveEndingDateUTC": "2025-02-09",
+      "days": 214,
+      "maximumRise": {
+        "pp": 40.87499999999999,
+        "from": {
+          "date": "2024-08-21",
+          "median": 0.131,
+          "observations": 24,
+          "min": 0.1305,
+          "max": 0.132
+        },
+        "to": {
+          "date": "2025-01-27",
+          "median": 0.53975,
+          "observations": 24,
+          "min": 0.258,
+          "max": 0.5435
+        }
+      },
+      "maximumDrawdown": {
+        "pp": 6.325,
+        "from": {
+          "date": "2024-10-28",
+          "median": 0.1985,
+          "observations": 24,
+          "min": 0.1625,
+          "max": 0.22
+        },
+        "to": {
+          "date": "2024-12-16",
+          "median": 0.13525,
+          "observations": 24,
+          "min": 0.1185,
+          "max": 0.1445
+        }
+      },
+      "minimumDailyMedian": {
+        "date": "2024-08-21",
+        "median": 0.131,
+        "observations": 24,
+        "min": 0.1305,
+        "max": 0.132
+      },
+      "maximumDailyMedian": {
+        "date": "2025-01-27",
+        "median": 0.53975,
+        "observations": 24,
+        "min": 0.258,
+        "max": 0.5435
+      }
+    },
+    "tiktok": {
+      "exclusiveEndingDateUTC": "2025-01-17",
+      "days": 121,
+      "maximumRise": {
+        "pp": 60.5,
+        "from": {
+          "date": "2024-11-08",
+          "median": 0.125,
+          "observations": 24,
+          "min": 0.125,
+          "max": 0.135
+        },
+        "to": {
+          "date": "2025-01-11",
+          "median": 0.73,
+          "observations": 24,
+          "min": 0.645,
+          "max": 0.765
+        }
+      },
+      "maximumDrawdown": {
+        "pp": 22.499999999999996,
+        "from": {
+          "date": "2024-10-01",
+          "median": 0.35,
+          "observations": 24,
+          "min": 0.315,
+          "max": 0.395
+        },
+        "to": {
+          "date": "2024-11-08",
+          "median": 0.125,
+          "observations": 24,
+          "min": 0.125,
+          "max": 0.135
+        }
+      },
+      "minimumDailyMedian": {
+        "date": "2024-11-08",
+        "median": 0.125,
+        "observations": 24,
+        "min": 0.125,
+        "max": 0.135
+      },
+      "maximumDailyMedian": {
+        "date": "2025-01-11",
+        "median": 0.73,
+        "observations": 24,
+        "min": 0.645,
+        "max": 0.765
+      }
+    },
+    "nyc": {
+      "exclusiveEndingDateUTC": "2025-11-04",
+      "days": 195,
+      "maximumRise": {
+        "pp": 91.25,
+        "from": {
+          "date": "2025-05-25",
+          "median": 0.039,
+          "observations": 24,
+          "min": 0.036,
+          "max": 0.042
+        },
+        "to": {
+          "date": "2025-10-27",
+          "median": 0.9515,
+          "observations": 24,
+          "min": 0.941,
+          "max": 0.9585
+        }
+      },
+      "maximumDrawdown": {
+        "pp": 20.9,
+        "from": {
+          "date": "2025-06-12",
+          "median": 0.33275,
+          "observations": 24,
+          "min": 0.2985,
+          "max": 0.3525
+        },
+        "to": {
+          "date": "2025-06-18",
+          "median": 0.12375,
+          "observations": 24,
+          "min": 0.0895,
+          "max": 0.153
+        }
+      },
+      "minimumDailyMedian": {
+        "date": "2025-05-25",
+        "median": 0.039,
+        "observations": 24,
+        "min": 0.036,
+        "max": 0.042
+      },
+      "maximumDailyMedian": {
+        "date": "2025-10-27",
+        "median": 0.9515,
+        "observations": 24,
+        "min": 0.941,
+        "max": 0.9585
+      }
+    },
+    "anora-kalshi": {
+      "exclusiveEndingDateUTC": "2025-03-02",
+      "days": 49,
+      "maximumRise": {
+        "pp": 58.5,
+        "from": {
+          "date": "2025-01-30",
+          "median": 0.16,
+          "observations": 13,
+          "min": 0.15,
+          "max": 0.17
+        },
+        "to": {
+          "date": "2025-02-22",
+          "median": 0.745,
+          "observations": 19,
+          "min": 0.73,
+          "max": 0.76
+        }
+      },
+      "maximumDrawdown": {
+        "pp": 31.999999999999996,
+        "from": {
+          "date": "2024-11-10",
+          "median": 0.48,
+          "observations": 18,
+          "min": 0.43,
+          "max": 0.51
+        },
+        "to": {
+          "date": "2025-01-30",
+          "median": 0.16,
+          "observations": 13,
+          "min": 0.15,
+          "max": 0.17
+        }
+      },
+      "minimumDailyMedian": {
+        "date": "2025-01-30",
+        "median": 0.16,
+        "observations": 13,
+        "min": 0.15,
+        "max": 0.17
+      },
+      "maximumDailyMedian": {
+        "date": "2025-02-22",
+        "median": 0.745,
+        "observations": 19,
+        "min": 0.73,
+        "max": 0.76
+      }
+    },
+    "anora-poly": {
+      "exclusiveEndingDateUTC": "2025-03-02",
+      "days": 39,
+      "maximumRise": {
+        "pp": 64.0,
+        "from": {
+          "date": "2025-01-30",
+          "median": 0.135,
+          "observations": 24,
+          "min": 0.125,
+          "max": 0.14
+        },
+        "to": {
+          "date": "2025-02-23",
+          "median": 0.775,
+          "observations": 24,
+          "min": 0.745,
+          "max": 0.805
+        }
+      },
+      "maximumDrawdown": {
+        "pp": 15.249999999999996,
+        "from": {
+          "date": "2025-02-23",
+          "median": 0.775,
+          "observations": 24,
+          "min": 0.745,
+          "max": 0.805
+        },
+        "to": {
+          "date": "2025-02-24",
+          "median": 0.6225,
+          "observations": 24,
+          "min": 0.56,
+          "max": 0.76
+        }
+      },
+      "minimumDailyMedian": {
+        "date": "2025-01-30",
+        "median": 0.135,
+        "observations": 24,
+        "min": 0.125,
+        "max": 0.14
+      },
+      "maximumDailyMedian": {
+        "date": "2025-02-23",
+        "median": 0.775,
+        "observations": 24,
+        "min": 0.745,
+        "max": 0.805
+      }
+    },
+    "canada": {
+      "exclusiveEndingDateUTC": "2025-04-28",
+      "days": 111,
+      "maximumRise": {
+        "pp": 82.02500000000002,
+        "from": {
+          "date": "2025-01-07",
+          "median": 0.03975,
+          "observations": 24,
+          "min": 0.0305,
+          "max": 0.0535
+        },
+        "to": {
+          "date": "2025-04-24",
+          "median": 0.8600000000000001,
+          "observations": 24,
+          "min": 0.848,
+          "max": 0.8775
+        }
+      },
+      "maximumDrawdown": {
+        "pp": 9.999999999999998,
+        "from": {
+          "date": "2025-04-09",
+          "median": 0.787,
+          "observations": 24,
+          "min": 0.782,
+          "max": 0.796
+        },
+        "to": {
+          "date": "2025-04-14",
+          "median": 0.687,
+          "observations": 24,
+          "min": 0.673,
+          "max": 0.6995
+        }
+      },
+      "minimumDailyMedian": {
+        "date": "2025-01-07",
+        "median": 0.03975,
+        "observations": 24,
+        "min": 0.0305,
+        "max": 0.0535
+      },
+      "maximumDailyMedian": {
+        "date": "2025-04-24",
+        "median": 0.8600000000000001,
+        "observations": 24,
+        "min": 0.848,
+        "max": 0.8775
+      }
+    },
+    "gta": {
+      "exclusiveEndingDateUTC": "2025-05-02",
+      "days": 93,
+      "maximumRise": {
+        "pp": 19.499999999999996,
+        "from": {
+          "date": "2025-04-08",
+          "median": 0.54,
+          "observations": 24,
+          "min": 0.505,
+          "max": 0.555
+        },
+        "to": {
+          "date": "2025-04-17",
+          "median": 0.735,
+          "observations": 24,
+          "min": 0.715,
+          "max": 0.775
+        }
+      },
+      "maximumDrawdown": {
+        "pp": 21.999999999999996,
+        "from": {
+          "date": "2025-02-07",
+          "median": 0.76,
+          "observations": 24,
+          "min": 0.755,
+          "max": 0.78
+        },
+        "to": {
+          "date": "2025-04-08",
+          "median": 0.54,
+          "observations": 24,
+          "min": 0.505,
+          "max": 0.555
+        }
+      },
+      "minimumDailyMedian": {
+        "date": "2025-04-08",
+        "median": 0.54,
+        "observations": 24,
+        "min": 0.505,
+        "max": 0.555
+      },
+      "maximumDailyMedian": {
+        "date": "2025-02-07",
+        "median": 0.76,
+        "observations": 24,
+        "min": 0.755,
+        "max": 0.78
+      }
+    },
+    "twitter": {
+      "exclusiveEndingDateUTC": "2022-04-25",
+      "days": 0
+    },
+    "taylor": {
+      "exclusiveEndingDateUTC": "2025-08-26",
+      "days": 237,
+      "maximumRise": {
+        "pp": 32.5,
+        "from": {
+          "date": "2025-01-02",
+          "median": 0.325,
+          "observations": 24,
+          "min": 0.265,
+          "max": 0.345
+        },
+        "to": {
+          "date": "2025-01-31",
+          "median": 0.65,
+          "observations": 24,
+          "min": 0.615,
+          "max": 0.665
+        }
+      },
+      "maximumDrawdown": {
+        "pp": 42.00000000000001,
+        "from": {
+          "date": "2025-01-31",
+          "median": 0.65,
+          "observations": 24,
+          "min": 0.615,
+          "max": 0.665
+        },
+        "to": {
+          "date": "2025-05-15",
+          "median": 0.22999999999999998,
+          "observations": 24,
+          "min": 0.19,
+          "max": 0.31
+        }
+      },
+      "minimumDailyMedian": {
+        "date": "2025-05-15",
+        "median": 0.22999999999999998,
+        "observations": 24,
+        "min": 0.19,
+        "max": 0.31
+      },
+      "maximumDailyMedian": {
+        "date": "2025-01-31",
+        "median": 0.65,
+        "observations": 24,
+        "min": 0.615,
+        "max": 0.665
+      }
+    },
+    "bitcoin": {
+      "exclusiveEndingDateUTC": "2024-12-05",
+      "days": 275,
+      "maximumRise": {
+        "pp": 83.0,
+        "from": {
+          "date": "2024-09-08",
+          "median": 0.105,
+          "observations": 24,
+          "min": 0.1,
+          "max": 0.115
+        },
+        "to": {
+          "date": "2024-11-22",
+          "median": 0.935,
+          "observations": 24,
+          "min": 0.886,
+          "max": 0.9605
+        }
+      },
+      "maximumDrawdown": {
+        "pp": 54.0,
+        "from": {
+          "date": "2024-03-13",
+          "median": 0.645,
+          "observations": 24,
+          "min": 0.635,
+          "max": 0.655
+        },
+        "to": {
+          "date": "2024-09-08",
+          "median": 0.105,
+          "observations": 24,
+          "min": 0.1,
+          "max": 0.115
+        }
+      },
+      "minimumDailyMedian": {
+        "date": "2024-09-08",
+        "median": 0.105,
+        "observations": 24,
+        "min": 0.1,
+        "max": 0.115
+      },
+      "maximumDailyMedian": {
+        "date": "2024-11-22",
+        "median": 0.935,
+        "observations": 24,
+        "min": 0.886,
+        "max": 0.9605
+      }
+    },
+    "fed": {
+      "exclusiveEndingDateUTC": "2024-09-18",
+      "days": 46,
+      "maximumRise": {
+        "pp": 46.65,
+        "from": {
+          "date": "2024-09-12",
+          "median": 0.08,
+          "observations": 24,
+          "min": 0.065,
+          "max": 0.25
+        },
+        "to": {
+          "date": "2024-09-17",
+          "median": 0.5465,
+          "observations": 24,
+          "min": 0.5015,
+          "max": 0.605
+        }
+      },
+      "maximumDrawdown": {
+        "pp": 51.74999999999999,
+        "from": {
+          "date": "2024-08-05",
+          "median": 0.5974999999999999,
+          "observations": 24,
+          "min": 0.52,
+          "max": 0.675
+        },
+        "to": {
+          "date": "2024-09-12",
+          "median": 0.08,
+          "observations": 24,
+          "min": 0.065,
+          "max": 0.25
+        }
+      },
+      "minimumDailyMedian": {
+        "date": "2024-09-12",
+        "median": 0.08,
+        "observations": 24,
+        "min": 0.065,
+        "max": 0.25
+      },
+      "maximumDailyMedian": {
+        "date": "2024-08-05",
+        "median": 0.5974999999999999,
+        "observations": 24,
+        "min": 0.52,
+        "max": 0.675
+      }
+    },
+    "oscars26": {
+      "exclusiveEndingDateUTC": "2026-03-15",
+      "days": 173,
+      "maximumRise": {
+        "pp": 40.0,
+        "from": {
+          "date": "2025-09-23",
+          "median": 0.47,
+          "observations": 23,
+          "min": 0.4,
+          "max": 0.52
+        },
+        "to": {
+          "date": "2026-03-01",
+          "median": 0.87,
+          "observations": 24,
+          "min": 0.74,
+          "max": 0.89
+        }
+      },
+      "maximumDrawdown": {
+        "pp": 18.74999999999999,
+        "from": {
+          "date": "2025-09-29",
+          "median": 0.695,
+          "observations": 24,
+          "min": 0.67,
+          "max": 0.73
+        },
+        "to": {
+          "date": "2025-11-18",
+          "median": 0.5075000000000001,
+          "observations": 24,
+          "min": 0.5,
+          "max": 0.52
+        }
+      },
+      "minimumDailyMedian": {
+        "date": "2025-09-23",
+        "median": 0.47,
+        "observations": 23,
+        "min": 0.4,
+        "max": 0.52
+      },
+      "maximumDailyMedian": {
+        "date": "2026-03-01",
+        "median": 0.87,
+        "observations": 24,
+        "min": 0.74,
+        "max": 0.89
+      }
+    }
+  }
+}

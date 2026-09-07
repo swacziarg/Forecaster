@@ -1,0 +1,338 @@
+{
+  "artifactType": "TikTok finish-pass evidence addendum",
+  "version": 4,
+  "createdAt": "2026-09-06T18:14:00Z",
+  "base": {
+    "candidatePath": "docs/launch-work/tiktok/candidate.json",
+    "candidateSha256": "ca17394a6c6f0acabdbfade0f2b64159fd86081ad010ccc85fda9006886b4980",
+    "anchorsPath": "docs/launch-work/tiktok/anchors-v3.json",
+    "anchorsSha256": "fd632a603d0138d5d335500ed8a4f8d6bccb884b9caa51c856870600aa43974c",
+    "measurementsPath": "docs/launch-work/tiktok/measurements.json",
+    "measurementsSha256": "8a1da4ecdefeab8ed61206582f9398a56531028e6009236f73617b08e5ce8b81",
+    "selectionPath": "docs/launch-queue-research/frozen-selection-v1.json",
+    "selectionSha256": "79ca8b2e025f15e5fe1ff9040ed1c060d874bf188d2b239f39fc647c0ad33593"
+  },
+  "scope": "Improve public-time support for every affected pre-reveal claim without changing the frozen five-card selection, market, dataset, measurement profile, or numeric anchors.",
+  "timingSemantics": {
+    "retrievedAt": "2026-09-06T18:09:15Z",
+    "rules": [
+      "A local capture retrieval time proves the bytes captured now, not historical publication.",
+      "A page's publisher metadata or a broadcast transcript timestamp is recorded as public-by evidence only unless it independently proves first distribution.",
+      "Official court PDFs, docket entries, and advisories establish dated substance and procedural status; their current upload time is not treated as the original public time.",
+      "The Supreme Court transcript and CNN live transcript are separate evidence: the former establishes the proceeding chronology, while the latter supplies a contemporaneous public broadcast passage before the retained 17:38Z cutoff.",
+      "No archive upload time, editable-page update, PDF filename timestamp, or current HTTP metadata is promoted to an original public fact."
+    ]
+  },
+  "newEvidence": [
+    {
+      "id": "ap-race-call-v4",
+      "eventId": "trump-elected",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/ap-race-call.html",
+      "url": "https://apnews.com/article/race-call-trump-wins-wisconsin-president-1d2209e42fe44e61adb9e17deb416b47",
+      "retrievedAt": "2026-09-06T18:09:10Z",
+      "sha256": "5f7c7324872e317d2969d2cff92f95a4be38136935e0489fab4d3d77269ae3a5",
+      "historicalAvailability": "2024-11-06T10:34:42Z",
+      "availabilityPrecision": "publisher-metadata",
+      "historicalAvailabilityStatus": "public-by; not proven first distribution",
+      "locator": "HTML lines 38 and 969: article:published_time and JSON-LD datePublished/dateModified at 2024-11-06T10:34:42Z; description says AP declared Trump the winner at 5:34 a.m. EST."
+    },
+    {
+      "id": "cadc-dec6-opinion-v4",
+      "eventId": "appeal-lost",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/cadc-dec6-opinion.pdf",
+      "url": "https://media.cadc.uscourts.gov/opinions/docs/2024/12/24-1113-2088317.pdf",
+      "retrievedAt": "2026-09-06T18:09:12Z",
+      "sha256": "1bfb5dbe4384de347968e1ef6ff81412c9376884fe17173884477287edec9c8d",
+      "historicalAvailability": null,
+      "availabilityPrecision": "unknown",
+      "historicalAvailabilityStatus": "current primary record; dated substance only",
+      "locator": "PDF page 1: Argued September 16, 2024; Decided December 6, 2024; No. 24-1113. PDF page 65: conclusion explains the Act's effective-date consequence."
+    },
+    {
+      "id": "cadc-dec6-index-v4",
+      "eventId": "appeal-lost",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/cadc-dec6-index.html",
+      "url": "https://media.cadc.uscourts.gov/opinions/bydate/2024/12",
+      "retrievedAt": "2026-09-06T18:09:13Z",
+      "sha256": "ed69567f7e6454b966ff7b04d88c9e8cfb89a6da4ae14dccc5e14cbde6bc4569",
+      "historicalAvailability": null,
+      "availabilityPrecision": "unknown",
+      "historicalAvailabilityStatus": "current court index; date only",
+      "locator": "HTML line 166: 24-1113, TikTok Inc. v. Merrick Garland, 12/06/2024."
+    },
+    {
+      "id": "ap-dec6-v4",
+      "eventId": "appeal-lost",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/ap-dec6.html",
+      "url": "https://apnews.com/article/tiktok-ban-court-ruling-china-6bfd505295ad44126df0544fc083d6a6",
+      "retrievedAt": "2026-09-06T18:09:11Z",
+      "sha256": "7aaeb3f341b3646595cfad9cd02fc551626f96f7ebc6cef3d9328c722b5f8803",
+      "historicalAvailability": "2024-12-06T15:35:16Z",
+      "availabilityPrecision": "publisher-metadata",
+      "historicalAvailabilityStatus": "public-by; not proven first distribution",
+      "locator": "HTML lines 42 and 998: article:published_time and JSON-LD datePublished 2024-12-06T15:35:16Z. Article body is at line 18024 and reports the unanimous appeals-court ruling."
+    },
+    {
+      "id": "scotus-dec18-order-v4",
+      "eventId": "supreme-review",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/scotus-dec18-order.pdf",
+      "url": "https://www.supremecourt.gov/orders/courtorders/121824zr1_p86b.pdf",
+      "retrievedAt": "2026-09-06T18:09:13Z",
+      "sha256": "51a1aa500e74004cd97f85e58979c1fc5073e175722ac38e6c85b90e850e7a91",
+      "historicalAvailability": null,
+      "availabilityPrecision": "unknown",
+      "historicalAvailabilityStatus": "current primary record; dated substance only",
+      "locator": "PDF page 1: ORDER LIST, WEDNESDAY, DECEMBER 18, 2024; CERTIORARI GRANTED; TikTok and Firebaugh matters consolidated; oral argument allotted."
+    },
+    {
+      "id": "scotus-dec18-advisory-v4",
+      "eventId": "supreme-review",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/scotus-dec18-advisory.html",
+      "url": "https://www.supremecourt.gov/publicinfo/media/mediaadvisories/ma12-18-24",
+      "retrievedAt": "2026-09-06T18:09:13Z",
+      "sha256": "50fc63b62d0a9dc7a3df2cb609f1709d93cb606232dc65cf848836c1fc17565b",
+      "historicalAvailability": null,
+      "availabilityPrecision": "unknown",
+      "historicalAvailabilityStatus": "current official advisory; schedule corroboration only",
+      "locator": "HTML line 275: scheduled Friday, January 10, 2025, 10 a.m."
+    },
+    {
+      "id": "ap-dec18-v4",
+      "eventId": "supreme-review",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/ap-dec18.html",
+      "url": "https://apnews.com/article/supreme-court-tiktok-china-us-ban-08d6fffdcd2dde5100fcdf8a452dd5cc",
+      "retrievedAt": "2026-09-06T18:09:11Z",
+      "sha256": "50aea097ef4a6b3e00f9a24d44459fc2475a06cf2a4cc796c55d25497b54ae38",
+      "historicalAvailability": "2024-12-18T16:15:44Z",
+      "availabilityPrecision": "publisher-metadata",
+      "historicalAvailabilityStatus": "public-by; not proven first distribution",
+      "locator": "HTML lines 42 and 984: article:published_time and JSON-LD datePublished 2024-12-18T16:15:44Z. Article body is at line 16890 and reports that the Supreme Court would hear arguments."
+    },
+    {
+      "id": "scotus-trump-brief-v4",
+      "eventId": "trump-pause",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/scotus-trump-brief.pdf",
+      "url": "https://www.supremecourt.gov/DocketPDF/24/24-656/336151/20241227163400981_2024-12-27%20-%20TikTok%20v.%20Garland%20-%20Amicus%20Brief%20of%20President%20Donald%20J.%20Trump.pdf",
+      "retrievedAt": "2026-09-06T18:09:14Z",
+      "sha256": "b3074d8875c444b280b47951125182b00e87cf4ee21968987630d4d393500673",
+      "historicalAvailability": null,
+      "availabilityPrecision": "unknown",
+      "historicalAvailabilityStatus": "current primary filing; filing date and filename do not prove public posting",
+      "locator": "PDF page 1: BRIEF OF PRESIDENT DONALD J. TRUMP AS AMICUS CURIAE SUPPORTING NEITHER PARTY, December 27, 2024. PDF pages 4, 7, and 18: request to stay January 19 deadline and allow a political resolution; conclusion says Trump takes no position on the merits."
+    },
+    {
+      "id": "scotus-docket-v4",
+      "eventId": "trump-pause",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/scotus-docket.html",
+      "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/24-656.html",
+      "retrievedAt": "2026-09-06T18:09:14Z",
+      "sha256": "2e5acc036ca274cf80ce35097f58de4c8945c643ce921de606cf28f93dd015e8",
+      "historicalAvailability": null,
+      "availabilityPrecision": "unknown",
+      "historicalAvailabilityStatus": "current primary docket; dated procedural entries only",
+      "locator": "HTML line 634: Brief amicus curiae of President Donald J. Trump in support of neither party filed, VIDED, distributed; line 1375: Jan. 10, 2025 argued."
+    },
+    {
+      "id": "ap-dec27-v4",
+      "eventId": "trump-pause",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/ap-dec27.html",
+      "url": "https://apnews.com/article/tiktok-ban-supreme-court-trump-b96013a8447e9bdb5508ebe436aadf9a",
+      "retrievedAt": "2026-09-06T18:09:11Z",
+      "sha256": "0e40094fb46c88be4413348b8c2f078c0ff29e8321033984cce1546a25e5544a",
+      "historicalAvailability": "2024-12-27T22:43:57Z",
+      "availabilityPrecision": "publisher-metadata",
+      "historicalAvailabilityStatus": "public-by; not proven first distribution",
+      "locator": "HTML lines 44 and 988: article:published_time and JSON-LD datePublished 2024-12-27T22:43:57Z. Article body is at line 15764 and reports Trump's request to pause the ban."
+    },
+    {
+      "id": "cnn-jan10-live-v4",
+      "eventId": "supreme-argument",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/cnn-jan10-live.html",
+      "url": "https://transcripts.cnn.com/show/ctw/date/2025-01-10/segment/02",
+      "retrievedAt": "2026-09-06T18:12:54Z",
+      "sha256": "0befb468ac0f65a5f4603d72646e796c07896c909264c3719369970c8c074c79",
+      "historicalAvailability": "2025-01-10T15:26:18Z",
+      "availabilityPrecision": "broadcast-passage",
+      "historicalAvailabilityStatus": "public-by during proceeding; transcript page upload time unknown",
+      "locator": "HTML line 150 identifies the Jan. 10 segment as aired 10:25–11 a.m. ET; line 153 contains [10:26:18] and says arguments are underway at the Supreme Court. This is 15:26:18Z, before the retained 17:38Z proceeding-end cutoff."
+    },
+    {
+      "id": "scotus-jan10-transcript-v4",
+      "eventId": "supreme-argument",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/scotus-jan10-transcript.pdf",
+      "url": "https://www.supremecourt.gov/oral_arguments/argument_transcripts/2024/24-656_pm02.pdf",
+      "retrievedAt": "2026-09-06T18:12:54Z",
+      "sha256": "5d1a6c69821a99f3c7ec584565d9bb24f0728f1f6ed86a7bf84a805755ee01a7",
+      "historicalAvailability": null,
+      "availabilityPrecision": "unknown",
+      "historicalAvailabilityStatus": "current primary transcript; proceeding chronology only",
+      "locator": "PDF pages 1–2: Jan. 10, 2025 proceeding and 10:08 a.m. start; page 5: official proceedings; page 179: case submitted at 12:38 p.m."
+    },
+    {
+      "id": "scotus-jan10-audio-v4",
+      "eventId": "supreme-argument",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/scotus-jan10-audio.html",
+      "url": "https://www.supremecourt.gov/oral_arguments/audio/2024/24-656",
+      "retrievedAt": "2026-09-06T18:09:15Z",
+      "sha256": "6d2d217e1a2ae58dc5ce72d46cbfaf308d820fd27487700f970fa72813bc0c8e",
+      "historicalAvailability": null,
+      "availabilityPrecision": "unknown",
+      "historicalAvailabilityStatus": "current official audio detail page; date argued only",
+      "locator": "HTML line 298 and page content identify Oral Argument - Audio; the page is the official detail page for the Jan. 10, 2025 argument."
+    },
+    {
+      "id": "ap-jan10-postcutoff-v4",
+      "eventId": "supreme-argument",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/ap-jan10.html",
+      "url": "https://apnews.com/article/72fa68dd677df96a3b3526a1bddb0aa8",
+      "retrievedAt": "2026-09-06T18:09:12Z",
+      "sha256": "d84303e6f8e27b01f6587babc5da617eeacefcdd32cba76431e43d3521cc44be",
+      "historicalAvailability": "2025-01-10T17:59:41Z",
+      "availabilityPrecision": "publisher-metadata",
+      "historicalAvailabilityStatus": "post-cutoff corroboration; excluded from pre-reveal claim",
+      "locator": "HTML lines 42 and 1002: article published at 17:59:41Z and reports the Court's apparent view after the hearing. It is later than the 17:38Z cutoff and is not used to establish pre-reveal eligibility."
+    }
+  ],
+  "claimPatches": [
+    {
+      "eventId": "trump-elected",
+      "change": "evidence-confirmed-no-runtime-field-change",
+      "claim": {
+        "text": "The contemporary AP Race Call article says Trump won Wisconsin and that AP declared him the winner at 5:34 a.m. EST.",
+        "knownAt": "2024-11-06T10:34:42Z",
+        "sourceIds": ["ap-race-call"],
+        "visibility": "pre-reveal"
+      },
+      "support": "The AP page metadata/body is contemporaneous publisher evidence. Keep firstPublicTimeVerified false and treat 10:34:42Z as public-by evidence."
+    },
+    {
+      "eventId": "appeal-lost",
+      "change": "narrow-pre-reveal-claim-to-contemporary-source",
+      "claim": {
+        "text": "AP's contemporaneous report, published at 15:35:16Z, says a federal appeals court panel unanimously upheld the law requiring TikTok to break ties with ByteDance or face a ban.",
+        "knownAt": "2024-12-06T15:35:16Z",
+        "sourceIds": ["ap-dec6"],
+        "visibility": "pre-reveal",
+        "evidenceLocation": "Finish-pass capture ap-dec6.html lines 42, 998, and 18024; the official D.C. Circuit opinion remains the event's primary source role and is retained for dated legal substance, but its date-only publication precision is not used as a precise pre-reveal cutoff source."
+      },
+      "runtimeFieldPatch": {
+        "file": "src/data/tiktok2025.ts",
+        "eventClaimSourceIds": ["ap-dec6"],
+        "eventClaimKnownAt": "2024-12-06T15:35:16Z",
+        "preserveEventInformationKnownAt": "2024-12-06T16:00:00Z",
+        "preservePrimarySourceRole": "cadc-dec6-opinion"
+      }
+    },
+    {
+      "eventId": "supreme-review",
+      "change": "narrow-pre-reveal-claim-to-contemporary-source",
+      "claim": {
+        "text": "AP's contemporaneous report, published at 16:15:44Z, says the Supreme Court would hear arguments over the law that could ban TikTok.",
+        "knownAt": "2024-12-18T16:15:44Z",
+        "sourceIds": ["ap-dec18"],
+        "visibility": "pre-reveal",
+        "evidenceLocation": "Finish-pass capture ap-dec18.html lines 42, 984, and 16890; the official Supreme Court order remains the event's primary source role and establishes the certiorari grant, consolidation, and argument setting."
+      },
+      "runtimeFieldPatch": {
+        "file": "src/data/tiktok2025.ts",
+        "eventClaimSourceIds": ["ap-dec18"],
+        "eventClaimKnownAt": "2024-12-18T16:15:44Z",
+        "preserveEventInformationKnownAt": "2024-12-18T19:00:00Z",
+        "preservePrimarySourceRole": "scotus-dec18-order"
+      }
+    },
+    {
+      "eventId": "trump-pause",
+      "change": "narrow-pre-reveal-claim-to-contemporary-source",
+      "claim": {
+        "text": "AP's contemporaneous report, published at 22:43:57Z, says President-elect Trump asked the Supreme Court to pause the potential TikTok ban so his administration could pursue a political resolution.",
+        "knownAt": "2024-12-27T22:43:57Z",
+        "sourceIds": ["ap-dec27"],
+        "visibility": "pre-reveal",
+        "evidenceLocation": "Finish-pass capture ap-dec27.html lines 44, 988, and 15764; the official brief and docket remain the event's primary procedural evidence."
+      },
+      "runtimeFieldPatch": {
+        "file": "src/data/tiktok2025.ts",
+        "eventClaimSourceIds": ["ap-dec27"],
+        "eventClaimKnownAt": "2024-12-27T22:43:57Z",
+        "preserveEventInformationKnownAt": "2024-12-27T23:00:00Z",
+        "preservePrimarySourceRole": "tiktok-trump-brief"
+      }
+    },
+    {
+      "eventId": "supreme-argument",
+      "change": "add-contemporaneous-live-public-source",
+      "claim": {
+        "text": "CNN's contemporaneous live transcript, timestamped 10:26:18 a.m. ET, says arguments are underway at the Supreme Court in the TikTok ban case; the official transcript separately records the 10:08 a.m. start and 12:38 p.m. end.",
+        "knownAt": "2025-01-10T15:26:18Z",
+        "sourceIds": ["cnn-jan10-live"],
+        "visibility": "pre-reveal",
+        "evidenceLocation": "Finish-pass capture cnn-jan10-live.html lines 150–153: segment aired 10:25–11 a.m. ET and [10:26:18] transcript passage says arguments are now underway. Official chronology is in scotus-jan10-transcript.pdf pages 1–2 and 179."
+      },
+      "runtimeFieldPatch": {
+        "file": "src/data/tiktok2025.ts",
+        "addSource": {
+          "id": "cnn-jan10-live",
+          "title": "Supreme Court hears arguments on TikTok ban",
+          "publisher": "CNN International",
+          "url": "https://transcripts.cnn.com/show/ctw/date/2025-01-10/segment/02",
+          "publishedAt": "2025-01-10T15:26:18Z",
+          "publishedPrecision": "instant",
+          "retrievedAt": "2026-09-06T18:12:54Z",
+          "snapshotHash": "0befb468ac0f65a5f4603d72646e796c07896c909264c3719369970c8c074c79",
+          "correctionStatus": "none"
+        },
+        "eventClaimSourceIds": ["cnn-jan10-live"],
+        "eventClaimKnownAt": "2025-01-10T15:26:18Z",
+        "preserveEventInformationKnownAt": "2025-01-10T17:38:00Z",
+        "preservePrimarySourceRoles": ["tiktok-argument", "tiktok-argument-audio"],
+        "sourcePublicationSemantics": "publishedAt records the historical broadcast-passage availability used for eligibility, not the current transcript page upload time"
+      }
+    }
+  ],
+  "dateOnlySourcePolicy": {
+    "runtimeFile": "src/data/tiktok2025.ts",
+    "changes": [
+      "Mark official date-only court/opinion/brief records with publishedPrecision day when the lead integrates the packet; do not use them as precise pre-reveal claim sources at same-day cutoffs.",
+      "Mark the official Jan. 10 transcript and audio-detail sources with publishedPrecision unknown unless a historical page-publication instant is independently established; retain them as primary/corroborating event evidence, not the sole pre-reveal eligibility source.",
+      "Do not change event informationKnownAt, event selection, anchor timestamps, dataset, scoring profile, or published study history."
+    ]
+  },
+  "attemptedRetrievals": [
+    {
+      "target": "Official D.C. Circuit opinion and December opinion index",
+      "result": "Captured. Date and legal holding available; no historical first-public posting time exposed."
+    },
+    {
+      "target": "Official Supreme Court December 18 order, media advisory, and docket",
+      "result": "Captured. Order/advisory/docket establish dated certiorari and scheduling; no historical web-post time exposed."
+    },
+    {
+      "target": "Official December 27 Trump brief and Supreme Court docket",
+      "result": "Captured. Filing date, brief request, and distributed docket entry available; filename and current PDF retrieval do not prove original public time."
+    },
+    {
+      "target": "Contemporaneous AP reports for election, Dec. 6, Dec. 18, Dec. 27, and Jan. 10",
+      "result": "Captured. Four pre-reveal/public-by AP timestamps support the first four cards. Jan. 10 AP article is 17:59:41Z, after the retained 17:38Z cutoff, and is explicitly excluded from the pre-reveal claim."
+    },
+    {
+      "target": "Contemporaneous Jan. 10 CNN live transcript",
+      "result": "Captured. The 10:26:18 a.m. ET passage says arguments are underway and supplies a public broadcast passage before the 12:38 p.m. ET proceeding end. Page upload time remains unknown."
+    },
+    {
+      "target": "Archive/current-page timing distinction",
+      "result": "No archive upload timestamp is promoted to an original public fact. Local capture mtimes and current HTML metadata are retained only as retrieval/capture metadata."
+    }
+  ],
+  "anchorDecision": {
+    "change": "none",
+    "reason": "The new evidence closes precise pre-reveal claim eligibility using contemporary source availability, but does not prove an earlier or different first-public instant. Keep anchors-v3 unchanged, including the conservative legal upper bounds and Jan. 10 proceeding-end cutoff.",
+    "rescoringRequired": false,
+    "replayPolicy": "A finish-pass replay is run against the unchanged anchors, frozen selection, retained dataset, and unchanged application functions solely to prove the source-evidence handoff did not alter the measurements."
+  },
+  "remainingUnavailableEvidence": [
+    "Exact first-public web posting times for the Dec. 6 opinion, Dec. 18 order, and Dec. 27 brief remain unavailable in the captured primary records. The v4 candidate therefore uses conservative public-by semantics rather than claiming exact first-public times.",
+    "The AP race-call publisher timestamp and CNN broadcast timestamp establish historical public artifacts/passages but not the first distribution channel.",
+    "A human editor must still approve the exact v4 field patch, wording, source roles, study version, content hash, and release timestamp."
+  ]
+}

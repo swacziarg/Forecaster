@@ -1,0 +1,54 @@
+{
+  "role": "canada",
+  "taskId": "01a07776-ca0c-75c1-8e08-0d046c9ff706",
+  "status": "complete",
+  "startedAt": "2026-09-07T05:30:11Z",
+  "updatedAt": "2026-09-07T05:35:03Z",
+  "workspace": "/Users/simonwacziarg/Documents/ChatGPT/Forecast",
+  "ownedPaths": [
+    "src/data/canada2025.ts",
+    "src/data/canada2025.test.ts",
+    "public/data/canada-liberal-comeback-v2/",
+    "docs/launch-work/playable-drafts/canada/",
+    "docs/launch-work/playable-drafts/status/canada.json"
+  ],
+  "reportPath": "docs/launch-work/playable-drafts/canada/report.md",
+  "artifactHashes": {
+    "src/data/canada2025.ts": "44c6122860109f7c0a69ccb5a4a58f52d8133628990239c6337ba05e50d472c9",
+    "src/data/canada2025.test.ts": "ee3d457e38425a86d9e9a70201fdf9ea050489e61322a13f46f8160bc7e41e86",
+    "public/data/canada-liberal-comeback-v2/README.md": "5c46670b07fa33b8c17864a53752254731baf794fa0d292f2d71b4f7409ab0eb",
+    "public/data/canada-liberal-comeback-v2/manifest.json": "55a45d55efe23d376c65f980aad8901863775922f3ee4b5600b58dc5fb4e3912",
+    "public/data/canada-liberal-comeback-v2/polymarket-hourly.csv": "af754817f1f07f5b6eb71a0658a40faeb9f665398a7b660eb579d05f024ae117",
+    "public/data/canada-liberal-comeback-v2/raw-market.json": "b7282159bec1cb934c8a3f6d331454ae276a6ef21283fa2d1cc360461210e03e",
+    "public/data/canada-liberal-comeback-v2/raw-prices-history.json": "b21451d3a9456db98caf0043985f09f447345bc23e09fdeb6c663459b9f24f4d",
+    "docs/launch-work/playable-drafts/canada/report.md": "27327e84598f92f608e5928ff966de18bab3582e74ac520089cafcb15f9252c3"
+  },
+  "receipt": {
+    "status": "complete",
+    "handoffComplete": true,
+    "finishedAt": "2026-09-07T05:35:03Z",
+    "reportPath": "docs/launch-work/playable-drafts/canada/report.md",
+    "filesChanged": [
+      "src/data/canada2025.ts",
+      "src/data/canada2025.test.ts",
+      "public/data/canada-liberal-comeback-v2/",
+      "docs/launch-work/playable-drafts/canada/report.md",
+      "docs/launch-work/playable-drafts/status/canada.json"
+    ],
+    "checks": [
+      "node --experimental-strip-types src/data/canada2025.test.ts: passed",
+      "strict validateStudy: passed",
+      "pre-reveal eligibility for all five cards: passed",
+      "public bundle manifest hash verification: passed",
+      "2,723 observations, 25 usable windows, zero selected-event overlaps: passed",
+      "supported three-card tie and seven strict comparable pairs preserved",
+      "git diff --check on owned paths: passed"
+    ],
+    "remainingDecisions": [
+      "Lead must register the module and integrate its private preview after independent review.",
+      "Independent editorial approval is required for this exact v2 content and source hashes before publication.",
+      "Lead must decide whether the three-rank-level result is suitable for the September 12 proposal slot; no tie tuning is recommended.",
+      "No shared registry, UI, domain module, schedule, deployment, or publication state was changed by this worker."
+    ]
+  }
+}

@@ -7,8 +7,13 @@ import { fedStudy } from '../data/fed2024.ts'
 import { eaglesStudy } from '../data/eagles2025.ts'
 import { bitcoinStudy } from '../data/bitcoin2024.ts'
 import { bidenDropoutStudy } from '../data/bidenDropout2024.ts'
+import { tiktokStudy } from '../data/tiktok2025.ts'
+import { eaglesFiveCardStudy } from '../data/eaglesFiveCard2025.ts'
+import { oscarsFiveCard2026Study } from '../data/oscarsFiveCard2026.ts'
+import { bitcoinFiveCardStudy } from '../data/bitcoinFiveCard2024.ts'
+import { canada2025Study } from '../data/canada2025.ts'
 import { studyFromLocation, studyRegistry } from '../data/studies.ts'
-import { validateStudy, type Study, type StudyEvent } from './study.ts'
+import { sourcePublicationPrecision, sourcePublicationUpperBound, sourceWasAvailableBy, validateStudy, type Study, type StudyEvent } from './study.ts'
 
 const assert = (condition: unknown, message: string) => {
   if (!condition) throw new Error(`Test failed: ${message}`)
@@ -110,17 +115,43 @@ const tieGroups = createTieGroups(tied, 0.01)
 equal(tieGroups[0].join(','), 'a,b', 'groups indistinguishable responses')
 equal(pairwiseAgreement(['a', 'b', 'c'], tieGroups).comparable, 2, 'excludes tied pairs from comparison')
 
+const exactPublication = { publishedAt: '2024-01-01T12:34:56Z' }
+const dateOnlyPublication = { publishedAt: '2024-01-01' }
+const unknownPublication = { publishedAt: '2024-01-01T00:00:00Z', publishedPrecision: 'unknown' as const }
+const falselyPrecisePublication = { publishedAt: '2024-01-01', publishedPrecision: 'instant' as const }
+equal(sourcePublicationPrecision(exactPublication), 'instant', 'treats a timestamped publication as an exact instant')
+equal(sourcePublicationPrecision(dateOnlyPublication), 'day', 'represents a date-only publication as day precision')
+equal(sourcePublicationUpperBound(dateOnlyPublication), Date.parse('2024-01-02T00:00:00Z'), 'uses the following date boundary as a date-only upper bound')
+assert(!sourceWasAvailableBy(dateOnlyPublication, '2024-01-01T23:59:59Z'), 'does not treat a same-day date-only source as available by a precise cutoff')
+assert(sourceWasAvailableBy(dateOnlyPublication, '2024-01-02T00:00:00Z'), 'allows a date-only source once its conservative bound has passed')
+equal(sourcePublicationPrecision(unknownPublication), 'unknown', 'preserves an explicit unknown publication time')
+equal(sourcePublicationUpperBound(unknownPublication), null, 'does not derive an instant from an unknown publication time')
+equal(sourcePublicationPrecision(falselyPrecisePublication), 'unknown', 'does not upgrade a date-only value to an exact instant')
+
 equal(validateStudy(oscarsStudy).length, 0, 'validates the strict five-event Oscars study')
 equal(validateStudy(electionStudy).length, 0, 'validates the documented legacy election exception')
 for (const study of [fedStudy, eaglesStudy, bitcoinStudy, bidenDropoutStudy]) equal(validateStudy(study).length, 0, `validates ${study.slug}`)
-equal(studyRegistry.length, 6, 'registers all six studies')
+equal(validateStudy(tiktokStudy).length, 0, 'validates TikTok draft after precise public-by claim patch')
+equal(validateStudy(eaglesFiveCardStudy).length, 0, 'validates Eagles draft after precise public-by claim patch')
+equal(validateStudy(oscarsFiveCard2026Study).length, 0, 'validates the playable Oscars v2 draft')
+equal(validateStudy(bitcoinFiveCardStudy).length, 0, 'validates the playable Bitcoin v2 draft')
+equal(validateStudy(canada2025Study).length, 0, 'validates the playable Canada v2 draft')
+equal(studyRegistry.length, 11, 'registers all eleven local study versions')
 equal(studyRegistry[0].study.id, electionStudy.id, 'keeps the election first and default')
 equal(studyFromLocation('/').study.id, electionStudy.id, 'routes the root to the election')
 equal(studyFromLocation('/studies/bitcoin-100k-2024').study.id, bitcoinStudy.id, 'routes a named study')
 equal(studyFromLocation('/studies/biden-dropout-24-days').study.id, bidenDropoutStudy.id, 'routes the new launch study')
+equal(studyFromLocation('/studies/tiktok-banned-before-may-2025').study.id, tiktokStudy.id, 'routes the TikTok editorial-review draft')
+equal(studyFromLocation('/studies/eagles-stop-threepeat').study.id, eaglesFiveCardStudy.id, 'routes the five-card Eagles editorial-review draft')
 const hindsightBreach = structuredClone(oscarsStudy)
 hindsightBreach.events[0].claims[0].knownAt = '2026-01-01T00:00:00Z'
 assert(validateStudy(hindsightBreach).some((message) => message.includes('hindsight firewall')), 'rejects claims learned after the event cutoff')
+const dateOnlyStudy = structuredClone(oscarsStudy)
+dateOnlyStudy.sources[0].publishedAt = '2025-12-03'
+assert(validateStudy(dateOnlyStudy).some((message) => message.includes('date-only source')), 'rejects a date-only source at a same-day precise cutoff')
+const unknownStudy = structuredClone(oscarsStudy)
+unknownStudy.sources[0].publishedPrecision = 'unknown'
+assert(validateStudy(unknownStudy).some((message) => message.includes('unknown publication time')), 'rejects an explicitly unknown source from pre-reveal claims')
 
 const electionPoints = parseHourlyMarketCsv(readFileSync(new URL('../../public/data/polymarket-2024-hourly.csv', import.meta.url), 'utf8'))
 const electionAudit = auditSeries(electionPoints)
@@ -142,7 +173,7 @@ for (const impact of oscarsImpacts) {
 equal(createTieGroups(oscarsImpacts, oscarsStudy.measurementProfile.tieThreshold).map((group) => group.join('+')).join(','), 'nbr-best-film,pga-top-prize,critics-choice-best-picture+golden-globes-picture,oscar-nominations', 'preserves the Oscars tie-aware ordering')
 
 const hash = (value: Buffer | string) => createHash('sha256').update(value).digest('hex')
-const allStudies = [electionStudy, oscarsStudy, fedStudy, eaglesStudy, bitcoinStudy, bidenDropoutStudy]
+const allStudies = [electionStudy, oscarsStudy, fedStudy, eaglesStudy, bitcoinStudy, bidenDropoutStudy, tiktokStudy, eaglesFiveCardStudy, oscarsFiveCard2026Study, bitcoinFiveCardStudy, canada2025Study]
 for (const study of allStudies) {
   const normalized = readFileSync(new URL(`../../public${study.dataset.path}`, import.meta.url))
   const raw = readFileSync(new URL(`../../public${study.dataset.rawPath}`, import.meta.url))
@@ -166,6 +197,8 @@ const generalizedGolden: Array<[Study, Record<string, number>]> = [
   [fedStudy, { 'july-jobs': 0.2775, 'july-cpi': -0.19, 'powell-jackson-hole': 0.04, 'august-jobs': -0.065, 'august-cpi': -0.1625 }],
   [eaglesStudy, { 'week1-packers': 0.0075, 'week2-falcons': -0.0195, 'week12-rams': 0.0135, 'week16-hurts-concussion': -0.0285, 'week17-division': -0.005, 'wild-card-packers': 0.036, 'divisional-rams': 0.05975, 'nfc-championship': 0.13975 }],
   [bitcoinStudy, { 'hong-kong-etfs': -0.1175, 'ether-etf-approval': 0.0025, 'mtgox-repayments': -0.03, 'fed-50-cut': 0.0275, 'ibit-options': -0.015, 'trump-election': -0.035, 'microstrategy-purchase': 0.26, 'gensler-departure': 0.0475 }],
+  [tiktokStudy, { 'trump-elected': -0.1175, 'appeal-lost': 0.1175, 'supreme-review': 0.0025, 'trump-pause': -0.04, 'supreme-argument': 0.125 }],
+  [eaglesFiveCardStudy, { 'falcons-collapse': -0.0175, 'barkley-record': 0.0135, 'hurts-concussion': -0.02925, 'snow-playoff': 0.05975, 'nfc-title': 0.14 }],
 ]
 for (const [study, golden] of generalizedGolden) {
   const observations = normalizeObservationSeries(parseMarketCsv(readFileSync(new URL(`../../public${study.dataset.path}`, import.meta.url), 'utf8')), study.dataset.cadenceMinutes)
@@ -196,5 +229,15 @@ assert(validateStudy(badConclusion).some((error) => error.includes('conclusion')
 equal(auditSeries(parseMarketCsv(readFileSync(new URL('../../public/data/eagles-2025/polymarket-hourly.csv', import.meta.url), 'utf8'))).missingBuckets.length, 2, 'records the Eagles provider gaps')
 equal(auditSeries(parseMarketCsv(readFileSync(new URL('../../public/data/bitcoin-2024/polymarket-hourly.csv', import.meta.url), 'utf8'))).missingBuckets.length, 3, 'records the Bitcoin provider gaps')
 assert(calculateStudyImpacts(normalizeObservationSeries(parseMarketCsv(readFileSync(new URL('../../public/data/bitcoin-2024/polymarket-hourly.csv', import.meta.url), 'utf8')), 60), bitcoinStudy.events, bitcoinStudy.measurementProfile).some((impact) => impact.overlaps.length > 0), 'discloses overlapping Bitcoin windows')
+
+const tiktokPoints = normalizeObservationSeries(parseMarketCsv(readFileSync(new URL('../../public/data/tiktok-banned-before-may-2025-v1/polymarket-hourly.csv', import.meta.url), 'utf8')), 60)
+equal(tiktokPoints.length, 3023, 'loads the complete TikTok normalized snapshot')
+equal(createTieGroups(calculateStudyImpacts(tiktokPoints, tiktokStudy.events, tiktokStudy.measurementProfile), 0.01).map((group) => group.join('+')).join(','), 'supreme-argument+appeal-lost,supreme-review,trump-pause,trump-elected', 'freezes the reviewed TikTok tie-aware ordering')
+assert(tiktokStudy.events.every((event) => event.claims.every((claim) => claim.visibility === 'pre-reveal')), 'keeps TikTok ending content out of pre-reveal claims')
+
+const fiveCardEaglesPoints = normalizeObservationSeries(parseMarketCsv(readFileSync(new URL('../../public/data/eagles-super-bowl-lix-five-v1/polymarket-hourly.csv', import.meta.url), 'utf8')), 60)
+equal(fiveCardEaglesPoints.length, 5167, 'loads the complete five-card Eagles normalized snapshot')
+equal(createTieGroups(calculateStudyImpacts(fiveCardEaglesPoints, eaglesFiveCardStudy.events, eaglesFiveCardStudy.measurementProfile), 0.01).map((group) => group.join('+')).join(','), 'nfc-title,snow-playoff,barkley-record,falcons-collapse,hurts-concussion', 'freezes the reviewed Eagles tie-aware ordering')
+assert(eaglesFiveCardStudy.events.every((event) => event.claims.every((claim) => claim.visibility === 'pre-reveal')), 'keeps Eagles ending content out of pre-reveal claims')
 
 console.log('event study tests passed')

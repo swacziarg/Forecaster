@@ -1,0 +1,1323 @@
+{
+  "artifactType": "Editorial integration handoff; not a published Study or queue entry",
+  "preparedAt": "2026-09-06T14:32:49.639046+00:00",
+  "key": "eagles",
+  "proposedPuzzleNumber": 3,
+  "proposedReleaseTime": null,
+  "title": "Stop the three-peat",
+  "category": "Sports",
+  "storyRange": "2024-07-09–2025-02-10; scored developments 2024-09-16–2025-01-26",
+  "readiness": "needs a specific evidence/data step",
+  "queueableNow": false,
+  "decision": "Advance second. All 25 windows are complete and the five cards have both signs and four tie groups. The concrete remaining evidence step is independent confirmation of immutable final-whistle/public completion times; the present calculation uses team recap publication or last-modified cutoffs several hours later.",
+  "requiredEvidenceSteps": [
+    "Verify final-whistle times for all five games against official immutable gamebooks or archived broadcasts and decide whether those first-public anchors should supersede the conservative recap cutoffs.",
+    "Preserve the injury/loss as one cluster and explicitly disclose other NFL results in the same windows.",
+    "Recalculate once if evidence requires corrected anchors; record the version, retain this result and do not substitute headlines to preserve a desired ranking.",
+    "Independent editor approval is still required; the existing Eagles draft review has not supplied it."
+  ],
+  "identity": {
+    "provider": "Polymarket",
+    "marketId": "503322",
+    "conditionId": "0x399b3e538eae06db62ba0e166cf3772276dabf75862c938119d17d59684c7e40",
+    "contractId": "110222417228270638383974743746762302792556220380554556504458115620557107501861",
+    "question": "Will the Eagles win Super Bowl 2025?",
+    "selectedPerspective": "YES",
+    "outcome": "YES",
+    "openedAt": "2024-07-09T15:37:44.526Z",
+    "closedAt": "2025-02-10 07:15:05+00",
+    "settledAt": null,
+    "resolutionEvidence": {
+      "closed": true,
+      "umaResolutionStatus": "resolved",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "1",
+        "0"
+      ]
+    },
+    "metadataUrl": "https://gamma-api.polymarket.com/markets/503322",
+    "marketUrl": "https://polymarket.com/event/superbowl-champion-2025/will-the-eagles-win-super-bowl-2025",
+    "rulesSummary": "YES if Philadelphia wins Super Bowl LIX; otherwise NO. Elimination under NFL rules allowed immediate NO. This is the season-long championship futures contract, not the later Eagles–Chiefs match-winner contract."
+  },
+  "audienceRationale": "The Super Bowl, Patrick Mahomes, Jalen Hurts and Saquon Barkley supply household sports recognition. A season of late collapses, a record run, a quarterback scare and a snow escape offers something more varied than five playoff wins.",
+  "playRationale": "Players can debate whether an injury scare outweighed an embarrassing loss, and whether barely surviving in snow mattered more than scoring 55. All five headlines concern the Eagles’ championship probability, not their chance of winning the individual game.",
+  "tension": "The snow playoff and NFC title responses are effectively tied (+5.875 versus +6.075 pp); Barkley’s spectacular record night is much smaller (+1.35). The two setbacks are −1.75 and −2.90. Keep those honest modest early moves; do not exaggerate them into double-digit shocks.",
+  "measurementProfile": {
+    "id": "months-hourly-v1",
+    "label": "Months / hourly",
+    "cadenceMinutes": 60,
+    "anticipation": {
+      "startHours": -84,
+      "endHours": -12
+    },
+    "reference": {
+      "startHours": -12,
+      "endHours": 0
+    },
+    "immediate": {
+      "startHours": 0,
+      "endHours": 6
+    },
+    "stabilized": {
+      "startHours": 18,
+      "endHours": 36
+    },
+    "delayed": {
+      "startHours": 48,
+      "endHours": 72
+    },
+    "quality": {
+      "minimumCoverage": 0.6,
+      "maximumGapShare": 0.5,
+      "minimumDistinctUpdates": 3,
+      "maximumSpread": 0.2
+    },
+    "tieThreshold": 0.01
+  },
+  "selectionFreeze": {
+    "file": "frozen-selection-v1.json",
+    "sha256": "79ca8b2e025f15e5fe1ff9040ed1c060d874bf188d2b239f39fc647c0ad33593",
+    "frozenAt": "2026-09-06T00:24:51.987941+00:00",
+    "disclosure": "Freeze these five fact clusters per candidate for historical significance before running fresh event-window calculations. Timestamp anchors must come from public evidence, never optimized on prices. Failed candidates stay failed; do not replace weak cards after seeing movements. Raw histories and broad daily-median suitability statistics were examined before this freeze; no new five-card event-window calculations have run. Prior project records contain measured responses for some reused Trump/Eagles events and Oscars 2026; those were visible while satisfying the required repository review. This is a prospective freeze of this research selection, not a claim of blinded preregistration."
+  },
+  "anchorsFile": "anchors-v2.json",
+  "dataset": {
+    "researchCsv": "datasets/eagles-hourly.csv",
+    "csvSha256": "db134e2387c47676e7ee5911006ecc7af42f778a1d0a5db0324aa230229e0f45",
+    "normalizedJson": "evidence/eagles-normalized.json",
+    "audit": {
+      "key": "eagles",
+      "rawObservations": 5173,
+      "observations": 5167,
+      "coverageStart": "2024-07-09T18:00:00Z",
+      "coverageEnd": "2025-02-10T02:00:00Z",
+      "frequency": "UTC hourly buckets",
+      "missingHours": 2,
+      "maximumMissingRunHours": 1,
+      "rejectedObservations": 5,
+      "duplicateOrRevisionBuckets": 1,
+      "markPolicy": "Project Polymarket importer convention: latest source price per hour, treated as trade; API does not establish actual trade freshness or historical spread/volume. No filling.",
+      "normalizedSha256": "f151a62f5de76cf398be3ce16c8d229d7c9950771e53f936d3c2494063348dcc",
+      "minQualifyingDailyMedian": {
+        "date": "2024-10-19",
+        "median": 0.0435,
+        "observations": 24,
+        "min": 0.043,
+        "max": 0.0445
+      },
+      "maxQualifyingDailyMedian": {
+        "date": "2025-02-07",
+        "median": 0.4735,
+        "observations": 24,
+        "min": 0.4715,
+        "max": 0.4775
+      },
+      "maximumDailyMedianRise": {
+        "from": {
+          "date": "2024-10-19",
+          "median": 0.0435,
+          "observations": 24,
+          "min": 0.043,
+          "max": 0.0445
+        },
+        "to": {
+          "date": "2025-02-07",
+          "median": 0.4735,
+          "observations": 24,
+          "min": 0.4715,
+          "max": 0.4775
+        },
+        "pp": 43.0
+      },
+      "maximumDailyMedianDrawdown": {
+        "from": {
+          "date": "2024-12-16",
+          "median": 0.16725,
+          "observations": 24,
+          "min": 0.1545,
+          "max": 0.175
+        },
+        "to": {
+          "date": "2025-01-10",
+          "median": 0.1065,
+          "observations": 24,
+          "min": 0.1045,
+          "max": 0.1085
+        },
+        "pp": 6.075000000000001
+      },
+      "fullMarketLifetime": false
+    },
+    "historyRequests": [
+      {
+        "key": "eagles-history-000",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1720539464&endTs=1721403464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-000",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1720539464&endTs=1721403464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.964798+00:00",
+          "bytes": 6510,
+          "sha256": "dd913123a8de6f06119526d62b7b223ba8121841936033ecdd3fdafeb9043cf5",
+          "path": "evidence/eagles-history-000.json"
+        }
+      },
+      {
+        "key": "eagles-history-001",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1721403464&endTs=1722267464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-001",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1721403464&endTs=1722267464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.093214+00:00",
+          "bytes": 6568,
+          "sha256": "c59f02e0dcedc9bba0a2e67ed1b2d3b3cacaf5e532df2d40c0a57ca229c65bce",
+          "path": "evidence/eagles-history-001.json"
+        }
+      },
+      {
+        "key": "eagles-history-002",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1722267464&endTs=1723131464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-002",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1722267464&endTs=1723131464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.134638+00:00",
+          "bytes": 6538,
+          "sha256": "c87f3159405ac60722eb130b41d83ecff94963de9b4e5af4fed204dfdb32aafd",
+          "path": "evidence/eagles-history-002.json"
+        }
+      },
+      {
+        "key": "eagles-history-003",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1723131464&endTs=1723995464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-003",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1723131464&endTs=1723995464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.152029+00:00",
+          "bytes": 6632,
+          "sha256": "1f069e61791a6640ba94d2bde6bee07ab57fcf62e7e75d3bba67f1f3b7147727",
+          "path": "evidence/eagles-history-003.json"
+        }
+      },
+      {
+        "key": "eagles-history-004",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1723995464&endTs=1724859464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-004",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1723995464&endTs=1724859464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.134802+00:00",
+          "bytes": 6624,
+          "sha256": "773fd241d42b57df185ad6d589a5339dea837c1ef32c517b73650eab991f218e",
+          "path": "evidence/eagles-history-004.json"
+        }
+      },
+      {
+        "key": "eagles-history-005",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1724859464&endTs=1725723464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-005",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1724859464&endTs=1725723464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.165080+00:00",
+          "bytes": 6634,
+          "sha256": "2bb3351785016e7d8809dce661e78955a8c8f3d8689fd937472ebc5dc70fb2ee",
+          "path": "evidence/eagles-history-005.json"
+        }
+      },
+      {
+        "key": "eagles-history-006",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1725723464&endTs=1726587464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-006",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1725723464&endTs=1726587464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.275188+00:00",
+          "bytes": 6567,
+          "sha256": "4424ba9e83bc4ecd136c5f6367df0a9e696fe7d8c7b7d4c643ac9ad8a9fbdae0",
+          "path": "evidence/eagles-history-006.json"
+        }
+      },
+      {
+        "key": "eagles-history-007",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1726587464&endTs=1727451464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-007",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1726587464&endTs=1727451464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.352002+00:00",
+          "bytes": 6626,
+          "sha256": "76884ef207dbce57a8fce7d16a7cc721a2be3652383aa42501829a29e98556cd",
+          "path": "evidence/eagles-history-007.json"
+        }
+      },
+      {
+        "key": "eagles-history-008",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1727451464&endTs=1728315464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-008",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1727451464&endTs=1728315464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.346341+00:00",
+          "bytes": 6660,
+          "sha256": "606f987579880357db43d94d2a7a66bdf0656403dd47ccc4879303841e58091d",
+          "path": "evidence/eagles-history-008.json"
+        }
+      },
+      {
+        "key": "eagles-history-009",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1728315464&endTs=1729179464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-009",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1728315464&endTs=1729179464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.360957+00:00",
+          "bytes": 6586,
+          "sha256": "4807140b73484d052a4221238cadb8f74fda8b32f46eee89dc95416bc0d8ef44",
+          "path": "evidence/eagles-history-009.json"
+        }
+      },
+      {
+        "key": "eagles-history-010",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1729179464&endTs=1730043464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-010",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1729179464&endTs=1730043464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.373505+00:00",
+          "bytes": 6639,
+          "sha256": "2a7d1eb264054c6040077ec43daac1c08d4babd7ffc27b766e3063e5870ef7fd",
+          "path": "evidence/eagles-history-010.json"
+        }
+      },
+      {
+        "key": "eagles-history-011",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1730043464&endTs=1730907464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-011",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1730043464&endTs=1730907464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.469361+00:00",
+          "bytes": 6575,
+          "sha256": "200e52e2b994af7ed7ee7d290fde840af5a070d234c0f09da42f567bb7ae0177",
+          "path": "evidence/eagles-history-011.json"
+        }
+      },
+      {
+        "key": "eagles-history-012",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1730907464&endTs=1731771464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-012",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1730907464&endTs=1731771464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.578312+00:00",
+          "bytes": 6604,
+          "sha256": "c0ca421d13f2e79ba6e358871cbd294933168516bf4aca9aeaae9804d47375de",
+          "path": "evidence/eagles-history-012.json"
+        }
+      },
+      {
+        "key": "eagles-history-013",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1731771464&endTs=1732635464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-013",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1731771464&endTs=1732635464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.591809+00:00",
+          "bytes": 6613,
+          "sha256": "576c6abc75dc65f944c412da09badaf0e418f39d17bbaca987e34cbcbbecfa65",
+          "path": "evidence/eagles-history-013.json"
+        }
+      },
+      {
+        "key": "eagles-history-014",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1732635464&endTs=1733499464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-014",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1732635464&endTs=1733499464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.578895+00:00",
+          "bytes": 6601,
+          "sha256": "593f470661a93c20d9775127ff00008d674a10694e65f857afd1496f994ac4ca",
+          "path": "evidence/eagles-history-014.json"
+        }
+      },
+      {
+        "key": "eagles-history-015",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1733499464&endTs=1734363464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-015",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1733499464&endTs=1734363464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.599012+00:00",
+          "bytes": 6618,
+          "sha256": "c26320d66b5a1f793dca3f823a4e3c2b20aea5a8694dfc7a485e04a07a5d05b9",
+          "path": "evidence/eagles-history-015.json"
+        }
+      },
+      {
+        "key": "eagles-history-016",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1734363464&endTs=1735227464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-016",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1734363464&endTs=1735227464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.683590+00:00",
+          "bytes": 6603,
+          "sha256": "76d4a6e36339a586777a8fc7eb1e5db1742303c442bc1b4035c5b0131014ffcd",
+          "path": "evidence/eagles-history-016.json"
+        }
+      },
+      {
+        "key": "eagles-history-017",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1735227464&endTs=1736091464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-017",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1735227464&endTs=1736091464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.819647+00:00",
+          "bytes": 6633,
+          "sha256": "09a5e6a8d33b1bd79dc54f6199f7b949134f90d927fff1400cbee3aaf610cace",
+          "path": "evidence/eagles-history-017.json"
+        }
+      },
+      {
+        "key": "eagles-history-018",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1736091464&endTs=1736955464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-018",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1736091464&endTs=1736955464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.807091+00:00",
+          "bytes": 6620,
+          "sha256": "073b5d1614134e4fdab7b60541eadb5757ff0dfc8b6bf016803aba78fa6c9358",
+          "path": "evidence/eagles-history-018.json"
+        }
+      },
+      {
+        "key": "eagles-history-019",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1736955464&endTs=1737819464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-019",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1736955464&endTs=1737819464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.819152+00:00",
+          "bytes": 6616,
+          "sha256": "e4f51fa71669ca6f01ea475e0f7d42e0cdf7c6cd0f1d84faa2cac0c32c9e57c3",
+          "path": "evidence/eagles-history-019.json"
+        }
+      },
+      {
+        "key": "eagles-history-020",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1737819464&endTs=1738683464&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-020",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1737819464&endTs=1738683464&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.822214+00:00",
+          "bytes": 6601,
+          "sha256": "1d684f7bc5381812c1d8e8948007eabd5d7e2ba918f381252c8dc4fb3cd73673",
+          "path": "evidence/eagles-history-020.json"
+        }
+      },
+      {
+        "key": "eagles-history-021",
+        "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1738683464&endTs=1739175305&fidelity=60",
+        "receipt": {
+          "key": "eagles-history-021",
+          "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1738683464&endTs=1739175305&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:50.889035+00:00",
+          "bytes": 3772,
+          "sha256": "6a092a8b32c903dcc7c6807b22d04a90fc31926df1de71edf428f64c32977253",
+          "path": "evidence/eagles-history-021.json"
+        }
+      }
+    ],
+    "preEndingSwings": {
+      "exclusiveEndingDateUTC": "2025-02-09",
+      "days": 214,
+      "maximumRise": {
+        "pp": 43.3,
+        "from": {
+          "date": "2024-10-19",
+          "median": 0.0435,
+          "observations": 24,
+          "min": 0.043,
+          "max": 0.0445
+        },
+        "to": {
+          "date": "2025-02-08",
+          "median": 0.4765,
+          "observations": 24,
+          "min": 0.472,
+          "max": 0.4785
+        }
+      },
+      "maximumDrawdown": {
+        "pp": 6.075000000000001,
+        "from": {
+          "date": "2024-12-16",
+          "median": 0.16725,
+          "observations": 24,
+          "min": 0.1545,
+          "max": 0.175
+        },
+        "to": {
+          "date": "2025-01-10",
+          "median": 0.1065,
+          "observations": 24,
+          "min": 0.1045,
+          "max": 0.1085
+        }
+      },
+      "minimumDailyMedian": {
+        "date": "2024-10-19",
+        "median": 0.0435,
+        "observations": 24,
+        "min": 0.043,
+        "max": 0.0445
+      },
+      "maximumDailyMedian": {
+        "date": "2025-02-08",
+        "median": 0.4765,
+        "observations": 24,
+        "min": 0.472,
+        "max": 0.4785
+      }
+    },
+    "normalizationScript": "audit_history.py",
+    "measurementScript": "evaluate.mjs",
+    "integrationDestination": null
+  },
+  "presentationDraft": {
+    "topic": "Stop the three-peat",
+    "instruction": "September 2024–January 2025. Rank five headlines from the biggest rise in the Eagles’ Super Bowl championship odds to the biggest fall.",
+    "selectedContractShort": "Eagles win Super Bowl LIX",
+    "positiveLabel": "Probability rose",
+    "negativeLabel": "Probability fell",
+    "preRevealOdds": false,
+    "releaseTimezone": "America/Chicago",
+    "scoring": {
+      "version": "pairwise-anchor-1pt-v1",
+      "tieThreshold": 0.01,
+      "tieGrouping": "anchor-window"
+    },
+    "eventIds": [
+      "falcons-collapse",
+      "barkley-record",
+      "hurts-concussion",
+      "snow-playoff",
+      "nfc-title"
+    ],
+    "initialOrder": [
+      "hurts-concussion",
+      "falcons-collapse",
+      "nfc-title",
+      "barkley-record",
+      "snow-playoff"
+    ],
+    "initialOrderPolicy": "Fixed positional permutation of frozen list, not price-ranked."
+  },
+  "events": [
+    {
+      "id": "falcons-collapse",
+      "title": "Eagles lose 22–21 after Atlanta’s late touchdown",
+      "frozenTitle": "Eagles lose 22–21 after Atlanta’s late touchdown",
+      "eventDate": "2024-09-16",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": "2024-09-17T04:59:45.324Z",
+      "evaluationAnchor": "2024-09-17T04:59:45.324Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "anchorBasis": "Team recap last-modified time; original publication 03:09Z may precede the final score. Conservative public cutoff, not final whistle.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": true,
+      "selectionReason": "Early contender doubt and a notorious dropped pass.",
+      "expectedDirectionBeforeMeasurement": "negative",
+      "preRevealClaim": "Eagles lose 22–21 after Atlanta’s late touchdown",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": "evidence/eagles-falcons.html",
+          "url": "https://www.philadelphiaeagles.com/news/game-recap-falcons-vs-eagles-week-2-2024",
+          "retrievedAt": "2026-09-06T05:12:35.747732+00:00",
+          "snapshotHash": "27350706c2f2ae189abf52b51c09854c030baf6270fdaa96b6b1331998cf2414",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        }
+      ],
+      "competingExplanation": "The lead evaporated during a televised game, before the recap cutoff. The reference includes live play and the immediate aftermath; this is not a clean pre-kickoff-to-final comparison.",
+      "attributionAssessment": "mixed",
+      "researchMeasurement": {
+        "eventId": "falcons-collapse",
+        "event": {
+          "id": "falcons-collapse",
+          "date": "2024-09-16",
+          "title": "Eagles lose 22–21 after Atlanta’s late touchdown",
+          "expectedDirection": "negative",
+          "selectionReason": "Early contender doubt and a notorious dropped pass.",
+          "informationKnownAt": "2024-09-17T04:59:45.324Z",
+          "anchorVerified": true,
+          "anchorBasis": "Team recap last-modified time; original publication 03:09Z may precede the final score. Conservative public cutoff, not final whistle."
+        },
+        "windows": {
+          "anticipation": {
+            "level": 0.067,
+            "start": "2024-09-13T16:59:45.324Z",
+            "end": "2024-09-16T16:59:45.324Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 72,
+              "tradedBuckets": 72,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 72,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "reference": {
+            "level": 0.077,
+            "start": "2024-09-16T16:59:45.324Z",
+            "end": "2024-09-17T04:59:45.324Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 12,
+              "tradedBuckets": 12,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 12,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": 0.06575,
+            "start": "2024-09-17T04:59:45.324Z",
+            "end": "2024-09-17T10:59:45.324Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 6,
+              "tradedBuckets": 6,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 6,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "stabilized": {
+            "level": 0.0595,
+            "start": "2024-09-17T22:59:45.324Z",
+            "end": "2024-09-18T16:59:45.324Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 18,
+              "tradedBuckets": 18,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 18,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "delayed": {
+            "level": 0.0595,
+            "start": "2024-09-19T04:59:45.324Z",
+            "end": "2024-09-20T04:59:45.324Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 24,
+              "tradedBuckets": 24,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 24,
+              "status": "usable",
+              "reasons": []
+            }
+          }
+        },
+        "anticipationMove": 0.009999999999999995,
+        "immediateResponse": -0.011249999999999996,
+        "shortTermResponse": -0.0175,
+        "delayedIncrement": 0,
+        "cumulativeDelayedResponse": -0.0175,
+        "logOddsResponse": -0.27661152354033236,
+        "sensitivityShare": 0,
+        "counterfactualProbability": 0.05950000000000001,
+        "attributedImpact": -1.3877787807814457e-17,
+        "qualityStatus": "usable",
+        "ordinaryMovement": {
+          "classification": "unusually large",
+          "threshold": 0.01050000000000001,
+          "sampleCount": 130
+        },
+        "overlaps": []
+      }
+    },
+    {
+      "id": "barkley-record",
+      "title": "Saquon Barkley rushes for an Eagles-record 255 yards",
+      "frozenTitle": "Saquon Barkley rushes for an Eagles-record 255 yards",
+      "eventDate": "2024-11-24",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": "2024-11-25T06:51:48.356Z",
+      "evaluationAnchor": "2024-11-25T06:51:48.356Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "anchorBasis": "Team article publication and modification agree. Several hours after the game; record developed during play.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": true,
+      "selectionReason": "Famous new signing becomes the season’s star.",
+      "expectedDirectionBeforeMeasurement": "positive",
+      "preRevealClaim": "Saquon Barkley rushes for an Eagles-record 255 yards",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": "evidence/eagles-rams-record.html",
+          "url": "https://www.philadelphiaeagles.com/news/saquon-barkley-eagles-rams-historic-255-yard-performance-i-cant-do-it-alone",
+          "retrievedAt": "2026-09-06T00:26:48.289418+00:00",
+          "snapshotHash": "c9566cc77feb320917c8004c735dd9231662b3f0b70a875a29c302df95032f0a",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        }
+      ],
+      "competingExplanation": "The 255 yards accumulated over the whole game. Team performance, the score, other contenders’ results and health news share the window. The feature article was published hours after viewers saw the record.",
+      "attributionAssessment": "mixed",
+      "researchMeasurement": {
+        "eventId": "barkley-record",
+        "event": {
+          "id": "barkley-record",
+          "date": "2024-11-24",
+          "title": "Saquon Barkley rushes for an Eagles-record 255 yards",
+          "expectedDirection": "positive",
+          "selectionReason": "Famous new signing becomes the season’s star.",
+          "informationKnownAt": "2024-11-25T06:51:48.356Z",
+          "anchorVerified": true,
+          "anchorBasis": "Team article publication and modification agree. Several hours after the game; record developed during play."
+        },
+        "windows": {
+          "anticipation": {
+            "level": 0.0955,
+            "start": "2024-11-21T18:51:48.356Z",
+            "end": "2024-11-24T18:51:48.356Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 72,
+              "tradedBuckets": 72,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 72,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "reference": {
+            "level": 0.09625,
+            "start": "2024-11-24T18:51:48.356Z",
+            "end": "2024-11-25T06:51:48.356Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 12,
+              "tradedBuckets": 12,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 12,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": 0.11075,
+            "start": "2024-11-25T06:51:48.356Z",
+            "end": "2024-11-25T12:51:48.356Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 6,
+              "tradedBuckets": 6,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 6,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "stabilized": {
+            "level": 0.10975,
+            "start": "2024-11-26T00:51:48.356Z",
+            "end": "2024-11-26T18:51:48.356Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 18,
+              "tradedBuckets": 18,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 18,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "delayed": {
+            "level": 0.1145,
+            "start": "2024-11-27T06:51:48.356Z",
+            "end": "2024-11-28T06:51:48.356Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 24,
+              "tradedBuckets": 24,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 24,
+              "status": "usable",
+              "reasons": []
+            }
+          }
+        },
+        "anticipationMove": 0.0007500000000000007,
+        "immediateResponse": 0.014499999999999999,
+        "shortTermResponse": 0.013499999999999998,
+        "delayedIncrement": 0.004750000000000004,
+        "cumulativeDelayedResponse": 0.018250000000000002,
+        "logOddsResponse": 0.1463065301024744,
+        "sensitivityShare": 0,
+        "counterfactualProbability": 0.10975,
+        "attributedImpact": 0,
+        "qualityStatus": "usable",
+        "ordinaryMovement": {
+          "classification": "unusually large",
+          "threshold": 0.01050000000000001,
+          "sampleCount": 130
+        },
+        "overlaps": []
+      }
+    },
+    {
+      "id": "hurts-concussion",
+      "title": "Hurts leaves with a concussion as Washington ends the Eagles’ winning streak",
+      "frozenTitle": "Hurts leaves with a concussion as Washington ends the Eagles’ winning streak",
+      "eventDate": "2024-12-22",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": "2024-12-22T23:26:58.564Z",
+      "evaluationAnchor": "2024-12-22T23:26:58.564Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "anchorBasis": "Team live recap last-modified cutoff; injury and loss are one cluster.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": true,
+      "selectionReason": "Quarterback health and seeding danger in one inseparable episode.",
+      "expectedDirectionBeforeMeasurement": "negative",
+      "preRevealClaim": "Hurts leaves with a concussion as Washington ends the Eagles’ winning streak",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": "evidence/eagles-concussion.html",
+          "url": "https://www.philadelphiaeagles.com/news/eagles-vs-commanders-live-updates-december-22-2024-nfl-week-16",
+          "retrievedAt": "2026-09-06T00:26:48.321848+00:00",
+          "snapshotHash": "5f79fe06c9cb63c5a39941ead18b390467e31e21850034e588440e9f98e45ac8",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        }
+      ],
+      "competingExplanation": "The injury, replacement-quarterback performance and 36–33 defeat cannot be disentangled with these windows. Seeding implications and subsequent injury updates also matter.",
+      "attributionAssessment": "mixed",
+      "researchMeasurement": {
+        "eventId": "hurts-concussion",
+        "event": {
+          "id": "hurts-concussion",
+          "date": "2024-12-22",
+          "title": "Hurts leaves with a concussion as Washington ends the Eagles’ winning streak",
+          "expectedDirection": "negative",
+          "selectionReason": "Quarterback health and seeding danger in one inseparable episode.",
+          "informationKnownAt": "2024-12-22T23:26:58.564Z",
+          "anchorVerified": true,
+          "anchorBasis": "Team live recap last-modified cutoff; injury and loss are one cluster."
+        },
+        "windows": {
+          "anticipation": {
+            "level": 0.1605,
+            "start": "2024-12-19T11:26:58.564Z",
+            "end": "2024-12-22T11:26:58.564Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 72,
+              "tradedBuckets": 72,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 72,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "reference": {
+            "level": 0.1545,
+            "start": "2024-12-22T11:26:58.564Z",
+            "end": "2024-12-22T23:26:58.564Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 12,
+              "tradedBuckets": 12,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 12,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": 0.13625,
+            "start": "2024-12-22T23:26:58.564Z",
+            "end": "2024-12-23T05:26:58.564Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 6,
+              "tradedBuckets": 6,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 6,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "stabilized": {
+            "level": 0.1255,
+            "start": "2024-12-23T17:26:58.564Z",
+            "end": "2024-12-24T11:26:58.564Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 18,
+              "tradedBuckets": 18,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 18,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "delayed": {
+            "level": 0.12175,
+            "start": "2024-12-24T23:26:58.564Z",
+            "end": "2024-12-25T23:26:58.564Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 24,
+              "tradedBuckets": 24,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 24,
+              "status": "usable",
+              "reasons": []
+            }
+          }
+        },
+        "anticipationMove": -0.006000000000000005,
+        "immediateResponse": -0.01824999999999999,
+        "shortTermResponse": -0.028999999999999998,
+        "delayedIncrement": -0.0037500000000000033,
+        "cumulativeDelayedResponse": -0.03275,
+        "logOddsResponse": -0.24161246388598334,
+        "sensitivityShare": 0,
+        "counterfactualProbability": 0.12549999999999997,
+        "attributedImpact": 2.7755575615628914e-17,
+        "qualityStatus": "usable",
+        "ordinaryMovement": {
+          "classification": "unusually large",
+          "threshold": 0.01050000000000001,
+          "sampleCount": 130
+        },
+        "overlaps": []
+      }
+    },
+    {
+      "id": "snow-playoff",
+      "title": "Eagles survive the Rams in the snow, 28–22",
+      "frozenTitle": "Eagles survive the Rams in the snow, 28–22",
+      "eventDate": "2025-01-19",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": "2025-01-20T01:37:49.106Z",
+      "evaluationAnchor": "2025-01-20T01:37:49.106Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "anchorBasis": "Team live recap last-modified cutoff, later than final whistle.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": true,
+      "selectionReason": "Memorable snow game, explosive runs and a late defensive escape.",
+      "expectedDirectionBeforeMeasurement": "positive",
+      "preRevealClaim": "Eagles survive the Rams in the snow, 28–22",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": "evidence/eagles-snow.html",
+          "url": "https://www.philadelphiaeagles.com/news/rams-vs-eagles-live-updates-january-19-2025-nfl-divisional-round",
+          "retrievedAt": "2026-09-06T05:12:35.704611+00:00",
+          "snapshotHash": "5d2c8da3a895bba865a8b783ab26f7e1f73b6e203ecf5795a94eae56696b9c46",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        }
+      ],
+      "competingExplanation": "Advancing mechanically improves a championship future. Other divisional results changed the opponent field, and the recap cutoff comes after the final whistle. Do not attribute the response specifically to snow or Barkley alone.",
+      "attributionAssessment": "mixed",
+      "researchMeasurement": {
+        "eventId": "snow-playoff",
+        "event": {
+          "id": "snow-playoff",
+          "date": "2025-01-19",
+          "title": "Eagles survive the Rams in the snow, 28–22",
+          "expectedDirection": "positive",
+          "selectionReason": "Memorable snow game, explosive runs and a late defensive escape.",
+          "informationKnownAt": "2025-01-20T01:37:49.106Z",
+          "anchorVerified": true,
+          "anchorBasis": "Team live recap last-modified cutoff, later than final whistle."
+        },
+        "windows": {
+          "anticipation": {
+            "level": 0.14825,
+            "start": "2025-01-16T13:37:49.106Z",
+            "end": "2025-01-19T13:37:49.106Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 72,
+              "tradedBuckets": 72,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 72,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "reference": {
+            "level": 0.2535,
+            "start": "2025-01-19T13:37:49.106Z",
+            "end": "2025-01-20T01:37:49.106Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 12,
+              "tradedBuckets": 12,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 12,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": 0.31575,
+            "start": "2025-01-20T01:37:49.106Z",
+            "end": "2025-01-20T07:37:49.106Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 6,
+              "tradedBuckets": 6,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 6,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "stabilized": {
+            "level": 0.31225,
+            "start": "2025-01-20T19:37:49.106Z",
+            "end": "2025-01-21T13:37:49.106Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 18,
+              "tradedBuckets": 18,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 18,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "delayed": {
+            "level": 0.32725000000000004,
+            "start": "2025-01-22T01:37:49.106Z",
+            "end": "2025-01-23T01:37:49.106Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 24,
+              "tradedBuckets": 24,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 24,
+              "status": "usable",
+              "reasons": []
+            }
+          }
+        },
+        "anticipationMove": 0.10525000000000001,
+        "immediateResponse": 0.06224999999999997,
+        "shortTermResponse": 0.058750000000000024,
+        "delayedIncrement": 0.015000000000000013,
+        "cumulativeDelayedResponse": 0.07375000000000004,
+        "logOddsResponse": 0.29041054314901027,
+        "sensitivityShare": 0,
+        "counterfactualProbability": 0.31224999999999997,
+        "attributedImpact": 5.551115123125783e-17,
+        "qualityStatus": "usable",
+        "ordinaryMovement": {
+          "classification": "unusually large",
+          "threshold": 0.01050000000000001,
+          "sampleCount": 130
+        },
+        "overlaps": []
+      }
+    },
+    {
+      "id": "nfc-title",
+      "title": "Eagles score 55 to reach the Super Bowl",
+      "frozenTitle": "Eagles score 55 to reach the Super Bowl",
+      "eventDate": "2025-01-26",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": "2025-01-27T03:14:55.431Z",
+      "evaluationAnchor": "2025-01-27T03:14:55.431Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "anchorBasis": "Team analysis last-modified cutoff; also after AFC outcome.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": true,
+      "selectionReason": "Conference breakthrough, leaving the ultimate championship unresolved.",
+      "expectedDirectionBeforeMeasurement": "positive",
+      "preRevealClaim": "Eagles score 55 to reach the Super Bowl",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": "evidence/eagles-nfc.html",
+          "url": "https://www.philadelphiaeagles.com/news/spadaro-6-takeaways-from-a-dominant-nfc-championship-victory-over-the-commanders",
+          "retrievedAt": "2026-09-06T00:26:47.946119+00:00",
+          "snapshotHash": "e80ff993399104e95bf4ce6c59d1e53ec6f6248364af078e7312c438d0eda23b",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        }
+      ],
+      "competingExplanation": "The conference berth removed a remaining hurdle; the AFC result also determined the Super Bowl opponent during the same evening. The chosen recap cutoff follows both. Treat the observed movement as a mixed playoff-weekend response.",
+      "attributionAssessment": "mixed",
+      "researchMeasurement": {
+        "eventId": "nfc-title",
+        "event": {
+          "id": "nfc-title",
+          "date": "2025-01-26",
+          "title": "Eagles score 55 to reach the Super Bowl",
+          "expectedDirection": "positive",
+          "selectionReason": "Conference breakthrough, leaving the ultimate championship unresolved.",
+          "informationKnownAt": "2025-01-27T03:14:55.431Z",
+          "anchorVerified": true,
+          "anchorBasis": "Team analysis last-modified cutoff; also after AFC outcome."
+        },
+        "windows": {
+          "anticipation": {
+            "level": 0.322,
+            "start": "2025-01-23T15:14:55.431Z",
+            "end": "2025-01-26T15:14:55.431Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 72,
+              "tradedBuckets": 72,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 72,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "reference": {
+            "level": 0.405,
+            "start": "2025-01-26T15:14:55.431Z",
+            "end": "2025-01-27T03:14:55.431Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 12,
+              "tradedBuckets": 12,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 12,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": 0.46,
+            "start": "2025-01-27T03:14:55.431Z",
+            "end": "2025-01-27T09:14:55.431Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 6,
+              "tradedBuckets": 6,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 6,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "stabilized": {
+            "level": 0.46575,
+            "start": "2025-01-27T21:14:55.431Z",
+            "end": "2025-01-28T15:14:55.431Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 18,
+              "tradedBuckets": 18,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 18,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "delayed": {
+            "level": 0.469,
+            "start": "2025-01-29T03:14:55.431Z",
+            "end": "2025-01-30T03:14:55.431Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 24,
+              "tradedBuckets": 24,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 24,
+              "status": "usable",
+              "reasons": []
+            }
+          }
+        },
+        "anticipationMove": 0.08300000000000002,
+        "immediateResponse": 0.05499999999999999,
+        "shortTermResponse": 0.06074999999999997,
+        "delayedIncrement": 0.003249999999999975,
+        "cumulativeDelayedResponse": 0.06399999999999995,
+        "logOddsResponse": 0.2474594537215314,
+        "sensitivityShare": 0,
+        "counterfactualProbability": 0.46575000000000005,
+        "attributedImpact": -5.551115123125783e-17,
+        "qualityStatus": "usable",
+        "ordinaryMovement": {
+          "classification": "unusually large",
+          "threshold": 0.01050000000000001,
+          "sampleCount": 130
+        },
+        "overlaps": []
+      }
+    }
+  ],
+  "postRevealOnly": {
+    "ending": "Philadelphia beat Kansas City 40–22 in Super Bowl LIX on February 9, 2025, denying the Chiefs a third consecutive Super Bowl victory. The provider resolved this Eagles championship contract YES. Keep the Super Bowl itself entirely in the ending.",
+    "sources": [
+      {
+        "file": "evidence/eagles-ending-correct.html",
+        "url": "https://www.philadelphiaeagles.com/game-day/2024/post/chiefs-at-eagles/",
+        "retrievedAt": "2026-09-06T13:50:39.175080+00:00",
+        "snapshotHash": "82ecaada14640f53a3860ad63f43c5d7fb3f1eab03147c87027383db34bf7de3",
+        "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+      }
+    ],
+    "externalSources": [],
+    "tieGroups": [
+      [
+        "nfc-title",
+        "snow-playoff"
+      ],
+      [
+        "barkley-record"
+      ],
+      [
+        "falcons-collapse"
+      ],
+      [
+        "hurts-concussion"
+      ]
+    ],
+    "comparisonPolicy": "Observed stabilized minus reference medians; no headline-alone causality or nonzero attribution share."
+  },
+  "integrationGates": {
+    "sourceAndOccurrenceFinalization": false,
+    "independentEditor": null,
+    "approvalTime": null,
+    "applicationChangesMade": false
+  }
+}

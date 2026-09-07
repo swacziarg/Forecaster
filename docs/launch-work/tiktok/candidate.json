@@ -1,0 +1,406 @@
+{
+  "artifactType": "Editorial integration handoff; not a published Study or queue entry",
+  "status": "hold",
+  "readiness": "hold",
+  "topic": "tiktok",
+  "title": "The app that went dark",
+  "proposedStudy": {
+    "id": "tiktok-banned-before-may-2025-v1",
+    "slug": "tiktok-banned-before-may-2025",
+    "version": 1,
+    "status": "editorial-review",
+    "category": "Culture"
+  },
+  "market": {
+    "id": "507276",
+    "provider": "Polymarket",
+    "title": "TikTok banned in the US before May 2025?",
+    "url": "https://polymarket.com/event/tiktok-banned-in-the-us-before-may-2025",
+    "metadataUrl": "https://gamma-api.polymarket.com/markets/507276",
+    "openedAt": "2024-09-18T00:05:28.707Z",
+    "closedAt": "2025-01-22T00:31:19Z",
+    "status": "settled",
+    "rulesSummary": "YES required a federal law, policy or court-mandated ban on download and/or use affecting most Americans to take effect by April 30, 2025, 11:59 p.m. ET. A sale achieving legal compliance meant NO. This is not a contract on permanent disappearance or whether the app was still unavailable in May."
+  },
+  "contract": {
+    "id": "24635636911615866092589652362670811323984202357282728474473612545495782013438",
+    "proposition": "TikTok is banned in the United States before May 2025",
+    "nativeSide": "YES",
+    "selectedPerspective": "YES",
+    "resolution": "YES"
+  },
+  "dataset": {
+    "researchCsv": "docs/launch-queue-research/datasets/tiktok-hourly.csv",
+    "researchCsvSha256": "0ab5e79a468f08f1cab1ca7c13e854751f3b94d1c20b27b1be89e9f3f66e4fdd",
+    "normalized": "docs/launch-queue-research/evidence/tiktok-normalized.json",
+    "normalizedSha256": "caf50a435fa87b927fa197b4a03c472bf7cba94de020c5879668b12036e90bd7",
+    "observations": 3023,
+    "coverageStart": "2024-09-18T01:00:00Z",
+    "coverageEnd": "2025-01-22T00:00:00Z",
+    "rawObservations": 3024,
+    "rejectedObservations": 0,
+    "duplicateOrRevisionBuckets": 1,
+    "missingHours": 1,
+    "fullMarketLifetime": false,
+    "markPolicy": "Latest source price per UTC hour, treated as a trade under the project importer convention. The API does not establish trade freshness or historical spread/volume. No filling."
+  },
+  "selection": {
+    "source": "docs/launch-queue-research/frozen-selection-v1.json",
+    "sha256": "79ca8b2e025f15e5fe1ff9040ed1c060d874bf188d2b239f39fc647c0ad33593",
+    "frozenAt": "2026-09-06T00:24:51.987941+00:00",
+    "eventIds": ["trump-elected", "appeal-lost", "supreme-review", "trump-pause", "supreme-argument"],
+    "initialOrder": ["supreme-review", "trump-elected", "supreme-argument", "appeal-lost", "trump-pause"],
+    "initialOrderPolicy": "Fixed positional permutation of the frozen list, not price-ranked."
+  },
+  "anchors": {
+    "path": "docs/launch-work/tiktok/anchors-v3.json",
+    "version": 3,
+    "supersedes": "docs/launch-queue-research/anchors-v2.json",
+    "change": "Replaced the retrospective-only AP explainer as the sole election evidence with the contemporary AP Race Call artifact. Retained the existing conservative legal upper bounds after checking primary records and contemporaneous captures; no exact first-public court or filing posting time was established."
+  },
+  "measurementProfile": {
+    "id": "months-hourly-v1",
+    "label": "Months / hourly",
+    "cadenceMinutes": 60,
+    "anticipation": {"startHours": -84, "endHours": -12},
+    "reference": {"startHours": -12, "endHours": 0},
+    "immediate": {"startHours": 0, "endHours": 6},
+    "stabilized": {"startHours": 18, "endHours": 36},
+    "delayed": {"startHours": 48, "endHours": 72},
+    "quality": {"minimumCoverage": 0.6, "maximumGapShare": 0.5, "minimumDistinctUpdates": 3, "maximumSpread": 0.2},
+    "tieThreshold": 0.01,
+    "scoring": {"version": "pairwise-anchor-1pt-v1", "units": "percentage points", "tieGrouping": "anchor-window"}
+  },
+  "sources": [
+    {
+      "id": "ap-race-call",
+      "title": "AP Race Call: Donald Trump wins Wisconsin",
+      "publisher": "The Associated Press",
+      "url": "https://apnews.com/article/race-call-trump-wins-wisconsin-president-1d2209e42fe44e61adb9e17deb416b47",
+      "localPath": "docs/launch-work/tiktok/evidence/ap-race-call.html",
+      "publishedAt": "2024-11-06T10:34:42Z",
+      "retrievedAt": "2026-09-06T16:09:26.300Z",
+      "snapshotHash": "bc9bb7f7c343c6f336b8fdd58593ac9f2014ab64ca80dfcc470efa2e9cc9e85c",
+      "captureStatus": "captured; current retrieval of a contemporary publisher artifact; metadata time is not proof of first distribution"
+    },
+    {
+      "id": "cadc-dec6-opinion",
+      "title": "TikTok Inc. v. Garland, No. 24-1113",
+      "publisher": "U.S. Court of Appeals for the D.C. Circuit",
+      "url": "https://media.cadc.uscourts.gov/opinions/docs/2024/12/24-1113-2088317.pdf",
+      "localPath": "docs/launch-work/tiktok/evidence/cadc-dec6-opinion.pdf",
+      "publishedAt": null,
+      "retrievedAt": "2026-09-06T16:09:26.300Z",
+      "snapshotHash": "1bfb5dbe4384de347968e1ef6ff81412c9376884fe17173884477287edec9c8d",
+      "captureStatus": "captured; primary opinion dated/decided 2024-12-06; historical posting time not exposed"
+    },
+    {
+      "id": "ap-dec6",
+      "title": "Federal appeals court upholds law requiring sale or ban of TikTok in the US",
+      "publisher": "The Associated Press",
+      "url": "https://apnews.com/article/tiktok-ban-court-ruling-china-6bfd505295ad44126df0544fc083d6a6",
+      "localPath": "docs/launch-work/tiktok/evidence/ap-dec6.html",
+      "publishedAt": "2024-12-06T15:35:16Z",
+      "retrievedAt": "2026-09-06T16:09:26.300Z",
+      "snapshotHash": "b62d98d0c580e5a2f0336fcd5e8faf442a039bf8ee1b5800b9fd163555d9ec92",
+      "captureStatus": "captured; contemporaneous public-by evidence; publisher time is an upper bound, not exact first-public time"
+    },
+    {
+      "id": "scotus-dec18-order",
+      "title": "Miscellaneous Order (12/18/2024)",
+      "publisher": "Supreme Court of the United States",
+      "url": "https://www.supremecourt.gov/orders/courtorders/121824zr1_p86b.pdf",
+      "localPath": "docs/launch-work/tiktok/evidence/scotus-dec18-order.pdf",
+      "publishedAt": null,
+      "retrievedAt": "2026-09-06T16:09:26.300Z",
+      "snapshotHash": "51a1aa500e74004cd97f85e58979c1fc5073e175722ac38e6c85b90e850e7a91",
+      "captureStatus": "captured; primary order dated 2024-12-18; historical posting time not exposed"
+    },
+    {
+      "id": "ap-dec18",
+      "title": "Supreme Court to hear arguments over law that could ban TikTok in US",
+      "publisher": "The Associated Press",
+      "url": "https://apnews.com/article/supreme-court-tiktok-china-us-ban-08d6fffdcd2dde5100fcdf8a452dd5cc",
+      "localPath": "docs/launch-work/tiktok/evidence/ap-dec18.html",
+      "publishedAt": "2024-12-18T16:15:44Z",
+      "retrievedAt": "2026-09-06T16:09:26.300Z",
+      "snapshotHash": "07ac82143c1c28e57e3e8b2ee2d4d96aad297e75900a1319164a1c97bfb10690",
+      "captureStatus": "captured; contemporaneous public-by evidence; publisher time is an upper bound, not exact first-public time"
+    },
+    {
+      "id": "ap-dec27",
+      "title": "President-elect Trump asks Supreme Court to delay TikTok ban",
+      "publisher": "The Associated Press",
+      "url": "https://apnews.com/article/tiktok-ban-supreme-court-trump-b96013a8447e9bdb5508ebe436aadf9a",
+      "localPath": "docs/launch-work/tiktok/evidence/ap-dec27.html",
+      "publishedAt": "2024-12-27T22:43:57Z",
+      "retrievedAt": "2026-09-06T16:09:26.300Z",
+      "snapshotHash": "1df2aa319f05340fd01361d9ebd74bb405943a174b6525c68e4088c7c95b92b5",
+      "captureStatus": "captured; contemporaneous public-by evidence; publisher time is an upper bound, not exact first-public time"
+    },
+    {
+      "id": "tiktok-trump-brief",
+      "title": "Brief of President Donald J. Trump as amicus curiae",
+      "publisher": "Supreme Court of the United States",
+      "url": "https://www.supremecourt.gov/DocketPDF/24/24-656/336151/20241227163400981_2024-12-27%20-%20TikTok%20v.%20Garland%20-%20Amicus%20Brief%20of%20President%20Donald%20J.%20Trump.pdf",
+      "localPath": "docs/launch-queue-research/evidence/tiktok-trump-brief.pdf",
+      "publishedAt": null,
+      "retrievedAt": "2026-09-06T00:26:47.499182+00:00",
+      "snapshotHash": "b3074d8875c444b280b47951125182b00e87cf4ee21968987630d4d393500673",
+      "captureStatus": "retained research capture; filing date and filename do not prove public posting time"
+    },
+    {
+      "id": "tiktok-argument",
+      "title": "TikTok, Inc. v. Garland oral-argument transcript",
+      "publisher": "Supreme Court of the United States",
+      "url": "https://www.supremecourt.gov/oral_arguments/argument_transcripts/2024/24-656_pm02.pdf",
+      "localPath": "docs/launch-queue-research/evidence/tiktok-argument.pdf",
+      "publishedAt": null,
+      "retrievedAt": "2026-09-06T05:12:35.868614+00:00",
+      "snapshotHash": "5d1a6c69821a99f3c7ec584565d9bb24f0728f1f6ed86a7bf84a805755ee01a7",
+      "captureStatus": "retained research capture; official transcript records proceeding chronology, not a ruling"
+    },
+    {
+      "id": "tiktok-argument-audio",
+      "title": "Oral Argument - Audio File",
+      "publisher": "Supreme Court of the United States",
+      "url": "https://www.supremecourt.gov/oral_arguments/audio/2024/24-656",
+      "localPath": "docs/launch-queue-research/evidence/tiktok-argument-page.html",
+      "publishedAt": null,
+      "retrievedAt": "2026-09-06T05:12:35.834149+00:00",
+      "snapshotHash": "d307228128786d13f63369758fbb9c37f2a6f6e23c174704b06e7d59e83ccc7c",
+      "captureStatus": "retained research capture; official detail page corroborates the public proceeding"
+    },
+    {
+      "id": "tiktok-docket",
+      "title": "Docket for 24-656",
+      "publisher": "Supreme Court of the United States",
+      "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/24-656.html",
+      "localPath": "docs/launch-queue-research/evidence/tiktok-docket.html",
+      "publishedAt": null,
+      "retrievedAt": "2026-09-06T00:26:47.438760+00:00",
+      "snapshotHash": "260e61073e913fccc625ceaad5c41425cbd5b93ae1ab2d818056ef098d290e60",
+      "captureStatus": "retained research capture; docket dates and entries are primary procedural records, not historical web-post times"
+    },
+    {
+      "id": "tiktok-opinion",
+      "title": "TikTok Inc. v. Garland opinion",
+      "publisher": "Supreme Court of the United States",
+      "url": "https://www.supremecourt.gov/opinions/24pdf/24-656_ca7d.pdf",
+      "localPath": "docs/launch-queue-research/evidence/tiktok-opinion.pdf",
+      "publishedAt": null,
+      "retrievedAt": "2026-09-06T00:26:47.468887+00:00",
+      "snapshotHash": "780f07a100107f3d2ef4b2e0cc5901f476b583bf45ef4c25cea468dd17c419c4",
+      "captureStatus": "retained research capture; primary January 17 opinion for reveal-only ending"
+    },
+    {
+      "id": "tiktok-ending",
+      "title": "TikTok returns online 12 hours after going dark",
+      "publisher": "CNN",
+      "url": "https://transcripts.cnn.com/show/cnr/date/2025-01-19/segment/04",
+      "localPath": "docs/launch-queue-research/evidence/tiktok-ending.html",
+      "publishedAt": null,
+      "retrievedAt": "2026-09-06T05:44:52.317182+00:00",
+      "snapshotHash": "d8cc9e3b16fb6160586876a6a0fe69eba909dc64fa0c5ac3f0e4cb1b292ba7dd",
+      "captureStatus": "retained research capture; reveal-only contemporaneous broadcast transcript"
+    },
+    {
+      "id": "tiktok-market",
+      "title": "TikTok banned in the US before May 2025?",
+      "publisher": "Polymarket",
+      "url": "https://polymarket.com/event/tiktok-banned-in-the-us-before-may-2025",
+      "localPath": "docs/launch-queue-research/evidence/tiktok-market.html",
+      "publishedAt": null,
+      "retrievedAt": "2026-09-06T13:50:37.735149+00:00",
+      "snapshotHash": "06562a3ddc0cb1a9a271023e78e8a19e7de1c312adc836e1fd66a14a14811772",
+      "captureStatus": "retained research capture; provider resolution and rules for reveal only"
+    },
+    {
+      "id": "tiktok-event-metadata",
+      "title": "Polymarket market metadata for market 507276",
+      "publisher": "Polymarket Gamma API",
+      "url": "https://gamma-api.polymarket.com/markets/507276",
+      "localPath": "docs/launch-queue-research/evidence/tiktok-event.json",
+      "publishedAt": null,
+      "retrievedAt": "2026-09-06T00:26:47.499182+00:00",
+      "snapshotHash": "8f53cb8c1e1e86868821a24244dd48a7240780720e0ac770cce4bce024d0eadd",
+      "captureStatus": "retained research capture; market 507276 metadata records final YES outcome and closedTime 2025-01-22T00:31:19Z"
+    }
+  ],
+  "events": [
+    {
+      "id": "trump-elected",
+      "title": "Trump wins the presidential election",
+      "shortTitle": "Trump wins the presidency",
+      "occurredAt": null,
+      "occurredAtNote": "Election outcome was a rolling overnight process; use the AP call evidence and do not invent a midnight instant.",
+      "informationKnownAt": "2024-11-06T10:34:42Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "dateLabel": "Nov 6",
+      "category": "Politics",
+      "mechanism": "A Trump victory could create a perceived political route to delay or soften enforcement, lowering the market-implied chance of a ban.",
+      "expectedDirection": "negative",
+      "claims": [
+        {
+          "id": "trump-elected-fact",
+          "text": "The contemporary AP Race Call article says Trump won Wisconsin and that AP declared him the winner at 5:34 a.m. EST.",
+          "knownAt": "2024-11-06T10:34:42Z",
+          "sourceIds": ["ap-race-call"],
+          "visibility": "pre-reveal",
+          "evidenceLocation": "ap-race-call.html lines 38, 969: datePublished/dateModified 2024-11-06T10:34:42Z and the JSON-LD description; article description/body states AP declared Trump winner at 5:34 a.m. EST."
+        }
+      ],
+      "sourceRoles": [{"sourceId": "ap-race-call", "role": "primary"}],
+      "selectionReason": "A new political escape route for a household-name app.",
+      "retrospectiveInterpretation": "The market-implied ban probability fell substantially after the election call, but the preceding election-night information flow and the campaign's earlier TikTok statements overlap the episode.",
+      "competingExplanation": "Election returns were public throughout the 12-hour reference window, and the call was a confirmation after substantial anticipation. The measured response is not an isolated effect of the call.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "appeal-lost",
+      "title": "Appeals court rejects TikTok’s challenge to the divest-or-ban law",
+      "shortTitle": "Appeals court rejects TikTok’s challenge",
+      "occurredAt": null,
+      "occurredAtNote": "Date is known from the primary opinion and Supreme Court docket; exact occurrence/publication time is unresolved. The measurement cutoff is the separate public-by upper bound.",
+      "informationKnownAt": "2024-12-06T16:00:00Z",
+      "precision": "interval",
+      "timezone": "America/New_York",
+      "dateLabel": "Dec 6",
+      "category": "Legal",
+      "mechanism": "A merits defeat leaves the divest-or-ban law on course and raises the chance of a qualifying ban.",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "appeal-lost-fact",
+          "text": "The D.C. Circuit opinion dated and decided December 6 rejects the petitioners’ constitutional challenge; AP's contemporaneous article reports the panel unanimously upheld the law.",
+          "knownAt": "2024-12-06T16:00:00Z",
+          "sourceIds": ["cadc-dec6-opinion", "ap-dec6"],
+          "visibility": "pre-reveal",
+          "evidenceLocation": "cadc-dec6-opinion.pdf cover/first page and conclusion; ap-dec6.html lines 42, 998, 18024: datePublished 15:35:16Z and article body describing the unanimous ruling."
+        }
+      ],
+      "sourceRoles": [{"sourceId": "cadc-dec6-opinion", "role": "primary"}, {"sourceId": "ap-dec6", "role": "corroborating"}],
+      "selectionReason": "Major legal defeat.",
+      "retrospectiveInterpretation": "The market-implied ban probability rose in the stabilized window, although the scheduled decision and pending Supreme Court path were partly anticipated.",
+      "competingExplanation": "The legal result, expected timing, divestiture mechanics and likely appeal entered one information cluster; the price response cannot be assigned to the opinion alone.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "supreme-review",
+      "title": "Supreme Court agrees to hear TikTok’s challenge",
+      "shortTitle": "Supreme Court agrees to hear the case",
+      "occurredAt": null,
+      "occurredAtNote": "Date is known from the primary order and docket; exact occurrence/publication time is unresolved. The measurement cutoff is the separate public-by upper bound.",
+      "informationKnownAt": "2024-12-18T19:00:00Z",
+      "precision": "interval",
+      "timezone": "America/New_York",
+      "dateLabel": "Dec 18",
+      "category": "Legal",
+      "mechanism": "Supreme Court review creates an institutional path for relief, even though the order did not stay the statute or decide the merits.",
+      "expectedDirection": "negative",
+      "claims": [
+        {
+          "id": "supreme-review-fact",
+          "text": "The Supreme Court's December 18 order grants certiorari, consolidates the cases and sets oral argument; the contemporary AP article reports that the Court will hear arguments.",
+          "knownAt": "2024-12-18T19:00:00Z",
+          "sourceIds": ["scotus-dec18-order", "ap-dec18"],
+          "visibility": "pre-reveal",
+          "evidenceLocation": "scotus-dec18-order.pdf first page: ORDER LIST, WEDNESDAY, DECEMBER 18, 2024, CERTIORARI GRANTED; ap-dec18.html lines 42, 984, 16890: datePublished 16:15:44Z and body reporting the scheduled argument."
+        }
+      ],
+      "sourceRoles": [{"sourceId": "scotus-dec18-order", "role": "primary"}, {"sourceId": "ap-dec18", "role": "corroborating"}],
+      "selectionReason": "An institutional lifeline, without a stay or merits victory.",
+      "retrospectiveInterpretation": "The stabilized response was only +0.25 percentage points, within the one-point tie threshold and effectively not detectable under this scoring profile.",
+      "competingExplanation": "The order was expected to be processed on an accelerated schedule; the case grant, no-stay posture and January 19 deadline were all part of the same information cluster.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "trump-pause",
+      "title": "Trump asks the Supreme Court to pause the TikTok deadline",
+      "shortTitle": "Trump asks for a TikTok pause",
+      "occurredAt": null,
+      "occurredAtNote": "Filing date is known from the brief and docket; exact filing/public-post time is unresolved. The measurement cutoff is the separate public-by upper bound.",
+      "informationKnownAt": "2024-12-27T23:00:00Z",
+      "precision": "interval",
+      "timezone": "America/New_York",
+      "dateLabel": "Dec 27",
+      "category": "Legal",
+      "mechanism": "An incoming president's request for time to pursue a political resolution could lower the near-term chance of the law taking effect.",
+      "expectedDirection": "negative",
+      "claims": [
+        {
+          "id": "trump-pause-fact",
+          "text": "Trump's amicus brief asks the Supreme Court to stay the January 19 deadline; AP's contemporaneous report describes the request as a pause while his administration pursues a political resolution.",
+          "knownAt": "2024-12-27T23:00:00Z",
+          "sourceIds": ["tiktok-trump-brief", "ap-dec27"],
+          "visibility": "pre-reveal",
+          "evidenceLocation": "tiktok-trump-brief.pdf title and prayer for relief; ap-dec27.html lines 44, 988, 15764: datePublished 22:43:57Z and article body reporting Trump's request."
+        }
+      ],
+      "sourceRoles": [{"sourceId": "tiktok-trump-brief", "role": "primary"}, {"sourceId": "ap-dec27", "role": "corroborating"}],
+      "selectionReason": "The incoming president intervenes directly.",
+      "retrospectiveInterpretation": "The ban probability fell four percentage points in the stabilized window, a modest negative repricing rather than a ruling or guaranteed delay.",
+      "competingExplanation": "Holiday liquidity, the parties' same-day briefs and political-deal expectations overlap the filing; the request was not a court order.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "supreme-argument",
+      "title": "TikTok and the government face Supreme Court questioning",
+      "shortTitle": "Supreme Court questions TikTok and the government",
+      "occurredAt": "2025-01-10T15:08:00Z",
+      "occurredAtNote": "Official transcript records the 10:08 a.m. EST start; the measurement anchor is the 12:38 p.m. EST transcript end.",
+      "informationKnownAt": "2025-01-10T17:38:00Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "dateLabel": "Jan 10",
+      "category": "Legal",
+      "mechanism": "The public argument tests the rival speech and national-security positions and can alter expectations about the approaching deadline, without being a judgment.",
+      "expectedDirection": "ambiguous",
+      "claims": [
+        {
+          "id": "supreme-argument-fact",
+          "text": "The official transcript records the argument beginning at 10:08 a.m. EST and ending at 12:38 p.m. EST; the official audio page identifies the public Supreme Court proceeding.",
+          "knownAt": "2025-01-10T17:38:00Z",
+          "sourceIds": ["tiktok-argument", "tiktok-argument-audio"],
+          "visibility": "pre-reveal",
+          "evidenceLocation": "tiktok-argument.pdf.txt lines 185, 469, 19780: 10:08 a.m. start and 12:38 p.m. end; tiktok-argument-page.html: Oral Argument - Audio, docket 24-656, date argued 01/10/25. Questions are not votes or a ruling."
+        }
+      ],
+      "sourceRoles": [{"sourceId": "tiktok-argument", "role": "primary"}, {"sourceId": "tiktok-argument-audio", "role": "corroborating"}],
+      "selectionReason": "Public test of the rival free-speech and national-security arguments.",
+      "retrospectiveInterpretation": "The market-implied ban probability rose 12.5 percentage points by the stabilized window; the argument's contents and the approaching deadline were both relevant.",
+      "competingExplanation": "The proceeding unfolded over 150 minutes, so information entered continuously. Questions are not votes, and this window does not establish that the Court had decided the case.",
+      "attributionAssessment": "mixed"
+    }
+  ],
+  "presentation": {
+    "instruction": "November 2024–January 2025. Rank five headlines from the biggest rise in the odds of a US TikTok ban before May to the biggest fall.",
+    "selectedContractShort": "A US TikTok ban before May 2025",
+    "positiveLabel": "Probability rose",
+    "negativeLabel": "Probability fell",
+    "preRevealOdds": false,
+    "eventIds": ["trump-elected", "appeal-lost", "supreme-review", "trump-pause", "supreme-argument"]
+  },
+  "ending": {
+    "visibility": "reveal-only",
+    "title": "January 17: the law is upheld, but the story keeps moving",
+    "text": "The Supreme Court upheld the law on January 17. TikTok went dark in the United States around January 19, then restored service that day. Polymarket records two disputed YES proposals followed by a final YES, with provider metadata closing the contract on January 22 at 00:31:19 UTC. Because this contract resolved on a qualifying ban taking effect, the restoration did not change the final YES. None of these ending developments is a sixth card.",
+    "sourceIds": ["tiktok-opinion", "tiktok-ending", "tiktok-market", "tiktok-event-metadata"],
+    "settlement": "Two disputed YES proposals were followed by final YES; do not equate the contract with a permanent ban or score the ending as an event."
+  },
+  "provisionalMeasurements": {
+    "path": "docs/launch-work/tiktok/measurements.json",
+    "sha256": "8a1da4ecdefeab8ed61206582f9398a56531028e6009236f73617b08e5ce8b81",
+    "allWindowsPass": true,
+    "tieGroups": [["supreme-argument", "appeal-lost"], ["supreme-review"], ["trump-pause"], ["trump-elected"]],
+    "scoresArePostReveal": true
+  },
+  "approval": {"status": "pending", "reviewer": null, "approvedAt": null},
+  "unresolvedGates": [
+    "Exact first-public posting times for the December 6 court opinion, December 18 Supreme Court order, and December 27 amicus filing remain unverified. The packet retains conservative broadcast-end measurement anchors and labels contemporaneous AP publication times as public-by upper bounds.",
+    "The AP Race Call artifact is now captured and dated 2024-11-06T10:34:42Z, but that publisher timestamp does not prove the first distribution channel; the anchor is a public-availability cutoff.",
+    "occurredAt values for the election and legal date-only developments require final editorial normalization; unknowns are not used as permission to invent event instants.",
+    "Independent editorial review and named, timestamped approval are required before a registered Study or daily queue entry."
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "measurementVersion": "oscars-best-picture-2026-measurements-v2",
+  "selectionVersion": "oscars-best-picture-2026-selection-v2",
+  "anchorVersion": "oscars-best-picture-2026-anchors-v3",
+  "calculatedAt": "2026-09-06T20:26:06Z",
+  "dataset": {
+    "path": "public/data/oscars-2026/kalshi-hourly.csv",
+    "normalizedSha256": "498a7ba35bb74924845de951b1a281ecf70382f4aff74f62f0529537c072eb54",
+    "observations": 4168,
+    "cadenceMinutes": 60
+  },
+  "profile": {
+    "id": "months-hourly-v1",
+    "tieThreshold": 0.01,
+    "qualityThresholds": { "minimumCoverage": 0.6, "maximumGapShare": 0.5, "minimumDistinctUpdates": 3, "maximumSpread": 0.2 }
+  },
+  "events": [
+    {
+      "eventId": "nbr-best-film",
+      "informationKnownAt": "2025-12-03T19:25:00Z",
+      "windows": {
+        "anticipation": { "start": "2025-11-30T07:25:00.000Z", "end": "2025-12-03T07:25:00.000Z", "level": 0.56, "expectedBuckets": 72, "validBuckets": 72, "tradedBuckets": 47, "quoteBuckets": 25, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 9105, "distinctUpdates": 72, "status": "usable" },
+        "reference": { "start": "2025-12-03T07:25:00.000Z", "end": "2025-12-03T19:25:00.000Z", "level": 0.59, "expectedBuckets": 12, "validBuckets": 12, "tradedBuckets": 10, "quoteBuckets": 2, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 4177, "distinctUpdates": 12, "status": "usable" },
+        "immediate": { "start": "2025-12-03T19:25:00.000Z", "end": "2025-12-04T01:25:00.000Z", "level": 0.71, "expectedBuckets": 6, "validBuckets": 6, "tradedBuckets": 6, "quoteBuckets": 0, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.015, "totalVolume": 32056, "distinctUpdates": 6, "status": "usable" },
+        "stabilized": { "start": "2025-12-04T13:25:00.000Z", "end": "2025-12-05T07:25:00.000Z", "level": 0.72, "expectedBuckets": 18, "validBuckets": 18, "tradedBuckets": 16, "quoteBuckets": 2, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.015, "totalVolume": 11669, "distinctUpdates": 18, "status": "usable" },
+        "delayed": { "start": "2025-12-05T19:25:00.000Z", "end": "2025-12-06T19:25:00.000Z", "level": 0.73, "expectedBuckets": 24, "validBuckets": 24, "tradedBuckets": 18, "quoteBuckets": 6, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 4845, "distinctUpdates": 24, "status": "usable" }
+      },
+      "immediateResponse": 0.12,
+      "shortTermResponse": 0.13,
+      "delayedIncrement": 0.01,
+      "cumulativeDelayedResponse": 0.14,
+      "qualityStatus": "usable",
+      "ordinaryMovement": { "classification": "unusually large", "threshold": 0.035, "sampleCount": 101 },
+      "overlaps": []
+    },
+    {
+      "eventId": "critics-choice-best-picture",
+      "informationKnownAt": "2026-01-05T04:30:00Z",
+      "windows": {
+        "anticipation": { "start": "2026-01-01T16:30:00.000Z", "end": "2026-01-04T16:30:00.000Z", "level": 0.7425, "expectedBuckets": 72, "validBuckets": 72, "tradedBuckets": 57, "quoteBuckets": 15, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 19015, "distinctUpdates": 72, "status": "usable" },
+        "reference": { "start": "2026-01-04T16:30:00.000Z", "end": "2026-01-05T04:30:00.000Z", "level": 0.7325, "expectedBuckets": 12, "validBuckets": 12, "tradedBuckets": 11, "quoteBuckets": 1, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 26594, "distinctUpdates": 12, "status": "usable" },
+        "immediate": { "start": "2026-01-05T04:30:00.000Z", "end": "2026-01-05T10:30:00.000Z", "level": 0.78, "expectedBuckets": 6, "validBuckets": 6, "tradedBuckets": 6, "quoteBuckets": 0, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 2366, "distinctUpdates": 6, "status": "usable" },
+        "stabilized": { "start": "2026-01-05T22:30:00.000Z", "end": "2026-01-06T16:30:00.000Z", "level": 0.7725, "expectedBuckets": 18, "validBuckets": 18, "tradedBuckets": 16, "quoteBuckets": 2, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 14682, "distinctUpdates": 18, "status": "usable" },
+        "delayed": { "start": "2026-01-07T04:30:00.000Z", "end": "2026-01-08T04:30:00.000Z", "level": 0.78, "expectedBuckets": 24, "validBuckets": 24, "tradedBuckets": 22, "quoteBuckets": 2, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 19927, "distinctUpdates": 24, "status": "usable" }
+      },
+      "immediateResponse": 0.0475,
+      "shortTermResponse": 0.04,
+      "delayedIncrement": 0.0075,
+      "cumulativeDelayedResponse": 0.0475,
+      "qualityStatus": "usable",
+      "ordinaryMovement": { "classification": "unusually large", "threshold": 0.035, "sampleCount": 101 },
+      "overlaps": []
+    },
+    {
+      "eventId": "golden-globes-picture",
+      "informationKnownAt": "2026-01-12T07:05:00Z",
+      "windows": {
+        "anticipation": { "start": "2026-01-08T19:05:00.000Z", "end": "2026-01-11T19:05:00.000Z", "level": 0.78, "expectedBuckets": 72, "validBuckets": 72, "tradedBuckets": 65, "quoteBuckets": 7, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 13612, "distinctUpdates": 72, "status": "usable" },
+        "reference": { "start": "2026-01-11T19:05:00.000Z", "end": "2026-01-12T07:05:00.000Z", "level": 0.78, "expectedBuckets": 12, "validBuckets": 12, "tradedBuckets": 12, "quoteBuckets": 0, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 25912, "distinctUpdates": 12, "status": "usable" },
+        "immediate": { "start": "2026-01-12T07:05:00.000Z", "end": "2026-01-12T13:05:00.000Z", "level": 0.83, "expectedBuckets": 6, "validBuckets": 6, "tradedBuckets": 6, "quoteBuckets": 0, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 1374, "distinctUpdates": 6, "status": "usable" },
+        "stabilized": { "start": "2026-01-13T01:05:00.000Z", "end": "2026-01-13T19:05:00.000Z", "level": 0.81, "expectedBuckets": 18, "validBuckets": 18, "tradedBuckets": 18, "quoteBuckets": 0, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 6484, "distinctUpdates": 18, "status": "usable" },
+        "delayed": { "start": "2026-01-14T07:05:00.000Z", "end": "2026-01-15T07:05:00.000Z", "level": 0.82, "expectedBuckets": 24, "validBuckets": 24, "tradedBuckets": 23, "quoteBuckets": 1, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 12690, "distinctUpdates": 24, "status": "usable" }
+      },
+      "immediateResponse": 0.05,
+      "shortTermResponse": 0.03,
+      "delayedIncrement": 0.01,
+      "cumulativeDelayedResponse": 0.04,
+      "qualityStatus": "usable",
+      "ordinaryMovement": { "classification": "ordinary", "threshold": 0.035, "sampleCount": 101 },
+      "overlaps": []
+    },
+    {
+      "eventId": "oscar-nominations",
+      "informationKnownAt": "2026-01-22T13:42:00Z",
+      "windows": {
+        "anticipation": { "start": "2026-01-19T01:42:00.000Z", "end": "2026-01-22T01:42:00.000Z", "level": 0.77, "expectedBuckets": 72, "validBuckets": 72, "tradedBuckets": 69, "quoteBuckets": 3, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 16206, "distinctUpdates": 72, "status": "usable" },
+        "reference": { "start": "2026-01-22T01:42:00.000Z", "end": "2026-01-22T13:42:00.000Z", "level": 0.76, "expectedBuckets": 12, "validBuckets": 12, "tradedBuckets": 8, "quoteBuckets": 4, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 6163, "distinctUpdates": 12, "status": "usable" },
+        "immediate": { "start": "2026-01-22T13:42:00.000Z", "end": "2026-01-22T19:42:00.000Z", "level": 0.72, "expectedBuckets": 6, "validBuckets": 6, "tradedBuckets": 6, "quoteBuckets": 0, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 47492, "distinctUpdates": 6, "status": "usable" },
+        "stabilized": { "start": "2026-01-23T07:42:00.000Z", "end": "2026-01-24T01:42:00.000Z", "level": 0.71, "expectedBuckets": 18, "validBuckets": 18, "tradedBuckets": 18, "quoteBuckets": 0, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 23070, "distinctUpdates": 18, "status": "usable" },
+        "delayed": { "start": "2026-01-24T13:42:00.000Z", "end": "2026-01-25T13:42:00.000Z", "level": 0.7, "expectedBuckets": 24, "validBuckets": 24, "tradedBuckets": 24, "quoteBuckets": 0, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 27637, "distinctUpdates": 24, "status": "usable" }
+      },
+      "immediateResponse": -0.04,
+      "shortTermResponse": -0.05,
+      "delayedIncrement": -0.01,
+      "cumulativeDelayedResponse": -0.06,
+      "qualityStatus": "usable",
+      "ordinaryMovement": { "classification": "unusually large", "threshold": 0.035, "sampleCount": 101 },
+      "overlaps": []
+    },
+    {
+      "eventId": "pga-top-prize",
+      "informationKnownAt": "2026-03-01T08:03:00Z",
+      "windows": {
+        "anticipation": { "start": "2026-02-25T20:03:00.000Z", "end": "2026-02-28T20:03:00.000Z", "level": 0.77, "expectedBuckets": 72, "validBuckets": 72, "tradedBuckets": 68, "quoteBuckets": 4, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 79694, "distinctUpdates": 72, "status": "usable" },
+        "reference": { "start": "2026-02-28T20:03:00.000Z", "end": "2026-03-01T08:03:00.000Z", "level": 0.76, "expectedBuckets": 12, "validBuckets": 12, "tradedBuckets": 12, "quoteBuckets": 0, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 176775, "distinctUpdates": 12, "status": "usable" },
+        "immediate": { "start": "2026-03-01T08:03:00.000Z", "end": "2026-03-01T14:03:00.000Z", "level": 0.88, "expectedBuckets": 6, "validBuckets": 6, "tradedBuckets": 6, "quoteBuckets": 0, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 729, "distinctUpdates": 6, "status": "usable" },
+        "stabilized": { "start": "2026-03-02T02:03:00.000Z", "end": "2026-03-02T20:03:00.000Z", "level": 0.81, "expectedBuckets": 18, "validBuckets": 18, "tradedBuckets": 18, "quoteBuckets": 0, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 89325, "distinctUpdates": 18, "status": "usable" },
+        "delayed": { "start": "2026-03-03T08:03:00.000Z", "end": "2026-03-04T08:03:00.000Z", "level": 0.785, "expectedBuckets": 24, "validBuckets": 24, "tradedBuckets": 23, "quoteBuckets": 1, "staleBuckets": 0, "coverage": 1, "maximumGapBuckets": 0, "medianSpread": 0.01, "totalVolume": 32947, "distinctUpdates": 24, "status": "usable" }
+      },
+      "immediateResponse": 0.12,
+      "shortTermResponse": 0.05,
+      "delayedIncrement": -0.025,
+      "cumulativeDelayedResponse": 0.025,
+      "qualityStatus": "usable",
+      "ordinaryMovement": { "classification": "unusually large", "threshold": 0.035, "sampleCount": 101 },
+      "overlaps": []
+    }
+  ],
+  "tieGroups": [["nbr-best-film"], ["pga-top-prize"], ["critics-choice-best-picture"], ["golden-globes-picture"], ["oscar-nominations"]],
+  "pairwiseAgreement": { "agreed": 7, "comparable": 10, "percent": 70 },
+  "rankingByShortTermResponse": ["nbr-best-film", "pga-top-prize", "critics-choice-best-picture", "golden-globes-picture", "oscar-nominations"]
+}

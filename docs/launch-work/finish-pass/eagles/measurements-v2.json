@@ -1,0 +1,143 @@
+{
+  "artifactType": "Eagles five-card measurement addendum",
+  "version": 2,
+  "calculatedAt": "2026-09-06T18:14:40Z",
+  "invocation": "node --experimental-strip-types --input-type=module using src/domain/eventStudy.ts",
+  "measurementFunction": "src/domain/eventStudy.ts:calculateStudyImpacts + createTieGroups",
+  "sourceStudyId": "eagles-super-bowl-lix-five-v1",
+  "profile": {
+    "id": "months-hourly-v1",
+    "label": "Months / hourly",
+    "cadenceMinutes": 60,
+    "anticipation": {"startHours": -84, "endHours": -12},
+    "reference": {"startHours": -12, "endHours": 0},
+    "immediate": {"startHours": 0, "endHours": 6},
+    "stabilized": {"startHours": 18, "endHours": 36},
+    "delayed": {"startHours": 48, "endHours": 72},
+    "quality": {"minimumCoverage": 0.6, "maximumGapShare": 0.5, "minimumDistinctUpdates": 3, "maximumSpread": 0.2},
+    "tieThreshold": 0.01,
+    "scoringVersion": "pairwise-anchor-1pt-v1"
+  },
+  "selectionSha256": "79ca8b2e025f15e5fe1ff9040ed1c060d874bf188d2b239f39fc647c0ad33593",
+  "originalAnchorsSha256": "168609f145c5a992e911c5479b0f2c3fe9e331f72420fdb1f5dd5f86febaffa3",
+  "timingAnchorsSha256": "158ee377048d51c40bc94da61a89ee3425f404dcb002bf758217d30259c92d80",
+  "datasetSha256": "f151a62f5de76cf398be3ce16c8d229d7c9950771e53f936d3c2494063348dcc",
+  "observationPolicy": {
+    "usableObservations": 5167,
+    "rawObservations": 5173,
+    "rejectedAboveOne": 5,
+    "missingBuckets": ["2024-07-21T18:00:00Z", "2024-11-05T22:00:00Z"],
+    "duplicateOrRevisionBuckets": 1,
+    "interpolation": false,
+    "clipping": false,
+    "crossContractSplicing": false,
+    "fullMarketLifetime": false,
+    "qualityResult": "all 25 windows usable; no full-window overlap"
+  },
+  "rounding": "Levels and movements below are rendered to six decimal places for review; window boundaries retain the exact frozen anchor timestamp.",
+  "impacts": [
+    {
+      "eventId": "falcons-collapse",
+      "informationKnownAt": "2024-09-17T04:59:45.324Z",
+      "windows": {
+        "anticipation": {"level": 0.067, "start": "2024-09-13T16:59:45.324Z", "end": "2024-09-16T16:59:45.324Z", "quality": "usable"},
+        "reference": {"level": 0.077, "start": "2024-09-16T16:59:45.324Z", "end": "2024-09-17T04:59:45.324Z", "quality": "usable"},
+        "immediate": {"level": 0.06575, "start": "2024-09-17T04:59:45.324Z", "end": "2024-09-17T10:59:45.324Z", "quality": "usable"},
+        "stabilized": {"level": 0.0595, "start": "2024-09-17T22:59:45.324Z", "end": "2024-09-18T16:59:45.324Z", "quality": "usable"},
+        "delayed": {"level": 0.0595, "start": "2024-09-19T04:59:45.324Z", "end": "2024-09-20T04:59:45.324Z", "quality": "usable"}
+      },
+      "anticipationMove": 0.01,
+      "immediateResponse": -0.01125,
+      "shortTermResponse": -0.0175,
+      "delayedIncrement": 0,
+      "cumulativeDelayedResponse": -0.0175,
+      "logOddsResponse": -0.276612,
+      "ordinaryMovement": {"classification": "unusually large", "threshold": 0.0105, "sampleCount": 130},
+      "qualityStatus": "usable",
+      "overlaps": []
+    },
+    {
+      "eventId": "barkley-record",
+      "informationKnownAt": "2024-11-25T06:51:48.356Z",
+      "windows": {
+        "anticipation": {"level": 0.0955, "start": "2024-11-21T18:51:48.356Z", "end": "2024-11-24T18:51:48.356Z", "quality": "usable"},
+        "reference": {"level": 0.09625, "start": "2024-11-24T18:51:48.356Z", "end": "2024-11-25T06:51:48.356Z", "quality": "usable"},
+        "immediate": {"level": 0.11075, "start": "2024-11-25T06:51:48.356Z", "end": "2024-11-25T12:51:48.356Z", "quality": "usable"},
+        "stabilized": {"level": 0.10975, "start": "2024-11-26T00:51:48.356Z", "end": "2024-11-26T18:51:48.356Z", "quality": "usable"},
+        "delayed": {"level": 0.1145, "start": "2024-11-27T06:51:48.356Z", "end": "2024-11-28T06:51:48.356Z", "quality": "usable"}
+      },
+      "anticipationMove": 0.00075,
+      "immediateResponse": 0.0145,
+      "shortTermResponse": 0.0135,
+      "delayedIncrement": 0.00475,
+      "cumulativeDelayedResponse": 0.01825,
+      "logOddsResponse": 0.146307,
+      "ordinaryMovement": {"classification": "unusually large", "threshold": 0.0105, "sampleCount": 130},
+      "qualityStatus": "usable",
+      "overlaps": []
+    },
+    {
+      "eventId": "hurts-concussion",
+      "informationKnownAt": "2024-12-22T22:25:00Z",
+      "windows": {
+        "anticipation": {"level": 0.16075, "start": "2024-12-19T10:25:00.000Z", "end": "2024-12-22T10:25:00.000Z", "quality": "usable"},
+        "reference": {"level": 0.15475, "start": "2024-12-22T10:25:00.000Z", "end": "2024-12-22T22:25:00.000Z", "quality": "usable"},
+        "immediate": {"level": 0.13625, "start": "2024-12-22T22:25:00.000Z", "end": "2024-12-23T04:25:00.000Z", "quality": "usable"},
+        "stabilized": {"level": 0.1255, "start": "2024-12-23T16:25:00.000Z", "end": "2024-12-24T10:25:00.000Z", "quality": "usable"},
+        "delayed": {"level": 0.12175, "start": "2024-12-24T22:25:00.000Z", "end": "2024-12-25T22:25:00.000Z", "quality": "usable"}
+      },
+      "anticipationMove": -0.006,
+      "immediateResponse": -0.0185,
+      "shortTermResponse": -0.02925,
+      "delayedIncrement": -0.00375,
+      "cumulativeDelayedResponse": -0.033,
+      "logOddsResponse": -0.243525,
+      "ordinaryMovement": {"classification": "unusually large", "threshold": 0.0105, "sampleCount": 130},
+      "qualityStatus": "usable",
+      "overlaps": []
+    },
+    {
+      "eventId": "snow-playoff",
+      "informationKnownAt": "2025-01-19T23:10:00Z",
+      "windows": {
+        "anticipation": {"level": 0.14825, "start": "2025-01-16T11:10:00.000Z", "end": "2025-01-19T11:10:00.000Z", "quality": "usable"},
+        "reference": {"level": 0.25075, "start": "2025-01-19T11:10:00.000Z", "end": "2025-01-19T23:10:00.000Z", "quality": "usable"},
+        "immediate": {"level": 0.3115, "start": "2025-01-19T23:10:00.000Z", "end": "2025-01-20T05:10:00.000Z", "quality": "usable"},
+        "stabilized": {"level": 0.3105, "start": "2025-01-20T17:10:00.000Z", "end": "2025-01-21T11:10:00.000Z", "quality": "usable"},
+        "delayed": {"level": 0.32725, "start": "2025-01-21T23:10:00.000Z", "end": "2025-01-22T23:10:00.000Z", "quality": "usable"}
+      },
+      "anticipationMove": 0.1025,
+      "immediateResponse": 0.06075,
+      "shortTermResponse": 0.05975,
+      "delayedIncrement": 0.01675,
+      "cumulativeDelayedResponse": 0.0765,
+      "logOddsResponse": 0.296833,
+      "ordinaryMovement": {"classification": "unusually large", "threshold": 0.0105, "sampleCount": 130},
+      "qualityStatus": "usable",
+      "overlaps": []
+    },
+    {
+      "eventId": "nfc-title",
+      "informationKnownAt": "2025-01-27T00:22:04.795Z",
+      "windows": {
+        "anticipation": {"level": 0.3215, "start": "2025-01-23T12:22:04.795Z", "end": "2025-01-26T12:22:04.795Z", "quality": "usable"},
+        "reference": {"level": 0.3255, "start": "2025-01-26T12:22:04.795Z", "end": "2025-01-27T00:22:04.795Z", "quality": "usable"},
+        "immediate": {"level": 0.46175, "start": "2025-01-27T00:22:04.795Z", "end": "2025-01-27T06:22:04.795Z", "quality": "usable"},
+        "stabilized": {"level": 0.4655, "start": "2025-01-27T18:22:04.795Z", "end": "2025-01-28T12:22:04.795Z", "quality": "usable"},
+        "delayed": {"level": 0.469, "start": "2025-01-29T00:22:04.795Z", "end": "2025-01-30T00:22:04.795Z", "quality": "usable"}
+      },
+      "anticipationMove": 0.004,
+      "immediateResponse": 0.13625,
+      "shortTermResponse": 0.14,
+      "delayedIncrement": 0.0035,
+      "cumulativeDelayedResponse": 0.1435,
+      "logOddsResponse": 0.59039,
+      "ordinaryMovement": {"classification": "unusually large", "threshold": 0.0105, "sampleCount": 130},
+      "qualityStatus": "usable",
+      "overlaps": []
+    }
+  ],
+  "tieGroups": [["nfc-title"], ["snow-playoff"], ["barkley-record"], ["falcons-collapse"], ["hurts-concussion"]],
+  "allWindowsPass": true,
+  "interpretation": "The earlier public-by boundaries materially change the event-window placement for Hurts, Snow, and NFC title. The resulting ranking is strict at the 0.01 tie threshold; this is a recalculation effect, not a claim of stronger causal identification."
+}

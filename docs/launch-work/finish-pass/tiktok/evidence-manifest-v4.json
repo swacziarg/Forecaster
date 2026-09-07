@@ -1,0 +1,209 @@
+{
+  "artifactType": "TikTok finish-pass evidence manifest",
+  "version": 4,
+  "createdAt": "2026-09-06T18:14:00Z",
+  "retrievalPolicy": "Local retrieval timestamps and hashes identify the captured bytes. Historical publication semantics come only from the source's own dated metadata or a timestamped broadcast passage. Current page upload time, archive capture time, PDF filename, and editable-page update time are not substituted for original public availability.",
+  "baseManifest": {
+    "path": "docs/launch-work/tiktok/evidence-manifest.json",
+    "sha256": "ac1dd6c8b0b8ec7b8a593c36f9555e167520e978dfc94097336ee15de3204b76"
+  },
+  "sources": [
+    {
+      "id": "ap-race-call-v4",
+      "eventId": "trump-elected",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/ap-race-call.html",
+      "url": "https://apnews.com/article/race-call-trump-wins-wisconsin-president-1d2209e42fe44e61adb9e17deb416b47",
+      "retrievedAt": "2026-09-06T18:09:10Z",
+      "sha256": "5f7c7324872e317d2969d2cff92f95a4be38136935e0489fab4d3d77269ae3a5",
+      "captureStatus": "captured",
+      "publicTime": "2024-11-06T10:34:42Z",
+      "publicTimeSemantics": "publisher metadata/body public-by; not proven first distribution",
+      "locator": "Lines 38 and 969"
+    },
+    {
+      "id": "cadc-dec6-opinion-v4",
+      "eventId": "appeal-lost",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/cadc-dec6-opinion.pdf",
+      "url": "https://media.cadc.uscourts.gov/opinions/docs/2024/12/24-1113-2088317.pdf",
+      "retrievedAt": "2026-09-06T18:09:12Z",
+      "sha256": "1bfb5dbe4384de347968e1ef6ff81412c9376884fe17173884477287edec9c8d",
+      "captureStatus": "captured",
+      "publicTime": null,
+      "publicTimeSemantics": "unknown; primary dated court record",
+      "locator": "PDF pages 1 and 65"
+    },
+    {
+      "id": "cadc-dec6-index-v4",
+      "eventId": "appeal-lost",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/cadc-dec6-index.html",
+      "url": "https://media.cadc.uscourts.gov/opinions/bydate/2024/12",
+      "retrievedAt": "2026-09-06T18:09:13Z",
+      "sha256": "ed69567f7e6454b966ff7b04d88c9e8cfb89a6da4ae14dccc5e14cbde6bc4569",
+      "captureStatus": "captured",
+      "publicTime": null,
+      "publicTimeSemantics": "unknown; current court index shows date only",
+      "locator": "Line 166"
+    },
+    {
+      "id": "ap-dec6-v4",
+      "eventId": "appeal-lost",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/ap-dec6.html",
+      "url": "https://apnews.com/article/tiktok-ban-court-ruling-china-6bfd505295ad44126df0544fc083d6a6",
+      "retrievedAt": "2026-09-06T18:09:11Z",
+      "sha256": "7aaeb3f341b3646595cfad9cd02fc551626f96f7ebc6cef3d9328c722b5f8803",
+      "captureStatus": "captured",
+      "publicTime": "2024-12-06T15:35:16Z",
+      "publicTimeSemantics": "publisher metadata public-by; not proven first distribution",
+      "locator": "Lines 42, 998, and 18024"
+    },
+    {
+      "id": "scotus-dec18-order-v4",
+      "eventId": "supreme-review",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/scotus-dec18-order.pdf",
+      "url": "https://www.supremecourt.gov/orders/courtorders/121824zr1_p86b.pdf",
+      "retrievedAt": "2026-09-06T18:09:13Z",
+      "sha256": "51a1aa500e74004cd97f85e58979c1fc5073e175722ac38e6c85b90e850e7a91",
+      "captureStatus": "captured",
+      "publicTime": null,
+      "publicTimeSemantics": "unknown; primary dated order",
+      "locator": "PDF page 1"
+    },
+    {
+      "id": "scotus-dec18-advisory-v4",
+      "eventId": "supreme-review",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/scotus-dec18-advisory.html",
+      "url": "https://www.supremecourt.gov/publicinfo/media/mediaadvisories/ma12-18-24",
+      "retrievedAt": "2026-09-06T18:09:13Z",
+      "sha256": "50fc63b62d0a9dc7a3df2cb609f1709d93cb606232dc65cf848836c1fc17565b",
+      "captureStatus": "captured",
+      "publicTime": null,
+      "publicTimeSemantics": "unknown; official schedule corroboration",
+      "locator": "Line 275"
+    },
+    {
+      "id": "ap-dec18-v4",
+      "eventId": "supreme-review",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/ap-dec18.html",
+      "url": "https://apnews.com/article/supreme-court-tiktok-china-us-ban-08d6fffdcd2dde5100fcdf8a452dd5cc",
+      "retrievedAt": "2026-09-06T18:09:11Z",
+      "sha256": "50aea097ef4a6b3e00f9a24d44459fc2475a06cf2a4cc796c55d25497b54ae38",
+      "captureStatus": "captured",
+      "publicTime": "2024-12-18T16:15:44Z",
+      "publicTimeSemantics": "publisher metadata public-by; not proven first distribution",
+      "locator": "Lines 42, 984, and 16890"
+    },
+    {
+      "id": "scotus-trump-brief-v4",
+      "eventId": "trump-pause",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/scotus-trump-brief.pdf",
+      "url": "https://www.supremecourt.gov/DocketPDF/24/24-656/336151/20241227163400981_2024-12-27%20-%20TikTok%20v.%20Garland%20-%20Amicus%20Brief%20of%20President%20Donald%20J.%20Trump.pdf",
+      "retrievedAt": "2026-09-06T18:09:14Z",
+      "sha256": "b3074d8875c444b280b47951125182b00e87cf4ee21968987630d4d393500673",
+      "captureStatus": "captured",
+      "publicTime": null,
+      "publicTimeSemantics": "unknown; primary filing; date and filename are not posting time",
+      "locator": "PDF pages 1, 4, 7, and 18"
+    },
+    {
+      "id": "scotus-docket-v4",
+      "eventId": "trump-pause",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/scotus-docket.html",
+      "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/24-656.html",
+      "retrievedAt": "2026-09-06T18:09:14Z",
+      "sha256": "2e5acc036ca274cf80ce35097f58de4c8945c643ce921de606cf28f93dd015e8",
+      "captureStatus": "captured",
+      "publicTime": null,
+      "publicTimeSemantics": "unknown; dated procedural record",
+      "locator": "Lines 634 and 1375"
+    },
+    {
+      "id": "ap-dec27-v4",
+      "eventId": "trump-pause",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/ap-dec27.html",
+      "url": "https://apnews.com/article/tiktok-ban-supreme-court-trump-b96013a8447e9bdb5508ebe436aadf9a",
+      "retrievedAt": "2026-09-06T18:09:11Z",
+      "sha256": "0e40094fb46c88be4413348b8c2f078c0ff29e8321033984cce1546a25e5544a",
+      "captureStatus": "captured",
+      "publicTime": "2024-12-27T22:43:57Z",
+      "publicTimeSemantics": "publisher metadata public-by; not proven first distribution",
+      "locator": "Lines 44, 988, and 15764"
+    },
+    {
+      "id": "cnn-jan10-live-v4",
+      "eventId": "supreme-argument",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/cnn-jan10-live.html",
+      "url": "https://transcripts.cnn.com/show/ctw/date/2025-01-10/segment/02",
+      "retrievedAt": "2026-09-06T18:12:54Z",
+      "sha256": "0befb468ac0f65a5f4603d72646e796c07896c909264c3719369970c8c074c79",
+      "captureStatus": "captured",
+      "publicTime": "2025-01-10T15:26:18Z",
+      "publicTimeSemantics": "broadcast-passage public-by; current transcript page upload time unknown",
+      "locator": "Lines 150–153"
+    },
+    {
+      "id": "scotus-jan10-transcript-v4",
+      "eventId": "supreme-argument",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/scotus-jan10-transcript.pdf",
+      "url": "https://www.supremecourt.gov/oral_arguments/argument_transcripts/2024/24-656_pm02.pdf",
+      "retrievedAt": "2026-09-06T18:12:54Z",
+      "sha256": "5d1a6c69821a99f3c7ec584565d9bb24f0728f1f6ed86a7bf84a805755ee01a7",
+      "captureStatus": "captured",
+      "publicTime": null,
+      "publicTimeSemantics": "unknown; primary proceeding transcript",
+      "locator": "PDF pages 1–2 and 179"
+    },
+    {
+      "id": "scotus-jan10-audio-v4",
+      "eventId": "supreme-argument",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/scotus-jan10-audio.html",
+      "url": "https://www.supremecourt.gov/oral_arguments/audio/2024/24-656",
+      "retrievedAt": "2026-09-06T18:09:15Z",
+      "sha256": "6d2d217e1a2ae58dc5ce72d46cbfaf308d820fd27487700f970fa72813bc0c8e",
+      "captureStatus": "captured",
+      "publicTime": null,
+      "publicTimeSemantics": "unknown; official audio-detail page",
+      "locator": "Line 298"
+    },
+    {
+      "id": "ap-jan10-postcutoff-v4",
+      "eventId": "supreme-argument",
+      "path": "docs/launch-work/finish-pass/tiktok/evidence/ap-jan10.html",
+      "url": "https://apnews.com/article/72fa68dd677df96a3b3526a1bddb0aa8",
+      "retrievedAt": "2026-09-06T18:09:12Z",
+      "sha256": "d84303e6f8e27b01f6587babc5da617eeacefcdd32cba76431e43d3521cc44be",
+      "captureStatus": "captured; excluded from pre-reveal claim",
+      "publicTime": "2025-01-10T17:59:41Z",
+      "publicTimeSemantics": "post-cutoff publisher report; not an eligibility source",
+      "locator": "Lines 42 and 1002"
+    }
+  ],
+  "dataset": {
+    "path": "docs/launch-queue-research/evidence/tiktok-normalized.json",
+    "sha256": "caf50a435fa87b927fa197b4a03c472bf7cba94de020c5879668b12036e90bd7",
+    "observations": 3023,
+    "coverageStart": "2024-09-18T01:00:00Z",
+    "coverageEnd": "2025-01-22T00:00:00Z",
+    "priceResearchChanged": false
+  },
+  "claimEligibility": {
+    "preRevealSourceRule": "Use an instant contemporaneous source availability bound no later than the event informationKnownAt. Official date-only/unknown records remain primary event evidence but are not the sole source of a precise pre-reveal claim.",
+    "eventSources": {
+      "trump-elected": ["ap-race-call-v4"],
+      "appeal-lost": ["ap-dec6-v4"],
+      "supreme-review": ["ap-dec18-v4"],
+      "trump-pause": ["ap-dec27-v4"],
+      "supreme-argument": ["cnn-jan10-live-v4"]
+    },
+    "primaryRecordRolesPreserved": {
+      "appeal-lost": "cadc-dec6-opinion-v4",
+      "supreme-review": "scotus-dec18-order-v4",
+      "trump-pause": "scotus-trump-brief-v4",
+      "supreme-argument": "scotus-jan10-transcript-v4"
+    }
+  },
+  "failedOrUnavailable": [
+    "No captured primary court/order/filing record exposed a historical first-public web posting instant.",
+    "No archive upload timestamp was treated as the original public fact.",
+    "The Jan. 10 AP article was captured but is post-cutoff and excluded from the pre-reveal claim."
+  ]
+}

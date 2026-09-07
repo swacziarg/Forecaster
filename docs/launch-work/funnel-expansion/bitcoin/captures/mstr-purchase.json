@@ -1,0 +1,14 @@
+{
+  "id": "mstr-8k-2024-11-11",
+  "captureStatus": "retrieved-via-web-text",
+  "captureType": "authoritative-sec-filing-excerpt",
+  "sourceRole": "primary",
+  "publisher": "U.S. Securities and Exchange Commission",
+  "title": "MicroStrategy Incorporated Form 8-K, November 11, 2024",
+  "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312524255184/d908568d8k.htm",
+  "retrievedAt": "2026-09-06T20:21:50Z",
+  "passageLocation": "web capture lines 28 and 86-90",
+  "passage": "Date of Report (Date of earliest event reported): November 11, 2024\nBitcoin Holdings Update\nOn November 11, 2024, MicroStrategy Incorporated announced that, during the period between October 31, 2024 and November 10, 2024, the Company acquired approximately 27,200 bitcoins for approximately $2.03 billion in cash, at an average price of approximately $74,463 per bitcoin, inclusive of fees and expenses.",
+  "passageSha256": "850f1efead8c2916346d4862fd807024bdb225c4f576f15764a931f965b6df06",
+  "publicTime": { "value": "2024-11-11", "precision": "day", "justification": "The SEC filing identifies November 11 as the report date and says the company announced the purchase that day; the captured filing does not expose an intraday publication clock. The existing study's 13:00 UTC anchor is therefore provisional for independent review." }
+}

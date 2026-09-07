@@ -1,0 +1,30 @@
+{
+  "role": "tiktok",
+  "status": "complete",
+  "startedAt": "2026-09-06T16:04:52.300Z",
+  "updatedAt": "2026-09-06T16:24:20Z",
+  "finishedAt": "2026-09-06T16:24:20Z",
+  "workspace": "/Users/simonwacziarg/Documents/ChatGPT/Forecast",
+  "ownedPaths": [
+    "docs/launch-work/tiktok/",
+    "docs/launch-work/completions/01.md",
+    "docs/launch-work/parallel-status/tiktok.json"
+  ],
+  "reportPath": "docs/launch-work/completions/01.md",
+  "artifactHashes": {
+    "docs/launch-work/tiktok/candidate.md": "65648c4efef8baaee5ce1bdbaf10b1d9b101af3dbb9bc65b6146b35ad6e13203",
+    "docs/launch-work/tiktok/candidate.json": "ca17394a6c6f0acabdbfade0f2b64159fd86081ad010ccc85fda9006886b4980",
+    "docs/launch-work/tiktok/evidence-manifest.json": "ac1dd6c8b0b8ec7b8a593c36f9555e167520e978dfc94097336ee15de3204b76",
+    "docs/launch-work/tiktok/anchors-v3.json": "fd632a603d0138d5d335500ed8a4f8d6bccb884b9caa51c856870600aa43974c",
+    "docs/launch-work/tiktok/measurements.json": "8a1da4ecdefeab8ed61206582f9398a56531028e6009236f73617b08e5ce8b81",
+    "docs/launch-work/tiktok/replay.mjs": "b8f114241f27f3d96b60af2e48d2d8b18223388d9baff8eb3a93d7199ae0e945",
+    "docs/launch-work/completions/01.md": "38e67510d8ec29f44a8076c7e06f129def3346945cd523e71560d88690e69f97",
+    "docs/launch-work/tiktok/evidence/ap-race-call.html": "bc9bb7f7c343c6f336b8fdd58593ac9f2014ab64ca80dfcc470efa2e9cc9e85c",
+    "docs/launch-work/tiktok/evidence/ap-dec6.html": "b62d98d0c580e5a2f0336fcd5e8faf442a039bf8ee1b5800b9fd163555d9ec92",
+    "docs/launch-work/tiktok/evidence/ap-dec18.html": "07ac82143c1c28e57e3e8b2ee2d4d96aad297e75900a1319164a1c97bfb10690",
+    "docs/launch-work/tiktok/evidence/ap-dec27.html": "1df2aa319f05340fd01361d9ebd74bb405943a174b6525c68e4088c7c95b92b5",
+    "docs/launch-work/tiktok/evidence/cadc-dec6-opinion.pdf": "1bfb5dbe4384de347968e1ef6ff81412c9376884fe17173884477287edec9c8d",
+    "docs/launch-work/tiktok/evidence/scotus-dec18-order.pdf": "51a1aa500e74004cd97f85e58979c1fc5073e175722ac38e6c85b90e850e7a91"
+  },
+  "handoffComplete": true
+}

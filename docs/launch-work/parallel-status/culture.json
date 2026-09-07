@@ -1,0 +1,23 @@
+{
+  "role": "culture",
+  "status": "blocked",
+  "startedAt": "2026-09-06T16:05:07.300Z",
+  "updatedAt": "2026-09-06T16:16:44.300Z",
+  "finishedAt": "2026-09-06T16:16:44.300Z",
+  "workspace": "/Users/simonwacziarg/Documents/ChatGPT/Forecast",
+  "ownedPaths": [
+    "docs/launch-work/oscars/",
+    "docs/launch-work/completions/04.md",
+    "docs/launch-work/parallel-status/culture.json"
+  ],
+  "reportPath": "docs/launch-work/completions/04.md",
+  "artifactHashes": {
+    "docs/launch-work/oscars/candidate.md": "6ff9457a28de9bc632738b837df4eb5576a0272d4c25224f8917d1c9c03aad8e",
+    "docs/launch-work/oscars/candidate.json": "172e787b952707c7175c258ea724fcb160edc168a45916403c44a08919382a4b",
+    "docs/launch-work/oscars/evidence-manifest.json": "b6c941147ffb98760a8c389ddedd15323a66e2f5ca2c95e5ca61cf62087dfa7e",
+    "docs/launch-work/oscars/measurements.json": "3d70fcd9a0ecb4f2c238d07ce3d2d2b0b40cd691be6d5677f9e1e40733e7c37c",
+    "docs/launch-work/completions/04.md": "bc9faabd2c59241968716031b8929067e1f9bf14c872e73f59335706a20131bc"
+  },
+  "handoffComplete": true,
+  "outcome": "bounded hold: data passes 25/25 windows, but editorial corroboration, immutable captures, coverage counts, exact first-public verification, rubric review, and independent approval remain outstanding"
+}

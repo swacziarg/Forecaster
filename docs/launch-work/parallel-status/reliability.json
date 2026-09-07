@@ -1,0 +1,26 @@
+{
+  "role": "reliability",
+  "status": "complete",
+  "startedAt": "2026-09-06T16:05:29Z",
+  "updatedAt": "2026-09-06T16:14:16Z",
+  "finishedAt": "2026-09-06T16:14:16Z",
+  "workspace": "/Users/simonwacziarg/Documents/ChatGPT/Forecast",
+  "ownedPaths": [
+    "src/domain/dailyGame.ts",
+    "src/domain/dailyStorage.ts",
+    "src/domain/dailyGame.test.ts",
+    "docs/launch-work/reliability/",
+    "docs/launch-work/completions/10.md",
+    "docs/launch-work/parallel-status/reliability.json"
+  ],
+  "reportPath": "docs/launch-work/reliability/reliability-report.md",
+  "artifactHashes": {
+    "src/domain/dailyGame.ts": "90b9e72fb705feb398c94b7be9821981e8b83350e19a9569752d08d2304e90c3",
+    "src/domain/dailyStorage.ts": "8e51dbbb86cbc1780754f7e4f8e97b86069a0be10a34c0586b816a22cba38c3f",
+    "src/domain/dailyGame.test.ts": "00ad5955cdc3b5569c2cdef053d8aecd50f11e28cc5e4a243ca98eea897aee12",
+    "docs/launch-work/reliability/reliability-report.md": "6f004e298977c4dac536a5179991142db1ca1ceaff984bd0aef673b029ea1d32",
+    "docs/launch-work/reliability/integration-requests.md": "85464f05c2958d6d217c6ffc3ff4c34811ad2896a86abf774c8801bb913d1d86",
+    "docs/launch-work/completions/10.md": "be7c5d52cd4722216ab86e233fab49b6286a84f455c31f92ad3961a459ac61c8"
+  },
+  "handoffComplete": true
+}

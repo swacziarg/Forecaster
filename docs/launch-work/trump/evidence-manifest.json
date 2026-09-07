@@ -1,0 +1,142 @@
+{
+  "artifactType": "Trump candidate evidence manifest",
+  "manifestDate": "2026-09-06",
+  "capturePolicy": "Existing research captures are referenced by exact local hash. Web-only checks have no local snapshot hash and are not treated as historical page captures.",
+  "records": [
+    {
+      "id": "cnn-conviction-broadcast",
+      "role": "corroborating",
+      "url": "https://transcripts.cnn.com/show/se/date/2024-05-30/segment/05",
+      "localPath": "docs/launch-queue-research/evidence/trump-conviction.html",
+      "retrievedAt": "2026-09-06T05:12:35.552586+00:00",
+      "sha256": "f54b40c115dce68ee8e5aec94164807c530b122271e73f14821f9bcad9c356d3",
+      "captureStatus": "captured",
+      "temporalUse": "upper-bound broadcast cutoff only"
+    },
+    {
+      "id": "nycourts-verdict-page",
+      "role": "primary",
+      "url": "https://www.nycourts.gov/public-information/people-v-donald-j-trump-criminal",
+      "localPath": null,
+      "retrievedAt": "2026-09-06",
+      "sha256": null,
+      "captureStatus": "web-verified-no-local-snapshot",
+      "temporalUse": "confirms the May 30 verdict-sheet date; does not establish first-public time"
+    },
+    {
+      "id": "manhattan-da-conviction",
+      "role": "primary",
+      "url": "https://manhattanda.org/d-a-bragg-announces-34-count-felony-trial-conviction-of-donald-j-trump/",
+      "localPath": null,
+      "retrievedAt": "2026-09-06",
+      "sha256": null,
+      "captureStatus": "web-verified-no-local-snapshot",
+      "temporalUse": "contemporary official confirmation of the 34-count conviction"
+    },
+    {
+      "id": "cnn-shooting-broadcast",
+      "role": "corroborating",
+      "url": "https://transcripts.cnn.com/show/cnr/date/2024-07-13/segment/08",
+      "localPath": "docs/launch-queue-research/evidence/trump-shooting.html",
+      "retrievedAt": "2026-09-06T00:26:48.413330+00:00",
+      "sha256": "4108d635e69bc8b700d6402210932f9ffe5cea8175974140abff9f51ca852196",
+      "captureStatus": "captured",
+      "temporalUse": "upper-bound live-broadcast cutoff only"
+    },
+    {
+      "id": "fbi-butler-statement",
+      "role": "primary",
+      "url": "https://www.fbi.gov/news/press-releases/fbi-statement-on-incident-in-butler-pennsylvania",
+      "localPath": null,
+      "retrievedAt": "2026-09-06",
+      "sha256": null,
+      "captureStatus": "web-verified-no-local-snapshot",
+      "temporalUse": "confirms the July 13 incident; no exact initial-public timestamp claimed"
+    },
+    {
+      "id": "cnn-rfk-broadcast",
+      "role": "corroborating",
+      "url": "https://transcripts.cnn.com/show/cnc/date/2024-08-23/segment/11",
+      "localPath": "docs/launch-queue-research/evidence/trump-rfk.html",
+      "retrievedAt": "2026-09-06T05:12:35.427398+00:00",
+      "sha256": "c8e8bdf6a92f95738c6cf6b367e259c42f559853bd22d2bb587b66e33f526125",
+      "captureStatus": "captured",
+      "temporalUse": "upper-bound broadcast cutoff only"
+    },
+    {
+      "id": "rfk-address",
+      "role": "primary",
+      "url": "https://robertfkennedyjr.substack.com/p/why-i-am-suspending-my-campaign-for",
+      "localPath": null,
+      "retrievedAt": "2026-09-06",
+      "sha256": null,
+      "captureStatus": "web-verified-no-local-snapshot",
+      "temporalUse": "dated primary address; exact posting time not asserted"
+    },
+    {
+      "id": "abc-original-transcript",
+      "role": "primary",
+      "url": "https://abcnews.com/Politics/harris-trump-presidential-debate-transcript/story?id=113560542",
+      "localPath": "docs/launch-queue-research/evidence/trump-debate.html",
+      "retrievedAt": "2026-09-06T00:26:48.699748+00:00",
+      "sha256": "8a6148500e32ce4ce1b5e9a1f8b16a2303b4f0755d8e37cd9f5ff8b0c7519106",
+      "captureStatus": "captured",
+      "pagePublishedAt": "2024-09-11T03:58:00Z",
+      "pageModifiedAt": "2024-09-11T16:24:39Z",
+      "temporalUse": "original-publication and later-modification fields kept distinct; first-broadcast cutoff unresolved"
+    },
+    {
+      "id": "abc-debate-live-updates",
+      "role": "corroborating",
+      "url": "https://abcnews.go.com/Politics/live-updates/trump-harris-2024-presidential-debate",
+      "localPath": null,
+      "retrievedAt": "2026-09-06",
+      "sha256": null,
+      "captureStatus": "web-verified-no-local-snapshot",
+      "temporalUse": "confirms the live debate context, not the exact first-public cutoff"
+    },
+    {
+      "id": "cnn-iowa-broadcast",
+      "role": "corroborating",
+      "url": "https://transcripts.cnn.com/show/cnr/date/2024-11-02/segment/08",
+      "localPath": "docs/launch-queue-research/evidence/trump-iowa-cnn.html",
+      "retrievedAt": "2026-09-06T05:44:52.283926+00:00",
+      "sha256": "1ad80d8fe3c5fcdf853458e504dab6556557c387356d50a4941319fdb0e11152",
+      "captureStatus": "captured",
+      "temporalUse": "upper-bound broadcast cutoff only"
+    },
+    {
+      "id": "des-moines-register-poll-record",
+      "role": "primary",
+      "url": "https://www.desmoinesregister.com/story/news/politics/iowa-poll/2024/11/02/iowa-poll-kamala-harris-leads-donald-trump-2024-presidential-race/75641419007/",
+      "localPath": null,
+      "retrievedAt": "2026-09-06T00:26:48.415962+00:00",
+      "sha256": null,
+      "captureStatus": "failed-http-403",
+      "temporalUse": "not used as a captured source; CNN broadcast remains the retained contemporary record"
+    },
+    {
+      "id": "ap-election-call",
+      "role": "retrospective-reveal-only",
+      "url": "https://www.ap.org/the-definitive-source/behind-the-news/calling-the-2024-presidential-race-state-by-state/",
+      "localPath": "docs/launch-queue-research/evidence/ap-trump-call.html",
+      "retrievedAt": "2026-09-06T05:12:36.157709+00:00",
+      "sha256": "59859fe7e8ae949bf791dc2eb98b246fd8de0fc6d4527350d36eec4f66209a76",
+      "captureStatus": "captured",
+      "temporalUse": "ending only; excluded from pre-reveal claims"
+    }
+  ],
+  "datasetRecords": [
+    {
+      "path": "docs/launch-queue-research/datasets/trump-hourly.csv",
+      "sha256": "7756111859cbca9f2185795608029323fb21e9505f0314d4700cf7d8b9cc579d",
+      "captureStatus": "preserved-research-input",
+      "observations": 4549
+    },
+    {
+      "path": "docs/launch-queue-research/evidence/trump-normalized.json",
+      "sha256": "7b75c8dd3b85c151c76bded476ae6e32fa3084781c77cfa176f632e527bdd380",
+      "captureStatus": "preserved-research-input"
+    }
+  ]
+}

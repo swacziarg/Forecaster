@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "studyId": "bitcoin-100k-2024-v2",
+  "studySlug": "bitcoin-100k-2024-five-card",
+  "selectionFreeze": {
+    "source": "docs/launch-work/funnel-expansion/bitcoin/selection-freeze.json",
+    "sha256": "433984381fff969e009013ca006339427c8d812ad94e4616285720a3cbf79ad8",
+    "eventIds": ["hong-kong-etfs", "mtgox-repayments", "fed-50-cut", "trump-election", "microstrategy-purchase"]
+  },
+  "retrievalNote": "The earlier authoritative excerpts were retrieved through the web-text provider after direct shell DNS failed. The failed shell requests were not retained as evidence. This v2 packet uses the stored passage hashes and a conservative cutoff policy; it does not claim unavailable publication clocks.",
+  "sources": [
+    {
+      "sourceId": "hkex-spot-etfs",
+      "role": "primary",
+      "url": "https://www.hkex.com.hk/News/News-Release/2024/240430news?sc_lang=en",
+      "capturePath": "docs/launch-work/funnel-expansion/bitcoin/captures/hkex-spot-etfs.json",
+      "passageSha256": "108b94810c828bc4fbc1f6cebaeebbc905ec3c6d4524be91cf5c50ffbd85502f",
+      "publicBy": "2024-05-01T00:00:00Z",
+      "publicationPrecision": "day",
+      "timingCorrection": "The page says the listing occurred on April 30 but exposes no release clock. The v2 event therefore uses the end-of-day public-by bound, not the inherited 01:30 UTC minute anchor."
+    },
+    {
+      "sourceId": "mtgox-repayments",
+      "role": "primary",
+      "url": "https://www.mtgox.com/img/pdf/20240705_01_announcement_en.pdf",
+      "capturePath": "docs/launch-work/funnel-expansion/bitcoin/captures/mtgox-repayments.json",
+      "passageSha256": "f62545f3ef8f7d4fa09173f7b5fb2d7df395d59b1d3b92452fdf0c1660e8c618",
+      "publicBy": "2024-07-06T00:00:00Z",
+      "publicationPrecision": "day",
+      "timingCorrection": "The trustee notice is dated July 5 and exposes no clock. The v2 event uses the next-day public-by bound, not the inherited 01:00 UTC hour anchor."
+    },
+    {
+      "sourceId": "fed-september-cut",
+      "role": "primary",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm",
+      "capturePath": "docs/launch-work/funnel-expansion/bitcoin/captures/fed-september-cut.json",
+      "passageSha256": "a4e76c8c139022f63fb64c186498213a983068b5a9fbd4015062de99d3a0e9f6",
+      "publicBy": "2024-09-18T18:00:00Z",
+      "publicationPrecision": "instant",
+      "timingCorrection": "The official statement says release at 2:00 p.m. EDT; the v2 anchor is the UTC conversion."
+    },
+    {
+      "sourceId": "ap-election-call",
+      "role": "primary",
+      "url": "https://www.ap.org/the-definitive-source/behind-the-news/calling-the-2024-presidential-race-state-by-state/",
+      "capturePath": "docs/launch-work/funnel-expansion/bitcoin/captures/ap-election.json",
+      "passageSha256": "04b93c69c99aa2cefa5103ceabba0f637189472b64565703d6e27864a4590018",
+      "publicBy": "2024-11-06T10:34:00Z",
+      "publicationPrecision": "instant",
+      "timingCorrection": "AP gives 5:34 a.m. ET for the call; the v2 anchor is the UTC conversion."
+    },
+    {
+      "sourceId": "mstr-8k-2024-11-11",
+      "role": "primary",
+      "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312524255184/0001193125-24-255184-index.htm",
+      "corroboratingUrl": "https://www.sec.gov/Archives/edgar/data/1050446/000119312524255184/d908568dex991.htm",
+      "capturePath": "docs/launch-work/funnel-expansion/bitcoin/captures/mstr-purchase.json",
+      "passageSha256": "850f1efead8c2916346d4862fd807024bdb225c4f576f15764a931f965b6df06",
+      "publicBy": "2024-11-12T08:01:01Z",
+      "publicationPrecision": "instant",
+      "timingCorrection": "The SEC filing detail exposes acceptance at 08:01:01 UTC on November 12. The exhibit corroborates the November 11 announcement and purchase fact, but the v2 measurement cutoff is the filing-acceptance time."
+    }
+  ],
+  "resolution": {
+    "sourceId": "market-resolution",
+    "url": "https://gamma-api.polymarket.com/markets/255229",
+    "localCapture": "public/data/bitcoin-2024/raw-market.json",
+    "sha256": "f248b962c27c8fda3a51a16710aa2580eca15c3d95a97aa04dda9063699d40f7",
+    "visibility": "reveal-only"
+  }
+}

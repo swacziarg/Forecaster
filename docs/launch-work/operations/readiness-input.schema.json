@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nexuspoint.lol/schemas/launch-readiness-input-v1.json",
+  "title": "NexusPoint launch readiness input",
+  "type": "object",
+  "required": ["puzzles", "studies"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "now": { "type": "string", "format": "date-time" },
+    "puzzles": {
+      "type": "array",
+      "description": "The exact DailyPuzzle objects from the local daily registry.",
+      "items": { "type": "object", "required": ["id", "number", "releaseTime", "studyId", "studyVersion", "eventIds", "initialOrder", "scoring"] }
+    },
+    "studies": {
+      "type": "array",
+      "description": "The exact Study objects from the local study registry.",
+      "items": { "type": "object", "required": ["id", "version", "status", "dataset", "sources", "events"] }
+    },
+    "approvals": {
+      "type": ["object", "null"],
+      "required": ["entries"],
+      "properties": {
+        "entries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["puzzleId", "studyId", "studyVersion", "releaseTime", "contentHash", "status", "approverType", "approver", "approvedAt"],
+            "properties": {
+              "puzzleId": { "type": "string" },
+              "studyId": { "type": "string" },
+              "studyVersion": { "type": "integer" },
+              "releaseTime": { "type": "string", "format": "date-time" },
+              "contentHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+              "status": { "const": "approved" },
+              "approverType": { "const": "human" },
+              "approver": { "type": "string", "minLength": 1 },
+              "approvedAt": { "type": "string", "format": "date-time" }
+            }
+          }
+        }
+      }
+    },
+    "schedule": {
+      "type": ["object", "null"],
+      "required": ["proposed", "approved"],
+      "properties": {
+        "proposed": { "type": "array", "description": "DailyPuzzle-shaped entries that remain proposals." },
+        "approved": { "type": "array", "description": "Approved schedule IDs or objects; these do not make an unregistered puzzle live." }
+      }
+    },
+    "files": { "type": "array", "items": { "type": "string" }, "description": "Paths relative to public/." },
+    "distFiles": { "type": "array", "items": { "type": "string" }, "description": "Paths relative to dist/. Presence means build output was checked." },
+    "distChecked": { "type": "boolean" },
+    "productionDomain": { "type": "string", "format": "uri" },
+    "metadata": {
+      "type": "object",
+      "description": "Parsed canonical/Open Graph/Twitter values from index.html.",
+      "properties": {
+        "canonical": { "type": "string", "format": "uri" },
+        "ogUrl": { "type": "string", "format": "uri" },
+        "ogImage": { "type": "string", "format": "uri" },
+        "ogImageType": { "const": "image/png" },
+        "ogImageWidth": { "const": "1200" },
+        "ogImageHeight": { "const": "630" },
+        "twitterCard": { "const": "summary_large_image" },
+        "twitterImage": { "type": "string", "format": "uri" },
+        "containsDailyQuery": { "const": false }
+      }
+    }
+  }
+}

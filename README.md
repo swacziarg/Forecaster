@@ -2,7 +2,7 @@
 
 NexusPoint is a quick daily prediction-market puzzle. A player ranks five sourced historical headlines from the biggest rise in a selected contract's odds to the biggest fall, reveals a tie-aware score, and can share a spoiler-free result. The detailed market study remains available as optional post-game exploration.
 
-Six local, reproducible studies are registered:
+Eleven local, reproducible study versions are registered, including five editorial-review draft routes. The launch funnel now has six distinct dated proposals plus an optional buffer, while only the Biden launch date is approval-backed:
 
 - `/` — the five-card NexusPoint daily game, launching with “24 days that ended Biden’s campaign.”
 - `/studies/biden-dropout-24-days` — Biden’s 2024 withdrawal, five events, published.
@@ -11,6 +11,11 @@ Six local, reproducible studies are registered:
 - `/studies/fed-september-2024` — September 2024 Fed decision, five events, editorial review.
 - `/studies/eagles-super-bowl-lix` — Philadelphia Eagles win Super Bowl LIX, eight events, editorial review.
 - `/studies/bitcoin-100k-2024` — Bitcoin reaches $100,000 in 2024, eight events, editorial review.
+- `/studies/tiktok-banned-before-may-2025` — TikTok before May 2025, five events, editorial-review draft (not in the public archive).
+- `/studies/eagles-stop-threepeat` — Eagles stop the three-peat, five events, editorial-review draft (not in the public archive).
+- `/studies/oscars-best-picture-2026-v2` — One Battle After Another, five events, editorial-review draft (not in the public archive).
+- `/studies/bitcoin-100k-2024-five-card` — Bitcoin’s road to $100,000, five events, editorial-review draft (not in the public archive).
+- `/studies/canada-liberal-comeback` — the Canadian comeback, five events, editorial-review draft (not in the public archive).
 - `/studies` — portfolio index with contract, coverage, event count, category, and status.
 
 No live market API or credentials are required at runtime.
@@ -43,7 +48,7 @@ npm run dev
 
 Daily puzzles live in a validated registry with stable IDs and numbers, UTC release timestamps, an exact published study version, five unique event IDs, a fixed initial order, and an explicit scoring version. A puzzle is the current daily for 24 hours or until the next scheduled release, whichever comes first. Exact `?daily=<id>` links reopen a released puzzle; unknown IDs and future releases do not fall through to another puzzle. If the queue has a gap or is exhausted, the interface says so and never invents a countdown.
 
-Puzzle #001 is the September 5, 2026 Biden dropout edition (`?daily=2026-09-05-biden-dropout`). Its fresh ID isolates attempts from the retired September 4 election demo. Only #001 is currently published. No future puzzle is scheduled because the other studies remain in editorial review. Its cards are rendered solely from pre-reveal claims whose evidence timestamps pass the study cutoff. New entries must pass the same evidence and publication-status checks before they can be added to the daily registry.
+Puzzle #001 is the September 5, 2026 Biden dropout archive (`?daily=2026-09-05-biden-dropout`); its fresh September 7 launch identity is #002 (`?daily=2026-09-07-biden-dropout`) and isolates attempts from the archive. The user approved the unchanged Biden content and date only. TikTok #003, Eagles #004, Oscars #005, Bitcoin #006, and Canada #007 form the six-distinct-edition proposal funnel; Trump #008 is an optional buffer. Those later entries are not in the daily registry, do not open from the root, and do not count as approved runway until exact human approvals cover each study/content identity, hash, and release timestamp. In local development, the five non-Biden topics are privately playable at the explicit `/__preview/<slug>` paths recorded in `docs/launch-work/playable-drafts/funnel.md`; these use isolated practice storage and never affect official streaks. Their candidate packets and current evidence decisions are in `docs/launch-work/funnel-expansion/`. New entries must pass the same evidence and publication-status checks before they can be added to the daily registry.
 
 Each puzzle has one authoritative local submission. Draft saves re-check for an existing completion, storage events reconcile ordinary multi-tab use, and malformed or obsolete records are ignored safely. Stats are derived from valid on-time submissions rather than a separate stats write. An unfinished current puzzle keeps the preceding streak eligible; missing a scheduled puzzle breaks it. Archive completions never change official totals or streaks. The UI explicitly warns when persistence is unavailable.
 
@@ -70,9 +75,11 @@ Published studies load versioned local snapshots. Live provider endpoints are in
 - `src/data/studies.ts` is the small study registry.
 - `src/data/bidenDropout2024.ts` defines the launch edition, contemporary evidence cutoffs, frozen prices and post-reveal ending.
 - `src/data/election2024.ts` adapts the original study into the versioned manifest without changing its calculated outputs.
-- `src/data/oscars2026.ts`, `fed2024.ts`, `eagles2025.ts`, and `bitcoin2024.ts` define the four strict generalized studies.
+- `src/data/oscars2026.ts`, `fed2024.ts`, `eagles2025.ts`, `bitcoin2024.ts`, `tiktok2025.ts`, `eaglesFiveCard2025.ts`, `oscarsFiveCard2026.ts`, `bitcoinFiveCard2024.ts`, and `canada2025.ts` define the strict generalized studies and retained editorial-review drafts.
+- `src/domain/playablePreview.ts` provides the explicitly allowlisted, development-only preview route; production builds cannot activate it with a query parameter.
 - `src/App.tsx` renders the shared sealed-ranking workflow.
 - `docs/adr/001-generalized-event-studies.md` records publishing constraints and the legacy exception.
 - `docs/editorial/oscars-2026-review.md` records the proof study’s outstanding editorial gates; it remains labeled an editorial-review draft in the UI.
+- `npm run check:launch-readiness -- --now <ISO-UTC>` checks the live registry, local artifacts, metadata, proposed queue, and exact human-approval inputs. A local pass does not prove remote deployment.
 
 `npm test` includes golden checks in every study (including all ten election responses), artifact digests, coverage declarations, probability bounds, chronological ordering, duplicate/revision handling, gaps, 0/1 prices, YES/NO normalization, quality failures, temporal-evidence rejection, overlap disclosure, tie-aware comparison, routing, registry completeness, and the strict study validator. It also covers daily schedule boundaries and links, registry evidence rules, malformed storage, authoritative result restoration, duplicate and stale-tab writes, streak expiration, archive exclusions, tie chains, zero-comparison scoring, score-band sharing, and share/copy fallbacks.

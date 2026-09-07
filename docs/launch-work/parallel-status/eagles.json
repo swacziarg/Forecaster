@@ -1,0 +1,27 @@
+{
+  "role": "eagles",
+  "status": "complete",
+  "startedAt": "2026-09-06T16:05:05Z",
+  "updatedAt": "2026-09-06T16:17:26Z",
+  "workspace": "/Users/simonwacziarg/Documents/ChatGPT/Forecast",
+  "ownedPaths": [
+    "docs/launch-work/eagles/",
+    "docs/launch-work/completions/02.md",
+    "docs/launch-work/parallel-status/eagles.json"
+  ],
+  "reportPath": "docs/launch-work/completions/02.md",
+  "finishedAt": "2026-09-06T16:17:26Z",
+  "artifactHashes": {
+    "candidate.md": "a48a036813d430158738bf2389f0ed00beb3ea289480d881cffd89d882ef7935",
+    "candidate.json": "caeaf724db1a2cf424b3b0c83a9dc28edf8e11408797ae6a6c5293f5e255e885",
+    "evidence-manifest.json": "044bbfa4e8af85f2cdf60be768f311cca0631385c688e149a5555caebd7c372d",
+    "measurements.json": "c9a0946f6944c98abb4f49b90571b854d8b0579e5865b7952ef609f3b79eb0fa",
+    "timing-anchors-v1.json": "cc720af10b86cd9e120be83bb3d64dc8901e0a518851b1435567c63cb1e368f5",
+    "falcons-eagles-gamebook.pdf": "8396212e20bff96322fd9841f8e6e6b484a6b5de9b3914ca8ff04033666c0618",
+    "eagles-rams-record-gamebook.pdf": "eb4a67e605d61b13089030776907c4b6fbe7fbdc5f609581deb73157e4871599",
+    "eagles-commanders-gamebook.pdf": "cb67bdea30d793c3005aa1e080fba5d1e9d3c1c863eb6eeb0e9de6d5dcf49524",
+    "rams-eagles-divisional-gamebook.pdf": "aae68253868847857b92115385e2c704c3c66304a6f6f5ffb34cca7b68c2d77b",
+    "commanders-eagles-nfc-gamebook.pdf": "2454a60f10a09cf821997c0c6e474f7f39e1eaa0871de3c96ceaa719d93d0826"
+  },
+  "handoffComplete": true
+}

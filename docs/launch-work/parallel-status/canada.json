@@ -1,0 +1,27 @@
+{
+  "role": "canada",
+  "status": "complete",
+  "startedAt": "2026-09-06T11:05:32-05:00",
+  "updatedAt": "2026-09-06T11:23:58-05:00",
+  "workspace": "/Users/simonwacziarg/Documents/ChatGPT/Forecast",
+  "ownedPaths": [
+    "docs/launch-work/canada/",
+    "docs/launch-work/topic-disposition.md",
+    "docs/launch-work/completions/05.md",
+    "docs/launch-work/parallel-status/canada.json"
+  ],
+  "reportPath": "docs/launch-work/completions/05.md",
+  "finishedAt": "2026-09-06T11:23:58-05:00",
+  "artifactHashes": {
+    "docs/launch-work/canada/candidate.md": "5d9b5dd8c727980a899362078ad43a063d5a861acd2fef5f3465c87f21c89a99",
+    "docs/launch-work/canada/candidate.json": "bad5e866b5dfa436e6c97ca12899bc8e22a973ed1ddf6ad4f03949fe66c2f832",
+    "docs/launch-work/canada/evidence-manifest.json": "f257524dea4b01109946fd05a9bd2bbc609527f3d21a5c0a27e80e61eca62232",
+    "docs/launch-work/canada/selection-freeze.json": "ec687b3d00fecfdfa126a0c9071bbff3169ba740f4b0a7076d4b7c21318e6d02",
+    "docs/launch-work/canada/canada-hourly.csv": "af754817f1f07f5b6eb71a0658a40faeb9f665398a7b660eb579d05f024ae117",
+    "docs/launch-work/canada/measurements.json": "cda569b5b530b4c728192d591af9a124e21cdda307b0cf0ebd46a43e413d3d42",
+    "docs/launch-work/canada/evaluate-canada.mjs": "ea46971dfc20f336781e1b1c7b64b1f16b14e38e8fba227c88757409faff52ff",
+    "docs/launch-work/topic-disposition.md": "949d078d0755889b044604d398811caf32b082ed3d4f305649c06628507e7a5d",
+    "docs/launch-work/completions/05.md": "ebdbec6c5ed26562f634e96bee15dc385dd087474fe42828c2b61015b3a77c0d"
+  },
+  "handoffComplete": true
+}

@@ -1,0 +1,20 @@
+{
+  "endingVersion": "oscars-best-picture-2026-ending-v1",
+  "separateFromCandidate": true,
+  "usedInMeasurements": false,
+  "retrievedAt": "2026-09-06T20:26:06Z",
+  "resolution": "One Battle After Another won Best Picture at the 98th Academy Awards.",
+  "officialSource": {
+    "publisher": "Academy of Motion Picture Arts and Sciences",
+    "title": "The 98th Academy Awards | 2026",
+    "url": "https://www.oscars.org/oscars/ceremonies/2026",
+    "captureStatus": "Official page verified by live source extract; automated HTML capture returned 403, so this ending is not used as a hashed pre-reveal evidence capture."
+  },
+  "marketResolutionSource": {
+    "provider": "Kalshi",
+    "url": "https://external-api.kalshi.com/trade-api/v2/historical/markets/KXOSCARPIC-26-ONE",
+    "contractId": "KXOSCARPIC-26-ONE",
+    "resolution": "YES"
+  },
+  "firewall": "This file is a retrospective ending only. It is not referenced by any pre-reveal event claim, source role, anchor, or measurement window."
+}

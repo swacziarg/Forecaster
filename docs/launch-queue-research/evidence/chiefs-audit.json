@@ -1,0 +1,1590 @@
+{
+  "summary": {
+    "key": "chiefs",
+    "rawObservations": 5174,
+    "observations": 5173,
+    "coverageStart": "2024-07-09T17:00:00Z",
+    "coverageEnd": "2025-02-10T07:00:00Z",
+    "frequency": "UTC hourly buckets",
+    "missingHours": 2,
+    "maximumMissingRunHours": 1,
+    "rejectedObservations": 0,
+    "duplicateOrRevisionBuckets": 1,
+    "markPolicy": "Project Polymarket importer convention: latest source price per hour, treated as trade; API does not establish actual trade freshness or historical spread/volume. No filling.",
+    "normalizedSha256": "a6d18094865c07d003545baea017d32e64a425d5f3de682e187ca18b85c3193a",
+    "minQualifyingDailyMedian": {
+      "date": "2024-08-21",
+      "median": 0.131,
+      "observations": 24,
+      "min": 0.1305,
+      "max": 0.132
+    },
+    "maxQualifyingDailyMedian": {
+      "date": "2025-01-27",
+      "median": 0.53975,
+      "observations": 24,
+      "min": 0.258,
+      "max": 0.5435
+    },
+    "maximumDailyMedianRise": {
+      "from": {
+        "date": "2024-08-21",
+        "median": 0.131,
+        "observations": 24,
+        "min": 0.1305,
+        "max": 0.132
+      },
+      "to": {
+        "date": "2025-01-27",
+        "median": 0.53975,
+        "observations": 24,
+        "min": 0.258,
+        "max": 0.5435
+      },
+      "pp": 40.87499999999999
+    },
+    "maximumDailyMedianDrawdown": {
+      "from": {
+        "date": "2024-10-28",
+        "median": 0.1985,
+        "observations": 24,
+        "min": 0.1625,
+        "max": 0.22
+      },
+      "to": {
+        "date": "2024-12-16",
+        "median": 0.13525,
+        "observations": 24,
+        "min": 0.1185,
+        "max": 0.1445
+      },
+      "pp": 6.325
+    },
+    "fullMarketLifetime": false
+  },
+  "missingBuckets": [
+    "2024-07-21T18:00:00Z",
+    "2024-11-05T22:00:00Z"
+  ],
+  "daily": [
+    {
+      "date": "2024-07-09",
+      "median": 0.145,
+      "observations": 7,
+      "min": 0.13,
+      "max": 0.5
+    },
+    {
+      "date": "2024-07-10",
+      "median": 0.15,
+      "observations": 24,
+      "min": 0.145,
+      "max": 0.15
+    },
+    {
+      "date": "2024-07-11",
+      "median": 0.145,
+      "observations": 24,
+      "min": 0.145,
+      "max": 0.145
+    },
+    {
+      "date": "2024-07-12",
+      "median": 0.145,
+      "observations": 24,
+      "min": 0.144,
+      "max": 0.145
+    },
+    {
+      "date": "2024-07-13",
+      "median": 0.144,
+      "observations": 24,
+      "min": 0.144,
+      "max": 0.145
+    },
+    {
+      "date": "2024-07-14",
+      "median": 0.145,
+      "observations": 24,
+      "min": 0.145,
+      "max": 0.145
+    },
+    {
+      "date": "2024-07-15",
+      "median": 0.14475,
+      "observations": 24,
+      "min": 0.1445,
+      "max": 0.145
+    },
+    {
+      "date": "2024-07-16",
+      "median": 0.145,
+      "observations": 24,
+      "min": 0.1445,
+      "max": 0.147
+    },
+    {
+      "date": "2024-07-17",
+      "median": 0.147,
+      "observations": 24,
+      "min": 0.144,
+      "max": 0.1475
+    },
+    {
+      "date": "2024-07-18",
+      "median": 0.144,
+      "observations": 24,
+      "min": 0.144,
+      "max": 0.144
+    },
+    {
+      "date": "2024-07-19",
+      "median": 0.144,
+      "observations": 24,
+      "min": 0.1435,
+      "max": 0.144
+    },
+    {
+      "date": "2024-07-20",
+      "median": 0.144,
+      "observations": 24,
+      "min": 0.1435,
+      "max": 0.145
+    },
+    {
+      "date": "2024-07-21",
+      "median": 0.1445,
+      "observations": 23,
+      "min": 0.144,
+      "max": 0.145
+    },
+    {
+      "date": "2024-07-22",
+      "median": 0.144,
+      "observations": 24,
+      "min": 0.144,
+      "max": 0.144
+    },
+    {
+      "date": "2024-07-23",
+      "median": 0.144,
+      "observations": 24,
+      "min": 0.138,
+      "max": 0.1465
+    },
+    {
+      "date": "2024-07-24",
+      "median": 0.142,
+      "observations": 24,
+      "min": 0.137,
+      "max": 0.1435
+    },
+    {
+      "date": "2024-07-25",
+      "median": 0.1375,
+      "observations": 24,
+      "min": 0.136,
+      "max": 0.142
+    },
+    {
+      "date": "2024-07-26",
+      "median": 0.1365,
+      "observations": 24,
+      "min": 0.1355,
+      "max": 0.137
+    },
+    {
+      "date": "2024-07-27",
+      "median": 0.1375,
+      "observations": 24,
+      "min": 0.136,
+      "max": 0.142
+    },
+    {
+      "date": "2024-07-28",
+      "median": 0.142,
+      "observations": 24,
+      "min": 0.138,
+      "max": 0.1425
+    },
+    {
+      "date": "2024-07-29",
+      "median": 0.1435,
+      "observations": 24,
+      "min": 0.142,
+      "max": 0.146
+    },
+    {
+      "date": "2024-07-30",
+      "median": 0.144,
+      "observations": 24,
+      "min": 0.1395,
+      "max": 0.1445
+    },
+    {
+      "date": "2024-07-31",
+      "median": 0.14075,
+      "observations": 24,
+      "min": 0.1335,
+      "max": 0.144
+    },
+    {
+      "date": "2024-08-01",
+      "median": 0.138,
+      "observations": 24,
+      "min": 0.1335,
+      "max": 0.1405
+    },
+    {
+      "date": "2024-08-02",
+      "median": 0.13675,
+      "observations": 24,
+      "min": 0.1345,
+      "max": 0.1385
+    },
+    {
+      "date": "2024-08-03",
+      "median": 0.136,
+      "observations": 24,
+      "min": 0.1355,
+      "max": 0.1375
+    },
+    {
+      "date": "2024-08-04",
+      "median": 0.139,
+      "observations": 24,
+      "min": 0.137,
+      "max": 0.1395
+    },
+    {
+      "date": "2024-08-05",
+      "median": 0.13625,
+      "observations": 24,
+      "min": 0.135,
+      "max": 0.1375
+    },
+    {
+      "date": "2024-08-06",
+      "median": 0.13625,
+      "observations": 24,
+      "min": 0.132,
+      "max": 0.1435
+    },
+    {
+      "date": "2024-08-07",
+      "median": 0.135,
+      "observations": 24,
+      "min": 0.132,
+      "max": 0.1375
+    },
+    {
+      "date": "2024-08-08",
+      "median": 0.13275,
+      "observations": 24,
+      "min": 0.1305,
+      "max": 0.1375
+    },
+    {
+      "date": "2024-08-09",
+      "median": 0.136,
+      "observations": 24,
+      "min": 0.132,
+      "max": 0.1365
+    },
+    {
+      "date": "2024-08-10",
+      "median": 0.1355,
+      "observations": 24,
+      "min": 0.133,
+      "max": 0.1365
+    },
+    {
+      "date": "2024-08-11",
+      "median": 0.1345,
+      "observations": 24,
+      "min": 0.1325,
+      "max": 0.135
+    },
+    {
+      "date": "2024-08-12",
+      "median": 0.1355,
+      "observations": 24,
+      "min": 0.1345,
+      "max": 0.136
+    },
+    {
+      "date": "2024-08-13",
+      "median": 0.13475,
+      "observations": 24,
+      "min": 0.134,
+      "max": 0.137
+    },
+    {
+      "date": "2024-08-14",
+      "median": 0.1345,
+      "observations": 24,
+      "min": 0.1335,
+      "max": 0.135
+    },
+    {
+      "date": "2024-08-15",
+      "median": 0.133,
+      "observations": 24,
+      "min": 0.1325,
+      "max": 0.1335
+    },
+    {
+      "date": "2024-08-16",
+      "median": 0.1325,
+      "observations": 24,
+      "min": 0.132,
+      "max": 0.135
+    },
+    {
+      "date": "2024-08-17",
+      "median": 0.1335,
+      "observations": 24,
+      "min": 0.133,
+      "max": 0.135
+    },
+    {
+      "date": "2024-08-18",
+      "median": 0.135,
+      "observations": 24,
+      "min": 0.1315,
+      "max": 0.1375
+    },
+    {
+      "date": "2024-08-19",
+      "median": 0.134,
+      "observations": 24,
+      "min": 0.132,
+      "max": 0.136
+    },
+    {
+      "date": "2024-08-20",
+      "median": 0.133,
+      "observations": 24,
+      "min": 0.131,
+      "max": 0.134
+    },
+    {
+      "date": "2024-08-21",
+      "median": 0.131,
+      "observations": 24,
+      "min": 0.1305,
+      "max": 0.132
+    },
+    {
+      "date": "2024-08-22",
+      "median": 0.131,
+      "observations": 24,
+      "min": 0.129,
+      "max": 0.131
+    },
+    {
+      "date": "2024-08-23",
+      "median": 0.131,
+      "observations": 24,
+      "min": 0.1295,
+      "max": 0.1335
+    },
+    {
+      "date": "2024-08-24",
+      "median": 0.131,
+      "observations": 24,
+      "min": 0.129,
+      "max": 0.1325
+    },
+    {
+      "date": "2024-08-25",
+      "median": 0.132,
+      "observations": 24,
+      "min": 0.131,
+      "max": 0.1335
+    },
+    {
+      "date": "2024-08-26",
+      "median": 0.132,
+      "observations": 24,
+      "min": 0.1315,
+      "max": 0.1335
+    },
+    {
+      "date": "2024-08-27",
+      "median": 0.133,
+      "observations": 24,
+      "min": 0.133,
+      "max": 0.133
+    },
+    {
+      "date": "2024-08-28",
+      "median": 0.1335,
+      "observations": 24,
+      "min": 0.133,
+      "max": 0.1335
+    },
+    {
+      "date": "2024-08-29",
+      "median": 0.131,
+      "observations": 24,
+      "min": 0.1305,
+      "max": 0.165
+    },
+    {
+      "date": "2024-08-30",
+      "median": 0.1385,
+      "observations": 24,
+      "min": 0.135,
+      "max": 0.1395
+    },
+    {
+      "date": "2024-08-31",
+      "median": 0.137,
+      "observations": 24,
+      "min": 0.136,
+      "max": 0.1385
+    },
+    {
+      "date": "2024-09-01",
+      "median": 0.1375,
+      "observations": 24,
+      "min": 0.1365,
+      "max": 0.139
+    },
+    {
+      "date": "2024-09-02",
+      "median": 0.139,
+      "observations": 24,
+      "min": 0.1375,
+      "max": 0.14
+    },
+    {
+      "date": "2024-09-03",
+      "median": 0.139,
+      "observations": 24,
+      "min": 0.1365,
+      "max": 0.141
+    },
+    {
+      "date": "2024-09-04",
+      "median": 0.1385,
+      "observations": 24,
+      "min": 0.137,
+      "max": 0.1395
+    },
+    {
+      "date": "2024-09-05",
+      "median": 0.1405,
+      "observations": 24,
+      "min": 0.139,
+      "max": 0.1425
+    },
+    {
+      "date": "2024-09-06",
+      "median": 0.15325,
+      "observations": 24,
+      "min": 0.1455,
+      "max": 0.155
+    },
+    {
+      "date": "2024-09-07",
+      "median": 0.1555,
+      "observations": 24,
+      "min": 0.1545,
+      "max": 0.1595
+    },
+    {
+      "date": "2024-09-08",
+      "median": 0.152,
+      "observations": 24,
+      "min": 0.1435,
+      "max": 0.1585
+    },
+    {
+      "date": "2024-09-09",
+      "median": 0.148,
+      "observations": 24,
+      "min": 0.1455,
+      "max": 0.1555
+    },
+    {
+      "date": "2024-09-10",
+      "median": 0.15,
+      "observations": 24,
+      "min": 0.1465,
+      "max": 0.1545
+    },
+    {
+      "date": "2024-09-11",
+      "median": 0.155,
+      "observations": 24,
+      "min": 0.1475,
+      "max": 0.157
+    },
+    {
+      "date": "2024-09-12",
+      "median": 0.1555,
+      "observations": 24,
+      "min": 0.1535,
+      "max": 0.1565
+    },
+    {
+      "date": "2024-09-13",
+      "median": 0.157,
+      "observations": 24,
+      "min": 0.1555,
+      "max": 0.158
+    },
+    {
+      "date": "2024-09-14",
+      "median": 0.157,
+      "observations": 24,
+      "min": 0.1565,
+      "max": 0.158
+    },
+    {
+      "date": "2024-09-15",
+      "median": 0.157,
+      "observations": 24,
+      "min": 0.1565,
+      "max": 0.168
+    },
+    {
+      "date": "2024-09-16",
+      "median": 0.16975,
+      "observations": 24,
+      "min": 0.1625,
+      "max": 0.172
+    },
+    {
+      "date": "2024-09-17",
+      "median": 0.1645,
+      "observations": 24,
+      "min": 0.1615,
+      "max": 0.1665
+    },
+    {
+      "date": "2024-09-18",
+      "median": 0.17,
+      "observations": 24,
+      "min": 0.158,
+      "max": 0.1735
+    },
+    {
+      "date": "2024-09-19",
+      "median": 0.161,
+      "observations": 24,
+      "min": 0.148,
+      "max": 0.163
+    },
+    {
+      "date": "2024-09-20",
+      "median": 0.16,
+      "observations": 24,
+      "min": 0.158,
+      "max": 0.1625
+    },
+    {
+      "date": "2024-09-21",
+      "median": 0.158,
+      "observations": 24,
+      "min": 0.154,
+      "max": 0.162
+    },
+    {
+      "date": "2024-09-22",
+      "median": 0.1575,
+      "observations": 24,
+      "min": 0.1575,
+      "max": 0.1585
+    },
+    {
+      "date": "2024-09-23",
+      "median": 0.16625,
+      "observations": 24,
+      "min": 0.158,
+      "max": 0.176
+    },
+    {
+      "date": "2024-09-24",
+      "median": 0.165,
+      "observations": 24,
+      "min": 0.1605,
+      "max": 0.1685
+    },
+    {
+      "date": "2024-09-25",
+      "median": 0.165,
+      "observations": 24,
+      "min": 0.1615,
+      "max": 0.1685
+    },
+    {
+      "date": "2024-09-26",
+      "median": 0.164,
+      "observations": 24,
+      "min": 0.162,
+      "max": 0.167
+    },
+    {
+      "date": "2024-09-27",
+      "median": 0.1625,
+      "observations": 24,
+      "min": 0.161,
+      "max": 0.1635
+    },
+    {
+      "date": "2024-09-28",
+      "median": 0.1655,
+      "observations": 24,
+      "min": 0.163,
+      "max": 0.1685
+    },
+    {
+      "date": "2024-09-29",
+      "median": 0.1635,
+      "observations": 24,
+      "min": 0.151,
+      "max": 0.165
+    },
+    {
+      "date": "2024-09-30",
+      "median": 0.146,
+      "observations": 24,
+      "min": 0.141,
+      "max": 0.154
+    },
+    {
+      "date": "2024-10-01",
+      "median": 0.1445,
+      "observations": 24,
+      "min": 0.143,
+      "max": 0.1475
+    },
+    {
+      "date": "2024-10-02",
+      "median": 0.144,
+      "observations": 24,
+      "min": 0.1425,
+      "max": 0.1475
+    },
+    {
+      "date": "2024-10-03",
+      "median": 0.146,
+      "observations": 24,
+      "min": 0.1435,
+      "max": 0.148
+    },
+    {
+      "date": "2024-10-04",
+      "median": 0.144,
+      "observations": 24,
+      "min": 0.1395,
+      "max": 0.1465
+    },
+    {
+      "date": "2024-10-05",
+      "median": 0.14,
+      "observations": 24,
+      "min": 0.1395,
+      "max": 0.142
+    },
+    {
+      "date": "2024-10-06",
+      "median": 0.14,
+      "observations": 24,
+      "min": 0.1265,
+      "max": 0.143
+    },
+    {
+      "date": "2024-10-07",
+      "median": 0.14175,
+      "observations": 24,
+      "min": 0.1305,
+      "max": 0.1785
+    },
+    {
+      "date": "2024-10-08",
+      "median": 0.169,
+      "observations": 24,
+      "min": 0.1605,
+      "max": 0.1795
+    },
+    {
+      "date": "2024-10-09",
+      "median": 0.16,
+      "observations": 24,
+      "min": 0.157,
+      "max": 0.1665
+    },
+    {
+      "date": "2024-10-10",
+      "median": 0.16175,
+      "observations": 24,
+      "min": 0.1565,
+      "max": 0.1685
+    },
+    {
+      "date": "2024-10-11",
+      "median": 0.1645,
+      "observations": 24,
+      "min": 0.1615,
+      "max": 0.1695
+    },
+    {
+      "date": "2024-10-12",
+      "median": 0.1655,
+      "observations": 24,
+      "min": 0.161,
+      "max": 0.1695
+    },
+    {
+      "date": "2024-10-13",
+      "median": 0.162,
+      "observations": 24,
+      "min": 0.16,
+      "max": 0.166
+    },
+    {
+      "date": "2024-10-14",
+      "median": 0.16125,
+      "observations": 24,
+      "min": 0.159,
+      "max": 0.1685
+    },
+    {
+      "date": "2024-10-15",
+      "median": 0.159,
+      "observations": 24,
+      "min": 0.1565,
+      "max": 0.1605
+    },
+    {
+      "date": "2024-10-16",
+      "median": 0.1595,
+      "observations": 24,
+      "min": 0.157,
+      "max": 0.162
+    },
+    {
+      "date": "2024-10-17",
+      "median": 0.1635,
+      "observations": 24,
+      "min": 0.161,
+      "max": 0.1645
+    },
+    {
+      "date": "2024-10-18",
+      "median": 0.16075,
+      "observations": 24,
+      "min": 0.1585,
+      "max": 0.1645
+    },
+    {
+      "date": "2024-10-19",
+      "median": 0.159,
+      "observations": 24,
+      "min": 0.158,
+      "max": 0.163
+    },
+    {
+      "date": "2024-10-20",
+      "median": 0.1545,
+      "observations": 24,
+      "min": 0.1325,
+      "max": 0.1615
+    },
+    {
+      "date": "2024-10-21",
+      "median": 0.16575,
+      "observations": 24,
+      "min": 0.162,
+      "max": 0.168
+    },
+    {
+      "date": "2024-10-22",
+      "median": 0.17475,
+      "observations": 24,
+      "min": 0.168,
+      "max": 0.1775
+    },
+    {
+      "date": "2024-10-23",
+      "median": 0.174,
+      "observations": 24,
+      "min": 0.1715,
+      "max": 0.1775
+    },
+    {
+      "date": "2024-10-24",
+      "median": 0.17375,
+      "observations": 24,
+      "min": 0.171,
+      "max": 0.1775
+    },
+    {
+      "date": "2024-10-25",
+      "median": 0.17175,
+      "observations": 24,
+      "min": 0.1685,
+      "max": 0.176
+    },
+    {
+      "date": "2024-10-26",
+      "median": 0.16875,
+      "observations": 24,
+      "min": 0.1625,
+      "max": 0.1775
+    },
+    {
+      "date": "2024-10-27",
+      "median": 0.1705,
+      "observations": 24,
+      "min": 0.164,
+      "max": 0.1755
+    },
+    {
+      "date": "2024-10-28",
+      "median": 0.1985,
+      "observations": 24,
+      "min": 0.1625,
+      "max": 0.22
+    },
+    {
+      "date": "2024-10-29",
+      "median": 0.189,
+      "observations": 24,
+      "min": 0.1865,
+      "max": 0.1925
+    },
+    {
+      "date": "2024-10-30",
+      "median": 0.188,
+      "observations": 24,
+      "min": 0.187,
+      "max": 0.1925
+    },
+    {
+      "date": "2024-10-31",
+      "median": 0.182,
+      "observations": 24,
+      "min": 0.1785,
+      "max": 0.1865
+    },
+    {
+      "date": "2024-11-01",
+      "median": 0.1825,
+      "observations": 24,
+      "min": 0.1805,
+      "max": 0.1865
+    },
+    {
+      "date": "2024-11-02",
+      "median": 0.182,
+      "observations": 24,
+      "min": 0.1775,
+      "max": 0.1835
+    },
+    {
+      "date": "2024-11-03",
+      "median": 0.1805,
+      "observations": 24,
+      "min": 0.1515,
+      "max": 0.1865
+    },
+    {
+      "date": "2024-11-04",
+      "median": 0.17575,
+      "observations": 24,
+      "min": 0.1515,
+      "max": 0.1945
+    },
+    {
+      "date": "2024-11-05",
+      "median": 0.172,
+      "observations": 23,
+      "min": 0.159,
+      "max": 0.1955
+    },
+    {
+      "date": "2024-11-06",
+      "median": 0.1815,
+      "observations": 24,
+      "min": 0.165,
+      "max": 0.187
+    },
+    {
+      "date": "2024-11-07",
+      "median": 0.19,
+      "observations": 24,
+      "min": 0.179,
+      "max": 0.211
+    },
+    {
+      "date": "2024-11-08",
+      "median": 0.19675,
+      "observations": 24,
+      "min": 0.1825,
+      "max": 0.2305
+    },
+    {
+      "date": "2024-11-09",
+      "median": 0.18725,
+      "observations": 24,
+      "min": 0.1835,
+      "max": 0.195
+    },
+    {
+      "date": "2024-11-10",
+      "median": 0.1915,
+      "observations": 24,
+      "min": 0.1845,
+      "max": 0.201
+    },
+    {
+      "date": "2024-11-11",
+      "median": 0.19275,
+      "observations": 24,
+      "min": 0.1855,
+      "max": 0.2005
+    },
+    {
+      "date": "2024-11-12",
+      "median": 0.1785,
+      "observations": 24,
+      "min": 0.175,
+      "max": 0.1985
+    },
+    {
+      "date": "2024-11-13",
+      "median": 0.179,
+      "observations": 24,
+      "min": 0.1775,
+      "max": 0.185
+    },
+    {
+      "date": "2024-11-14",
+      "median": 0.1845,
+      "observations": 24,
+      "min": 0.182,
+      "max": 0.1925
+    },
+    {
+      "date": "2024-11-15",
+      "median": 0.18875,
+      "observations": 24,
+      "min": 0.1865,
+      "max": 0.195
+    },
+    {
+      "date": "2024-11-16",
+      "median": 0.193,
+      "observations": 24,
+      "min": 0.1895,
+      "max": 0.198
+    },
+    {
+      "date": "2024-11-17",
+      "median": 0.18925,
+      "observations": 24,
+      "min": 0.166,
+      "max": 0.192
+    },
+    {
+      "date": "2024-11-18",
+      "median": 0.161,
+      "observations": 24,
+      "min": 0.154,
+      "max": 0.17
+    },
+    {
+      "date": "2024-11-19",
+      "median": 0.1585,
+      "observations": 24,
+      "min": 0.1545,
+      "max": 0.1645
+    },
+    {
+      "date": "2024-11-20",
+      "median": 0.1565,
+      "observations": 24,
+      "min": 0.1535,
+      "max": 0.1575
+    },
+    {
+      "date": "2024-11-21",
+      "median": 0.155,
+      "observations": 24,
+      "min": 0.1525,
+      "max": 0.167
+    },
+    {
+      "date": "2024-11-22",
+      "median": 0.157,
+      "observations": 24,
+      "min": 0.148,
+      "max": 0.1685
+    },
+    {
+      "date": "2024-11-23",
+      "median": 0.16025,
+      "observations": 24,
+      "min": 0.157,
+      "max": 0.1645
+    },
+    {
+      "date": "2024-11-24",
+      "median": 0.16375,
+      "observations": 24,
+      "min": 0.1595,
+      "max": 0.1765
+    },
+    {
+      "date": "2024-11-25",
+      "median": 0.162,
+      "observations": 24,
+      "min": 0.159,
+      "max": 0.1695
+    },
+    {
+      "date": "2024-11-26",
+      "median": 0.16475,
+      "observations": 24,
+      "min": 0.159,
+      "max": 0.1675
+    },
+    {
+      "date": "2024-11-27",
+      "median": 0.1645,
+      "observations": 24,
+      "min": 0.1615,
+      "max": 0.1665
+    },
+    {
+      "date": "2024-11-28",
+      "median": 0.161,
+      "observations": 24,
+      "min": 0.1575,
+      "max": 0.163
+    },
+    {
+      "date": "2024-11-29",
+      "median": 0.16425,
+      "observations": 24,
+      "min": 0.1555,
+      "max": 0.1685
+    },
+    {
+      "date": "2024-11-30",
+      "median": 0.16,
+      "observations": 24,
+      "min": 0.1545,
+      "max": 0.163
+    },
+    {
+      "date": "2024-12-01",
+      "median": 0.1575,
+      "observations": 24,
+      "min": 0.1535,
+      "max": 0.1605
+    },
+    {
+      "date": "2024-12-02",
+      "median": 0.14475,
+      "observations": 24,
+      "min": 0.133,
+      "max": 0.155
+    },
+    {
+      "date": "2024-12-03",
+      "median": 0.1375,
+      "observations": 24,
+      "min": 0.1345,
+      "max": 0.1425
+    },
+    {
+      "date": "2024-12-04",
+      "median": 0.1425,
+      "observations": 24,
+      "min": 0.1405,
+      "max": 0.1465
+    },
+    {
+      "date": "2024-12-05",
+      "median": 0.1445,
+      "observations": 24,
+      "min": 0.1415,
+      "max": 0.1495
+    },
+    {
+      "date": "2024-12-06",
+      "median": 0.148,
+      "observations": 24,
+      "min": 0.147,
+      "max": 0.149
+    },
+    {
+      "date": "2024-12-07",
+      "median": 0.1475,
+      "observations": 24,
+      "min": 0.139,
+      "max": 0.1485
+    },
+    {
+      "date": "2024-12-08",
+      "median": 0.141,
+      "observations": 24,
+      "min": 0.1395,
+      "max": 0.1425
+    },
+    {
+      "date": "2024-12-09",
+      "median": 0.159,
+      "observations": 24,
+      "min": 0.1415,
+      "max": 0.1625
+    },
+    {
+      "date": "2024-12-10",
+      "median": 0.1595,
+      "observations": 24,
+      "min": 0.154,
+      "max": 0.1625
+    },
+    {
+      "date": "2024-12-11",
+      "median": 0.15875,
+      "observations": 24,
+      "min": 0.155,
+      "max": 0.162
+    },
+    {
+      "date": "2024-12-12",
+      "median": 0.1605,
+      "observations": 24,
+      "min": 0.1565,
+      "max": 0.1655
+    },
+    {
+      "date": "2024-12-13",
+      "median": 0.1585,
+      "observations": 24,
+      "min": 0.156,
+      "max": 0.159
+    },
+    {
+      "date": "2024-12-14",
+      "median": 0.1575,
+      "observations": 24,
+      "min": 0.153,
+      "max": 0.16
+    },
+    {
+      "date": "2024-12-15",
+      "median": 0.15675,
+      "observations": 24,
+      "min": 0.134,
+      "max": 0.162
+    },
+    {
+      "date": "2024-12-16",
+      "median": 0.13525,
+      "observations": 24,
+      "min": 0.1185,
+      "max": 0.1445
+    },
+    {
+      "date": "2024-12-17",
+      "median": 0.13725,
+      "observations": 24,
+      "min": 0.1335,
+      "max": 0.1445
+    },
+    {
+      "date": "2024-12-18",
+      "median": 0.1405,
+      "observations": 24,
+      "min": 0.1355,
+      "max": 0.1455
+    },
+    {
+      "date": "2024-12-19",
+      "median": 0.13975,
+      "observations": 24,
+      "min": 0.1315,
+      "max": 0.147
+    },
+    {
+      "date": "2024-12-20",
+      "median": 0.1425,
+      "observations": 24,
+      "min": 0.1405,
+      "max": 0.1445
+    },
+    {
+      "date": "2024-12-21",
+      "median": 0.141,
+      "observations": 24,
+      "min": 0.1385,
+      "max": 0.155
+    },
+    {
+      "date": "2024-12-22",
+      "median": 0.15575,
+      "observations": 24,
+      "min": 0.1445,
+      "max": 0.1685
+    },
+    {
+      "date": "2024-12-23",
+      "median": 0.164,
+      "observations": 24,
+      "min": 0.15,
+      "max": 0.196
+    },
+    {
+      "date": "2024-12-24",
+      "median": 0.17275,
+      "observations": 24,
+      "min": 0.166,
+      "max": 0.1795
+    },
+    {
+      "date": "2024-12-25",
+      "median": 0.171,
+      "observations": 24,
+      "min": 0.165,
+      "max": 0.195
+    },
+    {
+      "date": "2024-12-26",
+      "median": 0.19975,
+      "observations": 24,
+      "min": 0.188,
+      "max": 0.2045
+    },
+    {
+      "date": "2024-12-27",
+      "median": 0.18825,
+      "observations": 24,
+      "min": 0.1775,
+      "max": 0.201
+    },
+    {
+      "date": "2024-12-28",
+      "median": 0.1955,
+      "observations": 24,
+      "min": 0.1815,
+      "max": 0.1985
+    },
+    {
+      "date": "2024-12-29",
+      "median": 0.19375,
+      "observations": 24,
+      "min": 0.1875,
+      "max": 0.2
+    },
+    {
+      "date": "2024-12-30",
+      "median": 0.214,
+      "observations": 24,
+      "min": 0.203,
+      "max": 0.2225
+    },
+    {
+      "date": "2024-12-31",
+      "median": 0.2195,
+      "observations": 24,
+      "min": 0.2005,
+      "max": 0.2355
+    },
+    {
+      "date": "2025-01-01",
+      "median": 0.22425,
+      "observations": 24,
+      "min": 0.219,
+      "max": 0.2315
+    },
+    {
+      "date": "2025-01-02",
+      "median": 0.22725,
+      "observations": 24,
+      "min": 0.22,
+      "max": 0.2375
+    },
+    {
+      "date": "2025-01-03",
+      "median": 0.23175,
+      "observations": 24,
+      "min": 0.2205,
+      "max": 0.238
+    },
+    {
+      "date": "2025-01-04",
+      "median": 0.2315,
+      "observations": 24,
+      "min": 0.2205,
+      "max": 0.2375
+    },
+    {
+      "date": "2025-01-05",
+      "median": 0.2395,
+      "observations": 24,
+      "min": 0.218,
+      "max": 0.242
+    },
+    {
+      "date": "2025-01-06",
+      "median": 0.2275,
+      "observations": 24,
+      "min": 0.2145,
+      "max": 0.234
+    },
+    {
+      "date": "2025-01-07",
+      "median": 0.2315,
+      "observations": 24,
+      "min": 0.2235,
+      "max": 0.2385
+    },
+    {
+      "date": "2025-01-08",
+      "median": 0.22075,
+      "observations": 24,
+      "min": 0.2175,
+      "max": 0.2255
+    },
+    {
+      "date": "2025-01-09",
+      "median": 0.2285,
+      "observations": 24,
+      "min": 0.221,
+      "max": 0.234
+    },
+    {
+      "date": "2025-01-10",
+      "median": 0.2315,
+      "observations": 24,
+      "min": 0.2265,
+      "max": 0.2335
+    },
+    {
+      "date": "2025-01-11",
+      "median": 0.227,
+      "observations": 24,
+      "min": 0.216,
+      "max": 0.2315
+    },
+    {
+      "date": "2025-01-12",
+      "median": 0.21925,
+      "observations": 24,
+      "min": 0.2055,
+      "max": 0.2315
+    },
+    {
+      "date": "2025-01-13",
+      "median": 0.213,
+      "observations": 24,
+      "min": 0.209,
+      "max": 0.225
+    },
+    {
+      "date": "2025-01-14",
+      "median": 0.218,
+      "observations": 24,
+      "min": 0.213,
+      "max": 0.2235
+    },
+    {
+      "date": "2025-01-15",
+      "median": 0.2205,
+      "observations": 24,
+      "min": 0.21,
+      "max": 0.228
+    },
+    {
+      "date": "2025-01-16",
+      "median": 0.2125,
+      "observations": 24,
+      "min": 0.208,
+      "max": 0.217
+    },
+    {
+      "date": "2025-01-17",
+      "median": 0.216,
+      "observations": 24,
+      "min": 0.2125,
+      "max": 0.219
+    },
+    {
+      "date": "2025-01-18",
+      "median": 0.2165,
+      "observations": 24,
+      "min": 0.2065,
+      "max": 0.2195
+    },
+    {
+      "date": "2025-01-19",
+      "median": 0.26525,
+      "observations": 24,
+      "min": 0.2395,
+      "max": 0.2755
+    },
+    {
+      "date": "2025-01-20",
+      "median": 0.30025,
+      "observations": 24,
+      "min": 0.267,
+      "max": 0.3085
+    },
+    {
+      "date": "2025-01-21",
+      "median": 0.3015,
+      "observations": 24,
+      "min": 0.288,
+      "max": 0.308
+    },
+    {
+      "date": "2025-01-22",
+      "median": 0.302,
+      "observations": 24,
+      "min": 0.2965,
+      "max": 0.3055
+    },
+    {
+      "date": "2025-01-23",
+      "median": 0.30574999999999997,
+      "observations": 24,
+      "min": 0.297,
+      "max": 0.3095
+    },
+    {
+      "date": "2025-01-24",
+      "median": 0.30025,
+      "observations": 24,
+      "min": 0.2965,
+      "max": 0.3025
+    },
+    {
+      "date": "2025-01-25",
+      "median": 0.307,
+      "observations": 24,
+      "min": 0.3005,
+      "max": 0.311
+    },
+    {
+      "date": "2025-01-26",
+      "median": 0.305,
+      "observations": 24,
+      "min": 0.2785,
+      "max": 0.3095
+    },
+    {
+      "date": "2025-01-27",
+      "median": 0.53975,
+      "observations": 24,
+      "min": 0.258,
+      "max": 0.5435
+    },
+    {
+      "date": "2025-01-28",
+      "median": 0.5347500000000001,
+      "observations": 24,
+      "min": 0.5325,
+      "max": 0.5365
+    },
+    {
+      "date": "2025-01-29",
+      "median": 0.531,
+      "observations": 24,
+      "min": 0.53,
+      "max": 0.534
+    },
+    {
+      "date": "2025-01-30",
+      "median": 0.531,
+      "observations": 24,
+      "min": 0.5275,
+      "max": 0.5325
+    },
+    {
+      "date": "2025-01-31",
+      "median": 0.5315,
+      "observations": 24,
+      "min": 0.5295,
+      "max": 0.533
+    },
+    {
+      "date": "2025-02-01",
+      "median": 0.5315,
+      "observations": 24,
+      "min": 0.53,
+      "max": 0.532
+    },
+    {
+      "date": "2025-02-02",
+      "median": 0.529,
+      "observations": 24,
+      "min": 0.5275,
+      "max": 0.5305
+    },
+    {
+      "date": "2025-02-03",
+      "median": 0.5305,
+      "observations": 24,
+      "min": 0.5285,
+      "max": 0.5315
+    },
+    {
+      "date": "2025-02-04",
+      "median": 0.529,
+      "observations": 24,
+      "min": 0.5275,
+      "max": 0.5305
+    },
+    {
+      "date": "2025-02-05",
+      "median": 0.528,
+      "observations": 24,
+      "min": 0.5275,
+      "max": 0.529
+    },
+    {
+      "date": "2025-02-06",
+      "median": 0.528,
+      "observations": 24,
+      "min": 0.527,
+      "max": 0.529
+    },
+    {
+      "date": "2025-02-07",
+      "median": 0.5265,
+      "observations": 24,
+      "min": 0.5225,
+      "max": 0.5295
+    },
+    {
+      "date": "2025-02-08",
+      "median": 0.524,
+      "observations": 24,
+      "min": 0.5215,
+      "max": 0.528
+    },
+    {
+      "date": "2025-02-09",
+      "median": 0.5205,
+      "observations": 24,
+      "min": 0.5175,
+      "max": 0.5215
+    },
+    {
+      "date": "2025-02-10",
+      "median": 0.0005,
+      "observations": 8,
+      "min": 0.0005,
+      "max": 0.4635
+    }
+  ]
+}

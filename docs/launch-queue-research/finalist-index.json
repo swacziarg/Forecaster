@@ -1,0 +1,42 @@
+[
+  {
+    "key": "tiktok",
+    "proposedPuzzleNumber": 2,
+    "title": "The app that went dark",
+    "readiness": "needs a specific evidence/data step",
+    "queueableNow": false,
+    "brief": "briefs/002-tiktok.md"
+  },
+  {
+    "key": "eagles",
+    "proposedPuzzleNumber": 3,
+    "title": "Stop the three-peat",
+    "readiness": "needs a specific evidence/data step",
+    "queueableNow": false,
+    "brief": "briefs/003-eagles.md"
+  },
+  {
+    "key": "trump",
+    "proposedPuzzleNumber": 4,
+    "title": "The comeback nobody could call",
+    "readiness": "needs a specific evidence/data step",
+    "queueableNow": false,
+    "brief": "briefs/004-trump.md"
+  },
+  {
+    "key": "nyc",
+    "proposedPuzzleNumber": 5,
+    "title": "The New York upset",
+    "readiness": "needs a specific evidence/data step",
+    "queueableNow": false,
+    "brief": "briefs/005-nyc.md"
+  },
+  {
+    "key": "anora-kalshi",
+    "proposedPuzzleNumber": 6,
+    "title": "Anora: Hollywood’s false finish",
+    "readiness": "blocked",
+    "queueableNow": false,
+    "brief": "briefs/006-anora-kalshi.md"
+  }
+]

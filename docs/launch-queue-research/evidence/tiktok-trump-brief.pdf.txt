@@ -1,0 +1,805 @@
+Nos. 24-656, 24-657 
+ 
+In the  
+Supreme Court of the United States 
+ 
+TIKTOK, INC., et al., 
+Petitioners, 
+v. 
+MERRICK B. GARLAND, in his official capacity as Attorney 
+General of the United States of America, 
+Respondent. 
+ 
+BRIAN FIREBAUGH, et al., 
+Petitioners, 
+v. 
+MERRICK B. GARLAND, in his official capacity as Attorney 
+General of the United States of America, 
+Respondent. 
+ 
+ 
+ 
+On Writ of Certiorari to the United States Court of 
+Appeals for the District of Columbia Circuit 
+ 
+ 
+ 
+ 
+BRIEF OF PRESIDENT DONALD J. TRUMP AS 
+AMICUS CURIAE SUPPORTING NEITHER PARTY 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+December 27, 2024 
+JAMES OTIS LAW GROUP 
+D. John Sauer 
+Counsel of Record   
+13321 N. Outer Forty Rd. 
+Suite 300 
+St. Louis, Missouri 63017 
+(314) 562-0031 
+John.Sauer@james-otis.com 
+Counsel for Amicus Curiae 
+President Donald J. Trump 
+i 
+QUESTION PRESENTED 
+Whether the Protecting Americans from Foreign 
+Adversary Controlled Applications Act (“the Act”), as 
+applied to petitioners, violates the First Amendment.  
+  
+ii 
+TABLE OF CONTENTS 
+QUESTION PRESENTED........................................... i 
+TABLE OF CONTENTS ............................................ ii 
+TABLE OF AUTHORITIES ...................................... iii 
+INTRODUCTION AND INTEREST OF AMICUS 
+CURIAE PRESIDENT DONALD J. TRUMP ....... 1 
+SUMMARY OF ARGUMENT ..................................... 4 
+ARGUMENT ............................................................... 7 
+I. The Case’s Current Schedule Requires the Court 
+To Address Unprecedented, Very Significant 
+Constitutional Questions on a Highly Expedited 
+Basis. ...................................................................... 8 
+II. Three Features of the Act, Considered in 
+Combination, Raise Concerns of Possible 
+Legislative Encroachment on Executive Authority 
+Under Article II. ................................................... 10 
+III.The Case Presents Novel, Difficult, and Significant 
+First Amendment Questions. .............................. 14 
+CONCLUSION .......................................................... 18
+iii 
+TABLE OF AUTHORITIES 
+Cases Page(s) 
+American Ins. Ass’n v. Garamendi, 
+539 U.S. 396 (2003) .............................................. 14 
+Anderson v. Celebrezze, 
+460 U.S. 780 (1983) ................................................ 1 
+Ashwander v. Tennessee Valley Auth., 
+297 U.S. 288 (1936) ................................................ 9 
+Certain Named and Unnamed Non -Citizen Children 
+and Their Parents v. Texas, 
+448 U.S. 1327 (1980) ........................................... 7-8 
+Gonzales v. Oregon, 
+546 U.S. 243 (2006) .............................................. 16 
+Heckler v. Chaney, 
+470 U.S. 821 (1985) .............................................. 18 
+Karcher v. Daggett, 
+455 U.S. 1303 (1982) .............................................. 8 
+Loper-Bright Enterprises v. Raimondo, 
+144 S. Ct. 2244 (2024) .......................................... 14 
+McLeod v. Gen. Elec. Co., 
+87 S. Ct. 5 (1966) ................................................. 7-8 
+Missouri v. Biden, 
+83 F.4th 350 (5th Cir. 2023) ................................ 17 
+Missouri v. Biden, 
+680 F. Supp. 3d 630 (W.D. La. 2023) .................. 17 
+Monitor Patriot Co. v. Roy, 
+401 U.S. 265 (1971) .......................................... 2, 17 
+Murthy v. Missouri, 
+603 U.S. 43 (2024) ................................................ 18 
+Shiffman v. Selective Serv. Bd. No.5, 
+88 S. Ct. 1831 (1968) .............................................. 7 
+iv 
+Susan B. Anthony List v. Driehaus, 
+573 U.S. 149 (2014) .......................................... 2, 17 
+Times-Picayune Publ’g Corp. v. Schulingkamp, 
+419 U.S. 1301 (1974) .............................................. 8 
+Trump v. United States, 
+603 U.S. 593 (2024) ............................. 5, 8-9, 12, 16 
+United States v. Curtiss-Wright Exp. Corp., 
+299 U.S. 304 (1936) ..................................... 5, 12-13 
+Youngstown Sheet & Tube Co. v. Sawyer, 
+343 U.S. 579 (1952) .............................................. 11 
+Zivotofsky ex rel. Zivotofsky v. Kerry, 
+576 U.S. 1 (2015) ................................... 6, 11-12, 14 
+Zubik v. Burwell, 
+578 U.S. 403 (2016) ....................................... 5, 9-10 
+Regulatory Authority 
+Addressing the Threat Posed by TikTok , 85 Fed. Reg. 
+48637 (Aug. 6, 2020) ........................................ 3, 15 
+Regarding the Acquisition of Musical.ly by ByteDance 
+Ltd., 85 Fed. Reg. 51297 (Aug. 14, 2020) ........ 3, 15 
+Other Authorities 
+8 U.S. Sen. Reports Comm. on Foreign Relations (Feb. 
+15, 1816) ............................................................... 12 
+Brazil’s Supreme Court Lifts Ban on Social Media Site 
+X, CBS N EWS (Oct. 8, 2024), 
+https://www.cbsnews.com/news/brazil-supreme-
+court-lifts-ban-social-media-site-x-elon-musk/ 
+  .......................................................................... 2, 16 
+Briefing Scheduling in United States v. Trump, No. 
+23-3228 (D.C. Cir. Dec. 13, 2023) .......................... 8 
+Donald J. Trump (@realDonaldTrump), Truth Social 
+(Sept. 4, 2024, 3:51 p.m.), 
+v 
+https://truthsocial.com/@realDonaldTrump/posts/ 
+113081258242253706 ............................................ 3 
+THE FEDERALIST NO. 70 (A. Hamilton) ..................... 14 
+1 
+INTRODUCTION AND INTEREST OF AMICUS 
+CURIAE PRESIDENT DONALD J. TRUMP1 
+Amicus curiae President Donald J. Trump 
+(“President Trump”) is the 45th and soon to be the  
+47th President of the United States  of America.  O n 
+January 20, 2025 , President Trump will assume  
+responsibility for the United States’ national security, 
+foreign policy , and other vital executive functions .  
+This case presents  an unprecedented, novel, and 
+difficult tension between free-speech rights on one 
+side, and foreign policy and national-security concerns 
+on the other . As the incoming Chief Executive, 
+President Trump has a particularly powerful interest 
+in and responsibility for those national-security and 
+foreign-policy questions , and  he is the right 
+constitutional actor to resolve the dispute through 
+political means. 
+President Trump also has a unique interest in the 
+First Amendment issues raised in this case.  Through 
+his historic victory on November 5, 2024, President 
+Trump received a powerful electoral mandate from 
+American voters to protect the free-speech rights of all 
+Americans—including the 170 million Americans who 
+use TikTok.  President Trump is uniquely situated to 
+vindicate these interests, because “the President and 
+the Vice President of the United States are the only 
+elected officials who represent all the v oters in the 
+Nation.”  Anderson v. Celebrezze, 460 U.S. 780, 795 
+(1983).  
+ 
+1
+ This brief was not authored in whole or in part by counsel for 
+any party, and no party or party’s counsel has made a monetary 
+contribution toward the brief’s preparation or submission. 
+2 
+Moreover, President Trump is one of the most 
+powerful, prolific, and influential users of social media 
+in history.  Consistent with his commanding presence 
+in this area, President Trump currently has 14.7 
+million followers on TikTok  with whom he actively 
+communicates, allowing him to evaluate  TikTok’s 
+importance as a  unique medium for  freedom of 
+expression, including  core political speech .  Indeed, 
+President Trump and his rival both used TikTok to 
+connect with  voters during the recent Presidential 
+election campaign , with President Trump doing so 
+much more effectively .  As this Court instructs,  the 
+First Amendment’s “constitutional guarantee has its 
+fullest and most urgent application precisely to the 
+conduct of campaigns for political office .”  Susan B. 
+Anthony List v.  Driehaus, 573 U.S. 149, 162 (2014)  
+(quoting Monitor Patriot Co. v. Roy, 401 U.S. 265, 272 
+(1971)). 
+Further, President Trump is the founder of 
+another resoundingly successful social -media 
+platform, Truth Social.  This gives him a n in- depth 
+perspective on the extraordinary government power 
+attempted to be exercised in this case —the power of 
+the federal government to effectively shut down  a 
+social-media platform favored by tens of millions of 
+Americans, based in large part o n concerns about 
+disfavored content on that platform.  President Trump 
+is keenly aware of the historic dangers presented by 
+such a precedent.  For example, shortly after the Act 
+was passed, Brazil banned the social -media platform 
+X (formerly known as Twitter) for more than a month, 
+based in large part on th at government’s disfavor of 
+political speech on X.  See, e.g., Brazil’s Supreme Court 
+3 
+Lifts Ban on Social Media Site X, CBS NEWS (Oct. 8, 
+2024).2   
+In light of these interests —including, most 
+importantly, his overarching responsibility for  the 
+United States’ national security and foreign policy —
+President Trump oppose s banning TikTok  in the 
+United States at this juncture , and seeks the ability 
+to resolve the issues at hand through political means 
+once he takes office.  On September 4, 2024, President 
+Trump posted on Truth Social, “FOR ALL THOSE 
+THAT WANT TO SAVE TIK TOK IN AMERICA, 
+VOTE TRUMP!”3 
+Furthermore, President Trump alone possesses 
+the consummate dealmaking expertise, the electoral  
+mandate, and the political will to negotiate a 
+resolution to save the platform while addressing the 
+national security concerns expressed by the 
+Government—concerns which President Trump 
+himself has acknowledged.  See, e.g., Executive Order 
+No. 13942, Addressing the Threat Posed by TikTok, 85 
+Fed. Reg. 48637, 48637 (Aug. 6, 2020) ; Regarding the 
+Acquisition of Musical.ly by ByteDance Ltd ., 85 Fed. 
+Reg. 51297, 51297 (Aug. 14, 2020).  Indeed, President 
+Trump’s first Term was highlighted by a series of 
+policy triumphs achieved through historic deals , and 
+he has a great prospect of success in this latest 
+national security and foreign policy endeavor.    
+ 
+2
+ At https://www.cbsnews.com/news/brazil-supreme-court-lifts-
+ban-social-media-site-x-elon-musk/. 
+3
+ At https://truthsocial.com/@realDonaldTrump/posts/ 
+113081258242253706. 
+4 
+The 270-day deadline imposed by the Act expires 
+on January 19, 2025—one day  before President 
+Trump will assume Office as the 47th President of the 
+United States .  This unfortunate timing interferes 
+with President Trump’s ability to manage the United 
+States’ foreign policy  and to pursue a resolution to 
+both protect national security and save a social-media 
+platform that provides a popular vehicle for 170 
+million Americans to exercise their  core First 
+Amendment rights.   The Act  imposes the timing 
+constraint, moreover, without specifying a ny 
+compelling government interest in that part icular 
+deadline.  In fact, the Act itself contemplates a 90-day 
+extension to the deadline under  certain specified 
+circumstances.  Pet.App.97a, § 2(a)(3)(A)-(C).     
+President Trump, therefore, has a compelling 
+interest as the incoming embodiment of the Executive 
+Branch in seeing the  statutory deadline  stayed to 
+allow his incoming Administration the opportunity to 
+seek a negotiated  resolution of  these questions.   If 
+successful, such a resolution would obviate the need 
+for this Court to decide the historically challenging 
+First Amendment question presented here on the 
+current, highly expedited basis. 
+SUMMARY OF ARGUMENT 
+President Trump takes no position on the merits of 
+the dispute. Instead, he urges the Court to stay the 
+statute’s effective date to allow his incoming 
+Administration to pursue a negotiated resolution that 
+could prevent a nationwide shutdown of TikTok, thus 
+preserving the First Amendment rights of tens of 
+millions of Americans,  while also addressing the 
+government’s national security concerns.  If achieved, 
+such a resolution would obviate the need for this 
+5 
+Court to decide extremely difficult questions on the 
+current, highly expedited schedule. 
+There is ample justification for the Court to stay 
+the January 19 deadline—by which divestment for  
+ByteDance must occur, or else TikTok will face  an 
+effective shut -down in the United States —while it 
+considers the merits of the case.  First, this Court has 
+aptly cautioned against deciding “unprecedented” and 
+“very significant constitutional questions” on a 
+“highly expedited basis.”  Trump v. United States, 603 
+U.S. 593, 616 (2024).  Due to the Act’s deadline for 
+divestment and the timing of the D.C. Circuit’s 
+decision, this Court now faces the prospect of deciding 
+extremely difficult questions on exactly such a “highly 
+expedited basis.”  Staying this deadline would provide 
+breathing space  for t he Court to consider the 
+questions on a more measured schedule, and it would 
+provide President Trump’s incoming Administration 
+an opportunity to pursue a negotiated  resolution of 
+the conflict.  Indeed, the Court recently pursued a  
+similar course in Zubik  v. Burwell, vacating lower -
+court decisions and pausing the enforcement of HHS’s 
+contraceptive mandate against religious 
+organizations to “allow the parties  sufficient time to 
+resolve any outstanding issues between them .”  578 
+U.S. 403, 408 (2016) (per curiam). 
+Second, three features of the Act raise concerns 
+about possible legislative encroachment  on 
+prerogatives of the Executive Branch under Article II.  
+First, the Act dictates that the President must make 
+a particular national -security determination as to 
+TikTok alone, while granting the President a greater 
+“degree of discretion and freedom from statutory 
+restriction” as to all other social -media platforms.   
+United States v.  Curtiss-Wright Exp. Corp ., 299 U.S. 
+304, 320 (1936).   Second, the Act mandates  that the 
+6 
+President must exercise his power over foreign affairs 
+“through an interagency process” commanded by 
+Congress, instead of exercising his sole discretion over 
+the deliberative processes  of the Executive Branch .  
+Pet.App.19a.  Third, the Act—due to its signing date —
+now imposes a deadline for divestment that falls one 
+day before the incoming Administration takes power.  
+Especially when viewed in combination, these unique 
+features of the Act raise significant  concerns about  
+possible legislative encroachment upon  the 
+President’s prerogative to manage the Nation’s 
+geopolitical, strategic relationship s overall, and  with 
+one of our most significant counterparts, China,  
+specifically.  This is an area where the Nation must 
+“speak ... with one voice,” and “[t]hat voice must be the 
+President’s.”  Zivotofsky ex rel. Zivotofsky v. Kerry, 576 
+U.S. 1, 14 (2015) (citation omitted). 
+Third, the First Amendment implications of the 
+federal government’s effective shuttering of a social-
+media platform used by 170 million Americans are 
+sweeping and troubling.   There are valid concerns 
+that the Act may set a dangerous global precedent by 
+exercising the extraordinary power to shut down an 
+entire social-media platform based, in large part, on 
+concerns about disfavored speech on that platform.  
+Perhaps not coincidentally, soon  after the Act was 
+passed, another major Western democracy —Brazil —
+shut down another entire social -media platform, X  
+(formerly known as Twitter), for more than  a month, 
+apparently based on th at government’s desire to 
+suppress disfavored political speech .  Moreover,  
+despite the Act’s enormous impact on the speech of 
+170 million TikTok users , the D.C. Circuit’s opinion 
+grants only cursory consideration  to the free- speech 
+interests of Americans, while granting decisive weight 
+and near-plenary deference to the views of national -
+7 
+security officials.   Yet the history of the past several  
+years, and beyond,  includes troubling, well-
+documented abuses by such federal officials in seeking 
+the social-media censorship of ordinary Americans.   
+In light of the novelty and difficulty of this case, 
+the Court should consider staying the statutory 
+deadline to grant more  breathing space to address 
+these issues.   The Act itself contemplates the 
+possibility of a 90 -day extension, indicating that the  
+270-day deadline lacks talismanic significance.  Such 
+a stay would vitally grant President Trump the 
+opportunity to pursue a political resolution that could 
+obviate the Court’s need to decide these 
+constitutionally significant questions. 
+ARGUMENT 
+This Court may grant a stay to preserve the status 
+quo in  a case that present s novel and difficult 
+questions of great  constitutional significance.  The 
+granting of such a stay does not necessarily forecast 
+one party’s likelihood of success on the merits.   
+A stay may be warranted where  “[t]he underlying 
+issue in th[e] case … has not heretofore been passed 
+upon by this Court and is of continuing importance.” 
+McLeod v. Gen. Elec. Co., 87 S. Ct. 5, 6 (1966) (Harlan, 
+J.).  “[T]he existence of an important question not 
+previously passed on by th e Court” is a factor that 
+weighs in favor of a stay.  Shiffman v. Selective Serv. 
+Bd. No.5, 88 S. Ct. 1831, 1832 n.3 (1968) (Douglas, J., 
+dissenting); Certain Named and Unnamed Non -
+Citizen Children and Their Parents v. Texas, 448 U.S. 
+1327, 1332 (1980) (Powell, J., in chambers) (holding 
+that a case that “presents novel and important issues” 
+warrants a stay).  Where the appeal “raises a difficult 
+question of constitutional significance” that “also 
+8 
+involves a pressing national problem,” a stay may be  
+warranted.  Texas, 448 U.S. at 1331.   
+The moving party’s l ikelihood of success on the 
+merits is not an absolute prerequisite for such a stay.  
+Instead, in extraordinary cases,  a “fair prospect of 
+reversal” may suffice.  Karcher v. Daggett, 455 U.S. 
+1303, 1306 (1982) (Brennan, J., in chambers).  Such a 
+“fair prospect of reversal” may exist when “[t]he issues 
+underlying this case are important and difficult,” and 
+the “fair prospect” standard does not require 
+“anticipating [the Court’s] views on the merits.”  
+Times-Picayune Publ’g Corp. v. Schulingkamp, 419 
+U.S. 1301, 1309 (1974) (Powell, J., in chambers) .  A 
+stay may be warranted when the “petitioner’s position 
+… cannot be deemed insubstantial,” McLeod, 87 S. Ct. 
+at 6, and the Court need not “think it more probable 
+than not that” reversal will occur, Texas, 448 U.S. at 
+1332. 
+I. The Case’s Current Schedule Requires the 
+Court To Address Unprecedented, Very 
+Significant Constitutional Questions on a 
+Highly Expedited Basis. 
+In Trump v. United States, this Court expressed  
+the concern that “[d]espite the unprecedented nature 
+of this case, and the very significant constitutional 
+questions that it raises, the lower courts rendered 
+their decisions on a highly expedited basis.”  603 U.S. 
+593, 616 (2024).  D ue to the deadline imposed by the 
+Act and the timing of the D.C. Circuit’s decision below, 
+this Court now faces the prospect of  considering 
+“unprecedented” and “very significant constitutional 
+questions” on virtually the  same “highly expedited 
+basis” on which the D.C. Circuit acted in that historic 
+case.  See Briefing Scheduling in  United States  v. 
+Trump, No. 23- 3228 (D.C. Cir. Dec. 13, 2023) 
+(adopting a briefing schedule on Presidential 
+9 
+immunity with  opening briefs due on December 23 
+and oral argument on January 9). 
+In light of this  Court’s well-placed concerns about 
+the “highly expedited” resolution of novel , difficult, 
+and “very significant”  constitutional questions,  
+Trump, 603 U.S. at 616, t he Court should consider  
+staying the statutory deadline  for divestment  and 
+taking time to consider the merits in the ordinary 
+course.  Such an approach would allow this Court  
+more breathing space  to consider the merits , and it  
+would also allow President Trump’s Administration 
+the opportunity to pursue  a negotiated resolution 
+that, if successful,  would obviate the need for this 
+Court to decide these questions.  See Ashwander v. 
+Tennessee Valley Auth. , 297 U.S. 288, 341 (1936) 
+(Brandeis, J., concurring). 
+This Court’s recent precedent provides support for 
+this approach.  For example, i n Zubik, facing novel 
+and difficult questions of religious liberty , this Court 
+vacated the judgments of several federal courts of 
+appeals and directed the lower courts on remand to 
+“allow” the federal government and private 
+petitioners “sufficient time to resolve any outstanding 
+issues between them.”  578 U.S. at 408.  Two factors 
+influenced the Court’s decision: (1) the “gravity of the 
+dispute,” and (2) the fact that a politic al resolution 
+that could obviate the need for the federal courts to 
+decide difficult constitutional questions seemed 
+feasible.  Id.   
+The Court should consider a similar approach 
+here.  Staying the statutory deadline for divestment  
+would reflect “the gravity of the dispute,” and it would 
+give “the parties”—especially the Government, under 
+the new leadership of President Trump —“an 
+opportunity to arrive at an approach going forward 
+10 
+that accommodates” the free  speech interests of the 
+170 million Americans who use TikTok, “while at the 
+same time ensuring” that the Government’s national 
+security concerns are adequately protected.  Id.   
+This approach also draws support from the fact 
+that the January 19, 2025,  deadline for divestment 
+falls one day before President Trump takes office, and 
+is unfortunately timed to bind the hands of the 
+incoming Trump Administration on a significant issue 
+of national security and foreign policy .  As discussed 
+below, this feature of the Act, combined with others,  
+raises significant concerns under Article II of the 
+Constitution. 
+II. Three Features of the Act, Considered in 
+Combination, Raise Concerns  of Possible  
+Legislative Encroachment on Executive 
+Authority Under Article II. 
+Three features of the Act , especially when 
+considered in combination, raise concerns about  
+possible legislative encroachment on Executive 
+authority under Article II , including the Executive’s 
+power over national security and foreign affairs.   
+These serious questions alone warrant stay ing the 
+statutory deadline for more measured consideration. 
+First, while  the Act  defers to the Executive’s 
+determinations as to all other social-media platforms, 
+when it comes to TikTok, the Act  takes that 
+determination out of the Executive’s hands .  
+Pet.App.99a-100a, §  2(g)(3)(A); contrast id.  at 100a  
+§ 2(g)(3)(B)(ii).  As to TikTok alone, the Act makes the 
+determination for the Executive Branch—thus 
+effectively binding the hands of the incoming Trump 
+Administration on a significant point of foreign policy.  
+See, e.g., Pet.App.29a.  But t he Executive, not 
+11 
+Congress, is primarily charged with responsibility for 
+the United States’ national security, its foreign policy, 
+and its strategic relationship with  its geopolitical 
+rivals.  Whether Congress may dictate a particular 
+outcome by the Executive Branch on such a  
+significant, fact -intensive question of national 
+security raises a significant question under Article II. 
+Second, the statute purports to dictate how the 
+President must exercise his national  security and 
+foreign affairs authority in this sensitive area, by 
+mandating that  the President must make  key 
+determinations “through a n interagency  process.”  
+Pet.App.100a, § 2(g)(6)(A)-(B).  Whether Congress has 
+authority to dictate the specific  intra-Executive 
+procedures through which the President m ust 
+exercise his foreign  affairs power presents a nother 
+significant constitutional question.   
+Third, as the Act was signed on April 24, 2024, the 
+statutory deadline for divestment falls on the day 
+before President Trump’s inauguration, raising 
+concerns that the Act effectively  forestalls the 
+incoming Administration’s ability to address  the 
+question.  At very least, this timing raises yet another 
+significant question under Article II —a concern 
+reinforced by the first two overlapping concerns. 
+“In foreign affairs, as in the domestic realm, the 
+Constitution ‘enjoins upon its branches separateness 
+but interdependence, autonomy but reciprocity. ’”  
+Zivotofsky, 576 U.S. at 16 (quoting Youngstown Sheet 
+& Tube Co. v. Sawyer, 343 U.S. 579,  635 (1952) 
+(Jackson, J., concurring) ). Yet this Court  has long  
+recognized that there are certain areas within the 
+domain of foreign affairs that constitute “exclusive 
+power[s] of the  President,” such that “Congressional 
+commands contrary to the President ’s …  
+12 
+determinations are thus invalid.”  Trump, 603 U.S. at 
+609 (citing Zivotofsky, 576 U.S. at 32).  
+Further, t his Court has  long emphasized the  
+general primacy of Executive authority in this area .  
+“In this vast external realm ” of foreign affairs, “with 
+its important, complicated, delicate and manifold 
+problems, the President alone has the power to speak 
+or listen as a representative of the nation. ”  Curtiss-
+Wright, 299 U.S. at  319.  When it comes to treaty 
+negotiation, for example, “ [i]nto the field of 
+negotiation the Senate cannot intrude; and Congress 
+itself is powerless to invade it.”  Id.  Though this Court 
+cautions that the President’s foreign-affairs power is 
+not “unbounded,” Zivotofsky, 576 U.S. at 20,  and 
+Congress plays a significant role as well, id. , the 
+primary authority of the Executive Branch in this 
+area is long acknowledged. 
+In Curtiss-Wright, this Court observed that “[t]he 
+President is the constitutional representative of the 
+United States with regard to foreign nations. He 
+manages our concerns with foreign nations and must 
+necessarily be most competent to determine when, 
+how, and upon what subjects negotiation may be 
+urged with the greatest prospect of success.”  299 U.S. 
+at 319 (quoting 8 U.S. Sen. Reports Comm. on Foreign 
+Relations, at 24 (Feb. 15, 1816)).  “[T]he very delicate, 
+plenary and exclusive power of the President  as the 
+sole organ of the federal government in the field of 
+international relations ” is “a power which does not 
+require as a basis for its exercise an act of 
+Congress….”  Id.  at 320; see also Zivotofsky, 576 U.S. 
+at 14 ( recognizing that “functional considerations” 
+dictate that “the Nation must have a single policy”  
+regarding foreign-state recognition). 
+13 
+Thus, “congressional legislation which is to be 
+made effective through negotiation and inquiry within 
+the international field must often accord to the 
+President a degree of discretion and freedom from 
+statutory restriction  which would not be admissible 
+were domestic affairs alone involved. ”  Curtiss-
+Wright, 299 U.S. at 320  (emphasis added).  
+Ultimately, t he President, “ not Congress, has the 
+better opportunity of knowing the conditions which 
+prevail in foreign countries….”  Id.   
+Under these principles,  the three features of the 
+statute noted above—especially considered in 
+combination—raise concerns of possible legislative 
+encroachment on Executive authority. First, as noted 
+above, the statute defers to the Executive Branch’s 
+determinations of national security risks as to every 
+other social -media platform, but when it comes to 
+TikTok alone, the Act  purports to make the 
+determination for the Executive Branch.   Pet.App. 
+99a-100a, § 2(g)(3)(A), (B).  This singling out of TikTok 
+raises a serious question whether the Act grants the 
+President the requisite “degree of discretion and 
+freedom from statutory restriction” in his conduct of 
+foreign affairs, Curtiss-Wright, 299 U.S. at 320.  This 
+question is particularly significant  in the context of  
+the Nation’s complex, ever-evolving relationship with 
+one of its most challenging geopolitical rivals.        
+Second, the statute mandates that the President 
+must make key foreign policy determinations through 
+a specific,  dictated procedure, i.e., “through an 
+interagency process.”  Pet.App.100a, § 2(g)(6)(A) -(B).  
+Whether Congress has the authority to dictate that 
+the President must use certain specific procedures to 
+make sensitive national -security determinations  
+presents a significant constitutional question.  At the 
+14 
+very least, if the President’s authority is bound by the 
+recommendations or conclusions  of such an 
+“interagency process,” the provision would raise grave 
+Article II concerns.   Cf. Loper- Bright Enterprises v.  
+Raimondo, 144 S. Ct. 2244 (2024). 
+Third, the Act was signed on April 24, 2024, thus 
+triggering a 270 -day deadline for divestment by 
+January 19, 2025—one day before President Biden’s 
+successor would take office.   Pet.App.97a, § 2(a)(2).   
+This timing binds the hands of the incoming 
+Administration on a significant  issue of national 
+security and foreign policy , and thus it  raises 
+significant questions under Article II.  When it comes 
+to foreign policy regarding our geopolitical rivals, the 
+Executive Branch must “speak ... with one voice,” and 
+“[t]hat voice must be the President’s.”  Zivotofsky, 576 
+U.S. at 14 (quoting, in part,  American Ins. Ass ’n v. 
+Garamendi, 539 U.S. 396, 424 (2003) ).  “Between the 
+two political branches, only the Executive has the 
+characteristic of unity at all times. And with unity 
+comes the ability to exercise, to a greater degree, 
+‘[d]ecision, activity, secrecy, and dispatch. ’”  Id.  
+(quoting T
+HE FEDERALIST NO. 70, at  424 (A. 
+Hamilton)).  This principle applies not just to the 
+outgoing, but also —and arguably with even more 
+strength due to the fact that it is that President which 
+will be left to handle the results of any such action —
+the incoming President of the United States. 
+III. The Case Presents Novel, Difficult, and 
+Significant First Amendment Questions. 
+A stay of the statutory deadline is also justified on 
+the basis that the case presents a novel, difficult, and 
+significant tension between national security 
+concerns and the  free speech interests of  over 170 
+million ordinary Americans. 
+15 
+To be sure, the national  security concerns 
+presented by ByteDance and TikTok appear to be 
+significant and pressing.   No one knows this better 
+than President Trump, who has issued multiple 
+orders expressing concerns similar to those that the 
+Government cites to defend the Act.   See Executive 
+Order No. 13942, Addressing the Threat Posed by 
+TikTok, 85 Fed. Reg. 48637 (Aug. 6, 2020); Regarding 
+the Acquisition of Musical.ly by ByteDance Ltd. , 85 
+Fed. Reg. 51297 (Aug. 14, 2020).   
+On the other hand, neither the United States’ 
+relationship with the People’s Republic of China, nor 
+the federal government’s involvement in social-media 
+censorship, has remained static during  the last four 
+years.  On the contrary,  recent historical 
+developments reinforce the significant First 
+Amendment concerns raised by the petitioners here. 
+First, as discussed above, the President alone, not 
+Congress or the federal courts, is charged with the 
+primary responsibility for the United States’ national 
+security and foreign policy —a responsibility that 
+President Trump will assume on January 20, 2025, 
+one day after the Act’s arbitrary deadline, which may 
+be extended under the terms of the Act itself. 
+Second, the Act  exercises a n extraordinary 
+power—the power to effectively shut down an entire 
+social-media platform with over 170 million domestic 
+users based in  large part on  the government’s  
+concerns about disfavored speech on the platform .  
+The exercise of this power risks inadvertently setting 
+a troubling global precedent.  A few months after the 
+Act was passed, Brazil—a Western democracy of more 
+than 216 million people —shut down the platform X  
+(formerly Twitter) within its borders  for more than a 
+month.  Brazil’s action was reportedly  linked to  
+16 
+government officials’ demands that X censor specific 
+speakers who were critical of the government: “ On 
+Aug. 31, tensions came to a head when [a Brazilian 
+judge] dramatically blocked X for failing to deactivate 
+the accounts of dozens of supporters of former far -
+right president Jair Bolsonaro …. ”  Brazil’s Supreme 
+Court Lifts Ban on Social Media Site X, supra.   
+Reportedly, Brazilian officials “had been feuding [with 
+X] for months  … over allegations that X was 
+supporting a network of people known as digital 
+militias who allegedly spread defamatory fake news 
+and threats against Supreme Court justices.”  Id. 
+The close chronological sequence is startling—and 
+troubling.  This Court should  be deeply concerned 
+about setting a precedent that could create a slippery 
+slope toward global government censorship of social -
+media speech.  The power of a Western government to 
+ban an entire social -media platform with more than 
+100 million users, at the very least, should be 
+considered and exercised with the most extreme 
+care—not  reviewed on a “highly expedited basis.”  
+Trump, 603 U.S. at 616. 
+Third, the D.C. Circuit’s majority opinion gives 
+limited consideration and weight to the free- speech 
+interests of the  over 170 million American s who use 
+TikTok.  After exhaustively analyzing the 
+government’s interest and concerns , th e opinion 
+belatedly acknowledges  in its conclusion  that “this 
+decision has significant implications for TikTok and 
+its users.”  Pet.App.65a.  This recital “tests the limits 
+of understatement.”  Gonzales v. Oregon, 546 U.S. 
+243, 286 (2006) (Scalia, J., dissenting). TikTok’s over 
+170 million users include American content creators 
+whose entire livelihood may rest on  their use of the 
+platform.  Th ose users include political candidates 
+employing TikTok to reach new audiences with  core 
+17 
+political speech  in their “campaigns for political 
+office,” during which  the First Amendment’s 
+“constitutional guarantee has its fullest and most 
+urgent application.”  Susan B. Anthony List, 573 U.S. 
+at 162 (quoting Monitor Patriot Co., 401 U.S. at 272).  
+They include grandparents sharing videos of  beloved 
+grandchildren, teenagers connecting with friends, and 
+people posting  rather silly viral videos —in other 
+words, the entire range of protected freedom of 
+expression, from momentous to trivial,  all of which 
+faces a government-ordered shut-down. 
+By contrast,  while purportedly applying strict 
+scrutiny, the D.C. Circuit’s opinion confers near-
+plenary deference to  the say-so of  national-security 
+officials on matters of social -media censorship.  See, 
+e.g., Pet.App.32a, 33 a, 38 a, 43 a-44a, 47a-48a, 52 a.  
+Yet, in the last four years, federal officials—including  
+national-security officials—have  repeatedly procured 
+social-media censorship of disfavored content and 
+viewpoints through a combination of pressure, 
+coercion, and deception.  See, e.g., Missouri v. Biden, 
+680 F. Supp. 3d 630, 675- 679, 693, 701-03 (W.D. La. 
+2023); Missouri v. Biden, 83 F.4th 350,  365, 388- 92 
+(5th Cir. 2023), both rev’d on other grounds sub nom. 
+Murthy v. Missouri, 603 U.S. 43 (2024).  For example, 
+in late 2020, federal national  security officials “likely 
+misled social- media companies into believing the 
+Hunter Biden laptop story was Russian 
+disinformation, which resulted in [wrongful] 
+suppression of the story a few weeks prior to the 2020 
+Presidential election,” and this deliberate campaign of 
+“deception” was “just another form of coercion.”  
+Missouri, 680 F. Supp. 3d at 702.  Likewise, “[f]or 
+months in 2021 and 2022, a coterie of officials at the 
+highest levels of the Federal Government 
+continuously harried and implicitly threatened 
+18 
+Facebook with potentially crippling consequences if it 
+did not comply with their wishes about the 
+suppression of certain COVID–19-related speech.  Not 
+surprisingly, Facebook repeatedly yielded.”  Murthy , 
+603 U.S. at 79 (Alito, J., dissenting).        
+There is  a jarring parallel between the D.C. 
+Circuit’s near-plenary deference to national  security 
+officials calling for social -media censorship, and the 
+recent, well-documented history of  federal officials’ 
+extensive involvement in social -media censorship 
+efforts directed at the speech of tens of millions 
+Americans.  See Murthy , 603 U.S. at 78.  This recent 
+history of sheds new light on the Act’s stark 
+restriction—a restriction which impact s the free-
+speech interests of over 170 million Americans with “a 
+blunderbuss” rather than “ a scalpel. ”  Heckler v. 
+Chaney, 470 U.S. 821, 852 (1985)  (Marshall, J., 
+concurring in the judgment).   
+In short, there are compelling reasons to stay the 
+Act’s deadline and allow President Trump to seek a 
+negotiated resolution once in office. 
+CONCLUSION 
+President Trump takes no position on the 
+underlying merits of this dispute.  Instead, he  
+respectfully requests that the Court consider staying 
+the Act’s deadline for divestment of January 19, 2025, 
+while it  considers the merits of this case, thus 
+permitting President Trump’s incoming 
+Administration the opportunity to pursue a political 
+resolution of the questions at issue in the case. 
+ 
+ 
+ 
+ 
+19 
+December 27, 2024 Respectfully submitted, 
+ JAMES OTIS LAW GROUP 
+D. John Sauer 
+  Counsel of Record 
+13321 N. Outer Forty Rd. 
+Suite 300 
+St. Louis, Missouri 63017 
+(314) 562-0031 
+John.Sauer@james-otis.com 
+Counsel for Amicus Curiae 
+President Donald J. Trump 
+ 

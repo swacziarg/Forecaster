@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "topic": "bitcoin",
+  "title": "Bitcoin $100K mainstream five-card selection",
+  "frozenAt": "2026-09-06T20:21:50Z",
+  "selectionBasis": "Freeze on accessible, source-backed, non-circular facts with varied mechanisms and spacing before fresh event-response calculation.",
+  "eventIds": [
+    "hong-kong-etfs",
+    "mtgox-repayments",
+    "fed-50-cut",
+    "trump-election",
+    "microstrategy-purchase"
+  ],
+  "initialOrder": [
+    "hong-kong-etfs",
+    "mtgox-repayments",
+    "fed-50-cut",
+    "trump-election",
+    "microstrategy-purchase"
+  ],
+  "inclusionReasons": {
+    "hong-kong-etfs": "Recognizable access/product milestone; HKEX is the primary exchange record and the event broadens the story beyond U.S. policy.",
+    "mtgox-repayments": "Concrete supply/liquidity development with an official trustee notice; provides a negative-side mechanism rather than five bullish cards.",
+    "fed-50-cut": "Mainstream macro catalyst with an exact Federal Reserve release time and a distinct financial-conditions mechanism.",
+    "trump-election": "Highly accessible political result with an AP race-call time and a policy-expectations mechanism.",
+    "microstrategy-purchase": "Mainstream corporate-adoption fact from an SEC filing; tests whether disclosed treasury demand is distinct from the election narrative."
+  },
+  "exclusions": {
+    "ether-etf-approval": "Removed to avoid a specialist-heavy pair of ETF/regulatory cards; it is retained in the original eight-event study.",
+    "ibit-options": "Removed because it is a second specialist market-structure/regulatory card and overlaps the Fed event window.",
+    "gensler-departure": "Removed for this mainstream five because the later regulatory-transition story is narrower than the selected macro, political, supply, access, and corporate mix.",
+    "threshold-crossing": "Never an event card: the contract's own underlying BTC-USD threshold crossing is circular with the target outcome and is reserved for the reveal-only ending."
+  },
+  "priorExposure": "The existing eight-event Bitcoin study, broad pre-ending screen, raw/normalized probability history, and prior draft measurements were visible in the repository before this freeze. This is not a blinded preregistration. No new event-response calculation was used to choose these five.",
+  "measurementPlan": "After this freeze, calculate only with the retained Polymarket YES probability series, MONTHS_PROFILE, existing calculateStudyImpacts implementation, and pairwise-anchor-1pt-v1 tie rule. No spot-price substitution, interpolation, carried prices, contract splice, or score-driven replacement.",
+  "approval": { "status": "pending", "humanApprover": null, "approvedAt": null }
+}

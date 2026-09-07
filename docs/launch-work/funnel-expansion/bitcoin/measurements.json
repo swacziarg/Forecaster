@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "calculatedAt": "2026-09-06T20:22:30Z",
+  "selectionFreeze": "selection-freeze.json",
+  "selectionFreezeHash": "433984381fff969e009013ca006339427d8c812ad94e4616285720a3cbf79ad8",
+  "invocation": "node --experimental-strip-types --input-type=module -e '<read public/data/bitcoin-2024/polymarket-hourly.csv>; parseMarketCsv -> normalizeObservationPerspective(YES) -> normalizeObservationSeries(60) -> calculateStudyImpacts(selectedEvents, MONTHS_PROFILE); createTieGroups(impacts, 0.01); pairwiseAgreement(initialOrder, groups)>'",
+  "dataset": {
+    "id": "polymarket-bitcoin-100k-2024-hourly-v1",
+    "path": "public/data/bitcoin-2024/polymarket-hourly.csv",
+    "normalizedSha256": "5d7aa54719ff32af2892aaba94fa6b33adc714bf558d82691a480c75bfbbab69",
+    "observationsAfterNormalization": 6609,
+    "missingBuckets": ["2024-05-01T19:00:00Z", "2024-07-21T18:00:00Z", "2024-11-05T22:00:00Z"],
+    "policy": "Retained Polymarket YES probability series; no BTC spot prices, interpolation, carrying, or cross-contract splice. Three missing hours remain missing."
+  },
+  "measurementProfile": {
+    "id": "months-hourly-v1",
+    "cadenceMinutes": 60,
+    "anticipation": { "startHours": -84, "endHours": -12 },
+    "reference": { "startHours": -12, "endHours": 0 },
+    "immediate": { "startHours": 0, "endHours": 6 },
+    "stabilized": { "startHours": 18, "endHours": 36 },
+    "delayed": { "startHours": 48, "endHours": 72 },
+    "quality": { "minimumCoverage": 0.6, "maximumGapShare": 0.5, "minimumDistinctUpdates": 3, "maximumSpread": 0.2 },
+    "tieThreshold": 0.01,
+    "scoringVersion": "pairwise-anchor-1pt-v1"
+  },
+  "events": [
+    {
+      "eventId": "hong-kong-etfs",
+      "informationKnownAt": "2024-04-30T01:30:00Z",
+      "shortTermResponse": -0.1175,
+      "anticipationMove": -0.0075,
+      "immediateResponse": 0.0025,
+      "delayedIncrement": 0.04,
+      "cumulativeDelayedResponse": -0.0775,
+      "ordinaryMovement": { "classification": "unusually large", "threshold": 0.0505, "sampleCount": 176 },
+      "qualityStatus": "usable",
+      "windows": {
+        "anticipation": { "start": "2024-04-26T13:30:00.000Z", "end": "2024-04-29T13:30:00.000Z", "level": 0.425, "expectedBuckets": 72, "validBuckets": 72, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 72, "status": "usable" },
+        "reference": { "start": "2024-04-29T13:30:00.000Z", "end": "2024-04-30T01:30:00.000Z", "level": 0.4175, "expectedBuckets": 12, "validBuckets": 12, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 12, "status": "usable" },
+        "immediate": { "start": "2024-04-30T01:30:00.000Z", "end": "2024-04-30T07:30:00.000Z", "level": 0.42, "expectedBuckets": 6, "validBuckets": 6, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 6, "status": "usable" },
+        "stabilized": { "start": "2024-04-30T19:30:00.000Z", "end": "2024-05-01T13:30:00.000Z", "level": 0.3, "expectedBuckets": 18, "validBuckets": 18, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 18, "status": "usable" },
+        "delayed": { "start": "2024-05-02T01:30:00.000Z", "end": "2024-05-03T01:30:00.000Z", "level": 0.34, "expectedBuckets": 24, "validBuckets": 24, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 24, "status": "usable" }
+      }
+    },
+    {
+      "eventId": "mtgox-repayments",
+      "informationKnownAt": "2024-07-05T01:00:00Z",
+      "shortTermResponse": -0.03,
+      "anticipationMove": -0.03,
+      "immediateResponse": -0.005,
+      "delayedIncrement": 0.025,
+      "cumulativeDelayedResponse": -0.005,
+      "ordinaryMovement": { "classification": "ordinary", "threshold": 0.0505, "sampleCount": 176 },
+      "qualityStatus": "usable",
+      "windows": {
+        "anticipation": { "start": "2024-07-01T13:00:00.000Z", "end": "2024-07-04T13:00:00.000Z", "level": 0.31, "expectedBuckets": 72, "validBuckets": 72, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 72, "status": "usable" },
+        "reference": { "start": "2024-07-04T13:00:00.000Z", "end": "2024-07-05T01:00:00.000Z", "level": 0.28, "expectedBuckets": 12, "validBuckets": 12, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 12, "status": "usable" },
+        "immediate": { "start": "2024-07-05T01:00:00.000Z", "end": "2024-07-05T07:00:00.000Z", "level": 0.275, "expectedBuckets": 6, "validBuckets": 6, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 6, "status": "usable" },
+        "stabilized": { "start": "2024-07-05T19:00:00.000Z", "end": "2024-07-06T13:00:00.000Z", "level": 0.25, "expectedBuckets": 18, "validBuckets": 18, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 18, "status": "usable" },
+        "delayed": { "start": "2024-07-07T01:00:00.000Z", "end": "2024-07-08T01:00:00.000Z", "level": 0.275, "expectedBuckets": 24, "validBuckets": 24, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 24, "status": "usable" }
+      }
+    },
+    {
+      "eventId": "fed-50-cut",
+      "informationKnownAt": "2024-09-18T18:00:00Z",
+      "shortTermResponse": 0.0275,
+      "anticipationMove": -0.005,
+      "immediateResponse": 0,
+      "delayedIncrement": -0.0225,
+      "cumulativeDelayedResponse": 0.005,
+      "ordinaryMovement": { "classification": "ordinary", "threshold": 0.0505, "sampleCount": 176 },
+      "qualityStatus": "usable",
+      "windows": {
+        "anticipation": { "start": "2024-09-15T06:00:00.000Z", "end": "2024-09-18T06:00:00.000Z", "level": 0.13, "expectedBuckets": 72, "validBuckets": 72, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 72, "status": "usable" },
+        "reference": { "start": "2024-09-18T06:00:00.000Z", "end": "2024-09-18T18:00:00.000Z", "level": 0.125, "expectedBuckets": 12, "validBuckets": 12, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 12, "status": "usable" },
+        "immediate": { "start": "2024-09-18T18:00:00.000Z", "end": "2024-09-19T00:00:00.000Z", "level": 0.125, "expectedBuckets": 6, "validBuckets": 6, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 6, "status": "usable" },
+        "stabilized": { "start": "2024-09-19T12:00:00.000Z", "end": "2024-09-20T06:00:00.000Z", "level": 0.1525, "expectedBuckets": 18, "validBuckets": 18, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 18, "status": "usable" },
+        "delayed": { "start": "2024-09-20T18:00:00.000Z", "end": "2024-09-21T18:00:00.000Z", "level": 0.13, "expectedBuckets": 24, "validBuckets": 24, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 24, "status": "usable" }
+      }
+    },
+    {
+      "eventId": "trump-election",
+      "informationKnownAt": "2024-11-06T10:34:00Z",
+      "shortTermResponse": -0.035,
+      "anticipationMove": 0.055,
+      "immediateResponse": -0.0225,
+      "delayedIncrement": 0.055,
+      "cumulativeDelayedResponse": 0.02,
+      "ordinaryMovement": { "classification": "ordinary", "threshold": 0.0505, "sampleCount": 176 },
+      "qualityStatus": "usable",
+      "overlaps": ["microstrategy-purchase"],
+      "windows": {
+        "anticipation": { "start": "2024-11-02T22:34:00.000Z", "end": "2024-11-05T22:34:00.000Z", "level": 0.175, "expectedBuckets": 72, "validBuckets": 71, "coverage": 0.9861111111111112, "maximumGapBuckets": 0, "distinctUpdates": 71, "status": "usable" },
+        "reference": { "start": "2024-11-05T22:34:00.000Z", "end": "2024-11-06T10:34:00.000Z", "level": 0.23, "expectedBuckets": 12, "validBuckets": 12, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 12, "status": "usable" },
+        "immediate": { "start": "2024-11-06T10:34:00.000Z", "end": "2024-11-06T16:34:00.000Z", "level": 0.2075, "expectedBuckets": 6, "validBuckets": 6, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 6, "status": "usable" },
+        "stabilized": { "start": "2024-11-07T04:34:00.000Z", "end": "2024-11-07T22:34:00.000Z", "level": 0.195, "expectedBuckets": 18, "validBuckets": 18, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 18, "status": "usable" },
+        "delayed": { "start": "2024-11-08T10:34:00.000Z", "end": "2024-11-09T10:34:00.000Z", "level": 0.25, "expectedBuckets": 24, "validBuckets": 24, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 24, "status": "usable" }
+      }
+    },
+    {
+      "eventId": "microstrategy-purchase",
+      "informationKnownAt": "2024-11-11T13:00:00Z",
+      "shortTermResponse": 0.26,
+      "anticipationMove": 0.09,
+      "immediateResponse": 0.1025,
+      "delayedIncrement": 0.115,
+      "cumulativeDelayedResponse": 0.375,
+      "ordinaryMovement": { "classification": "unusually large", "threshold": 0.0505, "sampleCount": 176 },
+      "qualityStatus": "usable",
+      "overlaps": ["trump-election"],
+      "windows": {
+        "anticipation": { "start": "2024-11-08T01:00:00.000Z", "end": "2024-11-11T01:00:00.000Z", "level": 0.245, "expectedBuckets": 72, "validBuckets": 72, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 72, "status": "usable" },
+        "reference": { "start": "2024-11-11T01:00:00.000Z", "end": "2024-11-11T13:00:00.000Z", "level": 0.335, "expectedBuckets": 12, "validBuckets": 12, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 12, "status": "usable" },
+        "immediate": { "start": "2024-11-11T13:00:00.000Z", "end": "2024-11-11T19:00:00.000Z", "level": 0.4375, "expectedBuckets": 6, "validBuckets": 6, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 6, "status": "usable" },
+        "stabilized": { "start": "2024-11-12T07:00:00.000Z", "end": "2024-11-13T01:00:00.000Z", "level": 0.595, "expectedBuckets": 18, "validBuckets": 18, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 18, "status": "usable" },
+        "delayed": { "start": "2024-11-13T13:00:00.000Z", "end": "2024-11-14T13:00:00.000Z", "level": 0.71, "expectedBuckets": 24, "validBuckets": 24, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 24, "status": "usable" }
+      }
+    }
+  ],
+  "qualitySummary": { "windowsRequired": 25, "windowsUsable": 25, "allWindowsUsable": true },
+  "tieGroupsDescending": [["microstrategy-purchase"], ["fed-50-cut"], ["mtgox-repayments", "trump-election"], ["hong-kong-etfs"]],
+  "comparablePairs": { "agreed": 1, "comparable": 9, "percent": 11 },
+  "tieDisclosure": "Mt. Gox repayments and the election result are within the unchanged 1-point anchor-window tie threshold. The result is still comparable: 9 non-tied pairs remain; the five-card set is not a zero-comparison game.",
+  "interpretationBoundary": "These are descriptive prediction-probability responses, not causal effects. The apparent MicroStrategy response overlaps the post-election period and must not be narrated as isolated corporate causation."
+}

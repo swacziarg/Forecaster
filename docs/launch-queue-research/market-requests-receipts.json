@@ -1,0 +1,90 @@
+[
+  {
+    "key": "tiktok-event",
+    "url": "https://gamma-api.polymarket.com/events?slug=tiktok-banned-in-the-us-before-may-2025",
+    "retrievedAt": "2026-09-06T00:20:28.694023+00:00",
+    "bytes": 7350,
+    "sha256": "8f53cb8c1e1e86868821a24244dd48a7240780720e0ac770cce4bce024d0eadd",
+    "path": "evidence/tiktok-event.json"
+  },
+  {
+    "key": "canada-event",
+    "url": "https://gamma-api.polymarket.com/events?slug=which-party-wins-most-seats-in-canadian-election",
+    "retrievedAt": "2026-09-06T00:20:28.695566+00:00",
+    "bytes": 32787,
+    "sha256": "bc7a6aee97400e175555dba7d55ce0b053e00f85f8a7455baab3c5282cd16843",
+    "path": "evidence/canada-event.json"
+  },
+  {
+    "key": "gta-event",
+    "url": "https://gamma-api.polymarket.com/events?slug=gta-vi-released-in-2025",
+    "retrievedAt": "2026-09-06T00:20:28.693994+00:00",
+    "bytes": 5912,
+    "sha256": "fe0bd0ac8b8e61ef8f3a4802cac1e826f2c99bf43a572aa8d813f76bd1b38450",
+    "path": "evidence/gta-event.json"
+  },
+  {
+    "key": "twitter-event",
+    "url": "https://gamma-api.polymarket.com/events?slug=will-twitter-agree-to-a-musk-acquisition-by-june-1-2022",
+    "retrievedAt": "2026-09-06T00:20:28.688268+00:00",
+    "bytes": 7645,
+    "sha256": "c7242d8623e993dfadbfd4e553f7177db959b146daa78225a7d1a79b49daf346",
+    "path": "evidence/twitter-event.json"
+  },
+  {
+    "key": "superbowl-event",
+    "url": "https://gamma-api.polymarket.com/events?slug=superbowl-champion-2025",
+    "retrievedAt": "2026-09-06T00:20:28.732069+00:00",
+    "bytes": 107058,
+    "sha256": "aa8a5d707699884c7abcfde7e39b0621976cc735b97a989ec023ddf754149dd7",
+    "path": "evidence/superbowl-event.json"
+  },
+  {
+    "key": "trump-market",
+    "url": "https://gamma-api.polymarket.com/markets/253591",
+    "retrievedAt": "2026-09-06T00:20:28.890880+00:00",
+    "bytes": 3892,
+    "sha256": "7c59b9a4930ed53711cdb971d7f0c15e3a403c4f18e711fa0381ac7b8b993636",
+    "path": "evidence/trump-market.json"
+  },
+  {
+    "key": "eagles-market",
+    "url": "https://gamma-api.polymarket.com/markets/503322",
+    "retrievedAt": "2026-09-06T00:20:28.903856+00:00",
+    "bytes": 3418,
+    "sha256": "f575a0b8649e389a25a6c73ec6266e6db956fb477a24e0f646310e5e5d81a9f0",
+    "path": "evidence/eagles-market.json"
+  },
+  {
+    "key": "bitcoin-market",
+    "url": "https://gamma-api.polymarket.com/markets/255229",
+    "retrievedAt": "2026-09-06T00:20:28.928442+00:00",
+    "bytes": 3946,
+    "sha256": "f248b962c27c8fda3a51a16710aa2580eca15c3d95a97aa04dda9063699d40f7",
+    "path": "evidence/bitcoin-market.json"
+  },
+  {
+    "key": "fed-market",
+    "url": "https://gamma-api.polymarket.com/markets/504069",
+    "retrievedAt": "2026-09-06T00:20:28.912933+00:00",
+    "bytes": 4168,
+    "sha256": "efaad084b9ff1cfdbdb481fd9c00450aa23c38ddf8cec55912ff2664eb9ae72e",
+    "path": "evidence/fed-market.json"
+  },
+  {
+    "key": "kalshi25",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets?event_ticker=KXOSCARPIC-25&limit=100",
+    "retrievedAt": "2026-09-06T00:20:28.854703+00:00",
+    "bytes": 26439,
+    "sha256": "bf9a2b4d2a822ee2d1b49a1fcc6de3c91a578bddc87b1f70304d24162f9390b3",
+    "path": "evidence/kalshi25.json"
+  },
+  {
+    "key": "kalshi26",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXOSCARPIC-26-ONE",
+    "retrievedAt": "2026-09-06T00:20:28.928686+00:00",
+    "bytes": 1662,
+    "sha256": "151d9ff463871c5d7c0598a1b30e3d2457899cbf2040b85941afee36ca73292c",
+    "path": "evidence/kalshi26.json"
+  }
+]

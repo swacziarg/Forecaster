@@ -1,0 +1,224 @@
+{
+  "artifactType": "Canada funnel-expansion evidence manifest",
+  "version": "canada-liberal-comeback-v2",
+  "preparedAt": "2026-09-06T20:16:51Z",
+  "capturePolicy": "Current-byte snapshots identify the bytes retrieved on the stated retrieval date; they do not prove historical immutability. Public-time claims use the conservative upper bound implied by each source's declared precision. Unknown publication times are not eligible for pre-reveal claims.",
+  "market": {
+    "provider": "Polymarket",
+    "marketId": "517586",
+    "metadataUrl": "https://gamma-api.polymarket.com/markets/517586",
+    "marketUrl": "https://polymarket.com/event/which-party-wins-most-seats-in-canadian-election/will-the-liberal-party-win-the-most-seats-in-the-next-canadian-election",
+    "yesToken": "97369614101217511684993615789719226906296227283714425485701044468625942166745",
+    "metadataPath": "../../../../launch-queue-research/catalogue.json",
+    "metadataSha256": "b3ed13befadf1d154bd73104b1df2f696e3c914d9dd447efe9b12ea5d1e60924"
+  },
+  "dataset": {
+    "sourceNormalizedPath": "../../../../launch-queue-research/evidence/canada-normalized.json",
+    "sourceNormalizedSha256": "4a4931cd09ef1d4f685610dfebf6a912353412230bbfb3b3c079968b54c1542e",
+    "sourceAuditPath": "../../../../launch-queue-research/evidence/canada-audit.json",
+    "sourceAuditSha256": "d970c39981112ecfea3ac7431b07a033a1a84e936d4d2bff28d37ff60eff9103",
+    "normalizedOutputPath": "canada-hourly.csv",
+    "normalizedOutputSha256": "af754817f1f07f5b6eb71a0658a40faeb9f665398a7b660eb579d05f024ae117",
+    "observations": 2723,
+    "coverageStart": "2025-01-06T19:00:00Z",
+    "coverageEnd": "2025-04-30T05:00:00Z",
+    "internalMissingBuckets": 0,
+    "markPolicy": "Latest Polymarket source price per UTC hour, treated as trade; no filling, interpolation, carried prices, or cross-contract splicing."
+  },
+  "eligibleSources": [
+    {
+      "id": "carney-launch-citynews",
+      "title": "Mark Carney launches federal Liberal leadership bid in Edmonton",
+      "publisher": "CityNews Edmonton",
+      "url": "https://edmonton.citynews.ca/video/2025/01/16/mark-carney-launches-federal-liberal-leadership-bid-in-edmonton/",
+      "publishedAt": "2025-01-17T01:10:00Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-06T16:14:05Z",
+      "snapshotPath": "evidence/carney-launch-primary.html",
+      "snapshotHash": "f80ce3fa8c2e89299a31f2fe88f9201e9074ffd2865b38916880d2ea008c3366",
+      "captureStatus": "captured-current-bytes",
+      "role": "primary",
+      "passage": "The video-page title and metadata identify Mark Carney's federal Liberal leadership bid in Edmonton and report the Jan. 16 launch at 6:10 p.m. MST.",
+      "publicTimeJustification": "The page supplies a minute-level public-time upper bound, retained as 2025-01-17T01:10:00Z; it is not asserted to be the first public access everywhere."
+    },
+    {
+      "id": "carney-launch-ap",
+      "title": "Former Bank of England governor Mark Carney enters race to be Canada's next prime minister",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/84b89e724e1673b23d60508de9b45ac4",
+      "publishedAt": "2025-01-16T22:43:36Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-06T16:14:05Z",
+      "snapshotPath": "evidence/carney-launch-corroboration.html",
+      "snapshotHash": "490a5704a38301d5530de8cfbc7a9220564f3a82bf45a86b833a3d4c6f3580f1",
+      "captureStatus": "captured-current-bytes",
+      "role": "corroborating",
+      "passage": "AP reports that former Bank of England governor Mark Carney entered the Liberal leadership race on Jan. 16.",
+      "publicTimeJustification": "The timestamp precedes the retained CityNews cutoff and independently corroborates same-day public availability."
+    },
+    {
+      "id": "tariffs-pmo",
+      "title": "Announcement in response to U.S. tariffs on Canada",
+      "publisher": "Prime Minister of Canada",
+      "url": "https://www.pm.gc.ca/en/videos/2025/02/01/announcement-response-us-tariffs-canada",
+      "publishedAt": "2025-02-01",
+      "publishedPrecision": "day",
+      "retrievedAt": "2026-09-06T16:14:05Z",
+      "snapshotPath": "evidence/tariffs-primary.html",
+      "snapshotHash": "3dee818bf817e66fc4e73eaef0e9481dc61e4f265d43aab7046a79720b278eb8",
+      "captureStatus": "captured-current-bytes",
+      "role": "primary",
+      "passage": "The official page is dated Feb. 1 and records Canada's response to the U.S. tariff order, including 25% counter-tariffs on $155 billion of U.S. goods.",
+      "publicTimeJustification": "Date-only publication supports the conservative end-of-day America/Toronto cutoff 2025-02-02T05:00:00Z; no broadcast minute is invented."
+    },
+    {
+      "id": "tariffs-ap",
+      "title": "Trump puts tariffs on Canada, Mexico and China, spurring trade war",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/753a09d56cd318f2eb1d2efe3c43b7d4",
+      "publishedAt": "2025-02-01T14:14:28Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-06T16:14:05Z",
+      "snapshotPath": "evidence/tariffs-corroboration.html",
+      "snapshotHash": "15f7747b8e80619c6e2584dcb78c381f1729ea5cdc2edade4d9f744284a30557",
+      "captureStatus": "captured-current-bytes",
+      "role": "corroborating",
+      "passage": "AP records the U.S. tariff order that prompted Canada's response and the ensuing trade-war context.",
+      "publicTimeJustification": "The contemporary timestamp is before the end-of-day cutoff and supports the event cluster without claiming a precise Canadian announcement minute."
+    },
+    {
+      "id": "leadership-cpac",
+      "title": "Mark Carney delivers victory speech",
+      "publisher": "CPAC",
+      "url": "https://www.youtube.com/watch?v=tJZ0Ib3f6jw",
+      "publishedAt": "2025-03-09",
+      "publishedPrecision": "day",
+      "retrievedAt": "2026-09-06T16:14:05Z",
+      "snapshotPath": "evidence/leadership-primary.html",
+      "snapshotHash": "5ff2aa8f0927b3b742ec2a124d4974daedd8f541a5d4a291f036f0373a54186c",
+      "captureStatus": "captured-current-bytes",
+      "role": "primary",
+      "passage": "The CPAC event record is dated March 9 and identifies Carney's victory speech after the Liberal leadership vote.",
+      "publicTimeJustification": "Day-only publication supports the conservative end-of-day America/Toronto cutoff 2025-03-10T04:00:00Z."
+    },
+    {
+      "id": "leadership-reuters",
+      "title": "Mark Carney wins race to replace Canada's Trudeau",
+      "publisher": "Reuters",
+      "url": "https://www.youtube.com/watch?v=E-6hzLw0_1g",
+      "publishedAt": "2025-03-09",
+      "publishedPrecision": "day",
+      "retrievedAt": "2026-09-06T16:14:05Z",
+      "snapshotPath": "evidence/leadership-corroboration.html",
+      "snapshotHash": "6c0232d582a2ab67fbab0accba2e1e1199eeebd36c9a2a9ad95591c9512a7d5d",
+      "captureStatus": "captured-current-bytes",
+      "role": "corroborating",
+      "passage": "Reuters reports Carney's March 9 Liberal leadership victory and replacement of Trudeau.",
+      "publicTimeJustification": "Day-only publication corroborates the same dated event; it does not justify a signing or announcement minute."
+    },
+    {
+      "id": "election-gg",
+      "title": "Dissolution of Parliament",
+      "publisher": "Governor General of Canada",
+      "url": "https://www.gg.ca/en/node/15738",
+      "publishedAt": "2025-03-23",
+      "publishedPrecision": "day",
+      "retrievedAt": "2026-09-06T16:14:05Z",
+      "snapshotPath": "evidence/election-call-primary.html",
+      "snapshotHash": "e460b923e92590c2db760a98288efe87b9ffa228e8cc58821e009d79491488d1",
+      "captureStatus": "captured-current-bytes",
+      "role": "primary",
+      "passage": "The Governor General record says Mark Carney advised dissolution on March 23 and that election writs were issued.",
+      "publicTimeJustification": "Date-only official record supports the conservative end-of-day America/Toronto cutoff 2025-03-24T04:00:00Z."
+    },
+    {
+      "id": "election-ap",
+      "title": "Canada's prime minister and his opponent kick off election saying Trump must respect sovereignty",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/canada-election-prime-minister-mark-carney-trump-dd083f4f1cf9622742703eee5be6721a",
+      "publishedAt": "2025-03-23T12:56:48Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-06T18:09:49Z",
+      "snapshotPath": "evidence/election-call-ap.html",
+      "snapshotHash": "ba3b4d5a4a35939ce00001d64c1afa65fb82eeae98029d6b9ac8a6c75a7bd119",
+      "captureStatus": "captured-current-bytes",
+      "role": "corroborating",
+      "passage": "AP's article metadata and body identify Carney's March 23 election call and the April 28 vote.",
+      "publicTimeJustification": "The same-day timestamp confirms contemporary availability but does not establish first public access or a safe event minute; the day-level anchor is retained."
+    },
+    {
+      "id": "auto-pmo",
+      "title": "Canada announces new countermeasures in response to tariffs from the United States of America",
+      "publisher": "Prime Minister of Canada",
+      "url": "https://www.pm.gc.ca/en/news/news-releases/2025/04/03/canada-announces-new-countermeasures-response-tariffs-from-united-states",
+      "publishedAt": "2025-04-03",
+      "publishedPrecision": "day",
+      "retrievedAt": "2026-09-06T16:14:05Z",
+      "snapshotPath": "evidence/auto-tariff-primary.html",
+      "snapshotHash": "dbb3df02453a846bb2b11eb0a6f63ed8f54fe4d9268c445fb01b401da7bf80ba",
+      "captureStatus": "captured-current-bytes",
+      "role": "primary",
+      "passage": "The official release describes Canada's auto-sector countermeasures, including 25% tariffs on non-CUSMA-compliant vehicles and worker/business support.",
+      "publicTimeJustification": "The official page is date-only; the retained event cutoff uses AP's earlier contemporary publication, not an invented PMO time. It supports the factual policy record but is not used to prove availability before the minute-level cutoff."
+    },
+    {
+      "id": "auto-ap",
+      "title": "Canadian prime minister says Canada will match US auto tariffs",
+      "publisher": "Associated Press",
+      "url": "https://apnews.com/article/d15ae5b0bab873450b86ca524afda3ca",
+      "publishedAt": "2025-04-03T16:24:16Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-06T16:14:05Z",
+      "snapshotPath": "evidence/auto-tariff-corroboration.html",
+      "snapshotHash": "d97f8c57dad318cac76c6022467a4ea4c0f58e845fcdc5279e6c0a8bb55eb872",
+      "captureStatus": "captured-current-bytes",
+      "role": "corroborating",
+      "passage": "AP reports contemporaneously that Canada's prime minister said Canada would match the U.S. 25% auto tariff on vehicles.",
+      "publicTimeJustification": "This timestamp is retained as the earliest defensible public cutoff for the card; it is not asserted as the policy's private occurrence time."
+    }
+  ],
+  "excludedSources": [
+    {
+      "id": "election-axios",
+      "url": "https://www.axios.com/2025/03/23/canada-carney-slams-trump-tariffs-snap-elections",
+      "snapshotPath": "../../canada/evidence/election-call-contemporary.html",
+      "snapshotHash": "d56bd272230c8eb4dd54963297c4b0e8ac427fa0c1d09dc96081b3ac97297114",
+      "reason": "The retrieved file is a Cloudflare Just a moment challenge page with no article content; it is not evidence."
+    },
+    {
+      "id": "election-elections-canada",
+      "url": "https://www.elections.ca/content.aspx?dir=rep%2Foff%2Fsta_ge45&document=p2&lang=e&section=res",
+      "snapshotPath": "../../canada/evidence/election-call-corroboration.html",
+      "snapshotHash": "3e1c888985ee3c9d42950e317a6e19b80c8ffaccfc1cd2f99a5bbd581cc10c4d",
+      "reason": "Retrospective report has unknown publication time; it is not used for any pre-reveal claim or timing anchor."
+    }
+  ],
+  "endingOnly": {
+    "claim": "The Liberal Party won the most seats in the April 28, 2025 federal election. The provider records the YES contract as resolved and closed.",
+    "visibility": "reveal-only",
+    "scoredAsCard": false,
+    "sourcePaths": [
+      "../../../../launch-queue-research/evidence/canada-event.json",
+      "../../../../launch-queue-research/catalogue.json"
+    ],
+    "sourceHashes": [
+      "bc7a6aee97400e175555dba7d55ce0b053e00f85f8a7455baab3c5282cd16843",
+      "b3ed13befadf1d154bd73104b1df2f696e3c914d9dd447efe9b12ea5d1e60924"
+    ]
+  },
+  "qualityAndTieAssessment": {
+    "allWindowsUsable": true,
+    "windowCount": 25,
+    "maximumGapBuckets": 0,
+    "overlappingSelectedEvents": [],
+    "tieThresholdPp": 1,
+    "tieGroups": [
+      ["auto-tariff-response"],
+      ["tariff-retaliation", "carney-leadership-launch", "carney-leadership-win"],
+      ["election-call"]
+    ],
+    "strictComparablePairCount": 7,
+    "tiePairCount": 3,
+    "assessment": "The middle three-card tie is reproducible from the unchanged exact-contract series and scoring function. It leaves three rank levels, but seven of ten card pairs remain strictly ordered. That is understandable for a reserve game; it is not a reason to manufacture separation or remove a card."
+  }
+}

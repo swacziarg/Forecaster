@@ -1,0 +1,47 @@
+{
+  "role": "temporal",
+  "status": "complete",
+  "startedAt": "2026-09-06T18:09:37Z",
+  "updatedAt": "2026-09-06T18:15:04Z",
+  "finishedAt": "2026-09-06T18:15:04Z",
+  "workspace": "/Users/simonwacziarg/Documents/ChatGPT/Forecast",
+  "taskId": "01a07776-f319-7060-b607-f1c73856841b",
+  "ownedPaths": [
+    "src/domain/study.ts",
+    "src/domain/dailyGame.ts",
+    "src/domain/eventStudy.test.ts",
+    "src/domain/dailyGame.test.ts",
+    "docs/launch-work/finish-pass/temporal/",
+    "docs/launch-work/finish-pass/status/temporal.json"
+  ],
+  "reportPath": "docs/launch-work/finish-pass/temporal/temporal-report.md",
+  "filesChanged": [
+    "src/domain/study.ts",
+    "src/domain/dailyGame.ts",
+    "src/domain/eventStudy.test.ts",
+    "src/domain/dailyGame.test.ts",
+    "docs/launch-work/finish-pass/temporal/temporal-report.md"
+  ],
+  "checks": {
+    "eventStudyFocused": "passed",
+    "dailyGameFocused": "passed",
+    "tsc": "passed",
+    "diffCheck": "passed",
+    "npmTest": "expected failure at src/data/integration.test.ts:16 because TikTok draft metadata is now correctly rejected",
+    "build": "not run; launch lead owns build",
+    "browser": "not run; launch lead owns browser QA"
+  },
+  "blockers": [
+    "TikTok has five same-day date-only pre-reveal claim sources requiring exact publication-time migration or card reassessment.",
+    "Eagles has two same-day date-only Hurts claim sources requiring exact publication-time migration or card reassessment.",
+    "Human approval, full build, and browser QA remain lead-owned gates."
+  ],
+  "artifactHashes": {
+    "src/domain/study.ts": "35fa8684cd587a7d827afa857b62c45251cd4af2491ee58cfadf1f63a564702a",
+    "src/domain/dailyGame.ts": "dc8fd4241092f451efe39c6ad1c05537fe9036063167ff4b51285208142a9b54",
+    "src/domain/eventStudy.test.ts": "c274e4a62065ecba5bcf8656189f9e6c7dfea165706d73e05436c26c6ed4db0b",
+    "src/domain/dailyGame.test.ts": "f815df386d11ad37e1164b756b49563107c5942390e7ee76f195027a2658c3d3",
+    "docs/launch-work/finish-pass/temporal/temporal-report.md": "0b4b8eba5ed6ec8bbf0dc2f2832cc85ca717d3d6dd8c9ed47a46df58309cd5dc"
+  },
+  "handoffComplete": true
+}

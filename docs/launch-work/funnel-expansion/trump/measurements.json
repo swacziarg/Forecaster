@@ -1,0 +1,61 @@
+{
+  "artifactType": "Trump funnel-expansion measurement audit",
+  "preparedAt": "2026-09-06T20:18:05Z",
+  "status": "technical-window-audit-complete",
+  "purpose": "Verify dataset identity, corrected-anchor window usability, and overlap handling without assigning election probabilities, event scores, rankings, tie groups, or comparable-pair results.",
+  "dataset": {
+    "csv":"docs/launch-queue-research/datasets/trump-hourly.csv",
+    "csvSha256":"7756111859cbca9f2185795608029323fb21e9505f0314d4700cf7d8b9cc579d",
+    "normalized":"docs/launch-queue-research/evidence/trump-normalized.json",
+    "normalizedSha256":"7b75c8dd3b85c151c76bded476ae6e32fa3084781c77cfa176f632e527bdd380",
+    "observations":4549,
+    "rawRows":4550,
+    "duplicateOrRevisionBuckets":1,
+    "missingBuckets":["2024-05-01T19:00:00Z","2024-07-21T18:00:00Z","2024-11-05T22:00:00Z"],
+    "rejectedRows":0,
+    "coverageStart":"2024-05-01T00:00:00Z",
+    "coverageEnd":"2024-11-06T15:00:00Z",
+    "noFilling":true,
+    "noCrossContractSplicing":true
+  },
+  "profile": {
+    "id":"months-hourly-v1",
+    "cadenceMinutes":60,
+    "anticipation":{"startHours":-84,"endHours":-12},
+    "reference":{"startHours":-12,"endHours":0},
+    "immediate":{"startHours":0,"endHours":6},
+    "stabilized":{"startHours":18,"endHours":36},
+    "delayed":{"startHours":48,"endHours":72},
+    "quality":{"minimumCoverage":0.6,"maximumGapShare":0.5,"minimumDistinctUpdates":3,"maximumSpread":0.2},
+    "tieThreshold":0.01
+  },
+  "anchorInputs": [
+    ["conviction","2024-05-30T21:15:07Z"],
+    ["butler","2024-07-14T00:00:00Z"],
+    ["rfk-endorsement","2024-08-23T19:30:00Z"],
+    ["harris-debate","2024-09-11T02:45:00Z"],
+    ["iowa-poll","2024-11-03T00:00:00Z"]
+  ],
+  "engineInvocation": {
+    "engine":"src/domain/eventStudy.ts",
+    "functions":["parseHourlyMarketCsv","calculateStudyImpacts","MONTHS_PROFILE"],
+    "invocation":"node --experimental-strip-types --input-type=module with the preserved CSV, five StudyEvent stubs, and MONTHS_PROFILE",
+    "auditResult":"all five event sets usable; no full event-window overlaps"
+  },
+  "windowQuality": [
+    {"eventId":"conviction","status":"usable","overlaps":[],"windows":{"anticipation":{"expected":72,"valid":72,"coverage":1,"distinctUpdates":72},"reference":{"expected":12,"valid":12,"coverage":1,"distinctUpdates":12},"immediate":{"expected":6,"valid":6,"coverage":1,"distinctUpdates":6},"stabilized":{"expected":18,"valid":18,"coverage":1,"distinctUpdates":18},"delayed":{"expected":24,"valid":24,"coverage":1,"distinctUpdates":24}}},
+    {"eventId":"butler","status":"usable","overlaps":[],"windows":{"anticipation":{"expected":72,"valid":72,"coverage":1,"distinctUpdates":72},"reference":{"expected":12,"valid":12,"coverage":1,"distinctUpdates":12},"immediate":{"expected":6,"valid":6,"coverage":1,"distinctUpdates":6},"stabilized":{"expected":18,"valid":18,"coverage":1,"distinctUpdates":18},"delayed":{"expected":24,"valid":24,"coverage":1,"distinctUpdates":24}}},
+    {"eventId":"rfk-endorsement","status":"usable","overlaps":[],"windows":{"anticipation":{"expected":72,"valid":72,"coverage":1,"distinctUpdates":72},"reference":{"expected":12,"valid":12,"coverage":1,"distinctUpdates":12},"immediate":{"expected":6,"valid":6,"coverage":1,"distinctUpdates":6},"stabilized":{"expected":18,"valid":18,"coverage":1,"distinctUpdates":18},"delayed":{"expected":24,"valid":24,"coverage":1,"distinctUpdates":24}}},
+    {"eventId":"harris-debate","status":"usable","overlaps":[],"windows":{"anticipation":{"expected":72,"valid":72,"coverage":1,"distinctUpdates":72},"reference":{"expected":12,"valid":12,"coverage":1,"distinctUpdates":12},"immediate":{"expected":6,"valid":6,"coverage":1,"distinctUpdates":6},"stabilized":{"expected":18,"valid":18,"coverage":1,"distinctUpdates":18},"delayed":{"expected":24,"valid":24,"coverage":1,"distinctUpdates":24}}},
+    {"eventId":"iowa-poll","status":"usable","overlaps":[],"windows":{"anticipation":{"expected":72,"valid":72,"coverage":1,"distinctUpdates":72},"reference":{"expected":12,"valid":12,"coverage":1,"distinctUpdates":12},"immediate":{"expected":6,"valid":6,"coverage":1,"distinctUpdates":6},"stabilized":{"expected":18,"valid":18,"coverage":1,"distinctUpdates":18},"delayed":{"expected":24,"valid":23,"coverage":0.9583333333333334,"distinctUpdates":23}}}
+  ],
+  "eventResponseRanking": null,
+  "tieGroups": null,
+  "comparablePairs": null,
+  "withheldReason":"This neutral worker packet records factual evidence and technical window usability only; it does not assign election probabilities or evaluative event scores/rankings.",
+  "editorialDisclosure": [
+    "The Iowa delayed window reaches preserved November 5 election-night information.",
+    "The Butler card repeats the Biden #001 shooting event and requires independent editorial review.",
+    "All five event cutoffs are conservative public-information brackets rather than claims of exact first-public instants."
+  ]
+}

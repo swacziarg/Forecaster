@@ -1,0 +1,33 @@
+{
+  "studyId": "canada-liberal-comeback-v2",
+  "provider": "Polymarket",
+  "marketId": "517586",
+  "tokenId": "97369614101217511684993615789719226906296227283714425485701044468625942166745",
+  "normalizedPath": "/data/canada-liberal-comeback-v2/polymarket-hourly.csv",
+  "rawPath": "/data/canada-liberal-comeback-v2/raw-prices-history.json",
+  "marketMetadataPath": "/data/canada-liberal-comeback-v2/raw-market.json",
+  "normalizedSha256": "af754817f1f07f5b6eb71a0658a40faeb9f665398a7b660eb579d05f024ae117",
+  "rawSha256": "b21451d3a9456db98caf0043985f09f447345bc23e09fdeb6c663459b9f24f4d",
+  "marketMetadataSha256": "b7282159bec1cb934c8a3f6d331454ae276a6ef21283fa2d1cc360461210e03e",
+  "observations": 2723,
+  "coverageStart": "2025-01-06T19:00:00Z",
+  "coverageEnd": "2025-04-30T05:00:00Z",
+  "cadenceMinutes": 60,
+  "fullMarketLifetime": false,
+  "transformVersion": "latest-source-per-UTC-hour-v1",
+  "rawHistoryAssembly": "Concatenation of the twelve retained canada-history-000.json through canada-history-011.json history arrays; no filling, interpolation, carried prices, or cross-contract splicing.",
+  "sourceFiles": [
+    "docs/launch-queue-research/evidence/canada-history-000.json",
+    "docs/launch-queue-research/evidence/canada-history-001.json",
+    "docs/launch-queue-research/evidence/canada-history-002.json",
+    "docs/launch-queue-research/evidence/canada-history-003.json",
+    "docs/launch-queue-research/evidence/canada-history-004.json",
+    "docs/launch-queue-research/evidence/canada-history-005.json",
+    "docs/launch-queue-research/evidence/canada-history-006.json",
+    "docs/launch-queue-research/evidence/canada-history-007.json",
+    "docs/launch-queue-research/evidence/canada-history-008.json",
+    "docs/launch-queue-research/evidence/canada-history-009.json",
+    "docs/launch-queue-research/evidence/canada-history-010.json",
+    "docs/launch-queue-research/evidence/canada-history-011.json"
+  ]
+}

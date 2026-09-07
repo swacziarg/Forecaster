@@ -1,0 +1,42 @@
+{
+  "role": "canada",
+  "taskId": "01a07776-ca0c-75c1-8e08-0d046c9ff706",
+  "status": "running",
+  "startedAt": "2026-09-06T18:08:21Z",
+  "updatedAt": "2026-09-06T18:08:21Z",
+  "workspace": "/Users/simonwacziarg/Documents/ChatGPT/Forecast",
+  "ownedPaths": [
+    "docs/launch-work/finish-pass/canada/",
+    "docs/launch-work/finish-pass/status/canada.json"
+  ],
+  "reportPath": "docs/launch-work/finish-pass/canada/completion.md",
+  "artifactHashes": {
+    "docs/launch-work/finish-pass/canada/completion.md": "960846758be3551ab0cc7b9201945a47349ac4fe88ef3ee60499e21c3ee1815d",
+    "docs/launch-work/finish-pass/canada/candidate-addendum.md": "5088a723bb41e97c31b3ef172adf73013e288911f3a3af33052666d4c4fb2622",
+    "docs/launch-work/finish-pass/canada/evidence-manifest-addendum.json": "a8f31aa2caa2814d24eeafd7a35c8cd2d7656698a39785fa300a14de02e67a0c",
+    "docs/launch-work/finish-pass/canada/evidence/election-call-ap.html": "ba3b4d5a4a35939ce00001d64c1afa65fb82eeae98029d6b9ac8a6c75a7bd119"
+  },
+  "receipt": {
+    "status": "complete",
+    "handoffComplete": true,
+    "reportPath": "docs/launch-work/finish-pass/canada/completion.md",
+    "filesChanged": [
+      "docs/launch-work/finish-pass/canada/completion.md",
+      "docs/launch-work/finish-pass/canada/candidate-addendum.md",
+      "docs/launch-work/finish-pass/canada/evidence-manifest-addendum.json",
+      "docs/launch-work/finish-pass/canada/evidence/election-call-ap.html",
+      "docs/launch-work/finish-pass/status/canada.json"
+    ],
+    "checks": [
+      "node --experimental-strip-types docs/launch-work/canada/evaluate-canada.mjs: passed; 2723 observations, 0 missing buckets, 25 usable windows, unchanged ranking and tie groups",
+      "finish-pass JSON parse: passed",
+      "git diff --check on owned finish-pass paths: passed",
+      "Axios source inspected and confirmed as a Cloudflare challenge page",
+      "AP replacement capture inspected and confirmed to contain March 23 election-call metadata and claim"
+    ],
+    "blockers": [
+      "Editorial launch decision remains open on whether the reproducible three-card one-point tie meets the entertainment bar; Canada remains a conditional reserve hold and does not block the primary two editions."
+    ],
+    "finishedAt": "2026-09-06T18:11:23Z"
+  }
+}

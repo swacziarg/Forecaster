@@ -1,0 +1,21 @@
+{
+  "anchorVersion": "oscars-best-picture-2026-anchors-v3",
+  "supersedes": "docs/launch-queue-research/anchors-v2.json",
+  "frozenAt": "2026-09-06T20:26:06Z",
+  "timezone": "America/New_York",
+  "sourceAvailabilityPolicy": "informationKnownAt is the earliest conservative cutoff supported by the captured primary source; minute cutoffs are rounded up where the source exposes seconds, and the Academy cutoff is rounded up to the first minute after the remaining nomination groups began.",
+  "changes": [
+    { "eventId": "nbr-best-film", "oldInformationKnownAt": "2025-12-03T17:00:00Z", "newInformationKnownAt": "2025-12-03T19:25:00Z", "reason": "Official NBR HTML exposes datePublished 2025-12-03T19:24:07Z." },
+    { "eventId": "critics-choice-best-picture", "oldInformationKnownAt": "2026-01-05T04:30:00Z", "newInformationKnownAt": "2026-01-05T04:30:00Z", "reason": "Retained; official page is dated January 4 and the day-only publication bound is before the cutoff." },
+    { "eventId": "golden-globes-picture", "oldInformationKnownAt": "2026-01-12T04:45:00Z", "newInformationKnownAt": "2026-01-12T07:05:00Z", "reason": "Official Golden Globes HTML exposes datePublished 2026-01-12T07:04:16Z." },
+    { "eventId": "oscar-nominations", "oldInformationKnownAt": "2026-01-22T13:30:00Z", "newInformationKnownAt": "2026-01-22T13:42:00Z", "reason": "Academy announcement says nominations began in two groups at 5:30 a.m. PT followed by remaining categories at 5:41 a.m. PT; the old 5:30 cutoff was not complete." },
+    { "eventId": "pga-top-prize", "oldInformationKnownAt": "2026-03-01T05:00:00Z", "newInformationKnownAt": "2026-03-01T08:03:00Z", "reason": "Official PGA HTML exposes datePublished 2026-03-01T08:02:52Z." }
+  ],
+  "anchors": [
+    { "eventId": "nbr-best-film", "occurredAt": "2025-12-03T17:00:00Z", "informationKnownAt": "2025-12-03T19:25:00Z", "precision": "minute", "primarySourceId": "nbr-2025", "snapshotHash": "158f7868e6496ce41d6bf78f37d7bed60beb5d157b3464803a9d07b84a1a2d3d" },
+    { "eventId": "critics-choice-best-picture", "occurredAt": "2026-01-05T04:30:00Z", "informationKnownAt": "2026-01-05T04:30:00Z", "precision": "hour", "primarySourceId": "critics-choice-2026", "snapshotHash": "e0890c7b18dedfd2eafec6c1ba8a3ed74d16b73908e5f5d1192444f1205cd5fb" },
+    { "eventId": "golden-globes-picture", "occurredAt": "2026-01-12T04:45:00Z", "informationKnownAt": "2026-01-12T07:05:00Z", "precision": "minute", "primarySourceId": "globes-2026", "snapshotHash": "97cd6acf26419d370c842640c11a9b7b884cd2727b3be9984d2984ff1b331ad3" },
+    { "eventId": "oscar-nominations", "occurredAt": "2026-01-22T13:41:00Z", "informationKnownAt": "2026-01-22T13:42:00Z", "precision": "minute", "primarySourceId": "oscars-nominations-2026", "snapshotHash": "c26c15772d6ea934622b3be13dd79ab7f5720f33a3a6b3e76772a85548881293" },
+    { "eventId": "pga-top-prize", "occurredAt": "2026-03-01T05:00:00Z", "informationKnownAt": "2026-03-01T08:03:00Z", "precision": "minute", "primarySourceId": "pga-2026", "snapshotHash": "dde8782c42b54526e342efc5d2e775ac76eb59830f2b53704228b61d8e8931c5" }
+  ]
+}

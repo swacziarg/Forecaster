@@ -37,11 +37,11 @@ The same generic preview applies to exact daily links. Query parameters still op
 
 ## Local verification
 
-Run `npm run build:cloudflare`, then `npx wrangler deploy --dry-run`. Keep using `npm run dev` for the existing local Vite preview.
+Run `npm test`, `npm run build:cloudflare`, `npm run check:launch-readiness -- --now <ISO-UTC>`, then `npx wrangler deploy --dry-run`. Confirm that `dist/` contains every registered dataset and static artifact. Keep using `npm run dev` for the existing local Vite preview. These local checks do not prove the remote Worker or HTTPS site is live.
 
 ## Launch schedule
 
-Hosting does not change the puzzle schedule. Only edition #001 is scheduled for September 5, 2026. Its exact `/?daily=2026-09-05-biden-dropout` link stays playable as an archive after the daily window closes; the root reports an exhausted schedule until another puzzle is published.
+Hosting does not change the puzzle schedule. Edition #001 is the preserved September 5, 2026 archive, and #002 is the user-approved unchanged Biden launch for September 7 at 05:00 UTC. Its exact `/?daily=2026-09-07-biden-dropout` link is isolated from the September 5 archive identity. TikTok #003, Eagles #004, Oscars #005, Bitcoin #006, and Canada #007 are dated proposal-only funnel entries; Trump #008 is an optional buffer. They remain outside the live registry until exact human approval and a separately authorized release; see `docs/launch-work/schedule/`.
 
 ## Previous hosting attempt
 

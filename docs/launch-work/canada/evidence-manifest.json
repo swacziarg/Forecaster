@@ -1,0 +1,73 @@
+{
+  "artifactType": "Canada evidence and provenance manifest",
+  "preparedAt": "2026-09-06T11:14:05-05:00",
+  "capturePolicy": "Captured current bytes are retained for review. Their hashes identify the bytes retrieved on September 6, 2026; they do not prove that an editable page had identical historical contents. Date-only and conservative end-of-day anchors remain explicitly marked in candidate.json.",
+  "market": {
+    "provider": "Polymarket",
+    "marketId": "517586",
+    "metadataPath": "../../launch-queue-research/catalogue.json",
+    "metadataSha256": "b3ed13befadf1d154bd73104b1df2f696e3c914d9dd447efe9b12ea5d1e60924",
+    "marketUrl": "https://polymarket.com/event/which-party-wins-most-seats-in-canadian-election/will-the-liberal-party-win-the-most-seats-in-the-next-canadian-election",
+    "metadataUrl": "https://gamma-api.polymarket.com/markets/517586",
+    "yesToken": "97369614101217511684993615789719226906296227283714425485701044468625942166745",
+    "resolution": "YES; provider metadata records resolved and closed; final result is ending-only"
+  },
+  "dataset": {
+    "sourceAuditPath": "../../launch-queue-research/evidence/canada-audit.json",
+    "sourceAuditSha256": "d970c39981112ecfea3ac7431b07a033a1a84e936d4d2bff28d37ff60eff9103",
+    "sourceNormalizedPath": "../../launch-queue-research/evidence/canada-normalized.json",
+    "sourceNormalizedSha256": "4a4931cd09ef1d4f685610dfebf6a912353412230bbfb3b3c079968b54c1542e",
+    "normalizedOutputPath": "canada-hourly.csv",
+    "normalizedOutputSha256": "af754817f1f07f5b6eb71a0658a40faeb9f665398a7b660eb579d05f024ae117",
+    "observations": 2723,
+    "coverageStart": "2025-01-06T19:00:00Z",
+    "coverageEnd": "2025-04-30T05:00:00Z",
+    "internalMissingBuckets": 0,
+    "markPolicy": "Latest Polymarket source price per UTC hour, treated as trade; no filling, interpolation, carried prices, or cross-contract splicing.",
+    "rawHistoryParts": [
+      { "path": "../../launch-queue-research/evidence/canada-history-000.json", "sha256": "ae5a16050afe36e2747d3eea2e6bbf7b77ac24b2a38e0a407eceb11be65b2d5e" },
+      { "path": "../../launch-queue-research/evidence/canada-history-001.json", "sha256": "21bf9fb499ef214cc99c083173cff968176eaf5778f7e205202d8b0350e862ac" },
+      { "path": "../../launch-queue-research/evidence/canada-history-002.json", "sha256": "96de5747faf98b60e27255e90c68155bffe8d6a6a7bd4fba17014109f9592974" },
+      { "path": "../../launch-queue-research/evidence/canada-history-003.json", "sha256": "043cabeb7fb543a39f609eb28f27dc23f45ea15058fb346ea1f71b525c747b5a" },
+      { "path": "../../launch-queue-research/evidence/canada-history-004.json", "sha256": "386748f82e5b1c4ba5112d72bd12ced494d814baf87e952c43d50ad67af0d5eb" },
+      { "path": "../../launch-queue-research/evidence/canada-history-005.json", "sha256": "cecbcc560fb118c9862e506b251f6687aece9d13590b2dbc0572dea73bb31d72" },
+      { "path": "../../launch-queue-research/evidence/canada-history-006.json", "sha256": "3d4fa684d65b24c276c7aab5cf1587f8e133cea17d987882515cfecbc3d17a2f" },
+      { "path": "../../launch-queue-research/evidence/canada-history-007.json", "sha256": "1508179369f73b66edd1c0960d0ff81d3f91dacb28bbd2def0d1a7757a4315aa" },
+      { "path": "../../launch-queue-research/evidence/canada-history-008.json", "sha256": "7cc5dd31753f6de01d3dfc21b526f9b6f13678db0242094e326788a26da1ef7e" },
+      { "path": "../../launch-queue-research/evidence/canada-history-009.json", "sha256": "d48a1ebc394d1201c28c916429a4f5b7f6d3c455c565fad6515f8ae6f2335ec8" },
+      { "path": "../../launch-queue-research/evidence/canada-history-010.json", "sha256": "3c977189d2caba21ce0ee004da3227bbb18207c8dc0a1fb962a523309fd83cbe" },
+      { "path": "../../launch-queue-research/evidence/canada-history-011.json", "sha256": "0fb97036ddd0b573a67c5820923c9d9a1cd0ddee6b2bda6f3c6b1c6acc0105d2" }
+    ]
+  },
+  "primaryAndCorroboratingSources": [
+    { "id": "carney-launch-citynews", "file": "evidence/carney-launch-primary.html", "sha256": "f80ce3fa8c2e89299a31f2fe88f9201e9074ffd2865b38916880d2ea008c3366", "role": "primary record of the launch video", "captureStatus": "captured" },
+    { "id": "carney-launch-ap", "file": "evidence/carney-launch-corroboration.html", "sha256": "490a5704a38301d5530de8cfbc7a9220564f3a82bf45a86b833a3d4c6f3580f1", "role": "same-day corroboration", "captureStatus": "captured" },
+    { "id": "tariffs-pmo", "file": "evidence/tariffs-primary.html", "sha256": "3dee818bf817e66fc4e73eaef0e9481dc61e4f265d43aab7046a79720b278eb8", "role": "official Canadian response and transcript", "captureStatus": "captured" },
+    { "id": "tariffs-ap", "file": "evidence/tariffs-corroboration.html", "sha256": "15f7747b8e80619c6e2584dcb78c381f1729ea5cdc2edade4d9f744284a30557", "role": "contemporary corroboration", "captureStatus": "captured" },
+    { "id": "leadership-cpac", "file": "evidence/leadership-primary.html", "sha256": "5ff2aa8f0927b3b742ec2a124d4974daedd8f541a5d4a291f036f0373a54186c", "role": "event video and victory speech", "captureStatus": "captured" },
+    { "id": "leadership-reuters", "file": "evidence/leadership-corroboration.html", "sha256": "6c0232d582a2ab67fbab0accba2e1e1199eeebd36c9a2a9ad95591c9512a7d5d", "role": "contemporary corroboration", "captureStatus": "captured" },
+    { "id": "swearing-pmo", "file": "evidence/swearing-primary.html", "sha256": "56e7beba6f56c0367eea700148695bebe75059e8f156576b9e5f23b0423b181f", "role": "official record for evaluated-but-excluded fact", "captureStatus": "captured" },
+    { "id": "swearing-gg", "file": "evidence/swearing-corroboration.html", "sha256": "08c097847b272af8c74a4e942ff50008d3d1aa16539a8eede53f6d01ddd9cc7f", "role": "official Governor General record for evaluated-but-excluded fact", "captureStatus": "captured" },
+    { "id": "election-gg", "file": "evidence/election-call-primary.html", "sha256": "e460b923e92590c2db760a98288efe87b9ffa228e8cc58821e009d79491488d1", "role": "official dissolution and writ record", "captureStatus": "captured" },
+    { "id": "election-axios", "file": "evidence/election-call-contemporary.html", "sha256": "d56bd272230c8eb4dd54963297c4b0e8ac427fa0c1d09dc96081b3ac97297114", "role": "same-day corroboration", "captureStatus": "captured" },
+    { "id": "auto-pmo", "file": "evidence/auto-tariff-primary.html", "sha256": "dbb3df02453a846bb2b11eb0a6f63ed8f54fe4d9268c445fb01b401da7bf80ba", "role": "official countermeasure record", "captureStatus": "captured" },
+    { "id": "auto-ap", "file": "evidence/auto-tariff-corroboration.html", "sha256": "d97f8c57dad318cac76c6022467a4ea4c0f58e845fcdc5279e6c0a8bb55eb872", "role": "contemporary corroboration and time cutoff", "captureStatus": "captured" },
+    { "id": "election-elections-canada", "file": "evidence/election-call-corroboration.html", "sha256": "3e1c888985ee3c9d42950e317a6e19b80c8ffaccfc1cd2f99a5bbd581cc10c4d", "role": "retrospective official corroboration only; never used as a pre-reveal source", "captureStatus": "captured" }
+  ],
+  "retrievalLedger": {
+    "historyRequests": "../../launch-queue-research/history-requests.json",
+    "historyReceipts": "../../launch-queue-research/history-requests-receipts.json",
+    "rawMarketConvention": "The original research retained 12 bounded 60-minute requests for the exact YES token; every returned row was retained or audited without filling gaps."
+  },
+  "endingOnly": {
+    "claim": "The Liberal Party won the most seats in the April 28, 2025 election.",
+    "allowedInReveal": true,
+    "scoredAsCard": false,
+    "sourcePaths": ["../../launch-queue-research/evidence/canada-event.json", "../../launch-queue-research/catalogue.json"]
+  },
+  "failedDownloads": [],
+  "notes": [
+    "The shell fetcher initially failed DNS resolution; no failed response was retained or counted. The source captures listed here were completed after approved network escalation.",
+    "No other workers' candidate files were used as evidence or treated as final outcomes."
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "artifactType": "Eagles five-card evidence manifest",
+  "preparedAt": "2026-09-06T16:09:51Z",
+  "status": "timing verified to minute; first-public cutoffs remain conservative review holds",
+  "capturePolicy": "Official NFL gamebook PDFs are captured locally with SHA-256 hashes. They establish the game, local stadium start, official game duration, final score, and final play sequence. A gamebook-derived final whistle is not treated as proof of the first public information time.",
+  "sources": [
+    {
+      "id": "gamebook-falcons-eagles",
+      "role": "primary occurrence and completion record",
+      "eventIds": ["falcons-collapse"],
+      "url": "https://static.www.nfl.com/image/upload/v1726574438/gamecenter/7d406b9e-1312-11ef-afd1-646009f18b2e.pdf",
+      "localPath": "falcons-eagles-gamebook.pdf",
+      "retrievedAt": "2026-09-06T16:05:05Z",
+      "sha256": "8396212e20bff96322fd9841f8e6e6b484a6b5de9b3914ca8ff04033666c0618",
+      "captureStatus": "captured",
+      "stadium": "Lincoln Financial Field, Philadelphia, PA",
+      "localStart": "2024-09-16 20:16 EDT",
+      "timezone": "America/New_York",
+      "gameDuration": "2:57",
+      "gamebookDerivedFinalWhistle": "2024-09-16 23:13 EDT",
+      "gamebookDerivedFinalWhistleUtc": "2024-09-17T03:13:00Z",
+      "precision": "minute",
+      "evidenceLocations": [
+        {"pdfPage": 1, "detail": "Date, 8:16 PM EDT start time, venue, and final 22–21 line-up."},
+        {"pdfPage": 2, "detail": "Official game duration Time: 2:57."},
+        {"pdfPage": 5, "detail": "Final Atlanta drive reaches 0:00 and is marked End of Game."}
+      ]
+    },
+    {
+      "id": "gamebook-eagles-rams-record",
+      "role": "primary occurrence and completion record",
+      "eventIds": ["barkley-record"],
+      "url": "https://static.www.nfl.com/gamecenter/ae9db4a2-1312-11ef-afd1-646009f18b2e.pdf",
+      "localPath": "eagles-rams-record-gamebook.pdf",
+      "retrievedAt": "2026-09-06T16:09:45Z",
+      "sha256": "eb4a67e605d61b13089030776907c4b6fbe7fbdc5f609581deb73157e4871599",
+      "captureStatus": "captured",
+      "stadium": "SoFi Stadium, Inglewood, CA",
+      "localStart": "2024-11-24 17:23 PST",
+      "timezone": "America/Los_Angeles",
+      "gameDuration": "3:13",
+      "gamebookDerivedFinalWhistle": "2024-11-24 20:36 PST",
+      "gamebookDerivedFinalWhistleUtc": "2024-11-25T04:36:00Z",
+      "precision": "minute",
+      "evidenceLocations": [
+        {"pdfPage": 1, "detail": "Date, 5:23 PM PST start time, venue, and 37–20 final line-up."},
+        {"pdfPage": 2, "detail": "Official game duration Time: 3:13 and Barkley’s 255-yard final rushing line."},
+        {"pdfPage": 15, "detail": "Final quarter ends after the Eagles’ kneels at 1:05 and 0:31, with the 37–20 final score."}
+      ]
+    },
+    {
+      "id": "gamebook-eagles-commanders",
+      "role": "primary occurrence and completion record",
+      "eventIds": ["hurts-concussion"],
+      "url": "https://static.www.nfl.com/image/upload/v1734952113/gamecenter/45c1ddf1-1313-11ef-afd1-646009f18b2e.pdf",
+      "localPath": "eagles-commanders-gamebook.pdf",
+      "retrievedAt": "2026-09-06T16:09:45Z",
+      "sha256": "cb67bdea30d793c3005aa1e080fba5d1e9d3c1c863eb6eeb0e9de6d5dcf49524",
+      "captureStatus": "captured",
+      "stadium": "Northwest Stadium, Landover, MD",
+      "localStart": "2024-12-22 13:02 EST",
+      "timezone": "America/New_York",
+      "gameDuration": "3:20",
+      "gamebookDerivedFinalWhistle": "2024-12-22 16:22 EST",
+      "gamebookDerivedFinalWhistleUtc": "2024-12-22T21:22:00Z",
+      "precision": "minute",
+      "evidenceLocations": [
+        {"pdfPage": 1, "detail": "Date, 1:02 PM EST start time, venue, and 33–36 final line-up."},
+        {"pdfPage": 2, "detail": "Official game duration Time: 3:20."},
+        {"pdfPage": 17, "detail": "Final touchdown at 0:10, successful two-point conversion, return fumble, and END OF QUARTER at 0:00."}
+      ]
+    },
+    {
+      "id": "gamebook-rams-eagles-divisional",
+      "role": "primary occurrence and completion record",
+      "eventIds": ["snow-playoff"],
+      "url": "https://static.www.nfl.com/gamecenter/25906cba-d165-11ef-bc5c-bb619a5d558e.pdf",
+      "localPath": "rams-eagles-divisional-gamebook.pdf",
+      "retrievedAt": "2026-09-06T16:09:45Z",
+      "sha256": "aae68253868847857b92115385e2c704c3c66304a6f6f5ffb34cca7b68c2d77b",
+      "captureStatus": "captured",
+      "stadium": "Lincoln Financial Field, Philadelphia, PA",
+      "localStart": "2025-01-19 15:02 EST",
+      "timezone": "America/New_York",
+      "gameDuration": "3:08",
+      "gamebookDerivedFinalWhistle": "2025-01-19 18:10 EST",
+      "gamebookDerivedFinalWhistleUtc": "2025-01-19T23:10:00Z",
+      "precision": "minute",
+      "evidenceLocations": [
+        {"pdfPage": 1, "detail": "Date, 3:02 PM EST start time, snow conditions, venue, and 22–28 final line-up."},
+        {"pdfPage": 2, "detail": "Official game duration Time: 3:08."},
+        {"pdfPage": 16, "detail": "Final possession ends with Hurts kneeling at 0:26 and END OF QUARTER at 0:00."}
+      ]
+    },
+    {
+      "id": "gamebook-commanders-eagles-nfc",
+      "role": "primary occurrence and completion record",
+      "eventIds": ["nfc-title"],
+      "url": "https://static.www.nfl.com/gamecenter/d2efe086-d5fb-11ef-929f-5655038981b2.pdf",
+      "localPath": "commanders-eagles-nfc-gamebook.pdf",
+      "retrievedAt": "2026-09-06T16:09:45Z",
+      "sha256": "2454a60f10a09cf821997c0c6e474f7f39e1eaa0871de3c96ceaa719d93d0826",
+      "captureStatus": "captured",
+      "stadium": "Lincoln Financial Field, Philadelphia, PA",
+      "localStart": "2025-01-26 15:03 EST",
+      "timezone": "America/New_York",
+      "gameDuration": "3:24",
+      "gamebookDerivedFinalWhistle": "2025-01-26 18:27 EST",
+      "gamebookDerivedFinalWhistleUtc": "2025-01-26T23:27:00Z",
+      "precision": "minute",
+      "evidenceLocations": [
+        {"pdfPage": 1, "detail": "Date, 3:03 PM EST start time, venue, and 23–55 final line-up."},
+        {"pdfPage": 2, "detail": "Official game duration Time: 3:24."},
+        {"pdfPage": 17, "detail": "Final Eagles kneels at 1:14 and 0:34, followed by END OF QUARTER at 0:00."}
+      ]
+    }
+  ],
+  "preexistingSources": [
+    {"eventId": "falcons-collapse", "path": "docs/launch-queue-research/evidence/eagles-falcons.html", "url": "https://www.philadelphiaeagles.com/news/game-recap-falcons-vs-eagles-week-2-2024", "retrievedAt": "2026-09-06T05:12:35.747732+00:00", "sha256": "27350706c2f2ae189abf52b51c09854c030baf6270fdaa96b6b1331998cf2414", "role": "editable recap; conservative public cutoff only"},
+    {"eventId": "barkley-record", "path": "docs/launch-queue-research/evidence/eagles-rams-record.html", "url": "https://www.philadelphiaeagles.com/news/saquon-barkley-eagles-rams-historic-255-yard-performance-i-cant-do-it-alone", "retrievedAt": "2026-09-06T00:26:48.289418+00:00", "sha256": "c9566cc77feb320917c8004c735dd9231662b3f0b70a875a29c302df95032f0a", "role": "editable recap; public cutoff only"},
+    {"eventId": "hurts-concussion", "path": "docs/launch-queue-research/evidence/eagles-concussion.html", "url": "https://www.philadelphiaeagles.com/news/eagles-vs-commanders-live-updates-december-22-2024-nfl-week-16", "retrievedAt": "2026-09-06T00:26:48.321848+00:00", "sha256": "5f79fe06c9cb63c5a39941ead18b390467e31e21850034e588440e9f98e45ac8", "role": "editable live recap; public cutoff only"},
+    {"eventId": "snow-playoff", "path": "docs/launch-queue-research/evidence/eagles-snow.html", "url": "https://www.philadelphiaeagles.com/news/rams-vs-eagles-live-updates-january-19-2025-nfl-divisional-round", "retrievedAt": "2026-09-06T05:12:35.704611+00:00", "sha256": "5d2c8da3a895bba865a8b783ab26f7e1f73b6e203ecf5795a94eae56696b9c46", "role": "editable live recap; public cutoff only"},
+    {"eventId": "nfc-title", "path": "docs/launch-queue-research/evidence/eagles-nfc.html", "url": "https://www.philadelphiaeagles.com/news/spadaro-6-takeaways-from-a-dominant-nfc-championship-victory-over-the-commanders", "retrievedAt": "2026-09-06T00:26:47.946119+00:00", "sha256": "e80ff993399104e95bf4ce6c59d1e53ec6f6248364af078e7312c438d0eda23b", "role": "editable analysis; public cutoff only"}
+  ],
+  "timingDecision": {
+    "occurrenceRule": "Use the official gamebook-derived final whistle to minute precision for the game occurrence; do not treat it as the informationKnownAt unless a contemporaneous public record proves that cutoff.",
+    "publicRule": "Retain the frozen conservative public cutoff for the scored windows. The five gamebooks establish that each cutoff follows the final game, but do not establish the first public report or the exact moment a market participant could know.",
+    "correctionWarranted": false,
+    "reason": "The new evidence corrects the occurrence/completion record, not the public-information anchor. No price-driven timestamp change is justified.",
+    "unresolvedQuestion": "For each card, what is the earliest immutable contemporaneous public record of the final result, Barkley record, Hurts injury/loss cluster, snow-game result, or NFC title?"
+  }
+}

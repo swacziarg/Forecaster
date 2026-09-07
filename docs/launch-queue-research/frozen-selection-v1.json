@@ -1,0 +1,212 @@
+{
+  "frozenAt": "2026-09-06T00:24:51.987941+00:00",
+  "version": 1,
+  "policy": "Freeze these five fact clusters per candidate for historical significance before running fresh event-window calculations. Timestamp anchors must come from public evidence, never optimized on prices. Failed candidates stay failed; do not replace weak cards after seeing movements. Raw histories and broad daily-median suitability statistics were examined before this freeze; no new five-card event-window calculations have run. Prior project records contain measured responses for some reused Trump/Eagles events and Oscars 2026; those were visible while satisfying the required repository review. This is a prospective freeze of this research selection, not a claim of blinded preregistration.",
+  "finalists": [
+    {
+      "key": "eagles",
+      "workingTitle": "The team that stopped the three-peat",
+      "events": [
+        {
+          "id": "falcons-collapse",
+          "date": "2024-09-16",
+          "title": "Eagles lose 22–21 after Atlanta’s late touchdown",
+          "expectedDirection": "negative",
+          "selectionReason": "Early contender doubt and a notorious dropped pass."
+        },
+        {
+          "id": "barkley-record",
+          "date": "2024-11-24",
+          "title": "Saquon Barkley rushes for an Eagles-record 255 yards",
+          "expectedDirection": "positive",
+          "selectionReason": "Famous new signing becomes the season’s star."
+        },
+        {
+          "id": "hurts-concussion",
+          "date": "2024-12-22",
+          "title": "Hurts leaves with a concussion as Washington ends the Eagles’ winning streak",
+          "expectedDirection": "negative",
+          "selectionReason": "Quarterback health and seeding danger in one inseparable episode."
+        },
+        {
+          "id": "snow-playoff",
+          "date": "2025-01-19",
+          "title": "Eagles survive the Rams in the snow, 28–22",
+          "expectedDirection": "positive",
+          "selectionReason": "Memorable snow game, explosive runs and a late defensive escape."
+        },
+        {
+          "id": "nfc-title",
+          "date": "2025-01-26",
+          "title": "Eagles score 55 to reach the Super Bowl",
+          "expectedDirection": "positive",
+          "selectionReason": "Conference breakthrough, leaving the ultimate championship unresolved."
+        }
+      ]
+    },
+    {
+      "key": "tiktok",
+      "workingTitle": "The app that went dark",
+      "events": [
+        {
+          "id": "trump-elected",
+          "date": "2024-11-06",
+          "title": "Trump wins the presidency after campaigning to save TikTok",
+          "expectedDirection": "negative",
+          "selectionReason": "A new political escape route for a household-name app."
+        },
+        {
+          "id": "appeal-lost",
+          "date": "2024-12-06",
+          "title": "Appeals court rejects TikTok’s challenge to the divest-or-ban law",
+          "expectedDirection": "positive",
+          "selectionReason": "Major legal defeat."
+        },
+        {
+          "id": "supreme-review",
+          "date": "2024-12-18",
+          "title": "Supreme Court agrees to hear TikTok’s challenge",
+          "expectedDirection": "negative",
+          "selectionReason": "An institutional lifeline, without a stay or merits victory."
+        },
+        {
+          "id": "trump-pause",
+          "date": "2024-12-27",
+          "title": "Trump asks the Supreme Court to pause the TikTok deadline",
+          "expectedDirection": "negative",
+          "selectionReason": "The incoming president intervenes directly."
+        },
+        {
+          "id": "supreme-argument",
+          "date": "2025-01-10",
+          "title": "TikTok and the government face Supreme Court questioning",
+          "expectedDirection": "ambiguous",
+          "selectionReason": "Public test of the rival free-speech and national-security arguments."
+        }
+      ]
+    },
+    {
+      "key": "anora-kalshi",
+      "workingTitle": "Hollywood’s false finish",
+      "events": [
+        {
+          "id": "globes-shutout",
+          "date": "2025-01-05",
+          "title": "Anora leaves the Golden Globes empty-handed",
+          "expectedDirection": "negative",
+          "selectionReason": "The presumed contender misses all five prizes."
+        },
+        {
+          "id": "oscar-nominations",
+          "date": "2025-01-23",
+          "title": "Anora earns six Oscar nominations; Emilia Pérez leads with 13",
+          "expectedDirection": "ambiguous",
+          "selectionReason": "Nomination strength against a formidable rival."
+        },
+        {
+          "id": "guild-weekend",
+          "date": "2025-02-09",
+          "title": "Anora wins Critics Choice, Directors Guild and Producers Guild prizes in one weekend",
+          "expectedDirection": "positive",
+          "selectionReason": "One clustered comeback, not three cards measuring the same news."
+        },
+        {
+          "id": "bafta-conclave",
+          "date": "2025-02-16",
+          "title": "Conclave wins BAFTA’s Best Film prize; Anora wins actress and casting",
+          "expectedDirection": "ambiguous",
+          "selectionReason": "A rival’s breakthrough partly offset by Anora’s own wins."
+        },
+        {
+          "id": "sag-conclave",
+          "date": "2025-02-23",
+          "title": "Conclave wins the Screen Actors Guild ensemble prize",
+          "expectedDirection": "negative",
+          "selectionReason": "Late rival signal after Academy voting has already closed."
+        }
+      ]
+    },
+    {
+      "key": "trump",
+      "workingTitle": "The comeback nobody could call",
+      "events": [
+        {
+          "id": "conviction",
+          "date": "2024-05-30",
+          "title": "New York jury finds Trump guilty on 34 felony counts",
+          "expectedDirection": "ambiguous",
+          "selectionReason": "Historic legal blow versus political mobilization."
+        },
+        {
+          "id": "butler",
+          "date": "2024-07-13",
+          "title": "Trump survives a shooting at his Pennsylvania rally",
+          "expectedDirection": "positive",
+          "selectionReason": "The campaign’s most widely recognized shocking moment."
+        },
+        {
+          "id": "rfk-endorsement",
+          "date": "2024-08-23",
+          "title": "Robert F. Kennedy Jr. suspends his campaign and endorses Trump",
+          "expectedDirection": "positive",
+          "selectionReason": "A rival joins forces rather than another debate or poll."
+        },
+        {
+          "id": "harris-debate",
+          "date": "2024-09-10",
+          "title": "Harris and Trump meet in their first presidential debate",
+          "expectedDirection": "ambiguous",
+          "selectionReason": "The replacement opponent’s national test."
+        },
+        {
+          "id": "iowa-poll",
+          "date": "2024-11-02",
+          "title": "Final Iowa Poll puts Harris ahead of Trump, 47% to 44%",
+          "expectedDirection": "negative",
+          "selectionReason": "A famous late surprise whose electoral conclusion proved wrong."
+        }
+      ]
+    },
+    {
+      "key": "nyc",
+      "workingTitle": "How Mamdani took New York",
+      "events": [
+        {
+          "id": "aoc-endorsement",
+          "date": "2025-06-05",
+          "title": "Alexandria Ocasio-Cortez endorses Zohran Mamdani",
+          "expectedDirection": "positive",
+          "selectionReason": "Nationally recognizable supporter and outsider momentum."
+        },
+        {
+          "id": "primary-breakthrough",
+          "date": "2025-06-24",
+          "title": "Cuomo concedes the Democratic primary to Mamdani",
+          "expectedDirection": "positive",
+          "selectionReason": "Primary victory is a development in the GENERAL election contract, not its resolving result."
+        },
+        {
+          "id": "cuomo-independent",
+          "date": "2025-07-14",
+          "title": "Cuomo announces he will keep running for mayor as an independent",
+          "expectedDirection": "negative",
+          "selectionReason": "The beaten rival returns."
+        },
+        {
+          "id": "adams-exit",
+          "date": "2025-09-28",
+          "title": "Mayor Eric Adams ends his re-election campaign",
+          "expectedDirection": "ambiguous",
+          "selectionReason": "Incumbent exit changes the opposition field."
+        },
+        {
+          "id": "hochul-endorsement",
+          "date": "2025-09-14",
+          "title": "Governor Kathy Hochul endorses Mamdani",
+          "expectedDirection": "positive",
+          "selectionReason": "Party establishment joins the insurgent."
+        }
+      ]
+    }
+  ]
+}

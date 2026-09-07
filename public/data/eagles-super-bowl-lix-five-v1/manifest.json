@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "provider": "Polymarket",
+  "tokenId": "110222417228270638383974743746762302792556220380554556504458115620557107501861",
+  "retrievedAt": "2026-09-06T16:40:00Z",
+  "sourceInputs": {
+    "normalizedCsv": {
+      "path": "docs/launch-queue-research/datasets/eagles-hourly.csv",
+      "sha256": "db134e2387c47676e7ee5911006ecc7af42f778a1d0a5db0324aa230229e0f45"
+    },
+    "marketMetadata": {
+      "path": "docs/launch-queue-research/evidence/eagles-market.json",
+      "sha256": "f575a0b8649e389a25a6c73ec6266e6db956fb477a24e0f646310e5e5d81a9f0"
+    },
+    "retainedHistory": [
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-000.json",
+        "sha256": "dd913123a8de6f06119526d62b7b223ba8121841936033ecdd3fdafeb9043cf5"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-001.json",
+        "sha256": "c59f02e0dcedc9bba0a2e67ed1b2d3b3cacaf5e532df2d40c0a57ca229c65bce"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-002.json",
+        "sha256": "c87f3159405ac60722eb130b41d83ecff94963de9b4e5af4fed204dfdb32aafd"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-003.json",
+        "sha256": "1f069e61791a6640ba94d2bde6bee07ab57fcf62e7e75d3bba67f1f3b7147727"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-004.json",
+        "sha256": "773fd241d42b57df185ad6d589a5339dea837c1ef32c517b73650eab991f218e"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-005.json",
+        "sha256": "2bb3351785016e7d8809dce661e78955a8c8f3d8689fd937472ebc5dc70fb2ee"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-006.json",
+        "sha256": "4424ba9e83bc4ecd136c5f6367df0a9e696fe7d8c7b7d4c643ac9ad8a9fbdae0"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-007.json",
+        "sha256": "76884ef207dbce57a8fce7d16a7cc721a2be3652383aa42501829a29e98556cd"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-008.json",
+        "sha256": "606f987579880357db43d94d2a7a66bdf0656403dd47ccc4879303841e58091d"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-009.json",
+        "sha256": "4807140b73484d052a4221238cadb8f74fda8b32f46eee89dc95416bc0d8ef44"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-010.json",
+        "sha256": "2a7d1eb264054c6040077ec43daac1c08d4babd7ffc27b766e3063e5870ef7fd"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-011.json",
+        "sha256": "200e52e2b994af7ed7ee7d290fde840af5a070d234c0f09da42f567bb7ae0177"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-012.json",
+        "sha256": "c0ca421d13f2e79ba6e358871cbd294933168516bf4aca9aeaae9804d47375de"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-013.json",
+        "sha256": "576c6abc75dc65f944c412da09badaf0e418f39d17bbaca987e34cbcbbecfa65"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-014.json",
+        "sha256": "593f470661a93c20d9775127ff00008d674a10694e65f857afd1496f994ac4ca"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-015.json",
+        "sha256": "c26320d66b5a1f793dca3f823a4e3c2b20aea5a8694dfc7a485e04a07a5d05b9"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-016.json",
+        "sha256": "76d4a6e36339a586777a8fc7eb1e5db1742303c442bc1b4035c5b0131014ffcd"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-017.json",
+        "sha256": "09a5e6a8d33b1bd79dc54f6199f7b949134f90d927fff1400cbee3aaf610cace"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-018.json",
+        "sha256": "073b5d1614134e4fdab7b60541eadb5757ff0dfc8b6bf016803aba78fa6c9358"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-019.json",
+        "sha256": "e4f51fa71669ca6f01ea475e0f7d42e0cdf7c6cd0f1d84faa2cac0c32c9e57c3"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-020.json",
+        "sha256": "1d684f7bc5381812c1d8e8948007eabd5d7e2ba918f381252c8dc4fb3cd73673"
+      },
+      {
+        "path": "docs/launch-queue-research/evidence/eagles-history-021.json",
+        "sha256": "6a092a8b32c903dcc7c6807b22d04a90fc31926df1de71edf428f64c32977253"
+      }
+    ]
+  },
+  "coverageStart": "2024-07-09T18:00:00Z",
+  "coverageEnd": "2025-02-10T02:00:00Z",
+  "rawSha256": "0e29bd75c168845f7ed9d971090faf79be8176ba4b33e18b998eaf40831fbced",
+  "marketMetadataSha256": "f575a0b8649e389a25a6c73ec6266e6db956fb477a24e0f646310e5e5d81a9f0",
+  "normalizedSha256": "db134e2387c47676e7ee5911006ecc7af42f778a1d0a5db0324aa230229e0f45",
+  "rawObservations": 5173,
+  "normalizedObservations": 5167,
+  "transformVersion": "polymarket-hourly-v1",
+  "markPolicy": "Latest retained provider price per UTC hour, treated as a trade under the project importer convention. No filling or cross-contract splicing.",
+  "provenanceUrl": "https://docs.polymarket.com/api-reference/markets/get-prices-history"
+}

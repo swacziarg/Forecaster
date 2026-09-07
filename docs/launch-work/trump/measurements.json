@@ -1,0 +1,55 @@
+{
+  "artifactType": "strict candidate measurement audit",
+  "status": "hold",
+  "purpose": "Record series identity and window eligibility without asserting an event-response ranking or political probability/score.",
+  "profile": {
+    "id": "months-hourly-v1",
+    "cadenceMinutes": 60,
+    "anticipation": [-84, -12],
+    "reference": [-12, 0],
+    "immediate": [0, 6],
+    "stabilized": [18, 36],
+    "delayed": [48, 72],
+    "minimumCoverage": 0.6,
+    "maximumGapShare": 0.5,
+    "minimumDistinctUpdates": 3,
+    "maximumSpread": 0.2,
+    "tieThreshold": 0.01
+  },
+  "dataset": {
+    "csv": "docs/launch-queue-research/datasets/trump-hourly.csv",
+    "csvSha256": "7756111859cbca9f2185795608029323fb21e9505f0314d4700cf7d8b9cc579d",
+    "observations": 4549,
+    "coverageStart": "2024-05-01T00:00:00Z",
+    "coverageEnd": "2024-11-06T15:00:00Z",
+    "missingBuckets": ["2024-05-01T19:00:00Z", "2024-07-21T18:00:00Z", "2024-11-05T22:00:00Z"],
+    "duplicateOrRevisionBuckets": 1,
+    "rejectedRows": 0,
+    "noFilling": true
+  },
+  "engineInvocation": {
+    "engine": "src/domain/eventStudy.ts",
+    "functions": ["parseHourlyMarketCsv", "calculateStudyImpacts", "MONTHS_PROFILE"],
+    "inputs": [
+      ["conviction", "2024-05-30T21:15:07Z"],
+      ["butler", "2024-07-14T00:00:00Z"],
+      ["rfk-endorsement", "2024-08-23T19:30:00Z"],
+      ["harris-debate", "2024-09-11T03:58:00Z"],
+      ["iowa-poll", "2024-11-03T00:00:00Z"]
+    ],
+    "resultScope": "quality flags and sample counts only; event response values intentionally omitted"
+  },
+  "windowQuality": [
+    {"eventId": "conviction", "status": "usable", "overlaps": [], "windows": {"anticipation": {"expected": 72, "valid": 72, "distinctUpdates": 72}, "reference": {"expected": 12, "valid": 12, "distinctUpdates": 12}, "immediate": {"expected": 6, "valid": 6, "distinctUpdates": 6}, "stabilized": {"expected": 18, "valid": 18, "distinctUpdates": 18}, "delayed": {"expected": 24, "valid": 24, "distinctUpdates": 24}}},
+    {"eventId": "butler", "status": "usable", "overlaps": [], "windows": {"anticipation": {"expected": 72, "valid": 72, "distinctUpdates": 72}, "reference": {"expected": 12, "valid": 12, "distinctUpdates": 12}, "immediate": {"expected": 6, "valid": 6, "distinctUpdates": 6}, "stabilized": {"expected": 18, "valid": 18, "distinctUpdates": 18}, "delayed": {"expected": 24, "valid": 24, "distinctUpdates": 24}}},
+    {"eventId": "rfk-endorsement", "status": "usable", "overlaps": [], "windows": {"anticipation": {"expected": 72, "valid": 72, "distinctUpdates": 72}, "reference": {"expected": 12, "valid": 12, "distinctUpdates": 12}, "immediate": {"expected": 6, "valid": 6, "distinctUpdates": 6}, "stabilized": {"expected": 18, "valid": 18, "distinctUpdates": 18}, "delayed": {"expected": 24, "valid": 24, "distinctUpdates": 24}}},
+    {"eventId": "harris-debate", "status": "usable", "overlaps": [], "windows": {"anticipation": {"expected": 72, "valid": 72, "distinctUpdates": 72}, "reference": {"expected": 12, "valid": 12, "distinctUpdates": 12}, "immediate": {"expected": 6, "valid": 6, "distinctUpdates": 6}, "stabilized": {"expected": 18, "valid": 18, "distinctUpdates": 18}, "delayed": {"expected": 24, "valid": 24, "distinctUpdates": 24}}},
+    {"eventId": "iowa-poll", "status": "usable", "overlaps": [], "windows": {"anticipation": {"expected": 72, "valid": 72, "distinctUpdates": 72}, "reference": {"expected": 12, "valid": 12, "distinctUpdates": 12}, "immediate": {"expected": 6, "valid": 6, "distinctUpdates": 6}, "stabilized": {"expected": 18, "valid": 18, "distinctUpdates": 18}, "delayed": {"expected": 24, "valid": 23, "distinctUpdates": 23}}}
+  ],
+  "notes": [
+    "The delayed Iowa window includes the preserved November 5 missing bucket and election-night information.",
+    "No cross-contract splicing, interpolation, carried-price repair, or legacy validation exception was used.",
+    "The legacy 3,863-observation fixture was not used or changed.",
+    "No event-response values, event ordering by measured response, or player score is asserted in this packet."
+  ]
+}

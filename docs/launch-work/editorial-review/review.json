@@ -1,0 +1,107 @@
+{
+  "artifactType": "Independent AI editorial review",
+  "reviewedAt": "2026-09-07T05:40:00Z",
+  "reviewer": {
+    "type": "AI launch lead",
+    "taskId": "01a07777-1db5-7c70-9773-ddaf12298f46",
+    "independence": "The lead did not author the four current-pass candidate packets. Prior drafts and measurements were visible, so this is not blinded."
+  },
+  "purpose": "Consolidate the current funnel-expansion packets into an exact human editorial decision aid. This review is not human approval, publication authorization, scheduling authorization, or deployment authorization.",
+  "funnelTarget": {
+    "minimumDistinctEditions": 6,
+    "includesBiden": true,
+    "coreProposalDates": ["2026-09-07", "2026-09-08", "2026-09-09", "2026-09-10", "2026-09-11", "2026-09-12"],
+    "optionalBufferDate": "2026-09-13"
+  },
+  "hashAudit": {
+    "currentPassReceipts": {
+      "trump": {"taskId": "01a07776-a544-7d53-89fa-4c56b8a878ca", "status": "complete", "handoffComplete": true, "artifactCount": 7, "hashesMatch": true, "reportSha256": "c18fce12e8d88f87413e20373cd1f483de6197ff8a6632cc0538a01aaea968b2"},
+      "oscars": {"taskId": "01a07776-b625-7fc3-ae9b-b76a9e6b60b8", "status": "complete", "handoffComplete": true, "artifactCount": 8, "hashesMatch": true, "reportSha256": "1c663e69f5cb4e3ae88ea6c1f8795d34d568b8d94f36208eafe52decabf6fc44"},
+      "canada": {"taskId": "01a07776-ca0c-75c1-8e08-0d046c9ff706", "status": "complete", "handoffComplete": true, "artifactCount": 8, "hashesMatch": true, "reportSha256": "27327e84598f92f608e5928ff966de18bab3582e74ac520089cafcb15f9252c3"},
+      "bitcoin": {"taskId": "01a07777-0cfb-70b0-93f4-20087e2521d6", "status": "complete", "handoffComplete": true, "artifactCount": 9, "hashesMatch": true, "reportSha256": "96417cd586fe35765d176b7aa2674851eae8d60148f7e0112a50a49f773679ac"}
+    },
+    "finishPassRuntime": {
+      "tiktok": {"studyId": "tiktok-banned-before-may-2025-v1", "runtimeSha256": "aad72d4ed0d881a21dac5953311b4b4cb46949a01656222635567293781dfc8f", "candidateSha256": "694bcbb11ddb7f2e1dd3bc61bd5b4642c98577f36addcdfef71092e40145e15d"},
+      "eagles": {"studyId": "eagles-super-bowl-lix-five-v1", "runtimeSha256": "5bbbd96b8dc9fcfe9217474641469a5ff4a50c39ee728f9a372c42c1ec902a1d", "candidateSha256": "7f3e038b475be5030a7b97fb08e291f0ee985b0286a341b4d36151d16d4dbee4"}
+    }
+  },
+  "candidates": [
+    {
+      "topic": "tiktok",
+      "title": "The app that went dark",
+      "study": {"id": "tiktok-banned-before-may-2025-v1", "version": 1, "status": "editorial-review"},
+      "verdict": "ready-for-human-approval",
+      "evidence": "Finish-pass v4 public-by packet; 3,023 observations, 25/25 usable windows, no full-window overlaps, tie groups retained.",
+      "implementation": "Registered draft; not published.",
+      "approval": {"status": "pending", "approver": null, "approvedAt": null},
+      "exactArtifacts": ["docs/launch-work/finish-pass/tiktok/candidate-v4.json", "docs/launch-work/finish-pass/tiktok/candidate-v4.md", "src/data/tiktok2025.ts"],
+      "requiredDecision": "Accept conservative AP/CNN public-by timing semantics, exact wording/source roles, five-card identity, content/runtime hash, and proposed 2026-09-08T05:00:00Z release."
+    },
+    {
+      "topic": "eagles",
+      "title": "Stop the three-peat",
+      "study": {"id": "eagles-super-bowl-lix-five-v1", "version": 1, "status": "editorial-review"},
+      "verdict": "ready-for-human-approval",
+      "evidence": "Finish-pass v2 archived-page packet; 5,167 observations, 25/25 usable windows, no full-window overlaps, strict five-way ordering.",
+      "implementation": "Registered draft; not published.",
+      "approval": {"status": "pending", "approver": null, "approvedAt": null},
+      "exactArtifacts": ["docs/launch-work/finish-pass/eagles/candidate-v2.json", "docs/launch-work/finish-pass/eagles/candidate-v2.md", "src/data/eaglesFiveCard2025.ts"],
+      "requiredDecision": "Accept conservative archived-page public-by bounds, the combined Hurts card, exact five-card order/content/runtime hash, and proposed 2026-09-09T05:00:00Z release."
+    },
+    {
+      "topic": "oscars",
+      "title": "One Battle After Another — Best Picture 2026",
+      "study": {"id": "oscars-best-picture-2026-v2", "version": 2, "status": "editorial-review", "runtimeRegistered": true, "privatePreviewPath": "/__preview/oscars-best-picture-2026-v2"},
+      "verdict": "ready-for-human-approval",
+      "evidence": "Current-pass complete packet; 4,168 observations, 25/25 usable windows, 7/10 pairwise agreement, two captured publishers per card.",
+      "implementation": "Registered strict editorial-review v2 draft; private DEV preview; no daily entry.",
+      "approval": {"status": "pending", "approver": null, "approvedAt": null},
+      "exactArtifacts": ["docs/launch-work/funnel-expansion/oscars/candidate.json", "docs/launch-work/funnel-expansion/oscars/report.md", "docs/launch-work/funnel-expansion/oscars/selection-freeze-v2.json"],
+      "requiredDecision": "Accept conservative source-availability bounds, the Critics Choice/Golden Globes tie boundary, and adjacent-precursor distinctness; then create and approve the immutable v2 runtime identity for 2026-09-10T05:00:00Z."
+    },
+    {
+      "topic": "bitcoin",
+      "title": "Bitcoin’s road to $100,000",
+      "study": {"id": "bitcoin-100k-2024-v2", "version": 2, "status": "editorial-review", "runtimeRegistered": true, "privatePreviewPath": "/__preview/bitcoin-100k-2024-five-card", "sourceCandidate": "bitcoin-100k-2024-v1 eight-event study"},
+      "verdict": "ready-for-human-approval-after-identity-reconciliation",
+      "evidence": "Current-pass five-card packet; 6,609 observations, 25/25 usable windows, 6/8 comparable agreement, exact contract prices only; overlap disclosed.",
+      "implementation": "Registered strict five-card editorial-review v2 draft with private DEV preview; the existing v1 is an eight-event study and remains untouched.",
+      "approval": {"status": "pending", "approver": null, "approvedAt": null},
+      "exactArtifacts": ["docs/launch-work/funnel-expansion/bitcoin/candidate.json", "docs/launch-work/funnel-expansion/bitcoin/report.md", "docs/launch-work/funnel-expansion/bitcoin/selection-freeze.json", "src/data/bitcoinFiveCard2024.ts"],
+      "requiredDecision": "Review the fullMarketLifetime boundary and three day-level anchors, then approve 2026-09-11T05:00:00Z if desired."
+    },
+    {
+      "topic": "canada",
+      "title": "The Canadian comeback",
+      "study": {"id": "canada-liberal-comeback-v2", "version": 2, "status": "editorial-review", "runtimeRegistered": true, "privatePreviewPath": "/__preview/canada-liberal-comeback"},
+      "verdict": "ready-for-human-approval-as-conditional-reserve",
+      "evidence": "Current-pass strict packet; 2,723 observations, 25/25 usable windows, 7 comparable pairs, three rank levels; AP replaces the failed Axios path and unknown-time retrospective evidence is excluded.",
+      "implementation": "Registered strict editorial-review v2 draft with packaged public bundle and private DEV preview.",
+      "approval": {"status": "pending", "approver": null, "approvedAt": null},
+      "exactArtifacts": ["docs/launch-work/funnel-expansion/canada/candidate.json", "docs/launch-work/funnel-expansion/canada/report.md", "docs/launch-work/funnel-expansion/canada/selection-freeze.json", "src/data/canada2025.ts", "public/data/canada-liberal-comeback-v2/manifest.json"],
+      "requiredDecision": "Accept the AP replacement, conservative timing, and three-card tie before any 2026-09-12T05:00:00Z release."
+    },
+    {
+      "topic": "trump",
+      "title": "The comeback nobody could call",
+      "study": {"id": "trump-comeback-2024-v1", "version": 1, "status": "editorial-review", "runtimeRegistered": false},
+      "verdict": "changes-required",
+      "evidence": "Current-pass packet has five usable windows and corrected ABC bound, but assigns no response scores/ranks; source availability and repeated Butler decision remain open.",
+      "implementation": "Candidate packet only; no daily entry.",
+      "approval": {"status": "pending", "approver": null, "approvedAt": null},
+      "exactArtifacts": ["docs/launch-work/funnel-expansion/trump/candidate.json", "docs/launch-work/funnel-expansion/trump/report.md", "docs/launch-work/funnel-expansion/trump/anchor-correction-v3.json"],
+      "requiredDecision": "Resolve upper-bound timing and primary-capture gaps, decide on repeating Butler after Biden, calculate/independently review the final comparison packet, and use only as the optional buffer."
+    }
+  ],
+  "actualApproval": {
+    "path": "docs/launch-work/schedule/approvals.json",
+    "approvedEntries": [{"puzzleId": "2026-09-07-biden-dropout", "studyId": "biden-dropout-2024-v1", "studyVersion": 1, "releaseTime": "2026-09-07T05:00:00Z", "contentHash": "c2d729061bf06d52d97dba11169a3e8297e6cae62b13c1615ed57a8a96333df6"}],
+    "pendingHumanApprovalForAllOtherEntries": true
+  },
+  "recommendation": {
+    "coreProposalOrder": ["biden", "tiktok", "eagles", "oscars", "bitcoin", "canada"],
+    "optionalBuffer": "trump",
+    "datesAreProposalOnlyExceptBiden": true,
+    "reason": "This fills six distinct substantive funnel identities with evidence-backed packets and preserves a seventh candidate buffer. The lower-confidence Trump packet is kept outside the core. No proposal is counted as approved runway."
+  }
+}

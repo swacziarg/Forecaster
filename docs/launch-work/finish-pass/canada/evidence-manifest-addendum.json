@@ -1,0 +1,65 @@
+{
+  "artifactType": "Canada finish-pass evidence addendum",
+  "baseManifest": "../../canada/evidence-manifest.json",
+  "finishPassDate": "2026-09-06",
+  "scope": "Narrow remediation only; the frozen five, event order, anchors, measurements, and original packet remain unchanged.",
+  "activeEvidenceChanges": {
+    "election-call": {
+      "primarySource": {
+        "id": "election-gg",
+        "path": "../../canada/evidence/election-call-primary.html",
+        "sha256": "e460b923e92590c2db760a98288efe87b9ffa228e8cc58821e009d79491488d1"
+      },
+      "corroboratingSource": {
+        "id": "election-ap-finish-pass",
+        "title": "Canada's prime minister and his opponent kick off election saying Trump must respect sovereignty",
+        "publisher": "Associated Press",
+        "url": "https://apnews.com/article/canada-election-prime-minister-mark-carney-trump-dd083f4f1cf9622742703eee5be6721a",
+        "publishedAt": "2025-03-23T12:56:48Z",
+        "publishedPrecision": "day",
+        "retrievedAt": "2026-09-06T18:09:49Z",
+        "path": "evidence/election-call-ap.html",
+        "bytes": 1381476,
+        "sha256": "ba3b4d5a4a35939ce00001d64c1afa65fb82eeae98029d6b9ac8a6c75a7bd119",
+        "captureStatus": "captured-current-bytes",
+        "role": "same-day corroboration; not used to tighten the conservative end-of-day anchor"
+      },
+      "claimSourceIds": ["election-gg", "election-ap-finish-pass"],
+      "anchorDecision": "Retain 2025-03-24T04:00:00Z, the end of March 23 in America/Toronto. The AP page confirms same-day coverage but its current metadata does not establish first public access or a safe event minute."
+    }
+  },
+  "excludedEvidence": [
+    {
+      "id": "election-axios",
+      "path": "../../canada/evidence/election-call-contemporary.html",
+      "sha256": "d56bd272230c8eb4dd54963297c4b0e8ac427fa0c1d09dc96081b3ac97297114",
+      "reason": "Unusable Cloudflare challenge page; no article content or evidentiary claim was captured. Do not use as corroboration."
+    },
+    {
+      "id": "election-elections-canada",
+      "path": "../../canada/evidence/election-call-corroboration.html",
+      "sha256": "3e1c888985ee3c9d42950e317a6e19b80c8ffaccfc1cd2f99a5bbd581cc10c4d",
+      "reason": "Retrospective report with unknown publication time. Retain only as an excluded research receipt; never use for a pre-reveal claim or timing anchor."
+    }
+  ],
+  "tieAssessment": {
+    "tieThresholdPp": 1,
+    "tieGroup": [
+      { "eventId": "tariff-retaliation", "primaryResponsePp": 0.375 },
+      { "eventId": "carney-leadership-launch", "primaryResponsePp": 0.15 },
+      { "eventId": "carney-leadership-win", "primaryResponsePp": -0.425 }
+    ],
+    "spreadPp": 0.8,
+    "assessment": "The tie is reproducible under the frozen one-point anchor and is not an artifact of the removed sources. It leaves only three distinct rank levels across five cards, so it is acceptable as a conditional reserve but not strong enough to promote ahead of the primary candidates.",
+    "decision": "conditional-reserve-hold"
+  },
+  "invariants": {
+    "eventSetChanged": false,
+    "eventOrderChanged": false,
+    "anchorsChanged": false,
+    "measurementsChanged": false,
+    "postScoreSwap": false,
+    "preRevealUseOfUnknownTimeRetrospective": false,
+    "runtimeOrScheduleChanged": false
+  }
+}

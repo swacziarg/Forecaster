@@ -1,5 +1,5 @@
 import { createTieGroups, pairwiseAgreement, type StudyEventImpact } from './eventStudy.ts'
-import type { Source, Study, StudyEvent } from './study.ts'
+import { sourceWasAvailableBy, type Source, type Study, type StudyEvent } from './study.ts'
 
 export const DAILY_RELEASE_TIMEZONE = 'UTC' as const
 export const DAILY_WINDOW_MS = 24 * 60 * 60 * 1000
@@ -59,7 +59,7 @@ export function getPreRevealCard(study: DailyStudyReference, eventId: string): P
     if (claim.visibility !== 'pre-reveal' || !validDate(claim.knownAt) || Date.parse(claim.knownAt) > Date.parse(event.informationKnownAt)) return false
     return claim.sourceIds.length > 0 && claim.sourceIds.every((sourceId) => {
       const source = sourceById.get(sourceId)
-      return source !== undefined && validDate(source.publishedAt) && Date.parse(source.publishedAt) <= Date.parse(event.informationKnownAt)
+      return source !== undefined && sourceWasAvailableBy(source, event.informationKnownAt)
     })
   })
   if (!eligibleClaims.length) return null
@@ -67,6 +67,18 @@ export function getPreRevealCard(study: DailyStudyReference, eventId: string): P
   const sources = study.sources.filter((source) => sourceIds.has(source.id))
   if (!sources.length) return null
   return { event, brief: eligibleClaims.map((claim) => claim.text).join(' '), sources }
+}
+
+export function getPreRevealBackground(study: Study) {
+  const cutoff = Math.min(...study.events.map((event) => Date.parse(event.informationKnownAt)))
+  const claims = study.background?.claims.filter((claim) => claim.visibility === 'pre-reveal'
+    && validDate(claim.knownAt) && Date.parse(claim.knownAt) <= cutoff && claim.sourceIds.length > 0
+    && claim.sourceIds.every((id) => {
+      const source = study.sources.find((candidate) => candidate.id === id)
+      return source !== undefined && sourceWasAvailableBy(source, claim.knownAt)
+    })) ?? []
+  const ids = new Set(claims.flatMap((claim) => claim.sourceIds))
+  return { title: study.background?.title, claims, sources: study.sources.filter((source) => ids.has(source.id)) }
 }
 
 export function validateDailyRegistry(puzzles: readonly DailyPuzzle[], studies: readonly DailyStudyReference[]) {
@@ -157,6 +169,16 @@ export function completedScoreBands(score: number | null) {
   return Math.max(0, Math.min(5, Math.floor(score / 20)))
 }
 
+export function createDailySharePayload(puzzle: DailyPuzzle, score: number | null, origin: string, path = `/?daily=${encodeURIComponent(puzzle.id)}`): ShareData {
+  const filled = completedScoreBands(score)
+  const tiles = `${'🟩'.repeat(filled)}${'⬜'.repeat(5 - filled)}`
+  const shareUrl = new URL(path, origin).toString()
+  return {
+    title: `NexusPoint Daily #${puzzle.number}`,
+    text: `NexusPoint Daily #${puzzle.number}\n${score === null ? 'Unscored' : `${score}/100`}\n${tiles}\nCompleted 20-point bands: ${filled}/5\n${shareUrl}`,
+  }
+}
+
 export type ShareOutcome = 'shared' | 'copied' | 'unsupported-copied' | 'canceled' | 'unavailable'
 
 export async function performShare(options: {
@@ -164,12 +186,16 @@ export async function performShare(options: {
   nativeShare?: (payload: ShareData) => Promise<void>
   copy: () => Promise<boolean>
 }): Promise<ShareOutcome> {
-  if (!options.nativeShare) return await options.copy() ? 'unsupported-copied' : 'unavailable'
+  const copySafely = async () => {
+    try { return await options.copy() }
+    catch { return false }
+  }
+  if (!options.nativeShare) return await copySafely() ? 'unsupported-copied' : 'unavailable'
   try {
     await options.nativeShare(options.payload)
     return 'shared'
   } catch (error) {
-    if (error instanceof Error && error.name === 'AbortError') return 'canceled'
-    return await options.copy() ? 'copied' : 'unavailable'
+    if (typeof error === 'object' && error !== null && 'name' in error && error.name === 'AbortError') return 'canceled'
+    return await copySafely() ? 'copied' : 'unavailable'
   }
 }

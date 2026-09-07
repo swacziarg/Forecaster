@@ -1,0 +1,37 @@
+{
+  "role": "eagles",
+  "status": "complete",
+  "startedAt": "2026-09-06T18:07:32Z",
+  "updatedAt": "2026-09-06T18:14:40Z",
+  "taskId": "01a07776-96d4-79b0-bd23-e5497d37fbc6",
+  "workspace": "/Users/simonwacziarg/Documents/ChatGPT/Forecast",
+  "ownedPaths": [
+    "docs/launch-work/finish-pass/eagles/",
+    "docs/launch-work/finish-pass/status/eagles.json"
+  ],
+  "reportPath": "docs/launch-work/finish-pass/eagles/report.md",
+  "finishedAt": "2026-09-06T18:14:40Z",
+  "handoffComplete": true,
+  "filesChanged": [
+    "docs/launch-work/finish-pass/eagles/candidate-v2.md",
+    "docs/launch-work/finish-pass/eagles/candidate-v2.json",
+    "docs/launch-work/finish-pass/eagles/capture-manifest-v2.json",
+    "docs/launch-work/finish-pass/eagles/evidence-addendum-v2.json",
+    "docs/launch-work/finish-pass/eagles/measurements-v2.json",
+    "docs/launch-work/finish-pass/eagles/timing-anchors-v2.json",
+    "docs/launch-work/finish-pass/eagles/captures/",
+    "docs/launch-work/finish-pass/eagles/report.md"
+  ],
+  "checks": [
+    "JSON parse passed for all new artifacts and receipt",
+    "Recalculation passed with 25/25 usable windows and zero overlaps",
+    "Recalculated tie groups match measurements-v2.json",
+    "No trailing whitespace in owned artifacts"
+  ],
+  "blockers": [
+    "Exact first-public instants remain unresolved; corrected values are conservative public-by bounds.",
+    "Independent editorial approval of public-by semantics is still required.",
+    "Human approval is absent; lead still owns runtime patch, full build, browser QA, registration, and any launch decision."
+  ],
+  "nextOwner": "lead"
+}

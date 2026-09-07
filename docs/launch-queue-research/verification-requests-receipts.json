@@ -1,0 +1,18 @@
+[
+  {
+    "key": "anora-kalshi-market",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXOSCARPIC-25-A",
+    "retrievedAt": "2026-09-06T14:06:13.322616+00:00",
+    "bytes": 1527,
+    "sha256": "0460772ed2546c8b1dfc34e058ea91e02c9d2b83215c92a808203654cd91a0c9",
+    "path": "evidence/anora-kalshi-market.json"
+  },
+  {
+    "key": "nyc-market-page.html",
+    "url": "https://polymarket.com/event/new-york-city-mayoral-election/will-zohran-mamdani-win-the-2025-nyc-mayoral-election",
+    "retrievedAt": "2026-09-06T14:06:13.563247+00:00",
+    "bytes": 761307,
+    "sha256": "e6e3a0c76545d0b9dea89fa4cdcc13da2f5c0ee2545ab9c528b629385ac74370",
+    "path": "evidence/nyc-market-page.html"
+  }
+]

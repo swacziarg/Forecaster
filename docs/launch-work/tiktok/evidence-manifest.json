@@ -1,0 +1,159 @@
+{
+  "artifactType": "TikTok candidate evidence manifest",
+  "createdAt": "2026-09-06T16:09:26.300Z",
+  "retrievalPolicy": "Every captured artifact records its URL, retrieval time, SHA-256 hash, and capture status. Historical publisher metadata is treated as public-by evidence unless it independently proves first distribution. Failed downloads are not represented as evidence.",
+  "sources": [
+    {
+      "id": "ap-race-call",
+      "path": "docs/launch-work/tiktok/evidence/ap-race-call.html",
+      "url": "https://apnews.com/article/race-call-trump-wins-wisconsin-president-1d2209e42fe44e61adb9e17deb416b47",
+      "retrievedAt": "2026-09-06T16:09:26.300Z",
+      "sha256": "bc9bb7f7c343c6f336b8fdd58593ac9f2014ab64ca80dfcc470efa2e9cc9e85c",
+      "captureStatus": "captured",
+      "temporalRole": "contemporary election-call public artifact; page metadata and body identify 2024-11-06T10:34:42Z / 5:34 a.m. EST"
+    },
+    {
+      "id": "cadc-dec6-opinion",
+      "path": "docs/launch-work/tiktok/evidence/cadc-dec6-opinion.pdf",
+      "url": "https://media.cadc.uscourts.gov/opinions/docs/2024/12/24-1113-2088317.pdf",
+      "retrievedAt": "2026-09-06T16:09:26.300Z",
+      "sha256": "1bfb5dbe4384de347968e1ef6ff81412c9376884fe17173884477287edec9c8d",
+      "captureStatus": "captured",
+      "temporalRole": "primary Dec. 6 opinion and legal holding; date and substance, but no historical posting time"
+    },
+    {
+      "id": "ap-dec6",
+      "path": "docs/launch-work/tiktok/evidence/ap-dec6.html",
+      "url": "https://apnews.com/article/tiktok-ban-court-ruling-china-6bfd505295ad44126df0544fc083d6a6",
+      "retrievedAt": "2026-09-06T16:09:26.300Z",
+      "sha256": "b62d98d0c580e5a2f0336fcd5e8faf442a039bf8ee1b5800b9fd163555d9ec92",
+      "captureStatus": "captured",
+      "temporalRole": "contemporaneous public-by report; publisher metadata 2024-12-06T15:35:16Z"
+    },
+    {
+      "id": "scotus-dec18-order",
+      "path": "docs/launch-work/tiktok/evidence/scotus-dec18-order.pdf",
+      "url": "https://www.supremecourt.gov/orders/courtorders/121824zr1_p86b.pdf",
+      "retrievedAt": "2026-09-06T16:09:26.300Z",
+      "sha256": "51a1aa500e74004cd97f85e58979c1fc5073e175722ac38e6c85b90e850e7a91",
+      "captureStatus": "captured",
+      "temporalRole": "primary Dec. 18 order granting certiorari; date and substance, but no historical posting time"
+    },
+    {
+      "id": "ap-dec18",
+      "path": "docs/launch-work/tiktok/evidence/ap-dec18.html",
+      "url": "https://apnews.com/article/supreme-court-tiktok-china-us-ban-08d6fffdcd2dde5100fcdf8a452dd5cc",
+      "retrievedAt": "2026-09-06T16:09:26.300Z",
+      "sha256": "07ac82143c1c28e57e3e8b2ee2d4d96aad297e75900a1319164a1c97bfb10690",
+      "captureStatus": "captured",
+      "temporalRole": "contemporaneous public-by report; publisher metadata 2024-12-18T16:15:44Z"
+    },
+    {
+      "id": "ap-dec27",
+      "path": "docs/launch-work/tiktok/evidence/ap-dec27.html",
+      "url": "https://apnews.com/article/tiktok-ban-supreme-court-trump-b96013a8447e9bdb5508ebe436aadf9a",
+      "retrievedAt": "2026-09-06T16:09:26.300Z",
+      "sha256": "1df2aa319f05340fd01361d9ebd74bb405943a174b6525c68e4088c7c95b92b5",
+      "captureStatus": "captured",
+      "temporalRole": "contemporaneous public-by report; publisher metadata 2024-12-27T22:43:57Z"
+    },
+    {
+      "id": "tiktok-trump-brief",
+      "path": "docs/launch-queue-research/evidence/tiktok-trump-brief.pdf",
+      "url": "https://www.supremecourt.gov/DocketPDF/24/24-656/336151/20241227163400981_2024-12-27%20-%20TikTok%20v.%20Garland%20-%20Amicus%20Brief%20of%20President%20Donald%20J.%20Trump.pdf",
+      "retrievedAt": "2026-09-06T00:26:47.499182+00:00",
+      "sha256": "b3074d8875c444b280b47951125182b00e87cf4ee21968987630d4d393500673",
+      "captureStatus": "retained research capture",
+      "temporalRole": "primary Dec. 27 amicus brief; filing date and filename do not prove public posting time"
+    },
+    {
+      "id": "tiktok-argument",
+      "path": "docs/launch-queue-research/evidence/tiktok-argument.pdf",
+      "url": "https://www.supremecourt.gov/oral_arguments/argument_transcripts/2024/24-656_pm02.pdf",
+      "retrievedAt": "2026-09-06T05:12:35.868614+00:00",
+      "sha256": "5d1a6c69821a99f3c7ec584565d9bb24f0728f1f6ed86a7bf84a805755ee01a7",
+      "captureStatus": "retained research capture",
+      "temporalRole": "primary Jan. 10 argument transcript; records 10:08 a.m. start and 12:38 p.m. end"
+    },
+    {
+      "id": "tiktok-argument-audio",
+      "path": "docs/launch-queue-research/evidence/tiktok-argument-page.html",
+      "url": "https://www.supremecourt.gov/oral_arguments/audio/2024/24-656",
+      "retrievedAt": "2026-09-06T05:12:35.834149+00:00",
+      "sha256": "d307228128786d13f63369758fbb9c37f2a6f6e23c174704b06e7d59e83ccc7c",
+      "captureStatus": "retained research capture",
+      "temporalRole": "primary audio-detail page corroborating the public Jan. 10 proceeding"
+    },
+    {
+      "id": "tiktok-docket",
+      "path": "docs/launch-queue-research/evidence/tiktok-docket.html",
+      "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/24-656.html",
+      "retrievedAt": "2026-09-06T00:26:47.438760+00:00",
+      "sha256": "260e61073e913fccc625ceaad5c41425cbd5b93ae1ab2d818056ef098d290e60",
+      "captureStatus": "retained research capture",
+      "temporalRole": "primary procedural dates and entries; not historical web-post times"
+    },
+    {
+      "id": "tiktok-opinion",
+      "path": "docs/launch-queue-research/evidence/tiktok-opinion.pdf",
+      "url": "https://www.supremecourt.gov/opinions/24pdf/24-656_ca7d.pdf",
+      "retrievedAt": "2026-09-06T00:26:47.468887+00:00",
+      "sha256": "780f07a100107f3d2ef4b2e0cc5901f476b583bf45ef4c25cea468dd17c419c4",
+      "captureStatus": "retained research capture",
+      "temporalRole": "primary Jan. 17 opinion for reveal-only ending"
+    },
+    {
+      "id": "tiktok-ending",
+      "path": "docs/launch-queue-research/evidence/tiktok-ending.html",
+      "url": "https://transcripts.cnn.com/show/cnr/date/2025-01-19/segment/04",
+      "retrievedAt": "2026-09-06T05:44:52.317182+00:00",
+      "sha256": "d8cc9e3b16fb6160586876a6a0fe69eba909dc64fa0c5ac3f0e4cb1b292ba7dd",
+      "captureStatus": "retained research capture",
+      "temporalRole": "reveal-only contemporaneous broadcast transcript for blackout and restoration"
+    },
+    {
+      "id": "tiktok-market",
+      "path": "docs/launch-queue-research/evidence/tiktok-market.html",
+      "url": "https://polymarket.com/event/tiktok-banned-in-the-us-before-may-2025",
+      "retrievedAt": "2026-09-06T13:50:37.735149+00:00",
+      "sha256": "06562a3ddc0cb1a9a271023e78e8a19e7de1c312adc836e1fd66a14a14811772",
+      "captureStatus": "retained research capture",
+      "temporalRole": "reveal-only market rules and displayed resolution context"
+    },
+    {
+      "id": "tiktok-event-metadata",
+      "path": "docs/launch-queue-research/evidence/tiktok-event.json",
+      "url": "https://gamma-api.polymarket.com/markets/507276",
+      "retrievedAt": "2026-09-06T00:26:47.499182+00:00",
+      "sha256": "8f53cb8c1e1e86868821a24244dd48a7240780720e0ac770cce4bce024d0eadd",
+      "captureStatus": "retained research capture",
+      "temporalRole": "reveal-only provider metadata for exact market, token, final outcome, and close time"
+    }
+  ],
+  "dataset": {
+    "normalizedPath": "docs/launch-queue-research/evidence/tiktok-normalized.json",
+    "normalizedSha256": "caf50a435fa87b927fa197b4a03c472bf7cba94de020c5879668b12036e90bd7",
+    "csvPath": "docs/launch-queue-research/datasets/tiktok-hourly.csv",
+    "csvSha256": "0ab5e79a468f08f1cab1ca7c13e854751f3b94d1c20b27b1be89e9f3f66e4fdd",
+    "observations": 3023,
+    "coverageStart": "2024-09-18T01:00:00Z",
+    "coverageEnd": "2025-01-22T00:00:00Z",
+    "rawObservations": 3024,
+    "duplicateOrRevisionBuckets": 1,
+    "missingHours": 1,
+    "rejectedObservations": 0,
+    "fullMarketLifetime": false
+  },
+  "anchorEvidence": {
+    "path": "docs/launch-work/tiktok/anchors-v3.json",
+    "sha256": "fd632a603d0138d5d335500ed8a4f8d6bccb884b9caa51c856870600aa43974c",
+    "version": 3,
+    "sourceReview": {
+      "election": "The contemporary AP Race Call is captured and dated 2024-11-06T10:34:42Z. The retained retrospective AP explainer is not used as the sole contemporary source. The AP timestamp establishes a public artifact, not necessarily first distribution.",
+      "dec6": "The primary D.C. Circuit opinion establishes the Dec. 6 ruling; AP gives a 2024-12-06T15:35:16Z public-by timestamp and the retained CNN transcript gives contemporaneous broadcast context. Exact first-public court posting remains unavailable, so the 16:00Z cutoff is a conservative upper bound.",
+      "dec18": "The primary Supreme Court order establishes the Dec. 18 certiorari grant; AP gives a 2024-12-18T16:15:44Z public-by timestamp and the retained CNN transcript gives contemporaneous broadcast context. Exact first-public order posting remains unavailable, so the 19:00Z cutoff is a conservative upper bound.",
+      "dec27": "The primary brief and docket establish the Dec. 27 filing; AP gives a 2024-12-27T22:43:57Z public-by timestamp and the retained CNN transcript gives earlier contemporaneous reporting context. The PDF filename is not treated as timing proof. Exact first-public filing posting remains unavailable, so the 23:00Z cutoff is a conservative upper bound.",
+      "jan10": "The primary transcript records the Jan. 10 argument from 10:08 a.m. to 12:38 p.m. EST, corroborated by the official audio-detail page and docket. Questions are not treated as a ruling; the 17:38Z anchor is a proceeding-end upper bound."
+    }
+  }
+}

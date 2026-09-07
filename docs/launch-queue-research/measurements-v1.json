@@ -1,0 +1,3321 @@
+{
+  "calculatedAt": "2026-09-06T13:55:03.505Z",
+  "selectionSha256": "79ca8b2e025f15e5fe1ff9040ed1c060d874bf188d2b239f39fc647c0ad33593",
+  "anchorsSha256": "168609f145c5a992e911c5479b0f2c3fe9e331f72420fdb1f5dd5f86febaffa3",
+  "measurementSourceSha256": "9fdfcd16d70cdffd5d54469c215f68ecbf83070c6778754c07047b1eaa9a4cc6",
+  "profile": {
+    "id": "months-hourly-v1",
+    "label": "Months / hourly",
+    "cadenceMinutes": 60,
+    "anticipation": {
+      "startHours": -84,
+      "endHours": -12
+    },
+    "reference": {
+      "startHours": -12,
+      "endHours": 0
+    },
+    "immediate": {
+      "startHours": 0,
+      "endHours": 6
+    },
+    "stabilized": {
+      "startHours": 18,
+      "endHours": 36
+    },
+    "delayed": {
+      "startHours": 48,
+      "endHours": 72
+    },
+    "quality": {
+      "minimumCoverage": 0.6,
+      "maximumGapShare": 0.5,
+      "minimumDistinctUpdates": 3,
+      "maximumSpread": 0.2
+    },
+    "tieThreshold": 0.01
+  },
+  "warning": "Anora contains day-end eligibility scenarios only. Other anchors are public evidence cutoffs, frequently later than first market access. No causal attribution. Quality checks cannot establish CLOB trade freshness when the API omits it.",
+  "finalists": [
+    {
+      "key": "eagles",
+      "datasetSha256": "f151a62f5de76cf398be3ce16c8d229d7c9950771e53f936d3c2494063348dcc",
+      "impacts": [
+        {
+          "eventId": "falcons-collapse",
+          "event": {
+            "id": "falcons-collapse",
+            "date": "2024-09-16",
+            "title": "Eagles lose 22–21 after Atlanta’s late touchdown",
+            "expectedDirection": "negative",
+            "selectionReason": "Early contender doubt and a notorious dropped pass.",
+            "informationKnownAt": "2024-09-17T04:59:45.324Z",
+            "anchorVerified": true,
+            "anchorBasis": "Team recap last-modified time; original publication 03:09Z may precede the final score. Conservative public cutoff, not final whistle."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.067,
+              "start": "2024-09-13T16:59:45.324Z",
+              "end": "2024-09-16T16:59:45.324Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.077,
+              "start": "2024-09-16T16:59:45.324Z",
+              "end": "2024-09-17T04:59:45.324Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.06575,
+              "start": "2024-09-17T04:59:45.324Z",
+              "end": "2024-09-17T10:59:45.324Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.0595,
+              "start": "2024-09-17T22:59:45.324Z",
+              "end": "2024-09-18T16:59:45.324Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.0595,
+              "start": "2024-09-19T04:59:45.324Z",
+              "end": "2024-09-20T04:59:45.324Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": 0.009999999999999995,
+          "immediateResponse": -0.011249999999999996,
+          "shortTermResponse": -0.0175,
+          "delayedIncrement": 0,
+          "cumulativeDelayedResponse": -0.0175,
+          "logOddsResponse": -0.27661152354033236,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.05950000000000001,
+          "attributedImpact": -1.3877787807814457e-17,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "unusually large",
+            "threshold": 0.01050000000000001,
+            "sampleCount": 130
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "barkley-record",
+          "event": {
+            "id": "barkley-record",
+            "date": "2024-11-24",
+            "title": "Saquon Barkley rushes for an Eagles-record 255 yards",
+            "expectedDirection": "positive",
+            "selectionReason": "Famous new signing becomes the season’s star.",
+            "informationKnownAt": "2024-11-25T06:51:48.356Z",
+            "anchorVerified": true,
+            "anchorBasis": "Team article publication and modification agree. Several hours after the game; record developed during play."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.0955,
+              "start": "2024-11-21T18:51:48.356Z",
+              "end": "2024-11-24T18:51:48.356Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.09625,
+              "start": "2024-11-24T18:51:48.356Z",
+              "end": "2024-11-25T06:51:48.356Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.11075,
+              "start": "2024-11-25T06:51:48.356Z",
+              "end": "2024-11-25T12:51:48.356Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.10975,
+              "start": "2024-11-26T00:51:48.356Z",
+              "end": "2024-11-26T18:51:48.356Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.1145,
+              "start": "2024-11-27T06:51:48.356Z",
+              "end": "2024-11-28T06:51:48.356Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": 0.0007500000000000007,
+          "immediateResponse": 0.014499999999999999,
+          "shortTermResponse": 0.013499999999999998,
+          "delayedIncrement": 0.004750000000000004,
+          "cumulativeDelayedResponse": 0.018250000000000002,
+          "logOddsResponse": 0.1463065301024744,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.10975,
+          "attributedImpact": 0,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "unusually large",
+            "threshold": 0.01050000000000001,
+            "sampleCount": 130
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "hurts-concussion",
+          "event": {
+            "id": "hurts-concussion",
+            "date": "2024-12-22",
+            "title": "Hurts leaves with a concussion as Washington ends the Eagles’ winning streak",
+            "expectedDirection": "negative",
+            "selectionReason": "Quarterback health and seeding danger in one inseparable episode.",
+            "informationKnownAt": "2024-12-22T23:26:58.564Z",
+            "anchorVerified": true,
+            "anchorBasis": "Team live recap last-modified cutoff; injury and loss are one cluster."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.1605,
+              "start": "2024-12-19T11:26:58.564Z",
+              "end": "2024-12-22T11:26:58.564Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.1545,
+              "start": "2024-12-22T11:26:58.564Z",
+              "end": "2024-12-22T23:26:58.564Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.13625,
+              "start": "2024-12-22T23:26:58.564Z",
+              "end": "2024-12-23T05:26:58.564Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.1255,
+              "start": "2024-12-23T17:26:58.564Z",
+              "end": "2024-12-24T11:26:58.564Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.12175,
+              "start": "2024-12-24T23:26:58.564Z",
+              "end": "2024-12-25T23:26:58.564Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": -0.006000000000000005,
+          "immediateResponse": -0.01824999999999999,
+          "shortTermResponse": -0.028999999999999998,
+          "delayedIncrement": -0.0037500000000000033,
+          "cumulativeDelayedResponse": -0.03275,
+          "logOddsResponse": -0.24161246388598334,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.12549999999999997,
+          "attributedImpact": 2.7755575615628914e-17,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "unusually large",
+            "threshold": 0.01050000000000001,
+            "sampleCount": 130
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "snow-playoff",
+          "event": {
+            "id": "snow-playoff",
+            "date": "2025-01-19",
+            "title": "Eagles survive the Rams in the snow, 28–22",
+            "expectedDirection": "positive",
+            "selectionReason": "Memorable snow game, explosive runs and a late defensive escape.",
+            "informationKnownAt": "2025-01-20T01:37:49.106Z",
+            "anchorVerified": true,
+            "anchorBasis": "Team live recap last-modified cutoff, later than final whistle."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.14825,
+              "start": "2025-01-16T13:37:49.106Z",
+              "end": "2025-01-19T13:37:49.106Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.2535,
+              "start": "2025-01-19T13:37:49.106Z",
+              "end": "2025-01-20T01:37:49.106Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.31575,
+              "start": "2025-01-20T01:37:49.106Z",
+              "end": "2025-01-20T07:37:49.106Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.31225,
+              "start": "2025-01-20T19:37:49.106Z",
+              "end": "2025-01-21T13:37:49.106Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.32725000000000004,
+              "start": "2025-01-22T01:37:49.106Z",
+              "end": "2025-01-23T01:37:49.106Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": 0.10525000000000001,
+          "immediateResponse": 0.06224999999999997,
+          "shortTermResponse": 0.058750000000000024,
+          "delayedIncrement": 0.015000000000000013,
+          "cumulativeDelayedResponse": 0.07375000000000004,
+          "logOddsResponse": 0.29041054314901027,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.31224999999999997,
+          "attributedImpact": 5.551115123125783e-17,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "unusually large",
+            "threshold": 0.01050000000000001,
+            "sampleCount": 130
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "nfc-title",
+          "event": {
+            "id": "nfc-title",
+            "date": "2025-01-26",
+            "title": "Eagles score 55 to reach the Super Bowl",
+            "expectedDirection": "positive",
+            "selectionReason": "Conference breakthrough, leaving the ultimate championship unresolved.",
+            "informationKnownAt": "2025-01-27T03:14:55.431Z",
+            "anchorVerified": true,
+            "anchorBasis": "Team analysis last-modified cutoff; also after AFC outcome."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.322,
+              "start": "2025-01-23T15:14:55.431Z",
+              "end": "2025-01-26T15:14:55.431Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.405,
+              "start": "2025-01-26T15:14:55.431Z",
+              "end": "2025-01-27T03:14:55.431Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.46,
+              "start": "2025-01-27T03:14:55.431Z",
+              "end": "2025-01-27T09:14:55.431Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.46575,
+              "start": "2025-01-27T21:14:55.431Z",
+              "end": "2025-01-28T15:14:55.431Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.469,
+              "start": "2025-01-29T03:14:55.431Z",
+              "end": "2025-01-30T03:14:55.431Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": 0.08300000000000002,
+          "immediateResponse": 0.05499999999999999,
+          "shortTermResponse": 0.06074999999999997,
+          "delayedIncrement": 0.003249999999999975,
+          "cumulativeDelayedResponse": 0.06399999999999995,
+          "logOddsResponse": 0.2474594537215314,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.46575000000000005,
+          "attributedImpact": -5.551115123125783e-17,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "unusually large",
+            "threshold": 0.01050000000000001,
+            "sampleCount": 130
+          },
+          "overlaps": []
+        }
+      ],
+      "tieGroups": [
+        [
+          "nfc-title",
+          "snow-playoff"
+        ],
+        [
+          "barkley-record"
+        ],
+        [
+          "falcons-collapse"
+        ],
+        [
+          "hurts-concussion"
+        ]
+      ],
+      "allWindowsPass": true
+    },
+    {
+      "key": "tiktok",
+      "datasetSha256": "caf50a435fa87b927fa197b4a03c472bf7cba94de020c5879668b12036e90bd7",
+      "impacts": [
+        {
+          "eventId": "trump-elected",
+          "event": {
+            "id": "trump-elected",
+            "date": "2024-11-06",
+            "title": "Trump wins the presidency after campaigning to save TikTok",
+            "expectedDirection": "negative",
+            "selectionReason": "A new political escape route for a household-name app.",
+            "informationKnownAt": "2024-11-06T10:34:00Z",
+            "anchorVerified": true,
+            "anchorBasis": "AP’s own documented 05:34 EST presidential call. AP retrospective page preserves its original announcement. Prior save-TikTok pledge is excluded from pre-reveal claim pending contemporary primary source."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.245,
+              "start": "2024-11-02T22:34:00.000Z",
+              "end": "2024-11-05T22:34:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 71,
+                "tradedBuckets": 71,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 0.9861111111111112,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 71,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.25,
+              "start": "2024-11-05T22:34:00.000Z",
+              "end": "2024-11-06T10:34:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.255,
+              "start": "2024-11-06T10:34:00.000Z",
+              "end": "2024-11-06T16:34:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.1325,
+              "start": "2024-11-07T04:34:00.000Z",
+              "end": "2024-11-07T22:34:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.125,
+              "start": "2024-11-08T10:34:00.000Z",
+              "end": "2024-11-09T10:34:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": 0.0050000000000000044,
+          "immediateResponse": 0.0050000000000000044,
+          "shortTermResponse": -0.1175,
+          "delayedIncrement": -0.007500000000000007,
+          "cumulativeDelayedResponse": -0.125,
+          "logOddsResponse": -0.7804205777266275,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.1325,
+          "attributedImpact": 0,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "unusually large",
+            "threshold": 0.1,
+            "sampleCount": 66
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "appeal-lost",
+          "event": {
+            "id": "appeal-lost",
+            "date": "2024-12-06",
+            "title": "Appeals court rejects TikTok’s challenge to the divest-or-ban law",
+            "expectedDirection": "positive",
+            "selectionReason": "Major legal defeat.",
+            "informationKnownAt": "2024-12-06T16:00:00Z",
+            "anchorVerified": true,
+            "anchorBasis": "End of 10:30–11:00 EST live court coverage; ruling date independently recorded on Supreme Court docket."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.215,
+              "start": "2024-12-03T04:00:00.000Z",
+              "end": "2024-12-06T04:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.215,
+              "start": "2024-12-06T04:00:00.000Z",
+              "end": "2024-12-06T16:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.48,
+              "start": "2024-12-06T16:00:00.000Z",
+              "end": "2024-12-06T22:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.3325,
+              "start": "2024-12-07T10:00:00.000Z",
+              "end": "2024-12-08T04:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.355,
+              "start": "2024-12-08T16:00:00.000Z",
+              "end": "2024-12-09T16:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": 0,
+          "immediateResponse": 0.265,
+          "shortTermResponse": 0.11750000000000002,
+          "delayedIncrement": 0.022499999999999964,
+          "cumulativeDelayedResponse": 0.13999999999999999,
+          "logOddsResponse": 0.59814615947625,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.3325,
+          "attributedImpact": 0,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "unusually large",
+            "threshold": 0.1,
+            "sampleCount": 66
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "supreme-review",
+          "event": {
+            "id": "supreme-review",
+            "date": "2024-12-18",
+            "title": "Supreme Court agrees to hear TikTok’s challenge",
+            "expectedDirection": "negative",
+            "selectionReason": "An institutional lifeline, without a stay or merits victory.",
+            "informationKnownAt": "2024-12-18T19:00:00Z",
+            "anchorVerified": true,
+            "anchorBasis": "End of 13:30–14:00 EST broadcast reporting order; order PDF verifies substance, docket date."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.33,
+              "start": "2024-12-15T07:00:00.000Z",
+              "end": "2024-12-18T07:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.3225,
+              "start": "2024-12-18T07:00:00.000Z",
+              "end": "2024-12-18T19:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.3125,
+              "start": "2024-12-18T19:00:00.000Z",
+              "end": "2024-12-19T01:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.325,
+              "start": "2024-12-19T13:00:00.000Z",
+              "end": "2024-12-20T07:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.36,
+              "start": "2024-12-20T19:00:00.000Z",
+              "end": "2024-12-21T19:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": -0.007500000000000007,
+          "immediateResponse": -0.010000000000000009,
+          "shortTermResponse": 0.0025000000000000022,
+          "delayedIncrement": 0.034999999999999976,
+          "cumulativeDelayedResponse": 0.03749999999999998,
+          "logOddsResponse": 0.01141890797523637,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.32499999999999996,
+          "attributedImpact": 5.551115123125783e-17,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "not detectable",
+            "threshold": 0.1,
+            "sampleCount": 66
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "trump-pause",
+          "event": {
+            "id": "trump-pause",
+            "date": "2024-12-27",
+            "title": "Trump asks the Supreme Court to pause the TikTok deadline",
+            "expectedDirection": "negative",
+            "selectionReason": "The incoming president intervenes directly.",
+            "informationKnownAt": "2024-12-27T23:00:00Z",
+            "anchorVerified": true,
+            "anchorBasis": "End of 17:00–18:00 EST broadcast publicly reproducing Trump brief; filing filename alone not treated as public release time."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.35,
+              "start": "2024-12-24T11:00:00.000Z",
+              "end": "2024-12-27T11:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.345,
+              "start": "2024-12-27T11:00:00.000Z",
+              "end": "2024-12-27T23:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.305,
+              "start": "2024-12-27T23:00:00.000Z",
+              "end": "2024-12-28T05:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.305,
+              "start": "2024-12-28T17:00:00.000Z",
+              "end": "2024-12-29T11:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.31,
+              "start": "2024-12-29T23:00:00.000Z",
+              "end": "2024-12-30T23:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": -0.0050000000000000044,
+          "immediateResponse": -0.03999999999999998,
+          "shortTermResponse": -0.03999999999999998,
+          "delayedIncrement": 0.0050000000000000044,
+          "cumulativeDelayedResponse": -0.034999999999999976,
+          "logOddsResponse": -0.18250925035348853,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.30499999999999994,
+          "attributedImpact": 5.551115123125783e-17,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "ordinary",
+            "threshold": 0.1,
+            "sampleCount": 66
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "supreme-argument",
+          "event": {
+            "id": "supreme-argument",
+            "date": "2025-01-10",
+            "title": "TikTok and the government face Supreme Court questioning",
+            "expectedDirection": "ambiguous",
+            "selectionReason": "Public test of the rival free-speech and national-security arguments.",
+            "informationKnownAt": "2025-01-10T17:38:00Z",
+            "anchorVerified": true,
+            "anchorBasis": "Official oral-argument transcript ends at 12:38 EST, after 10:08 start. Public live-audio page corroborates public proceeding."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.515,
+              "start": "2025-01-07T05:38:00.000Z",
+              "end": "2025-01-10T05:38:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.5674999999999999,
+              "start": "2025-01-10T05:38:00.000Z",
+              "end": "2025-01-10T17:38:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.7324999999999999,
+              "start": "2025-01-10T17:38:00.000Z",
+              "end": "2025-01-10T23:38:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.6924999999999999,
+              "start": "2025-01-11T11:38:00.000Z",
+              "end": "2025-01-12T05:38:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.68,
+              "start": "2025-01-12T17:38:00.000Z",
+              "end": "2025-01-13T17:38:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": 0.05249999999999988,
+          "immediateResponse": 0.16500000000000004,
+          "shortTermResponse": 0.125,
+          "delayedIncrement": -0.012499999999999845,
+          "cumulativeDelayedResponse": 0.11250000000000016,
+          "logOddsResponse": 0.5401747278312972,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.6925,
+          "attributedImpact": -1.1102230246251565e-16,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "unusually large",
+            "threshold": 0.1,
+            "sampleCount": 66
+          },
+          "overlaps": []
+        }
+      ],
+      "tieGroups": [
+        [
+          "supreme-argument",
+          "appeal-lost"
+        ],
+        [
+          "supreme-review"
+        ],
+        [
+          "trump-pause"
+        ],
+        [
+          "trump-elected"
+        ]
+      ],
+      "allWindowsPass": true
+    },
+    {
+      "key": "anora-kalshi",
+      "datasetSha256": "e1f66ccc49027815e23b327fa1c1a64adf569d3072d47220e47c7b9bd7b495da",
+      "impacts": [
+        {
+          "eventId": "globes-shutout",
+          "event": {
+            "id": "globes-shutout",
+            "date": "2025-01-05",
+            "title": "Anora leaves the Golden Globes empty-handed",
+            "expectedDirection": "negative",
+            "selectionReason": "The presumed contender misses all five prizes.",
+            "informationKnownAt": "2025-01-06T08:00:00Z",
+            "anchorVerified": false,
+            "anchorBasis": "Eligibility scenario only: end of local ceremony date in America/Los_Angeles. Actual first-public completion unverified; official results page published Jan7."
+          },
+          "windows": {
+            "anticipation": {
+              "level": null,
+              "start": "2025-01-02T20:00:00.000Z",
+              "end": "2025-01-05T20:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 17,
+                "tradedBuckets": 11,
+                "quoteBuckets": 6,
+                "staleBuckets": 0,
+                "coverage": 0.2361111111111111,
+                "maximumGapBuckets": 20,
+                "medianSpread": 0.019999999999999962,
+                "totalVolume": 4258,
+                "distinctUpdates": 17,
+                "status": "insufficient",
+                "reasons": [
+                  "Only 24% of expected buckets are usable."
+                ]
+              }
+            },
+            "reference": {
+              "level": 0.35,
+              "start": "2025-01-05T20:00:00.000Z",
+              "end": "2025-01-06T08:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 9,
+                "tradedBuckets": 7,
+                "quoteBuckets": 2,
+                "staleBuckets": 0,
+                "coverage": 0.75,
+                "maximumGapBuckets": 2,
+                "medianSpread": 0.03,
+                "totalVolume": 2209,
+                "distinctUpdates": 9,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": null,
+              "start": "2025-01-06T08:00:00.000Z",
+              "end": "2025-01-06T14:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 0,
+                "tradedBuckets": 0,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 0,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 0,
+                "status": "insufficient",
+                "reasons": [
+                  "Only 0% of expected buckets are usable.",
+                  "Fewer than 3 distinct price updates are available."
+                ]
+              }
+            },
+            "stabilized": {
+              "level": null,
+              "start": "2025-01-07T02:00:00.000Z",
+              "end": "2025-01-07T20:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 6,
+                "tradedBuckets": 4,
+                "quoteBuckets": 2,
+                "staleBuckets": 0,
+                "coverage": 0.3333333333333333,
+                "maximumGapBuckets": 8,
+                "medianSpread": 0.01999999999999999,
+                "totalVolume": 1465,
+                "distinctUpdates": 6,
+                "status": "insufficient",
+                "reasons": [
+                  "Only 33% of expected buckets are usable."
+                ]
+              }
+            },
+            "delayed": {
+              "level": null,
+              "start": "2025-01-08T08:00:00.000Z",
+              "end": "2025-01-09T08:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 12,
+                "tradedBuckets": 11,
+                "quoteBuckets": 1,
+                "staleBuckets": 0,
+                "coverage": 0.5,
+                "maximumGapBuckets": 2,
+                "medianSpread": 0.010000000000000009,
+                "totalVolume": 14578,
+                "distinctUpdates": 12,
+                "status": "insufficient",
+                "reasons": [
+                  "Only 50% of expected buckets are usable."
+                ]
+              }
+            }
+          },
+          "anticipationMove": null,
+          "immediateResponse": null,
+          "shortTermResponse": null,
+          "delayedIncrement": null,
+          "cumulativeDelayedResponse": null,
+          "logOddsResponse": null,
+          "sensitivityShare": 0,
+          "counterfactualProbability": null,
+          "attributedImpact": null,
+          "qualityStatus": "indeterminate",
+          "ordinaryMovement": {
+            "classification": "indeterminate",
+            "threshold": 0.09999999999999998,
+            "sampleCount": 25
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "oscar-nominations",
+          "event": {
+            "id": "oscar-nominations",
+            "date": "2025-01-23",
+            "title": "Anora earns six Oscar nominations; Emilia Pérez leads with 13",
+            "expectedDirection": "ambiguous",
+            "selectionReason": "Nomination strength against a formidable rival.",
+            "informationKnownAt": "2025-01-24T08:00:00Z",
+            "anchorVerified": false,
+            "anchorBasis": "Eligibility scenario only: end of local nomination date. Official Jan23 05:30 PST schedule is not proof of completion. Download blocked."
+          },
+          "windows": {
+            "anticipation": {
+              "level": null,
+              "start": "2025-01-20T20:00:00.000Z",
+              "end": "2025-01-23T20:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 43,
+                "tradedBuckets": 38,
+                "quoteBuckets": 5,
+                "staleBuckets": 0,
+                "coverage": 0.5972222222222222,
+                "maximumGapBuckets": 9,
+                "medianSpread": 0.04000000000000001,
+                "totalVolume": 28760,
+                "distinctUpdates": 43,
+                "status": "insufficient",
+                "reasons": [
+                  "Only 60% of expected buckets are usable."
+                ]
+              }
+            },
+            "reference": {
+              "level": 0.18,
+              "start": "2025-01-23T20:00:00.000Z",
+              "end": "2025-01-24T08:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 11,
+                "tradedBuckets": 10,
+                "quoteBuckets": 1,
+                "staleBuckets": 0,
+                "coverage": 0.9166666666666666,
+                "maximumGapBuckets": 0,
+                "medianSpread": 0.010000000000000009,
+                "totalVolume": 6305,
+                "distinctUpdates": 11,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": null,
+              "start": "2025-01-24T08:00:00.000Z",
+              "end": "2025-01-24T14:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 0,
+                "tradedBuckets": 0,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 0,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 0,
+                "status": "insufficient",
+                "reasons": [
+                  "Only 0% of expected buckets are usable.",
+                  "Fewer than 3 distinct price updates are available."
+                ]
+              }
+            },
+            "stabilized": {
+              "level": null,
+              "start": "2025-01-25T02:00:00.000Z",
+              "end": "2025-01-25T20:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 7,
+                "tradedBuckets": 7,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 0.3888888888888889,
+                "maximumGapBuckets": 8,
+                "medianSpread": 0.01999999999999999,
+                "totalVolume": 536,
+                "distinctUpdates": 7,
+                "status": "insufficient",
+                "reasons": [
+                  "Only 39% of expected buckets are usable."
+                ]
+              }
+            },
+            "delayed": {
+              "level": null,
+              "start": "2025-01-26T08:00:00.000Z",
+              "end": "2025-01-27T08:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 12,
+                "tradedBuckets": 10,
+                "quoteBuckets": 2,
+                "staleBuckets": 0,
+                "coverage": 0.5,
+                "maximumGapBuckets": 6,
+                "medianSpread": 0.03499999999999999,
+                "totalVolume": 1089,
+                "distinctUpdates": 12,
+                "status": "insufficient",
+                "reasons": [
+                  "Only 50% of expected buckets are usable."
+                ]
+              }
+            }
+          },
+          "anticipationMove": null,
+          "immediateResponse": null,
+          "shortTermResponse": null,
+          "delayedIncrement": null,
+          "cumulativeDelayedResponse": null,
+          "logOddsResponse": null,
+          "sensitivityShare": 0,
+          "counterfactualProbability": null,
+          "attributedImpact": null,
+          "qualityStatus": "indeterminate",
+          "ordinaryMovement": {
+            "classification": "indeterminate",
+            "threshold": 0.09999999999999998,
+            "sampleCount": 25
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "guild-weekend",
+          "event": {
+            "id": "guild-weekend",
+            "date": "2025-02-09",
+            "title": "Anora wins Critics Choice, Directors Guild and Producers Guild prizes in one weekend",
+            "expectedDirection": "positive",
+            "selectionReason": "One clustered comeback, not three cards measuring the same news.",
+            "informationKnownAt": "2025-02-10T08:00:00Z",
+            "anchorVerified": false,
+            "anchorBasis": "Eligibility scenario only: end of final cluster date. Actual weekend completion cutoff needs DGA/PGA/CCA archive; PGA publication Feb9 07:02:42Z, later modified."
+          },
+          "windows": {
+            "anticipation": {
+              "level": null,
+              "start": "2025-02-06T20:00:00.000Z",
+              "end": "2025-02-09T20:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 43,
+                "tradedBuckets": 42,
+                "quoteBuckets": 1,
+                "staleBuckets": 0,
+                "coverage": 0.5972222222222222,
+                "maximumGapBuckets": 9,
+                "medianSpread": 0.010000000000000009,
+                "totalVolume": 84128,
+                "distinctUpdates": 43,
+                "status": "insufficient",
+                "reasons": [
+                  "Only 60% of expected buckets are usable."
+                ]
+              }
+            },
+            "reference": {
+              "level": 0.6,
+              "start": "2025-02-09T20:00:00.000Z",
+              "end": "2025-02-10T08:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": 0.010000000000000009,
+                "totalVolume": 26104,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": null,
+              "start": "2025-02-10T08:00:00.000Z",
+              "end": "2025-02-10T14:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 1,
+                "tradedBuckets": 1,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 0.16666666666666666,
+                "maximumGapBuckets": 0,
+                "medianSpread": 0.010000000000000009,
+                "totalVolume": 527,
+                "distinctUpdates": 1,
+                "status": "insufficient",
+                "reasons": [
+                  "Only 17% of expected buckets are usable.",
+                  "Fewer than 3 distinct price updates are available."
+                ]
+              }
+            },
+            "stabilized": {
+              "level": 0.6,
+              "start": "2025-02-11T02:00:00.000Z",
+              "end": "2025-02-11T20:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 13,
+                "tradedBuckets": 13,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 0.7222222222222222,
+                "maximumGapBuckets": 5,
+                "medianSpread": 0.010000000000000009,
+                "totalVolume": 7486,
+                "distinctUpdates": 13,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.6,
+              "start": "2025-02-12T08:00:00.000Z",
+              "end": "2025-02-13T08:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 0.75,
+                "maximumGapBuckets": 5,
+                "medianSpread": 0.010000000000000009,
+                "totalVolume": 6934,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": null,
+          "immediateResponse": null,
+          "shortTermResponse": 0,
+          "delayedIncrement": 0,
+          "cumulativeDelayedResponse": 0,
+          "logOddsResponse": 0,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.6,
+          "attributedImpact": 0,
+          "qualityStatus": "indeterminate",
+          "ordinaryMovement": {
+            "classification": "not detectable",
+            "threshold": 0.09999999999999998,
+            "sampleCount": 25
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "bafta-conclave",
+          "event": {
+            "id": "bafta-conclave",
+            "date": "2025-02-16",
+            "title": "Conclave wins BAFTA’s Best Film prize; Anora wins actress and casting",
+            "expectedDirection": "ambiguous",
+            "selectionReason": "A rival’s breakthrough partly offset by Anora’s own wins.",
+            "informationKnownAt": "2025-02-17T00:00:00Z",
+            "anchorVerified": false,
+            "anchorBasis": "Eligibility scenario only: end of Feb16 London date; official results verified via web, download blocked."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.6275,
+              "start": "2025-02-13T12:00:00.000Z",
+              "end": "2025-02-16T12:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 56,
+                "tradedBuckets": 52,
+                "quoteBuckets": 4,
+                "staleBuckets": 0,
+                "coverage": 0.7777777777777778,
+                "maximumGapBuckets": 5,
+                "medianSpread": 0.010000000000000009,
+                "totalVolume": 32259,
+                "distinctUpdates": 56,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.645,
+              "start": "2025-02-16T12:00:00.000Z",
+              "end": "2025-02-17T00:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 10,
+                "tradedBuckets": 10,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 0.8333333333333334,
+                "maximumGapBuckets": 0,
+                "medianSpread": 0.020000000000000018,
+                "totalVolume": 20241,
+                "distinctUpdates": 10,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.7,
+              "start": "2025-02-17T00:00:00.000Z",
+              "end": "2025-02-17T06:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": 0.010000000000000009,
+                "totalVolume": 425,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.68,
+              "start": "2025-02-17T18:00:00.000Z",
+              "end": "2025-02-18T12:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 15,
+                "tradedBuckets": 14,
+                "quoteBuckets": 1,
+                "staleBuckets": 0,
+                "coverage": 0.8333333333333334,
+                "maximumGapBuckets": 0,
+                "medianSpread": 0.010000000000000009,
+                "totalVolume": 12053,
+                "distinctUpdates": 15,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.69,
+              "start": "2025-02-19T00:00:00.000Z",
+              "end": "2025-02-20T00:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 19,
+                "tradedBuckets": 18,
+                "quoteBuckets": 1,
+                "staleBuckets": 0,
+                "coverage": 0.7916666666666666,
+                "maximumGapBuckets": 5,
+                "medianSpread": 0.019999999999999907,
+                "totalVolume": 18918,
+                "distinctUpdates": 19,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": 0.01750000000000007,
+          "immediateResponse": 0.05499999999999994,
+          "shortTermResponse": 0.03500000000000003,
+          "delayedIncrement": 0.009999999999999898,
+          "cumulativeDelayedResponse": 0.04499999999999993,
+          "logOddsResponse": 0.1566392750560236,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.68,
+          "attributedImpact": 0,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "ordinary",
+            "threshold": 0.09999999999999998,
+            "sampleCount": 25
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "sag-conclave",
+          "event": {
+            "id": "sag-conclave",
+            "date": "2025-02-23",
+            "title": "Conclave wins the Screen Actors Guild ensemble prize",
+            "expectedDirection": "negative",
+            "selectionReason": "Late rival signal after Academy voting has already closed.",
+            "informationKnownAt": "2025-02-24T08:00:00Z",
+            "anchorVerified": false,
+            "anchorBasis": "Eligibility scenario only: end of Feb23 Los Angeles date; official results day established, exact completion time missing."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.74,
+              "start": "2025-02-20T20:00:00.000Z",
+              "end": "2025-02-23T20:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 52,
+                "tradedBuckets": 46,
+                "quoteBuckets": 6,
+                "staleBuckets": 0,
+                "coverage": 0.7222222222222222,
+                "maximumGapBuckets": 7,
+                "medianSpread": 0.020000000000000018,
+                "totalVolume": 22508,
+                "distinctUpdates": 52,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.72,
+              "start": "2025-02-23T20:00:00.000Z",
+              "end": "2025-02-24T08:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 11,
+                "tradedBuckets": 11,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 0.9166666666666666,
+                "maximumGapBuckets": 1,
+                "medianSpread": 0.020000000000000018,
+                "totalVolume": 24856,
+                "distinctUpdates": 11,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": null,
+              "start": "2025-02-24T08:00:00.000Z",
+              "end": "2025-02-24T14:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 1,
+                "tradedBuckets": 1,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 0.16666666666666666,
+                "maximumGapBuckets": 0,
+                "medianSpread": 0.010000000000000009,
+                "totalVolume": 2792,
+                "distinctUpdates": 1,
+                "status": "insufficient",
+                "reasons": [
+                  "Only 17% of expected buckets are usable.",
+                  "Fewer than 3 distinct price updates are available."
+                ]
+              }
+            },
+            "stabilized": {
+              "level": 0.645,
+              "start": "2025-02-25T02:00:00.000Z",
+              "end": "2025-02-25T20:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 12,
+                "tradedBuckets": 11,
+                "quoteBuckets": 1,
+                "staleBuckets": 0,
+                "coverage": 0.6666666666666666,
+                "maximumGapBuckets": 5,
+                "medianSpread": 0.010000000000000009,
+                "totalVolume": 7746,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.64,
+              "start": "2025-02-26T08:00:00.000Z",
+              "end": "2025-02-27T08:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 0.75,
+                "maximumGapBuckets": 0,
+                "medianSpread": 0.010000000000000009,
+                "totalVolume": 12940,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": -0.020000000000000018,
+          "immediateResponse": null,
+          "shortTermResponse": -0.07499999999999996,
+          "delayedIncrement": -0.0050000000000000044,
+          "cumulativeDelayedResponse": -0.07999999999999996,
+          "logOddsResponse": -0.34732908152049446,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.645,
+          "attributedImpact": 0,
+          "qualityStatus": "indeterminate",
+          "ordinaryMovement": {
+            "classification": "ordinary",
+            "threshold": 0.09999999999999998,
+            "sampleCount": 25
+          },
+          "overlaps": []
+        }
+      ],
+      "tieGroups": [
+        [
+          "bafta-conclave"
+        ],
+        [
+          "guild-weekend"
+        ],
+        [
+          "sag-conclave"
+        ]
+      ],
+      "allWindowsPass": false
+    },
+    {
+      "key": "trump",
+      "datasetSha256": "7b75c8dd3b85c151c76bded476ae6e32fa3084781c77cfa176f632e527bdd380",
+      "impacts": [
+        {
+          "eventId": "conviction",
+          "event": {
+            "id": "conviction",
+            "date": "2024-05-30",
+            "title": "New York jury finds Trump guilty on 34 felony counts",
+            "expectedDirection": "ambiguous",
+            "selectionReason": "Historic legal blow versus political mobilization.",
+            "informationKnownAt": "2024-05-30T21:15:07Z",
+            "anchorVerified": true,
+            "anchorBasis": "Next bracket after live courthouse reporting of all 34 guilty verdicts; upper bound, not exact verdict instant."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.565,
+              "start": "2024-05-27T09:15:07.000Z",
+              "end": "2024-05-30T09:15:07.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.565,
+              "start": "2024-05-30T09:15:07.000Z",
+              "end": "2024-05-30T21:15:07.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.535,
+              "start": "2024-05-30T21:15:07.000Z",
+              "end": "2024-05-31T03:15:07.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.545,
+              "start": "2024-05-31T15:15:07.000Z",
+              "end": "2024-06-01T09:15:07.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.535,
+              "start": "2024-06-01T21:15:07.000Z",
+              "end": "2024-06-02T21:15:07.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": 0,
+          "immediateResponse": -0.029999999999999916,
+          "shortTermResponse": -0.019999999999999907,
+          "delayedIncrement": -0.010000000000000009,
+          "cumulativeDelayedResponse": -0.029999999999999916,
+          "logOddsResponse": -0.08099132434546275,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.545,
+          "attributedImpact": 0,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "ordinary",
+            "threshold": 0.030000000000000027,
+            "sampleCount": 113
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "butler",
+          "event": {
+            "id": "butler",
+            "date": "2024-07-13",
+            "title": "Trump survives a shooting at his Pennsylvania rally",
+            "expectedDirection": "positive",
+            "selectionReason": "The campaign’s most widely recognized shocking moment.",
+            "informationKnownAt": "2024-07-14T00:00:00Z",
+            "anchorVerified": true,
+            "anchorBasis": "End of 19:00–20:00 EDT live broadcast containing the survival report and official response."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.605,
+              "start": "2024-07-10T12:00:00.000Z",
+              "end": "2024-07-13T12:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.595,
+              "start": "2024-07-13T12:00:00.000Z",
+              "end": "2024-07-14T00:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.695,
+              "start": "2024-07-14T00:00:00.000Z",
+              "end": "2024-07-14T06:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.695,
+              "start": "2024-07-14T18:00:00.000Z",
+              "end": "2024-07-15T12:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.705,
+              "start": "2024-07-16T00:00:00.000Z",
+              "end": "2024-07-17T00:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": -0.010000000000000009,
+          "immediateResponse": 0.09999999999999998,
+          "shortTermResponse": 0.09999999999999998,
+          "delayedIncrement": 0.010000000000000009,
+          "cumulativeDelayedResponse": 0.10999999999999999,
+          "logOddsResponse": 0.4389257305182898,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.6950000000000001,
+          "attributedImpact": -1.1102230246251565e-16,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "unusually large",
+            "threshold": 0.030000000000000027,
+            "sampleCount": 113
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "rfk-endorsement",
+          "event": {
+            "id": "rfk-endorsement",
+            "date": "2024-08-23",
+            "title": "Robert F. Kennedy Jr. suspends his campaign and endorses Trump",
+            "expectedDirection": "positive",
+            "selectionReason": "A rival joins forces rather than another debate or poll.",
+            "informationKnownAt": "2024-08-23T19:30:00Z",
+            "anchorVerified": true,
+            "anchorBasis": "End of 15:00–15:30 EDT broadcast carrying Kennedy’s own speech."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.518,
+              "start": "2024-08-20T07:30:00.000Z",
+              "end": "2024-08-23T07:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.5097499999999999,
+              "start": "2024-08-23T07:30:00.000Z",
+              "end": "2024-08-23T19:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.5017499999999999,
+              "start": "2024-08-23T19:30:00.000Z",
+              "end": "2024-08-24T01:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.498,
+              "start": "2024-08-24T13:30:00.000Z",
+              "end": "2024-08-25T07:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.4955,
+              "start": "2024-08-25T19:30:00.000Z",
+              "end": "2024-08-26T19:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": -0.00825000000000009,
+          "immediateResponse": -0.008000000000000007,
+          "shortTermResponse": -0.011749999999999927,
+          "delayedIncrement": -0.0025000000000000022,
+          "cumulativeDelayedResponse": -0.01424999999999993,
+          "logOddsResponse": -0.04700498704518492,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.498,
+          "attributedImpact": 0,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "ordinary",
+            "threshold": 0.030000000000000027,
+            "sampleCount": 113
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "harris-debate",
+          "event": {
+            "id": "harris-debate",
+            "date": "2024-09-10",
+            "title": "Harris and Trump meet in their first presidential debate",
+            "expectedDirection": "ambiguous",
+            "selectionReason": "The replacement opponent’s national test.",
+            "informationKnownAt": "2024-09-11T03:58:00Z",
+            "anchorVerified": true,
+            "anchorBasis": "ABC original transcript publication; live debate occurred earlier; page later updated at 16:24:39Z. Narrow claim is only that the debate took place. First-broadcast end/archive still requires confirmation."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.5165,
+              "start": "2024-09-07T15:58:00.000Z",
+              "end": "2024-09-10T15:58:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.51925,
+              "start": "2024-09-10T15:58:00.000Z",
+              "end": "2024-09-11T03:58:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.49075,
+              "start": "2024-09-11T03:58:00.000Z",
+              "end": "2024-09-11T09:58:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.4935,
+              "start": "2024-09-11T21:58:00.000Z",
+              "end": "2024-09-12T15:58:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.4915,
+              "start": "2024-09-13T03:58:00.000Z",
+              "end": "2024-09-14T03:58:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": 0.00275000000000003,
+          "immediateResponse": -0.02849999999999997,
+          "shortTermResponse": -0.025749999999999995,
+          "delayedIncrement": -0.0020000000000000018,
+          "cumulativeDelayedResponse": -0.027749999999999997,
+          "logOddsResponse": -0.10303954310253428,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.4935,
+          "attributedImpact": 0,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "ordinary",
+            "threshold": 0.030000000000000027,
+            "sampleCount": 113
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "iowa-poll",
+          "event": {
+            "id": "iowa-poll",
+            "date": "2024-11-02",
+            "title": "Final Iowa Poll puts Harris ahead of Trump, 47% to 44%",
+            "expectedDirection": "negative",
+            "selectionReason": "A famous late surprise whose electoral conclusion proved wrong.",
+            "informationKnownAt": "2024-11-03T00:00:00Z",
+            "anchorVerified": true,
+            "anchorBasis": "End of 19:00–20:00 EDT broadcast with poll publisher USA Today editor discussing 47–44 finding; actual release earlier."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.627,
+              "start": "2024-10-30T12:00:00.000Z",
+              "end": "2024-11-02T12:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.5895,
+              "start": "2024-11-02T12:00:00.000Z",
+              "end": "2024-11-03T00:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.548,
+              "start": "2024-11-03T00:00:00.000Z",
+              "end": "2024-11-03T06:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.5549999999999999,
+              "start": "2024-11-03T18:00:00.000Z",
+              "end": "2024-11-04T12:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.61,
+              "start": "2024-11-05T00:00:00.000Z",
+              "end": "2024-11-06T00:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 23,
+                "tradedBuckets": 23,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 0.9583333333333334,
+                "maximumGapBuckets": 1,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 23,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": -0.03749999999999998,
+          "immediateResponse": -0.04149999999999998,
+          "shortTermResponse": -0.034500000000000086,
+          "delayedIncrement": 0.05500000000000005,
+          "cumulativeDelayedResponse": 0.020499999999999963,
+          "logOddsResponse": -0.14100495950474876,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.5549999999999999,
+          "attributedImpact": 0,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "unusually large",
+            "threshold": 0.030000000000000027,
+            "sampleCount": 113
+          },
+          "overlaps": []
+        }
+      ],
+      "tieGroups": [
+        [
+          "butler"
+        ],
+        [
+          "rfk-endorsement",
+          "conviction"
+        ],
+        [
+          "harris-debate",
+          "iowa-poll"
+        ]
+      ],
+      "allWindowsPass": true
+    },
+    {
+      "key": "nyc",
+      "datasetSha256": "53e961b3828d1d393f346b8b65509fee2db504749836dabc36c20df7f3b6ed03",
+      "impacts": [
+        {
+          "eventId": "aoc-endorsement",
+          "event": {
+            "id": "aoc-endorsement",
+            "date": "2025-06-05",
+            "title": "Alexandria Ocasio-Cortez endorses Zohran Mamdani",
+            "expectedDirection": "positive",
+            "selectionReason": "Nationally recognizable supporter and outsider momentum.",
+            "informationKnownAt": "2025-06-05T12:27:13.349Z",
+            "anchorVerified": true,
+            "anchorBasis": "Candidate’s public Bluesky record indexedAt; createdAt 12:27:11.326Z."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.12075,
+              "start": "2025-06-02T00:27:13.349Z",
+              "end": "2025-06-05T00:27:13.349Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.14,
+              "start": "2025-06-05T00:27:13.349Z",
+              "end": "2025-06-05T12:27:13.349Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.13375,
+              "start": "2025-06-05T12:27:13.349Z",
+              "end": "2025-06-05T18:27:13.349Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.14275,
+              "start": "2025-06-06T06:27:13.349Z",
+              "end": "2025-06-07T00:27:13.349Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.1755,
+              "start": "2025-06-07T12:27:13.349Z",
+              "end": "2025-06-08T12:27:13.349Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": 0.019250000000000017,
+          "immediateResponse": -0.0062500000000000056,
+          "shortTermResponse": 0.0027499999999999747,
+          "delayedIncrement": 0.03275,
+          "cumulativeDelayedResponse": 0.035499999999999976,
+          "logOddsResponse": 0.022655223831338667,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.14275,
+          "attributedImpact": 0,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "not detectable",
+            "threshold": 0.03200000000000003,
+            "sampleCount": 117
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "primary-breakthrough",
+          "event": {
+            "id": "primary-breakthrough",
+            "date": "2025-06-24",
+            "title": "Cuomo concedes the Democratic primary to Mamdani",
+            "expectedDirection": "positive",
+            "selectionReason": "Primary victory is a development in the GENERAL election contract, not its resolving result.",
+            "informationKnownAt": "2025-06-25T04:00:00Z",
+            "anchorVerified": true,
+            "anchorBasis": "End of 23:00–00:00 EDT broadcast reporting Cuomo concession; primary concession video also embedded on FOX5 page, first-post metadata precedes update."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.1965,
+              "start": "2025-06-21T16:00:00.000Z",
+              "end": "2025-06-24T16:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.40349999999999997,
+              "start": "2025-06-24T16:00:00.000Z",
+              "end": "2025-06-25T04:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.7355,
+              "start": "2025-06-25T04:00:00.000Z",
+              "end": "2025-06-25T10:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.7415,
+              "start": "2025-06-25T22:00:00.000Z",
+              "end": "2025-06-26T16:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.74125,
+              "start": "2025-06-27T04:00:00.000Z",
+              "end": "2025-06-28T04:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": 0.20699999999999996,
+          "immediateResponse": 0.3320000000000001,
+          "shortTermResponse": 0.3380000000000001,
+          "delayedIncrement": -0.0002500000000000835,
+          "cumulativeDelayedResponse": 0.33775,
+          "logOddsResponse": 1.4446822214574706,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.7415,
+          "attributedImpact": 0,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "unusually large",
+            "threshold": 0.03200000000000003,
+            "sampleCount": 117
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "cuomo-independent",
+          "event": {
+            "id": "cuomo-independent",
+            "date": "2025-07-14",
+            "title": "Cuomo announces he will keep running for mayor as an independent",
+            "expectedDirection": "negative",
+            "selectionReason": "The beaten rival returns.",
+            "informationKnownAt": "2025-07-14T19:03:00Z",
+            "anchorVerified": true,
+            "anchorBasis": "NY1 publication and modification match; reproduces candidate’s own announcement video and quotes."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.7325,
+              "start": "2025-07-11T07:03:00.000Z",
+              "end": "2025-07-14T07:03:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.7304999999999999,
+              "start": "2025-07-14T07:03:00.000Z",
+              "end": "2025-07-14T19:03:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.734,
+              "start": "2025-07-14T19:03:00.000Z",
+              "end": "2025-07-15T01:03:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.72125,
+              "start": "2025-07-15T13:03:00.000Z",
+              "end": "2025-07-16T07:03:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.71075,
+              "start": "2025-07-16T19:03:00.000Z",
+              "end": "2025-07-17T19:03:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": -0.002000000000000113,
+          "immediateResponse": 0.0035000000000000586,
+          "shortTermResponse": -0.00924999999999998,
+          "delayedIncrement": -0.010499999999999954,
+          "cumulativeDelayedResponse": -0.019749999999999934,
+          "logOddsResponse": -0.046490345793721355,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.72125,
+          "attributedImpact": 0,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "not detectable",
+            "threshold": 0.03200000000000003,
+            "sampleCount": 117
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "adams-exit",
+          "event": {
+            "id": "adams-exit",
+            "date": "2025-09-28",
+            "title": "Mayor Eric Adams ends his re-election campaign",
+            "expectedDirection": "ambiguous",
+            "selectionReason": "Incumbent exit changes the opposition field.",
+            "informationKnownAt": "2025-09-28T17:18:00Z",
+            "anchorVerified": true,
+            "anchorBasis": "NY1 publication and modification match at 13:18 EDT, with original Adams video/post embedded and reproduced. Court record separately dates original post to 13:11 EDT; that earlier time is not the chosen cutoff."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.87375,
+              "start": "2025-09-25T05:18:00.000Z",
+              "end": "2025-09-28T05:18:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.8705,
+              "start": "2025-09-28T05:18:00.000Z",
+              "end": "2025-09-28T17:18:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.83925,
+              "start": "2025-09-28T17:18:00.000Z",
+              "end": "2025-09-28T23:18:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.86025,
+              "start": "2025-09-29T11:18:00.000Z",
+              "end": "2025-09-30T05:18:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.86175,
+              "start": "2025-09-30T17:18:00.000Z",
+              "end": "2025-10-01T17:18:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": -0.003249999999999975,
+          "immediateResponse": -0.03125,
+          "shortTermResponse": -0.010250000000000092,
+          "delayedIncrement": 0.0015000000000000568,
+          "cumulativeDelayedResponse": -0.008750000000000036,
+          "logOddsResponse": -0.08801894542627098,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.86025,
+          "attributedImpact": 0,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "ordinary",
+            "threshold": 0.03200000000000003,
+            "sampleCount": 117
+          },
+          "overlaps": []
+        },
+        {
+          "eventId": "hochul-endorsement",
+          "event": {
+            "id": "hochul-endorsement",
+            "date": "2025-09-14",
+            "title": "Governor Kathy Hochul endorses Mamdani",
+            "expectedDirection": "positive",
+            "selectionReason": "Party establishment joins the insurgent.",
+            "informationKnownAt": "2025-09-15T00:31:00Z",
+            "anchorVerified": true,
+            "anchorBasis": "NY1 publication and modification match; embeds governor’s own endorsement post dated Sep14. URL day differs from publication."
+          },
+          "windows": {
+            "anticipation": {
+              "level": 0.809,
+              "start": "2025-09-11T12:31:00.000Z",
+              "end": "2025-09-14T12:31:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.8105,
+              "start": "2025-09-14T12:31:00.000Z",
+              "end": "2025-09-15T00:31:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.815,
+              "start": "2025-09-15T00:31:00.000Z",
+              "end": "2025-09-15T06:31:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.8285,
+              "start": "2025-09-15T18:31:00.000Z",
+              "end": "2025-09-16T12:31:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.835,
+              "start": "2025-09-17T00:31:00.000Z",
+              "end": "2025-09-18T00:31:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 23,
+                "tradedBuckets": 23,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 0.9583333333333334,
+                "maximumGapBuckets": 1,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 23,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          },
+          "anticipationMove": 0.0014999999999999458,
+          "immediateResponse": 0.0044999999999999485,
+          "shortTermResponse": 0.018000000000000016,
+          "delayedIncrement": 0.00649999999999995,
+          "cumulativeDelayedResponse": 0.024499999999999966,
+          "logOddsResponse": 0.1217712536073734,
+          "sensitivityShare": 0,
+          "counterfactualProbability": 0.8285,
+          "attributedImpact": 0,
+          "qualityStatus": "usable",
+          "ordinaryMovement": {
+            "classification": "ordinary",
+            "threshold": 0.03200000000000003,
+            "sampleCount": 117
+          },
+          "overlaps": []
+        }
+      ],
+      "tieGroups": [
+        [
+          "primary-breakthrough"
+        ],
+        [
+          "hochul-endorsement"
+        ],
+        [
+          "aoc-endorsement"
+        ],
+        [
+          "cuomo-independent",
+          "adams-exit"
+        ]
+      ],
+      "allWindowsPass": true
+    }
+  ]
+}

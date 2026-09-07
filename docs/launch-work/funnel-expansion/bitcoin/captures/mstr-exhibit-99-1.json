@@ -1,0 +1,14 @@
+{
+  "id": "mstr-exhibit-99-1",
+  "captureStatus": "retrieved-via-web-text",
+  "captureType": "authoritative-sec-exhibit-excerpt",
+  "sourceRole": "corroborating",
+  "publisher": "U.S. Securities and Exchange Commission / MicroStrategy",
+  "title": "MicroStrategy Announces BTC and ATM Activity",
+  "url": "https://www.sec.gov/Archives/edgar/data/1050446/000119312524255184/d908568dex991.htm",
+  "retrievedAt": "2026-09-06T20:21:50Z",
+  "passageLocation": "web capture lines 4-12",
+  "passage": "MicroStrategy Announces BTC and ATM Activity\nRaised $2.03 billion; Purchased 27,200 BTC; Now Holds 279,420 BTC\nTYSONS CORNER, Va., November 11, 2024 - MicroStrategy Incorporated today announced updates with respect to its bitcoin activity and holdings.\nThe Company today announced that, during the period between October 31, 2024 and November 10, 2024, the Company acquired approximately 27,200 bitcoins for approximately $2.03 billion in cash.",
+  "passageSha256": "3abe1e5868bd9a78d9dc55164423eb450807bd5c96266804e8bbb9bb0300dc00",
+  "publicTime": { "value": "2024-11-11", "precision": "day", "justification": "The exhibit independently corroborates the date and fact; it also does not expose an intraday publication clock." }
+}

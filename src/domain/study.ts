@@ -1,5 +1,6 @@
 export type StudyStatus = 'draft' | 'data-verified' | 'editorial-review' | 'approved' | 'published' | 'amended' | 'retired'
 export type TimestampPrecision = 'minute' | 'hour' | 'day' | 'interval'
+export type PublishedPrecision = 'instant' | 'day' | 'unknown'
 export type ExpectedDirection = 'positive' | 'negative' | 'ambiguous'
 export type AttributionAssessment = 'likely dominant' | 'mixed' | 'weak' | 'indeterminate'
 export type SourceRole = 'primary' | 'corroborating' | 'coverage' | 'competing' | 'retrospective'
@@ -11,6 +12,8 @@ export type Source = {
   publisher: string
   url: string
   publishedAt: string
+  /** Existing ISO timestamps remain exact by default; date-only values are conservative day intervals. */
+  publishedPrecision?: PublishedPrecision
   retrievedAt: string
   archivedUrl?: string
   snapshotHash?: string
@@ -150,12 +153,45 @@ export type Study = {
   presentation: StudyPresentation
   sources: Source[]
   events: StudyEvent[]
+  background?: { title: string; claims: EventClaim[] }
   contextMarkers: ContextMarker[]
   publishedAt?: string
   conclusion?: { title: string; text: string; sourceId: string }
 }
 
-const validDate = (value: string) => Number.isFinite(Date.parse(value))
+const DAY_MS = 24 * 60 * 60 * 1000
+const DATE_ONLY = /^\d{4}-\d{2}-\d{2}$/
+const PUBLISHED_PRECISIONS = new Set<PublishedPrecision>(['instant', 'day', 'unknown'])
+const parseDate = (value: unknown) => typeof value === 'string' ? Date.parse(value) : Number.NaN
+const validDate = (value: unknown) => Number.isFinite(parseDate(value))
+
+export function sourcePublicationPrecision(source: Pick<Source, 'publishedAt' | 'publishedPrecision'>): PublishedPrecision {
+  if (source.publishedPrecision === 'unknown') return 'unknown'
+  if (source.publishedPrecision === 'day') return 'day'
+  if (source.publishedPrecision === 'instant') return typeof source.publishedAt === 'string' && !DATE_ONLY.test(source.publishedAt) && validDate(source.publishedAt) ? 'instant' : 'unknown'
+  if (source.publishedPrecision !== undefined) return 'unknown'
+  if (typeof source.publishedAt === 'string' && DATE_ONLY.test(source.publishedAt)) return 'day'
+  return validDate(source.publishedAt) ? 'instant' : 'unknown'
+}
+
+/** Returns a conservative upper bound, not an invented publication instant. */
+export function sourcePublicationUpperBound(source: Pick<Source, 'publishedAt' | 'publishedPrecision'>): number | null {
+  const precision = sourcePublicationPrecision(source)
+  if (precision === 'unknown') return null
+  if (precision === 'instant') {
+    const timestamp = parseDate(source.publishedAt)
+    return Number.isFinite(timestamp) ? timestamp : null
+  }
+  const datePart = typeof source.publishedAt === 'string' ? source.publishedAt.slice(0, 10) : ''
+  const dayStart = parseDate(`${datePart}T00:00:00.000Z`)
+  return Number.isFinite(dayStart) ? dayStart + DAY_MS : null
+}
+
+export function sourceWasAvailableBy(source: Pick<Source, 'publishedAt' | 'publishedPrecision'>, cutoff: string) {
+  const upperBound = sourcePublicationUpperBound(source)
+  const cutoffTimestamp = parseDate(cutoff)
+  return upperBound !== null && Number.isFinite(cutoffTimestamp) && upperBound <= cutoffTimestamp
+}
 
 export function validateStudy(study: Study) {
   const errors: string[] = []
@@ -165,8 +201,23 @@ export function validateStudy(study: Study) {
   const sources = new Map(study.sources.map((source) => [source.id, source]))
   if (study.conclusion && !sources.has(study.conclusion.sourceId)) errors.push('Study conclusion references a missing source.')
 
+  if (study.background) {
+    const cutoff = Math.min(...study.events.map((event) => Date.parse(event.informationKnownAt)))
+    for (const claim of study.background.claims) {
+      if (claim.visibility !== 'pre-reveal' || !validDate(claim.knownAt) || Date.parse(claim.knownAt) > cutoff) errors.push(`Background claim ${claim.id} breaches the hindsight firewall.`)
+      if (!claim.sourceIds.length) errors.push(`Background claim ${claim.id} requires a source.`)
+      for (const id of claim.sourceIds) {
+        const source = sources.get(id)
+        if (!source || !sourceWasAvailableBy(source, claim.knownAt)) errors.push(`Background claim ${claim.id} references a missing or later source.`)
+      }
+    }
+  }
+
   for (const source of study.sources) {
-    if (!validDate(source.publishedAt) || !validDate(source.retrievedAt)) errors.push(`Source ${source.id} must have parseable publication and retrieval timestamps.`)
+    const declaredPrecision = source.publishedPrecision
+    if (declaredPrecision !== undefined && !PUBLISHED_PRECISIONS.has(declaredPrecision)) errors.push(`Source ${source.id} has an invalid publication precision.`)
+    if (declaredPrecision === 'instant' && typeof source.publishedAt === 'string' && DATE_ONLY.test(source.publishedAt)) errors.push(`Source ${source.id} declares instant publication precision for a date-only value.`)
+    if ((declaredPrecision !== 'unknown' && sourcePublicationPrecision(source) === 'unknown') || !validDate(source.retrievedAt)) errors.push(`Source ${source.id} must have a parseable publication timestamp or an explicit unknown publication precision, plus a parseable retrieval timestamp.`)
     if (!source.archivedUrl && !source.snapshotHash) errors.push(`Source ${source.id} must have an archive URL or snapshot hash.`)
   }
 
@@ -182,7 +233,12 @@ export function validateStudy(study: Study) {
       for (const sourceId of claim.sourceIds) {
         const source = sources.get(sourceId)
         if (!source) errors.push(`Claim ${claim.id} references missing source ${sourceId}.`)
-        else if (claim.visibility === 'pre-reveal' && Date.parse(source.publishedAt) > Date.parse(event.informationKnownAt)) errors.push(`Claim ${claim.id} relies on a later source.`)
+        else if (claim.visibility === 'pre-reveal' && !sourceWasAvailableBy(source, event.informationKnownAt)) {
+          const precision = sourcePublicationPrecision(source)
+          if (precision === 'unknown') errors.push(`Claim ${claim.id} cannot rely on source ${sourceId} with unknown publication time.`)
+          else if (precision === 'day') errors.push(`Claim ${claim.id} relies on a date-only source ${sourceId} whose publication day does not establish the precise pre-reveal cutoff.`)
+          else errors.push(`Claim ${claim.id} relies on a later source.`)
+        }
       }
     }
   }

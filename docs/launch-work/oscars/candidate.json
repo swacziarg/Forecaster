@@ -1,0 +1,320 @@
+{
+  "artifactType": "Editorial integration handoff; not a published Study or queue entry",
+  "preparedAt": "2026-09-06T16:09:42.300Z",
+  "topic": "oscars",
+  "readiness": "hold",
+  "queueableNow": false,
+  "proposedStudy": {
+    "id": "oscars-best-picture-2026-v1",
+    "slug": "oscars-best-picture-2026",
+    "version": 1,
+    "status": "editorial-review"
+  },
+  "title": "2026 Best Picture culture reserve",
+  "decision": "Retain the existing five-card selection as a bounded reserve. The market data passes every required measurement window, but the packet remains on hold because the Oscars-specific editorial checklist lacks independent contemporary corroboration, immutable source captures, reproducible coverage and publisher counts, exact first-public confirmations, written rubric scoring, and independent sign-off.",
+  "identity": {
+    "provider": "Kalshi",
+    "marketId": "KXOSCARPIC-26-ONE",
+    "contractId": "KXOSCARPIC-26-ONE",
+    "question": "Will One Battle After Another win Best Picture at the Oscars?",
+    "selectedPerspective": "YES",
+    "nativeSide": "YES",
+    "outcome": "YES",
+    "openedAt": "2025-09-22T14:00:00Z",
+    "closedAt": "2026-03-16T02:57:49Z",
+    "settledAt": "2026-03-16T03:58:01Z",
+    "marketUrl": "https://kalshi.com/markets/KXOSCARPIC-26-ONE",
+    "resolutionSourceUrl": "https://external-api.kalshi.com/trade-api/v2/historical/markets/KXOSCARPIC-26-ONE",
+    "rules": "Resolves YES if One Battle After Another wins Best Picture at the 98th Academy Awards."
+  },
+  "audienceRationale": "The study introduces One Battle After Another as a Best Picture contender and follows five distinct awards-season information releases without requiring prior knowledge of the film or awards organizations.",
+  "playRationale": "The set includes an early critics signal, a clean televised win, a split rival-inclusive result, a broad nomination field, and a late guild signal. The nomination reversal creates a meaningful negative card, while the adjacent Critics Choice and Golden Globes responses remain an explicit tie rather than an exaggerated distinction.",
+  "narrativeAssessment": {
+    "status": "conditional",
+    "strengths": [
+      "Recognizable Oscars frame with a plain contender introduction.",
+      "Five cards span early critics recognition, televised precursors, nominations, and a guild signal.",
+      "Both positive and negative measured responses are present, with one intentional ambiguous split result."
+    ],
+    "risks": [
+      "Four cards are awards-season institutional developments, so the set may feel repetitive to a general audience.",
+      "Critics Choice and Golden Globes are adjacent precursor information and require an independent editorial redundancy decision.",
+      "The market response is observational and has competing contemporaneous explanations."
+    ],
+    "duplicationDecision": "Retain both in the frozen set for this packet because their factual claims differ materially: one clean Best Picture win versus a split two-category result that elevates a rival. Disclose the cluster overlap and tie. No replacement was selected or scored."
+  },
+  "selectionFreeze": {
+    "file": "docs/launch-queue-research/frozen-selection-v1.json",
+    "sha256": "79ca8b2e025f15e5fe1ff9040ed1c060d874bf188d2b239f39fc647c0ad33593",
+    "frozenAt": "2026-09-06T00:24:51.987941+00:00",
+    "initialOrder": [
+      "nbr-best-film",
+      "critics-choice-best-picture",
+      "golden-globes-picture",
+      "oscar-nominations",
+      "pga-top-prize"
+    ],
+    "disclosure": "The raw history and broad suitability screen had already been reviewed, and earlier generalized Oscars responses were visible in the repository before this freeze. This is a prospective selection freeze, not a blinded preregistration. No card was exchanged after the fresh responses were calculated."
+  },
+  "anchors": {
+    "file": "docs/launch-queue-research/anchors-v2.json",
+    "sha256": "168609f145c5a992e911c5479b0f2c3fe9e331f72420fdb1f5dd5f86febaffa3",
+    "anchorStatus": "Study informationKnownAt values are used for reproducible measurement; exact first-public result times remain an editorial gate."
+  },
+  "dataset": {
+    "id": "kalshi-oscars-2026-hourly-v1",
+    "provider": "Kalshi",
+    "path": "/data/oscars-2026/kalshi-hourly.csv",
+    "rawPath": "/data/oscars-2026/raw-candlesticks.json",
+    "marketMetadataPath": "/data/oscars-2026/raw-market.json",
+    "manifestPath": "/data/oscars-2026/manifest.json",
+    "rawSha256": "b1f4bf26a54a512af052fd91af8272ef820881570b4a6d37db673cf5150f1131",
+    "marketMetadataSha256": "151d9ff463871c5d7c0598a1b30e3d2457899cbf2040b85941afee36ca73292c",
+    "normalizedSha256": "498a7ba35bb74924845de951b1a281ecf70382f4aff74f62f0529537c072eb54",
+    "retrievedAt": "2026-09-04T00:54:08.144Z",
+    "coverageStart": "2025-09-22T15:00:00Z",
+    "coverageEnd": "2026-03-16T03:00:00Z",
+    "fullMarketLifetime": true,
+    "cadenceMinutes": 60,
+    "transformVersion": "kalshi-hourly-v1",
+    "provenanceUrl": "https://docs.kalshi.com/api-reference/historical/get-historical-market-candlesticks",
+    "requestParameters": "ticker=KXOSCARPIC-26-ONE; start_ts=1758549600; end_ts=1773633600; period_interval=60",
+    "retainedObservations": 4168,
+    "missingBucketCount": 21,
+    "maximumMissingRunHours": 1,
+    "rejectedProbabilities": 0,
+    "duplicateCadenceBuckets": 0,
+    "markPolicy": "Use the candle close when traded; otherwise use the closing bid/ask midpoint only when spread is at most 20 points. No carry, interpolation, or cross-contract splice."
+  },
+  "measurementProfile": {
+    "id": "months-hourly-v1",
+    "label": "Months / hourly",
+    "cadenceMinutes": 60,
+    "anticipation": { "startHours": -84, "endHours": -12 },
+    "reference": { "startHours": -12, "endHours": 0 },
+    "immediate": { "startHours": 0, "endHours": 6 },
+    "stabilized": { "startHours": 18, "endHours": 36 },
+    "delayed": { "startHours": 48, "endHours": 72 },
+    "quality": { "minimumCoverage": 0.6, "maximumGapShare": 0.5, "minimumDistinctUpdates": 3, "maximumSpread": 0.2 },
+    "tieThreshold": 0.01
+  },
+  "sourceRecords": [
+    {
+      "id": "nbr-2025",
+      "title": "National Board of Review Names 2025 Honorees",
+      "publisher": "National Board of Review",
+      "url": "https://nationalboardofreview.org/2025/12/national-board-of-review-names-2025-honorees/",
+      "archivedUrl": "https://nationalboardofreview.org/2025/12/national-board-of-review-names-2025-honorees/",
+      "publishedAt": "2025-12-03T17:00:00Z",
+      "retrievedAt": "2026-09-03T00:00:00Z",
+      "snapshotHash": null,
+      "immutableCapture": false,
+      "sourceRole": "primary"
+    },
+    {
+      "id": "critics-choice-2026",
+      "title": "One Battle After Another Wins Best Picture",
+      "publisher": "Critics Choice Association",
+      "url": "https://www.criticschoice.com/one-battle-after-another-wins-best-picture-at-the-31st-annual-critics-choice-awards/",
+      "archivedUrl": "https://www.criticschoice.com/one-battle-after-another-wins-best-picture-at-the-31st-annual-critics-choice-awards/",
+      "publishedAt": "2026-01-05T04:30:00Z",
+      "retrievedAt": "2026-09-03T00:00:00Z",
+      "snapshotHash": null,
+      "immutableCapture": false,
+      "sourceRole": "primary"
+    },
+    {
+      "id": "globes-2026",
+      "title": "One Battle After Another Takes a Best Picture Prize",
+      "publisher": "Golden Globes",
+      "url": "https://goldenglobes.com/articles/one-battle-after-another-and-hamnet-take-best-picture-prizes-at-golden-globes/",
+      "archivedUrl": "https://goldenglobes.com/articles/one-battle-after-another-and-hamnet-take-best-picture-prizes-at-golden-globes/",
+      "publishedAt": "2026-01-12T04:45:00Z",
+      "retrievedAt": "2026-09-03T00:00:00Z",
+      "snapshotHash": null,
+      "immutableCapture": false,
+      "sourceRole": "primary"
+    },
+    {
+      "id": "oscars-nominations-2026",
+      "title": "98th Oscars Nominations Announced",
+      "publisher": "Academy of Motion Picture Arts and Sciences",
+      "url": "https://press.oscars.org/news/98th-oscarsr-nominations-announced",
+      "archivedUrl": "https://press.oscars.org/news/98th-oscarsr-nominations-announced",
+      "publishedAt": "2026-01-22T13:30:00Z",
+      "retrievedAt": "2026-09-03T00:00:00Z",
+      "snapshotHash": null,
+      "immutableCapture": false,
+      "sourceRole": "primary"
+    },
+    {
+      "id": "pga-2026",
+      "title": "2026 Producers Guild Awards Winners",
+      "publisher": "Producers Guild of America",
+      "url": "https://producersguild.org/2026-pga-awards-winners/",
+      "archivedUrl": "https://producersguild.org/2026-pga-awards-winners/",
+      "publishedAt": "2026-03-01T05:00:00Z",
+      "retrievedAt": "2026-09-03T00:00:00Z",
+      "snapshotHash": null,
+      "immutableCapture": false,
+      "sourceRole": "primary"
+    }
+  ],
+  "events": [
+    {
+      "id": "nbr-best-film",
+      "title": "National Board of Review names the film Best Film",
+      "shortTitle": "NBR Best Film",
+      "occurredAt": "2025-12-03T17:00:00Z",
+      "informationKnownAt": "2025-12-03T17:00:00Z",
+      "precision": "hour",
+      "timezone": "America/New_York",
+      "dateLabel": "Dec 3",
+      "category": "Critics award",
+      "mechanism": "An early top prize can establish a film as a durable awards-season frontrunner and influence later expectations.",
+      "expectedDirection": "positive",
+      "claims": [
+        { "id": "nbr-best-film-fact", "text": "The National Board of Review selected One Battle After Another as its Best Film of 2025.", "knownAt": "2025-12-03T17:00:00Z", "sourceIds": ["nbr-2025"], "visibility": "pre-reveal" }
+      ],
+      "sourceRoles": [{ "sourceId": "nbr-2025", "role": "primary" }],
+      "retrospectiveInterpretation": "The market treated the first major win as useful evidence, though the Oscars electorate is different.",
+      "competingExplanation": "Other critics groups and year-end lists were arriving throughout the same period.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "critics-choice-best-picture",
+      "title": "Critics Choice awards the film Best Picture",
+      "shortTitle": "Critics Choice win",
+      "occurredAt": "2026-01-05T04:30:00Z",
+      "scheduledFor": "2026-01-05T01:00:00Z",
+      "informationKnownAt": "2026-01-05T04:30:00Z",
+      "precision": "hour",
+      "timezone": "America/New_York",
+      "dateLabel": "Jan 4",
+      "category": "Televised precursor",
+      "mechanism": "A televised Best Picture win offers a broad precursor signal shortly before Oscar nominations voting closes.",
+      "expectedDirection": "positive",
+      "claims": [
+        { "id": "critics-choice-best-picture-fact", "text": "One Battle After Another won Best Picture at the 31st Critics Choice Awards.", "knownAt": "2026-01-05T04:30:00Z", "sourceIds": ["critics-choice-2026"], "visibility": "pre-reveal" }
+      ],
+      "sourceRoles": [{ "sourceId": "critics-choice-2026", "role": "primary" }],
+      "retrospectiveInterpretation": "The response should be read as confirmation of a trend, not an independent trial.",
+      "competingExplanation": "The Golden Globes ceremony followed one week later and nominations voting was underway.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "golden-globes-picture",
+      "title": "Golden Globes splits its top film prizes across categories",
+      "shortTitle": "Golden Globes split",
+      "occurredAt": "2026-01-12T04:45:00Z",
+      "scheduledFor": "2026-01-12T01:00:00Z",
+      "informationKnownAt": "2026-01-12T04:45:00Z",
+      "precision": "hour",
+      "timezone": "America/New_York",
+      "dateLabel": "Jan 11",
+      "category": "Televised precursor",
+      "mechanism": "A category win confirms broad support, but a rival’s parallel top prize prevents the ceremony from supplying one clean Best Picture signal.",
+      "expectedDirection": "ambiguous",
+      "claims": [
+        { "id": "golden-globes-picture-fact", "text": "One Battle After Another won Best Motion Picture—Musical or Comedy while Hamnet took the drama picture prize.", "knownAt": "2026-01-12T04:45:00Z", "sourceIds": ["globes-2026"], "visibility": "pre-reveal" }
+      ],
+      "sourceRoles": [{ "sourceId": "globes-2026", "role": "primary" }],
+      "retrospectiveInterpretation": "The split result was confirming evidence for more than one contender.",
+      "competingExplanation": "The Globes electorate and category structure differ materially from the Academy’s preferential ballot.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "oscar-nominations",
+      "title": "Oscar nominations confirm breadth but leave a competitive field",
+      "shortTitle": "13 Oscar nominations",
+      "occurredAt": "2026-01-22T13:30:00Z",
+      "scheduledFor": "2026-01-22T13:30:00Z",
+      "informationKnownAt": "2026-01-22T13:30:00Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "dateLabel": "Jan 22",
+      "category": "Official nomination",
+      "mechanism": "Breadth across branches supports the film, while the same announcement reveals rival coalition strength and possible vote splitting.",
+      "expectedDirection": "ambiguous",
+      "claims": [
+        { "id": "oscar-nominations-fact", "text": "The Academy announced 13 nominations for One Battle After Another, including Best Picture.", "knownAt": "2026-01-22T13:30:00Z", "sourceIds": ["oscars-nominations-2026"], "visibility": "pre-reveal" }
+      ],
+      "sourceRoles": [{ "sourceId": "oscars-nominations-2026", "role": "primary" }],
+      "retrospectiveInterpretation": "This is the most direct Academy evidence in the study, but nomination breadth is not a one-to-one forecast of the preferential ballot.",
+      "competingExplanation": "Every rival’s nomination profile was released simultaneously.",
+      "attributionAssessment": "likely dominant"
+    },
+    {
+      "id": "pga-top-prize",
+      "title": "Producers Guild awards the film its top theatrical prize",
+      "shortTitle": "Producers Guild win",
+      "occurredAt": "2026-03-01T05:00:00Z",
+      "scheduledFor": "2026-03-01T02:00:00Z",
+      "informationKnownAt": "2026-03-01T05:00:00Z",
+      "precision": "hour",
+      "timezone": "America/New_York",
+      "dateLabel": "Feb 28",
+      "category": "Guild precursor",
+      "mechanism": "The guild’s preferential voting and overlapping industry membership make its top prize a closely watched Best Picture indicator.",
+      "expectedDirection": "positive",
+      "claims": [
+        { "id": "pga-top-prize-fact", "text": "The Producers Guild awarded One Battle After Another the Darryl F. Zanuck Award for Outstanding Producer of Theatrical Motion Pictures.", "knownAt": "2026-03-01T05:00:00Z", "sourceIds": ["pga-2026"], "visibility": "pre-reveal" }
+      ],
+      "sourceRoles": [{ "sourceId": "pga-2026", "role": "primary" }],
+      "retrospectiveInterpretation": "The late guild win substantially reduced the remaining uncertainty before Oscar voting ended.",
+      "competingExplanation": "Other guild results and final-ballot reporting were already shaping expectations.",
+      "attributionAssessment": "likely dominant"
+    }
+  ],
+  "presentation": {
+    "topicLabel": "2026 Best Picture market",
+    "selectedContractShort": "Film wins",
+    "selectedContractLong": "One Battle After Another wins Best Picture",
+    "seriesLabel": "Best Picture probability",
+    "positiveLabel": "Raises probability",
+    "negativeLabel": "Lowers probability",
+    "neutralLabel": "Ambiguous",
+    "eventNoun": "awards-season event",
+    "timezone": "America/New_York",
+    "accent": "#7254a4"
+  },
+  "ending": {
+    "title": "Oscar Best Picture result",
+    "scored": false,
+    "visibility": "reveal-only",
+    "resolution": "YES",
+    "providerSettledAt": "2026-03-16T03:58:01Z",
+    "sourceUrl": "https://external-api.kalshi.com/trade-api/v2/historical/markets/KXOSCARPIC-26-ONE",
+    "ceremonyOccurrenceAt": null,
+    "note": "Do not expose the result in pre-reveal card copy or use it as a scored event. The exact ceremony occurrence timestamp is not required for this hold packet."
+  },
+  "approval": {
+    "status": "pending",
+    "reviewer": null,
+    "approvedAt": null,
+    "scope": "Exact version and five-event selection",
+    "note": "No human editorial approval is claimed."
+  },
+  "unresolvedGates": [
+    { "gate": "Immutable source captures", "status": "missing", "evidence": "Five canonical URLs are recorded, but no immutable page snapshots or source-content hashes are attached." },
+    { "gate": "Independent contemporary corroboration", "status": "missing", "evidence": "The current Study has one primary source per event and no corroborating source records." },
+    { "gate": "Coverage archive and unique-publisher counts", "status": "missing", "evidence": "No reproducible licensed/public coverage archive or unique-publisher count is recorded." },
+    { "gate": "Exact first-public result times", "status": "unverified", "evidence": "Current informationKnownAt values are reproducible calculation cutoffs, not independently confirmed first-public result/completion times for every event." },
+    { "gate": "Editorial rubric", "status": "missing", "evidence": "No written score for every rubric dimension is present." },
+    { "gate": "Independent sign-off", "status": "pending", "evidence": "Reviewer identity and timestamped inclusion approval are absent." },
+    { "gate": "Critics Choice / Golden Globes redundancy", "status": "editor-decision", "evidence": "Both are retained because their claims differ, but their adjacent precursor cluster and tie require independent editorial judgment." }
+  ],
+  "anoraBlocker": {
+    "contractId": "KXOSCARPIC-25-A",
+    "auditPath": "docs/launch-queue-research/evidence/anora-kalshi-audit.json",
+    "coverageEnvelopePath": "docs/launch-queue-research/anora-coverage-envelope.json",
+    "coverageEnvelopeSha256": "7dcae8510195119ad835cff68285c53ecf71812959d88d3fed0494eb79088836",
+    "usableObservations": 1392,
+    "missingHourlyBuckets": 1718,
+    "maximumMissingRunHours": 38,
+    "goldenGlobesAnticipationCoverageMaximum": 0.25,
+    "requiredCoverage": 0.6,
+    "status": "blocked",
+    "reason": "The exact Kalshi series cannot supply the required anticipation window; the alternate Polymarket contract opens after the Golden Globes and cannot backfill it."
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "artifactType": "Eagles five-card evidence and runtime addendum",
+  "version": 2,
+  "preparedAt": "2026-09-06T18:14:40Z",
+  "status": "ready-for-independent-review; runtime patch not applied",
+  "priorPacket": {
+    "candidate": {"path": "docs/launch-work/eagles/candidate.json", "sha256": "caeaf724db1a2cf424b3b0c83a9dc28edf8e11408797ae6a6c5293f5e255e885"},
+    "evidenceManifest": {"path": "docs/launch-work/eagles/evidence-manifest.json", "sha256": "044bbfa4e8af85f2cdf60be768f311cca0631385c688e149a5555caebd7c372d"},
+    "measurements": {"path": "docs/launch-work/eagles/measurements.json", "sha256": "c9a0946f6944c98abb4f49b90571b854d8b0579e5865b7952ef609f3b79eb0fa"},
+    "timingAnchors": {"path": "docs/launch-work/eagles/timing-anchors-v1.json", "sha256": "cc720af10b86cd9e120be83bb3d64dc8901e0a518851b1435567c63cb1e368f5"}
+  },
+  "newArtifacts": {
+    "captureManifest": {"path": "docs/launch-work/finish-pass/eagles/capture-manifest-v2.json", "sha256": "6b6e61f5bb0ad679538c864f6bbce95a820b0b59f3bf81b9002f6f178f00baf0"},
+    "timingAnchors": {"path": "docs/launch-work/finish-pass/eagles/timing-anchors-v2.json", "sha256": "158ee377048d51c40bc94da61a89ee3425f404dcb002bf758217d30259c92d80"},
+    "measurements": {"path": "docs/launch-work/finish-pass/eagles/measurements-v2.json", "sha256": "78fd09fa47709a7764483666eb7b7ad22ac810c085885a6f795aa93bad506a00"}
+  },
+  "evidenceConclusion": {
+    "falcons-collapse": "No timing correction. Archive confirms the final claim but first capture is late, and page publication metadata precedes the gamebook-derived final.",
+    "barkley-record": "No timing correction. Archive confirms the 37–20/255-yard claim but does not improve the retained public cutoff.",
+    "hurts-concussion": "Correct informationKnownAt to 2024-12-22T22:25:00Z as a conservative public-by bound. Keep injury and 36–33 loss combined; the 20:44Z capture is injury-only.",
+    "snow-playoff": "Correct informationKnownAt to 2025-01-19T23:10:00Z as a conservative public-by bound from the preserved postgame page publication metadata.",
+    "nfc-title": "Correct informationKnownAt to 2025-01-27T00:22:04.795Z as a conservative public-by bound from the preserved contemporary analysis page metadata."
+  },
+  "runtimePatch": {
+    "targetStudy": "src/data/eaglesFiveCard2025.ts",
+    "owner": "lead",
+    "apply": "Only after independent review accepts public-by semantics; no source/runtime files were changed in this worker pass.",
+    "studyIdentity": {"id": "eagles-super-bowl-lix-five-v1", "version": 1, "status": "editorial-review", "slug": "eagles-stop-threepeat"},
+    "eventFieldChanges": [
+      {"eventId": "hurts-concussion", "informationKnownAt": "2024-12-22T22:25:00Z", "claimKnownAt": "2024-12-22T22:25:00Z"},
+      {"eventId": "snow-playoff", "informationKnownAt": "2025-01-19T23:10:00Z", "claimKnownAt": "2025-01-19T23:10:00Z"},
+      {"eventId": "nfc-title", "informationKnownAt": "2025-01-27T00:22:04.795Z", "claimKnownAt": "2025-01-27T00:22:04.795Z"}
+    ],
+    "eventFieldsUnchanged": ["id", "title", "occurredAt", "scheduledFor", "precision", "fact", "selection order", "mechanism", "expectedDirection", "competingExplanation", "attributionAssessment"],
+    "sourceRecordsToAdd": [
+      {"id": "archive-hurts-postgame-20241225065909", "title": "Archived Eagles–Commanders postgame page capture", "publisher": "Internet Archive / Philadelphia Eagles", "url": "https://web.archive.org/web/20241225065909id_/https://www.philadelphiaeagles.com/news/eagles-vs-commanders-live-updates-december-22-2024-nfl-week-16", "publishedAt": "2024-12-22T22:25:00Z", "retrievedAt": "2026-09-06T18:14:40Z", "snapshotHash": "91134601c14c5b64cc73ec678150ada46402c86e99028676da8aee0302152abd", "correctionStatus": "none"},
+      {"id": "archive-snow-postgame-20250120091057", "title": "Archived Eagles–Rams divisional page capture", "publisher": "Internet Archive / Philadelphia Eagles", "url": "https://web.archive.org/web/20250120091057id_/https://www.philadelphiaeagles.com/news/rams-vs-eagles-live-updates-january-19-2025-nfl-divisional-round", "publishedAt": "2025-01-19T23:10:00Z", "retrievedAt": "2026-09-06T18:14:40Z", "snapshotHash": "4fc698f8f95002fe64e51160b6092a6671f9872abff283e7dc4fcbb7e36012ee", "correctionStatus": "none"},
+      {"id": "archive-nfc-20250127003536", "title": "Archived NFC Championship analysis page capture", "publisher": "Internet Archive / Philadelphia Eagles", "url": "https://web.archive.org/web/20250127003536id_/https://www.philadelphiaeagles.com/news/spadaro-6-takeaways-from-a-dominant-nfc-championship-victory-over-the-commanders", "publishedAt": "2025-01-27T00:22:04.795Z", "retrievedAt": "2026-09-06T18:14:40Z", "snapshotHash": "db7cf4d087975544003985d16f0ff868cf32d89ce854b20a5b6408b14ea78a1d", "correctionStatus": "none"}
+    ],
+    "sourceRoleChanges": [
+      {"eventId": "hurts-concussion", "addSourceIds": ["archive-hurts-postgame-20241225065909"], "role": "corroborating", "retainPrimary": "gamebook-hurts"},
+      {"eventId": "snow-playoff", "addSourceIds": ["archive-snow-postgame-20250120091057"], "role": "corroborating", "retainPrimary": "gamebook-snow"},
+      {"eventId": "nfc-title", "addSourceIds": ["archive-nfc-20250127003536"], "role": "corroborating", "retainPrimary": "gamebook-nfc"}
+    ],
+    "recalculationArtifact": "docs/launch-work/finish-pass/eagles/measurements-v2.json",
+    "recalculationSha256": "78fd09fa47709a7764483666eb7b7ad22ac810c085885a6f795aa93bad506a00",
+    "unchanged": ["five-card selection", "contract", "dataset", "measurement profile", "route", "ending", "existing eight-event study", "playoff confounds", "no Super Bowl scoring card"]
+  },
+  "remainingGates": [
+    "Exact first-public instants remain unresolved; corrected timestamps are conservative public-by bounds.",
+    "Independent editor must approve the use of archived page publication metadata as the measurement boundary.",
+    "Human editorial approval is still absent; candidate remains hold and is not queueable or publishable.",
+    "Lead must apply the runtime patch, rerun final build/browser QA, and decide whether the strict post-recalculation ordering is acceptable."
+  ]
+}

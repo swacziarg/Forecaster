@@ -1,0 +1,29 @@
+{
+  "role": "trump",
+  "status": "complete",
+  "startedAt": "2026-09-06T20:13:26Z",
+  "updatedAt": "2026-09-06T20:26:14Z",
+  "workspace": "/Users/simonwacziarg/Documents/ChatGPT/Forecast",
+  "taskId": "01a07776-a544-7d53-89fa-4c56b8a878ca",
+  "ownedPaths": [
+    "docs/launch-work/funnel-expansion/trump/",
+    "docs/launch-work/funnel-expansion/status/trump.json"
+  ],
+  "reportPath": "docs/launch-work/funnel-expansion/trump/report.md",
+  "finishedAt": "2026-09-06T20:26:14Z",
+  "artifactHashes": {
+    "docs/launch-work/funnel-expansion/trump/candidate.md": "ed955d4dff26ccb002cdf1dd3f9e5db802faea6480df3fe2c34885d1266b902e",
+    "docs/launch-work/funnel-expansion/trump/candidate.json": "bfa97140210afed4c499b658d1941bb826d64611f427160c289ad2c683715753",
+    "docs/launch-work/funnel-expansion/trump/evidence-manifest.json": "31622b73f8a66bffbc4a2bb0a3c67dbb4504101a3545e1fd84a3fff1319879e1",
+    "docs/launch-work/funnel-expansion/trump/measurements.json": "c898c9f69b4a629632afa6ce9a354f77341927e8c73315aa7c12a9988a9d3ee5",
+    "docs/launch-work/funnel-expansion/trump/anchor-correction-v3.json": "2781e19487328fead55e14556899c5305340c142a93d23a61423b131e9ec3e5d",
+    "docs/launch-work/funnel-expansion/trump/report.md": "92afa23681d0881230946d9a0185e4bec97c0b419eeaf90f0a0f28c7338ee698"
+  },
+  "unresolvedGates": [
+    "Independent editorial review of the repeated Butler card after Biden #001.",
+    "Independent acceptance of interval/upper-bound timing semantics.",
+    "Lead decision on funnel placement and date after human approval.",
+    "This worker packet does not assign event-response scores, rankings, tie groups, or comparable-pair counts."
+  ],
+  "handoffComplete": true
+}

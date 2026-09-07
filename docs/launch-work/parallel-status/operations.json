@@ -1,0 +1,25 @@
+{
+  "role": "operations",
+  "status": "complete",
+  "startedAt": "2026-09-06T16:05:26Z",
+  "updatedAt": "2026-09-06T16:16:40Z",
+  "workspace": "/Users/simonwacziarg/Documents/ChatGPT/Forecast",
+  "ownedPaths": [
+    "scripts/check-launch-readiness.mjs",
+    "scripts/check-launch-readiness.test.mjs",
+    "package.json",
+    "docs/launch-work/operations/",
+    "docs/launch-work/completions/11.md",
+    "docs/launch-work/parallel-status/operations.json",
+    "index.html",
+    "public/"
+  ],
+  "reportPath": "docs/launch-work/completions/11.md",
+  "finishedAt": "2026-09-06T16:16:40Z",
+  "artifactHashes": {
+    "scripts/check-launch-readiness.mjs": "58a4df6abccb78d9e2d195401cacf32a1fed05b4ef6754e5d58207126a6c9485",
+    "scripts/check-launch-readiness.test.mjs": "d49606ad5264a73e68b6611e9f7da0932d8ac6d952d76bd502e0f359c7db6964",
+    "docs/launch-work/completions/11.md": "470778379b971264a1ceab9ca84a8763403e9f534998d15bccdb903e817c5d5c"
+  },
+  "handoffComplete": true
+}

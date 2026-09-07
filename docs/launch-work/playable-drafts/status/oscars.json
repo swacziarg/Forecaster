@@ -1,0 +1,45 @@
+{
+  "role": "oscars",
+  "status": "complete",
+  "startedAt": "2026-09-07T05:30:55.300Z",
+  "finishedAt": "2026-09-07T05:38:41.300Z",
+  "updatedAt": "2026-09-07T05:38:41.300Z",
+  "workspace": "/Users/simonwacziarg/Documents/ChatGPT/Forecast",
+  "taskId": "01a07776-b625-7fc3-ae9b-b76a9e6b60b8",
+  "ownedPaths": [
+    "src/data/oscarsFiveCard2026.ts",
+    "src/data/oscarsFiveCard2026.test.ts",
+    "docs/launch-work/playable-drafts/oscars/",
+    "docs/launch-work/playable-drafts/status/oscars.json"
+  ],
+  "reportPath": "docs/launch-work/playable-drafts/oscars/report.md",
+  "handoffComplete": true,
+  "artifactHashes": {
+    "src/data/oscarsFiveCard2026.ts": "ae16ab85973b0ebaf03aba102d36c59832544235e8404f6c9a4bb52203f48732",
+    "src/data/oscarsFiveCard2026.test.ts": "3b9e6369942ee3d0d49983850be013ecf45478308f0d7b890ab3db201419afdc",
+    "docs/launch-work/playable-drafts/oscars/report.md": "1c663e69f5cb4e3ae88ea6c1f8795d34d568b8d94f36208eafe52decabf6fc44",
+    "docs/launch-work/funnel-expansion/oscars/candidate.json": "959d1ecfa0c8850d930cf73c17855a136bc9e107066dc259bae09df142e482c0",
+    "docs/launch-work/funnel-expansion/oscars/evidence-manifest.json": "10151505c8c1c444ae3290375a1ca4597708a5beacd2ab8be3e4d3ba6f097bdd",
+    "public/data/oscars-2026/kalshi-hourly.csv": "498a7ba35bb74924845de951b1a281ecf70382f4aff74f62f0529537c072eb54",
+    "public/data/oscars-2026/raw-candlesticks.json": "b1f4bf26a54a512af052fd91af8272ef820881570b4a6d37db673cf5150f1131",
+    "public/data/oscars-2026/raw-market.json": "151d9ff463871c5d7c0598a1b30e3d2457899cbf2040b85941afee36ca73292c"
+  },
+  "checks": {
+    "focusedTest": "pass: node --experimental-strip-types src/data/oscarsFiveCard2026.test.ts",
+    "typeCheck": "pass: npx tsc --noEmit",
+    "projectTests": "pass: npm test",
+    "strictStudyValidation": "pass",
+    "preRevealCards": "5/5 eligible",
+    "usableWindows": "25/25",
+    "datasetObservations": 4168,
+    "tieGroups": "five singleton groups under the existing comparator",
+    "comparablePairs": "7/10 chronological agreement (70%)",
+    "adapterGapWarning": "21 missing cadence buckets surfaced truthfully"
+  },
+  "unresolvedGates": [
+    "Lead must register the v2 module and add the focused test to shared integration after independent review.",
+    "Lead must create and browser-test the guarded private preview; this worker did not edit shared UI or routing.",
+    "Independent reviewer must decide the exact Critics Choice/Golden Globes 1.0-point boundary treatment and precursor narrative distinctness.",
+    "Human approval is still required before publication or dated schedule integration."
+  ]
+}

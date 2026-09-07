@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-09-06T14:32:50.101Z",
+  "result": "pass",
+  "receiptCount": 277,
+  "checks": [
+    {
+      "key": "tiktok",
+      "headlines": 5,
+      "csvRows": 3023,
+      "exactNativeReplay": true,
+      "allWindowsPass": true,
+      "queueableNow": false
+    },
+    {
+      "key": "eagles",
+      "headlines": 5,
+      "csvRows": 5167,
+      "exactNativeReplay": true,
+      "allWindowsPass": true,
+      "queueableNow": false
+    },
+    {
+      "key": "trump",
+      "headlines": 5,
+      "csvRows": 4549,
+      "exactNativeReplay": true,
+      "allWindowsPass": true,
+      "queueableNow": false
+    },
+    {
+      "key": "nyc",
+      "headlines": 5,
+      "csvRows": 4711,
+      "exactNativeReplay": true,
+      "allWindowsPass": true,
+      "queueableNow": false
+    },
+    {
+      "key": "anora-kalshi",
+      "headlines": 5,
+      "csvRows": 1392,
+      "exactNativeReplay": true,
+      "allWindowsPass": false,
+      "queueableNow": false
+    }
+  ],
+  "limitations": "This verifies file integrity, frozen selection, CSV compatibility and numerical replay. It does not supply independent editorial approval, establish first-public source times, prove CLOB trade freshness or make Anora eligible."
+}

@@ -1,0 +1,14 @@
+[
+  [
+    "taylor-event",
+    "https://gamma-api.polymarket.com/events?slug=taylor-swift-and-travis-kelce-engaged-in-2025"
+  ],
+  [
+    "nyc-event",
+    "https://gamma-api.polymarket.com/events?slug=new-york-city-mayoral-election"
+  ],
+  [
+    "nba-event",
+    "https://gamma-api.polymarket.com/events?slug=nba-champion-2025"
+  ]
+]

@@ -1,0 +1,34 @@
+{
+  "artifactType": "playable-draft candidate handoff",
+  "readiness": "ready-for-editorial-review",
+  "topic": "trump",
+  "title": "The comeback nobody could call",
+  "preparedAt": "2026-09-07T05:32:20Z",
+  "proposedExportedSymbol": "trumpPlayableDraft",
+  "study": { "id": "trump-comeback-2024-v1", "version": 1, "slug": "trump-comeback-2024", "status": "editorial-review" },
+  "ownedArtifacts": {
+    "studyDraft": "docs/launch-work/playable-drafts/trump/study-draft.json",
+    "historicalResponsePacket": "docs/launch-work/playable-drafts/trump/score-packet.json",
+    "evidenceManifest": "docs/launch-work/playable-drafts/trump/evidence-manifest.json",
+    "anchorCorrection": "docs/launch-work/playable-drafts/trump/anchor-correction-v3.json",
+    "focusedTest": "docs/launch-work/playable-drafts/trump/score-packet.test.mjs",
+    "report": "docs/launch-work/playable-drafts/trump/report.md"
+  },
+  "market": {
+    "provider": "Polymarket",
+    "marketId": "253591",
+    "conditionId": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917",
+    "selectedSide": "YES",
+    "tokenId": "21742633143463906290569050155826241533067272736897614950488156847949938836455"
+  },
+  "frozenInitialOrder": [ "rfk-endorsement", "conviction", "iowa-poll", "butler", "harris-debate" ],
+  "measurementDisclosure": "The packet contains historical observed contract-price changes and engine tie groups only. It is not a forecast, candidate evaluation, or causal claim.",
+  "ending": { "sourceId": "ap-election-call", "visibility": "reveal-only", "excludedFromCards": true },
+  "editorialDecisionsRemaining": [
+    "Approve or reject the repeated Butler event after the earlier Biden daily card.",
+    "Confirm the approximate debate-end bound and its interval wording in the final UI.",
+    "Choose the release slot without changing the frozen five-event subset or initial order.",
+    "Wire the proposed exported symbol into shared runtime and registry files; Trump ownership does not include those files."
+  ],
+  "scopeGuard": "No runtime, registry, package, UI, domain, data, schedule, publication, or deployment files were changed by this handoff."
+}

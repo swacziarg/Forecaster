@@ -1,0 +1,26 @@
+[
+  {
+    "key": "tiktok-market.html",
+    "url": "https://polymarket.com/event/tiktok-banned-in-the-us-before-may-2025",
+    "retrievedAt": "2026-09-06T13:50:37.735149+00:00",
+    "bytes": 619583,
+    "sha256": "06562a3ddc0cb1a9a271023e78e8a19e7de1c312adc836e1fd66a14a14811772",
+    "path": "evidence/tiktok-market.html"
+  },
+  {
+    "key": "eagles-ending-correct.html",
+    "url": "https://www.philadelphiaeagles.com/game-day/2024/post/chiefs-at-eagles/",
+    "retrievedAt": "2026-09-06T13:50:39.175080+00:00",
+    "bytes": 415861,
+    "sha256": "82ecaada14640f53a3860ad63f43c5d7fb3f1eab03147c87027383db34bf7de3",
+    "path": "evidence/eagles-ending-correct.html"
+  },
+  {
+    "key": "tiktok-dec6-correct.html",
+    "url": "https://transcripts.cnn.com/show/cnr/date/2024-12-06/segment/26",
+    "retrievedAt": "2026-09-06T13:50:37.694003+00:00",
+    "bytes": 24857,
+    "sha256": "52902b58cac228a120b8d2153602656dbe9f92417fe4128bbded0d92abf8fad9",
+    "path": "evidence/tiktok-dec6-correct.html"
+  }
+]

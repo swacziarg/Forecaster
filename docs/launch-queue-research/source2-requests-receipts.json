@@ -1,0 +1,140 @@
+[
+  {
+    "key": "eagles-falcons.html",
+    "url": "https://www.philadelphiaeagles.com/news/game-recap-falcons-vs-eagles-week-2-2024",
+    "retrievedAt": "2026-09-06T05:12:35.747732+00:00",
+    "bytes": 435743,
+    "sha256": "27350706c2f2ae189abf52b51c09854c030baf6270fdaa96b6b1331998cf2414",
+    "path": "evidence/eagles-falcons.html"
+  },
+  {
+    "key": "eagles-snow.html",
+    "url": "https://www.philadelphiaeagles.com/news/rams-vs-eagles-live-updates-january-19-2025-nfl-divisional-round",
+    "retrievedAt": "2026-09-06T05:12:35.704611+00:00",
+    "bytes": 366554,
+    "sha256": "5d2c8da3a895bba865a8b783ab26f7e1f73b6e203ecf5795a94eae56696b9c46",
+    "path": "evidence/eagles-snow.html"
+  },
+  {
+    "key": "eagles-ending.html",
+    "url": "https://www.philadelphiaeagles.com/news/super-bowl-lix-chiefs-vs-eagles-live-updates-february-9-2025",
+    "error": "HTTP Error 404: Not Found",
+    "retrievedAt": "2026-09-06T05:12:35.580302+00:00"
+  },
+  {
+    "key": "trump-conviction.html",
+    "url": "https://transcripts.cnn.com/show/se/date/2024-05-30/segment/05",
+    "retrievedAt": "2026-09-06T05:12:35.552586+00:00",
+    "bytes": 71058,
+    "sha256": "f54b40c115dce68ee8e5aec94164807c530b122271e73f14821f9bcad9c356d3",
+    "path": "evidence/trump-conviction.html"
+  },
+  {
+    "key": "trump-rfk.html",
+    "url": "https://transcripts.cnn.com/show/cnc/date/2024-08-23/segment/11",
+    "retrievedAt": "2026-09-06T05:12:35.427398+00:00",
+    "bytes": 32783,
+    "sha256": "c8e8bdf6a92f95738c6cf6b367e259c42f559853bd22d2bb587b66e33f526125",
+    "path": "evidence/trump-rfk.html"
+  },
+  {
+    "key": "ap-trump-call.html",
+    "url": "https://www.ap.org/the-definitive-source/behind-the-news/calling-the-2024-presidential-race-state-by-state/",
+    "retrievedAt": "2026-09-06T05:12:36.157709+00:00",
+    "bytes": 154962,
+    "sha256": "59859fe7e8ae949bf791dc2eb98b246fd8de0fc6d4527350d36eec4f66209a76",
+    "path": "evidence/ap-trump-call.html"
+  },
+  {
+    "key": "tiktok-argument.pdf",
+    "url": "https://www.supremecourt.gov/oral_arguments/argument_transcripts/2024/24-656_pm02.pdf",
+    "retrievedAt": "2026-09-06T05:12:35.868614+00:00",
+    "bytes": 999112,
+    "sha256": "5d1a6c69821a99f3c7ec584565d9bb24f0728f1f6ed86a7bf84a805755ee01a7",
+    "path": "evidence/tiktok-argument.pdf"
+  },
+  {
+    "key": "tiktok-order.pdf",
+    "url": "https://www.supremecourt.gov/orders/courtorders/121824zr1_p86b.pdf",
+    "retrievedAt": "2026-09-06T05:12:35.836929+00:00",
+    "bytes": 39850,
+    "sha256": "51a1aa500e74004cd97f85e58979c1fc5073e175722ac38e6c85b90e850e7a91",
+    "path": "evidence/tiktok-order.pdf"
+  },
+  {
+    "key": "tiktok-argument-page.html",
+    "url": "https://www.supremecourt.gov/oral_arguments/audio/2024/24-656",
+    "retrievedAt": "2026-09-06T05:12:35.834149+00:00",
+    "bytes": 42956,
+    "sha256": "d307228128786d13f63369758fbb9c37f2a6f6e23c174704b06e7d59e83ccc7c",
+    "path": "evidence/tiktok-argument-page.html"
+  },
+  {
+    "key": "nyc-aoc-post",
+    "url": "https://public.api.bsky.app/xrpc/app.bsky.feed.getPostThread?uri=at%3A%2F%2Fdid%3Aplc%3Aj5hrotody26iqi24hcusufxu%2Fapp.bsky.feed.post%2F3lqucxtqkss2o&depth=0",
+    "retrievedAt": "2026-09-06T05:12:35.948993+00:00",
+    "bytes": 2631,
+    "sha256": "5485b67f4a3d31aadd21e48e867de15f90e45b59c4cf6ac3b4e898c9482c1454",
+    "path": "evidence/nyc-aoc-post.json"
+  },
+  {
+    "key": "nyc-primary-fox.html",
+    "url": "https://www.fox5ny.com/election/zohran-mamdani-lead-cuomo-concedes/",
+    "retrievedAt": "2026-09-06T05:12:36.481940+00:00",
+    "bytes": 177291,
+    "sha256": "238efdf81aa93865d0ec1a6f9b94bc51fcc6c8002e7584e1e24494f089daae4f",
+    "path": "evidence/nyc-primary-fox.html"
+  },
+  {
+    "key": "nyc-adams-archive.html",
+    "url": "https://perma.cc/B8BX-S9BU",
+    "retrievedAt": "2026-09-06T05:12:36.081702+00:00",
+    "bytes": 13880,
+    "sha256": "bde50921be3d427d450aa5bbfe1ec2e01bdbe43bde55deefbc0bce47dd74d6fa",
+    "path": "evidence/nyc-adams-archive.html"
+  },
+  {
+    "key": "nyc-adams-court.html",
+    "url": "https://docs.justia.com/cases/federal/district-courts/new-york/nyedce/1%3A2025cv04558/535140/25",
+    "error": "HTTP Error 403: Forbidden",
+    "retrievedAt": "2026-09-06T05:12:35.955072+00:00"
+  },
+  {
+    "key": "anora-sag.html",
+    "url": "https://www.sagaftra.org/31st-annual-screen-actors-guild-awards-honors-outstanding-film-and-television-performances",
+    "error": "HTTP Error 403: Forbidden",
+    "retrievedAt": "2026-09-06T05:12:36.110290+00:00"
+  },
+  {
+    "key": "anora-oscar-ending.html",
+    "url": "https://www.oscars.org/oscars/ceremonies/2025",
+    "error": "HTTP Error 403: Forbidden",
+    "retrievedAt": "2026-09-06T05:12:36.061349+00:00"
+  },
+  {
+    "key": "anora-critics.html",
+    "url": "https://www.criticschoice.com/2025/02/08/anora-wins-best-picture-at-the-30th-annual-critics-choice-awards/",
+    "error": "HTTP Error 404: Not Found",
+    "retrievedAt": "2026-09-06T05:12:36.588507+00:00"
+  },
+  {
+    "key": "anora-bafta.html",
+    "url": "https://www.bafta.org/media-centre/press-releases/winners-announced-2025-ee-bafta-film-awards",
+    "error": "HTTP Error 403: Forbidden",
+    "retrievedAt": "2026-09-06T05:12:36.249624+00:00"
+  },
+  {
+    "key": "polymarket-history-doc.html",
+    "url": "https://docs.polymarket.com/api-reference/pricing/get-price-history-for-a-traded-token",
+    "error": "HTTP Error 404: Not Found",
+    "retrievedAt": "2026-09-06T05:12:36.332812+00:00"
+  },
+  {
+    "key": "kalshi-history-doc.html",
+    "url": "https://docs.kalshi.com/api-reference/historical/get-historical-market-candlesticks",
+    "retrievedAt": "2026-09-06T05:12:36.366408+00:00",
+    "bytes": 418067,
+    "sha256": "175ed74659cd673643f5fb5d9729809cf5fd97508f722a36b1b863e1da5ae8c4",
+    "path": "evidence/kalshi-history-doc.html"
+  }
+]

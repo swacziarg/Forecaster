@@ -1,0 +1,74 @@
+{
+  "topic": "canada",
+  "frozenAt": "2026-09-06T11:11:37-05:00",
+  "freezeVersion": "canada-selection-v2",
+  "contract": {
+    "provider": "Polymarket",
+    "marketId": "517586",
+    "question": "Will the Liberal Party win the most seats in the next Canadian election?",
+    "selectedPerspective": "YES",
+    "yesToken": "97369614101217511684993615789719226906296227283714425485701044468625942166745"
+  },
+  "selectionMethod": "Significance-first editorial freeze from the original research arc; five distinct kinds of pre-result developments were chosen before running event-window calculations. No timestamp was selected or moved to obtain a larger measured response.",
+  "priorExposureDisclosure": "The original research exposed broad daily-median suitability statistics and the retained raw history before this freeze. No Canada five-event window scores were run before this freeze. This is prospective relative to the fresh Canada event-window calculation, not blinded preregistration.",
+  "selectedEvents": [
+    {
+      "id": "carney-leadership-launch",
+      "title": "Mark Carney launches his Liberal leadership campaign",
+      "eventDate": "2025-01-16",
+      "informationKnownAt": "2025-01-17T01:10:00Z",
+      "precision": "minute",
+      "anchorBasis": "CityNews video page reports the Edmonton launch at 6:10 p.m. MST; the UTC value is the conservative public-time anchor, corroborated by same-day AP reporting.",
+      "selectionReason": "A new, nationally recognizable leadership contender enters the race after the market opens, changing who could carry the governing party into the election.",
+      "expectedDirectionBeforeMeasurement": "positive"
+    },
+    {
+      "id": "tariff-retaliation",
+      "title": "Canada announces a response to the U.S. tariff order",
+      "eventDate": "2025-02-01",
+      "informationKnownAt": "2025-02-02T05:00:00Z",
+      "precision": "day",
+      "anchorBasis": "The Prime Minister's archived official page is dated February 1 and records the evening response; the end of February 1 in America/Toronto (05:00Z) is the conservative cutoff and avoids inventing a broadcast minute.",
+      "selectionReason": "The U.S. trade shock and Canada's announced retaliation turn the election story into a live sovereignty and economic test rather than a routine leadership contest.",
+      "expectedDirectionBeforeMeasurement": "ambiguous"
+    },
+    {
+      "id": "carney-leadership-win",
+      "title": "Mark Carney wins the Liberal leadership",
+      "eventDate": "2025-03-09",
+      "informationKnownAt": "2025-03-10T04:00:00Z",
+      "precision": "day",
+      "anchorBasis": "The CPAC and Reuters event records are dated March 9; the end of March 9 in America/Toronto (04:00Z after the daylight-time change) is a conservative cutoff for the announced first-ballot result.",
+      "selectionReason": "The party chooses the person who will lead the Liberals into the general election, a distinct internal-vote development with clear public meaning.",
+      "expectedDirectionBeforeMeasurement": "positive"
+    },
+    {
+      "id": "election-call",
+      "title": "The Governor General dissolves Parliament and calls the election",
+      "eventDate": "2025-03-23",
+      "informationKnownAt": "2025-03-24T04:00:00Z",
+      "precision": "day",
+      "anchorBasis": "The Governor General's official record is dated March 23; same-day Associated Press reporting corroborates the snap election call. The end of March 23 in America/Toronto (04:00Z) avoids a made-up signing time. The former Axios retrieval was a Cloudflare challenge and is excluded.",
+      "selectionReason": "The constitutional trigger converts the comeback narrative into a defined campaign with an April 28 endpoint.",
+      "expectedDirectionBeforeMeasurement": "ambiguous"
+    },
+    {
+      "id": "auto-tariff-response",
+      "title": "Carney announces Canada's response to U.S. auto tariffs",
+      "eventDate": "2025-04-03",
+      "informationKnownAt": "2025-04-03T16:24:16Z",
+      "precision": "minute",
+      "anchorBasis": "The Prime Minister's official release is dated April 3; AP's contemporary report supplies the retained 16:24:16 UTC publication cutoff.",
+      "selectionReason": "A concrete campaign-period economic response tests whether the new Liberal government can protect workers while managing the trade war.",
+      "expectedDirectionBeforeMeasurement": "ambiguous"
+    }
+  ],
+  "evaluatedButExcluded": [
+    {
+      "id": "carney-swearing-in",
+      "title": "Mark Carney is sworn in as prime minister",
+      "decision": "exclude",
+      "reason": "The official March 14 ceremony is a real and usable fact, but it formalizes the March 9 leadership result and its full measurement span overlaps that card. It is retained in the evidence manifest and candidate narrative as an evaluated alternative, not silently treated as a selected answer."
+    }
+  ]
+}

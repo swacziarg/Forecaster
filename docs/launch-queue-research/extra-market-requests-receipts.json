@@ -1,0 +1,26 @@
+[
+  {
+    "key": "taylor-event",
+    "url": "https://gamma-api.polymarket.com/events?slug=taylor-swift-and-travis-kelce-engaged-in-2025",
+    "retrievedAt": "2026-09-06T00:21:32.071613+00:00",
+    "bytes": 6025,
+    "sha256": "44af53f5e248a99abe2d385a2659d89ecb4e02b4d5da6ca7441d2f320c22281b",
+    "path": "evidence/taylor-event.json"
+  },
+  {
+    "key": "nyc-event",
+    "url": "https://gamma-api.polymarket.com/events?slug=new-york-city-mayoral-election",
+    "retrievedAt": "2026-09-06T00:21:32.051564+00:00",
+    "bytes": 66680,
+    "sha256": "0fc388ea6ee570076fea0cb6be694c02138f19d57b39ce167381a08db8e06b01",
+    "path": "evidence/nyc-event.json"
+  },
+  {
+    "key": "nba-event",
+    "url": "https://gamma-api.polymarket.com/events?slug=nba-champion-2025",
+    "retrievedAt": "2026-09-06T00:21:32.010994+00:00",
+    "bytes": 3,
+    "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "path": "evidence/nba-event.json"
+  }
+]

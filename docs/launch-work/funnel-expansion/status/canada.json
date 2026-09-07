@@ -1,0 +1,54 @@
+{
+  "role": "canada",
+  "taskId": "01a07776-ca0c-75c1-8e08-0d046c9ff706",
+  "status": "complete",
+  "startedAt": "2026-09-06T20:16:51Z",
+  "updatedAt": "2026-09-06T20:24:58Z",
+  "workspace": "/Users/simonwacziarg/Documents/ChatGPT/Forecast",
+  "ownedPaths": [
+    "docs/launch-work/funnel-expansion/canada/",
+    "docs/launch-work/funnel-expansion/status/canada.json"
+  ],
+  "reportPath": "docs/launch-work/funnel-expansion/canada/report.md",
+  "artifactHashes": {
+    "docs/launch-work/funnel-expansion/canada/candidate.md": "c21311a4fe73f05af7064b5d0258c6e0895616ca93767c204b192ed9c92ba722",
+    "docs/launch-work/funnel-expansion/canada/candidate.json": "f72c5e4391abe5c30e14d7afde8e2d79ceefc1f5844c48edafa8e87fc0867cd0",
+    "docs/launch-work/funnel-expansion/canada/evidence-manifest.json": "215616c72a2d327ca38722e9d33f423b863ed4f620662e02960b551321d792b3",
+    "docs/launch-work/funnel-expansion/canada/report.md": "2ca689a95b71fdd5d133a5bb19610bed9aa29d8ac6a693da838bafa5f5379f37",
+    "docs/launch-work/funnel-expansion/canada/selection-freeze.json": "ee1f07f6049425be41bc0a0bc3e5b13e66562e4caf5b3f5cffe179fac9f71d4b",
+    "docs/launch-work/funnel-expansion/canada/measurements.json": "0ba4d1bb1c35bc2fb00c6f4ec2496703014272342291e9173c6c02700791da2b",
+    "docs/launch-work/funnel-expansion/canada/evaluate-canada.mjs": "77426644365d7a55a9bec5723af93c73ca0b8166157b42b60232cc376d347c6f",
+    "docs/launch-work/funnel-expansion/canada/canada-hourly.csv": "af754817f1f07f5b6eb71a0658a40faeb9f665398a7b660eb579d05f024ae117",
+    "docs/launch-work/funnel-expansion/canada/evidence/election-call-ap.html": "ba3b4d5a4a35939ce00001d64c1afa65fb82eeae98029d6b9ac8a6c75a7bd119"
+  },
+  "receipt": {
+    "status": "complete",
+    "handoffComplete": true,
+    "reportPath": "docs/launch-work/funnel-expansion/canada/report.md",
+    "filesChanged": [
+      "docs/launch-work/funnel-expansion/canada/candidate.md",
+      "docs/launch-work/funnel-expansion/canada/candidate.json",
+      "docs/launch-work/funnel-expansion/canada/evidence-manifest.json",
+      "docs/launch-work/funnel-expansion/canada/selection-freeze.json",
+      "docs/launch-work/funnel-expansion/canada/measurements.json",
+      "docs/launch-work/funnel-expansion/canada/evaluate-canada.mjs",
+      "docs/launch-work/funnel-expansion/canada/canada-hourly.csv",
+      "docs/launch-work/funnel-expansion/canada/evidence/",
+      "docs/launch-work/funnel-expansion/status/canada.json"
+    ],
+    "checks": [
+      "Canada evaluator passed: 2723 observations, 0 missing buckets, 25 usable windows, unchanged ranking and tie groups",
+      "Application validateStudy(candidate.study) passed",
+      "All candidate claims reference active source IDs",
+      "All eligible manifest captures exist and match recorded SHA-256 hashes",
+      "JSON parse passed for candidate, manifest, freeze, measurements, and status",
+      "git diff --check passed on all owned paths"
+    ],
+    "blockers": [
+      "Independent editor approval is still required for this exact v2 candidate/content hash.",
+      "The lead must decide whether the three-rank-level result with seven strict comparable pairs is entertaining enough for a reserve date; no tie removal or score-driven swap is recommended.",
+      "No registration, schedule, runtime, deployment, publication, or external announcement was changed by this worker."
+    ],
+    "finishedAt": "2026-09-06T20:24:58Z"
+  }
+}

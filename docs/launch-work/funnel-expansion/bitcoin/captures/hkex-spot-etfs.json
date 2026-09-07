@@ -1,0 +1,14 @@
+{
+  "id": "hkex-spot-etfs",
+  "captureStatus": "retrieved-via-web-text",
+  "captureType": "authoritative-text-excerpt",
+  "sourceRole": "primary",
+  "publisher": "Hong Kong Exchanges and Clearing",
+  "title": "HKEX Welcomes Asia’s First Spot Virtual Asset ETFs",
+  "url": "https://www.hkex.com.hk/News/News-Release/2024/240430news?sc_lang=en",
+  "retrievedAt": "2026-09-06T20:21:50Z",
+  "passageLocation": "web capture lines 618-630, 649-651",
+  "passage": "HKEX Welcomes Asia’s First Spot Virtual Asset ETFs\n30 Apr 2024\nHong Kong Exchanges and Clearing Limited (HKEX) is pleased to welcome today (Tuesday) the listing of Asia’s first Spot Virtual Asset (VA) ETFs, adding to the diversity of products in Hong Kong’s markets and further supporting the city's position as the region’s leading ETF marketplace by offering investors even more choice. The introduction of Spot VA ETFs in Hong Kong is the latest exciting addition to HKEX’s diverse and vibrant ETP ecosystem, providing investors with access to a new asset class.\nUpdated 27 Jun 2024",
+  "passageSha256": "108b94810c828bc4fbc1f6cebaeebbc905ec3c6d4524be91cf5c50ffbd85502f",
+  "publicTime": { "value": "2024-04-30", "precision": "day", "justification": "The primary page displays 30 Apr 2024 and says the listing occurred today; it does not expose a release clock in the captured text. The existing study retains 2024-04-30T01:30:00Z as the measurement anchor and this exact minute remains an independent-review gate." }
+}

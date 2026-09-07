@@ -1,0 +1,22 @@
+{
+  "selectionVersion": "oscars-best-picture-2026-selection-v2",
+  "supersedes": "docs/launch-queue-research/frozen-selection-v1.json",
+  "frozenAt": "2026-09-06T20:26:06Z",
+  "freezeBeforeMeasurement": true,
+  "decision": "retain-five-card-arc",
+  "acceptableOnEvidenceAndNarrativeGrounds": true,
+  "selectedEventIds": [
+    "nbr-best-film",
+    "critics-choice-best-picture",
+    "golden-globes-picture",
+    "oscar-nominations",
+    "pga-top-prize"
+  ],
+  "rationale": {
+    "arc": "The sequence moves from the first critics signal, through two differently structured televised precursors, to direct Academy breadth and a late guild test.",
+    "coverage": "Each card has an organizer or governing-body primary source, an independent contemporary corroborator, and a captured source file.",
+    "independence": "Critics Choice and Golden Globes remain separate because their electorates, ceremony structures, and timing differ; the packet discloses their close chronology and the measured tie/sensitivity.",
+    "exclusions": "No replacement was needed. Anora remains outside the candidate and no data or scoring was substituted.",
+    "scoreBlindness": "The five IDs and rationale were frozen before the v2 measurement replay. The worker had access to the prior draft and prior measurements; that exposure is disclosed and independent human approval remains pending."
+  }
+}

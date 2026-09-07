@@ -1,0 +1,97 @@
+{
+  "version": 3,
+  "createdAt": "2026-09-06T16:09:26.300Z",
+  "supersedes": "docs/launch-queue-research/anchors-v2.json",
+  "beforeReplay": true,
+  "policy": "Public cutoffs are selected from source availability evidence, never from odds. A public-by time is an upper bound unless a source exposes a verifiable first-public timestamp. The three legal-event cutoffs remain conservative broadcast-end anchors because the primary court records expose dates and substance but not a historical posting time.",
+  "revisionReason": "The retained AP retrospective explainer was supplemented with the contemporary AP Race Call artifact. Its current page metadata carries datePublished/dateModified 2024-11-06T10:34:42Z and the body states that AP declared Trump the winner at 5:34 a.m. EST. The legal cutoffs were audited against primary court records and contemporaneous AP/CNN captures; no exact first-public court or filing posting time was established, so the existing upper bounds are retained unchanged.",
+  "finalists": {
+    "tiktok": [
+      {
+        "id": "trump-elected",
+        "historicalDate": "2024-11-06",
+        "evaluationAnchor": "2024-11-06T10:34:42Z",
+        "informationKnownAt": "2024-11-06T10:34:42Z",
+        "precision": "minute",
+        "timezone": "America/New_York",
+        "firstPublicTimeVerified": false,
+        "publicCutoffVerified": true,
+        "publicAvailability": {
+          "kind": "publisher-metadata-and-body",
+          "time": "2024-11-06T10:34:42Z",
+          "isExactFirstPublic": false,
+          "basis": "Contemporary AP Race Call article metadata and body; the page's datePublished/dateModified fields are 10:34:42Z and the article states AP declared Trump the winner at 5:34 a.m. EST."
+        },
+        "sourceFiles": ["docs/launch-work/tiktok/evidence/ap-race-call.html"]
+      },
+      {
+        "id": "appeal-lost",
+        "historicalDate": "2024-12-06",
+        "evaluationAnchor": "2024-12-06T16:00:00Z",
+        "informationKnownAt": "2024-12-06T16:00:00Z",
+        "precision": "interval",
+        "timezone": "America/New_York",
+        "firstPublicTimeVerified": false,
+        "publicCutoffVerified": true,
+        "publicAvailability": {
+          "kind": "public-by-upper-bound",
+          "time": "2024-12-06T16:00:00Z",
+          "isExactFirstPublic": false,
+          "basis": "D.C. Circuit opinion is dated/decided Dec. 6; the contemporary AP article exposes datePublished 15:35:16Z and CNN's live transcript carries the ruling during the 10:30–11:00 EST segment. The court opinion index and PDF do not expose a historical posting time."
+        },
+        "sourceFiles": ["docs/launch-work/tiktok/evidence/cadc-dec6-opinion.pdf", "docs/launch-work/tiktok/evidence/ap-dec6.html", "docs/launch-queue-research/evidence/tiktok-dec6-correct.html", "docs/launch-queue-research/evidence/tiktok-docket.html"]
+      },
+      {
+        "id": "supreme-review",
+        "historicalDate": "2024-12-18",
+        "evaluationAnchor": "2024-12-18T19:00:00Z",
+        "informationKnownAt": "2024-12-18T19:00:00Z",
+        "precision": "interval",
+        "timezone": "America/New_York",
+        "firstPublicTimeVerified": false,
+        "publicCutoffVerified": true,
+        "publicAvailability": {
+          "kind": "public-by-upper-bound",
+          "time": "2024-12-18T19:00:00Z",
+          "isExactFirstPublic": false,
+          "basis": "Supreme Court order is dated Dec. 18 and the official docket records certiorari granted; the contemporary AP article exposes datePublished 16:15:44Z and CNN's live transcript reports the order during the 13:30–14:00 EST segment. The order PDF and Court order index do not expose a historical posting time."
+        },
+        "sourceFiles": ["docs/launch-work/tiktok/evidence/scotus-dec18-order.pdf", "docs/launch-work/tiktok/evidence/ap-dec18.html", "docs/launch-queue-research/evidence/tiktok-dec18-cnn.html", "docs/launch-queue-research/evidence/tiktok-docket.html"]
+      },
+      {
+        "id": "trump-pause",
+        "historicalDate": "2024-12-27",
+        "evaluationAnchor": "2024-12-27T23:00:00Z",
+        "informationKnownAt": "2024-12-27T23:00:00Z",
+        "precision": "interval",
+        "timezone": "America/New_York",
+        "firstPublicTimeVerified": false,
+        "publicCutoffVerified": true,
+        "publicAvailability": {
+          "kind": "public-by-upper-bound",
+          "time": "2024-12-27T23:00:00Z",
+          "isExactFirstPublic": false,
+          "basis": "The Supreme Court docket records the brief filing date and the official PDF is dated Dec. 27; the contemporary AP article exposes datePublished 22:43:57Z and CNN's live transcript first reports the filing at 17:17:12 EST. The PDF filename and filing-date metadata do not prove a public posting time."
+        },
+        "sourceFiles": ["docs/launch-queue-research/evidence/tiktok-trump-brief.pdf", "docs/launch-work/tiktok/evidence/ap-dec27.html", "docs/launch-queue-research/evidence/tiktok-dec27-cnn.html", "docs/launch-queue-research/evidence/tiktok-docket.html"]
+      },
+      {
+        "id": "supreme-argument",
+        "historicalDate": "2025-01-10",
+        "evaluationAnchor": "2025-01-10T17:38:00Z",
+        "informationKnownAt": "2025-01-10T17:38:00Z",
+        "precision": "minute",
+        "timezone": "America/New_York",
+        "firstPublicTimeVerified": false,
+        "publicCutoffVerified": true,
+        "publicAvailability": {
+          "kind": "proceeding-end-upper-bound",
+          "time": "2025-01-10T17:38:00Z",
+          "isExactFirstPublic": false,
+          "basis": "The official transcript records the argument beginning at 10:08 a.m. and ending at 12:38 p.m. EST; the official audio detail page and docket corroborate that the argument occurred. Questions during the argument are not a ruling."
+        },
+        "sourceFiles": ["docs/launch-queue-research/evidence/tiktok-argument.pdf", "docs/launch-queue-research/evidence/tiktok-argument-page.html", "docs/launch-queue-research/evidence/tiktok-docket.html"]
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "role": "bitcoin",
+  "status": "complete",
+  "startedAt": "2026-09-06T20:18:33Z",
+  "updatedAt": "2026-09-06T20:35:33Z",
+  "finishedAt": "2026-09-06T20:35:33Z",
+  "workspace": "/Users/simonwacziarg/Documents/ChatGPT/Forecast",
+  "taskId": "01a07777-0cfb-70b0-93f4-20087e2521d6",
+  "ownedPaths": [
+    "docs/launch-work/funnel-expansion/bitcoin/",
+    "docs/launch-work/funnel-expansion/status/bitcoin.json"
+  ],
+  "reportPath": "docs/launch-work/funnel-expansion/bitcoin/report.md",
+  "artifactHashes": {
+    "selection-freeze.json": "433984381fff969e009013ca006339427d8c812ad94e4616285720a3cbf79ad8",
+    "candidate.json": "8e1bc9d862eebac42f57aa771580eeb4274b9253c2b93109767bfaa41c14bb55",
+    "measurements.json": "dcf8a0f64031143c444766f270704d5d5eb2acafc8f2ddbafcb16d7cbd00886f",
+    "evidence-manifest.json": "0f98257f3b03f5cb2114fbda22971afb12e568aaf6ee5fb4397167468bee1557",
+    "candidate.md": "17d64e5bf7bf9f167637c2b3cb1ad78bf66db5da01130515fdc12605112f95bf",
+    "report.md": "def0095edae98479bbce926383dc5795b0539bc0aa285603a3fd31eb285714d1",
+    "checks.mjs": "b6743fd7d7517225ba75e01cbc59b4dbed25b5f1e54314a9d94a9847d12bb8c8",
+    "captures/ap-election.json": "3c922ded71a10d608268c3426072da3e19800185b57e160e87c0e88746fa64b9",
+    "captures/fed-september-cut.json": "3a304cf2c3a0c9a0a5324f316cfb34431e879eabaf7d24fd7c4b0c9bd78fd946",
+    "captures/hkex-spot-etfs.json": "b90c1cf27a7e392f99eb9cfc0cda62eb8d214ee3b999bc4a2cf3199af73d6252",
+    "captures/mstr-exhibit-99-1.json": "61f6c31081ec4bb5afad62eff278cf497a54a23d4171cad357ccd5e939d48f72",
+    "captures/mstr-purchase.json": "33f86189e9826241f197df563a95e934750e2212f699d9ab3ef1420b97415be7",
+    "captures/mtgox-repayments.json": "35b95c975a2f8926488331cb081a093cdda32de1406127ccefdaa5d77dd4f3cf"
+  },
+  "unresolvedGates": [
+    "Independent editor must confirm the three day-level primary-source anchors or approve the inherited hour/minute study anchors with a documented rationale.",
+    "The current study remains editorial-review and requires independent review plus named, timestamped human approval for any daily release.",
+    "The fullMarketLifetime metadata mismatch between src/data/bitcoin2024.ts and docs/launch-queue-research/evidence/bitcoin-audit.json must be resolved without silently mutating published history.",
+    "The user-directed September 7 Biden date does not approve this Bitcoin candidate or assign it a release date; the lead schedules only after exact approval and final funnel review."
+  ],
+  "handoffComplete": true
+}

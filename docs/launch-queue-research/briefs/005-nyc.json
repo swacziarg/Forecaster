@@ -1,0 +1,1326 @@
+{
+  "artifactType": "Editorial integration handoff; not a published Study or queue entry",
+  "preparedAt": "2026-09-06T14:32:49.666160+00:00",
+  "key": "nyc",
+  "proposedPuzzleNumber": 5,
+  "proposedReleaseTime": null,
+  "title": "The New York upset",
+  "category": "Politics",
+  "storyRange": "2025-04-22–2025-11-05; scored developments 2025-06-05–2025-09-28",
+  "readiness": "needs a specific evidence/data step",
+  "queueableNow": false,
+  "decision": "Conditional fourth preference, not recommended for queueing in its present five-card form. All 25 windows pass and public statement evidence is retained, but the dramatic arc is largely one scored jump. Keep the failed editorial test visible. Any replacement selection needs a new significance-first proposal and freeze, not a search for large price candles.",
+  "requiredEvidenceSteps": [
+    "Independent editorial decision on whether one major jump plus four small responses meets the entertainment requirement; current recommendation is to hold.",
+    "Capture immutable original endorsement/concession/withdrawal statements and confirm earliest public access instead of the retained broadcast/reproduction upper bounds.",
+    "If the story is re-edited, start a separately documented significance-first selection and freeze before scoring; do not reuse this packet as an approved five."
+  ],
+  "identity": {
+    "provider": "Polymarket",
+    "marketId": "538932",
+    "conditionId": "0xebddfcf7b4401dade8b4031770a1ab942b01854f3bed453d5df9425cd9f211a9",
+    "contractId": "33945469250963963541781051637999677727672635213493648594066577298999471399137",
+    "question": "Will Zohran Mamdani win the 2025 NYC mayoral election?",
+    "selectedPerspective": "YES",
+    "outcome": "YES",
+    "openedAt": "2025-04-22T16:10:05.987Z",
+    "closedAt": "2025-11-05 05:44:47+00",
+    "settledAt": null,
+    "resolutionEvidence": {
+      "closed": true,
+      "umaResolutionStatus": "resolved",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "1",
+        "0"
+      ]
+    },
+    "metadataUrl": "https://gamma-api.polymarket.com/markets/538932",
+    "marketUrl": "https://polymarket.com/event/new-york-city-mayoral-election/will-zohran-mamdani-win-the-2025-nyc-mayoral-election",
+    "rulesSummary": "YES if Mamdani wins the November 4, 2025 NYC mayoral general election. AP, Fox News and NBC agreeing determine resolution; otherwise official certification applies. This is not the Democratic primary contract. Cuomo’s primary concession can be scored; the November general-election victory cannot."
+  },
+  "audienceRationale": "New York, Alexandria Ocasio-Cortez, Andrew Cuomo and a young insurgent challenging the establishment make a recognizable political drama, though less universal than TikTok or the Super Bowl.",
+  "playRationale": "An endorsement from AOC, a rival refusing to disappear, the governor coming aboard and the sitting mayor leaving sound like big turning points. Players may overrate them compared with the primary breakthrough.",
+  "tension": "The general-election contract moves +33.80 pp around the primary concession, while the other four frozen responses range only from −1.025 to +1.80. The full series has a 20.90-point pre-result drawdown, but the frozen card set does not capture a comparably substantial fall. This fails the strongest-puzzle ambition despite usable data.",
+  "measurementProfile": {
+    "id": "months-hourly-v1",
+    "label": "Months / hourly",
+    "cadenceMinutes": 60,
+    "anticipation": {
+      "startHours": -84,
+      "endHours": -12
+    },
+    "reference": {
+      "startHours": -12,
+      "endHours": 0
+    },
+    "immediate": {
+      "startHours": 0,
+      "endHours": 6
+    },
+    "stabilized": {
+      "startHours": 18,
+      "endHours": 36
+    },
+    "delayed": {
+      "startHours": 48,
+      "endHours": 72
+    },
+    "quality": {
+      "minimumCoverage": 0.6,
+      "maximumGapShare": 0.5,
+      "minimumDistinctUpdates": 3,
+      "maximumSpread": 0.2
+    },
+    "tieThreshold": 0.01
+  },
+  "selectionFreeze": {
+    "file": "frozen-selection-v1.json",
+    "sha256": "79ca8b2e025f15e5fe1ff9040ed1c060d874bf188d2b239f39fc647c0ad33593",
+    "frozenAt": "2026-09-06T00:24:51.987941+00:00",
+    "disclosure": "Freeze these five fact clusters per candidate for historical significance before running fresh event-window calculations. Timestamp anchors must come from public evidence, never optimized on prices. Failed candidates stay failed; do not replace weak cards after seeing movements. Raw histories and broad daily-median suitability statistics were examined before this freeze; no new five-card event-window calculations have run. Prior project records contain measured responses for some reused Trump/Eagles events and Oscars 2026; those were visible while satisfying the required repository review. This is a prospective freeze of this research selection, not a claim of blinded preregistration."
+  },
+  "anchorsFile": "anchors-v2.json",
+  "dataset": {
+    "researchCsv": "datasets/nyc-hourly.csv",
+    "csvSha256": "a2bf3f12c21289f5718135859fe0018819a595a958503a2b096a7bd474560b13",
+    "normalizedJson": "evidence/nyc-normalized.json",
+    "audit": {
+      "key": "nyc",
+      "rawObservations": 4713,
+      "observations": 4711,
+      "coverageStart": "2025-04-22T17:00:00Z",
+      "coverageEnd": "2025-11-05T05:00:00Z",
+      "frequency": "UTC hourly buckets",
+      "missingHours": 6,
+      "maximumMissingRunHours": 4,
+      "rejectedObservations": 0,
+      "duplicateOrRevisionBuckets": 2,
+      "markPolicy": "Project Polymarket importer convention: latest source price per hour, treated as trade; API does not establish actual trade freshness or historical spread/volume. No filling.",
+      "normalizedSha256": "53e961b3828d1d393f346b8b65509fee2db504749836dabc36c20df7f3b6ed03",
+      "minQualifyingDailyMedian": {
+        "date": "2025-05-25",
+        "median": 0.039,
+        "observations": 24,
+        "min": 0.036,
+        "max": 0.042
+      },
+      "maxQualifyingDailyMedian": {
+        "date": "2025-10-27",
+        "median": 0.9515,
+        "observations": 24,
+        "min": 0.941,
+        "max": 0.9585
+      },
+      "maximumDailyMedianRise": {
+        "from": {
+          "date": "2025-05-25",
+          "median": 0.039,
+          "observations": 24,
+          "min": 0.036,
+          "max": 0.042
+        },
+        "to": {
+          "date": "2025-10-27",
+          "median": 0.9515,
+          "observations": 24,
+          "min": 0.941,
+          "max": 0.9585
+        },
+        "pp": 91.25
+      },
+      "maximumDailyMedianDrawdown": {
+        "from": {
+          "date": "2025-06-12",
+          "median": 0.33275,
+          "observations": 24,
+          "min": 0.2985,
+          "max": 0.3525
+        },
+        "to": {
+          "date": "2025-06-18",
+          "median": 0.12375,
+          "observations": 24,
+          "min": 0.0895,
+          "max": 0.153
+        },
+        "pp": 20.9
+      },
+      "fullMarketLifetime": false
+    },
+    "historyRequests": [
+      {
+        "key": "nyc-history-000",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1745338205&endTs=1746202205&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-000",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1745338205&endTs=1746202205&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:56.592826+00:00",
+          "bytes": 6281,
+          "sha256": "629c4a436b37ca039813dd8dc2bf7b528d22c4337126d16d1e8d8908bc136cb7",
+          "path": "evidence/nyc-history-000.json"
+        }
+      },
+      {
+        "key": "nyc-history-001",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1746202205&endTs=1747066205&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-001",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1746202205&endTs=1747066205&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:56.612086+00:00",
+          "bytes": 6255,
+          "sha256": "f760218fae5fdbef932fadab0311241599d19329cfbc4e0470934927a28260ee",
+          "path": "evidence/nyc-history-001.json"
+        }
+      },
+      {
+        "key": "nyc-history-002",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1747066205&endTs=1747930205&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-002",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1747066205&endTs=1747930205&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:56.646803+00:00",
+          "bytes": 6337,
+          "sha256": "d51af771a7e2b885b46b022cb480beedfacf412421daeddff7fb466b2d7f7dad",
+          "path": "evidence/nyc-history-002.json"
+        }
+      },
+      {
+        "key": "nyc-history-003",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1747930205&endTs=1748794205&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-003",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1747930205&endTs=1748794205&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:56.643406+00:00",
+          "bytes": 6567,
+          "sha256": "2960579a1222f66d169b623eaeb2c9f43930e3134e1cd4c0b85a4ddc9c248c82",
+          "path": "evidence/nyc-history-003.json"
+        }
+      },
+      {
+        "key": "nyc-history-004",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1748794205&endTs=1749658205&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-004",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1748794205&endTs=1749658205&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:56.727666+00:00",
+          "bytes": 6593,
+          "sha256": "06ab443283fde601419e4494867f139cc9626e635cd355e3445726e7ffafb70f",
+          "path": "evidence/nyc-history-004.json"
+        }
+      },
+      {
+        "key": "nyc-history-005",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1749658205&endTs=1750522205&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-005",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1749658205&endTs=1750522205&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:56.767352+00:00",
+          "bytes": 6605,
+          "sha256": "806c9128f13252d65440f9149b1046215f2731da883f3507c4f3218af66a9aaf",
+          "path": "evidence/nyc-history-005.json"
+        }
+      },
+      {
+        "key": "nyc-history-006",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1750522205&endTs=1751386205&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-006",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1750522205&endTs=1751386205&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:56.804139+00:00",
+          "bytes": 6623,
+          "sha256": "782975360102c11a7d5b724aa4462af5c58964e50aa13f4d2e7d8c8b562f1e43",
+          "path": "evidence/nyc-history-006.json"
+        }
+      },
+      {
+        "key": "nyc-history-007",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1751386205&endTs=1752250205&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-007",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1751386205&endTs=1752250205&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:56.826271+00:00",
+          "bytes": 6625,
+          "sha256": "4e8e539db593f730808cfec5b20628e2c57afd5511258dbae3edc5f9516c8921",
+          "path": "evidence/nyc-history-007.json"
+        }
+      },
+      {
+        "key": "nyc-history-008",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1752250205&endTs=1753114205&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-008",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1752250205&endTs=1753114205&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:56.823496+00:00",
+          "bytes": 6619,
+          "sha256": "6d0a98bf13ce6af1e90dc4aceac577b4756031fb1f79e7930e0a26bc6fa91658",
+          "path": "evidence/nyc-history-008.json"
+        }
+      },
+      {
+        "key": "nyc-history-009",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1753114205&endTs=1753978205&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-009",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1753114205&endTs=1753978205&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:56.925812+00:00",
+          "bytes": 6661,
+          "sha256": "0c2acb2492805be21eaa2ac2211fda4ec0311a0507e87f9ea848d58ff6641720",
+          "path": "evidence/nyc-history-009.json"
+        }
+      },
+      {
+        "key": "nyc-history-010",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1753978205&endTs=1754842205&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-010",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1753978205&endTs=1754842205&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:56.951651+00:00",
+          "bytes": 6581,
+          "sha256": "f59411635d31352346e82b160d52879278b089e83aa3cbff814995d3140d08ae",
+          "path": "evidence/nyc-history-010.json"
+        }
+      },
+      {
+        "key": "nyc-history-011",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1754842205&endTs=1755706205&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-011",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1754842205&endTs=1755706205&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:56.968733+00:00",
+          "bytes": 6607,
+          "sha256": "be6ff1d492f9b7d2c3c107da77b9d3cfa2397c12c16491ad7705c124ce84f702",
+          "path": "evidence/nyc-history-011.json"
+        }
+      },
+      {
+        "key": "nyc-history-012",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1755706205&endTs=1756570205&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-012",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1755706205&endTs=1756570205&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:56.999468+00:00",
+          "bytes": 6664,
+          "sha256": "8f0733f199acc9eb657e77751e6a0b9d839bb737276390e19f1297ff54c31deb",
+          "path": "evidence/nyc-history-012.json"
+        }
+      },
+      {
+        "key": "nyc-history-013",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1756570205&endTs=1757434205&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-013",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1756570205&endTs=1757434205&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:57.013232+00:00",
+          "bytes": 6616,
+          "sha256": "344dd4322bbd38d658f497978238be13caf514b9d0dd7ca5ed494a12bf65cbfb",
+          "path": "evidence/nyc-history-013.json"
+        }
+      },
+      {
+        "key": "nyc-history-014",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1757434205&endTs=1758298205&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-014",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1757434205&endTs=1758298205&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:57.138551+00:00",
+          "bytes": 6554,
+          "sha256": "0bc0ce34e2469f101de21602f97438a20182e6646cfb57f85571109c532c61b2",
+          "path": "evidence/nyc-history-014.json"
+        }
+      },
+      {
+        "key": "nyc-history-015",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1758298205&endTs=1759162205&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-015",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1758298205&endTs=1759162205&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:57.153099+00:00",
+          "bytes": 6656,
+          "sha256": "b9118b82170b36f115e5389afb2b461cbcf61fbb711724b99fa93ee6a72e33a4",
+          "path": "evidence/nyc-history-015.json"
+        }
+      },
+      {
+        "key": "nyc-history-016",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1759162205&endTs=1760026205&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-016",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1759162205&endTs=1760026205&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:57.150913+00:00",
+          "bytes": 6644,
+          "sha256": "444f1aedb2ec7d31568e79b8b62c446c4fb9964106ef758fe8dda3c0ec58e4b0",
+          "path": "evidence/nyc-history-016.json"
+        }
+      },
+      {
+        "key": "nyc-history-017",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1760026205&endTs=1760890205&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-017",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1760026205&endTs=1760890205&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:57.192492+00:00",
+          "bytes": 6686,
+          "sha256": "49a1a5b0f112cbec3b0f2ee74c5a9735e367c950fb9827281123a871c7f9e027",
+          "path": "evidence/nyc-history-017.json"
+        }
+      },
+      {
+        "key": "nyc-history-018",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1760890205&endTs=1761754205&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-018",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1760890205&endTs=1761754205&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:57.204946+00:00",
+          "bytes": 6590,
+          "sha256": "47bbd0d8afa7ebd051042d5a7aca933c9f88105db2803f29823cf6d3df1551aa",
+          "path": "evidence/nyc-history-018.json"
+        }
+      },
+      {
+        "key": "nyc-history-019",
+        "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1761754205&endTs=1762325087&fidelity=60",
+        "receipt": {
+          "key": "nyc-history-019",
+          "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1761754205&endTs=1762325087&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:57.329937+00:00",
+          "bytes": 4387,
+          "sha256": "14143555a06efb8d208ea2fdfcb261ba588be74afbe1e349aa1693659860a4db",
+          "path": "evidence/nyc-history-019.json"
+        }
+      }
+    ],
+    "preEndingSwings": {
+      "exclusiveEndingDateUTC": "2025-11-04",
+      "days": 195,
+      "maximumRise": {
+        "pp": 91.25,
+        "from": {
+          "date": "2025-05-25",
+          "median": 0.039,
+          "observations": 24,
+          "min": 0.036,
+          "max": 0.042
+        },
+        "to": {
+          "date": "2025-10-27",
+          "median": 0.9515,
+          "observations": 24,
+          "min": 0.941,
+          "max": 0.9585
+        }
+      },
+      "maximumDrawdown": {
+        "pp": 20.9,
+        "from": {
+          "date": "2025-06-12",
+          "median": 0.33275,
+          "observations": 24,
+          "min": 0.2985,
+          "max": 0.3525
+        },
+        "to": {
+          "date": "2025-06-18",
+          "median": 0.12375,
+          "observations": 24,
+          "min": 0.0895,
+          "max": 0.153
+        }
+      },
+      "minimumDailyMedian": {
+        "date": "2025-05-25",
+        "median": 0.039,
+        "observations": 24,
+        "min": 0.036,
+        "max": 0.042
+      },
+      "maximumDailyMedian": {
+        "date": "2025-10-27",
+        "median": 0.9515,
+        "observations": 24,
+        "min": 0.941,
+        "max": 0.9585
+      }
+    },
+    "normalizationScript": "audit_history.py",
+    "measurementScript": "evaluate.mjs",
+    "integrationDestination": null
+  },
+  "presentationDraft": {
+    "topic": "The New York upset",
+    "instruction": "June–September 2025. Rank five headlines from the biggest rise in Mamdani’s chances of becoming New York City mayor to the biggest fall.",
+    "selectedContractShort": "Mamdani wins the 2025 mayoral general election",
+    "positiveLabel": "Probability rose",
+    "negativeLabel": "Probability fell",
+    "preRevealOdds": false,
+    "releaseTimezone": "America/Chicago",
+    "scoring": {
+      "version": "pairwise-anchor-1pt-v1",
+      "tieThreshold": 0.01,
+      "tieGrouping": "anchor-window"
+    },
+    "eventIds": [
+      "aoc-endorsement",
+      "primary-breakthrough",
+      "cuomo-independent",
+      "adams-exit",
+      "hochul-endorsement"
+    ],
+    "initialOrder": [
+      "cuomo-independent",
+      "aoc-endorsement",
+      "hochul-endorsement",
+      "primary-breakthrough",
+      "adams-exit"
+    ],
+    "initialOrderPolicy": "Fixed positional permutation of frozen list, not price-ranked."
+  },
+  "events": [
+    {
+      "id": "aoc-endorsement",
+      "title": "Alexandria Ocasio-Cortez endorses Zohran Mamdani",
+      "frozenTitle": "Alexandria Ocasio-Cortez endorses Zohran Mamdani",
+      "eventDate": "2025-06-05",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": "2025-06-05T12:27:13.349Z",
+      "evaluationAnchor": "2025-06-05T12:27:13.349Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "anchorBasis": "Candidate’s public Bluesky record indexedAt; createdAt 12:27:11.326Z.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": true,
+      "selectionReason": "Nationally recognizable supporter and outsider momentum.",
+      "expectedDirectionBeforeMeasurement": "positive",
+      "preRevealClaim": "Alexandria Ocasio-Cortez endorses Zohran Mamdani",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": "evidence/nyc-aoc-post.json",
+          "url": "https://public.api.bsky.app/xrpc/app.bsky.feed.getPostThread?uri=at%3A%2F%2Fdid%3Aplc%3Aj5hrotody26iqi24hcusufxu%2Fapp.bsky.feed.post%2F3lqucxtqkss2o&depth=0",
+          "retrievedAt": "2026-09-06T05:12:35.948993+00:00",
+          "snapshotHash": "5485b67f4a3d31aadd21e48e867de15f90e45b59c4cf6ac3b4e898c9482c1454",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        }
+      ],
+      "competingExplanation": "The public candidate post confirms support but is not proof of the very first announcement. Ranked-choice strategy, polling and other endorsements may already have priced in the alliance.",
+      "attributionAssessment": "mixed",
+      "researchMeasurement": {
+        "eventId": "aoc-endorsement",
+        "event": {
+          "id": "aoc-endorsement",
+          "date": "2025-06-05",
+          "title": "Alexandria Ocasio-Cortez endorses Zohran Mamdani",
+          "expectedDirection": "positive",
+          "selectionReason": "Nationally recognizable supporter and outsider momentum.",
+          "informationKnownAt": "2025-06-05T12:27:13.349Z",
+          "anchorVerified": true,
+          "anchorBasis": "Candidate’s public Bluesky record indexedAt; createdAt 12:27:11.326Z."
+        },
+        "windows": {
+          "anticipation": {
+            "level": 0.12075,
+            "start": "2025-06-02T00:27:13.349Z",
+            "end": "2025-06-05T00:27:13.349Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 72,
+              "tradedBuckets": 72,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 72,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "reference": {
+            "level": 0.14,
+            "start": "2025-06-05T00:27:13.349Z",
+            "end": "2025-06-05T12:27:13.349Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 12,
+              "tradedBuckets": 12,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 12,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": 0.13375,
+            "start": "2025-06-05T12:27:13.349Z",
+            "end": "2025-06-05T18:27:13.349Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 6,
+              "tradedBuckets": 6,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 6,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "stabilized": {
+            "level": 0.14275,
+            "start": "2025-06-06T06:27:13.349Z",
+            "end": "2025-06-07T00:27:13.349Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 18,
+              "tradedBuckets": 18,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 18,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "delayed": {
+            "level": 0.1755,
+            "start": "2025-06-07T12:27:13.349Z",
+            "end": "2025-06-08T12:27:13.349Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 24,
+              "tradedBuckets": 24,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 24,
+              "status": "usable",
+              "reasons": []
+            }
+          }
+        },
+        "anticipationMove": 0.019250000000000017,
+        "immediateResponse": -0.0062500000000000056,
+        "shortTermResponse": 0.0027499999999999747,
+        "delayedIncrement": 0.03275,
+        "cumulativeDelayedResponse": 0.035499999999999976,
+        "logOddsResponse": 0.022655223831338667,
+        "sensitivityShare": 0,
+        "counterfactualProbability": 0.14275,
+        "attributedImpact": 0,
+        "qualityStatus": "usable",
+        "ordinaryMovement": {
+          "classification": "not detectable",
+          "threshold": 0.03200000000000003,
+          "sampleCount": 117
+        },
+        "overlaps": []
+      }
+    },
+    {
+      "id": "primary-breakthrough",
+      "title": "Cuomo concedes the Democratic primary to Mamdani",
+      "frozenTitle": "Cuomo concedes the Democratic primary to Mamdani",
+      "eventDate": "2025-06-24",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": "2025-06-25T04:00:00Z",
+      "evaluationAnchor": "2025-06-25T04:00:00Z",
+      "precision": "interval",
+      "timezone": "America/New_York",
+      "anchorBasis": "End of 23:00–00:00 EDT broadcast reporting Cuomo concession; primary concession video also embedded on FOX5 page, first-post metadata precedes update.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": true,
+      "selectionReason": "Primary victory is a development in the GENERAL election contract, not its resolving result.",
+      "expectedDirectionBeforeMeasurement": "positive",
+      "preRevealClaim": "Cuomo concedes the Democratic primary to Mamdani",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": "evidence/nyc-primary-cnn.html",
+          "url": "https://transcripts.cnn.com/show/lcl/date/2025-06-24/segment/01",
+          "retrievedAt": "2026-09-06T05:44:52.313242+00:00",
+          "snapshotHash": "d5292cf4d645506a17e013a8ba59f7cb93ce7035755fd5d4ff5b3c92c45f08f2",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        },
+        {
+          "file": "evidence/nyc-primary-fox.html",
+          "url": "https://www.fox5ny.com/election/zohran-mamdani-lead-cuomo-concedes/",
+          "retrievedAt": "2026-09-06T05:12:36.481940+00:00",
+          "snapshotHash": "238efdf81aa93865d0ec1a6f9b94bc51fcc6c8002e7584e1e24494f089daae4f",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        }
+      ],
+      "competingExplanation": "Election returns were rolling in before Cuomo conceded. Concession was not the certified ranked-choice tally, and Mamdani still had a general election to win. This window captures the broader primary-night outcome, not the concession’s isolated effect.",
+      "attributionAssessment": "mixed",
+      "researchMeasurement": {
+        "eventId": "primary-breakthrough",
+        "event": {
+          "id": "primary-breakthrough",
+          "date": "2025-06-24",
+          "title": "Cuomo concedes the Democratic primary to Mamdani",
+          "expectedDirection": "positive",
+          "selectionReason": "Primary victory is a development in the GENERAL election contract, not its resolving result.",
+          "informationKnownAt": "2025-06-25T04:00:00Z",
+          "anchorVerified": true,
+          "anchorBasis": "End of 23:00–00:00 EDT broadcast reporting Cuomo concession; primary concession video also embedded on FOX5 page, first-post metadata precedes update."
+        },
+        "windows": {
+          "anticipation": {
+            "level": 0.1965,
+            "start": "2025-06-21T16:00:00.000Z",
+            "end": "2025-06-24T16:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 72,
+              "tradedBuckets": 72,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 72,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "reference": {
+            "level": 0.40349999999999997,
+            "start": "2025-06-24T16:00:00.000Z",
+            "end": "2025-06-25T04:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 12,
+              "tradedBuckets": 12,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 12,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": 0.7355,
+            "start": "2025-06-25T04:00:00.000Z",
+            "end": "2025-06-25T10:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 6,
+              "tradedBuckets": 6,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 6,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "stabilized": {
+            "level": 0.7415,
+            "start": "2025-06-25T22:00:00.000Z",
+            "end": "2025-06-26T16:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 18,
+              "tradedBuckets": 18,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 18,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "delayed": {
+            "level": 0.74125,
+            "start": "2025-06-27T04:00:00.000Z",
+            "end": "2025-06-28T04:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 24,
+              "tradedBuckets": 24,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 24,
+              "status": "usable",
+              "reasons": []
+            }
+          }
+        },
+        "anticipationMove": 0.20699999999999996,
+        "immediateResponse": 0.3320000000000001,
+        "shortTermResponse": 0.3380000000000001,
+        "delayedIncrement": -0.0002500000000000835,
+        "cumulativeDelayedResponse": 0.33775,
+        "logOddsResponse": 1.4446822214574706,
+        "sensitivityShare": 0,
+        "counterfactualProbability": 0.7415,
+        "attributedImpact": 0,
+        "qualityStatus": "usable",
+        "ordinaryMovement": {
+          "classification": "unusually large",
+          "threshold": 0.03200000000000003,
+          "sampleCount": 117
+        },
+        "overlaps": []
+      }
+    },
+    {
+      "id": "cuomo-independent",
+      "title": "Cuomo announces he will keep running for mayor as an independent",
+      "frozenTitle": "Cuomo announces he will keep running for mayor as an independent",
+      "eventDate": "2025-07-14",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": "2025-07-14T19:03:00Z",
+      "evaluationAnchor": "2025-07-14T19:03:00Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "anchorBasis": "NY1 publication and modification match; reproduces candidate’s own announcement video and quotes.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": true,
+      "selectionReason": "The beaten rival returns.",
+      "expectedDirectionBeforeMeasurement": "negative",
+      "preRevealClaim": "Cuomo announces he will keep running for mayor as an independent",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": "evidence/nyc-cuomo.html",
+          "url": "https://ny1.com/nyc/all-boroughs/politics/2025/07/14/andrew-cuomo-officially-launches-independent-bid-for-mayor",
+          "retrievedAt": "2026-09-06T00:26:49.354638+00:00",
+          "snapshotHash": "9145f6f540b7d79181de43fde006d1a679ee04fdd90e7f1bbb4e4a1f59254699",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        }
+      ],
+      "competingExplanation": "The continuation was anticipated and discussed earlier that day. The statement confirmed an existing option rather than introducing a completely new rival.",
+      "attributionAssessment": "mixed",
+      "researchMeasurement": {
+        "eventId": "cuomo-independent",
+        "event": {
+          "id": "cuomo-independent",
+          "date": "2025-07-14",
+          "title": "Cuomo announces he will keep running for mayor as an independent",
+          "expectedDirection": "negative",
+          "selectionReason": "The beaten rival returns.",
+          "informationKnownAt": "2025-07-14T19:03:00Z",
+          "anchorVerified": true,
+          "anchorBasis": "NY1 publication and modification match; reproduces candidate’s own announcement video and quotes."
+        },
+        "windows": {
+          "anticipation": {
+            "level": 0.7325,
+            "start": "2025-07-11T07:03:00.000Z",
+            "end": "2025-07-14T07:03:00.000Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 72,
+              "tradedBuckets": 72,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 72,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "reference": {
+            "level": 0.7304999999999999,
+            "start": "2025-07-14T07:03:00.000Z",
+            "end": "2025-07-14T19:03:00.000Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 12,
+              "tradedBuckets": 12,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 12,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": 0.734,
+            "start": "2025-07-14T19:03:00.000Z",
+            "end": "2025-07-15T01:03:00.000Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 6,
+              "tradedBuckets": 6,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 6,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "stabilized": {
+            "level": 0.72125,
+            "start": "2025-07-15T13:03:00.000Z",
+            "end": "2025-07-16T07:03:00.000Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 18,
+              "tradedBuckets": 18,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 18,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "delayed": {
+            "level": 0.71075,
+            "start": "2025-07-16T19:03:00.000Z",
+            "end": "2025-07-17T19:03:00.000Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 24,
+              "tradedBuckets": 24,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 24,
+              "status": "usable",
+              "reasons": []
+            }
+          }
+        },
+        "anticipationMove": -0.002000000000000113,
+        "immediateResponse": 0.0035000000000000586,
+        "shortTermResponse": -0.00924999999999998,
+        "delayedIncrement": -0.010499999999999954,
+        "cumulativeDelayedResponse": -0.019749999999999934,
+        "logOddsResponse": -0.046490345793721355,
+        "sensitivityShare": 0,
+        "counterfactualProbability": 0.72125,
+        "attributedImpact": 0,
+        "qualityStatus": "usable",
+        "ordinaryMovement": {
+          "classification": "not detectable",
+          "threshold": 0.03200000000000003,
+          "sampleCount": 117
+        },
+        "overlaps": []
+      }
+    },
+    {
+      "id": "adams-exit",
+      "title": "Mayor Eric Adams ends his re-election campaign",
+      "frozenTitle": "Mayor Eric Adams ends his re-election campaign",
+      "eventDate": "2025-09-28",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": "2025-09-28T17:18:00Z",
+      "evaluationAnchor": "2025-09-28T17:18:00Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "anchorBasis": "NY1 publication and modification match at 13:18 EDT, with original Adams video/post embedded and reproduced. Court record separately dates original post to 13:11 EDT; that earlier time is not the chosen cutoff.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": true,
+      "selectionReason": "Incumbent exit changes the opposition field.",
+      "expectedDirectionBeforeMeasurement": "ambiguous",
+      "preRevealClaim": "Mayor Eric Adams ends his re-election campaign",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": "evidence/nyc-adams-ny1.html",
+          "url": "https://ny1.com/nyc/all-boroughs/politics/2025/09/28/eric-adams-drops-out",
+          "retrievedAt": "2026-09-06T13:54:10.085632+00:00",
+          "snapshotHash": "d45098d3aaf4d8aa26ae2982274ad2e704aaabd006ed13dd7061d9501e1673be",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        },
+        {
+          "file": "evidence/nyc-adams-court.pdf",
+          "url": "https://www.govinfo.gov/content/pkg/USCOURTS-nyed-1_25-cv-04558/pdf/USCOURTS-nyed-1_25-cv-04558-0.pdf",
+          "retrievedAt": "2026-09-06T13:54:11.160828+00:00",
+          "snapshotHash": "e7153916b8004562a4a7da97f4a5dcae25e6328a3071972d01a4b264792d8149",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        },
+        {
+          "file": "evidence/nyc-adams-archive.html",
+          "url": "https://perma.cc/B8BX-S9BU",
+          "retrievedAt": "2026-09-06T05:12:36.081702+00:00",
+          "snapshotHash": "bde50921be3d427d450aa5bbfe1ec2e01bdbe43bde55deefbc0bce47dd74d6fa",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        }
+      ],
+      "competingExplanation": "Withdrawal was publicly speculated about; the race already had another major anti-Mamdani candidate. Voters need not transfer as a block. The NY1 reproduction cutoff is seven minutes after the original post time cited by the court.",
+      "attributionAssessment": "mixed",
+      "researchMeasurement": {
+        "eventId": "adams-exit",
+        "event": {
+          "id": "adams-exit",
+          "date": "2025-09-28",
+          "title": "Mayor Eric Adams ends his re-election campaign",
+          "expectedDirection": "ambiguous",
+          "selectionReason": "Incumbent exit changes the opposition field.",
+          "informationKnownAt": "2025-09-28T17:18:00Z",
+          "anchorVerified": true,
+          "anchorBasis": "NY1 publication and modification match at 13:18 EDT, with original Adams video/post embedded and reproduced. Court record separately dates original post to 13:11 EDT; that earlier time is not the chosen cutoff."
+        },
+        "windows": {
+          "anticipation": {
+            "level": 0.87375,
+            "start": "2025-09-25T05:18:00.000Z",
+            "end": "2025-09-28T05:18:00.000Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 72,
+              "tradedBuckets": 72,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 72,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "reference": {
+            "level": 0.8705,
+            "start": "2025-09-28T05:18:00.000Z",
+            "end": "2025-09-28T17:18:00.000Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 12,
+              "tradedBuckets": 12,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 12,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": 0.83925,
+            "start": "2025-09-28T17:18:00.000Z",
+            "end": "2025-09-28T23:18:00.000Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 6,
+              "tradedBuckets": 6,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 6,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "stabilized": {
+            "level": 0.86025,
+            "start": "2025-09-29T11:18:00.000Z",
+            "end": "2025-09-30T05:18:00.000Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 18,
+              "tradedBuckets": 18,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 18,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "delayed": {
+            "level": 0.86175,
+            "start": "2025-09-30T17:18:00.000Z",
+            "end": "2025-10-01T17:18:00.000Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 24,
+              "tradedBuckets": 24,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 24,
+              "status": "usable",
+              "reasons": []
+            }
+          }
+        },
+        "anticipationMove": -0.003249999999999975,
+        "immediateResponse": -0.03125,
+        "shortTermResponse": -0.010250000000000092,
+        "delayedIncrement": 0.0015000000000000568,
+        "cumulativeDelayedResponse": -0.008750000000000036,
+        "logOddsResponse": -0.08801894542627098,
+        "sensitivityShare": 0,
+        "counterfactualProbability": 0.86025,
+        "attributedImpact": 0,
+        "qualityStatus": "usable",
+        "ordinaryMovement": {
+          "classification": "ordinary",
+          "threshold": 0.03200000000000003,
+          "sampleCount": 117
+        },
+        "overlaps": []
+      }
+    },
+    {
+      "id": "hochul-endorsement",
+      "title": "Governor Kathy Hochul endorses Mamdani",
+      "frozenTitle": "Governor Kathy Hochul endorses Mamdani",
+      "eventDate": "2025-09-14",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": "2025-09-15T00:31:00Z",
+      "evaluationAnchor": "2025-09-15T00:31:00Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "anchorBasis": "NY1 publication and modification match; embeds governor’s own endorsement post dated Sep14. URL day differs from publication.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": true,
+      "selectionReason": "Party establishment joins the insurgent.",
+      "expectedDirectionBeforeMeasurement": "positive",
+      "preRevealClaim": "Governor Kathy Hochul endorses Mamdani",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": "evidence/nyc-hochul.html",
+          "url": "https://ny1.com/nyc/arts/news/2025/09/15/hochul-endorses-mamdani-in-nyc-mayor-s-race",
+          "retrievedAt": "2026-09-06T00:26:49.325995+00:00",
+          "snapshotHash": "d08b3d2e38a39cf560fb1324ad60416e86f50b33cf87d7395a78506bb2e11f4b",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        }
+      ],
+      "competingExplanation": "The governor’s endorsement followed discussions rather than an unexpected nomination change. Endorsement negotiations, coalition expectations and other September campaign information compete with a direct endorsement explanation.",
+      "attributionAssessment": "mixed",
+      "researchMeasurement": {
+        "eventId": "hochul-endorsement",
+        "event": {
+          "id": "hochul-endorsement",
+          "date": "2025-09-14",
+          "title": "Governor Kathy Hochul endorses Mamdani",
+          "expectedDirection": "positive",
+          "selectionReason": "Party establishment joins the insurgent.",
+          "informationKnownAt": "2025-09-15T00:31:00Z",
+          "anchorVerified": true,
+          "anchorBasis": "NY1 publication and modification match; embeds governor’s own endorsement post dated Sep14. URL day differs from publication."
+        },
+        "windows": {
+          "anticipation": {
+            "level": 0.809,
+            "start": "2025-09-11T12:31:00.000Z",
+            "end": "2025-09-14T12:31:00.000Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 72,
+              "tradedBuckets": 72,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 72,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "reference": {
+            "level": 0.8105,
+            "start": "2025-09-14T12:31:00.000Z",
+            "end": "2025-09-15T00:31:00.000Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 12,
+              "tradedBuckets": 12,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 12,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": 0.815,
+            "start": "2025-09-15T00:31:00.000Z",
+            "end": "2025-09-15T06:31:00.000Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 6,
+              "tradedBuckets": 6,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 6,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "stabilized": {
+            "level": 0.8285,
+            "start": "2025-09-15T18:31:00.000Z",
+            "end": "2025-09-16T12:31:00.000Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 18,
+              "tradedBuckets": 18,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 18,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "delayed": {
+            "level": 0.835,
+            "start": "2025-09-17T00:31:00.000Z",
+            "end": "2025-09-18T00:31:00.000Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 23,
+              "tradedBuckets": 23,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 0.9583333333333334,
+              "maximumGapBuckets": 1,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 23,
+              "status": "usable",
+              "reasons": []
+            }
+          }
+        },
+        "anticipationMove": 0.0014999999999999458,
+        "immediateResponse": 0.0044999999999999485,
+        "shortTermResponse": 0.018000000000000016,
+        "delayedIncrement": 0.00649999999999995,
+        "cumulativeDelayedResponse": 0.024499999999999966,
+        "logOddsResponse": 0.1217712536073734,
+        "sensitivityShare": 0,
+        "counterfactualProbability": 0.8285,
+        "attributedImpact": 0,
+        "qualityStatus": "usable",
+        "ordinaryMovement": {
+          "classification": "ordinary",
+          "threshold": 0.03200000000000003,
+          "sampleCount": 117
+        },
+        "overlaps": []
+      }
+    }
+  ],
+  "postRevealOnly": {
+    "ending": "Mamdani won the November 4, 2025 mayoral general election. The provider records final YES and closure November 5 at 05:44:47 UTC. The NYC Board of Elections’ later certification report corroborates the final result; it is retrospective evidence only. Do not confuse the June concession with this November ending.",
+    "sources": [
+      {
+        "file": "evidence/nyc-ending-official.html",
+        "url": "https://vote.nyc/page/election-results-summary-2025",
+        "retrievedAt": "2026-09-06T05:27:18.404407+00:00",
+        "snapshotHash": "a2d160e2a2c7b1008a13d2738ca39f89092e2d5ebbb4cd4369cb5470d153ec78",
+        "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+      },
+      {
+        "file": "evidence/nyc-ending-recap.pdf",
+        "url": "https://vote.nyc/sites/default/files/pdf/election_results/2025/20251104General%20Election/00000100000Citywide%20Mayor%20Citywide%20Recap.pdf",
+        "retrievedAt": "2026-09-06T13:57:06.371222+00:00",
+        "snapshotHash": "f4293ed11e93c297ecfd0e89ec693c100b0b563de9490eaaa92b199997ab22b2",
+        "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+      }
+    ],
+    "externalSources": [],
+    "tieGroups": [
+      [
+        "primary-breakthrough"
+      ],
+      [
+        "hochul-endorsement"
+      ],
+      [
+        "aoc-endorsement"
+      ],
+      [
+        "cuomo-independent",
+        "adams-exit"
+      ]
+    ],
+    "comparisonPolicy": "Observed stabilized minus reference medians; no headline-alone causality or nonzero attribution share."
+  },
+  "integrationGates": {
+    "sourceAndOccurrenceFinalization": false,
+    "independentEditor": null,
+    "approvalTime": null,
+    "applicationChangesMade": false
+  }
+}

@@ -1,0 +1,1666 @@
+[
+  {
+    "key": "trump-history-000",
+    "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1714521600&endTs=1715385600&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.385648+00:00",
+    "bytes": 6467,
+    "sha256": "180a3437aa20aac3ef92484d9d452002ca9835e6a766f34074f297dc25c08c9c",
+    "path": "evidence/trump-history-000.json"
+  },
+  {
+    "key": "trump-history-001",
+    "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1715385600&endTs=1716249600&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.378755+00:00",
+    "bytes": 6490,
+    "sha256": "32705397ecaae6f5cdc1cb98777e6c70660a2400983a78aae671288232b5f8ba",
+    "path": "evidence/trump-history-001.json"
+  },
+  {
+    "key": "trump-history-002",
+    "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1716249600&endTs=1717113600&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.370850+00:00",
+    "bytes": 6480,
+    "sha256": "f1eff306eb391315de342cb18619c0540bc4555f54105fa9105e2f4bcb5f36f7",
+    "path": "evidence/trump-history-002.json"
+  },
+  {
+    "key": "trump-history-003",
+    "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1717113600&endTs=1717977600&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.392903+00:00",
+    "bytes": 6492,
+    "sha256": "9197e6870925771d739324d0b4dd47ebb8b830d5937798b8750b418e35c040e1",
+    "path": "evidence/trump-history-003.json"
+  },
+  {
+    "key": "trump-history-004",
+    "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1717977600&endTs=1718841600&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.393401+00:00",
+    "bytes": 6494,
+    "sha256": "f7ddb6106d933a1473462d1c544da9930e44ad1908b440372c7d31170c164be4",
+    "path": "evidence/trump-history-004.json"
+  },
+  {
+    "key": "trump-history-005",
+    "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1718841600&endTs=1719705600&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.546783+00:00",
+    "bytes": 6492,
+    "sha256": "93c595cdbe4898ded82066205f947f85f080154d3a54876ab87d46dae1fa06ba",
+    "path": "evidence/trump-history-005.json"
+  },
+  {
+    "key": "trump-history-006",
+    "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1719705600&endTs=1720569600&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.577612+00:00",
+    "bytes": 6485,
+    "sha256": "30e1faeb009c94de2c1f504a43abfd807e7e58a526d92db691e01223e7c71ba8",
+    "path": "evidence/trump-history-006.json"
+  },
+  {
+    "key": "trump-history-007",
+    "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1720569600&endTs=1721433600&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.549559+00:00",
+    "bytes": 6475,
+    "sha256": "51f704f78c42b437e262b6e4f636b5f40fed52c03446d837a252d68d31564fbc",
+    "path": "evidence/trump-history-007.json"
+  },
+  {
+    "key": "trump-history-008",
+    "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1721433600&endTs=1722297600&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.580592+00:00",
+    "bytes": 6449,
+    "sha256": "e13bd259328ec4d25784a76c8296603f7aca81dd80812ae47057cefc622f2205",
+    "path": "evidence/trump-history-008.json"
+  },
+  {
+    "key": "trump-history-009",
+    "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1722297600&endTs=1723161600&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.576726+00:00",
+    "bytes": 6489,
+    "sha256": "1814aa4a7e0956ee5cbbb1266657b0d9488595cf3f62936a6073f70f91f1335b",
+    "path": "evidence/trump-history-009.json"
+  },
+  {
+    "key": "trump-history-010",
+    "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1723161600&endTs=1724025600&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.737818+00:00",
+    "bytes": 6636,
+    "sha256": "11b0fa74807dcbaac3e7dcd5e7fc83f808838aef093730ec0855fd0b096de7ed",
+    "path": "evidence/trump-history-010.json"
+  },
+  {
+    "key": "trump-history-011",
+    "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1724025600&endTs=1724889600&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.731219+00:00",
+    "bytes": 6646,
+    "sha256": "8a40a71ae4435dadc1553bef593951ea1d6202141ebff9159d973ddb73a565f1",
+    "path": "evidence/trump-history-011.json"
+  },
+  {
+    "key": "trump-history-012",
+    "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1724889600&endTs=1725753600&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.766688+00:00",
+    "bytes": 6711,
+    "sha256": "ecde9f636bfdf58c9567932861cc4983d881a9d6561934fc2dad023bd22a1acf",
+    "path": "evidence/trump-history-012.json"
+  },
+  {
+    "key": "trump-history-013",
+    "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1725753600&endTs=1726617600&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.753484+00:00",
+    "bytes": 6684,
+    "sha256": "df3415d1949e353fc7d05d689115f28cee71f5f7f74a94ec61be247c155aa866",
+    "path": "evidence/trump-history-013.json"
+  },
+  {
+    "key": "trump-history-014",
+    "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1726617600&endTs=1727481600&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.769095+00:00",
+    "bytes": 6694,
+    "sha256": "79e0f92a01c662cd6df1defaabee3fe413e4a8ccf75e2b89574ea412543ea48e",
+    "path": "evidence/trump-history-014.json"
+  },
+  {
+    "key": "trump-history-015",
+    "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1727481600&endTs=1728345600&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.928971+00:00",
+    "bytes": 6743,
+    "sha256": "b79bdbf7c94434e3c0a235ad9f430fbff4f2bdc2aaec68efbe8d89fbaa25e767",
+    "path": "evidence/trump-history-015.json"
+  },
+  {
+    "key": "trump-history-016",
+    "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1728345600&endTs=1729209600&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.912525+00:00",
+    "bytes": 6720,
+    "sha256": "55880d51bfff72dfe637c810ac20d6cc30e00a0d76605cdec3f82db11e743c27",
+    "path": "evidence/trump-history-016.json"
+  },
+  {
+    "key": "trump-history-017",
+    "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1729209600&endTs=1730073600&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.944871+00:00",
+    "bytes": 6713,
+    "sha256": "7a329b3c8210df9f82faeaf7467d98e58b67ba40f6e2f18650f2f6dbd88d999f",
+    "path": "evidence/trump-history-017.json"
+  },
+  {
+    "key": "trump-history-018",
+    "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1730073600&endTs=1730909861&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.945074+00:00",
+    "bytes": 6452,
+    "sha256": "798ac3d986d365f338bb5468a8845fec05ceaf7c652af41752881bf966b1264d",
+    "path": "evidence/trump-history-018.json"
+  },
+  {
+    "key": "eagles-history-000",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1720539464&endTs=1721403464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:49.964798+00:00",
+    "bytes": 6510,
+    "sha256": "dd913123a8de6f06119526d62b7b223ba8121841936033ecdd3fdafeb9043cf5",
+    "path": "evidence/eagles-history-000.json"
+  },
+  {
+    "key": "eagles-history-001",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1721403464&endTs=1722267464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.093214+00:00",
+    "bytes": 6568,
+    "sha256": "c59f02e0dcedc9bba0a2e67ed1b2d3b3cacaf5e532df2d40c0a57ca229c65bce",
+    "path": "evidence/eagles-history-001.json"
+  },
+  {
+    "key": "eagles-history-002",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1722267464&endTs=1723131464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.134638+00:00",
+    "bytes": 6538,
+    "sha256": "c87f3159405ac60722eb130b41d83ecff94963de9b4e5af4fed204dfdb32aafd",
+    "path": "evidence/eagles-history-002.json"
+  },
+  {
+    "key": "eagles-history-003",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1723131464&endTs=1723995464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.152029+00:00",
+    "bytes": 6632,
+    "sha256": "1f069e61791a6640ba94d2bde6bee07ab57fcf62e7e75d3bba67f1f3b7147727",
+    "path": "evidence/eagles-history-003.json"
+  },
+  {
+    "key": "eagles-history-004",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1723995464&endTs=1724859464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.134802+00:00",
+    "bytes": 6624,
+    "sha256": "773fd241d42b57df185ad6d589a5339dea837c1ef32c517b73650eab991f218e",
+    "path": "evidence/eagles-history-004.json"
+  },
+  {
+    "key": "eagles-history-005",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1724859464&endTs=1725723464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.165080+00:00",
+    "bytes": 6634,
+    "sha256": "2bb3351785016e7d8809dce661e78955a8c8f3d8689fd937472ebc5dc70fb2ee",
+    "path": "evidence/eagles-history-005.json"
+  },
+  {
+    "key": "eagles-history-006",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1725723464&endTs=1726587464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.275188+00:00",
+    "bytes": 6567,
+    "sha256": "4424ba9e83bc4ecd136c5f6367df0a9e696fe7d8c7b7d4c643ac9ad8a9fbdae0",
+    "path": "evidence/eagles-history-006.json"
+  },
+  {
+    "key": "eagles-history-007",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1726587464&endTs=1727451464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.352002+00:00",
+    "bytes": 6626,
+    "sha256": "76884ef207dbce57a8fce7d16a7cc721a2be3652383aa42501829a29e98556cd",
+    "path": "evidence/eagles-history-007.json"
+  },
+  {
+    "key": "eagles-history-008",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1727451464&endTs=1728315464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.346341+00:00",
+    "bytes": 6660,
+    "sha256": "606f987579880357db43d94d2a7a66bdf0656403dd47ccc4879303841e58091d",
+    "path": "evidence/eagles-history-008.json"
+  },
+  {
+    "key": "eagles-history-009",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1728315464&endTs=1729179464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.360957+00:00",
+    "bytes": 6586,
+    "sha256": "4807140b73484d052a4221238cadb8f74fda8b32f46eee89dc95416bc0d8ef44",
+    "path": "evidence/eagles-history-009.json"
+  },
+  {
+    "key": "eagles-history-010",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1729179464&endTs=1730043464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.373505+00:00",
+    "bytes": 6639,
+    "sha256": "2a7d1eb264054c6040077ec43daac1c08d4babd7ffc27b766e3063e5870ef7fd",
+    "path": "evidence/eagles-history-010.json"
+  },
+  {
+    "key": "eagles-history-011",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1730043464&endTs=1730907464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.469361+00:00",
+    "bytes": 6575,
+    "sha256": "200e52e2b994af7ed7ee7d290fde840af5a070d234c0f09da42f567bb7ae0177",
+    "path": "evidence/eagles-history-011.json"
+  },
+  {
+    "key": "eagles-history-012",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1730907464&endTs=1731771464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.578312+00:00",
+    "bytes": 6604,
+    "sha256": "c0ca421d13f2e79ba6e358871cbd294933168516bf4aca9aeaae9804d47375de",
+    "path": "evidence/eagles-history-012.json"
+  },
+  {
+    "key": "eagles-history-013",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1731771464&endTs=1732635464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.591809+00:00",
+    "bytes": 6613,
+    "sha256": "576c6abc75dc65f944c412da09badaf0e418f39d17bbaca987e34cbcbbecfa65",
+    "path": "evidence/eagles-history-013.json"
+  },
+  {
+    "key": "eagles-history-014",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1732635464&endTs=1733499464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.578895+00:00",
+    "bytes": 6601,
+    "sha256": "593f470661a93c20d9775127ff00008d674a10694e65f857afd1496f994ac4ca",
+    "path": "evidence/eagles-history-014.json"
+  },
+  {
+    "key": "eagles-history-015",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1733499464&endTs=1734363464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.599012+00:00",
+    "bytes": 6618,
+    "sha256": "c26320d66b5a1f793dca3f823a4e3c2b20aea5a8694dfc7a485e04a07a5d05b9",
+    "path": "evidence/eagles-history-015.json"
+  },
+  {
+    "key": "eagles-history-016",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1734363464&endTs=1735227464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.683590+00:00",
+    "bytes": 6603,
+    "sha256": "76d4a6e36339a586777a8fc7eb1e5db1742303c442bc1b4035c5b0131014ffcd",
+    "path": "evidence/eagles-history-016.json"
+  },
+  {
+    "key": "eagles-history-017",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1735227464&endTs=1736091464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.819647+00:00",
+    "bytes": 6633,
+    "sha256": "09a5e6a8d33b1bd79dc54f6199f7b949134f90d927fff1400cbee3aaf610cace",
+    "path": "evidence/eagles-history-017.json"
+  },
+  {
+    "key": "eagles-history-018",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1736091464&endTs=1736955464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.807091+00:00",
+    "bytes": 6620,
+    "sha256": "073b5d1614134e4fdab7b60541eadb5757ff0dfc8b6bf016803aba78fa6c9358",
+    "path": "evidence/eagles-history-018.json"
+  },
+  {
+    "key": "eagles-history-019",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1736955464&endTs=1737819464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.819152+00:00",
+    "bytes": 6616,
+    "sha256": "e4f51fa71669ca6f01ea475e0f7d42e0cdf7c6cd0f1d84faa2cac0c32c9e57c3",
+    "path": "evidence/eagles-history-019.json"
+  },
+  {
+    "key": "eagles-history-020",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1737819464&endTs=1738683464&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.822214+00:00",
+    "bytes": 6601,
+    "sha256": "1d684f7bc5381812c1d8e8948007eabd5d7e2ba918f381252c8dc4fb3cd73673",
+    "path": "evidence/eagles-history-020.json"
+  },
+  {
+    "key": "eagles-history-021",
+    "url": "https://clob.polymarket.com/prices-history?market=110222417228270638383974743746762302792556220380554556504458115620557107501861&startTs=1738683464&endTs=1739175305&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:50.889035+00:00",
+    "bytes": 3772,
+    "sha256": "6a092a8b32c903dcc7c6807b22d04a90fc31926df1de71edf428f64c32977253",
+    "path": "evidence/eagles-history-021.json"
+  },
+  {
+    "key": "bitcoin-history-000",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1709568338&endTs=1710432338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.016484+00:00",
+    "bytes": 6399,
+    "sha256": "4d78158ff900cb8d57b1a3c4e2f8277db2f99a27260f61d274447827e22df428",
+    "path": "evidence/bitcoin-history-000.json"
+  },
+  {
+    "key": "bitcoin-history-001",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1710432338&endTs=1711296338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.046440+00:00",
+    "bytes": 6414,
+    "sha256": "3f59a92617abd227cbfc6e1bfb144764cb4c0bce5c30a0049b8cdf1bba935ac5",
+    "path": "evidence/bitcoin-history-001.json"
+  },
+  {
+    "key": "bitcoin-history-002",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1711296338&endTs=1712160338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.029545+00:00",
+    "bytes": 6435,
+    "sha256": "3d87f50c31578b67ea0071255586363537c2e1e9d74cdaa2bfd53eb2fd7e94ad",
+    "path": "evidence/bitcoin-history-002.json"
+  },
+  {
+    "key": "bitcoin-history-003",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1712160338&endTs=1713024338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.040239+00:00",
+    "bytes": 6402,
+    "sha256": "31c0b9c536d90ab251c8912beb364bffb0f3499d8e289c1a59e90f586e06ff91",
+    "path": "evidence/bitcoin-history-003.json"
+  },
+  {
+    "key": "bitcoin-history-004",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1713024338&endTs=1713888338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.112390+00:00",
+    "bytes": 6385,
+    "sha256": "2982a3ce78fd08c8c223412f8eabad4060ff74e164b3bab250a5848d7b1912da",
+    "path": "evidence/bitcoin-history-004.json"
+  },
+  {
+    "key": "bitcoin-history-005",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1713888338&endTs=1714752338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.264801+00:00",
+    "bytes": 6386,
+    "sha256": "a47fa0edb9a0dc3d296289c7a5ae35720c5b7cde664a98afe6f454c713e84ac2",
+    "path": "evidence/bitcoin-history-005.json"
+  },
+  {
+    "key": "bitcoin-history-006",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1714752338&endTs=1715616338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.258558+00:00",
+    "bytes": 6414,
+    "sha256": "e4b55b67db255f7c864eafe62b35db4e1a95d1fe54aae284fdc69fb204d5dea4",
+    "path": "evidence/bitcoin-history-006.json"
+  },
+  {
+    "key": "bitcoin-history-007",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1715616338&endTs=1716480338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.278749+00:00",
+    "bytes": 6422,
+    "sha256": "e8ed284bfa3b931b8d73544b59f18d45613843abd126b582a8c355c3966fce0f",
+    "path": "evidence/bitcoin-history-007.json"
+  },
+  {
+    "key": "bitcoin-history-008",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1716480338&endTs=1717344338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.253690+00:00",
+    "bytes": 6400,
+    "sha256": "4513ae0efcec816e6a39698f8ad0d850807631cd871f337566d9f85bb3879adb",
+    "path": "evidence/bitcoin-history-008.json"
+  },
+  {
+    "key": "bitcoin-history-009",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1717344338&endTs=1718208338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.332087+00:00",
+    "bytes": 6400,
+    "sha256": "80e62ada80f4e601df834eeacbf57f4ca81df6dbf5df97a9414af33107d9b0ff",
+    "path": "evidence/bitcoin-history-009.json"
+  },
+  {
+    "key": "bitcoin-history-010",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1718208338&endTs=1719072338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.448447+00:00",
+    "bytes": 6395,
+    "sha256": "a40311371e91d15871d14a806171256a4b8dd919680d48f5c16cea5d1f158045",
+    "path": "evidence/bitcoin-history-010.json"
+  },
+  {
+    "key": "bitcoin-history-011",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1719072338&endTs=1719936338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.471928+00:00",
+    "bytes": 6311,
+    "sha256": "8c5ce841fae5cc04c64e052eb1932cdacc62a20762337e9ef0a1d686fe06418f",
+    "path": "evidence/bitcoin-history-011.json"
+  },
+  {
+    "key": "bitcoin-history-012",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1719936338&endTs=1720800338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.462657+00:00",
+    "bytes": 6385,
+    "sha256": "0f949cd32971986a141aa8688b93a97aebe9c1dc5f60901b96d2e93731fa32b5",
+    "path": "evidence/bitcoin-history-012.json"
+  },
+  {
+    "key": "bitcoin-history-013",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1720800338&endTs=1721664338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.481337+00:00",
+    "bytes": 6378,
+    "sha256": "36d2d252d9104bf9f4976627aa53f4a17d68cf77544580b8765cbca51c7b2dc4",
+    "path": "evidence/bitcoin-history-013.json"
+  },
+  {
+    "key": "bitcoin-history-014",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1721664338&endTs=1722528338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.562103+00:00",
+    "bytes": 6372,
+    "sha256": "ea74907d45e99f33df4d202d0857df407dd019798b9c2cadec16d36da65f9c61",
+    "path": "evidence/bitcoin-history-014.json"
+  },
+  {
+    "key": "bitcoin-history-015",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1722528338&endTs=1723392338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.648217+00:00",
+    "bytes": 6395,
+    "sha256": "7643d1672a24c8fa4bd5f7e71ba6efbaedbc2674392f36357db86a26ac560dac",
+    "path": "evidence/bitcoin-history-015.json"
+  },
+  {
+    "key": "bitcoin-history-016",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1723392338&endTs=1724256338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.650075+00:00",
+    "bytes": 6380,
+    "sha256": "b821a067611b4d0e326d6aaff164410ba5f0663b65eb4be7ae1c6844f5e5d25c",
+    "path": "evidence/bitcoin-history-016.json"
+  },
+  {
+    "key": "bitcoin-history-017",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1724256338&endTs=1725120338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.726304+00:00",
+    "bytes": 6417,
+    "sha256": "4e363679084cc9b0e3af4ed8a87283927bdfe4fdd95698be1c54d2b414ab3f71",
+    "path": "evidence/bitcoin-history-017.json"
+  },
+  {
+    "key": "bitcoin-history-018",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1725120338&endTs=1725984338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.671098+00:00",
+    "bytes": 6400,
+    "sha256": "ca632f756fd7ad95a90cc6aa07fe0078be1b1b6a08a9388d5b9b9f12cbda8a05",
+    "path": "evidence/bitcoin-history-018.json"
+  },
+  {
+    "key": "bitcoin-history-019",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1725984338&endTs=1726848338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.758486+00:00",
+    "bytes": 6384,
+    "sha256": "4485a158fd81bcbd0e973f6a342c8b45bfd59e0f7c93749367940bb0f5e71b97",
+    "path": "evidence/bitcoin-history-019.json"
+  },
+  {
+    "key": "bitcoin-history-020",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1726848338&endTs=1727712338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.846166+00:00",
+    "bytes": 6383,
+    "sha256": "68c93838b06ffb14b778ec7c9c129f9d7b10fce9a3c4db93da4c6c495747387e",
+    "path": "evidence/bitcoin-history-020.json"
+  },
+  {
+    "key": "bitcoin-history-021",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1727712338&endTs=1728576338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.865649+00:00",
+    "bytes": 6427,
+    "sha256": "eada9c672b1e85ecce0982b73ea7a95e81d138c4232c699f3782c0c4f46acb5c",
+    "path": "evidence/bitcoin-history-021.json"
+  },
+  {
+    "key": "bitcoin-history-022",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1728576338&endTs=1729440338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.864131+00:00",
+    "bytes": 6381,
+    "sha256": "7e2fcfe8eac8b35ed4c81dd610af5d7fffd031bff2a6fa8df18aa05f633a425c",
+    "path": "evidence/bitcoin-history-022.json"
+  },
+  {
+    "key": "bitcoin-history-023",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1729440338&endTs=1730304338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.906819+00:00",
+    "bytes": 6393,
+    "sha256": "8a37531f49c71f640e0775f4f03e41802b53f1147de809c89106725dcf5f0c47",
+    "path": "evidence/bitcoin-history-023.json"
+  },
+  {
+    "key": "bitcoin-history-024",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1730304338&endTs=1731168338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:51.936808+00:00",
+    "bytes": 6353,
+    "sha256": "14e468ce72bb08a5dfa4d6dcfcafe630dfe9801aa448bc24a2e85d0290557772",
+    "path": "evidence/bitcoin-history-024.json"
+  },
+  {
+    "key": "bitcoin-history-025",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1731168338&endTs=1732032338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.025940+00:00",
+    "bytes": 6377,
+    "sha256": "a5e3a49e6277c9ea280e994f98e144cc89ae37bab4314bdda6e6481faedb6e56",
+    "path": "evidence/bitcoin-history-025.json"
+  },
+  {
+    "key": "bitcoin-history-026",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1732032338&endTs=1732896338&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.059450+00:00",
+    "bytes": 6562,
+    "sha256": "21abb8e894d4e75bec6a47f1fbb33924decb59df0fefd19c090dcdf3e3a70092",
+    "path": "evidence/bitcoin-history-026.json"
+  },
+  {
+    "key": "bitcoin-history-027",
+    "url": "https://clob.polymarket.com/prices-history?market=64903093311385616430821497488306433314807585397286521531639186532059591846310&startTs=1732896338&endTs=1733377586&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.071677+00:00",
+    "bytes": 3652,
+    "sha256": "e5ca986fa2812cd7100b7217e2c975e640c7ba0ac456660f589adf34daa6e4bb",
+    "path": "evidence/bitcoin-history-027.json"
+  },
+  {
+    "key": "fed-history-000",
+    "url": "https://clob.polymarket.com/prices-history?market=106191328358576540351439267765925450329859429577455659884974413809922495874408&startTs=1722631434&endTs=1723495434&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.102994+00:00",
+    "bytes": 6397,
+    "sha256": "a5e59e94da144646f8156ed861b34cae5aa3afda5c1f1359f35d4b55d76d4b6e",
+    "path": "evidence/fed-history-000.json"
+  },
+  {
+    "key": "fed-history-001",
+    "url": "https://clob.polymarket.com/prices-history?market=106191328358576540351439267765925450329859429577455659884974413809922495874408&startTs=1723495434&endTs=1724359434&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.131348+00:00",
+    "bytes": 6431,
+    "sha256": "ade8f6cc6dd606642cb3e5d8cd6ffba738fdb65c96492328bbbf582f2152ed07",
+    "path": "evidence/fed-history-001.json"
+  },
+  {
+    "key": "fed-history-002",
+    "url": "https://clob.polymarket.com/prices-history?market=106191328358576540351439267765925450329859429577455659884974413809922495874408&startTs=1724359434&endTs=1725223434&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.191137+00:00",
+    "bytes": 6425,
+    "sha256": "311442c89c733ad4c767065e0c073b285b611cc17e1fa6cc778a7ac31077cc91",
+    "path": "evidence/fed-history-002.json"
+  },
+  {
+    "key": "fed-history-003",
+    "url": "https://clob.polymarket.com/prices-history?market=106191328358576540351439267765925450329859429577455659884974413809922495874408&startTs=1725223434&endTs=1726087434&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.232937+00:00",
+    "bytes": 6405,
+    "sha256": "e03ef979b4a1c28120676b6535d0d5bfc2b8114c7f64e727b416d16685c5fc83",
+    "path": "evidence/fed-history-003.json"
+  },
+  {
+    "key": "fed-history-004",
+    "url": "https://clob.polymarket.com/prices-history?market=106191328358576540351439267765925450329859429577455659884974413809922495874408&startTs=1726087434&endTs=1726697348&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.247763+00:00",
+    "bytes": 4540,
+    "sha256": "f0a208668ce63bca675e0667bbefb8829b07141783dc155cc007289f65a2b85e",
+    "path": "evidence/fed-history-004.json"
+  },
+  {
+    "key": "tiktok-history-000",
+    "url": "https://clob.polymarket.com/prices-history?market=24635636911615866092589652362670811323984202357282728474473612545495782013438&startTs=1726617928&endTs=1727481928&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.280484+00:00",
+    "bytes": 6333,
+    "sha256": "3447b535f53fffb25ff07c6849ac2b97e3ab099278eaaaa434e895c0baeba4ea",
+    "path": "evidence/tiktok-history-000.json"
+  },
+  {
+    "key": "tiktok-history-001",
+    "url": "https://clob.polymarket.com/prices-history?market=24635636911615866092589652362670811323984202357282728474473612545495782013438&startTs=1727481928&endTs=1728345928&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.317514+00:00",
+    "bytes": 6402,
+    "sha256": "54bb2e2590081648b3e3659617dc2ee48362bd47dd74e2d6d1a2e9ce0a626528",
+    "path": "evidence/tiktok-history-001.json"
+  },
+  {
+    "key": "tiktok-history-002",
+    "url": "https://clob.polymarket.com/prices-history?market=24635636911615866092589652362670811323984202357282728474473612545495782013438&startTs=1728345928&endTs=1729209928&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.377719+00:00",
+    "bytes": 6408,
+    "sha256": "b85087e701e7beb27bbe11635a06edaf7e615a5ae745434d5b0739bd6c9db9e3",
+    "path": "evidence/tiktok-history-002.json"
+  },
+  {
+    "key": "tiktok-history-003",
+    "url": "https://clob.polymarket.com/prices-history?market=24635636911615866092589652362670811323984202357282728474473612545495782013438&startTs=1729209928&endTs=1730073928&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.407485+00:00",
+    "bytes": 6345,
+    "sha256": "7937d5f9d7b0731b4977c6f80d7242af3652ed27dfeb709c2fcf463c16bebc35",
+    "path": "evidence/tiktok-history-003.json"
+  },
+  {
+    "key": "tiktok-history-004",
+    "url": "https://clob.polymarket.com/prices-history?market=24635636911615866092589652362670811323984202357282728474473612545495782013438&startTs=1730073928&endTs=1730937928&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.430637+00:00",
+    "bytes": 6402,
+    "sha256": "1ba402e8dfc1e2fbf496b6a74c2ba87f3cdf4e2962eabe82925be5fbdaecedb9",
+    "path": "evidence/tiktok-history-004.json"
+  },
+  {
+    "key": "tiktok-history-005",
+    "url": "https://clob.polymarket.com/prices-history?market=24635636911615866092589652362670811323984202357282728474473612545495782013438&startTs=1730937928&endTs=1731801928&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.464832+00:00",
+    "bytes": 6367,
+    "sha256": "eeadecda9d5965b54493b5230589252f81ca71011110fd619ff39f5fbde1dccb",
+    "path": "evidence/tiktok-history-005.json"
+  },
+  {
+    "key": "tiktok-history-006",
+    "url": "https://clob.polymarket.com/prices-history?market=24635636911615866092589652362670811323984202357282728474473612545495782013438&startTs=1731801928&endTs=1732665928&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.488064+00:00",
+    "bytes": 6393,
+    "sha256": "609b9a53f95a3c42eb0f42d4214f0372b3a8658f3797e49093b8444811114a4a",
+    "path": "evidence/tiktok-history-006.json"
+  },
+  {
+    "key": "tiktok-history-007",
+    "url": "https://clob.polymarket.com/prices-history?market=24635636911615866092589652362670811323984202357282728474473612545495782013438&startTs=1732665928&endTs=1733529928&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.545100+00:00",
+    "bytes": 6407,
+    "sha256": "727b484fa052352db7763ed1d528f3ca85521ab41393ee752e5c25cd00dcdefc",
+    "path": "evidence/tiktok-history-007.json"
+  },
+  {
+    "key": "tiktok-history-008",
+    "url": "https://clob.polymarket.com/prices-history?market=24635636911615866092589652362670811323984202357282728474473612545495782013438&startTs=1733529928&endTs=1734393928&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.597335+00:00",
+    "bytes": 6402,
+    "sha256": "01625b2b32cb82c10d2e5b15cefc7b89eaaed0a7092e09d696888e3b4e1977de",
+    "path": "evidence/tiktok-history-008.json"
+  },
+  {
+    "key": "tiktok-history-009",
+    "url": "https://clob.polymarket.com/prices-history?market=24635636911615866092589652362670811323984202357282728474473612545495782013438&startTs=1734393928&endTs=1735257928&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.626327+00:00",
+    "bytes": 6410,
+    "sha256": "2bff111fa1e4fdd394d10863e5cb348e3804499e1105c39d9fa40e5fc6b74527",
+    "path": "evidence/tiktok-history-009.json"
+  },
+  {
+    "key": "tiktok-history-010",
+    "url": "https://clob.polymarket.com/prices-history?market=24635636911615866092589652362670811323984202357282728474473612545495782013438&startTs=1735257928&endTs=1736121928&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.653083+00:00",
+    "bytes": 6408,
+    "sha256": "f51ba8730fe4dbd54d5f9c6b413b3c7bd9b76261d7a0ce538f0b7250c17bdd41",
+    "path": "evidence/tiktok-history-010.json"
+  },
+  {
+    "key": "tiktok-history-011",
+    "url": "https://clob.polymarket.com/prices-history?market=24635636911615866092589652362670811323984202357282728474473612545495782013438&startTs=1736121928&endTs=1736985928&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.657801+00:00",
+    "bytes": 6390,
+    "sha256": "4b3d95f86332a2eca9eb863a0f5d8a25bb2831a51fe71f034fbd3499311f4ecb",
+    "path": "evidence/tiktok-history-011.json"
+  },
+  {
+    "key": "tiktok-history-012",
+    "url": "https://clob.polymarket.com/prices-history?market=24635636911615866092589652362670811323984202357282728474473612545495782013438&startTs=1736985928&endTs=1737509479&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.735435+00:00",
+    "bytes": 3918,
+    "sha256": "8b3226ab32eeb381803fb329dc9187d57d2ee74eb6f3972b5e42e28b9d39e430",
+    "path": "evidence/tiktok-history-012.json"
+  },
+  {
+    "key": "canada-history-000",
+    "url": "https://clob.polymarket.com/prices-history?market=97369614101217511684993615789719226906296227283714425485701044468625942166745&startTs=1736186488&endTs=1737050488&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.766846+00:00",
+    "bytes": 6632,
+    "sha256": "ae5a16050afe36e2747d3eea2e6bbf7b77ac24b2a38e0a407eceb11be65b2d5e",
+    "path": "evidence/canada-history-000.json"
+  },
+  {
+    "key": "canada-history-001",
+    "url": "https://clob.polymarket.com/prices-history?market=97369614101217511684993615789719226906296227283714425485701044468625942166745&startTs=1737050488&endTs=1737914488&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.831737+00:00",
+    "bytes": 6641,
+    "sha256": "21bf9fb499ef214cc99c083173cff968176eaf5778f7e205202d8b0350e862ac",
+    "path": "evidence/canada-history-001.json"
+  },
+  {
+    "key": "canada-history-002",
+    "url": "https://clob.polymarket.com/prices-history?market=97369614101217511684993615789719226906296227283714425485701044468625942166745&startTs=1737914488&endTs=1738778488&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.829316+00:00",
+    "bytes": 6578,
+    "sha256": "96de5747faf98b60e27255e90c68155bffe8d6a6a7bd4fba17014109f9592974",
+    "path": "evidence/canada-history-002.json"
+  },
+  {
+    "key": "canada-history-003",
+    "url": "https://clob.polymarket.com/prices-history?market=97369614101217511684993615789719226906296227283714425485701044468625942166745&startTs=1738778488&endTs=1739642488&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.853610+00:00",
+    "bytes": 6577,
+    "sha256": "043cabeb7fb543a39f609eb28f27dc23f45ea15058fb346ea1f71b525c747b5a",
+    "path": "evidence/canada-history-003.json"
+  },
+  {
+    "key": "canada-history-004",
+    "url": "https://clob.polymarket.com/prices-history?market=97369614101217511684993615789719226906296227283714425485701044468625942166745&startTs=1739642488&endTs=1740506488&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.923879+00:00",
+    "bytes": 6631,
+    "sha256": "386748f82e5b1c4ba5112d72bd12ced494d814baf87e952c43d50ad67af0d5eb",
+    "path": "evidence/canada-history-004.json"
+  },
+  {
+    "key": "canada-history-005",
+    "url": "https://clob.polymarket.com/prices-history?market=97369614101217511684993615789719226906296227283714425485701044468625942166745&startTs=1740506488&endTs=1741370488&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:52.966216+00:00",
+    "bytes": 6599,
+    "sha256": "cecbcc560fb118c9862e506b251f6687aece9d13590b2dbc0572dea73bb31d72",
+    "path": "evidence/canada-history-005.json"
+  },
+  {
+    "key": "canada-history-006",
+    "url": "https://clob.polymarket.com/prices-history?market=97369614101217511684993615789719226906296227283714425485701044468625942166745&startTs=1741370488&endTs=1742234488&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.034328+00:00",
+    "bytes": 6579,
+    "sha256": "3d4fa684d65b24c276c7aab5cf1587f8e133cea17d987882515cfecbc3d17a2f",
+    "path": "evidence/canada-history-006.json"
+  },
+  {
+    "key": "canada-history-007",
+    "url": "https://clob.polymarket.com/prices-history?market=97369614101217511684993615789719226906296227283714425485701044468625942166745&startTs=1742234488&endTs=1743098488&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.007342+00:00",
+    "bytes": 6616,
+    "sha256": "1508179369f73b66edd1c0960d0ff81d3f91dacb28bbd2def0d1a7757a4315aa",
+    "path": "evidence/canada-history-007.json"
+  },
+  {
+    "key": "canada-history-008",
+    "url": "https://clob.polymarket.com/prices-history?market=97369614101217511684993615789719226906296227283714425485701044468625942166745&startTs=1743098488&endTs=1743962488&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.050801+00:00",
+    "bytes": 6579,
+    "sha256": "7cc5dd31753f6de01d3dfc21b526f9b6f13678db0242094e326788a26da1ef7e",
+    "path": "evidence/canada-history-008.json"
+  },
+  {
+    "key": "canada-history-009",
+    "url": "https://clob.polymarket.com/prices-history?market=97369614101217511684993615789719226906296227283714425485701044468625942166745&startTs=1743962488&endTs=1744826488&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.122820+00:00",
+    "bytes": 6599,
+    "sha256": "d48a1ebc394d1201c28c916429a4f5b7f6d3c455c565fad6515f8ae6f2335ec8",
+    "path": "evidence/canada-history-009.json"
+  },
+  {
+    "key": "canada-history-010",
+    "url": "https://clob.polymarket.com/prices-history?market=97369614101217511684993615789719226906296227283714425485701044468625942166745&startTs=1744826488&endTs=1745690488&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.148714+00:00",
+    "bytes": 6604,
+    "sha256": "3c977189d2caba21ce0ee004da3227bbb18207c8dc0a1fb962a523309fd83cbe",
+    "path": "evidence/canada-history-010.json"
+  },
+  {
+    "key": "canada-history-011",
+    "url": "https://clob.polymarket.com/prices-history?market=97369614101217511684993615789719226906296227283714425485701044468625942166745&startTs=1745690488&endTs=1745995117&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.208188+00:00",
+    "bytes": 2298,
+    "sha256": "0fb97036ddd0b573a67c5820923c9d9a1cd0ddee6b2bda6f3c6b1c6acc0105d2",
+    "path": "evidence/canada-history-011.json"
+  },
+  {
+    "key": "gta-history-000",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1738109491&endTs=1738973491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.237354+00:00",
+    "bytes": 6365,
+    "sha256": "5a228046146001d78d3e24af21e185bd805d93b5a48f080a382e5a756c82c88a",
+    "path": "evidence/gta-history-000.json"
+  },
+  {
+    "key": "gta-history-001",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1738973491&endTs=1739837491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.233846+00:00",
+    "bytes": 6374,
+    "sha256": "913d305f56973de7317197920d613e1316f56c86340c60a5b9ec24cf8dce785a",
+    "path": "evidence/gta-history-001.json"
+  },
+  {
+    "key": "gta-history-002",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1739837491&endTs=1740701491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.314195+00:00",
+    "bytes": 6297,
+    "sha256": "4c6e452213e626582fe47dd6fd5918bcc71e080ca661ce54778b82748ca253c5",
+    "path": "evidence/gta-history-002.json"
+  },
+  {
+    "key": "gta-history-003",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1740701491&endTs=1741565491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.332483+00:00",
+    "bytes": 6400,
+    "sha256": "10c43ab8e339a0172065cf0b5da5b51f527c7b392cc65473f5fdcaca0389322e",
+    "path": "evidence/gta-history-003.json"
+  },
+  {
+    "key": "gta-history-004",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1741565491&endTs=1742429491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.415701+00:00",
+    "bytes": 6390,
+    "sha256": "1fe620a82b28a52de455d6badb92d12c3cc44d0b5195b1addab2ba5cc3136c1d",
+    "path": "evidence/gta-history-004.json"
+  },
+  {
+    "key": "gta-history-005",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1742429491&endTs=1743293491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.416148+00:00",
+    "bytes": 6377,
+    "sha256": "f9bf3ec8065a5c8357930eedef147f57db66df3a19bbd5db17bfad1d7ec8650e",
+    "path": "evidence/gta-history-005.json"
+  },
+  {
+    "key": "gta-history-006",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1743293491&endTs=1744157491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.411991+00:00",
+    "bytes": 6402,
+    "sha256": "84791b6e39255b701146368b0c7cb8bef337ca65b977fef8ee64e85de1ea51b1",
+    "path": "evidence/gta-history-006.json"
+  },
+  {
+    "key": "gta-history-007",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1744157491&endTs=1745021491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.496058+00:00",
+    "bytes": 6434,
+    "sha256": "acb98cd7e2b2c7a3b7f0d97f750b91288e62793719dee2477d14d15c67218822",
+    "path": "evidence/gta-history-007.json"
+  },
+  {
+    "key": "gta-history-008",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1745021491&endTs=1745885491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.512045+00:00",
+    "bytes": 6434,
+    "sha256": "63954d74e78ab65bb67bbc9557b9167aeac6381054a32dcd0920c34949a57902",
+    "path": "evidence/gta-history-008.json"
+  },
+  {
+    "key": "gta-history-009",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1745885491&endTs=1746749491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.606144+00:00",
+    "bytes": 6533,
+    "sha256": "7180b25d2e4174aacff62073ff873d567ec1c70fb4861215b6401495b724bf2a",
+    "path": "evidence/gta-history-009.json"
+  },
+  {
+    "key": "gta-history-010",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1746749491&endTs=1747613491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.588477+00:00",
+    "bytes": 6597,
+    "sha256": "8f21cef2813ef189b6fd1c210111aad33a37a9a37faa5353d712e1fffbe5a5b2",
+    "path": "evidence/gta-history-010.json"
+  },
+  {
+    "key": "gta-history-011",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1747613491&endTs=1748477491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.606402+00:00",
+    "bytes": 6602,
+    "sha256": "f722e9e7dc1f2aa24e7cd79946fca72c9996318f80f3ee885e5f51d7533fa7a3",
+    "path": "evidence/gta-history-011.json"
+  },
+  {
+    "key": "gta-history-012",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1748477491&endTs=1749341491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.727442+00:00",
+    "bytes": 6618,
+    "sha256": "061b44743740a45bf4730d2898e9927d832eb9bd22cedae962ed1458d1d8006b",
+    "path": "evidence/gta-history-012.json"
+  },
+  {
+    "key": "gta-history-013",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1749341491&endTs=1750205491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.696124+00:00",
+    "bytes": 6615,
+    "sha256": "68c4b2a683fbfb597738cf47c0b627ba0ced313584ca53688db445b1368393b4",
+    "path": "evidence/gta-history-013.json"
+  },
+  {
+    "key": "gta-history-014",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1750205491&endTs=1751069491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.769876+00:00",
+    "bytes": 6636,
+    "sha256": "a8e35143a214264c976b8315f17a028cdd838fcc69c7d56f127b6d1158fae032",
+    "path": "evidence/gta-history-014.json"
+  },
+  {
+    "key": "gta-history-015",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1751069491&endTs=1751933491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.785458+00:00",
+    "bytes": 6620,
+    "sha256": "bec81d0b775096263c157188ff8bb95797862ff1ee61f68f9db97a6b74f516c2",
+    "path": "evidence/gta-history-015.json"
+  },
+  {
+    "key": "gta-history-016",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1751933491&endTs=1752797491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.803292+00:00",
+    "bytes": 6595,
+    "sha256": "fe90f4050dae7b85c16d9015141b46d77257445f59747933712dfc74b0d68c00",
+    "path": "evidence/gta-history-016.json"
+  },
+  {
+    "key": "gta-history-017",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1752797491&endTs=1753661491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.900589+00:00",
+    "bytes": 6625,
+    "sha256": "1e90b4c09d7cfed57889bc30bbeaf47d74dac715e2dbc7ac20f47e7aec36ac2b",
+    "path": "evidence/gta-history-017.json"
+  },
+  {
+    "key": "gta-history-018",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1753661491&endTs=1754525491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.906799+00:00",
+    "bytes": 6597,
+    "sha256": "4502e78acd1cfd5d81f0855519a031a7673d2b1c9dee40b9245cb4c7bf1c1b1d",
+    "path": "evidence/gta-history-018.json"
+  },
+  {
+    "key": "gta-history-019",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1754525491&endTs=1755389491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.983909+00:00",
+    "bytes": 6604,
+    "sha256": "c448fe9cdb776bb81e0565a741c423648576f8414fd2ddca6accfc6870ebdd06",
+    "path": "evidence/gta-history-019.json"
+  },
+  {
+    "key": "gta-history-020",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1755389491&endTs=1756253491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.970935+00:00",
+    "bytes": 6629,
+    "sha256": "cc83cb76c5e31e92afa984acfc1d10ff71a2dfb78999608c987be80fcc4ee7fc",
+    "path": "evidence/gta-history-020.json"
+  },
+  {
+    "key": "gta-history-021",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1756253491&endTs=1757117491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:53.993787+00:00",
+    "bytes": 6593,
+    "sha256": "cd9f520139a895f07fff564290f762df99bd051a2ac0749127268e965df9cdef",
+    "path": "evidence/gta-history-021.json"
+  },
+  {
+    "key": "gta-history-022",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1757117491&endTs=1757981491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.111726+00:00",
+    "bytes": 6600,
+    "sha256": "38bdc5e9a7ae0257c01746bf3edf5cc6503554cfbbe704872f537ebb5cf9ad22",
+    "path": "evidence/gta-history-022.json"
+  },
+  {
+    "key": "gta-history-023",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1757981491&endTs=1758845491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.095264+00:00",
+    "bytes": 6579,
+    "sha256": "c4d44f5a1b8d53fc175682f5e9fa69e2e758b196cd6ee79696b91794cd53725d",
+    "path": "evidence/gta-history-023.json"
+  },
+  {
+    "key": "gta-history-024",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1758845491&endTs=1759709491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.163777+00:00",
+    "bytes": 6639,
+    "sha256": "bc942dab1f1d929cd693c5286dc85cc092685276cd3331ad9db3fc14766b8d3b",
+    "path": "evidence/gta-history-024.json"
+  },
+  {
+    "key": "gta-history-025",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1759709491&endTs=1760573491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.163321+00:00",
+    "bytes": 6609,
+    "sha256": "0591effd9e629aff7c8e6c9863cde11e6f1624f158da3de76a64106e4dd64e3d",
+    "path": "evidence/gta-history-025.json"
+  },
+  {
+    "key": "gta-history-026",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1760573491&endTs=1761437491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.192799+00:00",
+    "bytes": 6560,
+    "sha256": "49b6ffe6949944cdb461be155e5720881cca78659e960ecb8c05aafd5eb5771d",
+    "path": "evidence/gta-history-026.json"
+  },
+  {
+    "key": "gta-history-027",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1761437491&endTs=1762301491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.281470+00:00",
+    "bytes": 6533,
+    "sha256": "287279d3bfa7d8c29da424bb10ed18950bd89e6361e5a012710339751e91b94b",
+    "path": "evidence/gta-history-027.json"
+  },
+  {
+    "key": "gta-history-028",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1762301491&endTs=1763165491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.303643+00:00",
+    "bytes": 6607,
+    "sha256": "99cc84a345c1ee654727a6905c8ca63a13f1176a0118b7b00e174d50f0b2a007",
+    "path": "evidence/gta-history-028.json"
+  },
+  {
+    "key": "gta-history-029",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1763165491&endTs=1764029491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.363874+00:00",
+    "bytes": 6684,
+    "sha256": "5a300f19ee30ebe5b2f9ba061f4f292331e1513d0efdbfed65be2169e12e06a0",
+    "path": "evidence/gta-history-029.json"
+  },
+  {
+    "key": "gta-history-030",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1764029491&endTs=1764893491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.362958+00:00",
+    "bytes": 6659,
+    "sha256": "93be70356a8504acdda424c41882be76a752d2d7c6d4b85742fdd392bcfe31a2",
+    "path": "evidence/gta-history-030.json"
+  },
+  {
+    "key": "gta-history-031",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1764893491&endTs=1765757491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.383896+00:00",
+    "bytes": 6612,
+    "sha256": "5d04fde41dfd8e41c147a4d63cfb8df4a4a05bdd42da77460c9398b714a0efa1",
+    "path": "evidence/gta-history-031.json"
+  },
+  {
+    "key": "gta-history-032",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1765757491&endTs=1766621491&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.471207+00:00",
+    "bytes": 6644,
+    "sha256": "df387236237fc7dcf08b93e0984c2f53137b3c3125946ccd9e9d40235a4a03ba",
+    "path": "evidence/gta-history-032.json"
+  },
+  {
+    "key": "gta-history-033",
+    "url": "https://clob.polymarket.com/prices-history?market=97735625711384777239282355893319968970448329065603553449339850169767255225185&startTs=1766621491&endTs=1767260689&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.489254+00:00",
+    "bytes": 4807,
+    "sha256": "78a7194b266c3b7a9fdc6430f2c26c114360b8f31212c44844649810ed1ceba6",
+    "path": "evidence/gta-history-033.json"
+  },
+  {
+    "key": "twitter-history-000",
+    "url": "https://clob.polymarket.com/prices-history?market=100873411502275889342384804130450007608778682322439757748400432724634795005960&startTs=1649962723&endTs=1650826723&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.554173+00:00",
+    "bytes": 15,
+    "sha256": "7f8b497c3d718d756d8c2130e657c4c414d5da9bed777aa29bc3221fdbcf0dc5",
+    "path": "evidence/twitter-history-000.json"
+  },
+  {
+    "key": "twitter-history-001",
+    "url": "https://clob.polymarket.com/prices-history?market=100873411502275889342384804130450007608778682322439757748400432724634795005960&startTs=1650826723&endTs=1650928294&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.549572+00:00",
+    "bytes": 15,
+    "sha256": "7f8b497c3d718d756d8c2130e657c4c414d5da9bed777aa29bc3221fdbcf0dc5",
+    "path": "evidence/twitter-history-001.json"
+  },
+  {
+    "key": "anora-poly-history-000",
+    "url": "https://clob.polymarket.com/prices-history?market=1018044885195187396947687732754809918865343613107923057688573272106246886316&startTs=1737496052&endTs=1738360052&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.592586+00:00",
+    "bytes": 6386,
+    "sha256": "d5343a68e2c2aab595dd0ffadf053050adc8f4dd09c59048065309c756fad67c",
+    "path": "evidence/anora-poly-history-000.json"
+  },
+  {
+    "key": "anora-poly-history-001",
+    "url": "https://clob.polymarket.com/prices-history?market=1018044885195187396947687732754809918865343613107923057688573272106246886316&startTs=1738360052&endTs=1739224052&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.661113+00:00",
+    "bytes": 6400,
+    "sha256": "86d99deef74330002c689854cc42880aa75a1240855795a6bd4f3f248780a00f",
+    "path": "evidence/anora-poly-history-001.json"
+  },
+  {
+    "key": "anora-poly-history-002",
+    "url": "https://clob.polymarket.com/prices-history?market=1018044885195187396947687732754809918865343613107923057688573272106246886316&startTs=1739224052&endTs=1740088052&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.675947+00:00",
+    "bytes": 6383,
+    "sha256": "67c19eb521fcf7d5f919b556998ae4895f6e437bfef03aaa45d62d7a0ce7f852",
+    "path": "evidence/anora-poly-history-002.json"
+  },
+  {
+    "key": "anora-poly-history-003",
+    "url": "https://clob.polymarket.com/prices-history?market=1018044885195187396947687732754809918865343613107923057688573272106246886316&startTs=1740088052&endTs=1740952052&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.746961+00:00",
+    "bytes": 6387,
+    "sha256": "dfbaee8385330347eff94d2ee790bf935cab74d28ed7b4249ffc02592594502d",
+    "path": "evidence/anora-poly-history-003.json"
+  },
+  {
+    "key": "anora-poly-history-004",
+    "url": "https://clob.polymarket.com/prices-history?market=1018044885195187396947687732754809918865343613107923057688573272106246886316&startTs=1740952052&endTs=1740994393&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.745334+00:00",
+    "bytes": 313,
+    "sha256": "0a93cd4a7c904d691aa7ddbdd0d0653189724fed323dbea6572650e3277dea0f",
+    "path": "evidence/anora-poly-history-004.json"
+  },
+  {
+    "key": "chiefs-history-000",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1720538166&endTs=1721402166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.780979+00:00",
+    "bytes": 6469,
+    "sha256": "6a376c9ebc706d7c0d98ac74646d71cf3e4e472b37befa0d72f27da63f52e64d",
+    "path": "evidence/chiefs-history-000.json"
+  },
+  {
+    "key": "chiefs-history-001",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1721402166&endTs=1722266166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.841425+00:00",
+    "bytes": 6575,
+    "sha256": "ea9dc04ed777c33c37652afa7e9a7d756f69112cbf6ff30cce4822f99fa36228",
+    "path": "evidence/chiefs-history-001.json"
+  },
+  {
+    "key": "chiefs-history-002",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1722266166&endTs=1723130166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.874921+00:00",
+    "bytes": 6612,
+    "sha256": "64e8f248ea7ee0f4c184e053f218631236209013cf48c063ce134d7a261aadfe",
+    "path": "evidence/chiefs-history-002.json"
+  },
+  {
+    "key": "chiefs-history-003",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1723130166&endTs=1723994166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.927947+00:00",
+    "bytes": 6627,
+    "sha256": "6e17d0285f15952a627a458630c12ccd7980adea5a3f53806ed1bf3f8ae17036",
+    "path": "evidence/chiefs-history-003.json"
+  },
+  {
+    "key": "chiefs-history-004",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1723994166&endTs=1724858166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:54.984599+00:00",
+    "bytes": 6578,
+    "sha256": "7b1709df48f0fde8b185b27f856447e10c2c015936c703de92cf9b2099481489",
+    "path": "evidence/chiefs-history-004.json"
+  },
+  {
+    "key": "chiefs-history-005",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1724858166&endTs=1725722166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.066159+00:00",
+    "bytes": 6604,
+    "sha256": "ee616c4302cde8e5e53bbef72d3dc319c20d9fbff46220bc08237de492aa1724",
+    "path": "evidence/chiefs-history-005.json"
+  },
+  {
+    "key": "chiefs-history-006",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1725722166&endTs=1726586166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.040552+00:00",
+    "bytes": 6617,
+    "sha256": "91d584456288a08aecc1fab96aeae2df2a1b91740caa549c9e55cf684839dc98",
+    "path": "evidence/chiefs-history-006.json"
+  },
+  {
+    "key": "chiefs-history-007",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1726586166&endTs=1727450166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.086749+00:00",
+    "bytes": 6601,
+    "sha256": "61ff0c7e866637bcc25fb4c878ea4424e563d8fb6a13aa3b72b7d7cc77668674",
+    "path": "evidence/chiefs-history-007.json"
+  },
+  {
+    "key": "chiefs-history-008",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1727450166&endTs=1728314166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.128132+00:00",
+    "bytes": 6605,
+    "sha256": "2c9af7c365424f8959f18e81db1efc172d8395c15f09befd84af88cb0d9a37c6",
+    "path": "evidence/chiefs-history-008.json"
+  },
+  {
+    "key": "chiefs-history-009",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1728314166&endTs=1729178166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.165864+00:00",
+    "bytes": 6596,
+    "sha256": "882b2cc30712e288e2bdf653ed3fa32d9c4b5376d717e12d749db26c7d1aac43",
+    "path": "evidence/chiefs-history-009.json"
+  },
+  {
+    "key": "chiefs-history-010",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1729178166&endTs=1730042166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.218748+00:00",
+    "bytes": 6596,
+    "sha256": "d01d1845880f99b2094534d6fb552d39c1dbc2cb1123d42d02c016a289d05aaf",
+    "path": "evidence/chiefs-history-010.json"
+  },
+  {
+    "key": "chiefs-history-011",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1730042166&endTs=1730906166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.255617+00:00",
+    "bytes": 6581,
+    "sha256": "076865cf81a1e843b89ab2adf6b9b0921cb0e500100401f4d3cdbf181ec07636",
+    "path": "evidence/chiefs-history-011.json"
+  },
+  {
+    "key": "chiefs-history-012",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1730906166&endTs=1731770166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.285837+00:00",
+    "bytes": 6628,
+    "sha256": "3aabc35a743d98f85c48f67811383a7c38276540af1b5c703b25afbdf28f05ca",
+    "path": "evidence/chiefs-history-012.json"
+  },
+  {
+    "key": "chiefs-history-013",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1731770166&endTs=1732634166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.305575+00:00",
+    "bytes": 6619,
+    "sha256": "dfd7011b3d3090b3f09c4c5951dbc2ffb46fed75f6bd433be13c3adc58dce4ff",
+    "path": "evidence/chiefs-history-013.json"
+  },
+  {
+    "key": "chiefs-history-014",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1732634166&endTs=1733498166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.352165+00:00",
+    "bytes": 6644,
+    "sha256": "a34c8da4acdc4e8e3931e69a1ea6035f7d872dc56d532ada08deabf991f1085f",
+    "path": "evidence/chiefs-history-014.json"
+  },
+  {
+    "key": "chiefs-history-015",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1733498166&endTs=1734362166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.399430+00:00",
+    "bytes": 6612,
+    "sha256": "80c28e2e10d15be856cf3c8bef9c3ecdbe496ab5a9768ff878bc4f24fd58cbe9",
+    "path": "evidence/chiefs-history-015.json"
+  },
+  {
+    "key": "chiefs-history-016",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1734362166&endTs=1735226166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.492968+00:00",
+    "bytes": 6623,
+    "sha256": "1490ecd970c84d4967c99f9e8676c97cc08513a1922142725774a04a45087fa1",
+    "path": "evidence/chiefs-history-016.json"
+  },
+  {
+    "key": "chiefs-history-017",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1735226166&endTs=1736090166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.484229+00:00",
+    "bytes": 6606,
+    "sha256": "672a66296448541735612269f1e92326ca8e803058c53370e02059553de0b7b5",
+    "path": "evidence/chiefs-history-017.json"
+  },
+  {
+    "key": "chiefs-history-018",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1736090166&endTs=1736954166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.491944+00:00",
+    "bytes": 6615,
+    "sha256": "ab8cb6df4ca1e64d888895b8e020f337abf64ef9ec99a059a2b51a3b0b3e4b53",
+    "path": "evidence/chiefs-history-018.json"
+  },
+  {
+    "key": "chiefs-history-019",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1736954166&endTs=1737818166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.526834+00:00",
+    "bytes": 6625,
+    "sha256": "839d1a80d251f49593c4f78bfddfd63f04668e02b3acc516f0e894f6050108b7",
+    "path": "evidence/chiefs-history-019.json"
+  },
+  {
+    "key": "chiefs-history-020",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1737818166&endTs=1738682166&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.576377+00:00",
+    "bytes": 6591,
+    "sha256": "0e48f302ced01e9a45264f369a837fb66c20f2a05d3024c7709062294d459e71",
+    "path": "evidence/chiefs-history-020.json"
+  },
+  {
+    "key": "chiefs-history-021",
+    "url": "https://clob.polymarket.com/prices-history?market=22535833765723427929773245088435042776045949943240943368073750664192788269527&startTs=1738682166&endTs=1739175597&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.661047+00:00",
+    "bytes": 3762,
+    "sha256": "323f2d18cf0e323c91d0314a785122882adffbacce703eb80db484c7ef64edf4",
+    "path": "evidence/chiefs-history-021.json"
+  },
+  {
+    "key": "taylor-history-000",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1735662379&endTs=1736526379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.691518+00:00",
+    "bytes": 6389,
+    "sha256": "1d9266396cfc664bc72e7bbc324dd863cf50bd39831094e226bd53d20886f970",
+    "path": "evidence/taylor-history-000.json"
+  },
+  {
+    "key": "taylor-history-001",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1736526379&endTs=1737390379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.695338+00:00",
+    "bytes": 6438,
+    "sha256": "5169ecc9d8d12abf524db03108b92d7e71fa49c9f6b9e7ed36ad032b223ab00c",
+    "path": "evidence/taylor-history-001.json"
+  },
+  {
+    "key": "taylor-history-002",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1737390379&endTs=1738254379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.708621+00:00",
+    "bytes": 6404,
+    "sha256": "06d05483cef8762807b9c95bee47bf537eb6eeceb5c46544900587c2387cae73",
+    "path": "evidence/taylor-history-002.json"
+  },
+  {
+    "key": "taylor-history-003",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1738254379&endTs=1739118379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.782708+00:00",
+    "bytes": 6362,
+    "sha256": "83e98b435f8c9839c6b3abd2c1bdaf298d20a8edc3d684802edba67d52a6c99e",
+    "path": "evidence/taylor-history-003.json"
+  },
+  {
+    "key": "taylor-history-004",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1739118379&endTs=1739982379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.858651+00:00",
+    "bytes": 6399,
+    "sha256": "efc46f16802f430e971160c6316f4b5aacfd0e8adce06987daf6ba42ea495582",
+    "path": "evidence/taylor-history-004.json"
+  },
+  {
+    "key": "taylor-history-005",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1739982379&endTs=1740846379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.869440+00:00",
+    "bytes": 6459,
+    "sha256": "189b2689c8419ea16e8a7ac4acc8f94858a8f1aecc5086a6dff476d969388b06",
+    "path": "evidence/taylor-history-005.json"
+  },
+  {
+    "key": "taylor-history-006",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1740846379&endTs=1741710379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.880870+00:00",
+    "bytes": 6457,
+    "sha256": "b0ae456ba25b01c35ae93416d881bac2db9e65fc42254c0f1641854e21bb05b1",
+    "path": "evidence/taylor-history-006.json"
+  },
+  {
+    "key": "taylor-history-007",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1741710379&endTs=1742574379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.886967+00:00",
+    "bytes": 6358,
+    "sha256": "7bee486845c18b1dae30815a28d3e1dcaf80b0fc20f7ef0888760951bc18780c",
+    "path": "evidence/taylor-history-007.json"
+  },
+  {
+    "key": "taylor-history-008",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1742574379&endTs=1743438379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:55.962713+00:00",
+    "bytes": 6449,
+    "sha256": "9b5832c5bab7083d3c7f66b78bfeebbef980135bb65e346667adc51ed7170e7b",
+    "path": "evidence/taylor-history-008.json"
+  },
+  {
+    "key": "taylor-history-009",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1743438379&endTs=1744302379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.057976+00:00",
+    "bytes": 6386,
+    "sha256": "704d345e51a8635e2163ca016762ef72c2b7ff94023da950b2e2d7462238e09e",
+    "path": "evidence/taylor-history-009.json"
+  },
+  {
+    "key": "taylor-history-010",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1744302379&endTs=1745166379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.050564+00:00",
+    "bytes": 6396,
+    "sha256": "46e1c8fcca572a8adbacdbfdda4d940bfd188cd2afc714ca452ae14d354d1f3a",
+    "path": "evidence/taylor-history-010.json"
+  },
+  {
+    "key": "taylor-history-011",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1745166379&endTs=1746030379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.075805+00:00",
+    "bytes": 6388,
+    "sha256": "35b9bf8e545dd6814a2cad344a856bfcf913b7169ba58adf545cdad0bbfb26c8",
+    "path": "evidence/taylor-history-011.json"
+  },
+  {
+    "key": "taylor-history-012",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1746030379&endTs=1746894379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.072551+00:00",
+    "bytes": 6420,
+    "sha256": "a144fff7985afc9b2e017b5579b812d5e69e0133b81593ccc55e5cf9c59ef895",
+    "path": "evidence/taylor-history-012.json"
+  },
+  {
+    "key": "taylor-history-013",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1746894379&endTs=1747758379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.161377+00:00",
+    "bytes": 6383,
+    "sha256": "6da7024e342f1bb1eb4f655eca3501858b85c568ca7d08d85d93e5291d076ff9",
+    "path": "evidence/taylor-history-013.json"
+  },
+  {
+    "key": "taylor-history-014",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1747758379&endTs=1748622379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.233292+00:00",
+    "bytes": 6367,
+    "sha256": "2727fd5d8d136cc67e63aa49ab21265c20cef1ffb02a812fbc371715f1662890",
+    "path": "evidence/taylor-history-014.json"
+  },
+  {
+    "key": "taylor-history-015",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1748622379&endTs=1749486379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.243574+00:00",
+    "bytes": 6395,
+    "sha256": "0e1cf4c46c4d752f839f204320b5619cecbc46c5afbee9760e3da0fe3013b2de",
+    "path": "evidence/taylor-history-015.json"
+  },
+  {
+    "key": "taylor-history-016",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1749486379&endTs=1750350379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.251322+00:00",
+    "bytes": 6415,
+    "sha256": "f989c04b40d86400d65cc092e9db7f2a3a01d99c23f0ae25cf66bba770dcae76",
+    "path": "evidence/taylor-history-016.json"
+  },
+  {
+    "key": "taylor-history-017",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1750350379&endTs=1751214379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.261130+00:00",
+    "bytes": 6431,
+    "sha256": "aecb4c3f8cb1313f99d357c6f86087ff1142a0dcbdb095f244b044fadcef2cf7",
+    "path": "evidence/taylor-history-017.json"
+  },
+  {
+    "key": "taylor-history-018",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1751214379&endTs=1752078379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.356886+00:00",
+    "bytes": 6331,
+    "sha256": "006f83573800a399938690a17834c1659ad96090976d381b68f03c2e412e3a5a",
+    "path": "evidence/taylor-history-018.json"
+  },
+  {
+    "key": "taylor-history-019",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1752078379&endTs=1752942379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.424250+00:00",
+    "bytes": 6410,
+    "sha256": "850d26f524a67ae5d45e8312dd01e1f097a64686d981e26f899985e9139906d2",
+    "path": "evidence/taylor-history-019.json"
+  },
+  {
+    "key": "taylor-history-020",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1752942379&endTs=1753806379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.439493+00:00",
+    "bytes": 6453,
+    "sha256": "dcf9fb5f5bf239186ffb9753c4badaa17e74fd52e88b2378ac1cde793fbb03d6",
+    "path": "evidence/taylor-history-020.json"
+  },
+  {
+    "key": "taylor-history-021",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1753806379&endTs=1754670379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.451992+00:00",
+    "bytes": 6424,
+    "sha256": "eaad6d653510c83677171d4a1f68d4132d824dec9e46b33d75ec577f42085f74",
+    "path": "evidence/taylor-history-021.json"
+  },
+  {
+    "key": "taylor-history-022",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1754670379&endTs=1755534379&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.457905+00:00",
+    "bytes": 6426,
+    "sha256": "0ce69e543d6ac48c19e59ad40a4708f1dc719df339249d79d86d32caca39146b",
+    "path": "evidence/taylor-history-022.json"
+  },
+  {
+    "key": "taylor-history-023",
+    "url": "https://clob.polymarket.com/prices-history?market=65243545140060488194767449391633027630960354524222035359867983913384312052417&startTs=1755534379&endTs=1756240713&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.531661+00:00",
+    "bytes": 5205,
+    "sha256": "7386189b67769b10868d0380260d7dbb44ba939c9823e58195d36aed12aa1b6d",
+    "path": "evidence/taylor-history-023.json"
+  },
+  {
+    "key": "nyc-history-000",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1745338205&endTs=1746202205&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.592826+00:00",
+    "bytes": 6281,
+    "sha256": "629c4a436b37ca039813dd8dc2bf7b528d22c4337126d16d1e8d8908bc136cb7",
+    "path": "evidence/nyc-history-000.json"
+  },
+  {
+    "key": "nyc-history-001",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1746202205&endTs=1747066205&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.612086+00:00",
+    "bytes": 6255,
+    "sha256": "f760218fae5fdbef932fadab0311241599d19329cfbc4e0470934927a28260ee",
+    "path": "evidence/nyc-history-001.json"
+  },
+  {
+    "key": "nyc-history-002",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1747066205&endTs=1747930205&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.646803+00:00",
+    "bytes": 6337,
+    "sha256": "d51af771a7e2b885b46b022cb480beedfacf412421daeddff7fb466b2d7f7dad",
+    "path": "evidence/nyc-history-002.json"
+  },
+  {
+    "key": "nyc-history-003",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1747930205&endTs=1748794205&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.643406+00:00",
+    "bytes": 6567,
+    "sha256": "2960579a1222f66d169b623eaeb2c9f43930e3134e1cd4c0b85a4ddc9c248c82",
+    "path": "evidence/nyc-history-003.json"
+  },
+  {
+    "key": "nyc-history-004",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1748794205&endTs=1749658205&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.727666+00:00",
+    "bytes": 6593,
+    "sha256": "06ab443283fde601419e4494867f139cc9626e635cd355e3445726e7ffafb70f",
+    "path": "evidence/nyc-history-004.json"
+  },
+  {
+    "key": "nyc-history-005",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1749658205&endTs=1750522205&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.767352+00:00",
+    "bytes": 6605,
+    "sha256": "806c9128f13252d65440f9149b1046215f2731da883f3507c4f3218af66a9aaf",
+    "path": "evidence/nyc-history-005.json"
+  },
+  {
+    "key": "nyc-history-006",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1750522205&endTs=1751386205&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.804139+00:00",
+    "bytes": 6623,
+    "sha256": "782975360102c11a7d5b724aa4462af5c58964e50aa13f4d2e7d8c8b562f1e43",
+    "path": "evidence/nyc-history-006.json"
+  },
+  {
+    "key": "nyc-history-007",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1751386205&endTs=1752250205&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.826271+00:00",
+    "bytes": 6625,
+    "sha256": "4e8e539db593f730808cfec5b20628e2c57afd5511258dbae3edc5f9516c8921",
+    "path": "evidence/nyc-history-007.json"
+  },
+  {
+    "key": "nyc-history-008",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1752250205&endTs=1753114205&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.823496+00:00",
+    "bytes": 6619,
+    "sha256": "6d0a98bf13ce6af1e90dc4aceac577b4756031fb1f79e7930e0a26bc6fa91658",
+    "path": "evidence/nyc-history-008.json"
+  },
+  {
+    "key": "nyc-history-009",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1753114205&endTs=1753978205&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.925812+00:00",
+    "bytes": 6661,
+    "sha256": "0c2acb2492805be21eaa2ac2211fda4ec0311a0507e87f9ea848d58ff6641720",
+    "path": "evidence/nyc-history-009.json"
+  },
+  {
+    "key": "nyc-history-010",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1753978205&endTs=1754842205&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.951651+00:00",
+    "bytes": 6581,
+    "sha256": "f59411635d31352346e82b160d52879278b089e83aa3cbff814995d3140d08ae",
+    "path": "evidence/nyc-history-010.json"
+  },
+  {
+    "key": "nyc-history-011",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1754842205&endTs=1755706205&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.968733+00:00",
+    "bytes": 6607,
+    "sha256": "be6ff1d492f9b7d2c3c107da77b9d3cfa2397c12c16491ad7705c124ce84f702",
+    "path": "evidence/nyc-history-011.json"
+  },
+  {
+    "key": "nyc-history-012",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1755706205&endTs=1756570205&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:56.999468+00:00",
+    "bytes": 6664,
+    "sha256": "8f0733f199acc9eb657e77751e6a0b9d839bb737276390e19f1297ff54c31deb",
+    "path": "evidence/nyc-history-012.json"
+  },
+  {
+    "key": "nyc-history-013",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1756570205&endTs=1757434205&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:57.013232+00:00",
+    "bytes": 6616,
+    "sha256": "344dd4322bbd38d658f497978238be13caf514b9d0dd7ca5ed494a12bf65cbfb",
+    "path": "evidence/nyc-history-013.json"
+  },
+  {
+    "key": "nyc-history-014",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1757434205&endTs=1758298205&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:57.138551+00:00",
+    "bytes": 6554,
+    "sha256": "0bc0ce34e2469f101de21602f97438a20182e6646cfb57f85571109c532c61b2",
+    "path": "evidence/nyc-history-014.json"
+  },
+  {
+    "key": "nyc-history-015",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1758298205&endTs=1759162205&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:57.153099+00:00",
+    "bytes": 6656,
+    "sha256": "b9118b82170b36f115e5389afb2b461cbcf61fbb711724b99fa93ee6a72e33a4",
+    "path": "evidence/nyc-history-015.json"
+  },
+  {
+    "key": "nyc-history-016",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1759162205&endTs=1760026205&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:57.150913+00:00",
+    "bytes": 6644,
+    "sha256": "444f1aedb2ec7d31568e79b8b62c446c4fb9964106ef758fe8dda3c0ec58e4b0",
+    "path": "evidence/nyc-history-016.json"
+  },
+  {
+    "key": "nyc-history-017",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1760026205&endTs=1760890205&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:57.192492+00:00",
+    "bytes": 6686,
+    "sha256": "49a1a5b0f112cbec3b0f2ee74c5a9735e367c950fb9827281123a871c7f9e027",
+    "path": "evidence/nyc-history-017.json"
+  },
+  {
+    "key": "nyc-history-018",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1760890205&endTs=1761754205&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:57.204946+00:00",
+    "bytes": 6590,
+    "sha256": "47bbd0d8afa7ebd051042d5a7aca933c9f88105db2803f29823cf6d3df1551aa",
+    "path": "evidence/nyc-history-018.json"
+  },
+  {
+    "key": "nyc-history-019",
+    "url": "https://clob.polymarket.com/prices-history?market=33945469250963963541781051637999677727672635213493648594066577298999471399137&startTs=1761754205&endTs=1762325087&fidelity=60",
+    "retrievedAt": "2026-09-06T00:21:57.329937+00:00",
+    "bytes": 4387,
+    "sha256": "14143555a06efb8d208ea2fdfcb261ba588be74afbe1e349aa1693659860a4db",
+    "path": "evidence/nyc-history-019.json"
+  },
+  {
+    "key": "anora-kalshi-history",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXOSCARPIC-25-A/candlesticks?start_ts=1729778400&end_ts=1740974400&period_interval=60",
+    "retrievedAt": "2026-09-06T00:21:57.418273+00:00",
+    "bytes": 465032,
+    "sha256": "edc14f4ae059ce07fdb1b500e31b332f80fbcf36165186c8798df7371a96099d",
+    "path": "evidence/anora-kalshi-history.json"
+  },
+  {
+    "key": "oscars26-history",
+    "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXOSCARPIC-26-ONE/candlesticks?start_ts=1758499200&end_ts=1773640800&period_interval=60",
+    "retrievedAt": "2026-09-06T00:21:57.430526+00:00",
+    "bytes": 1374570,
+    "sha256": "b1f4bf26a54a512af052fd91af8272ef820881570b4a6d37db673cf5150f1131",
+    "path": "evidence/oscars26-history.json"
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "role": "trump",
+  "status": "blocked",
+  "startedAt": "2026-09-06T00:00:00-05:00",
+  "updatedAt": "2026-09-06T16:12:20Z",
+  "workspace": "/Users/simonwacziarg/Documents/ChatGPT/Forecast",
+  "ownedPaths": [
+    "docs/launch-work/trump/",
+    "docs/launch-work/completions/03.md",
+    "docs/launch-work/parallel-status/trump.json"
+  ],
+  "reportPath": "docs/launch-work/completions/03.md",
+  "finishedAt": "2026-09-06T16:12:20Z",
+  "artifactHashes": {
+    "docs/launch-work/trump/candidate.md": "24bf9fcabe70d5f507ba2e614d46528f98ee7eeace6a5f29f4e48328d1543d72",
+    "docs/launch-work/trump/candidate.json": "e4ff05b5fe7b4e35a5680ef818ea187c8db1139276034bd3bd47ce1cbd3d71e0",
+    "docs/launch-work/trump/evidence-manifest.json": "c0e1197ba21ddbe72c4ddd4c7f92ebdcf520e06145eb6029f37e021e8b975164",
+    "docs/launch-work/trump/measurements.json": "49d7d7114138379da5f20c7016094d556969f38f5267d896ef15e3fe620a581b",
+    "docs/launch-work/completions/03.md": "477fd43a78b1d3187a93b224e4db97d44574d7098023e59d1b058e6aa07aebed"
+  },
+  "handoffComplete": true
+}

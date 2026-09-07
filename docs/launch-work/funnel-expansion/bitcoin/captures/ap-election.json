@@ -1,0 +1,14 @@
+{
+  "id": "ap-election-call",
+  "captureStatus": "retrieved-via-web-text",
+  "captureType": "authoritative-html-excerpt",
+  "sourceRole": "primary",
+  "publisher": "The Associated Press",
+  "title": "Calling the 2024 presidential race state by state",
+  "url": "https://www.ap.org/the-definitive-source/behind-the-news/calling-the-2024-presidential-race-state-by-state/",
+  "retrievedAt": "2026-09-06T20:21:50Z",
+  "passageLocation": "web capture lines 79-92 and 175-195",
+  "passage": "At 5:34 a.m. ET on Wednesday, The Associated Press declared Donald Trump the winner of the U.S. presidential race.\nNov. 6, 2024\n05:34: WASHINGTON (AP) – Donald Trump wins Wisconsin\n05:34: WASHINGTON (AP) – Donald Trump is elected the 47th president of the U.S.",
+  "passageSha256": "04b93c69c99aa2cefa5103ceabba0f637189472b64565703d6e27864a4590018",
+  "publicTime": { "value": "2024-11-06T10:34:00Z", "precision": "minute", "timezone": "America/New_York", "justification": "AP gives 05:34 ET for the race call; converted to 10:34 UTC on November 6." }
+}

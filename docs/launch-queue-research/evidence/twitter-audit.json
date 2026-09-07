@@ -1,0 +1,23 @@
+{
+  "summary": {
+    "key": "twitter",
+    "rawObservations": 0,
+    "observations": 0,
+    "coverageStart": null,
+    "coverageEnd": null,
+    "frequency": "UTC hourly buckets",
+    "missingHours": 0,
+    "maximumMissingRunHours": 0,
+    "rejectedObservations": 0,
+    "duplicateOrRevisionBuckets": 0,
+    "markPolicy": "Project Polymarket importer convention: latest source price per hour, treated as trade; API does not establish actual trade freshness or historical spread/volume. No filling.",
+    "normalizedSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "minQualifyingDailyMedian": null,
+    "maxQualifyingDailyMedian": null,
+    "maximumDailyMedianRise": null,
+    "maximumDailyMedianDrawdown": null,
+    "fullMarketLifetime": false
+  },
+  "missingBuckets": [],
+  "daily": []
+}

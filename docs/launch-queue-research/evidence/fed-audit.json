@@ -1,0 +1,404 @@
+{
+  "summary": {
+    "key": "fed",
+    "rawObservations": 1129,
+    "observations": 1129,
+    "coverageStart": "2024-08-02T21:00:00Z",
+    "coverageEnd": "2024-09-18T21:00:00Z",
+    "frequency": "UTC hourly buckets",
+    "missingHours": 0,
+    "maximumMissingRunHours": 0,
+    "rejectedObservations": 0,
+    "duplicateOrRevisionBuckets": 0,
+    "markPolicy": "Project Polymarket importer convention: latest source price per hour, treated as trade; API does not establish actual trade freshness or historical spread/volume. No filling.",
+    "normalizedSha256": "d1aaa956b95ab0a228c6eafb2bc6d72b91f27b614b162892197439581d716b97",
+    "minQualifyingDailyMedian": {
+      "date": "2024-09-12",
+      "median": 0.08,
+      "observations": 24,
+      "min": 0.065,
+      "max": 0.25
+    },
+    "maxQualifyingDailyMedian": {
+      "date": "2024-08-05",
+      "median": 0.5974999999999999,
+      "observations": 24,
+      "min": 0.52,
+      "max": 0.675
+    },
+    "maximumDailyMedianRise": {
+      "from": {
+        "date": "2024-09-12",
+        "median": 0.08,
+        "observations": 24,
+        "min": 0.065,
+        "max": 0.25
+      },
+      "to": {
+        "date": "2024-09-15",
+        "median": 0.34,
+        "observations": 24,
+        "min": 0.33,
+        "max": 0.45
+      },
+      "pp": 26.0
+    },
+    "maximumDailyMedianDrawdown": {
+      "from": {
+        "date": "2024-08-05",
+        "median": 0.5974999999999999,
+        "observations": 24,
+        "min": 0.52,
+        "max": 0.675
+      },
+      "to": {
+        "date": "2024-09-12",
+        "median": 0.08,
+        "observations": 24,
+        "min": 0.065,
+        "max": 0.25
+      },
+      "pp": 51.74999999999999
+    },
+    "fullMarketLifetime": false
+  },
+  "missingBuckets": [],
+  "daily": [
+    {
+      "date": "2024-08-02",
+      "median": 0.55,
+      "observations": 3,
+      "min": 0.55,
+      "max": 0.55
+    },
+    {
+      "date": "2024-08-03",
+      "median": 0.4675,
+      "observations": 24,
+      "min": 0.42,
+      "max": 0.545
+    },
+    {
+      "date": "2024-08-04",
+      "median": 0.4625,
+      "observations": 24,
+      "min": 0.445,
+      "max": 0.53
+    },
+    {
+      "date": "2024-08-05",
+      "median": 0.5974999999999999,
+      "observations": 24,
+      "min": 0.52,
+      "max": 0.675
+    },
+    {
+      "date": "2024-08-06",
+      "median": 0.5375000000000001,
+      "observations": 24,
+      "min": 0.42,
+      "max": 0.59
+    },
+    {
+      "date": "2024-08-07",
+      "median": 0.4775,
+      "observations": 24,
+      "min": 0.445,
+      "max": 0.55
+    },
+    {
+      "date": "2024-08-08",
+      "median": 0.54,
+      "observations": 24,
+      "min": 0.455,
+      "max": 0.58
+    },
+    {
+      "date": "2024-08-09",
+      "median": 0.43,
+      "observations": 24,
+      "min": 0.315,
+      "max": 0.465
+    },
+    {
+      "date": "2024-08-10",
+      "median": 0.315,
+      "observations": 24,
+      "min": 0.305,
+      "max": 0.345
+    },
+    {
+      "date": "2024-08-11",
+      "median": 0.305,
+      "observations": 24,
+      "min": 0.27,
+      "max": 0.345
+    },
+    {
+      "date": "2024-08-12",
+      "median": 0.31,
+      "observations": 24,
+      "min": 0.295,
+      "max": 0.33
+    },
+    {
+      "date": "2024-08-13",
+      "median": 0.3225,
+      "observations": 24,
+      "min": 0.3,
+      "max": 0.33
+    },
+    {
+      "date": "2024-08-14",
+      "median": 0.325,
+      "observations": 24,
+      "min": 0.2,
+      "max": 0.325
+    },
+    {
+      "date": "2024-08-15",
+      "median": 0.205,
+      "observations": 24,
+      "min": 0.115,
+      "max": 0.225
+    },
+    {
+      "date": "2024-08-16",
+      "median": 0.14250000000000002,
+      "observations": 24,
+      "min": 0.125,
+      "max": 0.155
+    },
+    {
+      "date": "2024-08-17",
+      "median": 0.145,
+      "observations": 24,
+      "min": 0.13,
+      "max": 0.145
+    },
+    {
+      "date": "2024-08-18",
+      "median": 0.145,
+      "observations": 24,
+      "min": 0.14,
+      "max": 0.145
+    },
+    {
+      "date": "2024-08-19",
+      "median": 0.145,
+      "observations": 24,
+      "min": 0.145,
+      "max": 0.15
+    },
+    {
+      "date": "2024-08-20",
+      "median": 0.1525,
+      "observations": 24,
+      "min": 0.145,
+      "max": 0.165
+    },
+    {
+      "date": "2024-08-21",
+      "median": 0.185,
+      "observations": 24,
+      "min": 0.165,
+      "max": 0.235
+    },
+    {
+      "date": "2024-08-22",
+      "median": 0.195,
+      "observations": 24,
+      "min": 0.175,
+      "max": 0.24
+    },
+    {
+      "date": "2024-08-23",
+      "median": 0.185,
+      "observations": 24,
+      "min": 0.165,
+      "max": 0.225
+    },
+    {
+      "date": "2024-08-24",
+      "median": 0.215,
+      "observations": 24,
+      "min": 0.205,
+      "max": 0.225
+    },
+    {
+      "date": "2024-08-25",
+      "median": 0.215,
+      "observations": 24,
+      "min": 0.205,
+      "max": 0.225
+    },
+    {
+      "date": "2024-08-26",
+      "median": 0.235,
+      "observations": 24,
+      "min": 0.215,
+      "max": 0.275
+    },
+    {
+      "date": "2024-08-27",
+      "median": 0.225,
+      "observations": 24,
+      "min": 0.22,
+      "max": 0.245
+    },
+    {
+      "date": "2024-08-28",
+      "median": 0.245,
+      "observations": 24,
+      "min": 0.235,
+      "max": 0.255
+    },
+    {
+      "date": "2024-08-29",
+      "median": 0.2425,
+      "observations": 24,
+      "min": 0.21,
+      "max": 0.25
+    },
+    {
+      "date": "2024-08-30",
+      "median": 0.225,
+      "observations": 24,
+      "min": 0.2,
+      "max": 0.225
+    },
+    {
+      "date": "2024-08-31",
+      "median": 0.215,
+      "observations": 24,
+      "min": 0.21,
+      "max": 0.225
+    },
+    {
+      "date": "2024-09-01",
+      "median": 0.21,
+      "observations": 24,
+      "min": 0.2,
+      "max": 0.215
+    },
+    {
+      "date": "2024-09-02",
+      "median": 0.2,
+      "observations": 24,
+      "min": 0.195,
+      "max": 0.205
+    },
+    {
+      "date": "2024-09-03",
+      "median": 0.205,
+      "observations": 24,
+      "min": 0.195,
+      "max": 0.225
+    },
+    {
+      "date": "2024-09-04",
+      "median": 0.275,
+      "observations": 24,
+      "min": 0.225,
+      "max": 0.375
+    },
+    {
+      "date": "2024-09-05",
+      "median": 0.3525,
+      "observations": 24,
+      "min": 0.325,
+      "max": 0.39
+    },
+    {
+      "date": "2024-09-06",
+      "median": 0.325,
+      "observations": 24,
+      "min": 0.155,
+      "max": 0.4
+    },
+    {
+      "date": "2024-09-07",
+      "median": 0.265,
+      "observations": 24,
+      "min": 0.245,
+      "max": 0.285
+    },
+    {
+      "date": "2024-09-08",
+      "median": 0.255,
+      "observations": 24,
+      "min": 0.24,
+      "max": 0.27
+    },
+    {
+      "date": "2024-09-09",
+      "median": 0.24,
+      "observations": 24,
+      "min": 0.215,
+      "max": 0.265
+    },
+    {
+      "date": "2024-09-10",
+      "median": 0.225,
+      "observations": 24,
+      "min": 0.215,
+      "max": 0.245
+    },
+    {
+      "date": "2024-09-11",
+      "median": 0.23,
+      "observations": 24,
+      "min": 0.075,
+      "max": 0.25
+    },
+    {
+      "date": "2024-09-12",
+      "median": 0.08,
+      "observations": 24,
+      "min": 0.065,
+      "max": 0.25
+    },
+    {
+      "date": "2024-09-13",
+      "median": 0.305,
+      "observations": 24,
+      "min": 0.265,
+      "max": 0.38
+    },
+    {
+      "date": "2024-09-14",
+      "median": 0.335,
+      "observations": 24,
+      "min": 0.315,
+      "max": 0.35
+    },
+    {
+      "date": "2024-09-15",
+      "median": 0.34,
+      "observations": 24,
+      "min": 0.33,
+      "max": 0.45
+    },
+    {
+      "date": "2024-09-16",
+      "median": 0.525,
+      "observations": 24,
+      "min": 0.425,
+      "max": 0.59
+    },
+    {
+      "date": "2024-09-17",
+      "median": 0.5465,
+      "observations": 24,
+      "min": 0.5015,
+      "max": 0.605
+    },
+    {
+      "date": "2024-09-18",
+      "median": 0.5315,
+      "observations": 22,
+      "min": 0.382,
+      "max": 0.9995
+    }
+  ]
+}

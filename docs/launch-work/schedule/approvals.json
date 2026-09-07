@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "puzzleId": "2026-09-07-biden-dropout",
+      "studyId": "biden-dropout-2024-v1",
+      "studyVersion": 1,
+      "releaseTime": "2026-09-07T05:00:00Z",
+      "contentHash": "c2d729061bf06d52d97dba11169a3e8297e6cae62b13c1615ed57a8a96333df6",
+      "status": "approved",
+      "approverType": "human",
+      "approver": "Project owner (user in task 01a07753-5ef2-7321-a64c-60818d9de4eb)",
+      "approvedAt": "2026-09-06T20:14:16.827Z",
+      "approvalBasis": "Direct user instruction received September 6, 2026; recorded at this timestamp: \"the release schedule is as follows: biden dropout sept 7, then whatever one per day after that\". Reuses the previously approved, unchanged Biden content. Release hour retains the existing 05:00 UTC convention. No approval inferred for other draft content.",
+      "sourceTaskId": "01a07753-5ef2-7321-a64c-60818d9de4eb"
+    }
+  ]
+}

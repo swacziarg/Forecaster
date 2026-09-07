@@ -1,0 +1,1284 @@
+{
+  "artifactType": "Editorial integration handoff; not a published Study or queue entry",
+  "preparedAt": "2026-09-06T14:32:49.652310+00:00",
+  "key": "trump",
+  "proposedPuzzleNumber": 4,
+  "proposedReleaseTime": null,
+  "title": "The comeback nobody could call",
+  "category": "Politics",
+  "storyRange": "2024-05-01–2024-11-06 measured coverage; scored developments 2024-05-30–2024-11-02",
+  "readiness": "needs a specific evidence/data step",
+  "queueableNow": false,
+  "decision": "Advance third, after variety. All 25 windows pass. Exact first-broadcast/public-release confirmation remains necessary, particularly the debate transcript with a later modification time and the source-host versus original-publication distinction for live transcripts.",
+  "requiredEvidenceSteps": [
+    "Capture the immutable ABC debate broadcast/transcript as publicly available at the cutoff; current page records original publication 03:58 UTC but modification 16:24:39 UTC.",
+    "Verify the first-public release anchors for verdict, shooting, endorsement and poll; the retained live-program endings/brackets are defensible upper bounds, not claims of earliest public access.",
+    "Independent editor must review the repeated shooting card after Biden #001 and approve this frozen five-card subset under the strict profile; legacy publication does not waive this."
+  ],
+  "identity": {
+    "provider": "Polymarket",
+    "marketId": "253591",
+    "conditionId": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917",
+    "contractId": "21742633143463906290569050155826241533067272736897614950488156847949938836455",
+    "question": "Will Donald Trump win the 2024 US Presidential Election?",
+    "selectedPerspective": "YES",
+    "outcome": "YES",
+    "openedAt": "2024-01-04T22:58:00Z",
+    "closedAt": "2024-11-06 15:17:41+00",
+    "settledAt": null,
+    "resolutionEvidence": {
+      "closed": true,
+      "umaResolutionStatus": "resolved",
+      "outcomes": [
+        "Yes",
+        "No"
+      ],
+      "outcomePrices": [
+        "1",
+        "0"
+      ]
+    },
+    "metadataUrl": "https://gamma-api.polymarket.com/markets/253591",
+    "marketUrl": "https://polymarket.com/event/presidential-election-winner-2024/will-donald-trump-win-the-2024-us-presidential-election",
+    "rulesSummary": "YES if Donald J. Trump wins the 2024 US presidential election. AP, Fox News and NBC must all call the same winner; if they had not agreed by January 20, 2025, the inauguration determined resolution. Neither national popular vote nor winning Iowa defines this contract."
+  },
+  "audienceRationale": "A criminal verdict, an assassination attempt, an endorsement, a televised debate and a surprise poll are unusually recognizable and distinct campaign moments. The subject needs almost no introduction.",
+  "playRationale": "A major endorsement sounds helpful, but the retained contract’s stabilized response is negative. The debate and the Iowa poll fall into the same tie group. Players can distinguish the importance of a news story from how much probability was left to move.",
+  "tension": "The rally shooting measures +10.00 pp; Kennedy’s endorsement −1.175, conviction −2.00, debate −2.575 and Iowa poll −3.45. The frozen set produces three tie groups, not five clean ranks. This remains compelling but repeats the Trump shooting already present in Biden #001, so put two non-election editions first.",
+  "measurementProfile": {
+    "id": "months-hourly-v1",
+    "label": "Months / hourly",
+    "cadenceMinutes": 60,
+    "anticipation": {
+      "startHours": -84,
+      "endHours": -12
+    },
+    "reference": {
+      "startHours": -12,
+      "endHours": 0
+    },
+    "immediate": {
+      "startHours": 0,
+      "endHours": 6
+    },
+    "stabilized": {
+      "startHours": 18,
+      "endHours": 36
+    },
+    "delayed": {
+      "startHours": 48,
+      "endHours": 72
+    },
+    "quality": {
+      "minimumCoverage": 0.6,
+      "maximumGapShare": 0.5,
+      "minimumDistinctUpdates": 3,
+      "maximumSpread": 0.2
+    },
+    "tieThreshold": 0.01
+  },
+  "selectionFreeze": {
+    "file": "frozen-selection-v1.json",
+    "sha256": "79ca8b2e025f15e5fe1ff9040ed1c060d874bf188d2b239f39fc647c0ad33593",
+    "frozenAt": "2026-09-06T00:24:51.987941+00:00",
+    "disclosure": "Freeze these five fact clusters per candidate for historical significance before running fresh event-window calculations. Timestamp anchors must come from public evidence, never optimized on prices. Failed candidates stay failed; do not replace weak cards after seeing movements. Raw histories and broad daily-median suitability statistics were examined before this freeze; no new five-card event-window calculations have run. Prior project records contain measured responses for some reused Trump/Eagles events and Oscars 2026; those were visible while satisfying the required repository review. This is a prospective freeze of this research selection, not a claim of blinded preregistration."
+  },
+  "anchorsFile": "anchors-v2.json",
+  "dataset": {
+    "researchCsv": "datasets/trump-hourly.csv",
+    "csvSha256": "7756111859cbca9f2185795608029323fb21e9505f0314d4700cf7d8b9cc579d",
+    "normalizedJson": "evidence/trump-normalized.json",
+    "audit": {
+      "key": "trump",
+      "rawObservations": 4550,
+      "observations": 4549,
+      "coverageStart": "2024-05-01T00:00:00Z",
+      "coverageEnd": "2024-11-06T15:00:00Z",
+      "frequency": "UTC hourly buckets",
+      "missingHours": 3,
+      "maximumMissingRunHours": 1,
+      "rejectedObservations": 0,
+      "duplicateOrRevisionBuckets": 1,
+      "markPolicy": "Project Polymarket importer convention: latest source price per hour, treated as trade; API does not establish actual trade freshness or historical spread/volume. No filling.",
+      "normalizedSha256": "7b75c8dd3b85c151c76bded476ae6e32fa3084781c77cfa176f632e527bdd380",
+      "minQualifyingDailyMedian": {
+        "date": "2024-08-16",
+        "median": 0.4415,
+        "observations": 24,
+        "min": 0.4405,
+        "max": 0.4525
+      },
+      "maxQualifyingDailyMedian": {
+        "date": "2024-07-15",
+        "median": 0.705,
+        "observations": 24,
+        "min": 0.695,
+        "max": 0.715
+      },
+      "maximumDailyMedianRise": {
+        "from": {
+          "date": "2024-05-09",
+          "median": 0.445,
+          "observations": 24,
+          "min": 0.445,
+          "max": 0.455
+        },
+        "to": {
+          "date": "2024-07-15",
+          "median": 0.705,
+          "observations": 24,
+          "min": 0.695,
+          "max": 0.715
+        },
+        "pp": 25.999999999999996
+      },
+      "maximumDailyMedianDrawdown": {
+        "from": {
+          "date": "2024-07-15",
+          "median": 0.705,
+          "observations": 24,
+          "min": 0.695,
+          "max": 0.715
+        },
+        "to": {
+          "date": "2024-08-16",
+          "median": 0.4415,
+          "observations": 24,
+          "min": 0.4405,
+          "max": 0.4525
+        },
+        "pp": 26.349999999999994
+      },
+      "fullMarketLifetime": false
+    },
+    "historyRequests": [
+      {
+        "key": "trump-history-000",
+        "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1714521600&endTs=1715385600&fidelity=60",
+        "receipt": {
+          "key": "trump-history-000",
+          "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1714521600&endTs=1715385600&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.385648+00:00",
+          "bytes": 6467,
+          "sha256": "180a3437aa20aac3ef92484d9d452002ca9835e6a766f34074f297dc25c08c9c",
+          "path": "evidence/trump-history-000.json"
+        }
+      },
+      {
+        "key": "trump-history-001",
+        "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1715385600&endTs=1716249600&fidelity=60",
+        "receipt": {
+          "key": "trump-history-001",
+          "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1715385600&endTs=1716249600&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.378755+00:00",
+          "bytes": 6490,
+          "sha256": "32705397ecaae6f5cdc1cb98777e6c70660a2400983a78aae671288232b5f8ba",
+          "path": "evidence/trump-history-001.json"
+        }
+      },
+      {
+        "key": "trump-history-002",
+        "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1716249600&endTs=1717113600&fidelity=60",
+        "receipt": {
+          "key": "trump-history-002",
+          "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1716249600&endTs=1717113600&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.370850+00:00",
+          "bytes": 6480,
+          "sha256": "f1eff306eb391315de342cb18619c0540bc4555f54105fa9105e2f4bcb5f36f7",
+          "path": "evidence/trump-history-002.json"
+        }
+      },
+      {
+        "key": "trump-history-003",
+        "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1717113600&endTs=1717977600&fidelity=60",
+        "receipt": {
+          "key": "trump-history-003",
+          "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1717113600&endTs=1717977600&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.392903+00:00",
+          "bytes": 6492,
+          "sha256": "9197e6870925771d739324d0b4dd47ebb8b830d5937798b8750b418e35c040e1",
+          "path": "evidence/trump-history-003.json"
+        }
+      },
+      {
+        "key": "trump-history-004",
+        "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1717977600&endTs=1718841600&fidelity=60",
+        "receipt": {
+          "key": "trump-history-004",
+          "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1717977600&endTs=1718841600&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.393401+00:00",
+          "bytes": 6494,
+          "sha256": "f7ddb6106d933a1473462d1c544da9930e44ad1908b440372c7d31170c164be4",
+          "path": "evidence/trump-history-004.json"
+        }
+      },
+      {
+        "key": "trump-history-005",
+        "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1718841600&endTs=1719705600&fidelity=60",
+        "receipt": {
+          "key": "trump-history-005",
+          "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1718841600&endTs=1719705600&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.546783+00:00",
+          "bytes": 6492,
+          "sha256": "93c595cdbe4898ded82066205f947f85f080154d3a54876ab87d46dae1fa06ba",
+          "path": "evidence/trump-history-005.json"
+        }
+      },
+      {
+        "key": "trump-history-006",
+        "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1719705600&endTs=1720569600&fidelity=60",
+        "receipt": {
+          "key": "trump-history-006",
+          "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1719705600&endTs=1720569600&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.577612+00:00",
+          "bytes": 6485,
+          "sha256": "30e1faeb009c94de2c1f504a43abfd807e7e58a526d92db691e01223e7c71ba8",
+          "path": "evidence/trump-history-006.json"
+        }
+      },
+      {
+        "key": "trump-history-007",
+        "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1720569600&endTs=1721433600&fidelity=60",
+        "receipt": {
+          "key": "trump-history-007",
+          "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1720569600&endTs=1721433600&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.549559+00:00",
+          "bytes": 6475,
+          "sha256": "51f704f78c42b437e262b6e4f636b5f40fed52c03446d837a252d68d31564fbc",
+          "path": "evidence/trump-history-007.json"
+        }
+      },
+      {
+        "key": "trump-history-008",
+        "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1721433600&endTs=1722297600&fidelity=60",
+        "receipt": {
+          "key": "trump-history-008",
+          "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1721433600&endTs=1722297600&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.580592+00:00",
+          "bytes": 6449,
+          "sha256": "e13bd259328ec4d25784a76c8296603f7aca81dd80812ae47057cefc622f2205",
+          "path": "evidence/trump-history-008.json"
+        }
+      },
+      {
+        "key": "trump-history-009",
+        "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1722297600&endTs=1723161600&fidelity=60",
+        "receipt": {
+          "key": "trump-history-009",
+          "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1722297600&endTs=1723161600&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.576726+00:00",
+          "bytes": 6489,
+          "sha256": "1814aa4a7e0956ee5cbbb1266657b0d9488595cf3f62936a6073f70f91f1335b",
+          "path": "evidence/trump-history-009.json"
+        }
+      },
+      {
+        "key": "trump-history-010",
+        "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1723161600&endTs=1724025600&fidelity=60",
+        "receipt": {
+          "key": "trump-history-010",
+          "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1723161600&endTs=1724025600&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.737818+00:00",
+          "bytes": 6636,
+          "sha256": "11b0fa74807dcbaac3e7dcd5e7fc83f808838aef093730ec0855fd0b096de7ed",
+          "path": "evidence/trump-history-010.json"
+        }
+      },
+      {
+        "key": "trump-history-011",
+        "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1724025600&endTs=1724889600&fidelity=60",
+        "receipt": {
+          "key": "trump-history-011",
+          "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1724025600&endTs=1724889600&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.731219+00:00",
+          "bytes": 6646,
+          "sha256": "8a40a71ae4435dadc1553bef593951ea1d6202141ebff9159d973ddb73a565f1",
+          "path": "evidence/trump-history-011.json"
+        }
+      },
+      {
+        "key": "trump-history-012",
+        "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1724889600&endTs=1725753600&fidelity=60",
+        "receipt": {
+          "key": "trump-history-012",
+          "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1724889600&endTs=1725753600&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.766688+00:00",
+          "bytes": 6711,
+          "sha256": "ecde9f636bfdf58c9567932861cc4983d881a9d6561934fc2dad023bd22a1acf",
+          "path": "evidence/trump-history-012.json"
+        }
+      },
+      {
+        "key": "trump-history-013",
+        "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1725753600&endTs=1726617600&fidelity=60",
+        "receipt": {
+          "key": "trump-history-013",
+          "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1725753600&endTs=1726617600&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.753484+00:00",
+          "bytes": 6684,
+          "sha256": "df3415d1949e353fc7d05d689115f28cee71f5f7f74a94ec61be247c155aa866",
+          "path": "evidence/trump-history-013.json"
+        }
+      },
+      {
+        "key": "trump-history-014",
+        "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1726617600&endTs=1727481600&fidelity=60",
+        "receipt": {
+          "key": "trump-history-014",
+          "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1726617600&endTs=1727481600&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.769095+00:00",
+          "bytes": 6694,
+          "sha256": "79e0f92a01c662cd6df1defaabee3fe413e4a8ccf75e2b89574ea412543ea48e",
+          "path": "evidence/trump-history-014.json"
+        }
+      },
+      {
+        "key": "trump-history-015",
+        "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1727481600&endTs=1728345600&fidelity=60",
+        "receipt": {
+          "key": "trump-history-015",
+          "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1727481600&endTs=1728345600&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.928971+00:00",
+          "bytes": 6743,
+          "sha256": "b79bdbf7c94434e3c0a235ad9f430fbff4f2bdc2aaec68efbe8d89fbaa25e767",
+          "path": "evidence/trump-history-015.json"
+        }
+      },
+      {
+        "key": "trump-history-016",
+        "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1728345600&endTs=1729209600&fidelity=60",
+        "receipt": {
+          "key": "trump-history-016",
+          "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1728345600&endTs=1729209600&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.912525+00:00",
+          "bytes": 6720,
+          "sha256": "55880d51bfff72dfe637c810ac20d6cc30e00a0d76605cdec3f82db11e743c27",
+          "path": "evidence/trump-history-016.json"
+        }
+      },
+      {
+        "key": "trump-history-017",
+        "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1729209600&endTs=1730073600&fidelity=60",
+        "receipt": {
+          "key": "trump-history-017",
+          "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1729209600&endTs=1730073600&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.944871+00:00",
+          "bytes": 6713,
+          "sha256": "7a329b3c8210df9f82faeaf7467d98e58b67ba40f6e2f18650f2f6dbd88d999f",
+          "path": "evidence/trump-history-017.json"
+        }
+      },
+      {
+        "key": "trump-history-018",
+        "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1730073600&endTs=1730909861&fidelity=60",
+        "receipt": {
+          "key": "trump-history-018",
+          "url": "https://clob.polymarket.com/prices-history?market=21742633143463906290569050155826241533067272736897614950488156847949938836455&startTs=1730073600&endTs=1730909861&fidelity=60",
+          "retrievedAt": "2026-09-06T00:21:49.945074+00:00",
+          "bytes": 6452,
+          "sha256": "798ac3d986d365f338bb5468a8845fec05ceaf7c652af41752881bf966b1264d",
+          "path": "evidence/trump-history-018.json"
+        }
+      }
+    ],
+    "preEndingSwings": {
+      "exclusiveEndingDateUTC": "2024-11-05",
+      "days": 188,
+      "maximumRise": {
+        "pp": 25.999999999999996,
+        "from": {
+          "date": "2024-05-09",
+          "median": 0.445,
+          "observations": 24,
+          "min": 0.445,
+          "max": 0.455
+        },
+        "to": {
+          "date": "2024-07-15",
+          "median": 0.705,
+          "observations": 24,
+          "min": 0.695,
+          "max": 0.715
+        }
+      },
+      "maximumDrawdown": {
+        "pp": 26.349999999999994,
+        "from": {
+          "date": "2024-07-15",
+          "median": 0.705,
+          "observations": 24,
+          "min": 0.695,
+          "max": 0.715
+        },
+        "to": {
+          "date": "2024-08-16",
+          "median": 0.4415,
+          "observations": 24,
+          "min": 0.4405,
+          "max": 0.4525
+        }
+      },
+      "minimumDailyMedian": {
+        "date": "2024-08-16",
+        "median": 0.4415,
+        "observations": 24,
+        "min": 0.4405,
+        "max": 0.4525
+      },
+      "maximumDailyMedian": {
+        "date": "2024-07-15",
+        "median": 0.705,
+        "observations": 24,
+        "min": 0.695,
+        "max": 0.715
+      }
+    },
+    "normalizationScript": "audit_history.py",
+    "measurementScript": "evaluate.mjs",
+    "integrationDestination": null
+  },
+  "presentationDraft": {
+    "topic": "The comeback nobody could call",
+    "instruction": "May–November 2024. Rank five headlines from the biggest rise in Trump’s chances of winning the presidency to the biggest fall.",
+    "selectedContractShort": "Trump wins the 2024 presidency",
+    "positiveLabel": "Probability rose",
+    "negativeLabel": "Probability fell",
+    "preRevealOdds": false,
+    "releaseTimezone": "America/Chicago",
+    "scoring": {
+      "version": "pairwise-anchor-1pt-v1",
+      "tieThreshold": 0.01,
+      "tieGrouping": "anchor-window"
+    },
+    "eventIds": [
+      "conviction",
+      "butler",
+      "rfk-endorsement",
+      "harris-debate",
+      "iowa-poll"
+    ],
+    "initialOrder": [
+      "rfk-endorsement",
+      "conviction",
+      "iowa-poll",
+      "butler",
+      "harris-debate"
+    ],
+    "initialOrderPolicy": "Fixed positional permutation of frozen list, not price-ranked."
+  },
+  "events": [
+    {
+      "id": "conviction",
+      "title": "New York jury finds Trump guilty on 34 felony counts",
+      "frozenTitle": "New York jury finds Trump guilty on 34 felony counts",
+      "eventDate": "2024-05-30",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": "2024-05-30T21:15:07Z",
+      "evaluationAnchor": "2024-05-30T21:15:07Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "anchorBasis": "Next bracket after live courthouse reporting of all 34 guilty verdicts; upper bound, not exact verdict instant.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": true,
+      "selectionReason": "Historic legal blow versus political mobilization.",
+      "expectedDirectionBeforeMeasurement": "ambiguous",
+      "preRevealClaim": "New York jury finds Trump guilty on 34 felony counts",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": "evidence/trump-conviction.html",
+          "url": "https://transcripts.cnn.com/show/se/date/2024-05-30/segment/05",
+          "retrievedAt": "2026-09-06T05:12:35.552586+00:00",
+          "snapshotHash": "f54b40c115dce68ee8e5aec94164807c530b122271e73f14821f9bcad9c356d3",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        }
+      ],
+      "competingExplanation": "The verdict was anticipated during jury deliberations; the reference therefore includes changing expectations. Legal consequences, fundraising and partisan reactions may pull in different directions.",
+      "attributionAssessment": "mixed",
+      "researchMeasurement": {
+        "eventId": "conviction",
+        "event": {
+          "id": "conviction",
+          "date": "2024-05-30",
+          "title": "New York jury finds Trump guilty on 34 felony counts",
+          "expectedDirection": "ambiguous",
+          "selectionReason": "Historic legal blow versus political mobilization.",
+          "informationKnownAt": "2024-05-30T21:15:07Z",
+          "anchorVerified": true,
+          "anchorBasis": "Next bracket after live courthouse reporting of all 34 guilty verdicts; upper bound, not exact verdict instant."
+        },
+        "windows": {
+          "anticipation": {
+            "level": 0.565,
+            "start": "2024-05-27T09:15:07.000Z",
+            "end": "2024-05-30T09:15:07.000Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 72,
+              "tradedBuckets": 72,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 72,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "reference": {
+            "level": 0.565,
+            "start": "2024-05-30T09:15:07.000Z",
+            "end": "2024-05-30T21:15:07.000Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 12,
+              "tradedBuckets": 12,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 12,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": 0.535,
+            "start": "2024-05-30T21:15:07.000Z",
+            "end": "2024-05-31T03:15:07.000Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 6,
+              "tradedBuckets": 6,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 6,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "stabilized": {
+            "level": 0.545,
+            "start": "2024-05-31T15:15:07.000Z",
+            "end": "2024-06-01T09:15:07.000Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 18,
+              "tradedBuckets": 18,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 18,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "delayed": {
+            "level": 0.535,
+            "start": "2024-06-01T21:15:07.000Z",
+            "end": "2024-06-02T21:15:07.000Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 24,
+              "tradedBuckets": 24,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 24,
+              "status": "usable",
+              "reasons": []
+            }
+          }
+        },
+        "anticipationMove": 0,
+        "immediateResponse": -0.029999999999999916,
+        "shortTermResponse": -0.019999999999999907,
+        "delayedIncrement": -0.010000000000000009,
+        "cumulativeDelayedResponse": -0.029999999999999916,
+        "logOddsResponse": -0.08099132434546275,
+        "sensitivityShare": 0,
+        "counterfactualProbability": 0.545,
+        "attributedImpact": 0,
+        "qualityStatus": "usable",
+        "ordinaryMovement": {
+          "classification": "ordinary",
+          "threshold": 0.030000000000000027,
+          "sampleCount": 113
+        },
+        "overlaps": []
+      }
+    },
+    {
+      "id": "butler",
+      "title": "Trump survives a shooting at his Pennsylvania rally",
+      "frozenTitle": "Trump survives a shooting at his Pennsylvania rally",
+      "eventDate": "2024-07-13",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": "2024-07-14T00:00:00Z",
+      "evaluationAnchor": "2024-07-14T00:00:00Z",
+      "precision": "interval",
+      "timezone": "America/New_York",
+      "anchorBasis": "End of 19:00–20:00 EDT live broadcast containing the survival report and official response.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": true,
+      "selectionReason": "The campaign’s most widely recognized shocking moment.",
+      "expectedDirectionBeforeMeasurement": "positive",
+      "preRevealClaim": "Trump survives a shooting at his Pennsylvania rally",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": "evidence/trump-shooting.html",
+          "url": "https://transcripts.cnn.com/show/cnr/date/2024-07-13/segment/08",
+          "retrievedAt": "2026-09-06T00:26:48.413330+00:00",
+          "snapshotHash": "4108d635e69bc8b700d6402210932f9ffe5cea8175974140abff9f51ca852196",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        }
+      ],
+      "competingExplanation": "The cutoff is the end of a live reporting hour, after the shooting itself. The weekend also involved uncertainty about Biden’s candidacy and the approaching Republican convention. A positive response does not isolate sympathy, turnout or opponent effects.",
+      "attributionAssessment": "mixed",
+      "researchMeasurement": {
+        "eventId": "butler",
+        "event": {
+          "id": "butler",
+          "date": "2024-07-13",
+          "title": "Trump survives a shooting at his Pennsylvania rally",
+          "expectedDirection": "positive",
+          "selectionReason": "The campaign’s most widely recognized shocking moment.",
+          "informationKnownAt": "2024-07-14T00:00:00Z",
+          "anchorVerified": true,
+          "anchorBasis": "End of 19:00–20:00 EDT live broadcast containing the survival report and official response."
+        },
+        "windows": {
+          "anticipation": {
+            "level": 0.605,
+            "start": "2024-07-10T12:00:00.000Z",
+            "end": "2024-07-13T12:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 72,
+              "tradedBuckets": 72,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 72,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "reference": {
+            "level": 0.595,
+            "start": "2024-07-13T12:00:00.000Z",
+            "end": "2024-07-14T00:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 12,
+              "tradedBuckets": 12,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 12,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": 0.695,
+            "start": "2024-07-14T00:00:00.000Z",
+            "end": "2024-07-14T06:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 6,
+              "tradedBuckets": 6,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 6,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "stabilized": {
+            "level": 0.695,
+            "start": "2024-07-14T18:00:00.000Z",
+            "end": "2024-07-15T12:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 18,
+              "tradedBuckets": 18,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 18,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "delayed": {
+            "level": 0.705,
+            "start": "2024-07-16T00:00:00.000Z",
+            "end": "2024-07-17T00:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 24,
+              "tradedBuckets": 24,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 24,
+              "status": "usable",
+              "reasons": []
+            }
+          }
+        },
+        "anticipationMove": -0.010000000000000009,
+        "immediateResponse": 0.09999999999999998,
+        "shortTermResponse": 0.09999999999999998,
+        "delayedIncrement": 0.010000000000000009,
+        "cumulativeDelayedResponse": 0.10999999999999999,
+        "logOddsResponse": 0.4389257305182898,
+        "sensitivityShare": 0,
+        "counterfactualProbability": 0.6950000000000001,
+        "attributedImpact": -1.1102230246251565e-16,
+        "qualityStatus": "usable",
+        "ordinaryMovement": {
+          "classification": "unusually large",
+          "threshold": 0.030000000000000027,
+          "sampleCount": 113
+        },
+        "overlaps": []
+      }
+    },
+    {
+      "id": "rfk-endorsement",
+      "title": "Robert F. Kennedy Jr. suspends his campaign and endorses Trump",
+      "frozenTitle": "Robert F. Kennedy Jr. suspends his campaign and endorses Trump",
+      "eventDate": "2024-08-23",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": "2024-08-23T19:30:00Z",
+      "evaluationAnchor": "2024-08-23T19:30:00Z",
+      "precision": "interval",
+      "timezone": "America/New_York",
+      "anchorBasis": "End of 15:00–15:30 EDT broadcast carrying Kennedy’s own speech.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": true,
+      "selectionReason": "A rival joins forces rather than another debate or poll.",
+      "expectedDirectionBeforeMeasurement": "positive",
+      "preRevealClaim": "Robert F. Kennedy Jr. suspends his campaign and endorses Trump",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": "evidence/trump-rfk.html",
+          "url": "https://transcripts.cnn.com/show/cnc/date/2024-08-23/segment/11",
+          "retrievedAt": "2026-09-06T05:12:35.427398+00:00",
+          "snapshotHash": "c8e8bdf6a92f95738c6cf6b367e259c42f559853bd22d2bb587b66e33f526125",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        }
+      ],
+      "competingExplanation": "His decision was discussed before the speech. The Democratic convention ended the previous night and overlaps the reference/anticipation period. The subsequent Trump rally and other campaign news share the post-event window. Do not rewrite the headline to explain away its negative measurement.",
+      "attributionAssessment": "mixed",
+      "researchMeasurement": {
+        "eventId": "rfk-endorsement",
+        "event": {
+          "id": "rfk-endorsement",
+          "date": "2024-08-23",
+          "title": "Robert F. Kennedy Jr. suspends his campaign and endorses Trump",
+          "expectedDirection": "positive",
+          "selectionReason": "A rival joins forces rather than another debate or poll.",
+          "informationKnownAt": "2024-08-23T19:30:00Z",
+          "anchorVerified": true,
+          "anchorBasis": "End of 15:00–15:30 EDT broadcast carrying Kennedy’s own speech."
+        },
+        "windows": {
+          "anticipation": {
+            "level": 0.518,
+            "start": "2024-08-20T07:30:00.000Z",
+            "end": "2024-08-23T07:30:00.000Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 72,
+              "tradedBuckets": 72,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 72,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "reference": {
+            "level": 0.5097499999999999,
+            "start": "2024-08-23T07:30:00.000Z",
+            "end": "2024-08-23T19:30:00.000Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 12,
+              "tradedBuckets": 12,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 12,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": 0.5017499999999999,
+            "start": "2024-08-23T19:30:00.000Z",
+            "end": "2024-08-24T01:30:00.000Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 6,
+              "tradedBuckets": 6,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 6,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "stabilized": {
+            "level": 0.498,
+            "start": "2024-08-24T13:30:00.000Z",
+            "end": "2024-08-25T07:30:00.000Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 18,
+              "tradedBuckets": 18,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 18,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "delayed": {
+            "level": 0.4955,
+            "start": "2024-08-25T19:30:00.000Z",
+            "end": "2024-08-26T19:30:00.000Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 24,
+              "tradedBuckets": 24,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 24,
+              "status": "usable",
+              "reasons": []
+            }
+          }
+        },
+        "anticipationMove": -0.00825000000000009,
+        "immediateResponse": -0.008000000000000007,
+        "shortTermResponse": -0.011749999999999927,
+        "delayedIncrement": -0.0025000000000000022,
+        "cumulativeDelayedResponse": -0.01424999999999993,
+        "logOddsResponse": -0.04700498704518492,
+        "sensitivityShare": 0,
+        "counterfactualProbability": 0.498,
+        "attributedImpact": 0,
+        "qualityStatus": "usable",
+        "ordinaryMovement": {
+          "classification": "ordinary",
+          "threshold": 0.030000000000000027,
+          "sampleCount": 113
+        },
+        "overlaps": []
+      }
+    },
+    {
+      "id": "harris-debate",
+      "title": "Harris and Trump meet in their first presidential debate",
+      "frozenTitle": "Harris and Trump meet in their first presidential debate",
+      "eventDate": "2024-09-10",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": "2024-09-11T03:58:00Z",
+      "evaluationAnchor": "2024-09-11T03:58:00Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "anchorBasis": "ABC original transcript publication; live debate occurred earlier; page later updated at 16:24:39Z. Narrow claim is only that the debate took place. First-broadcast end/archive still requires confirmation.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": true,
+      "selectionReason": "The replacement opponent’s national test.",
+      "expectedDirectionBeforeMeasurement": "ambiguous",
+      "preRevealClaim": "Harris and Trump meet in their first presidential debate",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": "evidence/trump-debate.html",
+          "url": "https://abcnews.go.com/Politics/harris-trump-presidential-debate-transcript/story?id=113560542",
+          "retrievedAt": "2026-09-06T00:26:48.699748+00:00",
+          "snapshotHash": "8a6148500e32ce4ce1b5e9a1f8b16a2303b4f0755d8e37cd9f5ff8b0c7519106",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        }
+      ],
+      "competingExplanation": "The debate is a long public broadcast and expectations move during it. Post-debate commentary, endorsements and other campaign activity share the response windows. The current transcript was updated later; no later-added quotation is included in the pre-reveal headline.",
+      "attributionAssessment": "mixed",
+      "researchMeasurement": {
+        "eventId": "harris-debate",
+        "event": {
+          "id": "harris-debate",
+          "date": "2024-09-10",
+          "title": "Harris and Trump meet in their first presidential debate",
+          "expectedDirection": "ambiguous",
+          "selectionReason": "The replacement opponent’s national test.",
+          "informationKnownAt": "2024-09-11T03:58:00Z",
+          "anchorVerified": true,
+          "anchorBasis": "ABC original transcript publication; live debate occurred earlier; page later updated at 16:24:39Z. Narrow claim is only that the debate took place. First-broadcast end/archive still requires confirmation."
+        },
+        "windows": {
+          "anticipation": {
+            "level": 0.5165,
+            "start": "2024-09-07T15:58:00.000Z",
+            "end": "2024-09-10T15:58:00.000Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 72,
+              "tradedBuckets": 72,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 72,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "reference": {
+            "level": 0.51925,
+            "start": "2024-09-10T15:58:00.000Z",
+            "end": "2024-09-11T03:58:00.000Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 12,
+              "tradedBuckets": 12,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 12,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": 0.49075,
+            "start": "2024-09-11T03:58:00.000Z",
+            "end": "2024-09-11T09:58:00.000Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 6,
+              "tradedBuckets": 6,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 6,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "stabilized": {
+            "level": 0.4935,
+            "start": "2024-09-11T21:58:00.000Z",
+            "end": "2024-09-12T15:58:00.000Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 18,
+              "tradedBuckets": 18,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 18,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "delayed": {
+            "level": 0.4915,
+            "start": "2024-09-13T03:58:00.000Z",
+            "end": "2024-09-14T03:58:00.000Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 24,
+              "tradedBuckets": 24,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 24,
+              "status": "usable",
+              "reasons": []
+            }
+          }
+        },
+        "anticipationMove": 0.00275000000000003,
+        "immediateResponse": -0.02849999999999997,
+        "shortTermResponse": -0.025749999999999995,
+        "delayedIncrement": -0.0020000000000000018,
+        "cumulativeDelayedResponse": -0.027749999999999997,
+        "logOddsResponse": -0.10303954310253428,
+        "sensitivityShare": 0,
+        "counterfactualProbability": 0.4935,
+        "attributedImpact": 0,
+        "qualityStatus": "usable",
+        "ordinaryMovement": {
+          "classification": "ordinary",
+          "threshold": 0.030000000000000027,
+          "sampleCount": 113
+        },
+        "overlaps": []
+      }
+    },
+    {
+      "id": "iowa-poll",
+      "title": "Final Iowa Poll puts Harris ahead of Trump, 47% to 44%",
+      "frozenTitle": "Final Iowa Poll puts Harris ahead of Trump, 47% to 44%",
+      "eventDate": "2024-11-02",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": "2024-11-03T00:00:00Z",
+      "evaluationAnchor": "2024-11-03T00:00:00Z",
+      "precision": "interval",
+      "timezone": "America/New_York",
+      "anchorBasis": "End of 19:00–20:00 EDT broadcast with poll publisher USA Today editor discussing 47–44 finding; actual release earlier.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": true,
+      "selectionReason": "A famous late surprise whose electoral conclusion proved wrong.",
+      "expectedDirectionBeforeMeasurement": "negative",
+      "preRevealClaim": "Final Iowa Poll puts Harris ahead of Trump, 47% to 44%",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": "evidence/trump-iowa-cnn.html",
+          "url": "https://transcripts.cnn.com/show/cnr/date/2024-11-02/segment/08",
+          "retrievedAt": "2026-09-06T05:44:52.283926+00:00",
+          "snapshotHash": "1ad80d8fe3c5fcdf853458e504dab6556557c387356d50a4941319fdb0e11152",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        }
+      ],
+      "competingExplanation": "A state poll is not a national forecast; the 47–44 finding was within its reported 3.4-point margin of error. Other final polls and election positioning coincide. The primary stabilized window ends before election day, but the delayed window reaches 19:00 EST on November 5 and can include early voting information/returns.",
+      "attributionAssessment": "mixed",
+      "researchMeasurement": {
+        "eventId": "iowa-poll",
+        "event": {
+          "id": "iowa-poll",
+          "date": "2024-11-02",
+          "title": "Final Iowa Poll puts Harris ahead of Trump, 47% to 44%",
+          "expectedDirection": "negative",
+          "selectionReason": "A famous late surprise whose electoral conclusion proved wrong.",
+          "informationKnownAt": "2024-11-03T00:00:00Z",
+          "anchorVerified": true,
+          "anchorBasis": "End of 19:00–20:00 EDT broadcast with poll publisher USA Today editor discussing 47–44 finding; actual release earlier."
+        },
+        "windows": {
+          "anticipation": {
+            "level": 0.627,
+            "start": "2024-10-30T12:00:00.000Z",
+            "end": "2024-11-02T12:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 72,
+              "tradedBuckets": 72,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 72,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "reference": {
+            "level": 0.5895,
+            "start": "2024-11-02T12:00:00.000Z",
+            "end": "2024-11-03T00:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 12,
+              "tradedBuckets": 12,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 12,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": 0.548,
+            "start": "2024-11-03T00:00:00.000Z",
+            "end": "2024-11-03T06:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 6,
+              "tradedBuckets": 6,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 6,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "stabilized": {
+            "level": 0.5549999999999999,
+            "start": "2024-11-03T18:00:00.000Z",
+            "end": "2024-11-04T12:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 18,
+              "tradedBuckets": 18,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 18,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "delayed": {
+            "level": 0.61,
+            "start": "2024-11-05T00:00:00.000Z",
+            "end": "2024-11-06T00:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 23,
+              "tradedBuckets": 23,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 0.9583333333333334,
+              "maximumGapBuckets": 1,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 23,
+              "status": "usable",
+              "reasons": []
+            }
+          }
+        },
+        "anticipationMove": -0.03749999999999998,
+        "immediateResponse": -0.04149999999999998,
+        "shortTermResponse": -0.034500000000000086,
+        "delayedIncrement": 0.05500000000000005,
+        "cumulativeDelayedResponse": 0.020499999999999963,
+        "logOddsResponse": -0.14100495950474876,
+        "sensitivityShare": 0,
+        "counterfactualProbability": 0.5549999999999999,
+        "attributedImpact": 0,
+        "qualityStatus": "usable",
+        "ordinaryMovement": {
+          "classification": "unusually large",
+          "threshold": 0.030000000000000027,
+          "sampleCount": 113
+        },
+        "overlaps": []
+      }
+    }
+  ],
+  "postRevealOnly": {
+    "ending": "AP called the presidency for Trump at 05:34 EST on November 6, 2024. The single Polymarket Trump winner contract ultimately resolved YES and records closure at 15:17:41 UTC that day. AP’s call alone was not the contract’s full three-outlet resolution rule. The election result belongs only here.",
+    "sources": [
+      {
+        "file": "evidence/ap-trump-call.html",
+        "url": "https://www.ap.org/the-definitive-source/behind-the-news/calling-the-2024-presidential-race-state-by-state/",
+        "retrievedAt": "2026-09-06T05:12:36.157709+00:00",
+        "snapshotHash": "59859fe7e8ae949bf791dc2eb98b246fd8de0fc6d4527350d36eec4f66209a76",
+        "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+      }
+    ],
+    "externalSources": [],
+    "tieGroups": [
+      [
+        "butler"
+      ],
+      [
+        "rfk-endorsement",
+        "conviction"
+      ],
+      [
+        "harris-debate",
+        "iowa-poll"
+      ]
+    ],
+    "comparisonPolicy": "Observed stabilized minus reference medians; no headline-alone causality or nonzero attribution share."
+  },
+  "integrationGates": {
+    "sourceAndOccurrenceFinalization": false,
+    "independentEditor": null,
+    "approvalTime": null,
+    "applicationChangesMade": false
+  }
+}

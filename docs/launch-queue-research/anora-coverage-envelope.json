@@ -1,0 +1,158 @@
+{
+  "purpose": "Coverage-only falsification, not score or anchor optimization. All UTC hourly bucket alignments across the Jan5 Los Angeles calendar day; between-boundary anchors select the next alignment on this hourly dataset.",
+  "checkedAt": "2026-09-06T13:57:47.714Z",
+  "maximumAnticipationCoverage": 0.25,
+  "anyPass": false,
+  "scenarios": [
+    {
+      "anchor": "2025-01-05T08:00:00.000Z",
+      "anticipationValid": 16,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-05T09:00:00.000Z",
+      "anticipationValid": 16,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-05T10:00:00.000Z",
+      "anticipationValid": 15,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-05T11:00:00.000Z",
+      "anticipationValid": 15,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-05T12:00:00.000Z",
+      "anticipationValid": 14,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-05T13:00:00.000Z",
+      "anticipationValid": 14,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-05T14:00:00.000Z",
+      "anticipationValid": 13,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-05T15:00:00.000Z",
+      "anticipationValid": 13,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-05T16:00:00.000Z",
+      "anticipationValid": 13,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-05T17:00:00.000Z",
+      "anticipationValid": 14,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-05T18:00:00.000Z",
+      "anticipationValid": 14,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-05T19:00:00.000Z",
+      "anticipationValid": 15,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-05T20:00:00.000Z",
+      "anticipationValid": 16,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-05T21:00:00.000Z",
+      "anticipationValid": 16,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-05T22:00:00.000Z",
+      "anticipationValid": 16,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-05T23:00:00.000Z",
+      "anticipationValid": 16,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-06T00:00:00.000Z",
+      "anticipationValid": 16,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-06T01:00:00.000Z",
+      "anticipationValid": 16,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-06T02:00:00.000Z",
+      "anticipationValid": 16,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-06T03:00:00.000Z",
+      "anticipationValid": 16,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-06T04:00:00.000Z",
+      "anticipationValid": 16,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-06T05:00:00.000Z",
+      "anticipationValid": 17,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-06T06:00:00.000Z",
+      "anticipationValid": 18,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-06T07:00:00.000Z",
+      "anticipationValid": 18,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    },
+    {
+      "anchor": "2025-01-06T08:00:00.000Z",
+      "anticipationValid": 17,
+      "anticipationExpected": 72,
+      "allWindowsPass": false
+    }
+  ]
+}

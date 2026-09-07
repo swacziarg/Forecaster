@@ -1,0 +1,1881 @@
+{
+  "createdAt": "2026-09-06T14:33:58.139646+00:00",
+  "scope": "Final research deliverable snapshot; this manifest excludes itself. Current source snapshots do not establish historical page immutability.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2958,
+      "sha256": "1877a1dbf1857b94690872cf4d2b09852b44d907b11123fb5c17cdc3e76e5559"
+    },
+    {
+      "path": "anchors-v1.json",
+      "bytes": 9847,
+      "sha256": "b79b452a1163c47cceb16adc2b2a4d9acf39ba8e95be41a727f6957b59914c2b"
+    },
+    {
+      "path": "anchors-v1.sha256",
+      "bytes": 82,
+      "sha256": "75d6df8219ec91832b89bc812db8951b412f99fa30aa59f22ba867e6f5e72ffc"
+    },
+    {
+      "path": "anchors-v2.json",
+      "bytes": 10209,
+      "sha256": "168609f145c5a992e911c5479b0f2c3fe9e331f72420fdb1f5dd5f86febaffa3"
+    },
+    {
+      "path": "anchors-v2.sha256",
+      "bytes": 82,
+      "sha256": "86dbc19ca91a45dcec3a2fcd778d701fa64ee0455ea75cc0b7fd6cddb9edcb93"
+    },
+    {
+      "path": "anora-coverage-envelope.json",
+      "bytes": 4155,
+      "sha256": "7dcae8510195119ad835cff68285c53ecf71812959d88d3fed0494eb79088836"
+    },
+    {
+      "path": "audit_history.py",
+      "bytes": 4885,
+      "sha256": "7b6a1deb0526dfa252f1cb8f31a86a8c17841d984f00f245c0d7fb94e2cf2b25"
+    },
+    {
+      "path": "briefs/002-tiktok.json",
+      "bytes": 56332,
+      "sha256": "dc684b3f97d90a92e7bcd821f0945c28fb97c12e26f521094efa21455c31ab7e"
+    },
+    {
+      "path": "briefs/002-tiktok.md",
+      "bytes": 14517,
+      "sha256": "976d7a8cc5c9787b06dfb39a49859ac525128e371d6bebadfa7e993725c37743"
+    },
+    {
+      "path": "briefs/003-eagles.json",
+      "bytes": 57545,
+      "sha256": "e8ad371de28f9c49c174ab0fcdbcbbc8efcb061a371a2d9aa9a731a27fbb9c89"
+    },
+    {
+      "path": "briefs/003-eagles.md",
+      "bytes": 12522,
+      "sha256": "61fe352b406a8fa4613ae608b46215e9001fd5022aff2ef8bf56577df70ce65a"
+    },
+    {
+      "path": "briefs/004-trump.json",
+      "bytes": 55655,
+      "sha256": "c42508a60c8ba1dc8e2041f15bb339fc9a860b8c7b91b535d9146c48a86822c3"
+    },
+    {
+      "path": "briefs/004-trump.md",
+      "bytes": 12874,
+      "sha256": "71f73604b6ea9c140caa161ec4837272cb5a3972725329fc155a1fdc1ea68a60"
+    },
+    {
+      "path": "briefs/005-nyc.json",
+      "bytes": 57827,
+      "sha256": "d06d8cd87b4abd9403374bd8f1b3ed137e75a60af2220448ef9b52a30e7b0228"
+    },
+    {
+      "path": "briefs/005-nyc.md",
+      "bytes": 13229,
+      "sha256": "f0bd09256879ccb7b3d28a73422c3f5021ab0d7097b6225af4141e13f0d68e0c"
+    },
+    {
+      "path": "briefs/006-anora-kalshi.json",
+      "bytes": 45625,
+      "sha256": "793c37810a630b21cec9cbaf6a23543bc395fdd2e9e0c6045c43e35c4a2e071e"
+    },
+    {
+      "path": "briefs/006-anora-kalshi.md",
+      "bytes": 14942,
+      "sha256": "9a45305f2104c1cd0d2dbcb74d230a34783925044c334e5a533bceda4aef66e7"
+    },
+    {
+      "path": "broad-screen.json",
+      "bytes": 22940,
+      "sha256": "73eca9b07c73da93e49502bd0a531001b5e50ee1e0e490db6849669451077c0b"
+    },
+    {
+      "path": "candidate-audit.md",
+      "bytes": 30375,
+      "sha256": "888aa34e5fcf816003348cad43243632073597237c80e9b2870f652128b52856"
+    },
+    {
+      "path": "catalogue.json",
+      "bytes": 51672,
+      "sha256": "b3ed13befadf1d154bd73104b1df2f696e3c914d9dd447efe9b12ea5d1e60924"
+    },
+    {
+      "path": "datasets/anora-kalshi-hourly.csv",
+      "bytes": 93699,
+      "sha256": "2e298af00751f349329d31c82579481686e68c14c4572b99557e2d41fcb9c612"
+    },
+    {
+      "path": "datasets/eagles-hourly.csv",
+      "bytes": 263327,
+      "sha256": "db134e2387c47676e7ee5911006ecc7af42f778a1d0a5db0324aa230229e0f45"
+    },
+    {
+      "path": "datasets/nyc-hourly.csv",
+      "bytes": 238853,
+      "sha256": "a2bf3f12c21289f5718135859fe0018819a595a958503a2b096a7bd474560b13"
+    },
+    {
+      "path": "datasets/tiktok-hourly.csv",
+      "bytes": 148725,
+      "sha256": "0ab5e79a468f08f1cab1ca7c13e854751f3b94d1c20b27b1be89e9f3f66e4fdd"
+    },
+    {
+      "path": "datasets/trump-hourly.csv",
+      "bytes": 230903,
+      "sha256": "7756111859cbca9f2185795608029323fb21e9505f0314d4700cf7d8b9cc579d"
+    },
+    {
+      "path": "evaluate.mjs",
+      "bytes": 2260,
+      "sha256": "5d5282ed4de87caff140cce82f90b1aa741f37b337a1041bfc426b3bccc8beda"
+    },
+    {
+      "path": "evidence/anora-critics-archive.html",
+      "bytes": 192539,
+      "sha256": "58fa3a8eaef94fbb6215a8d4f359405b53bced06e357aa628c1f23685433e46e"
+    },
+    {
+      "path": "evidence/anora-critics-winners.html",
+      "bytes": 191557,
+      "sha256": "f2ceffd027a069897ff885dfb0ddd430a4992d3f172ca2d80103ec959b59c67b"
+    },
+    {
+      "path": "evidence/anora-dga.html",
+      "bytes": 154881,
+      "sha256": "c00d712fdc3efba01b037846677e260e89990f606857d8c938194153d738bc8c"
+    },
+    {
+      "path": "evidence/anora-event.json",
+      "bytes": 85769,
+      "sha256": "5c5f259ac8b83885c7d24308ed3f4f84257b8aadec10b080709f0588eb38529e"
+    },
+    {
+      "path": "evidence/anora-globes.html",
+      "bytes": 76803,
+      "sha256": "f53c8d9622906c3f9fa4a06bc384d22346993f2ce191ff76e234ce9018902290"
+    },
+    {
+      "path": "evidence/anora-kalshi-audit.json",
+      "bytes": 66239,
+      "sha256": "d584840bf351c09f8c233a20b4cf70f9ff737cfd7e367d57eac4f4f0c168508e"
+    },
+    {
+      "path": "evidence/anora-kalshi-history.json",
+      "bytes": 465032,
+      "sha256": "edc14f4ae059ce07fdb1b500e31b332f80fbcf36165186c8798df7371a96099d"
+    },
+    {
+      "path": "evidence/anora-kalshi-market.json",
+      "bytes": 1527,
+      "sha256": "0460772ed2546c8b1dfc34e058ea91e02c9d2b83215c92a808203654cd91a0c9"
+    },
+    {
+      "path": "evidence/anora-kalshi-normalized.json",
+      "bytes": 308079,
+      "sha256": "e1f66ccc49027815e23b327fa1c1a64adf569d3072d47220e47c7b9bd7b495da"
+    },
+    {
+      "path": "evidence/anora-nominations-abc.html",
+      "bytes": 291804,
+      "sha256": "1b999c5ab902839f218391106afa32a9f47acdd51979c731b20cb4db8022093f"
+    },
+    {
+      "path": "evidence/anora-nominations-broadcaster.html",
+      "bytes": 224581,
+      "sha256": "ca8e3ff83e612c3e968007e87a18907c1eb9ccf0b6556cffc1f373df538b6592"
+    },
+    {
+      "path": "evidence/anora-pga.html",
+      "bytes": 97360,
+      "sha256": "291045fc6c0caee7666d5681e434a4b9e917a9e258fa3f5d8b2f9abf580b36aa"
+    },
+    {
+      "path": "evidence/anora-poly-audit.json",
+      "bytes": 7162,
+      "sha256": "5d4d451c0d5fb48bd8d3cf2a8223449ddd939fc433b19c22f2d56a4d9502db8c"
+    },
+    {
+      "path": "evidence/anora-poly-history-000.json",
+      "bytes": 6386,
+      "sha256": "d5343a68e2c2aab595dd0ffadf053050adc8f4dd09c59048065309c756fad67c"
+    },
+    {
+      "path": "evidence/anora-poly-history-001.json",
+      "bytes": 6400,
+      "sha256": "86d99deef74330002c689854cc42880aa75a1240855795a6bd4f3f248780a00f"
+    },
+    {
+      "path": "evidence/anora-poly-history-002.json",
+      "bytes": 6383,
+      "sha256": "67c19eb521fcf7d5f919b556998ae4895f6e437bfef03aaa45d62d7a0ce7f852"
+    },
+    {
+      "path": "evidence/anora-poly-history-003.json",
+      "bytes": 6387,
+      "sha256": "dfbaee8385330347eff94d2ee790bf935cab74d28ed7b4249ffc02592594502d"
+    },
+    {
+      "path": "evidence/anora-poly-history-004.json",
+      "bytes": 313,
+      "sha256": "0a93cd4a7c904d691aa7ddbdd0d0653189724fed323dbea6572650e3277dea0f"
+    },
+    {
+      "path": "evidence/anora-poly-normalized.json",
+      "bytes": 138020,
+      "sha256": "529738e65c1eb6baafed4f2c5692a828b85035a193dc4010978e654434f1266d"
+    },
+    {
+      "path": "evidence/anora-sag.html",
+      "bytes": 33984,
+      "sha256": "30e17053d46f2d056ec8a390a153ff4c51e8a68efa25a847d05019ab65ea3852"
+    },
+    {
+      "path": "evidence/ap-trump-call.html",
+      "bytes": 154962,
+      "sha256": "59859fe7e8ae949bf791dc2eb98b246fd8de0fc6d4527350d36eec4f66209a76"
+    },
+    {
+      "path": "evidence/bitcoin-audit.json",
+      "bytes": 37394,
+      "sha256": "c13cb3407b5d0536f0ea6eaaacf60aabb97c93c006984c4a0fc052871e112f80"
+    },
+    {
+      "path": "evidence/bitcoin-history-000.json",
+      "bytes": 6399,
+      "sha256": "4d78158ff900cb8d57b1a3c4e2f8277db2f99a27260f61d274447827e22df428"
+    },
+    {
+      "path": "evidence/bitcoin-history-001.json",
+      "bytes": 6414,
+      "sha256": "3f59a92617abd227cbfc6e1bfb144764cb4c0bce5c30a0049b8cdf1bba935ac5"
+    },
+    {
+      "path": "evidence/bitcoin-history-002.json",
+      "bytes": 6435,
+      "sha256": "3d87f50c31578b67ea0071255586363537c2e1e9d74cdaa2bfd53eb2fd7e94ad"
+    },
+    {
+      "path": "evidence/bitcoin-history-003.json",
+      "bytes": 6402,
+      "sha256": "31c0b9c536d90ab251c8912beb364bffb0f3499d8e289c1a59e90f586e06ff91"
+    },
+    {
+      "path": "evidence/bitcoin-history-004.json",
+      "bytes": 6385,
+      "sha256": "2982a3ce78fd08c8c223412f8eabad4060ff74e164b3bab250a5848d7b1912da"
+    },
+    {
+      "path": "evidence/bitcoin-history-005.json",
+      "bytes": 6386,
+      "sha256": "a47fa0edb9a0dc3d296289c7a5ae35720c5b7cde664a98afe6f454c713e84ac2"
+    },
+    {
+      "path": "evidence/bitcoin-history-006.json",
+      "bytes": 6414,
+      "sha256": "e4b55b67db255f7c864eafe62b35db4e1a95d1fe54aae284fdc69fb204d5dea4"
+    },
+    {
+      "path": "evidence/bitcoin-history-007.json",
+      "bytes": 6422,
+      "sha256": "e8ed284bfa3b931b8d73544b59f18d45613843abd126b582a8c355c3966fce0f"
+    },
+    {
+      "path": "evidence/bitcoin-history-008.json",
+      "bytes": 6400,
+      "sha256": "4513ae0efcec816e6a39698f8ad0d850807631cd871f337566d9f85bb3879adb"
+    },
+    {
+      "path": "evidence/bitcoin-history-009.json",
+      "bytes": 6400,
+      "sha256": "80e62ada80f4e601df834eeacbf57f4ca81df6dbf5df97a9414af33107d9b0ff"
+    },
+    {
+      "path": "evidence/bitcoin-history-010.json",
+      "bytes": 6395,
+      "sha256": "a40311371e91d15871d14a806171256a4b8dd919680d48f5c16cea5d1f158045"
+    },
+    {
+      "path": "evidence/bitcoin-history-011.json",
+      "bytes": 6311,
+      "sha256": "8c5ce841fae5cc04c64e052eb1932cdacc62a20762337e9ef0a1d686fe06418f"
+    },
+    {
+      "path": "evidence/bitcoin-history-012.json",
+      "bytes": 6385,
+      "sha256": "0f949cd32971986a141aa8688b93a97aebe9c1dc5f60901b96d2e93731fa32b5"
+    },
+    {
+      "path": "evidence/bitcoin-history-013.json",
+      "bytes": 6378,
+      "sha256": "36d2d252d9104bf9f4976627aa53f4a17d68cf77544580b8765cbca51c7b2dc4"
+    },
+    {
+      "path": "evidence/bitcoin-history-014.json",
+      "bytes": 6372,
+      "sha256": "ea74907d45e99f33df4d202d0857df407dd019798b9c2cadec16d36da65f9c61"
+    },
+    {
+      "path": "evidence/bitcoin-history-015.json",
+      "bytes": 6395,
+      "sha256": "7643d1672a24c8fa4bd5f7e71ba6efbaedbc2674392f36357db86a26ac560dac"
+    },
+    {
+      "path": "evidence/bitcoin-history-016.json",
+      "bytes": 6380,
+      "sha256": "b821a067611b4d0e326d6aaff164410ba5f0663b65eb4be7ae1c6844f5e5d25c"
+    },
+    {
+      "path": "evidence/bitcoin-history-017.json",
+      "bytes": 6417,
+      "sha256": "4e363679084cc9b0e3af4ed8a87283927bdfe4fdd95698be1c54d2b414ab3f71"
+    },
+    {
+      "path": "evidence/bitcoin-history-018.json",
+      "bytes": 6400,
+      "sha256": "ca632f756fd7ad95a90cc6aa07fe0078be1b1b6a08a9388d5b9b9f12cbda8a05"
+    },
+    {
+      "path": "evidence/bitcoin-history-019.json",
+      "bytes": 6384,
+      "sha256": "4485a158fd81bcbd0e973f6a342c8b45bfd59e0f7c93749367940bb0f5e71b97"
+    },
+    {
+      "path": "evidence/bitcoin-history-020.json",
+      "bytes": 6383,
+      "sha256": "68c93838b06ffb14b778ec7c9c129f9d7b10fce9a3c4db93da4c6c495747387e"
+    },
+    {
+      "path": "evidence/bitcoin-history-021.json",
+      "bytes": 6427,
+      "sha256": "eada9c672b1e85ecce0982b73ea7a95e81d138c4232c699f3782c0c4f46acb5c"
+    },
+    {
+      "path": "evidence/bitcoin-history-022.json",
+      "bytes": 6381,
+      "sha256": "7e2fcfe8eac8b35ed4c81dd610af5d7fffd031bff2a6fa8df18aa05f633a425c"
+    },
+    {
+      "path": "evidence/bitcoin-history-023.json",
+      "bytes": 6393,
+      "sha256": "8a37531f49c71f640e0775f4f03e41802b53f1147de809c89106725dcf5f0c47"
+    },
+    {
+      "path": "evidence/bitcoin-history-024.json",
+      "bytes": 6353,
+      "sha256": "14e468ce72bb08a5dfa4d6dcfcafe630dfe9801aa448bc24a2e85d0290557772"
+    },
+    {
+      "path": "evidence/bitcoin-history-025.json",
+      "bytes": 6377,
+      "sha256": "a5e3a49e6277c9ea280e994f98e144cc89ae37bab4314bdda6e6481faedb6e56"
+    },
+    {
+      "path": "evidence/bitcoin-history-026.json",
+      "bytes": 6562,
+      "sha256": "21abb8e894d4e75bec6a47f1fbb33924decb59df0fefd19c090dcdf3e3a70092"
+    },
+    {
+      "path": "evidence/bitcoin-history-027.json",
+      "bytes": 3652,
+      "sha256": "e5ca986fa2812cd7100b7217e2c975e640c7ba0ac456660f589adf34daa6e4bb"
+    },
+    {
+      "path": "evidence/bitcoin-market.json",
+      "bytes": 3946,
+      "sha256": "f248b962c27c8fda3a51a16710aa2580eca15c3d95a97aa04dda9063699d40f7"
+    },
+    {
+      "path": "evidence/bitcoin-normalized.json",
+      "bytes": 940170,
+      "sha256": "35cc50c685af0d82a38a96b1198728856f9d8f891287e882473cc39f06ffeccb"
+    },
+    {
+      "path": "evidence/canada-audit.json",
+      "bytes": 17007,
+      "sha256": "d970c39981112ecfea3ac7431b07a033a1a84e936d4d2bff28d37ff60eff9103"
+    },
+    {
+      "path": "evidence/canada-event.json",
+      "bytes": 32787,
+      "sha256": "bc7a6aee97400e175555dba7d55ce0b053e00f85f8a7455baab3c5282cd16843"
+    },
+    {
+      "path": "evidence/canada-history-000.json",
+      "bytes": 6632,
+      "sha256": "ae5a16050afe36e2747d3eea2e6bbf7b77ac24b2a38e0a407eceb11be65b2d5e"
+    },
+    {
+      "path": "evidence/canada-history-001.json",
+      "bytes": 6641,
+      "sha256": "21bf9fb499ef214cc99c083173cff968176eaf5778f7e205202d8b0350e862ac"
+    },
+    {
+      "path": "evidence/canada-history-002.json",
+      "bytes": 6578,
+      "sha256": "96de5747faf98b60e27255e90c68155bffe8d6a6a7bd4fba17014109f9592974"
+    },
+    {
+      "path": "evidence/canada-history-003.json",
+      "bytes": 6577,
+      "sha256": "043cabeb7fb543a39f609eb28f27dc23f45ea15058fb346ea1f71b525c747b5a"
+    },
+    {
+      "path": "evidence/canada-history-004.json",
+      "bytes": 6631,
+      "sha256": "386748f82e5b1c4ba5112d72bd12ced494d814baf87e952c43d50ad67af0d5eb"
+    },
+    {
+      "path": "evidence/canada-history-005.json",
+      "bytes": 6599,
+      "sha256": "cecbcc560fb118c9862e506b251f6687aece9d13590b2dbc0572dea73bb31d72"
+    },
+    {
+      "path": "evidence/canada-history-006.json",
+      "bytes": 6579,
+      "sha256": "3d4fa684d65b24c276c7aab5cf1587f8e133cea17d987882515cfecbc3d17a2f"
+    },
+    {
+      "path": "evidence/canada-history-007.json",
+      "bytes": 6616,
+      "sha256": "1508179369f73b66edd1c0960d0ff81d3f91dacb28bbd2def0d1a7757a4315aa"
+    },
+    {
+      "path": "evidence/canada-history-008.json",
+      "bytes": 6579,
+      "sha256": "7cc5dd31753f6de01d3dfc21b526f9b6f13678db0242094e326788a26da1ef7e"
+    },
+    {
+      "path": "evidence/canada-history-009.json",
+      "bytes": 6599,
+      "sha256": "d48a1ebc394d1201c28c916429a4f5b7f6d3c455c565fad6515f8ae6f2335ec8"
+    },
+    {
+      "path": "evidence/canada-history-010.json",
+      "bytes": 6604,
+      "sha256": "3c977189d2caba21ce0ee004da3227bbb18207c8dc0a1fb962a523309fd83cbe"
+    },
+    {
+      "path": "evidence/canada-history-011.json",
+      "bytes": 2298,
+      "sha256": "0fb97036ddd0b573a67c5820923c9d9a1cd0ddee6b2bda6f3c6b1c6acc0105d2"
+    },
+    {
+      "path": "evidence/canada-normalized.json",
+      "bytes": 391880,
+      "sha256": "4a4931cd09ef1d4f685610dfebf6a912353412230bbfb3b3c079968b54c1542e"
+    },
+    {
+      "path": "evidence/chiefs-audit.json",
+      "bytes": 30227,
+      "sha256": "bd1d94bd62a9d0a21978c958a271d021c881692b092e97e9b31f05a9d9a741f5"
+    },
+    {
+      "path": "evidence/chiefs-history-000.json",
+      "bytes": 6469,
+      "sha256": "6a376c9ebc706d7c0d98ac74646d71cf3e4e472b37befa0d72f27da63f52e64d"
+    },
+    {
+      "path": "evidence/chiefs-history-001.json",
+      "bytes": 6575,
+      "sha256": "ea9dc04ed777c33c37652afa7e9a7d756f69112cbf6ff30cce4822f99fa36228"
+    },
+    {
+      "path": "evidence/chiefs-history-002.json",
+      "bytes": 6612,
+      "sha256": "64e8f248ea7ee0f4c184e053f218631236209013cf48c063ce134d7a261aadfe"
+    },
+    {
+      "path": "evidence/chiefs-history-003.json",
+      "bytes": 6627,
+      "sha256": "6e17d0285f15952a627a458630c12ccd7980adea5a3f53806ed1bf3f8ae17036"
+    },
+    {
+      "path": "evidence/chiefs-history-004.json",
+      "bytes": 6578,
+      "sha256": "7b1709df48f0fde8b185b27f856447e10c2c015936c703de92cf9b2099481489"
+    },
+    {
+      "path": "evidence/chiefs-history-005.json",
+      "bytes": 6604,
+      "sha256": "ee616c4302cde8e5e53bbef72d3dc319c20d9fbff46220bc08237de492aa1724"
+    },
+    {
+      "path": "evidence/chiefs-history-006.json",
+      "bytes": 6617,
+      "sha256": "91d584456288a08aecc1fab96aeae2df2a1b91740caa549c9e55cf684839dc98"
+    },
+    {
+      "path": "evidence/chiefs-history-007.json",
+      "bytes": 6601,
+      "sha256": "61ff0c7e866637bcc25fb4c878ea4424e563d8fb6a13aa3b72b7d7cc77668674"
+    },
+    {
+      "path": "evidence/chiefs-history-008.json",
+      "bytes": 6605,
+      "sha256": "2c9af7c365424f8959f18e81db1efc172d8395c15f09befd84af88cb0d9a37c6"
+    },
+    {
+      "path": "evidence/chiefs-history-009.json",
+      "bytes": 6596,
+      "sha256": "882b2cc30712e288e2bdf653ed3fa32d9c4b5376d717e12d749db26c7d1aac43"
+    },
+    {
+      "path": "evidence/chiefs-history-010.json",
+      "bytes": 6596,
+      "sha256": "d01d1845880f99b2094534d6fb552d39c1dbc2cb1123d42d02c016a289d05aaf"
+    },
+    {
+      "path": "evidence/chiefs-history-011.json",
+      "bytes": 6581,
+      "sha256": "076865cf81a1e843b89ab2adf6b9b0921cb0e500100401f4d3cdbf181ec07636"
+    },
+    {
+      "path": "evidence/chiefs-history-012.json",
+      "bytes": 6628,
+      "sha256": "3aabc35a743d98f85c48f67811383a7c38276540af1b5c703b25afbdf28f05ca"
+    },
+    {
+      "path": "evidence/chiefs-history-013.json",
+      "bytes": 6619,
+      "sha256": "dfd7011b3d3090b3f09c4c5951dbc2ffb46fed75f6bd433be13c3adc58dce4ff"
+    },
+    {
+      "path": "evidence/chiefs-history-014.json",
+      "bytes": 6644,
+      "sha256": "a34c8da4acdc4e8e3931e69a1ea6035f7d872dc56d532ada08deabf991f1085f"
+    },
+    {
+      "path": "evidence/chiefs-history-015.json",
+      "bytes": 6612,
+      "sha256": "80c28e2e10d15be856cf3c8bef9c3ecdbe496ab5a9768ff878bc4f24fd58cbe9"
+    },
+    {
+      "path": "evidence/chiefs-history-016.json",
+      "bytes": 6623,
+      "sha256": "1490ecd970c84d4967c99f9e8676c97cc08513a1922142725774a04a45087fa1"
+    },
+    {
+      "path": "evidence/chiefs-history-017.json",
+      "bytes": 6606,
+      "sha256": "672a66296448541735612269f1e92326ca8e803058c53370e02059553de0b7b5"
+    },
+    {
+      "path": "evidence/chiefs-history-018.json",
+      "bytes": 6615,
+      "sha256": "ab8cb6df4ca1e64d888895b8e020f337abf64ef9ec99a059a2b51a3b0b3e4b53"
+    },
+    {
+      "path": "evidence/chiefs-history-019.json",
+      "bytes": 6625,
+      "sha256": "839d1a80d251f49593c4f78bfddfd63f04668e02b3acc516f0e894f6050108b7"
+    },
+    {
+      "path": "evidence/chiefs-history-020.json",
+      "bytes": 6591,
+      "sha256": "0e48f302ced01e9a45264f369a837fb66c20f2a05d3024c7709062294d459e71"
+    },
+    {
+      "path": "evidence/chiefs-history-021.json",
+      "bytes": 3762,
+      "sha256": "323f2d18cf0e323c91d0314a785122882adffbacce703eb80db484c7ef64edf4"
+    },
+    {
+      "path": "evidence/chiefs-normalized.json",
+      "bytes": 744502,
+      "sha256": "a6d18094865c07d003545baea017d32e64a425d5f3de682e187ca18b85c3193a"
+    },
+    {
+      "path": "evidence/eagles-audit.json",
+      "bytes": 30272,
+      "sha256": "305bf435928cfe40cf1161b7dea3293b9d0ba854d149e5f9f3eaf6eca25f91f3"
+    },
+    {
+      "path": "evidence/eagles-concussion.html",
+      "bytes": 371654,
+      "sha256": "5f79fe06c9cb63c5a39941ead18b390467e31e21850034e588440e9f98e45ac8"
+    },
+    {
+      "path": "evidence/eagles-ending-correct.html",
+      "bytes": 415861,
+      "sha256": "82ecaada14640f53a3860ad63f43c5d7fb3f1eab03147c87027383db34bf7de3"
+    },
+    {
+      "path": "evidence/eagles-falcons-game.html",
+      "bytes": 359670,
+      "sha256": "8fd23ad270dbf13df2872081dd31d7fc140ab8096ef0d35951ca433bee46de35"
+    },
+    {
+      "path": "evidence/eagles-falcons.html",
+      "bytes": 435743,
+      "sha256": "27350706c2f2ae189abf52b51c09854c030baf6270fdaa96b6b1331998cf2414"
+    },
+    {
+      "path": "evidence/eagles-history-000.json",
+      "bytes": 6510,
+      "sha256": "dd913123a8de6f06119526d62b7b223ba8121841936033ecdd3fdafeb9043cf5"
+    },
+    {
+      "path": "evidence/eagles-history-001.json",
+      "bytes": 6568,
+      "sha256": "c59f02e0dcedc9bba0a2e67ed1b2d3b3cacaf5e532df2d40c0a57ca229c65bce"
+    },
+    {
+      "path": "evidence/eagles-history-002.json",
+      "bytes": 6538,
+      "sha256": "c87f3159405ac60722eb130b41d83ecff94963de9b4e5af4fed204dfdb32aafd"
+    },
+    {
+      "path": "evidence/eagles-history-003.json",
+      "bytes": 6632,
+      "sha256": "1f069e61791a6640ba94d2bde6bee07ab57fcf62e7e75d3bba67f1f3b7147727"
+    },
+    {
+      "path": "evidence/eagles-history-004.json",
+      "bytes": 6624,
+      "sha256": "773fd241d42b57df185ad6d589a5339dea837c1ef32c517b73650eab991f218e"
+    },
+    {
+      "path": "evidence/eagles-history-005.json",
+      "bytes": 6634,
+      "sha256": "2bb3351785016e7d8809dce661e78955a8c8f3d8689fd937472ebc5dc70fb2ee"
+    },
+    {
+      "path": "evidence/eagles-history-006.json",
+      "bytes": 6567,
+      "sha256": "4424ba9e83bc4ecd136c5f6367df0a9e696fe7d8c7b7d4c643ac9ad8a9fbdae0"
+    },
+    {
+      "path": "evidence/eagles-history-007.json",
+      "bytes": 6626,
+      "sha256": "76884ef207dbce57a8fce7d16a7cc721a2be3652383aa42501829a29e98556cd"
+    },
+    {
+      "path": "evidence/eagles-history-008.json",
+      "bytes": 6660,
+      "sha256": "606f987579880357db43d94d2a7a66bdf0656403dd47ccc4879303841e58091d"
+    },
+    {
+      "path": "evidence/eagles-history-009.json",
+      "bytes": 6586,
+      "sha256": "4807140b73484d052a4221238cadb8f74fda8b32f46eee89dc95416bc0d8ef44"
+    },
+    {
+      "path": "evidence/eagles-history-010.json",
+      "bytes": 6639,
+      "sha256": "2a7d1eb264054c6040077ec43daac1c08d4babd7ffc27b766e3063e5870ef7fd"
+    },
+    {
+      "path": "evidence/eagles-history-011.json",
+      "bytes": 6575,
+      "sha256": "200e52e2b994af7ed7ee7d290fde840af5a070d234c0f09da42f567bb7ae0177"
+    },
+    {
+      "path": "evidence/eagles-history-012.json",
+      "bytes": 6604,
+      "sha256": "c0ca421d13f2e79ba6e358871cbd294933168516bf4aca9aeaae9804d47375de"
+    },
+    {
+      "path": "evidence/eagles-history-013.json",
+      "bytes": 6613,
+      "sha256": "576c6abc75dc65f944c412da09badaf0e418f39d17bbaca987e34cbcbbecfa65"
+    },
+    {
+      "path": "evidence/eagles-history-014.json",
+      "bytes": 6601,
+      "sha256": "593f470661a93c20d9775127ff00008d674a10694e65f857afd1496f994ac4ca"
+    },
+    {
+      "path": "evidence/eagles-history-015.json",
+      "bytes": 6618,
+      "sha256": "c26320d66b5a1f793dca3f823a4e3c2b20aea5a8694dfc7a485e04a07a5d05b9"
+    },
+    {
+      "path": "evidence/eagles-history-016.json",
+      "bytes": 6603,
+      "sha256": "76d4a6e36339a586777a8fc7eb1e5db1742303c442bc1b4035c5b0131014ffcd"
+    },
+    {
+      "path": "evidence/eagles-history-017.json",
+      "bytes": 6633,
+      "sha256": "09a5e6a8d33b1bd79dc54f6199f7b949134f90d927fff1400cbee3aaf610cace"
+    },
+    {
+      "path": "evidence/eagles-history-018.json",
+      "bytes": 6620,
+      "sha256": "073b5d1614134e4fdab7b60541eadb5757ff0dfc8b6bf016803aba78fa6c9358"
+    },
+    {
+      "path": "evidence/eagles-history-019.json",
+      "bytes": 6616,
+      "sha256": "e4f51fa71669ca6f01ea475e0f7d42e0cdf7c6cd0f1d84faa2cac0c32c9e57c3"
+    },
+    {
+      "path": "evidence/eagles-history-020.json",
+      "bytes": 6601,
+      "sha256": "1d684f7bc5381812c1d8e8948007eabd5d7e2ba918f381252c8dc4fb3cd73673"
+    },
+    {
+      "path": "evidence/eagles-history-021.json",
+      "bytes": 3772,
+      "sha256": "6a092a8b32c903dcc7c6807b22d04a90fc31926df1de71edf428f64c32977253"
+    },
+    {
+      "path": "evidence/eagles-market.json",
+      "bytes": 3418,
+      "sha256": "f575a0b8649e389a25a6c73ec6266e6db956fb477a24e0f646310e5e5d81a9f0"
+    },
+    {
+      "path": "evidence/eagles-nfc.html",
+      "bytes": 458045,
+      "sha256": "e80ff993399104e95bf4ce6c59d1e53ec6f6248364af078e7312c438d0eda23b"
+    },
+    {
+      "path": "evidence/eagles-normalized.json",
+      "bytes": 743798,
+      "sha256": "f151a62f5de76cf398be3ce16c8d229d7c9950771e53f936d3c2494063348dcc"
+    },
+    {
+      "path": "evidence/eagles-rams-record-gamebook.pdf",
+      "bytes": 151911,
+      "sha256": "eb4a67e605d61b13089030776907c4b6fbe7fbdc5f609581deb73157e4871599"
+    },
+    {
+      "path": "evidence/eagles-rams-record-gamebook.pdf.txt",
+      "bytes": 40270,
+      "sha256": "aa56ba46c4e36d94e51f601413667f4996db778d5461904144d46209e397f941"
+    },
+    {
+      "path": "evidence/eagles-rams-record.html",
+      "bytes": 436493,
+      "sha256": "c9566cc77feb320917c8004c735dd9231662b3f0b70a875a29c302df95032f0a"
+    },
+    {
+      "path": "evidence/eagles-snow.html",
+      "bytes": 366554,
+      "sha256": "5d2c8da3a895bba865a8b783ab26f7e1f73b6e203ecf5795a94eae56696b9c46"
+    },
+    {
+      "path": "evidence/fed-audit.json",
+      "bytes": 7957,
+      "sha256": "1773e83420c660b3baecda34af357717cdd97967f400b3174846306c5737f62f"
+    },
+    {
+      "path": "evidence/fed-history-000.json",
+      "bytes": 6397,
+      "sha256": "a5e59e94da144646f8156ed861b34cae5aa3afda5c1f1359f35d4b55d76d4b6e"
+    },
+    {
+      "path": "evidence/fed-history-001.json",
+      "bytes": 6431,
+      "sha256": "ade8f6cc6dd606642cb3e5d8cd6ffba738fdb65c96492328bbbf582f2152ed07"
+    },
+    {
+      "path": "evidence/fed-history-002.json",
+      "bytes": 6425,
+      "sha256": "311442c89c733ad4c767065e0c073b285b611cc17e1fa6cc778a7ac31077cc91"
+    },
+    {
+      "path": "evidence/fed-history-003.json",
+      "bytes": 6405,
+      "sha256": "e03ef979b4a1c28120676b6535d0d5bfc2b8114c7f64e727b416d16685c5fc83"
+    },
+    {
+      "path": "evidence/fed-history-004.json",
+      "bytes": 4540,
+      "sha256": "f0a208668ce63bca675e0667bbefb8829b07141783dc155cc007289f65a2b85e"
+    },
+    {
+      "path": "evidence/fed-market.json",
+      "bytes": 4168,
+      "sha256": "efaad084b9ff1cfdbdb481fd9c00450aa23c38ddf8cec55912ff2664eb9ae72e"
+    },
+    {
+      "path": "evidence/fed-normalized.json",
+      "bytes": 160740,
+      "sha256": "d1aaa956b95ab0a228c6eafb2bc6d72b91f27b614b162892197439581d716b97"
+    },
+    {
+      "path": "evidence/gta-audit.json",
+      "bytes": 45994,
+      "sha256": "e6e575bf3e8cd7210a8c4cb75a272cb2b7e9ac3534b769e1a6dd7a37b1a89392"
+    },
+    {
+      "path": "evidence/gta-event.json",
+      "bytes": 5912,
+      "sha256": "fe0bd0ac8b8e61ef8f3a4802cac1e826f2c99bf43a572aa8d813f76bd1b38450"
+    },
+    {
+      "path": "evidence/gta-history-000.json",
+      "bytes": 6365,
+      "sha256": "5a228046146001d78d3e24af21e185bd805d93b5a48f080a382e5a756c82c88a"
+    },
+    {
+      "path": "evidence/gta-history-001.json",
+      "bytes": 6374,
+      "sha256": "913d305f56973de7317197920d613e1316f56c86340c60a5b9ec24cf8dce785a"
+    },
+    {
+      "path": "evidence/gta-history-002.json",
+      "bytes": 6297,
+      "sha256": "4c6e452213e626582fe47dd6fd5918bcc71e080ca661ce54778b82748ca253c5"
+    },
+    {
+      "path": "evidence/gta-history-003.json",
+      "bytes": 6400,
+      "sha256": "10c43ab8e339a0172065cf0b5da5b51f527c7b392cc65473f5fdcaca0389322e"
+    },
+    {
+      "path": "evidence/gta-history-004.json",
+      "bytes": 6390,
+      "sha256": "1fe620a82b28a52de455d6badb92d12c3cc44d0b5195b1addab2ba5cc3136c1d"
+    },
+    {
+      "path": "evidence/gta-history-005.json",
+      "bytes": 6377,
+      "sha256": "f9bf3ec8065a5c8357930eedef147f57db66df3a19bbd5db17bfad1d7ec8650e"
+    },
+    {
+      "path": "evidence/gta-history-006.json",
+      "bytes": 6402,
+      "sha256": "84791b6e39255b701146368b0c7cb8bef337ca65b977fef8ee64e85de1ea51b1"
+    },
+    {
+      "path": "evidence/gta-history-007.json",
+      "bytes": 6434,
+      "sha256": "acb98cd7e2b2c7a3b7f0d97f750b91288e62793719dee2477d14d15c67218822"
+    },
+    {
+      "path": "evidence/gta-history-008.json",
+      "bytes": 6434,
+      "sha256": "63954d74e78ab65bb67bbc9557b9167aeac6381054a32dcd0920c34949a57902"
+    },
+    {
+      "path": "evidence/gta-history-009.json",
+      "bytes": 6533,
+      "sha256": "7180b25d2e4174aacff62073ff873d567ec1c70fb4861215b6401495b724bf2a"
+    },
+    {
+      "path": "evidence/gta-history-010.json",
+      "bytes": 6597,
+      "sha256": "8f21cef2813ef189b6fd1c210111aad33a37a9a37faa5353d712e1fffbe5a5b2"
+    },
+    {
+      "path": "evidence/gta-history-011.json",
+      "bytes": 6602,
+      "sha256": "f722e9e7dc1f2aa24e7cd79946fca72c9996318f80f3ee885e5f51d7533fa7a3"
+    },
+    {
+      "path": "evidence/gta-history-012.json",
+      "bytes": 6618,
+      "sha256": "061b44743740a45bf4730d2898e9927d832eb9bd22cedae962ed1458d1d8006b"
+    },
+    {
+      "path": "evidence/gta-history-013.json",
+      "bytes": 6615,
+      "sha256": "68c4b2a683fbfb597738cf47c0b627ba0ced313584ca53688db445b1368393b4"
+    },
+    {
+      "path": "evidence/gta-history-014.json",
+      "bytes": 6636,
+      "sha256": "a8e35143a214264c976b8315f17a028cdd838fcc69c7d56f127b6d1158fae032"
+    },
+    {
+      "path": "evidence/gta-history-015.json",
+      "bytes": 6620,
+      "sha256": "bec81d0b775096263c157188ff8bb95797862ff1ee61f68f9db97a6b74f516c2"
+    },
+    {
+      "path": "evidence/gta-history-016.json",
+      "bytes": 6595,
+      "sha256": "fe90f4050dae7b85c16d9015141b46d77257445f59747933712dfc74b0d68c00"
+    },
+    {
+      "path": "evidence/gta-history-017.json",
+      "bytes": 6625,
+      "sha256": "1e90b4c09d7cfed57889bc30bbeaf47d74dac715e2dbc7ac20f47e7aec36ac2b"
+    },
+    {
+      "path": "evidence/gta-history-018.json",
+      "bytes": 6597,
+      "sha256": "4502e78acd1cfd5d81f0855519a031a7673d2b1c9dee40b9245cb4c7bf1c1b1d"
+    },
+    {
+      "path": "evidence/gta-history-019.json",
+      "bytes": 6604,
+      "sha256": "c448fe9cdb776bb81e0565a741c423648576f8414fd2ddca6accfc6870ebdd06"
+    },
+    {
+      "path": "evidence/gta-history-020.json",
+      "bytes": 6629,
+      "sha256": "cc83cb76c5e31e92afa984acfc1d10ff71a2dfb78999608c987be80fcc4ee7fc"
+    },
+    {
+      "path": "evidence/gta-history-021.json",
+      "bytes": 6593,
+      "sha256": "cd9f520139a895f07fff564290f762df99bd051a2ac0749127268e965df9cdef"
+    },
+    {
+      "path": "evidence/gta-history-022.json",
+      "bytes": 6600,
+      "sha256": "38bdc5e9a7ae0257c01746bf3edf5cc6503554cfbbe704872f537ebb5cf9ad22"
+    },
+    {
+      "path": "evidence/gta-history-023.json",
+      "bytes": 6579,
+      "sha256": "c4d44f5a1b8d53fc175682f5e9fa69e2e758b196cd6ee79696b91794cd53725d"
+    },
+    {
+      "path": "evidence/gta-history-024.json",
+      "bytes": 6639,
+      "sha256": "bc942dab1f1d929cd693c5286dc85cc092685276cd3331ad9db3fc14766b8d3b"
+    },
+    {
+      "path": "evidence/gta-history-025.json",
+      "bytes": 6609,
+      "sha256": "0591effd9e629aff7c8e6c9863cde11e6f1624f158da3de76a64106e4dd64e3d"
+    },
+    {
+      "path": "evidence/gta-history-026.json",
+      "bytes": 6560,
+      "sha256": "49b6ffe6949944cdb461be155e5720881cca78659e960ecb8c05aafd5eb5771d"
+    },
+    {
+      "path": "evidence/gta-history-027.json",
+      "bytes": 6533,
+      "sha256": "287279d3bfa7d8c29da424bb10ed18950bd89e6361e5a012710339751e91b94b"
+    },
+    {
+      "path": "evidence/gta-history-028.json",
+      "bytes": 6607,
+      "sha256": "99cc84a345c1ee654727a6905c8ca63a13f1176a0118b7b00e174d50f0b2a007"
+    },
+    {
+      "path": "evidence/gta-history-029.json",
+      "bytes": 6684,
+      "sha256": "5a300f19ee30ebe5b2f9ba061f4f292331e1513d0efdbfed65be2169e12e06a0"
+    },
+    {
+      "path": "evidence/gta-history-030.json",
+      "bytes": 6659,
+      "sha256": "93be70356a8504acdda424c41882be76a752d2d7c6d4b85742fdd392bcfe31a2"
+    },
+    {
+      "path": "evidence/gta-history-031.json",
+      "bytes": 6612,
+      "sha256": "5d04fde41dfd8e41c147a4d63cfb8df4a4a05bdd42da77460c9398b714a0efa1"
+    },
+    {
+      "path": "evidence/gta-history-032.json",
+      "bytes": 6644,
+      "sha256": "df387236237fc7dcf08b93e0984c2f53137b3c3125946ccd9e9d40235a4a03ba"
+    },
+    {
+      "path": "evidence/gta-history-033.json",
+      "bytes": 4807,
+      "sha256": "78a7194b266c3b7a9fdc6430f2c26c114360b8f31212c44844649810ed1ceba6"
+    },
+    {
+      "path": "evidence/gta-normalized.json",
+      "bytes": 1160455,
+      "sha256": "049bc5e680848cafff2aeadae090948b6078489c1dcd08c62635725071734034"
+    },
+    {
+      "path": "evidence/kalshi-history-doc.html",
+      "bytes": 418067,
+      "sha256": "175ed74659cd673643f5fb5d9729809cf5fd97508f722a36b1b863e1da5ae8c4"
+    },
+    {
+      "path": "evidence/kalshi25.json",
+      "bytes": 26439,
+      "sha256": "bf9a2b4d2a822ee2d1b49a1fcc6de3c91a578bddc87b1f70304d24162f9390b3"
+    },
+    {
+      "path": "evidence/kalshi26.json",
+      "bytes": 1662,
+      "sha256": "151d9ff463871c5d7c0598a1b30e3d2457899cbf2040b85941afee36ca73292c"
+    },
+    {
+      "path": "evidence/nba-event.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "evidence/nyc-adams-archive.html",
+      "bytes": 13880,
+      "sha256": "bde50921be3d427d450aa5bbfe1ec2e01bdbe43bde55deefbc0bce47dd74d6fa"
+    },
+    {
+      "path": "evidence/nyc-adams-court.pdf",
+      "bytes": 3386516,
+      "sha256": "e7153916b8004562a4a7da97f4a5dcae25e6328a3071972d01a4b264792d8149"
+    },
+    {
+      "path": "evidence/nyc-adams-ny1.html",
+      "bytes": 100634,
+      "sha256": "d45098d3aaf4d8aa26ae2982274ad2e704aaabd006ed13dd7061d9501e1673be"
+    },
+    {
+      "path": "evidence/nyc-aoc-post.json",
+      "bytes": 2631,
+      "sha256": "5485b67f4a3d31aadd21e48e867de15f90e45b59c4cf6ac3b4e898c9482c1454"
+    },
+    {
+      "path": "evidence/nyc-audit.json",
+      "bytes": 27989,
+      "sha256": "bb6037ec6a5bdbce4ed5e460656e3d608a3a26a0450167e8ddcc83f222773ab1"
+    },
+    {
+      "path": "evidence/nyc-cuomo.html",
+      "bytes": 102855,
+      "sha256": "9145f6f540b7d79181de43fde006d1a679ee04fdd90e7f1bbb4e4a1f59254699"
+    },
+    {
+      "path": "evidence/nyc-ending-official.html",
+      "bytes": 273017,
+      "sha256": "a2d160e2a2c7b1008a13d2738ca39f89092e2d5ebbb4cd4369cb5470d153ec78"
+    },
+    {
+      "path": "evidence/nyc-ending-recap.pdf",
+      "bytes": 231156,
+      "sha256": "f4293ed11e93c297ecfd0e89ec693c100b0b563de9490eaaa92b199997ab22b2"
+    },
+    {
+      "path": "evidence/nyc-ending-recap.pdf.txt",
+      "bytes": 126115,
+      "sha256": "d01535dc3195ab320b064cc54b2b66bda515d0b3fb8bdf119b7ba0b5aaac2045"
+    },
+    {
+      "path": "evidence/nyc-event.json",
+      "bytes": 66680,
+      "sha256": "0fc388ea6ee570076fea0cb6be694c02138f19d57b39ce167381a08db8e06b01"
+    },
+    {
+      "path": "evidence/nyc-history-000.json",
+      "bytes": 6281,
+      "sha256": "629c4a436b37ca039813dd8dc2bf7b528d22c4337126d16d1e8d8908bc136cb7"
+    },
+    {
+      "path": "evidence/nyc-history-001.json",
+      "bytes": 6255,
+      "sha256": "f760218fae5fdbef932fadab0311241599d19329cfbc4e0470934927a28260ee"
+    },
+    {
+      "path": "evidence/nyc-history-002.json",
+      "bytes": 6337,
+      "sha256": "d51af771a7e2b885b46b022cb480beedfacf412421daeddff7fb466b2d7f7dad"
+    },
+    {
+      "path": "evidence/nyc-history-003.json",
+      "bytes": 6567,
+      "sha256": "2960579a1222f66d169b623eaeb2c9f43930e3134e1cd4c0b85a4ddc9c248c82"
+    },
+    {
+      "path": "evidence/nyc-history-004.json",
+      "bytes": 6593,
+      "sha256": "06ab443283fde601419e4494867f139cc9626e635cd355e3445726e7ffafb70f"
+    },
+    {
+      "path": "evidence/nyc-history-005.json",
+      "bytes": 6605,
+      "sha256": "806c9128f13252d65440f9149b1046215f2731da883f3507c4f3218af66a9aaf"
+    },
+    {
+      "path": "evidence/nyc-history-006.json",
+      "bytes": 6623,
+      "sha256": "782975360102c11a7d5b724aa4462af5c58964e50aa13f4d2e7d8c8b562f1e43"
+    },
+    {
+      "path": "evidence/nyc-history-007.json",
+      "bytes": 6625,
+      "sha256": "4e8e539db593f730808cfec5b20628e2c57afd5511258dbae3edc5f9516c8921"
+    },
+    {
+      "path": "evidence/nyc-history-008.json",
+      "bytes": 6619,
+      "sha256": "6d0a98bf13ce6af1e90dc4aceac577b4756031fb1f79e7930e0a26bc6fa91658"
+    },
+    {
+      "path": "evidence/nyc-history-009.json",
+      "bytes": 6661,
+      "sha256": "0c2acb2492805be21eaa2ac2211fda4ec0311a0507e87f9ea848d58ff6641720"
+    },
+    {
+      "path": "evidence/nyc-history-010.json",
+      "bytes": 6581,
+      "sha256": "f59411635d31352346e82b160d52879278b089e83aa3cbff814995d3140d08ae"
+    },
+    {
+      "path": "evidence/nyc-history-011.json",
+      "bytes": 6607,
+      "sha256": "be6ff1d492f9b7d2c3c107da77b9d3cfa2397c12c16491ad7705c124ce84f702"
+    },
+    {
+      "path": "evidence/nyc-history-012.json",
+      "bytes": 6664,
+      "sha256": "8f0733f199acc9eb657e77751e6a0b9d839bb737276390e19f1297ff54c31deb"
+    },
+    {
+      "path": "evidence/nyc-history-013.json",
+      "bytes": 6616,
+      "sha256": "344dd4322bbd38d658f497978238be13caf514b9d0dd7ca5ed494a12bf65cbfb"
+    },
+    {
+      "path": "evidence/nyc-history-014.json",
+      "bytes": 6554,
+      "sha256": "0bc0ce34e2469f101de21602f97438a20182e6646cfb57f85571109c532c61b2"
+    },
+    {
+      "path": "evidence/nyc-history-015.json",
+      "bytes": 6656,
+      "sha256": "b9118b82170b36f115e5389afb2b461cbcf61fbb711724b99fa93ee6a72e33a4"
+    },
+    {
+      "path": "evidence/nyc-history-016.json",
+      "bytes": 6644,
+      "sha256": "444f1aedb2ec7d31568e79b8b62c446c4fb9964106ef758fe8dda3c0ec58e4b0"
+    },
+    {
+      "path": "evidence/nyc-history-017.json",
+      "bytes": 6686,
+      "sha256": "49a1a5b0f112cbec3b0f2ee74c5a9735e367c950fb9827281123a871c7f9e027"
+    },
+    {
+      "path": "evidence/nyc-history-018.json",
+      "bytes": 6590,
+      "sha256": "47bbd0d8afa7ebd051042d5a7aca933c9f88105db2803f29823cf6d3df1551aa"
+    },
+    {
+      "path": "evidence/nyc-history-019.json",
+      "bytes": 4387,
+      "sha256": "14143555a06efb8d208ea2fdfcb261ba588be74afbe1e349aa1693659860a4db"
+    },
+    {
+      "path": "evidence/nyc-hochul.html",
+      "bytes": 53241,
+      "sha256": "d08b3d2e38a39cf560fb1324ad60416e86f50b33cf87d7395a78506bb2e11f4b"
+    },
+    {
+      "path": "evidence/nyc-market-page.html",
+      "bytes": 761307,
+      "sha256": "e6e3a0c76545d0b9dea89fa4cdcc13da2f5c0ee2545ab9c528b629385ac74370"
+    },
+    {
+      "path": "evidence/nyc-normalized.json",
+      "bytes": 676916,
+      "sha256": "53e961b3828d1d393f346b8b65509fee2db504749836dabc36c20df7f3b6ed03"
+    },
+    {
+      "path": "evidence/nyc-primary-cnn-index.html",
+      "bytes": 22173,
+      "sha256": "9e821bc3ff4273dad743590ba29aead89dc665f9e769dc301d98969f5a4a4ba6"
+    },
+    {
+      "path": "evidence/nyc-primary-cnn.html",
+      "bytes": 52207,
+      "sha256": "d5292cf4d645506a17e013a8ba59f7cb93ce7035755fd5d4ff5b3c92c45f08f2"
+    },
+    {
+      "path": "evidence/nyc-primary-fox.html",
+      "bytes": 177291,
+      "sha256": "238efdf81aa93865d0ec1a6f9b94bc51fcc6c8002e7584e1e24494f089daae4f"
+    },
+    {
+      "path": "evidence/oscars26-audit.json",
+      "bytes": 24683,
+      "sha256": "9f2056a91125170cb9be649c82a5a06d4b5acf457cf370b2f851b678b57bb897"
+    },
+    {
+      "path": "evidence/oscars26-history.json",
+      "bytes": 1374570,
+      "sha256": "b1f4bf26a54a512af052fd91af8272ef820881570b4a6d37db673cf5150f1131"
+    },
+    {
+      "path": "evidence/oscars26-normalized.json",
+      "bytes": 912496,
+      "sha256": "c33cc77f517d02b61277d2931ba4f1c638e7449f372b397bdb2aeac50cfd7a66"
+    },
+    {
+      "path": "evidence/superbowl-event.json",
+      "bytes": 107058,
+      "sha256": "aa8a5d707699884c7abcfde7e39b0621976cc735b97a989ec023ddf754149dd7"
+    },
+    {
+      "path": "evidence/taylor-audit.json",
+      "bytes": 32439,
+      "sha256": "cfb0fb72d5cb48c5be4e002254036da3cb25aa184054275f01ec6628d2f0ae1c"
+    },
+    {
+      "path": "evidence/taylor-event.json",
+      "bytes": 6025,
+      "sha256": "44af53f5e248a99abe2d385a2659d89ecb4e02b4d5da6ca7441d2f320c22281b"
+    },
+    {
+      "path": "evidence/taylor-history-000.json",
+      "bytes": 6389,
+      "sha256": "1d9266396cfc664bc72e7bbc324dd863cf50bd39831094e226bd53d20886f970"
+    },
+    {
+      "path": "evidence/taylor-history-001.json",
+      "bytes": 6438,
+      "sha256": "5169ecc9d8d12abf524db03108b92d7e71fa49c9f6b9e7ed36ad032b223ab00c"
+    },
+    {
+      "path": "evidence/taylor-history-002.json",
+      "bytes": 6404,
+      "sha256": "06d05483cef8762807b9c95bee47bf537eb6eeceb5c46544900587c2387cae73"
+    },
+    {
+      "path": "evidence/taylor-history-003.json",
+      "bytes": 6362,
+      "sha256": "83e98b435f8c9839c6b3abd2c1bdaf298d20a8edc3d684802edba67d52a6c99e"
+    },
+    {
+      "path": "evidence/taylor-history-004.json",
+      "bytes": 6399,
+      "sha256": "efc46f16802f430e971160c6316f4b5aacfd0e8adce06987daf6ba42ea495582"
+    },
+    {
+      "path": "evidence/taylor-history-005.json",
+      "bytes": 6459,
+      "sha256": "189b2689c8419ea16e8a7ac4acc8f94858a8f1aecc5086a6dff476d969388b06"
+    },
+    {
+      "path": "evidence/taylor-history-006.json",
+      "bytes": 6457,
+      "sha256": "b0ae456ba25b01c35ae93416d881bac2db9e65fc42254c0f1641854e21bb05b1"
+    },
+    {
+      "path": "evidence/taylor-history-007.json",
+      "bytes": 6358,
+      "sha256": "7bee486845c18b1dae30815a28d3e1dcaf80b0fc20f7ef0888760951bc18780c"
+    },
+    {
+      "path": "evidence/taylor-history-008.json",
+      "bytes": 6449,
+      "sha256": "9b5832c5bab7083d3c7f66b78bfeebbef980135bb65e346667adc51ed7170e7b"
+    },
+    {
+      "path": "evidence/taylor-history-009.json",
+      "bytes": 6386,
+      "sha256": "704d345e51a8635e2163ca016762ef72c2b7ff94023da950b2e2d7462238e09e"
+    },
+    {
+      "path": "evidence/taylor-history-010.json",
+      "bytes": 6396,
+      "sha256": "46e1c8fcca572a8adbacdbfdda4d940bfd188cd2afc714ca452ae14d354d1f3a"
+    },
+    {
+      "path": "evidence/taylor-history-011.json",
+      "bytes": 6388,
+      "sha256": "35b9bf8e545dd6814a2cad344a856bfcf913b7169ba58adf545cdad0bbfb26c8"
+    },
+    {
+      "path": "evidence/taylor-history-012.json",
+      "bytes": 6420,
+      "sha256": "a144fff7985afc9b2e017b5579b812d5e69e0133b81593ccc55e5cf9c59ef895"
+    },
+    {
+      "path": "evidence/taylor-history-013.json",
+      "bytes": 6383,
+      "sha256": "6da7024e342f1bb1eb4f655eca3501858b85c568ca7d08d85d93e5291d076ff9"
+    },
+    {
+      "path": "evidence/taylor-history-014.json",
+      "bytes": 6367,
+      "sha256": "2727fd5d8d136cc67e63aa49ab21265c20cef1ffb02a812fbc371715f1662890"
+    },
+    {
+      "path": "evidence/taylor-history-015.json",
+      "bytes": 6395,
+      "sha256": "0e1cf4c46c4d752f839f204320b5619cecbc46c5afbee9760e3da0fe3013b2de"
+    },
+    {
+      "path": "evidence/taylor-history-016.json",
+      "bytes": 6415,
+      "sha256": "f989c04b40d86400d65cc092e9db7f2a3a01d99c23f0ae25cf66bba770dcae76"
+    },
+    {
+      "path": "evidence/taylor-history-017.json",
+      "bytes": 6431,
+      "sha256": "aecb4c3f8cb1313f99d357c6f86087ff1142a0dcbdb095f244b044fadcef2cf7"
+    },
+    {
+      "path": "evidence/taylor-history-018.json",
+      "bytes": 6331,
+      "sha256": "006f83573800a399938690a17834c1659ad96090976d381b68f03c2e412e3a5a"
+    },
+    {
+      "path": "evidence/taylor-history-019.json",
+      "bytes": 6410,
+      "sha256": "850d26f524a67ae5d45e8312dd01e1f097a64686d981e26f899985e9139906d2"
+    },
+    {
+      "path": "evidence/taylor-history-020.json",
+      "bytes": 6453,
+      "sha256": "dcf9fb5f5bf239186ffb9753c4badaa17e74fd52e88b2378ac1cde793fbb03d6"
+    },
+    {
+      "path": "evidence/taylor-history-021.json",
+      "bytes": 6424,
+      "sha256": "eaad6d653510c83677171d4a1f68d4132d824dec9e46b33d75ec577f42085f74"
+    },
+    {
+      "path": "evidence/taylor-history-022.json",
+      "bytes": 6426,
+      "sha256": "0ce69e543d6ac48c19e59ad40a4708f1dc719df339249d79d86d32caca39146b"
+    },
+    {
+      "path": "evidence/taylor-history-023.json",
+      "bytes": 5205,
+      "sha256": "7386189b67769b10868d0380260d7dbb44ba939c9823e58195d36aed12aa1b6d"
+    },
+    {
+      "path": "evidence/taylor-normalized.json",
+      "bytes": 812859,
+      "sha256": "7bbca8892da2ce701c9ea1debfc6316d2cb8df00359324f4611b57710343e3ed"
+    },
+    {
+      "path": "evidence/tiktok-argument-page.html",
+      "bytes": 42956,
+      "sha256": "d307228128786d13f63369758fbb9c37f2a6f6e23c174704b06e7d59e83ccc7c"
+    },
+    {
+      "path": "evidence/tiktok-argument.pdf",
+      "bytes": 999112,
+      "sha256": "5d1a6c69821a99f3c7ec584565d9bb24f0728f1f6ed86a7bf84a805755ee01a7"
+    },
+    {
+      "path": "evidence/tiktok-argument.pdf.txt",
+      "bytes": 402647,
+      "sha256": "a6e9bd0366a28ed8c38286bbbf91bb92aebfc8dd73d3ab80fb5f6bc78bec911f"
+    },
+    {
+      "path": "evidence/tiktok-audit.json",
+      "bytes": 18093,
+      "sha256": "4b0867c7f1698eb0b89b12d42b096faa30187fabfd5c85cfbb1f8423c9bd16a3"
+    },
+    {
+      "path": "evidence/tiktok-dec18-cnn.html",
+      "bytes": 24809,
+      "sha256": "a470e097e7693e7ce656bef18a155bc6b93b6244359229cd2b8c208af5684e33"
+    },
+    {
+      "path": "evidence/tiktok-dec18.html",
+      "bytes": 71086,
+      "sha256": "3fbccf4310df8a70c5c847157b9daa3a054e200a5bded31b1defc8497808ef16"
+    },
+    {
+      "path": "evidence/tiktok-dec27-cnn.html",
+      "bytes": 46605,
+      "sha256": "7b0bf9ab163118767a534a6cd117e9d32c1785aa78bc3d151e33aba35db10b52"
+    },
+    {
+      "path": "evidence/tiktok-dec6-cnn.html",
+      "bytes": 26263,
+      "sha256": "d21938cb0ef0547b9110018a70725225588a9ce1fceb619e1a44dad13bbb9b32"
+    },
+    {
+      "path": "evidence/tiktok-dec6-correct.html",
+      "bytes": 24857,
+      "sha256": "52902b58cac228a120b8d2153602656dbe9f92417fe4128bbded0d92abf8fad9"
+    },
+    {
+      "path": "evidence/tiktok-dec6-index.html",
+      "bytes": 22955,
+      "sha256": "24c18291e1c9fcb37e169702e5389ad3157a1fbc6716a7c48be69d027e889197"
+    },
+    {
+      "path": "evidence/tiktok-dec6.html",
+      "bytes": 71071,
+      "sha256": "d1c4027dda672ebdf6e627ead1b19cd94c4eebc0df77ff7bfefa3e32872287b9"
+    },
+    {
+      "path": "evidence/tiktok-docket.html",
+      "bytes": 108189,
+      "sha256": "260e61073e913fccc625ceaad5c41425cbd5b93ae1ab2d818056ef098d290e60"
+    },
+    {
+      "path": "evidence/tiktok-end-cnn-index.html",
+      "bytes": 13909,
+      "sha256": "27ed8359a6afa73b443ce18690ffb03a501a293832ea8e574847c10223668170"
+    },
+    {
+      "path": "evidence/tiktok-ending.html",
+      "bytes": 53228,
+      "sha256": "d8cc9e3b16fb6160586876a6a0fe69eba909dc64fa0c5ac3f0e4cb1b292ba7dd"
+    },
+    {
+      "path": "evidence/tiktok-event.json",
+      "bytes": 7350,
+      "sha256": "8f53cb8c1e1e86868821a24244dd48a7240780720e0ac770cce4bce024d0eadd"
+    },
+    {
+      "path": "evidence/tiktok-history-000.json",
+      "bytes": 6333,
+      "sha256": "3447b535f53fffb25ff07c6849ac2b97e3ab099278eaaaa434e895c0baeba4ea"
+    },
+    {
+      "path": "evidence/tiktok-history-001.json",
+      "bytes": 6402,
+      "sha256": "54bb2e2590081648b3e3659617dc2ee48362bd47dd74e2d6d1a2e9ce0a626528"
+    },
+    {
+      "path": "evidence/tiktok-history-002.json",
+      "bytes": 6408,
+      "sha256": "b85087e701e7beb27bbe11635a06edaf7e615a5ae745434d5b0739bd6c9db9e3"
+    },
+    {
+      "path": "evidence/tiktok-history-003.json",
+      "bytes": 6345,
+      "sha256": "7937d5f9d7b0731b4977c6f80d7242af3652ed27dfeb709c2fcf463c16bebc35"
+    },
+    {
+      "path": "evidence/tiktok-history-004.json",
+      "bytes": 6402,
+      "sha256": "1ba402e8dfc1e2fbf496b6a74c2ba87f3cdf4e2962eabe82925be5fbdaecedb9"
+    },
+    {
+      "path": "evidence/tiktok-history-005.json",
+      "bytes": 6367,
+      "sha256": "eeadecda9d5965b54493b5230589252f81ca71011110fd619ff39f5fbde1dccb"
+    },
+    {
+      "path": "evidence/tiktok-history-006.json",
+      "bytes": 6393,
+      "sha256": "609b9a53f95a3c42eb0f42d4214f0372b3a8658f3797e49093b8444811114a4a"
+    },
+    {
+      "path": "evidence/tiktok-history-007.json",
+      "bytes": 6407,
+      "sha256": "727b484fa052352db7763ed1d528f3ca85521ab41393ee752e5c25cd00dcdefc"
+    },
+    {
+      "path": "evidence/tiktok-history-008.json",
+      "bytes": 6402,
+      "sha256": "01625b2b32cb82c10d2e5b15cefc7b89eaaed0a7092e09d696888e3b4e1977de"
+    },
+    {
+      "path": "evidence/tiktok-history-009.json",
+      "bytes": 6410,
+      "sha256": "2bff111fa1e4fdd394d10863e5cb348e3804499e1105c39d9fa40e5fc6b74527"
+    },
+    {
+      "path": "evidence/tiktok-history-010.json",
+      "bytes": 6408,
+      "sha256": "f51ba8730fe4dbd54d5f9c6b413b3c7bd9b76261d7a0ce538f0b7250c17bdd41"
+    },
+    {
+      "path": "evidence/tiktok-history-011.json",
+      "bytes": 6390,
+      "sha256": "4b3d95f86332a2eca9eb863a0f5d8a25bb2831a51fe71f034fbd3499311f4ecb"
+    },
+    {
+      "path": "evidence/tiktok-history-012.json",
+      "bytes": 3918,
+      "sha256": "8b3226ab32eeb381803fb329dc9187d57d2ee74eb6f3972b5e42e28b9d39e430"
+    },
+    {
+      "path": "evidence/tiktok-market.html",
+      "bytes": 619583,
+      "sha256": "06562a3ddc0cb1a9a271023e78e8a19e7de1c312adc836e1fd66a14a14811772"
+    },
+    {
+      "path": "evidence/tiktok-normalized.json",
+      "bytes": 429804,
+      "sha256": "caf50a435fa87b927fa197b4a03c472bf7cba94de020c5879668b12036e90bd7"
+    },
+    {
+      "path": "evidence/tiktok-opinion.pdf",
+      "bytes": 169103,
+      "sha256": "780f07a100107f3d2ef4b2e0cc5901f476b583bf45ef4c25cea468dd17c419c4"
+    },
+    {
+      "path": "evidence/tiktok-order.pdf",
+      "bytes": 39850,
+      "sha256": "51a1aa500e74004cd97f85e58979c1fc5073e175722ac38e6c85b90e850e7a91"
+    },
+    {
+      "path": "evidence/tiktok-trump-brief.pdf",
+      "bytes": 253369,
+      "sha256": "b3074d8875c444b280b47951125182b00e87cf4ee21968987630d4d393500673"
+    },
+    {
+      "path": "evidence/tiktok-trump-brief.pdf.txt",
+      "bytes": 37754,
+      "sha256": "e0402c4d93c32da673db89f29ac44180bfbea2d2eeaa7efd131247e6129740cf"
+    },
+    {
+      "path": "evidence/trump-audit.json",
+      "bytes": 26704,
+      "sha256": "bb4d38a3c1345bcd503f5ed6f3940eaef58bd669991c13d31c5b1013c18e668b"
+    },
+    {
+      "path": "evidence/trump-conviction-index.html",
+      "bytes": 21745,
+      "sha256": "36d961b9dfa7e7ef7a59adcacd5b7ac791105adcfe7217d6be54e70f3d81b7e4"
+    },
+    {
+      "path": "evidence/trump-conviction.html",
+      "bytes": 71058,
+      "sha256": "f54b40c115dce68ee8e5aec94164807c530b122271e73f14821f9bcad9c356d3"
+    },
+    {
+      "path": "evidence/trump-debate.html",
+      "bytes": 938235,
+      "sha256": "8a6148500e32ce4ce1b5e9a1f8b16a2303b4f0755d8e37cd9f5ff8b0c7519106"
+    },
+    {
+      "path": "evidence/trump-history-000.json",
+      "bytes": 6467,
+      "sha256": "180a3437aa20aac3ef92484d9d452002ca9835e6a766f34074f297dc25c08c9c"
+    },
+    {
+      "path": "evidence/trump-history-001.json",
+      "bytes": 6490,
+      "sha256": "32705397ecaae6f5cdc1cb98777e6c70660a2400983a78aae671288232b5f8ba"
+    },
+    {
+      "path": "evidence/trump-history-002.json",
+      "bytes": 6480,
+      "sha256": "f1eff306eb391315de342cb18619c0540bc4555f54105fa9105e2f4bcb5f36f7"
+    },
+    {
+      "path": "evidence/trump-history-003.json",
+      "bytes": 6492,
+      "sha256": "9197e6870925771d739324d0b4dd47ebb8b830d5937798b8750b418e35c040e1"
+    },
+    {
+      "path": "evidence/trump-history-004.json",
+      "bytes": 6494,
+      "sha256": "f7ddb6106d933a1473462d1c544da9930e44ad1908b440372c7d31170c164be4"
+    },
+    {
+      "path": "evidence/trump-history-005.json",
+      "bytes": 6492,
+      "sha256": "93c595cdbe4898ded82066205f947f85f080154d3a54876ab87d46dae1fa06ba"
+    },
+    {
+      "path": "evidence/trump-history-006.json",
+      "bytes": 6485,
+      "sha256": "30e1faeb009c94de2c1f504a43abfd807e7e58a526d92db691e01223e7c71ba8"
+    },
+    {
+      "path": "evidence/trump-history-007.json",
+      "bytes": 6475,
+      "sha256": "51f704f78c42b437e262b6e4f636b5f40fed52c03446d837a252d68d31564fbc"
+    },
+    {
+      "path": "evidence/trump-history-008.json",
+      "bytes": 6449,
+      "sha256": "e13bd259328ec4d25784a76c8296603f7aca81dd80812ae47057cefc622f2205"
+    },
+    {
+      "path": "evidence/trump-history-009.json",
+      "bytes": 6489,
+      "sha256": "1814aa4a7e0956ee5cbbb1266657b0d9488595cf3f62936a6073f70f91f1335b"
+    },
+    {
+      "path": "evidence/trump-history-010.json",
+      "bytes": 6636,
+      "sha256": "11b0fa74807dcbaac3e7dcd5e7fc83f808838aef093730ec0855fd0b096de7ed"
+    },
+    {
+      "path": "evidence/trump-history-011.json",
+      "bytes": 6646,
+      "sha256": "8a40a71ae4435dadc1553bef593951ea1d6202141ebff9159d973ddb73a565f1"
+    },
+    {
+      "path": "evidence/trump-history-012.json",
+      "bytes": 6711,
+      "sha256": "ecde9f636bfdf58c9567932861cc4983d881a9d6561934fc2dad023bd22a1acf"
+    },
+    {
+      "path": "evidence/trump-history-013.json",
+      "bytes": 6684,
+      "sha256": "df3415d1949e353fc7d05d689115f28cee71f5f7f74a94ec61be247c155aa866"
+    },
+    {
+      "path": "evidence/trump-history-014.json",
+      "bytes": 6694,
+      "sha256": "79e0f92a01c662cd6df1defaabee3fe413e4a8ccf75e2b89574ea412543ea48e"
+    },
+    {
+      "path": "evidence/trump-history-015.json",
+      "bytes": 6743,
+      "sha256": "b79bdbf7c94434e3c0a235ad9f430fbff4f2bdc2aaec68efbe8d89fbaa25e767"
+    },
+    {
+      "path": "evidence/trump-history-016.json",
+      "bytes": 6720,
+      "sha256": "55880d51bfff72dfe637c810ac20d6cc30e00a0d76605cdec3f82db11e743c27"
+    },
+    {
+      "path": "evidence/trump-history-017.json",
+      "bytes": 6713,
+      "sha256": "7a329b3c8210df9f82faeaf7467d98e58b67ba40f6e2f18650f2f6dbd88d999f"
+    },
+    {
+      "path": "evidence/trump-history-018.json",
+      "bytes": 6452,
+      "sha256": "798ac3d986d365f338bb5468a8845fec05ceaf7c652af41752881bf966b1264d"
+    },
+    {
+      "path": "evidence/trump-iowa-cnn-index.html",
+      "bytes": 14226,
+      "sha256": "7c30c495bccae39a72012d0ba90e90f21a8e7599716bfff9b8254afe3b79f73d"
+    },
+    {
+      "path": "evidence/trump-iowa-cnn.html",
+      "bytes": 45513,
+      "sha256": "1ad80d8fe3c5fcdf853458e504dab6556557c387356d50a4941319fdb0e11152"
+    },
+    {
+      "path": "evidence/trump-market.json",
+      "bytes": 3892,
+      "sha256": "7c59b9a4930ed53711cdb971d7f0c15e3a403c4f18e711fa0381ac7b8b993636"
+    },
+    {
+      "path": "evidence/trump-normalized.json",
+      "bytes": 653900,
+      "sha256": "7b75c8dd3b85c151c76bded476ae6e32fa3084781c77cfa176f632e527bdd380"
+    },
+    {
+      "path": "evidence/trump-rfk-index.html",
+      "bytes": 23404,
+      "sha256": "b56c3e8c89accef2e4c349bdb55a8d319af3d01bf3c38175f84d99187a4b63f8"
+    },
+    {
+      "path": "evidence/trump-rfk.html",
+      "bytes": 32783,
+      "sha256": "c8e8bdf6a92f95738c6cf6b367e259c42f559853bd22d2bb587b66e33f526125"
+    },
+    {
+      "path": "evidence/trump-shooting.html",
+      "bytes": 68238,
+      "sha256": "4108d635e69bc8b700d6402210932f9ffe5cea8175974140abff9f51ca852196"
+    },
+    {
+      "path": "evidence/twitter-audit.json",
+      "bytes": 820,
+      "sha256": "03100041652cc2fb0d7f7d5e8312d34607deccda3f4c364f5fba80f96ab05683"
+    },
+    {
+      "path": "evidence/twitter-event.json",
+      "bytes": 7645,
+      "sha256": "c7242d8623e993dfadbfd4e553f7177db959b146daa78225a7d1a79b49daf346"
+    },
+    {
+      "path": "evidence/twitter-history-000.json",
+      "bytes": 15,
+      "sha256": "7f8b497c3d718d756d8c2130e657c4c414d5da9bed777aa29bc3221fdbcf0dc5"
+    },
+    {
+      "path": "evidence/twitter-history-001.json",
+      "bytes": 15,
+      "sha256": "7f8b497c3d718d756d8c2130e657c4c414d5da9bed777aa29bc3221fdbcf0dc5"
+    },
+    {
+      "path": "evidence/twitter-normalized.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "extra-market-requests-receipts.json",
+      "bytes": 960,
+      "sha256": "6b50258a780c9683939d57bbc842679a209735347714c000a3f29ec678fb1c54"
+    },
+    {
+      "path": "extra-market-requests.json",
+      "bytes": 331,
+      "sha256": "24ffd79b4904a5dd5e4713d30ec252b84d1639fe3c84b0c30ff6f906d7b697d3"
+    },
+    {
+      "path": "finalist-index.json",
+      "bytes": 1086,
+      "sha256": "d6ef9aaf5ba3b7e5a9c8c120436a859641fa16a9d183f0eb61ce65bc99ea65f7"
+    },
+    {
+      "path": "frozen-selection-v1.json",
+      "bytes": 8717,
+      "sha256": "79ca8b2e025f15e5fe1ff9040ed1c060d874bf188d2b239f39fc647c0ad33593"
+    },
+    {
+      "path": "frozen-selection-v1.sha256",
+      "bytes": 91,
+      "sha256": "bc66a8647e7d61daf2eb9f89bbb192d9cb7b4788291948c0db0af6b40c2ce314"
+    },
+    {
+      "path": "history-download.log",
+      "bytes": 83716,
+      "sha256": "92f0a92f7b9ce35d11fa4299f4b73b97592c7dcd78d25e2cfb471eabc352f723"
+    },
+    {
+      "path": "history-requests-receipts.json",
+      "bytes": 90167,
+      "sha256": "6e91ef43e1668177af784a435931e2b54b6231775f6321a031536255f642252d"
+    },
+    {
+      "path": "history-requests.json",
+      "bytes": 44968,
+      "sha256": "525f7f08d7e38aea29518a78da20baeb0f1fa306c0f7d84646626761e8224932"
+    },
+    {
+      "path": "market-requests-receipts.json",
+      "bytes": 3507,
+      "sha256": "55c4945b8b5d48a8d72a5f46fbff8848966554ae273e07d2e67bf22fdebeb56b"
+    },
+    {
+      "path": "market-requests.json",
+      "bytes": 1176,
+      "sha256": "188bb32c38d0f4b2c432af00d680897e859ffead6969290613ed73235ab442a4"
+    },
+    {
+      "path": "measurements-v1.json",
+      "bytes": 118776,
+      "sha256": "7e21205d9087db1b8b57dba1579da9549d0602b01484bab1d19368b330a1d148"
+    },
+    {
+      "path": "pre-ending-swings.json",
+      "bytes": 16143,
+      "sha256": "d1d3e4ccee0c283cf94f7e9795ea48345ada2979d5e7b1b1dfe21b2d2f19776d"
+    },
+    {
+      "path": "prepare_briefs.py",
+      "bytes": 39705,
+      "sha256": "7932b516c324b60a6ac3f438d847dd94fe6c19221f75d6368985127a4f4782d3"
+    },
+    {
+      "path": "prepare_report.py",
+      "bytes": 32571,
+      "sha256": "1245b1fc03d76e43f055afb922021dd1e25f4aeab768a126770df2422877102f"
+    },
+    {
+      "path": "research-report.md",
+      "bytes": 19087,
+      "sha256": "70ebf211dd5caeb881213b3da79cdd73c641de6bfb64db6730ffde55c0cabdae"
+    },
+    {
+      "path": "retrieve.py",
+      "bytes": 1336,
+      "sha256": "2a1e8f632acfc93f8dae31aa3f9c841fac7dbe221f9620b71730b27ae625af1c"
+    },
+    {
+      "path": "source-download.log",
+      "bytes": 6945,
+      "sha256": "e77bad8f7192445e29cf6b009de713ce25814f213cf6f47f3010ffecef122900"
+    },
+    {
+      "path": "source-requests-receipts.json",
+      "bytes": 7629,
+      "sha256": "85b62c04b663d3e18e11e1faf0f2608bc5dc9f967d3481405787e0fbac56f097"
+    },
+    {
+      "path": "source-requests.json",
+      "bytes": 3086,
+      "sha256": "3289d4701f4b6d07a7af2494bcba04feed44f941088ce40f89486b4933843492"
+    },
+    {
+      "path": "source2-requests-receipts.json",
+      "bytes": 5785,
+      "sha256": "c6935a43a5e87403e605628b08d5549eb8ed933bb89ce022acdb6c3a359c08d5"
+    },
+    {
+      "path": "source2-requests.json",
+      "bytes": 2420,
+      "sha256": "f40866649d64298f917627acacfc1f4cddb931ae109369ad87ad163c93b25e30"
+    },
+    {
+      "path": "source3-requests-receipts.json",
+      "bytes": 2709,
+      "sha256": "7775da3d2474032c177e5a6285e979b494eedb1af38f86022b8eb3afc533b00c"
+    },
+    {
+      "path": "source3-requests.json",
+      "bytes": 951,
+      "sha256": "7c44a40fa469fc6537fd7b39047a816078f61737259a2c640830d82ef5355707"
+    },
+    {
+      "path": "source4-requests-receipts.json",
+      "bytes": 2362,
+      "sha256": "45584462a2436cd523125bc50db3c447b48ba3b0582b352f1142b7076d72e8f9"
+    },
+    {
+      "path": "source4-requests.json",
+      "bytes": 955,
+      "sha256": "892950729461c185cefd174cc5964b63194293853f2c889f0fc084ff18e05e93"
+    },
+    {
+      "path": "source5-requests-receipts.json",
+      "bytes": 1003,
+      "sha256": "142b15dd11c2200854240ab493cc13727750edff49d71c74abde7ada53da8e55"
+    },
+    {
+      "path": "source5-requests.json",
+      "bytes": 344,
+      "sha256": "176285d62e79f78b7abf7a5ccc7c2fed82aee3a22a926f6502c0cf8f77a694e4"
+    },
+    {
+      "path": "source6-requests-receipts.json",
+      "bytes": 1028,
+      "sha256": "e8f88beec387335bf052d40ce983ce38c36339b8b9720b9b91a609cccaf805be"
+    },
+    {
+      "path": "source6-requests.json",
+      "bytes": 372,
+      "sha256": "9e5d09412b823d69baffc107bf91a70a5043ec7ed7e4158d65fb7eec8e23f2a0"
+    },
+    {
+      "path": "source7-requests-receipts.json",
+      "bytes": 775,
+      "sha256": "39b15d0e50766e4deb889b8ab4a4dfbbf54676efee3e24f1734cb7a2c463b51c"
+    },
+    {
+      "path": "source7-requests.json",
+      "bytes": 334,
+      "sha256": "e3633478fa5ff2754b00ceb772e2d2b9aa6768946da142627032eed4d1673723"
+    },
+    {
+      "path": "source8-requests-receipts.json",
+      "bytes": 713,
+      "sha256": "f8ef6eedbae38439a4e198de552dbe0b983ed0302644a7cdaac40e593dd24926"
+    },
+    {
+      "path": "source8-requests.json",
+      "bytes": 258,
+      "sha256": "c53314f4dfb0bdb612b093e2cb2eb94bd256251f65be0ddcf67d162aa96d6950"
+    },
+    {
+      "path": "source9-requests-receipts.json",
+      "bytes": 239,
+      "sha256": "8851f58e54d9497b7d57755542db8998401b4707e334d458950c08b1d49affcc"
+    },
+    {
+      "path": "source9-requests.json",
+      "bytes": 127,
+      "sha256": "c0221b4c09e8c342ad5acd790af569b24fffdd897caf7eafe8fb07483e9d8d71"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1217,
+      "sha256": "3a4a4f0f097dc9c0c67b91393853c4125a3ffe6c993826835a97b87d3c468559"
+    },
+    {
+      "path": "verification-requests-receipts.json",
+      "bytes": 719,
+      "sha256": "cb513a463f626cff31461286afcd3b6712196051254022b85f0a82b9c1388479"
+    },
+    {
+      "path": "verification-requests.json",
+      "bytes": 282,
+      "sha256": "011e98e521136d6f4a1ddd6c5cf0404af88ff0fb7b880d0bed608c375fa2a2ca"
+    },
+    {
+      "path": "verify_research.mjs",
+      "bytes": 3553,
+      "sha256": "35e2d6830c53160bcd5e88f6a550e443484e561316623f0481bb38bbf020411d"
+    }
+  ]
+}

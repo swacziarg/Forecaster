@@ -1,0 +1,181 @@
+{
+  "artifactType": "historical event-response packet",
+  "status": "complete-for-editorial-handoff",
+  "preparedAt": "2026-09-07T05:32:20Z",
+  "studyId": "trump-comeback-2024-v1",
+  "slug": "trump-comeback-2024",
+  "version": 1,
+  "market": {
+    "provider": "Polymarket",
+    "marketId": "253591",
+    "conditionId": "0xdd22472e552920b8438158ea7238bfadfa4f736aa4cee91a6b86c39ead110917",
+    "selectedSide": "YES",
+    "tokenId": "21742633143463906290569050155826241533067272736897614950488156847949938836455",
+    "question": "Will Donald Trump win the 2024 US Presidential Election?"
+  },
+  "interpretation": {
+    "unit": "percentage-point change in the observed YES-contract price level",
+    "notAProbabilityForecast": true,
+    "notACandidateEvaluation": true,
+    "causality": "No causal attribution is made. The windows are descriptive and can contain other news, market movement, and timing uncertainty.",
+    "normalization": "The preserved YES perspective is unchanged; no cross-contract splicing or missing-bucket filling was used."
+  },
+  "profile": {
+    "id": "months-hourly-v1",
+    "cadenceMinutes": 60,
+    "anticipation": { "startHours": -84, "endHours": -12 },
+    "reference": { "startHours": -12, "endHours": 0 },
+    "immediate": { "startHours": 0, "endHours": 6 },
+    "stabilized": { "startHours": 18, "endHours": 36 },
+    "delayed": { "startHours": 48, "endHours": 72 },
+    "quality": { "minimumCoverage": 0.6, "maximumGapShare": 0.5, "minimumDistinctUpdates": 3, "maximumSpread": 0.2 },
+    "tieThreshold": 0.01
+  },
+  "dataset": {
+    "csv": "docs/launch-queue-research/datasets/trump-hourly.csv",
+    "csvSha256": "7756111859cbca9f2185795608029323fb21e9505f0314d4700cf7d8b9cc579d",
+    "normalized": "docs/launch-queue-research/evidence/trump-normalized.json",
+    "normalizedSha256": "7b75c8dd3b85c151c76bded476ae6e32fa3084781c77cfa176f632e527bdd380",
+    "rawRows": 4550,
+    "normalizedObservations": 4549,
+    "duplicateOrRevisionBuckets": 1,
+    "missingBuckets": [ "2024-05-01T19:00:00Z", "2024-07-21T18:00:00Z", "2024-11-05T22:00:00Z" ],
+    "coverageStart": "2024-05-01T00:00:00Z",
+    "coverageEnd": "2024-11-06T15:00:00Z",
+    "noFilling": true
+  },
+  "anchors": {
+    "selectionFile": "docs/launch-queue-research/frozen-selection-v1.json",
+    "selectionSha256": "79ca8b2e025f15e5fe1ff9040ed1c060d874bf188d2b239f39fc647c0ad33593",
+    "informationKnownAt": {
+      "conviction": "2024-05-30T21:15:07Z",
+      "butler": "2024-07-14T00:00:00Z",
+      "rfk-endorsement": "2024-08-23T19:30:00Z",
+      "harris-debate": "2024-09-11T02:45:00Z",
+      "iowa-poll": "2024-11-03T00:00:00Z"
+    },
+    "debateCorrection": {
+      "old": "2024-09-11T03:58:00Z",
+      "corrected": "2024-09-11T02:45:00Z",
+      "precision": "approximate upper-bound broadcast end",
+      "reason": "ABC scheduled a 21:00 EDT start; Nielsen records the live interval as approximately 21:00–22:45 ET. The old ABC transcript datePublished timestamp was retained as page metadata, not treated as the first-public minute.",
+      "noEarlierRounding": true
+    }
+  },
+  "events": [
+    {
+      "eventId": "conviction",
+      "informationKnownAt": "2024-05-30T21:15:07Z",
+      "windows": {
+        "anticipation": { "level": 0.565, "start": "2024-05-27T09:15:07.000Z", "end": "2024-05-30T09:15:07.000Z", "expectedBuckets": 72, "validBuckets": 72, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 72, "status": "usable" },
+        "reference": { "level": 0.565, "start": "2024-05-30T09:15:07.000Z", "end": "2024-05-30T21:15:07.000Z", "expectedBuckets": 12, "validBuckets": 12, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 12, "status": "usable" },
+        "immediate": { "level": 0.535, "start": "2024-05-30T21:15:07.000Z", "end": "2024-05-31T03:15:07.000Z", "expectedBuckets": 6, "validBuckets": 6, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 6, "status": "usable" },
+        "stabilized": { "level": 0.545, "start": "2024-05-31T15:15:07.000Z", "end": "2024-06-01T09:15:07.000Z", "expectedBuckets": 18, "validBuckets": 18, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 18, "status": "usable" },
+        "delayed": { "level": 0.535, "start": "2024-06-01T21:15:07.000Z", "end": "2024-06-02T21:15:07.000Z", "expectedBuckets": 24, "validBuckets": 24, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 24, "status": "usable" }
+      },
+      "anticipationMove": 0,
+      "immediateResponse": -0.03,
+      "shortTermResponse": -0.02,
+      "delayedIncrement": -0.01,
+      "cumulativeDelayedResponse": -0.03,
+      "ordinaryMovement": { "classification": "ordinary", "threshold": 0.03, "sampleCount": 113 },
+      "qualityStatus": "usable",
+      "overlaps": []
+    },
+    {
+      "eventId": "butler",
+      "informationKnownAt": "2024-07-14T00:00:00Z",
+      "windows": {
+        "anticipation": { "level": 0.605, "start": "2024-07-10T12:00:00.000Z", "end": "2024-07-13T12:00:00.000Z", "expectedBuckets": 72, "validBuckets": 72, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 72, "status": "usable" },
+        "reference": { "level": 0.595, "start": "2024-07-13T12:00:00.000Z", "end": "2024-07-14T00:00:00.000Z", "expectedBuckets": 12, "validBuckets": 12, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 12, "status": "usable" },
+        "immediate": { "level": 0.695, "start": "2024-07-14T00:00:00.000Z", "end": "2024-07-14T06:00:00.000Z", "expectedBuckets": 6, "validBuckets": 6, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 6, "status": "usable" },
+        "stabilized": { "level": 0.695, "start": "2024-07-14T18:00:00.000Z", "end": "2024-07-15T12:00:00.000Z", "expectedBuckets": 18, "validBuckets": 18, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 18, "status": "usable" },
+        "delayed": { "level": 0.705, "start": "2024-07-16T00:00:00.000Z", "end": "2024-07-17T00:00:00.000Z", "expectedBuckets": 24, "validBuckets": 24, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 24, "status": "usable" }
+      },
+      "anticipationMove": -0.01,
+      "immediateResponse": 0.1,
+      "shortTermResponse": 0.1,
+      "delayedIncrement": 0.01,
+      "cumulativeDelayedResponse": 0.11,
+      "ordinaryMovement": { "classification": "unusually large", "threshold": 0.03, "sampleCount": 113 },
+      "qualityStatus": "usable",
+      "overlaps": []
+    },
+    {
+      "eventId": "rfk-endorsement",
+      "informationKnownAt": "2024-08-23T19:30:00Z",
+      "windows": {
+        "anticipation": { "level": 0.518, "start": "2024-08-20T07:30:00.000Z", "end": "2024-08-23T07:30:00.000Z", "expectedBuckets": 72, "validBuckets": 72, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 72, "status": "usable" },
+        "reference": { "level": 0.50975, "start": "2024-08-23T07:30:00.000Z", "end": "2024-08-23T19:30:00.000Z", "expectedBuckets": 12, "validBuckets": 12, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 12, "status": "usable" },
+        "immediate": { "level": 0.50175, "start": "2024-08-23T19:30:00.000Z", "end": "2024-08-24T01:30:00.000Z", "expectedBuckets": 6, "validBuckets": 6, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 6, "status": "usable" },
+        "stabilized": { "level": 0.498, "start": "2024-08-24T13:30:00.000Z", "end": "2024-08-25T07:30:00.000Z", "expectedBuckets": 18, "validBuckets": 18, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 18, "status": "usable" },
+        "delayed": { "level": 0.4955, "start": "2024-08-25T19:30:00.000Z", "end": "2024-08-26T19:30:00.000Z", "expectedBuckets": 24, "validBuckets": 24, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 24, "status": "usable" }
+      },
+      "anticipationMove": -0.00825,
+      "immediateResponse": -0.008,
+      "shortTermResponse": -0.01175,
+      "delayedIncrement": -0.0025,
+      "cumulativeDelayedResponse": -0.01425,
+      "ordinaryMovement": { "classification": "ordinary", "threshold": 0.03, "sampleCount": 113 },
+      "qualityStatus": "usable",
+      "overlaps": []
+    },
+    {
+      "eventId": "harris-debate",
+      "informationKnownAt": "2024-09-11T02:45:00Z",
+      "windows": {
+        "anticipation": { "level": 0.51625, "start": "2024-09-07T14:45:00.000Z", "end": "2024-09-10T14:45:00.000Z", "expectedBuckets": 72, "validBuckets": 72, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 72, "status": "usable" },
+        "reference": { "level": 0.5195, "start": "2024-09-10T14:45:00.000Z", "end": "2024-09-11T02:45:00.000Z", "expectedBuckets": 12, "validBuckets": 12, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 12, "status": "usable" },
+        "immediate": { "level": 0.49075, "start": "2024-09-11T02:45:00.000Z", "end": "2024-09-11T08:45:00.000Z", "expectedBuckets": 6, "validBuckets": 6, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 6, "status": "usable" },
+        "stabilized": { "level": 0.4935, "start": "2024-09-11T20:45:00.000Z", "end": "2024-09-12T14:45:00.000Z", "expectedBuckets": 18, "validBuckets": 18, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 18, "status": "usable" },
+        "delayed": { "level": 0.4915, "start": "2024-09-13T02:45:00.000Z", "end": "2024-09-14T02:45:00.000Z", "expectedBuckets": 24, "validBuckets": 24, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 24, "status": "usable" }
+      },
+      "anticipationMove": 0.00325,
+      "immediateResponse": -0.02875,
+      "shortTermResponse": -0.026,
+      "delayedIncrement": -0.002,
+      "cumulativeDelayedResponse": -0.028,
+      "ordinaryMovement": { "classification": "ordinary", "threshold": 0.03, "sampleCount": 113 },
+      "qualityStatus": "usable",
+      "overlaps": []
+    },
+    {
+      "eventId": "iowa-poll",
+      "informationKnownAt": "2024-11-03T00:00:00Z",
+      "windows": {
+        "anticipation": { "level": 0.627, "start": "2024-10-30T12:00:00.000Z", "end": "2024-11-02T12:00:00.000Z", "expectedBuckets": 72, "validBuckets": 72, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 72, "status": "usable" },
+        "reference": { "level": 0.5895, "start": "2024-11-02T12:00:00.000Z", "end": "2024-11-03T00:00:00.000Z", "expectedBuckets": 12, "validBuckets": 12, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 12, "status": "usable" },
+        "immediate": { "level": 0.548, "start": "2024-11-03T00:00:00.000Z", "end": "2024-11-03T06:00:00.000Z", "expectedBuckets": 6, "validBuckets": 6, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 6, "status": "usable" },
+        "stabilized": { "level": 0.555, "start": "2024-11-03T18:00:00.000Z", "end": "2024-11-04T12:00:00.000Z", "expectedBuckets": 18, "validBuckets": 18, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 18, "status": "usable" },
+        "delayed": { "level": 0.61, "start": "2024-11-05T00:00:00.000Z", "end": "2024-11-06T00:00:00.000Z", "expectedBuckets": 24, "validBuckets": 23, "coverage": 0.9583333333333334, "maximumGapBuckets": 1, "distinctUpdates": 23, "status": "usable" }
+      },
+      "anticipationMove": -0.0375,
+      "immediateResponse": -0.0415,
+      "shortTermResponse": -0.0345,
+      "delayedIncrement": 0.055,
+      "cumulativeDelayedResponse": 0.0205,
+      "ordinaryMovement": { "classification": "unusually large", "threshold": 0.03, "sampleCount": 113 },
+      "qualityStatus": "usable",
+      "overlaps": []
+    }
+  ],
+  "tieGroupsByShortTermResponse": [ [ "butler" ], [ "rfk-endorsement", "conviction" ], [ "harris-debate", "iowa-poll" ] ],
+  "tieRule": "createTieGroups(impacts, MONTHS_PROFILE.tieThreshold), threshold 0.01, sorted by stabilized minus reference observed contract price",
+  "comparablePairs": [
+    { "left": "rfk-endorsement", "right": "iowa-poll", "leftGroup": 1, "rightGroup": 2 },
+    { "left": "rfk-endorsement", "right": "butler", "leftGroup": 1, "rightGroup": 0 },
+    { "left": "rfk-endorsement", "right": "harris-debate", "leftGroup": 1, "rightGroup": 2 },
+    { "left": "conviction", "right": "iowa-poll", "leftGroup": 1, "rightGroup": 2 },
+    { "left": "conviction", "right": "butler", "leftGroup": 1, "rightGroup": 0 },
+    { "left": "conviction", "right": "harris-debate", "leftGroup": 1, "rightGroup": 2 },
+    { "left": "iowa-poll", "right": "butler", "leftGroup": 2, "rightGroup": 0 },
+    { "left": "butler", "right": "harris-debate", "leftGroup": 0, "rightGroup": 2 }
+  ],
+  "initialOrder": [ "rfk-endorsement", "conviction", "iowa-poll", "butler", "harris-debate" ],
+  "endingExclusion": {
+    "eventId": "iowa-poll",
+    "delayedWindowEnd": "2024-11-06T00:00:00Z",
+    "revealSourceId": "ap-election-call",
+    "rule": "The AP election call is reveal-only and is not an event card or pre-reveal claim. The delayed Iowa window is retained with its explicit election-night contamination disclosure."
+  }
+}

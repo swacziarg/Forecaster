@@ -1,0 +1,734 @@
+{
+  "artifactType": "TikTok finish-pass replay",
+  "version": 4,
+  "calculatedAt": "2026-09-06T18:18:19.914Z",
+  "replayInvocation": "node docs/launch-work/finish-pass/tiktok/replay-v4.mjs",
+  "baseMeasurements": {
+    "path": "docs/launch-work/tiktok/measurements.json",
+    "sha256": "8a1da4ecdefeab8ed61206582f9398a56531028e6009236f73617b08e5ce8b81"
+  },
+  "evidenceAddendum": {
+    "path": "docs/launch-work/finish-pass/tiktok/evidence-addendum-v4.json",
+    "sha256": "9a6b4942121f632d5c61f88ed706d507b11a9ffc59db0c5a2c399af7ce35a4b2"
+  },
+  "anchorDecision": {
+    "change": "none",
+    "path": "docs/launch-work/tiktok/anchors-v3.json",
+    "sha256": "fd632a603d0138d5d335500ed8a4f8d6bccb884b9caa51c856870600aa43974c",
+    "reason": "Source eligibility support was improved without changing the frozen numeric anchors or the measurement profile."
+  },
+  "engine": {
+    "module": "src/domain/eventStudy.ts",
+    "sha256": "9fdfcd16d70cdffd5d54469c215f68ecbf83070c6778754c07047b1eaa9a4cc6",
+    "functions": [
+      "calculateStudyImpacts",
+      "createTieGroups",
+      "MONTHS_PROFILE"
+    ]
+  },
+  "selection": {
+    "path": "docs/launch-queue-research/frozen-selection-v1.json",
+    "sha256": "79ca8b2e025f15e5fe1ff9040ed1c060d874bf188d2b239f39fc647c0ad33593",
+    "frozenAt": "2026-09-06T00:24:51.987941+00:00",
+    "eventIds": [
+      "trump-elected",
+      "appeal-lost",
+      "supreme-review",
+      "trump-pause",
+      "supreme-argument"
+    ]
+  },
+  "dataset": {
+    "path": "docs/launch-queue-research/evidence/tiktok-normalized.json",
+    "sha256": "caf50a435fa87b927fa197b4a03c472bf7cba94de020c5879668b12036e90bd7",
+    "observations": 3023,
+    "coverageStart": "2024-09-18T01:00:00Z",
+    "coverageEnd": "2025-01-22T00:00:00Z"
+  },
+  "profile": {
+    "id": "months-hourly-v1",
+    "label": "Months / hourly",
+    "cadenceMinutes": 60,
+    "anticipation": {
+      "startHours": -84,
+      "endHours": -12
+    },
+    "reference": {
+      "startHours": -12,
+      "endHours": 0
+    },
+    "immediate": {
+      "startHours": 0,
+      "endHours": 6
+    },
+    "stabilized": {
+      "startHours": 18,
+      "endHours": 36
+    },
+    "delayed": {
+      "startHours": 48,
+      "endHours": 72
+    },
+    "quality": {
+      "minimumCoverage": 0.6,
+      "maximumGapShare": 0.5,
+      "minimumDistinctUpdates": 3,
+      "maximumSpread": 0.2
+    },
+    "tieThreshold": 0.01
+  },
+  "disclosure": "Existing hourly normalized observations were replayed without new price retrieval, filling, re-ranking, or anchor tuning. These signed changes are observed percentage-point movements, not causal estimates. Anchor-based ties are unchanged.",
+  "allWindowsPass": true,
+  "tieGroups": [
+    [
+      "supreme-argument",
+      "appeal-lost"
+    ],
+    [
+      "supreme-review"
+    ],
+    [
+      "trump-pause"
+    ],
+    [
+      "trump-elected"
+    ]
+  ],
+  "impacts": [
+    {
+      "eventId": "trump-elected",
+      "event": {
+        "id": "trump-elected",
+        "date": "2024-11-06",
+        "title": "Trump wins the presidency after campaigning to save TikTok",
+        "expectedDirection": "negative",
+        "selectionReason": "A new political escape route for a household-name app.",
+        "shortTitle": "Trump wins the presidency after campaigning to save TikTok",
+        "informationKnownAt": "2024-11-06T10:34:42Z",
+        "anchorVerified": true,
+        "anchorBasis": "Contemporary AP Race Call article metadata and body; the page's datePublished/dateModified fields are 10:34:42Z and the article states AP declared Trump the winner at 5:34 a.m. EST."
+      },
+      "windows": {
+        "anticipation": {
+          "level": 0.245,
+          "start": "2024-11-02T22:34:42.000Z",
+          "end": "2024-11-05T22:34:42.000Z",
+          "quality": {
+            "expectedBuckets": 72,
+            "validBuckets": 71,
+            "tradedBuckets": 71,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 0.9861111111111112,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 71,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "reference": {
+          "level": 0.25,
+          "start": "2024-11-05T22:34:42.000Z",
+          "end": "2024-11-06T10:34:42.000Z",
+          "quality": {
+            "expectedBuckets": 12,
+            "validBuckets": 12,
+            "tradedBuckets": 12,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 12,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "immediate": {
+          "level": 0.255,
+          "start": "2024-11-06T10:34:42.000Z",
+          "end": "2024-11-06T16:34:42.000Z",
+          "quality": {
+            "expectedBuckets": 6,
+            "validBuckets": 6,
+            "tradedBuckets": 6,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 6,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "stabilized": {
+          "level": 0.1325,
+          "start": "2024-11-07T04:34:42.000Z",
+          "end": "2024-11-07T22:34:42.000Z",
+          "quality": {
+            "expectedBuckets": 18,
+            "validBuckets": 18,
+            "tradedBuckets": 18,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 18,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "delayed": {
+          "level": 0.125,
+          "start": "2024-11-08T10:34:42.000Z",
+          "end": "2024-11-09T10:34:42.000Z",
+          "quality": {
+            "expectedBuckets": 24,
+            "validBuckets": 24,
+            "tradedBuckets": 24,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 24,
+            "status": "usable",
+            "reasons": []
+          }
+        }
+      },
+      "anticipationMove": 0.0050000000000000044,
+      "immediateResponse": 0.0050000000000000044,
+      "shortTermResponse": -0.1175,
+      "delayedIncrement": -0.007500000000000007,
+      "cumulativeDelayedResponse": -0.125,
+      "logOddsResponse": -0.7804205777266275,
+      "sensitivityShare": 0,
+      "counterfactualProbability": 0.1325,
+      "attributedImpact": 0,
+      "qualityStatus": "usable",
+      "ordinaryMovement": {
+        "classification": "unusually large",
+        "threshold": 0.1,
+        "sampleCount": 66
+      },
+      "overlaps": []
+    },
+    {
+      "eventId": "appeal-lost",
+      "event": {
+        "id": "appeal-lost",
+        "date": "2024-12-06",
+        "title": "Appeals court rejects TikTok’s challenge to the divest-or-ban law",
+        "expectedDirection": "positive",
+        "selectionReason": "Major legal defeat.",
+        "shortTitle": "Appeals court rejects TikTok’s challenge to the divest-or-ban law",
+        "informationKnownAt": "2024-12-06T16:00:00Z",
+        "anchorVerified": true,
+        "anchorBasis": "D.C. Circuit opinion is dated/decided Dec. 6; the contemporary AP article exposes datePublished 15:35:16Z and CNN's live transcript carries the ruling during the 10:30–11:00 EST segment. The court opinion index and PDF do not expose a historical posting time."
+      },
+      "windows": {
+        "anticipation": {
+          "level": 0.215,
+          "start": "2024-12-03T04:00:00.000Z",
+          "end": "2024-12-06T04:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 72,
+            "validBuckets": 72,
+            "tradedBuckets": 72,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 72,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "reference": {
+          "level": 0.215,
+          "start": "2024-12-06T04:00:00.000Z",
+          "end": "2024-12-06T16:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 12,
+            "validBuckets": 12,
+            "tradedBuckets": 12,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 12,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "immediate": {
+          "level": 0.48,
+          "start": "2024-12-06T16:00:00.000Z",
+          "end": "2024-12-06T22:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 6,
+            "validBuckets": 6,
+            "tradedBuckets": 6,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 6,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "stabilized": {
+          "level": 0.3325,
+          "start": "2024-12-07T10:00:00.000Z",
+          "end": "2024-12-08T04:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 18,
+            "validBuckets": 18,
+            "tradedBuckets": 18,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 18,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "delayed": {
+          "level": 0.355,
+          "start": "2024-12-08T16:00:00.000Z",
+          "end": "2024-12-09T16:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 24,
+            "validBuckets": 24,
+            "tradedBuckets": 24,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 24,
+            "status": "usable",
+            "reasons": []
+          }
+        }
+      },
+      "anticipationMove": 0,
+      "immediateResponse": 0.265,
+      "shortTermResponse": 0.11750000000000002,
+      "delayedIncrement": 0.022499999999999964,
+      "cumulativeDelayedResponse": 0.13999999999999999,
+      "logOddsResponse": 0.59814615947625,
+      "sensitivityShare": 0,
+      "counterfactualProbability": 0.3325,
+      "attributedImpact": 0,
+      "qualityStatus": "usable",
+      "ordinaryMovement": {
+        "classification": "unusually large",
+        "threshold": 0.1,
+        "sampleCount": 66
+      },
+      "overlaps": []
+    },
+    {
+      "eventId": "supreme-review",
+      "event": {
+        "id": "supreme-review",
+        "date": "2024-12-18",
+        "title": "Supreme Court agrees to hear TikTok’s challenge",
+        "expectedDirection": "negative",
+        "selectionReason": "An institutional lifeline, without a stay or merits victory.",
+        "shortTitle": "Supreme Court agrees to hear TikTok’s challenge",
+        "informationKnownAt": "2024-12-18T19:00:00Z",
+        "anchorVerified": true,
+        "anchorBasis": "Supreme Court order is dated Dec. 18 and the official docket records certiorari granted; the contemporary AP article exposes datePublished 16:15:44Z and CNN's live transcript reports the order during the 13:30–14:00 EST segment. The order PDF and Court order index do not expose a historical posting time."
+      },
+      "windows": {
+        "anticipation": {
+          "level": 0.33,
+          "start": "2024-12-15T07:00:00.000Z",
+          "end": "2024-12-18T07:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 72,
+            "validBuckets": 72,
+            "tradedBuckets": 72,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 72,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "reference": {
+          "level": 0.3225,
+          "start": "2024-12-18T07:00:00.000Z",
+          "end": "2024-12-18T19:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 12,
+            "validBuckets": 12,
+            "tradedBuckets": 12,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 12,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "immediate": {
+          "level": 0.3125,
+          "start": "2024-12-18T19:00:00.000Z",
+          "end": "2024-12-19T01:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 6,
+            "validBuckets": 6,
+            "tradedBuckets": 6,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 6,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "stabilized": {
+          "level": 0.325,
+          "start": "2024-12-19T13:00:00.000Z",
+          "end": "2024-12-20T07:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 18,
+            "validBuckets": 18,
+            "tradedBuckets": 18,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 18,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "delayed": {
+          "level": 0.36,
+          "start": "2024-12-20T19:00:00.000Z",
+          "end": "2024-12-21T19:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 24,
+            "validBuckets": 24,
+            "tradedBuckets": 24,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 24,
+            "status": "usable",
+            "reasons": []
+          }
+        }
+      },
+      "anticipationMove": -0.007500000000000007,
+      "immediateResponse": -0.010000000000000009,
+      "shortTermResponse": 0.0025000000000000022,
+      "delayedIncrement": 0.034999999999999976,
+      "cumulativeDelayedResponse": 0.03749999999999998,
+      "logOddsResponse": 0.01141890797523637,
+      "sensitivityShare": 0,
+      "counterfactualProbability": 0.32499999999999996,
+      "attributedImpact": 5.551115123125783e-17,
+      "qualityStatus": "usable",
+      "ordinaryMovement": {
+        "classification": "not detectable",
+        "threshold": 0.1,
+        "sampleCount": 66
+      },
+      "overlaps": []
+    },
+    {
+      "eventId": "trump-pause",
+      "event": {
+        "id": "trump-pause",
+        "date": "2024-12-27",
+        "title": "Trump asks the Supreme Court to pause the TikTok deadline",
+        "expectedDirection": "negative",
+        "selectionReason": "The incoming president intervenes directly.",
+        "shortTitle": "Trump asks the Supreme Court to pause the TikTok deadline",
+        "informationKnownAt": "2024-12-27T23:00:00Z",
+        "anchorVerified": true,
+        "anchorBasis": "The Supreme Court docket records the brief filing date and the official PDF is dated Dec. 27; the contemporary AP article exposes datePublished 22:43:57Z and CNN's live transcript first reports the filing at 17:17:12 EST. The PDF filename and filing-date metadata do not prove a public posting time."
+      },
+      "windows": {
+        "anticipation": {
+          "level": 0.35,
+          "start": "2024-12-24T11:00:00.000Z",
+          "end": "2024-12-27T11:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 72,
+            "validBuckets": 72,
+            "tradedBuckets": 72,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 72,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "reference": {
+          "level": 0.345,
+          "start": "2024-12-27T11:00:00.000Z",
+          "end": "2024-12-27T23:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 12,
+            "validBuckets": 12,
+            "tradedBuckets": 12,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 12,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "immediate": {
+          "level": 0.305,
+          "start": "2024-12-27T23:00:00.000Z",
+          "end": "2024-12-28T05:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 6,
+            "validBuckets": 6,
+            "tradedBuckets": 6,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 6,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "stabilized": {
+          "level": 0.305,
+          "start": "2024-12-28T17:00:00.000Z",
+          "end": "2024-12-29T11:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 18,
+            "validBuckets": 18,
+            "tradedBuckets": 18,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 18,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "delayed": {
+          "level": 0.31,
+          "start": "2024-12-29T23:00:00.000Z",
+          "end": "2024-12-30T23:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 24,
+            "validBuckets": 24,
+            "tradedBuckets": 24,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 24,
+            "status": "usable",
+            "reasons": []
+          }
+        }
+      },
+      "anticipationMove": -0.0050000000000000044,
+      "immediateResponse": -0.03999999999999998,
+      "shortTermResponse": -0.03999999999999998,
+      "delayedIncrement": 0.0050000000000000044,
+      "cumulativeDelayedResponse": -0.034999999999999976,
+      "logOddsResponse": -0.18250925035348853,
+      "sensitivityShare": 0,
+      "counterfactualProbability": 0.30499999999999994,
+      "attributedImpact": 5.551115123125783e-17,
+      "qualityStatus": "usable",
+      "ordinaryMovement": {
+        "classification": "ordinary",
+        "threshold": 0.1,
+        "sampleCount": 66
+      },
+      "overlaps": []
+    },
+    {
+      "eventId": "supreme-argument",
+      "event": {
+        "id": "supreme-argument",
+        "date": "2025-01-10",
+        "title": "TikTok and the government face Supreme Court questioning",
+        "expectedDirection": "ambiguous",
+        "selectionReason": "Public test of the rival free-speech and national-security arguments.",
+        "shortTitle": "TikTok and the government face Supreme Court questioning",
+        "informationKnownAt": "2025-01-10T17:38:00Z",
+        "anchorVerified": true,
+        "anchorBasis": "The official transcript records the argument beginning at 10:08 a.m. and ending at 12:38 p.m. EST; the official audio detail page and docket corroborate that the argument occurred. Questions during the argument are not a ruling."
+      },
+      "windows": {
+        "anticipation": {
+          "level": 0.515,
+          "start": "2025-01-07T05:38:00.000Z",
+          "end": "2025-01-10T05:38:00.000Z",
+          "quality": {
+            "expectedBuckets": 72,
+            "validBuckets": 72,
+            "tradedBuckets": 72,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 72,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "reference": {
+          "level": 0.5674999999999999,
+          "start": "2025-01-10T05:38:00.000Z",
+          "end": "2025-01-10T17:38:00.000Z",
+          "quality": {
+            "expectedBuckets": 12,
+            "validBuckets": 12,
+            "tradedBuckets": 12,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 12,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "immediate": {
+          "level": 0.7324999999999999,
+          "start": "2025-01-10T17:38:00.000Z",
+          "end": "2025-01-10T23:38:00.000Z",
+          "quality": {
+            "expectedBuckets": 6,
+            "validBuckets": 6,
+            "tradedBuckets": 6,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 6,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "stabilized": {
+          "level": 0.6924999999999999,
+          "start": "2025-01-11T11:38:00.000Z",
+          "end": "2025-01-12T05:38:00.000Z",
+          "quality": {
+            "expectedBuckets": 18,
+            "validBuckets": 18,
+            "tradedBuckets": 18,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 18,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "delayed": {
+          "level": 0.68,
+          "start": "2025-01-12T17:38:00.000Z",
+          "end": "2025-01-13T17:38:00.000Z",
+          "quality": {
+            "expectedBuckets": 24,
+            "validBuckets": 24,
+            "tradedBuckets": 24,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 24,
+            "status": "usable",
+            "reasons": []
+          }
+        }
+      },
+      "anticipationMove": 0.05249999999999988,
+      "immediateResponse": 0.16500000000000004,
+      "shortTermResponse": 0.125,
+      "delayedIncrement": -0.012499999999999845,
+      "cumulativeDelayedResponse": 0.11250000000000016,
+      "logOddsResponse": 0.5401747278312972,
+      "sensitivityShare": 0,
+      "counterfactualProbability": 0.6925,
+      "attributedImpact": -1.1102230246251565e-16,
+      "qualityStatus": "usable",
+      "ordinaryMovement": {
+        "classification": "unusually large",
+        "threshold": 0.1,
+        "sampleCount": 66
+      },
+      "overlaps": []
+    }
+  ]
+}

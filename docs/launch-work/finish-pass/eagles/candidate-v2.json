@@ -1,0 +1,136 @@
+{
+  "artifactType": "Editorial integration handoff; not a registered Study or daily queue entry",
+  "candidateVersion": 2,
+  "preparedAt": "2026-09-06T18:14:40Z",
+  "readiness": "hold",
+  "topic": "eagles",
+  "title": "Stop the three-peat",
+  "priorCandidate": {"path": "docs/launch-work/eagles/candidate.json", "sha256": "caeaf724db1a2cf424b3b0c83a9dc28edf8e11408797ae6a6c5293f5e255e885"},
+  "proposedStudy": {
+    "id": "eagles-super-bowl-lix-five-v1",
+    "slug": "eagles-stop-threepeat",
+    "version": 1,
+    "category": "Sports",
+    "status": "editorial-review",
+    "notRegistered": true
+  },
+  "contract": {
+    "provider": "Polymarket",
+    "marketId": "503322",
+    "marketUrl": "https://polymarket.com/event/superbowl-champion-2025/will-the-eagles-win-super-bowl-2025",
+    "contractId": "110222417228270638383974743746762302792556220380554556504458115620557107501861",
+    "question": "Will the Eagles win Super Bowl 2025?",
+    "selectedSide": "YES",
+    "outcome": "YES",
+    "rules": "YES if Philadelphia wins Super Bowl LIX; otherwise NO. NFL elimination can resolve NO before the Super Bowl. This is the season-long Eagles championship contract, not the later Eagles–Chiefs match-winner contract."
+  },
+  "selection": {
+    "freezeVersion": "frozen-selection-v1",
+    "freezeSha256": "79ca8b2e025f15e5fe1ff9040ed1c060d874bf188d2b239f39fc647c0ad33593",
+    "frozenEventIds": ["falcons-collapse", "barkley-record", "hurts-concussion", "snow-playoff", "nfc-title"],
+    "initialOrder": ["hurts-concussion", "falcons-collapse", "nfc-title", "barkley-record", "snow-playoff"],
+    "selectionChanged": false
+  },
+  "timingAnchorFreeze": {
+    "file": "docs/launch-work/finish-pass/eagles/timing-anchors-v2.json",
+    "sha256": "158ee377048d51c40bc94da61a89ee3425f404dcb002bf758217d30259c92d80",
+    "occurrenceAnchorsChanged": false,
+    "informationKnownAtAnchorsChanged": ["hurts-concussion", "snow-playoff", "nfc-title"],
+    "priceDrivenOptimization": false,
+    "publicBySemantics": "Corrected anchors are conservative supported public-by bounds, not exact first-public instants."
+  },
+  "dataset": {
+    "researchCsv": "docs/launch-queue-research/datasets/eagles-hourly.csv",
+    "normalizedJson": "docs/launch-queue-research/evidence/eagles-normalized.json",
+    "normalizedSha256": "f151a62f5de76cf398be3ce16c8d229d7c9950771e53f936d3c2494063348dcc",
+    "usableHourlyObservations": 5167,
+    "rawObservations": 5173,
+    "rejectedObservations": 5,
+    "missingBuckets": ["2024-07-21T18:00:00Z", "2024-11-05T22:00:00Z"],
+    "fullMarketLifetime": false,
+    "interpolation": false,
+    "crossContractSplicing": false
+  },
+  "measurementProfile": {
+    "id": "months-hourly-v1",
+    "measurementArtifact": "docs/launch-work/finish-pass/eagles/measurements-v2.json",
+    "scoringVersion": "pairwise-anchor-1pt-v1",
+    "tieThreshold": 0.01
+  },
+  "cards": [
+    {
+      "id": "falcons-collapse",
+      "initialOrderIndex": 1,
+      "title": "Eagles lose 22–21 after Atlanta’s late touchdown",
+      "occurredAt": "2024-09-17T03:13:00Z",
+      "informationKnownAt": "2024-09-17T04:59:45.324Z",
+      "originalInformationKnownAt": "2024-09-17T04:59:45.324Z",
+      "timingDecision": "unchanged; archive confirms the final but does not prove a safer earlier final-result boundary",
+      "expectedDirection": "negative",
+      "claim": "Atlanta drove 70 yards for a final-minute touchdown and defeated Philadelphia 22–21.",
+      "sourceIds": ["gamebook-falcons", "recap-falcons", "archive-falcons-20240917124518"],
+      "measured": {"reference": 0.077, "stabilized": 0.0595, "changePp": -1.75, "delayedCumulativePp": -1.75, "quality": "usable"}
+    },
+    {
+      "id": "barkley-record",
+      "initialOrderIndex": 2,
+      "title": "Saquon Barkley rushes for an Eagles-record 255 yards",
+      "occurredAt": "2024-11-25T04:36:00Z",
+      "informationKnownAt": "2024-11-25T06:51:48.356Z",
+      "originalInformationKnownAt": "2024-11-25T06:51:48.356Z",
+      "timingDecision": "unchanged; archive confirms the final and record but does not improve the retained public cutoff",
+      "expectedDirection": "positive",
+      "claim": "Philadelphia beat the Rams 37–20 for its seventh straight win while Barkley rushed for 255 yards.",
+      "sourceIds": ["gamebook-barkley", "recap-barkley", "archive-barkley-20241125101431"],
+      "measured": {"reference": 0.09625, "stabilized": 0.10975, "changePp": 1.35, "delayedCumulativePp": 1.825, "quality": "usable"}
+    },
+    {
+      "id": "hurts-concussion",
+      "initialOrderIndex": 0,
+      "title": "Hurts leaves with a concussion as Washington ends the Eagles’ winning streak",
+      "occurredAt": "2024-12-22T21:22:00Z",
+      "informationKnownAt": "2024-12-22T22:25:00Z",
+      "originalInformationKnownAt": "2024-12-22T23:26:58.564Z",
+      "timingDecision": "corrected to conservative public-by bound; keep injury and 36–33 loss as one cluster",
+      "expectedDirection": "negative",
+      "claim": "Jalen Hurts left with a concussion and Washington defeated Philadelphia 36–33, ending a ten-game Eagles winning streak.",
+      "sourceIds": ["gamebook-hurts", "recap-hurts", "archive-hurts-injury-20241222204404", "archive-hurts-postgame-20241225065909"],
+      "measured": {"reference": 0.15475, "stabilized": 0.1255, "changePp": -2.925, "delayedCumulativePp": -3.3, "quality": "usable"}
+    },
+    {
+      "id": "snow-playoff",
+      "initialOrderIndex": 4,
+      "title": "Eagles survive the Rams in the snow, 28–22",
+      "occurredAt": "2025-01-19T23:10:00Z",
+      "informationKnownAt": "2025-01-19T23:10:00Z",
+      "originalInformationKnownAt": "2025-01-20T01:37:49.106Z",
+      "timingDecision": "corrected to conservative public-by bound from preserved postgame publication metadata",
+      "expectedDirection": "positive",
+      "claim": "Philadelphia defeated the Rams 28–22 in snowy conditions and advanced to the NFC Championship.",
+      "sourceIds": ["gamebook-snow", "recap-snow", "archive-snow-postgame-20250120091057"],
+      "measured": {"reference": 0.25075, "stabilized": 0.3105, "changePp": 5.975, "delayedCumulativePp": 7.65, "quality": "usable"}
+    },
+    {
+      "id": "nfc-title",
+      "initialOrderIndex": 3,
+      "title": "Eagles score 55 to reach the Super Bowl",
+      "occurredAt": "2025-01-26T23:27:00Z",
+      "informationKnownAt": "2025-01-27T00:22:04.795Z",
+      "originalInformationKnownAt": "2025-01-27T03:14:55.431Z",
+      "timingDecision": "corrected to conservative public-by bound from preserved contemporary analysis publication metadata; AFC result confound retained",
+      "expectedDirection": "positive",
+      "claim": "Philadelphia defeated Washington 55–23 and advanced to Super Bowl LIX.",
+      "sourceIds": ["gamebook-nfc", "recap-nfc", "archive-nfc-20250127003536"],
+      "measured": {"reference": 0.3255, "stabilized": 0.4655, "changePp": 14.0, "delayedCumulativePp": 14.35, "quality": "usable"}
+    }
+  ],
+  "recalculatedTieGroups": [["nfc-title"], ["snow-playoff"], ["barkley-record"], ["falcons-collapse"], ["hurts-concussion"]],
+  "runtimePatch": "docs/launch-work/finish-pass/eagles/evidence-addendum-v2.json",
+  "ending": {"unchanged": true, "sourceId": "eagles-ending", "superBowlExcludedFromScoring": true},
+  "reviewGates": [
+    "Independent editor must approve public-by semantics and the three earlier informationKnownAt anchors.",
+    "Exact first-public instants remain unresolved.",
+    "Human approval is absent; do not register, queue, publish, deploy, or expose measurement endpoints from this packet.",
+    "Lead must apply the runtime patch and run final build/browser QA."
+  ]
+}

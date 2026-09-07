@@ -1,0 +1,840 @@
+[
+  {
+    "key": "trump",
+    "rawObservations": 4550,
+    "observations": 4549,
+    "coverageStart": "2024-05-01T00:00:00Z",
+    "coverageEnd": "2024-11-06T15:00:00Z",
+    "frequency": "UTC hourly buckets",
+    "missingHours": 3,
+    "maximumMissingRunHours": 1,
+    "rejectedObservations": 0,
+    "duplicateOrRevisionBuckets": 1,
+    "markPolicy": "Project Polymarket importer convention: latest source price per hour, treated as trade; API does not establish actual trade freshness or historical spread/volume. No filling.",
+    "normalizedSha256": "7b75c8dd3b85c151c76bded476ae6e32fa3084781c77cfa176f632e527bdd380",
+    "minQualifyingDailyMedian": {
+      "date": "2024-08-16",
+      "median": 0.4415,
+      "observations": 24,
+      "min": 0.4405,
+      "max": 0.4525
+    },
+    "maxQualifyingDailyMedian": {
+      "date": "2024-07-15",
+      "median": 0.705,
+      "observations": 24,
+      "min": 0.695,
+      "max": 0.715
+    },
+    "maximumDailyMedianRise": {
+      "from": {
+        "date": "2024-05-09",
+        "median": 0.445,
+        "observations": 24,
+        "min": 0.445,
+        "max": 0.455
+      },
+      "to": {
+        "date": "2024-07-15",
+        "median": 0.705,
+        "observations": 24,
+        "min": 0.695,
+        "max": 0.715
+      },
+      "pp": 25.999999999999996
+    },
+    "maximumDailyMedianDrawdown": {
+      "from": {
+        "date": "2024-07-15",
+        "median": 0.705,
+        "observations": 24,
+        "min": 0.695,
+        "max": 0.715
+      },
+      "to": {
+        "date": "2024-08-16",
+        "median": 0.4415,
+        "observations": 24,
+        "min": 0.4405,
+        "max": 0.4525
+      },
+      "pp": 26.349999999999994
+    },
+    "fullMarketLifetime": false
+  },
+  {
+    "key": "eagles",
+    "rawObservations": 5173,
+    "observations": 5167,
+    "coverageStart": "2024-07-09T18:00:00Z",
+    "coverageEnd": "2025-02-10T02:00:00Z",
+    "frequency": "UTC hourly buckets",
+    "missingHours": 2,
+    "maximumMissingRunHours": 1,
+    "rejectedObservations": 5,
+    "duplicateOrRevisionBuckets": 1,
+    "markPolicy": "Project Polymarket importer convention: latest source price per hour, treated as trade; API does not establish actual trade freshness or historical spread/volume. No filling.",
+    "normalizedSha256": "f151a62f5de76cf398be3ce16c8d229d7c9950771e53f936d3c2494063348dcc",
+    "minQualifyingDailyMedian": {
+      "date": "2024-10-19",
+      "median": 0.0435,
+      "observations": 24,
+      "min": 0.043,
+      "max": 0.0445
+    },
+    "maxQualifyingDailyMedian": {
+      "date": "2025-02-07",
+      "median": 0.4735,
+      "observations": 24,
+      "min": 0.4715,
+      "max": 0.4775
+    },
+    "maximumDailyMedianRise": {
+      "from": {
+        "date": "2024-10-19",
+        "median": 0.0435,
+        "observations": 24,
+        "min": 0.043,
+        "max": 0.0445
+      },
+      "to": {
+        "date": "2025-02-07",
+        "median": 0.4735,
+        "observations": 24,
+        "min": 0.4715,
+        "max": 0.4775
+      },
+      "pp": 43.0
+    },
+    "maximumDailyMedianDrawdown": {
+      "from": {
+        "date": "2024-12-16",
+        "median": 0.16725,
+        "observations": 24,
+        "min": 0.1545,
+        "max": 0.175
+      },
+      "to": {
+        "date": "2025-01-10",
+        "median": 0.1065,
+        "observations": 24,
+        "min": 0.1045,
+        "max": 0.1085
+      },
+      "pp": 6.075000000000001
+    },
+    "fullMarketLifetime": false
+  },
+  {
+    "key": "bitcoin",
+    "rawObservations": 6610,
+    "observations": 6609,
+    "coverageStart": "2024-03-04T17:00:00Z",
+    "coverageEnd": "2024-12-05T04:00:00Z",
+    "frequency": "UTC hourly buckets",
+    "missingHours": 3,
+    "maximumMissingRunHours": 1,
+    "rejectedObservations": 0,
+    "duplicateOrRevisionBuckets": 1,
+    "markPolicy": "Project Polymarket importer convention: latest source price per hour, treated as trade; API does not establish actual trade freshness or historical spread/volume. No filling.",
+    "normalizedSha256": "35cc50c685af0d82a38a96b1198728856f9d8f891287e882473cc39f06ffeccb",
+    "minQualifyingDailyMedian": {
+      "date": "2024-09-08",
+      "median": 0.105,
+      "observations": 24,
+      "min": 0.1,
+      "max": 0.115
+    },
+    "maxQualifyingDailyMedian": {
+      "date": "2024-11-22",
+      "median": 0.935,
+      "observations": 24,
+      "min": 0.886,
+      "max": 0.9605
+    },
+    "maximumDailyMedianRise": {
+      "from": {
+        "date": "2024-09-08",
+        "median": 0.105,
+        "observations": 24,
+        "min": 0.1,
+        "max": 0.115
+      },
+      "to": {
+        "date": "2024-11-22",
+        "median": 0.935,
+        "observations": 24,
+        "min": 0.886,
+        "max": 0.9605
+      },
+      "pp": 83.0
+    },
+    "maximumDailyMedianDrawdown": {
+      "from": {
+        "date": "2024-03-13",
+        "median": 0.645,
+        "observations": 24,
+        "min": 0.635,
+        "max": 0.655
+      },
+      "to": {
+        "date": "2024-09-08",
+        "median": 0.105,
+        "observations": 24,
+        "min": 0.1,
+        "max": 0.115
+      },
+      "pp": 54.0
+    },
+    "fullMarketLifetime": false
+  },
+  {
+    "key": "fed",
+    "rawObservations": 1129,
+    "observations": 1129,
+    "coverageStart": "2024-08-02T21:00:00Z",
+    "coverageEnd": "2024-09-18T21:00:00Z",
+    "frequency": "UTC hourly buckets",
+    "missingHours": 0,
+    "maximumMissingRunHours": 0,
+    "rejectedObservations": 0,
+    "duplicateOrRevisionBuckets": 0,
+    "markPolicy": "Project Polymarket importer convention: latest source price per hour, treated as trade; API does not establish actual trade freshness or historical spread/volume. No filling.",
+    "normalizedSha256": "d1aaa956b95ab0a228c6eafb2bc6d72b91f27b614b162892197439581d716b97",
+    "minQualifyingDailyMedian": {
+      "date": "2024-09-12",
+      "median": 0.08,
+      "observations": 24,
+      "min": 0.065,
+      "max": 0.25
+    },
+    "maxQualifyingDailyMedian": {
+      "date": "2024-08-05",
+      "median": 0.5974999999999999,
+      "observations": 24,
+      "min": 0.52,
+      "max": 0.675
+    },
+    "maximumDailyMedianRise": {
+      "from": {
+        "date": "2024-09-12",
+        "median": 0.08,
+        "observations": 24,
+        "min": 0.065,
+        "max": 0.25
+      },
+      "to": {
+        "date": "2024-09-15",
+        "median": 0.34,
+        "observations": 24,
+        "min": 0.33,
+        "max": 0.45
+      },
+      "pp": 26.0
+    },
+    "maximumDailyMedianDrawdown": {
+      "from": {
+        "date": "2024-08-05",
+        "median": 0.5974999999999999,
+        "observations": 24,
+        "min": 0.52,
+        "max": 0.675
+      },
+      "to": {
+        "date": "2024-09-12",
+        "median": 0.08,
+        "observations": 24,
+        "min": 0.065,
+        "max": 0.25
+      },
+      "pp": 51.74999999999999
+    },
+    "fullMarketLifetime": false
+  },
+  {
+    "key": "tiktok",
+    "rawObservations": 3024,
+    "observations": 3023,
+    "coverageStart": "2024-09-18T01:00:00Z",
+    "coverageEnd": "2025-01-22T00:00:00Z",
+    "frequency": "UTC hourly buckets",
+    "missingHours": 1,
+    "maximumMissingRunHours": 1,
+    "rejectedObservations": 0,
+    "duplicateOrRevisionBuckets": 1,
+    "markPolicy": "Project Polymarket importer convention: latest source price per hour, treated as trade; API does not establish actual trade freshness or historical spread/volume. No filling.",
+    "normalizedSha256": "caf50a435fa87b927fa197b4a03c472bf7cba94de020c5879668b12036e90bd7",
+    "minQualifyingDailyMedian": {
+      "date": "2024-11-08",
+      "median": 0.125,
+      "observations": 24,
+      "min": 0.125,
+      "max": 0.135
+    },
+    "maxQualifyingDailyMedian": {
+      "date": "2025-01-19",
+      "median": 0.97375,
+      "observations": 24,
+      "min": 0.84,
+      "max": 0.9915
+    },
+    "maximumDailyMedianRise": {
+      "from": {
+        "date": "2024-11-08",
+        "median": 0.125,
+        "observations": 24,
+        "min": 0.125,
+        "max": 0.135
+      },
+      "to": {
+        "date": "2025-01-19",
+        "median": 0.97375,
+        "observations": 24,
+        "min": 0.84,
+        "max": 0.9915
+      },
+      "pp": 84.875
+    },
+    "maximumDailyMedianDrawdown": {
+      "from": {
+        "date": "2024-10-01",
+        "median": 0.35,
+        "observations": 24,
+        "min": 0.315,
+        "max": 0.395
+      },
+      "to": {
+        "date": "2024-11-08",
+        "median": 0.125,
+        "observations": 24,
+        "min": 0.125,
+        "max": 0.135
+      },
+      "pp": 22.499999999999996
+    },
+    "fullMarketLifetime": false
+  },
+  {
+    "key": "canada",
+    "rawObservations": 2723,
+    "observations": 2723,
+    "coverageStart": "2025-01-06T19:00:00Z",
+    "coverageEnd": "2025-04-30T05:00:00Z",
+    "frequency": "UTC hourly buckets",
+    "missingHours": 0,
+    "maximumMissingRunHours": 0,
+    "rejectedObservations": 0,
+    "duplicateOrRevisionBuckets": 0,
+    "markPolicy": "Project Polymarket importer convention: latest source price per hour, treated as trade; API does not establish actual trade freshness or historical spread/volume. No filling.",
+    "normalizedSha256": "4a4931cd09ef1d4f685610dfebf6a912353412230bbfb3b3c079968b54c1542e",
+    "minQualifyingDailyMedian": {
+      "date": "2025-01-07",
+      "median": 0.03975,
+      "observations": 24,
+      "min": 0.0305,
+      "max": 0.0535
+    },
+    "maxQualifyingDailyMedian": {
+      "date": "2025-04-24",
+      "median": 0.8600000000000001,
+      "observations": 24,
+      "min": 0.848,
+      "max": 0.8775
+    },
+    "maximumDailyMedianRise": {
+      "from": {
+        "date": "2025-01-07",
+        "median": 0.03975,
+        "observations": 24,
+        "min": 0.0305,
+        "max": 0.0535
+      },
+      "to": {
+        "date": "2025-04-24",
+        "median": 0.8600000000000001,
+        "observations": 24,
+        "min": 0.848,
+        "max": 0.8775
+      },
+      "pp": 82.02500000000002
+    },
+    "maximumDailyMedianDrawdown": {
+      "from": {
+        "date": "2025-04-09",
+        "median": 0.787,
+        "observations": 24,
+        "min": 0.782,
+        "max": 0.796
+      },
+      "to": {
+        "date": "2025-04-14",
+        "median": 0.687,
+        "observations": 24,
+        "min": 0.673,
+        "max": 0.6995
+      },
+      "pp": 9.999999999999998
+    },
+    "fullMarketLifetime": false
+  },
+  {
+    "key": "gta",
+    "rawObservations": 8091,
+    "observations": 8088,
+    "coverageStart": "2025-01-29T01:00:00Z",
+    "coverageEnd": "2026-01-01T08:00:00Z",
+    "frequency": "UTC hourly buckets",
+    "missingHours": 8,
+    "maximumMissingRunHours": 4,
+    "rejectedObservations": 0,
+    "duplicateOrRevisionBuckets": 3,
+    "markPolicy": "Project Polymarket importer convention: latest source price per hour, treated as trade; API does not establish actual trade freshness or historical spread/volume. No filling.",
+    "normalizedSha256": "049bc5e680848cafff2aeadae090948b6078489c1dcd08c62635725071734034",
+    "minQualifyingDailyMedian": {
+      "date": "2025-12-23",
+      "median": 0.0015,
+      "observations": 24,
+      "min": 0.0015,
+      "max": 0.002
+    },
+    "maxQualifyingDailyMedian": {
+      "date": "2025-02-07",
+      "median": 0.76,
+      "observations": 24,
+      "min": 0.755,
+      "max": 0.78
+    },
+    "maximumDailyMedianRise": {
+      "from": {
+        "date": "2025-04-08",
+        "median": 0.54,
+        "observations": 24,
+        "min": 0.505,
+        "max": 0.555
+      },
+      "to": {
+        "date": "2025-04-17",
+        "median": 0.735,
+        "observations": 24,
+        "min": 0.715,
+        "max": 0.775
+      },
+      "pp": 19.499999999999996
+    },
+    "maximumDailyMedianDrawdown": {
+      "from": {
+        "date": "2025-02-07",
+        "median": 0.76,
+        "observations": 24,
+        "min": 0.755,
+        "max": 0.78
+      },
+      "to": {
+        "date": "2025-12-23",
+        "median": 0.0015,
+        "observations": 24,
+        "min": 0.0015,
+        "max": 0.002
+      },
+      "pp": 75.85000000000001
+    },
+    "fullMarketLifetime": false
+  },
+  {
+    "key": "twitter",
+    "rawObservations": 0,
+    "observations": 0,
+    "coverageStart": null,
+    "coverageEnd": null,
+    "frequency": "UTC hourly buckets",
+    "missingHours": 0,
+    "maximumMissingRunHours": 0,
+    "rejectedObservations": 0,
+    "duplicateOrRevisionBuckets": 0,
+    "markPolicy": "Project Polymarket importer convention: latest source price per hour, treated as trade; API does not establish actual trade freshness or historical spread/volume. No filling.",
+    "normalizedSha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "minQualifyingDailyMedian": null,
+    "maxQualifyingDailyMedian": null,
+    "maximumDailyMedianRise": null,
+    "maximumDailyMedianDrawdown": null,
+    "fullMarketLifetime": false
+  },
+  {
+    "key": "anora-poly",
+    "rawObservations": 971,
+    "observations": 971,
+    "coverageStart": "2025-01-21T22:00:00Z",
+    "coverageEnd": "2025-03-03T08:00:00Z",
+    "frequency": "UTC hourly buckets",
+    "missingHours": 0,
+    "maximumMissingRunHours": 0,
+    "rejectedObservations": 0,
+    "duplicateOrRevisionBuckets": 0,
+    "markPolicy": "Project Polymarket importer convention: latest source price per hour, treated as trade; API does not establish actual trade freshness or historical spread/volume. No filling.",
+    "normalizedSha256": "529738e65c1eb6baafed4f2c5692a828b85035a193dc4010978e654434f1266d",
+    "minQualifyingDailyMedian": {
+      "date": "2025-01-30",
+      "median": 0.135,
+      "observations": 24,
+      "min": 0.125,
+      "max": 0.14
+    },
+    "maxQualifyingDailyMedian": {
+      "date": "2025-02-23",
+      "median": 0.775,
+      "observations": 24,
+      "min": 0.745,
+      "max": 0.805
+    },
+    "maximumDailyMedianRise": {
+      "from": {
+        "date": "2025-01-30",
+        "median": 0.135,
+        "observations": 24,
+        "min": 0.125,
+        "max": 0.14
+      },
+      "to": {
+        "date": "2025-02-23",
+        "median": 0.775,
+        "observations": 24,
+        "min": 0.745,
+        "max": 0.805
+      },
+      "pp": 64.0
+    },
+    "maximumDailyMedianDrawdown": {
+      "from": {
+        "date": "2025-02-23",
+        "median": 0.775,
+        "observations": 24,
+        "min": 0.745,
+        "max": 0.805
+      },
+      "to": {
+        "date": "2025-02-24",
+        "median": 0.6225,
+        "observations": 24,
+        "min": 0.56,
+        "max": 0.76
+      },
+      "pp": 15.249999999999996
+    },
+    "fullMarketLifetime": false
+  },
+  {
+    "key": "chiefs",
+    "rawObservations": 5174,
+    "observations": 5173,
+    "coverageStart": "2024-07-09T17:00:00Z",
+    "coverageEnd": "2025-02-10T07:00:00Z",
+    "frequency": "UTC hourly buckets",
+    "missingHours": 2,
+    "maximumMissingRunHours": 1,
+    "rejectedObservations": 0,
+    "duplicateOrRevisionBuckets": 1,
+    "markPolicy": "Project Polymarket importer convention: latest source price per hour, treated as trade; API does not establish actual trade freshness or historical spread/volume. No filling.",
+    "normalizedSha256": "a6d18094865c07d003545baea017d32e64a425d5f3de682e187ca18b85c3193a",
+    "minQualifyingDailyMedian": {
+      "date": "2024-08-21",
+      "median": 0.131,
+      "observations": 24,
+      "min": 0.1305,
+      "max": 0.132
+    },
+    "maxQualifyingDailyMedian": {
+      "date": "2025-01-27",
+      "median": 0.53975,
+      "observations": 24,
+      "min": 0.258,
+      "max": 0.5435
+    },
+    "maximumDailyMedianRise": {
+      "from": {
+        "date": "2024-08-21",
+        "median": 0.131,
+        "observations": 24,
+        "min": 0.1305,
+        "max": 0.132
+      },
+      "to": {
+        "date": "2025-01-27",
+        "median": 0.53975,
+        "observations": 24,
+        "min": 0.258,
+        "max": 0.5435
+      },
+      "pp": 40.87499999999999
+    },
+    "maximumDailyMedianDrawdown": {
+      "from": {
+        "date": "2024-10-28",
+        "median": 0.1985,
+        "observations": 24,
+        "min": 0.1625,
+        "max": 0.22
+      },
+      "to": {
+        "date": "2024-12-16",
+        "median": 0.13525,
+        "observations": 24,
+        "min": 0.1185,
+        "max": 0.1445
+      },
+      "pp": 6.325
+    },
+    "fullMarketLifetime": false
+  },
+  {
+    "key": "taylor",
+    "rawObservations": 5716,
+    "observations": 5714,
+    "coverageStart": "2024-12-31T17:00:00Z",
+    "coverageEnd": "2025-08-26T19:00:00Z",
+    "frequency": "UTC hourly buckets",
+    "missingHours": 1,
+    "maximumMissingRunHours": 1,
+    "rejectedObservations": 0,
+    "duplicateOrRevisionBuckets": 2,
+    "markPolicy": "Project Polymarket importer convention: latest source price per hour, treated as trade; API does not establish actual trade freshness or historical spread/volume. No filling.",
+    "normalizedSha256": "7bbca8892da2ce701c9ea1debfc6316d2cb8df00359324f4611b57710343e3ed",
+    "minQualifyingDailyMedian": {
+      "date": "2025-05-15",
+      "median": 0.22999999999999998,
+      "observations": 24,
+      "min": 0.19,
+      "max": 0.31
+    },
+    "maxQualifyingDailyMedian": {
+      "date": "2025-01-31",
+      "median": 0.65,
+      "observations": 24,
+      "min": 0.615,
+      "max": 0.665
+    },
+    "maximumDailyMedianRise": {
+      "from": {
+        "date": "2025-01-02",
+        "median": 0.325,
+        "observations": 24,
+        "min": 0.265,
+        "max": 0.345
+      },
+      "to": {
+        "date": "2025-01-31",
+        "median": 0.65,
+        "observations": 24,
+        "min": 0.615,
+        "max": 0.665
+      },
+      "pp": 32.5
+    },
+    "maximumDailyMedianDrawdown": {
+      "from": {
+        "date": "2025-01-31",
+        "median": 0.65,
+        "observations": 24,
+        "min": 0.615,
+        "max": 0.665
+      },
+      "to": {
+        "date": "2025-05-15",
+        "median": 0.22999999999999998,
+        "observations": 24,
+        "min": 0.19,
+        "max": 0.31
+      },
+      "pp": 42.00000000000001
+    },
+    "fullMarketLifetime": false
+  },
+  {
+    "key": "nyc",
+    "rawObservations": 4713,
+    "observations": 4711,
+    "coverageStart": "2025-04-22T17:00:00Z",
+    "coverageEnd": "2025-11-05T05:00:00Z",
+    "frequency": "UTC hourly buckets",
+    "missingHours": 6,
+    "maximumMissingRunHours": 4,
+    "rejectedObservations": 0,
+    "duplicateOrRevisionBuckets": 2,
+    "markPolicy": "Project Polymarket importer convention: latest source price per hour, treated as trade; API does not establish actual trade freshness or historical spread/volume. No filling.",
+    "normalizedSha256": "53e961b3828d1d393f346b8b65509fee2db504749836dabc36c20df7f3b6ed03",
+    "minQualifyingDailyMedian": {
+      "date": "2025-05-25",
+      "median": 0.039,
+      "observations": 24,
+      "min": 0.036,
+      "max": 0.042
+    },
+    "maxQualifyingDailyMedian": {
+      "date": "2025-10-27",
+      "median": 0.9515,
+      "observations": 24,
+      "min": 0.941,
+      "max": 0.9585
+    },
+    "maximumDailyMedianRise": {
+      "from": {
+        "date": "2025-05-25",
+        "median": 0.039,
+        "observations": 24,
+        "min": 0.036,
+        "max": 0.042
+      },
+      "to": {
+        "date": "2025-10-27",
+        "median": 0.9515,
+        "observations": 24,
+        "min": 0.941,
+        "max": 0.9585
+      },
+      "pp": 91.25
+    },
+    "maximumDailyMedianDrawdown": {
+      "from": {
+        "date": "2025-06-12",
+        "median": 0.33275,
+        "observations": 24,
+        "min": 0.2985,
+        "max": 0.3525
+      },
+      "to": {
+        "date": "2025-06-18",
+        "median": 0.12375,
+        "observations": 24,
+        "min": 0.0895,
+        "max": 0.153
+      },
+      "pp": 20.9
+    },
+    "fullMarketLifetime": false
+  },
+  {
+    "key": "anora-kalshi",
+    "rawObservations": 1399,
+    "observations": 1392,
+    "coverageStart": "2024-10-24T15:00:00Z",
+    "coverageEnd": "2025-03-03T04:00:00Z",
+    "frequency": "UTC hourly buckets",
+    "missingHours": 1718,
+    "maximumMissingRunHours": 38,
+    "rejectedObservations": 7,
+    "duplicateOrRevisionBuckets": 0,
+    "markPolicy": "Project Kalshi convention: actual candle trade close; otherwise closing quote midpoint only at <=20pp spread. No previous-close carry or missing-hour fill.",
+    "normalizedSha256": "e1f66ccc49027815e23b327fa1c1a64adf569d3072d47220e47c7b9bd7b495da",
+    "minQualifyingDailyMedian": {
+      "date": "2025-01-30",
+      "median": 0.16,
+      "observations": 13,
+      "min": 0.15,
+      "max": 0.17
+    },
+    "maxQualifyingDailyMedian": {
+      "date": "2025-02-22",
+      "median": 0.745,
+      "observations": 19,
+      "min": 0.73,
+      "max": 0.76
+    },
+    "maximumDailyMedianRise": {
+      "from": {
+        "date": "2025-01-30",
+        "median": 0.16,
+        "observations": 13,
+        "min": 0.15,
+        "max": 0.17
+      },
+      "to": {
+        "date": "2025-02-22",
+        "median": 0.745,
+        "observations": 19,
+        "min": 0.73,
+        "max": 0.76
+      },
+      "pp": 58.5
+    },
+    "maximumDailyMedianDrawdown": {
+      "from": {
+        "date": "2024-11-10",
+        "median": 0.48,
+        "observations": 18,
+        "min": 0.43,
+        "max": 0.51
+      },
+      "to": {
+        "date": "2025-01-30",
+        "median": 0.16,
+        "observations": 13,
+        "min": 0.15,
+        "max": 0.17
+      },
+      "pp": 31.999999999999996
+    },
+    "fullMarketLifetime": false
+  },
+  {
+    "key": "oscars26",
+    "rawObservations": 4168,
+    "observations": 4168,
+    "coverageStart": "2025-09-22T15:00:00Z",
+    "coverageEnd": "2026-03-16T03:00:00Z",
+    "frequency": "UTC hourly buckets",
+    "missingHours": 21,
+    "maximumMissingRunHours": 1,
+    "rejectedObservations": 0,
+    "duplicateOrRevisionBuckets": 0,
+    "markPolicy": "Project Kalshi convention: actual candle trade close; otherwise closing quote midpoint only at <=20pp spread. No previous-close carry or missing-hour fill.",
+    "normalizedSha256": "c33cc77f517d02b61277d2931ba4f1c638e7449f372b397bdb2aeac50cfd7a66",
+    "minQualifyingDailyMedian": {
+      "date": "2025-09-23",
+      "median": 0.47,
+      "observations": 23,
+      "min": 0.4,
+      "max": 0.52
+    },
+    "maxQualifyingDailyMedian": {
+      "date": "2026-03-01",
+      "median": 0.87,
+      "observations": 24,
+      "min": 0.74,
+      "max": 0.89
+    },
+    "maximumDailyMedianRise": {
+      "from": {
+        "date": "2025-09-23",
+        "median": 0.47,
+        "observations": 23,
+        "min": 0.4,
+        "max": 0.52
+      },
+      "to": {
+        "date": "2026-03-01",
+        "median": 0.87,
+        "observations": 24,
+        "min": 0.74,
+        "max": 0.89
+      },
+      "pp": 40.0
+    },
+    "maximumDailyMedianDrawdown": {
+      "from": {
+        "date": "2025-09-29",
+        "median": 0.695,
+        "observations": 24,
+        "min": 0.67,
+        "max": 0.73
+      },
+      "to": {
+        "date": "2025-11-18",
+        "median": 0.5075000000000001,
+        "observations": 24,
+        "min": 0.5,
+        "max": 0.52
+      },
+      "pp": 18.74999999999999
+    },
+    "fullMarketLifetime": false
+  }
+]

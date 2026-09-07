@@ -1,0 +1,31 @@
+{
+  "artifactType": "Trump candidate anchor correction",
+  "version": "v3",
+  "createdAt": "2026-09-06T20:18:05Z",
+  "selectionFreeze": {
+    "file": "docs/launch-queue-research/frozen-selection-v1.json",
+    "sha256": "79ca8b2e025f15e5fe1ff9040ed1c060d874bf188d2b239f39fc647c0ad33593",
+    "preserved": true,
+    "reason": "The five event IDs and initial order are unchanged; only the evidence-supported debate information cutoff is corrected before any new integration calculation."
+  },
+  "corrections": [
+    {
+      "eventId": "harris-debate",
+      "originalInformationKnownAt": "2024-09-11T03:58:00Z",
+      "originalBasis": "ABC transcript page datePublished metadata; page later modified at 2024-09-11T16:24:39Z.",
+      "correctedInformationKnownAt": "2024-09-11T02:45:00Z",
+      "correctedPrecision": "upper-bound-approximate-minute",
+      "correctedBasis": "ABC schedule establishes a 21:00 EDT live start; Nielsen's contemporary record brackets the live broadcast at approximately 21:00–22:45 EDT. The cutoff is the approximate broadcast end, not an exact first-public minute.",
+      "sourceIds": ["abc-schedule", "nielsen-debate-window", "abc-replay", "abc-transcript-metadata"],
+      "laterEditHandling": "The ABC transcript's 16:24:39Z modification is retained as page metadata only and is not backdated.",
+      "frozenBeforeMeasurement": true
+    }
+  ],
+  "unchangedAnchors": [
+    {"eventId": "conviction", "informationKnownAt": "2024-05-30T21:15:07Z", "precision": "upper-bound-minute", "reason": "Retained CNN 17:00–18:00 EDT broadcast bracket; official DA/court records confirm the date and substance but not the public minute."},
+    {"eventId": "butler", "informationKnownAt": "2024-07-14T00:00:00Z", "precision": "upper-bound-hour", "reason": "Retained CNN 19:00–20:00 EDT broadcast bracket; FBI record confirms the incident date."},
+    {"eventId": "rfk-endorsement", "informationKnownAt": "2024-08-23T19:30:00Z", "precision": "upper-bound-half-hour", "reason": "Retained CNN 15:00–15:30 EDT broadcast bracket; Kennedy's own dated address confirms the announcement."},
+    {"eventId": "iowa-poll", "informationKnownAt": "2024-11-03T00:00:00Z", "precision": "upper-bound-hour", "reason": "Retained CNN 19:00–20:00 EDT broadcast bracket; Reuters independently confirms the poll facts and Saturday release."}
+  ],
+  "policy": "No timestamp was selected from market behavior. No card was added, removed, or reordered. The legacy election fixture was not changed."
+}

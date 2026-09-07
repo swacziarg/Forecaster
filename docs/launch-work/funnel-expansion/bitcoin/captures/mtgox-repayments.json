@@ -1,0 +1,14 @@
+{
+  "id": "mtgox-repayments",
+  "captureStatus": "retrieved-via-web-text",
+  "captureType": "authoritative-pdf-text-excerpt",
+  "sourceRole": "primary",
+  "publisher": "Mt. Gox Rehabilitation Trustee",
+  "title": "Notice regarding Repayment in Bitcoin and Bitcoin Cash",
+  "url": "https://www.mtgox.com/img/pdf/20240705_01_announcement_en.pdf",
+  "retrievedAt": "2026-09-06T20:21:50Z",
+  "passageLocation": "PDF page 1, lines 0-15",
+  "passage": "July 5, 2024\nNotice regarding Repayment in Bitcoin and Bitcoin Cash\nOn July 5, 2024, the Rehabilitation Trustee made repayments in Bitcoin and Bitcoin Cash to some of the rehabilitation creditors through a part of the Designated Cryptocurrency Exchanges etc. in accordance with the Rehabilitation Plan. Repayments to other rehabilitation creditors will be promptly made once the following conditions have been met.",
+  "passageSha256": "f62545f3ef8f7d4fa09173f7b5fb2d7df395d59b1d3b92452fdf0c1660e8c618",
+  "publicTime": { "value": "2024-07-05", "precision": "day", "justification": "The trustee PDF dates the notice and states that repayments were made on July 5; no clock is exposed. The existing study's hour anchor 2024-07-05T01:00:00Z is retained provisionally and must be independently confirmed before publication." }
+}

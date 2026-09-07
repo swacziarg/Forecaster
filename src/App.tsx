@@ -1,17 +1,19 @@
-import { useEffect, useMemo, useState, type DragEvent, type PointerEvent as ReactPointerEvent, type ReactNode } from 'react'
+import { useEffect, useMemo, useRef, useState, type DragEvent, type PointerEvent as ReactPointerEvent, type ReactNode } from 'react'
 import { ArrowRight, BarChart3, BookOpen, CalendarDays, ChevronDown, Database, ExternalLink, GripVertical, Info, LockKeyhole, RotateCcw, ShieldCheck, X, ZoomIn } from 'lucide-react'
-import { studyById, studyFromLocation, studyRegistry, type StudyRegistration } from './data/studies.ts'
+import { studyById, studyRegistry, type StudyRegistration } from './data/studies.ts'
 import { dailyPuzzles } from './data/dailyPuzzles.ts'
 import { DailyGame, DailyUnavailable } from './DailyGame.tsx'
 import { calculateStudyImpacts, createTieGroups, moveRankedItem, pairwiseAgreement, summarizeCampaign, type MarketSeriesPoint, type StudyEventImpact } from './domain/eventStudy.ts'
 import { resolveDailyPuzzle } from './domain/dailyGame.ts'
+import { resolveStudyRoute, type StudyRoute } from './domain/launchRouting.ts'
+import { createPrivatePreviewPuzzle, resolvePrivatePreview } from './domain/playablePreview.ts'
 import { assertValidStudy, type Source, type Study } from './domain/study.ts'
 
 const formatProbability = (value: number | null) => value === null ? 'Unavailable' : `${(value * 100).toFixed(value * 100 % 1 === 0 ? 0 : 1)}%`
 const formatImpact = (value: number | null) => {
   if (value === null) return 'Indeterminate'
   const roundedPoints = Math.round(Math.abs(value) * 1000 + 1e-9) / 10
-  return `${value >= 0 ? '+' : '-'}${roundedPoints.toFixed(1)} pts`
+  return `${value >= 0 ? '+' : '−'}${roundedPoints.toFixed(1)} percentage points`
 }
 const formatVolume = (value?: number) => value === undefined ? 'Not reported' : value >= 1_000_000_000 ? `$${(value / 1_000_000_000).toFixed(2)}B` : `${(value / 1_000_000).toFixed(2)}M contracts`
 const formatTime = (timestamp: string, timezone: string) => new Date(timestamp).toLocaleString('en-US', { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: timezone, timeZoneName: 'short' })
@@ -19,9 +21,10 @@ const formatDate = (timestamp: string, timezone: string) => new Date(timestamp).
 
 function AppFrame({ children }: { children: ReactNode }) {
   const pathname = window.location.pathname
-  const active = studyRegistry.find(({ study }) => pathname.includes(study.slug))?.study ?? (pathname === '/' ? studyRegistry[0].study : null)
+  const route = resolveStudyRoute(pathname, studyRegistry)
+  const active = route.kind === 'published' ? route.registration.study : pathname === '/' ? studyRegistry[0].study : null
   const publicStudies = studyRegistry.filter(({ study }) => study.status === 'published')
-  return <div className="app-shell"><header className="topbar"><a className="brand" href="/"><span className="brand-symbol" aria-hidden="true"><span /><span /><span /></span><span>NexusPoint<span className="brand-dot">.</span></span></a><nav className="study-nav" aria-label="Event studies"><a className={pathname === '/studies' || pathname === '/studies/' ? 'is-active' : ''} href="/studies">Archive</a><label className="study-selector"><span>Study</span><select aria-label="Choose an event study" value={active?.slug ?? ''} onChange={(event) => { if (event.target.value) window.location.href = `/studies/${event.target.value}` }}><option value="" disabled>Choose a study</option>{publicStudies.map(({ study }) => <option value={study.slug} key={study.id}>{study.presentation.topicLabel}</option>)}</select><ChevronDown size={14} aria-hidden="true" /></label></nav></header><main id="top">{children}</main></div>
+  return <div className="app-shell"><header className="topbar"><a className="brand" href="/"><span className="brand-symbol" aria-hidden="true"><span /><span /><span /></span><span>NexusPoint<span className="brand-dot">.</span></span></a><nav className="study-nav" aria-label="Event studies"><a className={pathname === '/studies' || pathname === '/studies/' ? 'is-active' : ''} href="/studies">Archive</a><label className="study-selector"><span>Study</span><select aria-label="Choose an event study" value={active?.slug ?? ''} onChange={(event) => { if (event.target.value) window.location.href = `/studies/${event.target.value}` }}><option value="">Choose a study</option>{publicStudies.map(({ study }) => <option value={study.slug} key={study.id}>{study.presentation.topicLabel}</option>)}</select><ChevronDown size={14} aria-hidden="true" /></label></nav></header><main id="top">{children}</main></div>
 }
 
 function StudiesIndex() {
@@ -29,12 +32,23 @@ function StudiesIndex() {
   return <div className="studies-index"><section className="studies-intro"><span className="event-kicker">NexusPoint archive</span><h1>Explore past market puzzles.</h1><p>Revisit the evidence, measured movements, and source notes behind completed NexusPoint topics.</p></section><section className="study-card-grid" aria-label="Published event studies">{publicStudies.map(({ study }) => <article className="study-card is-primary" key={study.id} style={{ '--topic-accent': study.presentation.accent } as React.CSSProperties}><div className="study-card-meta"><span>{study.category}</span><span className="status-pill status-published">Published</span></div><h2>{study.presentation.topicLabel}</h2><p>{study.contract.proposition}</p><dl><div><dt>Events</dt><dd>{study.events.length}</dd></div><div><dt>Coverage</dt><dd>{formatDate(study.dataset.coverageStart, study.presentation.timezone)}–{formatDate(study.dataset.coverageEnd, study.presentation.timezone)}</dd></div><div><dt>Provider</dt><dd>{study.market.provider}</dd></div></dl><a href={`/studies/${study.slug}`}>Explore the study <ArrowRight size={15} /></a></article>)}</section></div>
 }
 
-function LoadingView({ study }: { study: Study }) {
-  return <div className="state-page"><div className="state-card"><span className="state-kicker"><i /> {study.presentation.topicLabel}</span><h1>Loading the market study.</h1><p>Verifying the versioned snapshot and its event windows.</p><div className="state-loader" /></div></div>
+function LoadingView({ study, daily = false }: { study: Study; daily?: boolean }) {
+  if (daily) return <div className="daily-shell"><header className="daily-topbar daily-topbar-simple"><a className="daily-brand" href="/"><span className="brand-symbol" aria-hidden="true"><span /><span /><span /></span><span>NexusPoint</span></a><div className="daily-number">Daily · 05:00 UTC</div></header><main className="daily-state-page" aria-live="polite"><span>Preparing the puzzle</span><h1>Checking today’s market record.</h1><p>Verifying the local snapshot for {study.presentation.topicLabel}. Your saved progress is not changed while this loads.</p><div className="state-loader" /></main></div>
+  return <div className="state-page" aria-live="polite"><div className="state-card"><span className="state-kicker"><i /> {study.presentation.topicLabel}</span><h1>Loading the market study.</h1><p>Verifying the versioned snapshot and its event windows.</p><div className="state-loader" /></div></div>
 }
 
-function ErrorView({ message }: { message: string }) {
-  return <div className="state-page"><div className="state-card state-card-error"><Info size={18} /><h1>The study could not load.</h1><p>{message}</p><button className="primary-button" onClick={() => window.location.reload()}><RotateCcw size={16} /> Retry</button></div></div>
+function ErrorView({ message, daily = false }: { message: string; daily?: boolean }) {
+  if (daily) return <div className="daily-shell"><header className="daily-topbar daily-topbar-simple"><a className="daily-brand" href="/"><span className="brand-symbol" aria-hidden="true"><span /><span /><span /></span><span>NexusPoint</span></a><div className="daily-number">Daily · 05:00 UTC</div></header><main className="daily-state-page" role="alert"><span>Market record unavailable</span><h1>We couldn’t open this puzzle.</h1><p>The local market snapshot could not be verified. Your saved attempt has not been changed. Try again, or explore the published archive while this is repaired.</p><div><button className="daily-primary-button" onClick={() => window.location.reload()}><RotateCcw size={16} /> Try again</button><a className="daily-text-link" href="/studies">Explore published studies</a></div></main></div>
+  return <div className="state-page" role="alert"><div className="state-card state-card-error"><Info size={18} /><h1>The study could not load.</h1><p>We couldn’t verify the local market snapshot. Your saved work has not been changed. Please try again.</p><button className="primary-button" onClick={() => window.location.reload()}><RotateCcw size={16} /> Retry</button></div></div>
+}
+
+function StudyUnavailable({ route }: { route: Exclude<StudyRoute, { kind: 'index' | 'published' | 'other' }> }) {
+  const isDraft = route.kind === 'draft'
+  return <div className="state-page"><div className="state-card state-card-error"><Info size={18} /><span className="state-kicker">Public archive</span><h1>{isDraft ? 'This study is still being reviewed.' : 'Study not found.'}</h1><p>{isDraft ? 'This study is not available in the public archive yet. It will appear only after editorial review and publication.' : `No published study matches “${route.slug}”. Check the link or choose a study from the archive.`}</p><a className="primary-button" href="/studies">Explore published studies <ArrowRight size={16} /></a></div></div>
+}
+
+function PrivatePreviewUnavailable({ slug }: { slug: string }) {
+  return <div className="state-page"><div className="state-card state-card-error"><Info size={18} /><span className="state-kicker">Private preview</span><h1>That preview is not available.</h1><p>No registered local draft matches “{slug}”. Preview links are deliberately limited to the launch packet.</p><a className="primary-button" href="/">Return to NexusPoint <ArrowRight size={16} /></a></div></div>
 }
 
 function nearestPointIndex(points: MarketSeriesPoint[], timestamp: string) {
@@ -152,7 +166,7 @@ function ImpactDetail({ study, impact, revealed, onShareChange }: { study: Study
   const visibleClaims = event.claims.filter((claim) => revealed || claim.visibility === 'pre-reveal')
   const visibleSourceIds = new Set(visibleClaims.flatMap((claim) => claim.sourceIds))
   const visibleSources = study.sources.filter((source) => visibleSourceIds.has(source.id))
-  const directionLabel = event.expectedDirection === 'positive' ? study.presentation.positiveLabel : event.expectedDirection === 'negative' ? study.presentation.negativeLabel : study.presentation.neutralLabel
+  const directionLabel = !revealed ? 'Direction hidden until reveal' : event.expectedDirection === 'positive' ? study.presentation.positiveLabel : event.expectedDirection === 'negative' ? study.presentation.negativeLabel : study.presentation.neutralLabel
   const quality = impact.windows.stabilized.quality
   return <aside className="impact-detail" aria-label="Selected event analysis">
     <div className="detail-kicker"><span>{event.category}</span><time dateTime={event.informationKnownAt}>{event.dateLabel}</time></div>
@@ -160,7 +174,7 @@ function ImpactDetail({ study, impact, revealed, onShareChange }: { study: Study
     <p className="evidence-cutoff"><ShieldCheck size={13} /> Known by {formatTime(event.informationKnownAt, study.presentation.timezone)}</p>
     {visibleClaims.map((claim) => <p className="detail-summary" key={claim.id}>{claim.text}</p>)}
     {!visibleClaims.length && <p className="detail-summary evidence-withheld"><LockKeyhole size={12} /> Later reporting is withheld until reveal. Rank from the event identity and the preregistered mechanism below.</p>}
-    <div className={`direction-tag direction-${event.expectedDirection}`}>{directionLabel}</div>
+    <div className={`direction-tag ${revealed ? `direction-${event.expectedDirection}` : 'direction-ambiguous'}`}>{directionLabel}</div>
     <section className="mechanism"><span>Why it could change the contract</span><p>{event.mechanism}</p></section>
     {!revealed ? <><div className="market-hidden"><LockKeyhole size={17} /><div><strong>Market response hidden</strong><p>Rank from the time-safe evidence. The graph, resolution, retrospective sources, and calculated response appear only after you lock your order.</p></div></div><EvidenceLinks sources={visibleSources} /></> : <>
       <div className="movement-flow"><MovementCell label="Reference" value={impact.windows.reference.level} /><ArrowRight size={16} /><MovementCell label="Immediate" value={impact.windows.immediate.level} /><ArrowRight size={16} /><MovementCell label="Stabilized" value={impact.windows.stabilized.level} accent /></div>
@@ -195,11 +209,11 @@ function RankingBoard({ study, impacts, order, selectedId, revealed, onMove, onS
       const event = impact.event
       const ratio = order.length === 1 ? 0.5 : index / (order.length - 1)
       const band = ratio < 0.4 ? 'rank-positive' : ratio > 0.6 ? 'rank-negative' : 'rank-neutral'
-      const directionLabel = event.expectedDirection === 'positive' ? study.presentation.positiveLabel : event.expectedDirection === 'negative' ? study.presentation.negativeLabel : study.presentation.neutralLabel
+      const directionLabel = revealed ? event.expectedDirection === 'positive' ? study.presentation.positiveLabel : event.expectedDirection === 'negative' ? study.presentation.negativeLabel : study.presentation.neutralLabel : 'Direction hidden until reveal'
       return <article className={`ranking-row ${band} ${id === selectedId ? 'is-selected' : ''} ${id === draggedId ? 'is-dragging' : ''} ${revealed ? 'is-locked' : ''}`} key={id} draggable={!revealed} onDragStart={() => { if (!revealed) { setDraggedId(id); setPositionPickerId(null) } }} onDragEnd={() => setDraggedId(null)} onDragOver={(event) => { if (!revealed) event.preventDefault() }} onDrop={(event) => drop(event, index)}>
         <button className="ranking-number" disabled={revealed} aria-label={`Choose a position for ${event.shortTitle}`} aria-expanded={positionPickerId === id} onClick={() => setPositionPickerId((current) => current === id ? null : id)} onKeyDown={(keyEvent) => { if (revealed) return; if (keyEvent.key === 'ArrowUp') { keyEvent.preventDefault(); onMove(id, index - 1) } if (keyEvent.key === 'ArrowDown') { keyEvent.preventDefault(); onMove(id, index + 1) } }}>{index + 1}</button><GripVertical className="drag-handle" size={19} aria-hidden="true" />
         <button className="ranking-title" onClick={() => onSelect(id)}><small>{event.dateLabel} · {event.category}</small><strong>{event.shortTitle}</strong><span>{event.mechanism}</span></button>
-        <span className={`direction-tag direction-${event.expectedDirection}`}>{directionLabel}</span>
+        <span className={`direction-tag ${revealed ? `direction-${event.expectedDirection}` : 'direction-ambiguous'}`}>{directionLabel}</span>
         {revealed ? <div className="market-rank"><small>{impact.shortTermResponse === null ? 'Indeterminate' : `Market group ${marketGroup.get(id)}`}</small><strong className={(impact.shortTermResponse ?? 0) >= 0 ? 'positive' : 'negative'}>{formatImpact(impact.shortTermResponse)}</strong><span>Delayed {formatImpact(impact.delayedIncrement)}</span></div> : <span className="impact-sealed"><LockKeyhole size={11} /> Hidden</span>}
         {positionPickerId === id && !revealed && <div className="position-picker" role="group" aria-label={`Place ${event.shortTitle}`}><div><strong>Choose a position</strong><span>Most positive <i /> Most negative</span></div><div>{order.map((_, destinationIndex) => <button className={destinationIndex === index ? 'is-current' : ''} key={destinationIndex} onClick={() => { onMove(id, destinationIndex); setPositionPickerId(null) }}>{destinationIndex + 1}</button>)}</div></div>}
       </article>
@@ -207,9 +221,36 @@ function RankingBoard({ study, impacts, order, selectedId, revealed, onMove, onS
   </section>
 }
 
-function MethodDrawer({ study, onClose }: { study: Study; onClose: () => void }) {
+function MethodDrawer({ study, returnFocus, onClose }: { study: Study; returnFocus: HTMLElement | null; onClose: () => void }) {
   const profile = study.measurementProfile
-  return <div className="drawer-backdrop" onMouseDown={onClose}><aside className="method-drawer" role="dialog" aria-modal="true" aria-labelledby="method-title" onMouseDown={(event) => event.stopPropagation()}><button className="drawer-close" onClick={onClose} aria-label="Close methodology"><X size={20} /></button><span className="eyebrow">Methodology · {profile.label}</span><h2 id="method-title">Separate judgment from measurable movement</h2><ol><li><strong>Time-safe evidence first</strong><p>Before submission, every visible claim must have been known by the event cutoff. Later analysis and the resolved outcome stay sealed.</p></li><li><strong>One study-wide profile</strong><p>Reference {profile.reference.startHours}h to event; immediate 0–{profile.immediate.endHours}h; stabilized {profile.stabilized.startHours}–{profile.stabilized.endHours}h; delayed {profile.delayed.startHours}–{profile.delayed.endHours}h.</p></li><li><strong>Fresh marks only</strong><p>A trade close is preferred. A quote midpoint is used only with both sides and a spread within the declared threshold. Carried marks are not calculation samples.</p></li><li><strong>Ties and insufficiency are real results</strong><p>Responses within {formatImpact(profile.tieThreshold)} form a tie group. Failed windows show “indeterminate” instead of a forced rank.</p></li><li><strong>Attribution is hypothetical</strong><p>The sensitivity slider starts at zero and applies a chosen share in log odds. It is not an expert attribution estimate.</p></li></ol><div className="method-warning"><Info size={17} /><p>Overlapping news, anticipation, liquidity, and participant behavior limit causal interpretation. Event impacts must not be added together.</p></div><a className="source-link" href={study.dataset.provenanceUrl} target="_blank" rel="noreferrer"><span><small>Dataset provenance</small>{study.dataset.id} · {study.dataset.normalizedSha256.slice(0, 12)}…</span><ExternalLink size={16} /></a></aside></div>
+  const drawerRef = useRef<HTMLElement>(null)
+  const closeRef = useRef<HTMLButtonElement>(null)
+  const onCloseRef = useRef(onClose)
+  const restoreFocusTimer = useRef<number | null>(null)
+  onCloseRef.current = onClose
+
+  useEffect(() => {
+    if (restoreFocusTimer.current !== null) { window.clearTimeout(restoreFocusTimer.current); restoreFocusTimer.current = null }
+    const previousFocus = returnFocus ?? (document.activeElement instanceof HTMLElement ? document.activeElement : null)
+    closeRef.current?.focus()
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') { event.preventDefault(); onCloseRef.current(); return }
+      if (event.key !== 'Tab' || !drawerRef.current) return
+      const focusable = [...drawerRef.current.querySelectorAll<HTMLElement>('button:not([disabled]), a[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')].filter((element) => !element.hidden && element.getClientRects().length > 0)
+      if (!focusable.length) { event.preventDefault(); drawerRef.current.focus(); return }
+      const first = focusable[0]
+      const last = focusable[focusable.length - 1]
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus() }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus() }
+    }
+    document.addEventListener('keydown', onKeyDown)
+    return () => {
+      document.removeEventListener('keydown', onKeyDown)
+      restoreFocusTimer.current = window.setTimeout(() => { restoreFocusTimer.current = null; previousFocus?.focus() }, 0)
+    }
+  }, [returnFocus])
+
+  return <div className="drawer-backdrop" onMouseDown={onClose}><aside ref={drawerRef} className="method-drawer" role="dialog" aria-modal="true" aria-labelledby="method-title" tabIndex={-1} onMouseDown={(event) => event.stopPropagation()}><button ref={closeRef} className="drawer-close" onClick={onClose} aria-label="Close methodology"><X size={20} /></button><span className="eyebrow">Methodology · {profile.label}</span><h2 id="method-title">Separate judgment from measurable movement</h2><ol><li><strong>Time-safe evidence first</strong><p>Before submission, every visible claim must have been known by the event cutoff. Later analysis and the resolved outcome stay sealed.</p></li><li><strong>One study-wide profile</strong><p>Reference {profile.reference.startHours}h to event; immediate 0–{profile.immediate.endHours}h; stabilized {profile.stabilized.startHours}–{profile.stabilized.endHours}h; delayed {profile.delayed.startHours}–{profile.delayed.endHours}h.</p></li><li><strong>Fresh marks only</strong><p>A trade close is preferred. A quote midpoint is used only with both sides and a spread within the declared threshold. Carried marks are not calculation samples.</p></li><li><strong>Ties and insufficiency are real results</strong><p>Responses within {formatImpact(profile.tieThreshold)} form a tie group. Failed windows show “indeterminate” instead of a forced rank.</p></li><li><strong>Attribution is hypothetical</strong><p>The sensitivity slider starts at zero and applies a chosen share in log odds. It is not an expert attribution estimate.</p></li></ol><div className="method-warning"><Info size={17} /><p>Overlapping news, anticipation, liquidity, and participant behavior limit causal interpretation. Event impacts must not be added together.</p></div><a className="source-link" href={study.dataset.provenanceUrl} target="_blank" rel="noreferrer"><span><small>Dataset provenance</small>{study.dataset.id} · {study.dataset.normalizedSha256.slice(0, 12)}…</span><ExternalLink size={16} /></a></aside></div>
 }
 
 function StudyPage({ registration, points }: { registration: StudyRegistration; points: MarketSeriesPoint[] }) {
@@ -222,34 +263,48 @@ function StudyPage({ registration, points }: { registration: StudyRegistration; 
   const [revealed, setRevealed] = useState(false)
   const [submittedAt, setSubmittedAt] = useState<string | null>(null)
   const [showMethod, setShowMethod] = useState(false)
+  const methodTriggerRef = useRef<HTMLButtonElement>(null)
   const impacts = useMemo(() => calculateStudyImpacts(points, study.events, study.measurementProfile, shares), [points, shares, study])
   const summary = useMemo(() => summarizeCampaign(points), [points])
   const selected = impacts.find((impact) => impact.eventId === selectedId) ?? impacts[0]
   const reset = () => { setOrder(initialOrder); setSelectedId(initialOrder[0]); setShares({}); setRevealed(false); setSubmittedAt(null); setScrubIndex(nearestPointIndex(points, study.events[0].informationKnownAt)) }
 
   return <div className={`study-page study-${study.slug}`} style={{ '--topic-accent': study.presentation.accent } as React.CSSProperties}>
-    <section className="study-header"><div className="study-title"><span className="event-kicker">{study.presentation.topicLabel}{study.status !== 'published' ? ' · Editorial review draft' : ''}</span><h1>{study.question}</h1><p>{study.orientation}</p>{!study.dataset.fullMarketLifetime && <span className="coverage-warning"><Info size={13} /> Archived market interval: {formatDate(study.dataset.coverageStart, study.presentation.timezone)}–{formatDate(study.dataset.coverageEnd, study.presentation.timezone)}</span>}</div><div className="header-side"><div className="study-steps" aria-label="Study workflow"><span className="is-current"><b>01</b> Rank the events</span><i /><span className={revealed ? 'is-current' : ''}><b>02</b> Lock your order</span><i /><span className={revealed ? 'is-current' : ''}><b>03</b> Explore the market</span></div><div className="header-actions"><button className="method-button" onClick={() => setShowMethod(true)}><BookOpen size={16} /> Methodology</button>{revealed && <a className="market-button" href={study.market.marketUrl} target="_blank" rel="noreferrer">Original market <ExternalLink size={15} /></a>}</div></div></section>
+    <section className="study-header"><div className="study-title"><span className="event-kicker">{study.presentation.topicLabel}{study.status !== 'published' ? ' · Editorial review draft' : ''}</span><h1>{study.question}</h1><p>{study.orientation}</p>{!study.dataset.fullMarketLifetime && <span className="coverage-warning"><Info size={13} /> Archived market interval: {formatDate(study.dataset.coverageStart, study.presentation.timezone)}–{formatDate(study.dataset.coverageEnd, study.presentation.timezone)}</span>}</div><div className="header-side"><div className="study-steps" aria-label="Study workflow"><span className="is-current"><b>01</b> Rank the events</span><i /><span className={revealed ? 'is-current' : ''}><b>02</b> Lock your order</span><i /><span className={revealed ? 'is-current' : ''}><b>03</b> Explore the market</span></div><div className="header-actions"><button ref={methodTriggerRef} className="method-button" onClick={() => setShowMethod(true)}><BookOpen size={16} /> Methodology</button>{revealed && <a className="market-button" href={study.market.marketUrl} target="_blank" rel="noreferrer">Original market <ExternalLink size={15} /></a>}</div></div></section>
     <section className="summary-strip" aria-label="Market summary"><div><CalendarDays size={16} /><span>Study interval<strong>{formatDate(study.dataset.coverageStart, study.presentation.timezone)}–{formatDate(study.dataset.coverageEnd, study.presentation.timezone)}</strong></span></div><div><Database size={16} /><span>Observations<strong>{summary.observations.toLocaleString()} hourly marks</strong></span></div><div><GripVertical size={16} /><span>Events to order<strong>{impacts.length} {study.presentation.eventNoun}s</strong></span></div>{revealed ? <><div><BarChart3 size={16} /><span>Market range<strong>{formatProbability(summary.lowProbability)}–{formatProbability(summary.highProbability)}</strong></span></div><div className="resolution-stat"><span>Resolved<strong>{study.contract.resolution}</strong></span><small>{formatVolume(study.market.volume)}</small></div></> : <div className="resolution-stat sealed-stat"><LockKeyhole size={15} /><span>Outcome & graph<strong>Sealed until ranking</strong></span></div>}</section>
     <div className="study-grid"><div className="study-main">{revealed ? <section className="chart-panel" aria-labelledby="chart-title"><div className="panel-heading"><div><span className="eyebrow">Your ranking is locked · now inspect the record</span><h2 id="chart-title">{study.presentation.seriesLabel}</h2></div><div className="chart-legend"><span><i />Traded / normalized line</span><span><b />Ranked event</span><span><em />Quote midpoint</span></div></div><MarketChart study={study} points={points} impacts={impacts} order={order} selectedId={selectedId} scrubIndex={scrubIndex} onScrub={setScrubIndex} onSelect={setSelectedId} /><div className="chart-caption"><span>Opened at <strong>{formatProbability(summary.firstProbability)}</strong></span><span>Snapshot endpoint <strong>{formatProbability(summary.finalProbability)}</strong></span><span>Net movement <strong className={summary.netMovement >= 0 ? 'positive' : 'negative'}>{formatImpact(summary.netMovement)}</strong></span></div>{submittedAt && <p className="locked-at"><LockKeyhole size={12} /> Ranking locked {formatTime(submittedAt, study.presentation.timezone)}</p>}</section> : <SealedChartPanel eventCount={impacts.length} />}<RankingBoard study={study} impacts={impacts} order={order} selectedId={selectedId} revealed={revealed} onMove={(id, index) => { if (!revealed) setOrder((current) => moveRankedItem(current, id, index)) }} onSelect={setSelectedId} onReveal={() => { setSubmittedAt(new Date().toISOString()); setRevealed(true) }} onReset={reset} /></div><ImpactDetail study={study} impact={selected} revealed={revealed} onShareChange={(value) => setShares((current) => ({ ...current, [selected.eventId]: value }))} /></div>
-    {showMethod && <MethodDrawer study={study} onClose={() => setShowMethod(false)} />}
+    {showMethod && <MethodDrawer study={study} returnFocus={methodTriggerRef.current} onClose={() => setShowMethod(false)} />}
   </div>
 }
 
 export default function App() {
-  const isIndex = window.location.pathname === '/studies' || window.location.pathname === '/studies/'
+  const studyRoute = resolveStudyRoute(window.location.pathname, studyRegistry)
+  const privatePreview = resolvePrivatePreview(window.location.pathname, studyRegistry, import.meta.env.DEV)
+  const isIndex = studyRoute.kind === 'index'
   const isDaily = window.location.pathname === '/'
+  const isPreview = privatePreview?.kind === 'preview'
   const [dailyResolution] = useState(() => isDaily ? resolveDailyPuzzle(dailyPuzzles, new Date(), new URLSearchParams(window.location.search).get('daily')) : null)
-  const [registration] = useState(() => dailyResolution?.kind === 'puzzle' ? studyById(dailyResolution.puzzle.studyId) ?? studyFromLocation() : studyFromLocation())
+  const [registration] = useState<StudyRegistration | null>(() => dailyResolution?.kind === 'puzzle' ? studyById(dailyResolution.puzzle.studyId) ?? null : isPreview ? privatePreview.registration : studyRoute.kind === 'published' ? studyRoute.registration : null)
+  const previewPuzzle = useMemo(() => isPreview && registration ? createPrivatePreviewPuzzle(registration) : null, [isPreview, registration])
   const [points, setPoints] = useState<MarketSeriesPoint[] | null>(null)
   const [error, setError] = useState<string | null>(null)
   useEffect(() => {
-    if (isIndex || (isDaily && dailyResolution?.kind !== 'puzzle')) return
+    const canLoadDaily = isDaily && dailyResolution?.kind === 'puzzle'
+    const canLoadStudy = !isDaily && studyRoute.kind === 'published'
+    const canLoadPreview = isPreview && previewPuzzle !== null
+    if (isIndex || (!canLoadDaily && !canLoadStudy && !canLoadPreview) || !registration) return
     try { assertValidStudy(registration.study) } catch (caught) { setError(caught instanceof Error ? caught.message : 'The study manifest is invalid.'); return }
     registration.loadSeries().then(setPoints).catch((caught) => setError(caught instanceof Error ? caught.message : 'The dataset could not be read.'))
-  }, [dailyResolution, isDaily, isIndex, registration])
+  }, [dailyResolution, isDaily, isIndex, isPreview, previewPuzzle, registration, studyRoute.kind])
   if (isDaily) {
     if (dailyResolution?.kind !== 'puzzle') return <DailyUnavailable resolution={dailyResolution!} />
-    return error ? <AppFrame><ErrorView message={error} /></AppFrame> : points ? <DailyGame registration={registration} points={points} puzzle={dailyResolution.puzzle} playMode={dailyResolution.playMode} nextPuzzle={dailyResolution.nextPuzzle} puzzles={dailyPuzzles} /> : <AppFrame><LoadingView study={registration.study} /></AppFrame>
+    if (!registration) return <ErrorView message="The scheduled puzzle is not available." daily />
+    return error ? <ErrorView message={error} daily /> : points ? <DailyGame registration={registration} points={points} puzzle={dailyResolution.puzzle} playMode={dailyResolution.playMode} nextPuzzle={dailyResolution.nextPuzzle} puzzles={dailyPuzzles} /> : <LoadingView study={registration.study} daily />
   }
-  return <AppFrame>{isIndex ? <StudiesIndex /> : error ? <ErrorView message={error} /> : points ? <StudyPage registration={registration} points={points} /> : <LoadingView study={registration.study} />}</AppFrame>
+  if (privatePreview?.kind === 'unknown') return <AppFrame><PrivatePreviewUnavailable slug={privatePreview.slug} /></AppFrame>
+  if (isPreview && previewPuzzle && registration) return error ? <AppFrame><ErrorView message={error} /></AppFrame> : points ? <DailyGame registration={registration} points={points} puzzle={previewPuzzle} playMode="archive" nextPuzzle={null} puzzles={[]} preview /> : <LoadingView study={registration.study} />
+  if (isIndex) return <AppFrame><StudiesIndex /></AppFrame>
+  if (studyRoute.kind !== 'published') return <AppFrame><StudyUnavailable route={studyRoute.kind === 'draft' || studyRoute.kind === 'unknown' ? studyRoute : { kind: 'unknown', slug: window.location.pathname }} /></AppFrame>
+  if (!registration) return <AppFrame><ErrorView message="The selected study is not available." /></AppFrame>
+  return <AppFrame>{error ? <ErrorView message={error} /> : points ? <StudyPage registration={registration} points={points} /> : <LoadingView study={registration.study} />}</AppFrame>
 }

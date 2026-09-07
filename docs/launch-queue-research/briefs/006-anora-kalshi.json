@@ -1,0 +1,1105 @@
+{
+  "artifactType": "Editorial integration handoff; not a published Study or queue entry",
+  "preparedAt": "2026-09-06T14:32:49.672725+00:00",
+  "key": "anora-kalshi",
+  "proposedPuzzleNumber": 6,
+  "proposedReleaseTime": null,
+  "title": "Anora: Hollywood’s false finish",
+  "category": "Culture",
+  "storyRange": "2024-10-24–2025-03-03; proposed developments 2025-01-05–2025-02-23",
+  "readiness": "blocked",
+  "queueableNow": false,
+  "decision": "Conditional fifth research preference only. Do not integrate or queue. The full returned Kalshi series has 1,718 missing hourly buckets and a 38-hour maximum gap. For every hourly bucket alignment across the January 5 Los Angeles calendar day, the Golden Globes anticipation window has at most 25% coverage, below the required 60%. A more precise ceremony timestamp cannot repair that dataset.",
+  "requiredEvidenceSteps": [
+    "Obtain genuine historical trades/quotes for this exact Kalshi ticker sufficient to repair the early windows without carrying prices; none was obtained in this research.",
+    "The alternate Polymarket Anora contract opened January 21, after the Globes and too close to nominations for the full anticipation window. It cannot backfill Kalshi or supply the frozen five.",
+    "Capture first-public ceremony/nomination completion times and immutable primary winner/nominee lists. Current official result pages often supply only a day and may have been updated after publication.",
+    "Verify a durable public Kalshi consumer-market URL if desired. The linked official historical API is the verified canonical market record; a guessed consumer route was not confirmed."
+  ],
+  "identity": {
+    "provider": "Kalshi",
+    "marketId": "KXOSCARPIC-25-A",
+    "contractId": "KXOSCARPIC-25-A",
+    "question": "Will Anora win Best Picture at the Oscars?",
+    "selectedPerspective": "YES",
+    "outcome": "YES",
+    "openedAt": "2024-10-24T14:00:00Z",
+    "closedAt": "2025-03-03T03:45:51.498881Z",
+    "settledAt": "2025-03-03T04:45:55.063082Z",
+    "resolutionEvidence": {
+      "status": "finalized",
+      "result": "yes",
+      "expirationValue": "Anora"
+    },
+    "metadataUrl": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXOSCARPIC-25-A",
+    "marketUrl": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXOSCARPIC-25-A",
+    "marketUrlNote": "Verified official market API record; consumer page route unconfirmed.",
+    "rulesSummary": "YES if Anora won Best Picture at the 97th Academy Awards. The retained historical record says result=yes, status=finalized, expiration_value=Anora and settlement value $1. The secondary rule dates the expected ceremony March 2, 2025."
+  },
+  "audienceRationale": "The Oscars provide a familiar competition and a small-film-versus-prestige-rivals story. Anora itself is less universally recognized than the ceremony; the brief should introduce it as a Best Picture contender without requiring knowledge of guild voting.",
+  "playRationale": "A Golden Globes shutout, a huge rival nomination haul, a three-award comeback and two Conclave wins make a genuinely reversible awards narrative. One combined guild-weekend card avoids three versions of the same rebound.",
+  "tension": "The same Kalshi contract’s qualifying daily medians fall from 48% to 16%, then recover to 74.5%. That is promising broad volatility, but it cannot substitute for eligible five-card scoring. No publishable ranking is supplied.",
+  "measurementProfile": {
+    "id": "months-hourly-v1",
+    "label": "Months / hourly",
+    "cadenceMinutes": 60,
+    "anticipation": {
+      "startHours": -84,
+      "endHours": -12
+    },
+    "reference": {
+      "startHours": -12,
+      "endHours": 0
+    },
+    "immediate": {
+      "startHours": 0,
+      "endHours": 6
+    },
+    "stabilized": {
+      "startHours": 18,
+      "endHours": 36
+    },
+    "delayed": {
+      "startHours": 48,
+      "endHours": 72
+    },
+    "quality": {
+      "minimumCoverage": 0.6,
+      "maximumGapShare": 0.5,
+      "minimumDistinctUpdates": 3,
+      "maximumSpread": 0.2
+    },
+    "tieThreshold": 0.01
+  },
+  "selectionFreeze": {
+    "file": "frozen-selection-v1.json",
+    "sha256": "79ca8b2e025f15e5fe1ff9040ed1c060d874bf188d2b239f39fc647c0ad33593",
+    "frozenAt": "2026-09-06T00:24:51.987941+00:00",
+    "disclosure": "Freeze these five fact clusters per candidate for historical significance before running fresh event-window calculations. Timestamp anchors must come from public evidence, never optimized on prices. Failed candidates stay failed; do not replace weak cards after seeing movements. Raw histories and broad daily-median suitability statistics were examined before this freeze; no new five-card event-window calculations have run. Prior project records contain measured responses for some reused Trump/Eagles events and Oscars 2026; those were visible while satisfying the required repository review. This is a prospective freeze of this research selection, not a claim of blinded preregistration."
+  },
+  "anchorsFile": "anchors-v2.json",
+  "dataset": {
+    "researchCsv": "datasets/anora-kalshi-hourly.csv",
+    "csvSha256": "2e298af00751f349329d31c82579481686e68c14c4572b99557e2d41fcb9c612",
+    "normalizedJson": "evidence/anora-kalshi-normalized.json",
+    "audit": {
+      "key": "anora-kalshi",
+      "rawObservations": 1399,
+      "observations": 1392,
+      "coverageStart": "2024-10-24T15:00:00Z",
+      "coverageEnd": "2025-03-03T04:00:00Z",
+      "frequency": "UTC hourly buckets",
+      "missingHours": 1718,
+      "maximumMissingRunHours": 38,
+      "rejectedObservations": 7,
+      "duplicateOrRevisionBuckets": 0,
+      "markPolicy": "Project Kalshi convention: actual candle trade close; otherwise closing quote midpoint only at <=20pp spread. No previous-close carry or missing-hour fill.",
+      "normalizedSha256": "e1f66ccc49027815e23b327fa1c1a64adf569d3072d47220e47c7b9bd7b495da",
+      "minQualifyingDailyMedian": {
+        "date": "2025-01-30",
+        "median": 0.16,
+        "observations": 13,
+        "min": 0.15,
+        "max": 0.17
+      },
+      "maxQualifyingDailyMedian": {
+        "date": "2025-02-22",
+        "median": 0.745,
+        "observations": 19,
+        "min": 0.73,
+        "max": 0.76
+      },
+      "maximumDailyMedianRise": {
+        "from": {
+          "date": "2025-01-30",
+          "median": 0.16,
+          "observations": 13,
+          "min": 0.15,
+          "max": 0.17
+        },
+        "to": {
+          "date": "2025-02-22",
+          "median": 0.745,
+          "observations": 19,
+          "min": 0.73,
+          "max": 0.76
+        },
+        "pp": 58.5
+      },
+      "maximumDailyMedianDrawdown": {
+        "from": {
+          "date": "2024-11-10",
+          "median": 0.48,
+          "observations": 18,
+          "min": 0.43,
+          "max": 0.51
+        },
+        "to": {
+          "date": "2025-01-30",
+          "median": 0.16,
+          "observations": 13,
+          "min": 0.15,
+          "max": 0.17
+        },
+        "pp": 31.999999999999996
+      },
+      "fullMarketLifetime": false
+    },
+    "historyRequests": [
+      {
+        "key": "anora-kalshi-history",
+        "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXOSCARPIC-25-A/candlesticks?start_ts=1729778400&end_ts=1740974400&period_interval=60",
+        "receipt": {
+          "key": "anora-kalshi-history",
+          "url": "https://api.elections.kalshi.com/trade-api/v2/historical/markets/KXOSCARPIC-25-A/candlesticks?start_ts=1729778400&end_ts=1740974400&period_interval=60",
+          "retrievedAt": "2026-09-06T00:21:57.418273+00:00",
+          "bytes": 465032,
+          "sha256": "edc14f4ae059ce07fdb1b500e31b332f80fbcf36165186c8798df7371a96099d",
+          "path": "evidence/anora-kalshi-history.json"
+        }
+      }
+    ],
+    "preEndingSwings": {
+      "exclusiveEndingDateUTC": "2025-03-02",
+      "days": 49,
+      "maximumRise": {
+        "pp": 58.5,
+        "from": {
+          "date": "2025-01-30",
+          "median": 0.16,
+          "observations": 13,
+          "min": 0.15,
+          "max": 0.17
+        },
+        "to": {
+          "date": "2025-02-22",
+          "median": 0.745,
+          "observations": 19,
+          "min": 0.73,
+          "max": 0.76
+        }
+      },
+      "maximumDrawdown": {
+        "pp": 31.999999999999996,
+        "from": {
+          "date": "2024-11-10",
+          "median": 0.48,
+          "observations": 18,
+          "min": 0.43,
+          "max": 0.51
+        },
+        "to": {
+          "date": "2025-01-30",
+          "median": 0.16,
+          "observations": 13,
+          "min": 0.15,
+          "max": 0.17
+        }
+      },
+      "minimumDailyMedian": {
+        "date": "2025-01-30",
+        "median": 0.16,
+        "observations": 13,
+        "min": 0.15,
+        "max": 0.17
+      },
+      "maximumDailyMedian": {
+        "date": "2025-02-22",
+        "median": 0.745,
+        "observations": 19,
+        "min": 0.73,
+        "max": 0.76
+      }
+    },
+    "normalizationScript": "audit_history.py",
+    "measurementScript": "evaluate.mjs",
+    "integrationDestination": null
+  },
+  "presentationDraft": {
+    "topic": "Anora: Hollywood’s false finish",
+    "instruction": "January–February 2025. Rank five headlines from the biggest rise in Anora’s Best Picture chances to the biggest fall.",
+    "selectedContractShort": "Anora wins Best Picture at the 97th Oscars",
+    "positiveLabel": "Probability rose",
+    "negativeLabel": "Probability fell",
+    "preRevealOdds": false,
+    "releaseTimezone": "America/Chicago",
+    "scoring": {
+      "version": "pairwise-anchor-1pt-v1",
+      "tieThreshold": 0.01,
+      "tieGrouping": "anchor-window"
+    },
+    "eventIds": [
+      "globes-shutout",
+      "oscar-nominations",
+      "guild-weekend",
+      "bafta-conclave",
+      "sag-conclave"
+    ],
+    "initialOrder": [
+      "guild-weekend",
+      "globes-shutout",
+      "sag-conclave",
+      "oscar-nominations",
+      "bafta-conclave"
+    ],
+    "initialOrderPolicy": "Fixed positional permutation of frozen list, not price-ranked."
+  },
+  "events": [
+    {
+      "id": "globes-shutout",
+      "title": "Anora leaves the Golden Globes empty-handed",
+      "frozenTitle": "Anora leaves the Golden Globes empty-handed",
+      "eventDate": "2025-01-05",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": null,
+      "evaluationAnchor": "2025-01-06T08:00:00Z",
+      "precision": "interval",
+      "timezone": "America/Los_Angeles",
+      "anchorBasis": "Eligibility scenario only: end of local ceremony date in America/Los_Angeles. Actual first-public completion unverified; official results page published Jan7.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": false,
+      "selectionReason": "The presumed contender misses all five prizes.",
+      "expectedDirectionBeforeMeasurement": "negative",
+      "preRevealClaim": "Anora leaves the Golden Globes empty-handed",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": "evidence/anora-globes.html",
+          "url": "https://goldenglobes.com/articles/the-82nd-golden-globe-awards-winners/",
+          "retrievedAt": "2026-09-06T00:26:48.734508+00:00",
+          "snapshotHash": "f53c8d9622906c3f9fa4a06bc384d22346993f2ce191ff76e234ce9018902290",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        }
+      ],
+      "competingExplanation": "Five categories conclude at different points during a ceremony. The official winners article was published January 7, after the January 5 event. Do not backdate the current article or invent an exact finish time. Early price windows fail even under all plausible hourly alignments.",
+      "attributionAssessment": "indeterminate",
+      "researchMeasurement": {
+        "eventId": "globes-shutout",
+        "event": {
+          "id": "globes-shutout",
+          "date": "2025-01-05",
+          "title": "Anora leaves the Golden Globes empty-handed",
+          "expectedDirection": "negative",
+          "selectionReason": "The presumed contender misses all five prizes.",
+          "informationKnownAt": "2025-01-06T08:00:00Z",
+          "anchorVerified": false,
+          "anchorBasis": "Eligibility scenario only: end of local ceremony date in America/Los_Angeles. Actual first-public completion unverified; official results page published Jan7."
+        },
+        "windows": {
+          "anticipation": {
+            "level": null,
+            "start": "2025-01-02T20:00:00.000Z",
+            "end": "2025-01-05T20:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 17,
+              "tradedBuckets": 11,
+              "quoteBuckets": 6,
+              "staleBuckets": 0,
+              "coverage": 0.2361111111111111,
+              "maximumGapBuckets": 20,
+              "medianSpread": 0.019999999999999962,
+              "totalVolume": 4258,
+              "distinctUpdates": 17,
+              "status": "insufficient",
+              "reasons": [
+                "Only 24% of expected buckets are usable."
+              ]
+            }
+          },
+          "reference": {
+            "level": 0.35,
+            "start": "2025-01-05T20:00:00.000Z",
+            "end": "2025-01-06T08:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 9,
+              "tradedBuckets": 7,
+              "quoteBuckets": 2,
+              "staleBuckets": 0,
+              "coverage": 0.75,
+              "maximumGapBuckets": 2,
+              "medianSpread": 0.03,
+              "totalVolume": 2209,
+              "distinctUpdates": 9,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": null,
+            "start": "2025-01-06T08:00:00.000Z",
+            "end": "2025-01-06T14:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 0,
+              "tradedBuckets": 0,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 0,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 0,
+              "status": "insufficient",
+              "reasons": [
+                "Only 0% of expected buckets are usable.",
+                "Fewer than 3 distinct price updates are available."
+              ]
+            }
+          },
+          "stabilized": {
+            "level": null,
+            "start": "2025-01-07T02:00:00.000Z",
+            "end": "2025-01-07T20:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 6,
+              "tradedBuckets": 4,
+              "quoteBuckets": 2,
+              "staleBuckets": 0,
+              "coverage": 0.3333333333333333,
+              "maximumGapBuckets": 8,
+              "medianSpread": 0.01999999999999999,
+              "totalVolume": 1465,
+              "distinctUpdates": 6,
+              "status": "insufficient",
+              "reasons": [
+                "Only 33% of expected buckets are usable."
+              ]
+            }
+          },
+          "delayed": {
+            "level": null,
+            "start": "2025-01-08T08:00:00.000Z",
+            "end": "2025-01-09T08:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 12,
+              "tradedBuckets": 11,
+              "quoteBuckets": 1,
+              "staleBuckets": 0,
+              "coverage": 0.5,
+              "maximumGapBuckets": 2,
+              "medianSpread": 0.010000000000000009,
+              "totalVolume": 14578,
+              "distinctUpdates": 12,
+              "status": "insufficient",
+              "reasons": [
+                "Only 50% of expected buckets are usable."
+              ]
+            }
+          }
+        },
+        "anticipationMove": null,
+        "immediateResponse": null,
+        "shortTermResponse": null,
+        "delayedIncrement": null,
+        "cumulativeDelayedResponse": null,
+        "logOddsResponse": null,
+        "sensitivityShare": 0,
+        "counterfactualProbability": null,
+        "attributedImpact": null,
+        "qualityStatus": "indeterminate",
+        "ordinaryMovement": {
+          "classification": "indeterminate",
+          "threshold": 0.09999999999999998,
+          "sampleCount": 25
+        },
+        "overlaps": []
+      }
+    },
+    {
+      "id": "oscar-nominations",
+      "title": "Anora earns six Oscar nominations; Emilia Pérez leads with 13",
+      "frozenTitle": "Anora earns six Oscar nominations; Emilia Pérez leads with 13",
+      "eventDate": "2025-01-23",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": null,
+      "evaluationAnchor": "2025-01-24T08:00:00Z",
+      "precision": "interval",
+      "timezone": "America/Los_Angeles",
+      "anchorBasis": "Eligibility scenario only: end of local nomination date. Official Jan23 05:30 PST schedule is not proof of completion. Download blocked.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": false,
+      "selectionReason": "Nomination strength against a formidable rival.",
+      "expectedDirectionBeforeMeasurement": "ambiguous",
+      "preRevealClaim": "Anora earns six Oscar nominations; Emilia Pérez leads with 13",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": null,
+          "url": "https://press.oscars.org/news/97th-oscarsr-nominations-announced",
+          "snapshotHash": null,
+          "limitation": "Academy nominations announcement (download returned 403)"
+        },
+        {
+          "file": "evidence/anora-nominations-broadcaster.html",
+          "url": "https://www.bellmedia.ca/the-lede/press/97th-oscars-nominations-announced/",
+          "retrievedAt": "2026-09-06T14:24:49.148357+00:00",
+          "snapshotHash": "ca8e3ff83e612c3e968007e87a18907c1eb9ccf0b6556cffc1f373df538b6592",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        },
+        {
+          "file": "evidence/anora-nominations-abc.html",
+          "url": "https://abc.com/news/2e100609-67b5-4a02-bcb3-f1b2ed134da0/category/3590739",
+          "retrievedAt": "2026-09-06T14:24:49.077853+00:00",
+          "snapshotHash": "1b999c5ab902839f218391106afa32a9f47acdd51979c731b20cb4db8022093f",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        }
+      ],
+      "competingExplanation": "The scheduled January 23 announcement start is not a verified time at which the whole nomination slate was known. The retained broadcaster announcement lists support six Anora nominations and thirteen for Emilia Pérez. ABC’s official page records publication January 23 at 13:50 UTC, found during final source verification after the day-end eligibility calculation; this is a usable publication upper bound, not verified broadcast completion. No rescoring was performed because the separate Globes data failure is conclusive.",
+      "attributionAssessment": "indeterminate",
+      "researchMeasurement": {
+        "eventId": "oscar-nominations",
+        "event": {
+          "id": "oscar-nominations",
+          "date": "2025-01-23",
+          "title": "Anora earns six Oscar nominations; Emilia Pérez leads with 13",
+          "expectedDirection": "ambiguous",
+          "selectionReason": "Nomination strength against a formidable rival.",
+          "informationKnownAt": "2025-01-24T08:00:00Z",
+          "anchorVerified": false,
+          "anchorBasis": "Eligibility scenario only: end of local nomination date. Official Jan23 05:30 PST schedule is not proof of completion. Download blocked."
+        },
+        "windows": {
+          "anticipation": {
+            "level": null,
+            "start": "2025-01-20T20:00:00.000Z",
+            "end": "2025-01-23T20:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 43,
+              "tradedBuckets": 38,
+              "quoteBuckets": 5,
+              "staleBuckets": 0,
+              "coverage": 0.5972222222222222,
+              "maximumGapBuckets": 9,
+              "medianSpread": 0.04000000000000001,
+              "totalVolume": 28760,
+              "distinctUpdates": 43,
+              "status": "insufficient",
+              "reasons": [
+                "Only 60% of expected buckets are usable."
+              ]
+            }
+          },
+          "reference": {
+            "level": 0.18,
+            "start": "2025-01-23T20:00:00.000Z",
+            "end": "2025-01-24T08:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 11,
+              "tradedBuckets": 10,
+              "quoteBuckets": 1,
+              "staleBuckets": 0,
+              "coverage": 0.9166666666666666,
+              "maximumGapBuckets": 0,
+              "medianSpread": 0.010000000000000009,
+              "totalVolume": 6305,
+              "distinctUpdates": 11,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": null,
+            "start": "2025-01-24T08:00:00.000Z",
+            "end": "2025-01-24T14:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 0,
+              "tradedBuckets": 0,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 0,
+              "maximumGapBuckets": 0,
+              "medianSpread": null,
+              "totalVolume": 0,
+              "distinctUpdates": 0,
+              "status": "insufficient",
+              "reasons": [
+                "Only 0% of expected buckets are usable.",
+                "Fewer than 3 distinct price updates are available."
+              ]
+            }
+          },
+          "stabilized": {
+            "level": null,
+            "start": "2025-01-25T02:00:00.000Z",
+            "end": "2025-01-25T20:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 7,
+              "tradedBuckets": 7,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 0.3888888888888889,
+              "maximumGapBuckets": 8,
+              "medianSpread": 0.01999999999999999,
+              "totalVolume": 536,
+              "distinctUpdates": 7,
+              "status": "insufficient",
+              "reasons": [
+                "Only 39% of expected buckets are usable."
+              ]
+            }
+          },
+          "delayed": {
+            "level": null,
+            "start": "2025-01-26T08:00:00.000Z",
+            "end": "2025-01-27T08:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 12,
+              "tradedBuckets": 10,
+              "quoteBuckets": 2,
+              "staleBuckets": 0,
+              "coverage": 0.5,
+              "maximumGapBuckets": 6,
+              "medianSpread": 0.03499999999999999,
+              "totalVolume": 1089,
+              "distinctUpdates": 12,
+              "status": "insufficient",
+              "reasons": [
+                "Only 50% of expected buckets are usable."
+              ]
+            }
+          }
+        },
+        "anticipationMove": null,
+        "immediateResponse": null,
+        "shortTermResponse": null,
+        "delayedIncrement": null,
+        "cumulativeDelayedResponse": null,
+        "logOddsResponse": null,
+        "sensitivityShare": 0,
+        "counterfactualProbability": null,
+        "attributedImpact": null,
+        "qualityStatus": "indeterminate",
+        "ordinaryMovement": {
+          "classification": "indeterminate",
+          "threshold": 0.09999999999999998,
+          "sampleCount": 25
+        },
+        "overlaps": []
+      }
+    },
+    {
+      "id": "guild-weekend",
+      "title": "Anora wins Critics Choice, Directors Guild and Producers Guild prizes in one weekend",
+      "frozenTitle": "Anora wins Critics Choice, Directors Guild and Producers Guild prizes in one weekend",
+      "eventDate": "2025-02-09",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": null,
+      "evaluationAnchor": "2025-02-10T08:00:00Z",
+      "precision": "interval",
+      "timezone": "America/Los_Angeles",
+      "anchorBasis": "Eligibility scenario only: end of final cluster date. Actual weekend completion cutoff needs DGA/PGA/CCA archive; PGA publication Feb9 07:02:42Z, later modified.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": false,
+      "selectionReason": "One clustered comeback, not three cards measuring the same news.",
+      "expectedDirectionBeforeMeasurement": "positive",
+      "preRevealClaim": "Anora wins Critics Choice, Directors Guild and Producers Guild prizes in one weekend",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": "evidence/anora-pga.html",
+          "url": "https://producersguild.org/2025-pga-awards-winners/",
+          "retrievedAt": "2026-09-06T00:26:48.952046+00:00",
+          "snapshotHash": "291045fc6c0caee7666d5681e434a4b9e917a9e258fa3f5d8b2f9abf580b36aa",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        },
+        {
+          "file": "evidence/anora-dga.html",
+          "url": "https://www.dga.org/news/pressreleases/2025/250208_77thannualdgaawardswinners",
+          "retrievedAt": "2026-09-06T00:26:48.886506+00:00",
+          "snapshotHash": "c00d712fdc3efba01b037846677e260e89990f606857d8c938194153d738bc8c",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        },
+        {
+          "file": "evidence/anora-critics-winners.html",
+          "url": "https://www.criticschoice.com/30th-annual-critics-choice-awards-list-of-nominees-and-winners-2025/",
+          "retrievedAt": "2026-09-06T13:57:06.534513+00:00",
+          "snapshotHash": "f2ceffd027a069897ff885dfb0ddd430a4992d3f172ca2d80103ec959b59c67b",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        }
+      ],
+      "competingExplanation": "Critics Choice on February 7 and PGA/DGA on February 8 overlap by design and must remain one cluster. A late combined cutoff already contains earlier prizes in its reference window. PGA article publication is February 9 07:02:42 UTC and later updated; DGA metadata appears to precede the ceremony and is unsuitable as a winners timestamp.",
+      "attributionAssessment": "indeterminate",
+      "researchMeasurement": {
+        "eventId": "guild-weekend",
+        "event": {
+          "id": "guild-weekend",
+          "date": "2025-02-09",
+          "title": "Anora wins Critics Choice, Directors Guild and Producers Guild prizes in one weekend",
+          "expectedDirection": "positive",
+          "selectionReason": "One clustered comeback, not three cards measuring the same news.",
+          "informationKnownAt": "2025-02-10T08:00:00Z",
+          "anchorVerified": false,
+          "anchorBasis": "Eligibility scenario only: end of final cluster date. Actual weekend completion cutoff needs DGA/PGA/CCA archive; PGA publication Feb9 07:02:42Z, later modified."
+        },
+        "windows": {
+          "anticipation": {
+            "level": null,
+            "start": "2025-02-06T20:00:00.000Z",
+            "end": "2025-02-09T20:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 43,
+              "tradedBuckets": 42,
+              "quoteBuckets": 1,
+              "staleBuckets": 0,
+              "coverage": 0.5972222222222222,
+              "maximumGapBuckets": 9,
+              "medianSpread": 0.010000000000000009,
+              "totalVolume": 84128,
+              "distinctUpdates": 43,
+              "status": "insufficient",
+              "reasons": [
+                "Only 60% of expected buckets are usable."
+              ]
+            }
+          },
+          "reference": {
+            "level": 0.6,
+            "start": "2025-02-09T20:00:00.000Z",
+            "end": "2025-02-10T08:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 12,
+              "tradedBuckets": 12,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": 0.010000000000000009,
+              "totalVolume": 26104,
+              "distinctUpdates": 12,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": null,
+            "start": "2025-02-10T08:00:00.000Z",
+            "end": "2025-02-10T14:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 1,
+              "tradedBuckets": 1,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 0.16666666666666666,
+              "maximumGapBuckets": 0,
+              "medianSpread": 0.010000000000000009,
+              "totalVolume": 527,
+              "distinctUpdates": 1,
+              "status": "insufficient",
+              "reasons": [
+                "Only 17% of expected buckets are usable.",
+                "Fewer than 3 distinct price updates are available."
+              ]
+            }
+          },
+          "stabilized": {
+            "level": 0.6,
+            "start": "2025-02-11T02:00:00.000Z",
+            "end": "2025-02-11T20:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 13,
+              "tradedBuckets": 13,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 0.7222222222222222,
+              "maximumGapBuckets": 5,
+              "medianSpread": 0.010000000000000009,
+              "totalVolume": 7486,
+              "distinctUpdates": 13,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "delayed": {
+            "level": 0.6,
+            "start": "2025-02-12T08:00:00.000Z",
+            "end": "2025-02-13T08:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 18,
+              "tradedBuckets": 18,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 0.75,
+              "maximumGapBuckets": 5,
+              "medianSpread": 0.010000000000000009,
+              "totalVolume": 6934,
+              "distinctUpdates": 18,
+              "status": "usable",
+              "reasons": []
+            }
+          }
+        },
+        "anticipationMove": null,
+        "immediateResponse": null,
+        "shortTermResponse": 0,
+        "delayedIncrement": 0,
+        "cumulativeDelayedResponse": 0,
+        "logOddsResponse": 0,
+        "sensitivityShare": 0,
+        "counterfactualProbability": 0.6,
+        "attributedImpact": 0,
+        "qualityStatus": "indeterminate",
+        "ordinaryMovement": {
+          "classification": "not detectable",
+          "threshold": 0.09999999999999998,
+          "sampleCount": 25
+        },
+        "overlaps": []
+      }
+    },
+    {
+      "id": "bafta-conclave",
+      "title": "Conclave wins BAFTA’s Best Film prize; Anora wins actress and casting",
+      "frozenTitle": "Conclave wins BAFTA’s Best Film prize; Anora wins actress and casting",
+      "eventDate": "2025-02-16",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": null,
+      "evaluationAnchor": "2025-02-17T00:00:00Z",
+      "precision": "interval",
+      "timezone": "Europe/London",
+      "anchorBasis": "Eligibility scenario only: end of Feb16 London date; official results verified via web, download blocked.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": false,
+      "selectionReason": "A rival’s breakthrough partly offset by Anora’s own wins.",
+      "expectedDirectionBeforeMeasurement": "ambiguous",
+      "preRevealClaim": "Conclave wins BAFTA’s Best Film prize; Anora wins actress and casting",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": null,
+          "url": "https://www.bafta.org/media-centre/press-releases/winners-announced-2025-ee-bafta-film-awards/",
+          "snapshotHash": null,
+          "limitation": "BAFTA official February 16 winners, verified through web retrieval; local download blocked"
+        }
+      ],
+      "competingExplanation": "Conclave’s Best Film victory and Anora’s actress/casting wins are competing signals from one ceremony. Broadcast timing and advance winner reporting must be checked; do not attribute a net response to Best Film alone.",
+      "attributionAssessment": "indeterminate",
+      "researchMeasurement": {
+        "eventId": "bafta-conclave",
+        "event": {
+          "id": "bafta-conclave",
+          "date": "2025-02-16",
+          "title": "Conclave wins BAFTA’s Best Film prize; Anora wins actress and casting",
+          "expectedDirection": "ambiguous",
+          "selectionReason": "A rival’s breakthrough partly offset by Anora’s own wins.",
+          "informationKnownAt": "2025-02-17T00:00:00Z",
+          "anchorVerified": false,
+          "anchorBasis": "Eligibility scenario only: end of Feb16 London date; official results verified via web, download blocked."
+        },
+        "windows": {
+          "anticipation": {
+            "level": 0.6275,
+            "start": "2025-02-13T12:00:00.000Z",
+            "end": "2025-02-16T12:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 56,
+              "tradedBuckets": 52,
+              "quoteBuckets": 4,
+              "staleBuckets": 0,
+              "coverage": 0.7777777777777778,
+              "maximumGapBuckets": 5,
+              "medianSpread": 0.010000000000000009,
+              "totalVolume": 32259,
+              "distinctUpdates": 56,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "reference": {
+            "level": 0.645,
+            "start": "2025-02-16T12:00:00.000Z",
+            "end": "2025-02-17T00:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 10,
+              "tradedBuckets": 10,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 0.8333333333333334,
+              "maximumGapBuckets": 0,
+              "medianSpread": 0.020000000000000018,
+              "totalVolume": 20241,
+              "distinctUpdates": 10,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": 0.7,
+            "start": "2025-02-17T00:00:00.000Z",
+            "end": "2025-02-17T06:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 6,
+              "tradedBuckets": 6,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 1,
+              "maximumGapBuckets": 0,
+              "medianSpread": 0.010000000000000009,
+              "totalVolume": 425,
+              "distinctUpdates": 6,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "stabilized": {
+            "level": 0.68,
+            "start": "2025-02-17T18:00:00.000Z",
+            "end": "2025-02-18T12:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 15,
+              "tradedBuckets": 14,
+              "quoteBuckets": 1,
+              "staleBuckets": 0,
+              "coverage": 0.8333333333333334,
+              "maximumGapBuckets": 0,
+              "medianSpread": 0.010000000000000009,
+              "totalVolume": 12053,
+              "distinctUpdates": 15,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "delayed": {
+            "level": 0.69,
+            "start": "2025-02-19T00:00:00.000Z",
+            "end": "2025-02-20T00:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 19,
+              "tradedBuckets": 18,
+              "quoteBuckets": 1,
+              "staleBuckets": 0,
+              "coverage": 0.7916666666666666,
+              "maximumGapBuckets": 5,
+              "medianSpread": 0.019999999999999907,
+              "totalVolume": 18918,
+              "distinctUpdates": 19,
+              "status": "usable",
+              "reasons": []
+            }
+          }
+        },
+        "anticipationMove": 0.01750000000000007,
+        "immediateResponse": 0.05499999999999994,
+        "shortTermResponse": 0.03500000000000003,
+        "delayedIncrement": 0.009999999999999898,
+        "cumulativeDelayedResponse": 0.04499999999999993,
+        "logOddsResponse": 0.1566392750560236,
+        "sensitivityShare": 0,
+        "counterfactualProbability": 0.68,
+        "attributedImpact": 0,
+        "qualityStatus": "usable",
+        "ordinaryMovement": {
+          "classification": "ordinary",
+          "threshold": 0.09999999999999998,
+          "sampleCount": 25
+        },
+        "overlaps": []
+      }
+    },
+    {
+      "id": "sag-conclave",
+      "title": "Conclave wins the Screen Actors Guild ensemble prize",
+      "frozenTitle": "Conclave wins the Screen Actors Guild ensemble prize",
+      "eventDate": "2025-02-23",
+      "occurredAt": null,
+      "occurredAtNote": "Use verified occurrence/completion record at integration; do not invent a midnight instant for a date-only event.",
+      "informationKnownAt": null,
+      "evaluationAnchor": "2025-02-24T08:00:00Z",
+      "precision": "interval",
+      "timezone": "America/Los_Angeles",
+      "anchorBasis": "Eligibility scenario only: end of Feb23 Los Angeles date; official results day established, exact completion time missing.",
+      "firstPublicTimeVerified": false,
+      "publicCutoffVerified": false,
+      "selectionReason": "Late rival signal after Academy voting has already closed.",
+      "expectedDirectionBeforeMeasurement": "negative",
+      "preRevealClaim": "Conclave wins the Screen Actors Guild ensemble prize",
+      "claimsVisibility": "pre-reveal after evidence gates cleared",
+      "sources": [
+        {
+          "file": "evidence/anora-sag.html",
+          "url": "https://www.actorawards.org/media/news/releases/outstanding-film-and-television-performances-honored-31st-annual-screen-actors",
+          "retrievedAt": "2026-09-06T05:44:52.892437+00:00",
+          "snapshotHash": "30e17053d46f2d056ec8a390a153ff4c51e8a68efa25a847d05019ab65ea3852",
+          "snapshotType": "current retrieval, not proof of immutable contemporaneous contents"
+        },
+        {
+          "file": null,
+          "url": "https://www.oscars.org/news/academy-and-abc-announce-show-date-97th-oscarsr",
+          "snapshotHash": null,
+          "limitation": "Academy official calendar, verified through web retrieval"
+        }
+      ],
+      "competingExplanation": "The SAG ensemble prize was awarded after Academy final voting had closed, so it could reveal preferences without changing already-cast votes. This is still public information about the outcome, but causal persuasion claims would be especially misleading.",
+      "attributionAssessment": "indeterminate",
+      "researchMeasurement": {
+        "eventId": "sag-conclave",
+        "event": {
+          "id": "sag-conclave",
+          "date": "2025-02-23",
+          "title": "Conclave wins the Screen Actors Guild ensemble prize",
+          "expectedDirection": "negative",
+          "selectionReason": "Late rival signal after Academy voting has already closed.",
+          "informationKnownAt": "2025-02-24T08:00:00Z",
+          "anchorVerified": false,
+          "anchorBasis": "Eligibility scenario only: end of Feb23 Los Angeles date; official results day established, exact completion time missing."
+        },
+        "windows": {
+          "anticipation": {
+            "level": 0.74,
+            "start": "2025-02-20T20:00:00.000Z",
+            "end": "2025-02-23T20:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 72,
+              "validBuckets": 52,
+              "tradedBuckets": 46,
+              "quoteBuckets": 6,
+              "staleBuckets": 0,
+              "coverage": 0.7222222222222222,
+              "maximumGapBuckets": 7,
+              "medianSpread": 0.020000000000000018,
+              "totalVolume": 22508,
+              "distinctUpdates": 52,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "reference": {
+            "level": 0.72,
+            "start": "2025-02-23T20:00:00.000Z",
+            "end": "2025-02-24T08:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 12,
+              "validBuckets": 11,
+              "tradedBuckets": 11,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 0.9166666666666666,
+              "maximumGapBuckets": 1,
+              "medianSpread": 0.020000000000000018,
+              "totalVolume": 24856,
+              "distinctUpdates": 11,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "immediate": {
+            "level": null,
+            "start": "2025-02-24T08:00:00.000Z",
+            "end": "2025-02-24T14:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 6,
+              "validBuckets": 1,
+              "tradedBuckets": 1,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 0.16666666666666666,
+              "maximumGapBuckets": 0,
+              "medianSpread": 0.010000000000000009,
+              "totalVolume": 2792,
+              "distinctUpdates": 1,
+              "status": "insufficient",
+              "reasons": [
+                "Only 17% of expected buckets are usable.",
+                "Fewer than 3 distinct price updates are available."
+              ]
+            }
+          },
+          "stabilized": {
+            "level": 0.645,
+            "start": "2025-02-25T02:00:00.000Z",
+            "end": "2025-02-25T20:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 18,
+              "validBuckets": 12,
+              "tradedBuckets": 11,
+              "quoteBuckets": 1,
+              "staleBuckets": 0,
+              "coverage": 0.6666666666666666,
+              "maximumGapBuckets": 5,
+              "medianSpread": 0.010000000000000009,
+              "totalVolume": 7746,
+              "distinctUpdates": 12,
+              "status": "usable",
+              "reasons": []
+            }
+          },
+          "delayed": {
+            "level": 0.64,
+            "start": "2025-02-26T08:00:00.000Z",
+            "end": "2025-02-27T08:00:00.000Z",
+            "quality": {
+              "expectedBuckets": 24,
+              "validBuckets": 18,
+              "tradedBuckets": 18,
+              "quoteBuckets": 0,
+              "staleBuckets": 0,
+              "coverage": 0.75,
+              "maximumGapBuckets": 0,
+              "medianSpread": 0.010000000000000009,
+              "totalVolume": 12940,
+              "distinctUpdates": 18,
+              "status": "usable",
+              "reasons": []
+            }
+          }
+        },
+        "anticipationMove": -0.020000000000000018,
+        "immediateResponse": null,
+        "shortTermResponse": -0.07499999999999996,
+        "delayedIncrement": -0.0050000000000000044,
+        "cumulativeDelayedResponse": -0.07999999999999996,
+        "logOddsResponse": -0.34732908152049446,
+        "sensitivityShare": 0,
+        "counterfactualProbability": 0.645,
+        "attributedImpact": 0,
+        "qualityStatus": "indeterminate",
+        "ordinaryMovement": {
+          "classification": "ordinary",
+          "threshold": 0.09999999999999998,
+          "sampleCount": 25
+        },
+        "overlaps": []
+      }
+    }
+  ],
+  "postRevealOnly": {
+    "ending": "Anora won Best Picture at the March 2, 2025 Oscars. Kalshi records market close March 3 at 03:45:51.498881 UTC and settlement at 04:45:55.063082 UTC, with YES paying $1. The Oscar announcement is exclusively the ending, never a scored card.",
+    "sources": [],
+    "externalSources": [
+      [
+        "Academy official 2025 ceremony record",
+        "https://www.oscars.org/oscars/ceremonies/2025"
+      ]
+    ],
+    "tieGroups": null,
+    "comparisonPolicy": "Observed stabilized minus reference medians; no headline-alone causality or nonzero attribution share."
+  },
+  "integrationGates": {
+    "sourceAndOccurrenceFinalization": false,
+    "independentEditor": null,
+    "approvalTime": null,
+    "applicationChangesMade": false
+  }
+}

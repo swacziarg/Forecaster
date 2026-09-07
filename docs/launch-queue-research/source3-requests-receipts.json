@@ -1,0 +1,70 @@
+[
+  {
+    "key": "tiktok-dec6-cnn.html",
+    "url": "https://transcripts.cnn.com/show/cnc/date/2024-12-06/segment/03",
+    "retrievedAt": "2026-09-06T05:27:18.104023+00:00",
+    "bytes": 26263,
+    "sha256": "d21938cb0ef0547b9110018a70725225588a9ce1fceb619e1a44dad13bbb9b32",
+    "path": "evidence/tiktok-dec6-cnn.html"
+  },
+  {
+    "key": "tiktok-dec18-cnn.html",
+    "url": "https://transcripts.cnn.com/show/cnc/date/2024-12-18/segment/08",
+    "retrievedAt": "2026-09-06T05:27:18.171923+00:00",
+    "bytes": 24809,
+    "sha256": "a470e097e7693e7ce656bef18a155bc6b93b6244359229cd2b8c208af5684e33",
+    "path": "evidence/tiktok-dec18-cnn.html"
+  },
+  {
+    "key": "tiktok-dec27-cnn.html",
+    "url": "https://transcripts.cnn.com/show/sitroom/date/2024-12-27/segment/01",
+    "retrievedAt": "2026-09-06T05:27:18.231480+00:00",
+    "bytes": 46605,
+    "sha256": "7b0bf9ab163118767a534a6cd117e9d32c1785aa78bc3d151e33aba35db10b52",
+    "path": "evidence/tiktok-dec27-cnn.html"
+  },
+  {
+    "key": "trump-iowa-cnn-index.html",
+    "url": "https://transcripts.cnn.com/date/2024-11-02",
+    "retrievedAt": "2026-09-06T05:27:18.062864+00:00",
+    "bytes": 14226,
+    "sha256": "7c30c495bccae39a72012d0ba90e90f21a8e7599716bfff9b8254afe3b79f73d",
+    "path": "evidence/trump-iowa-cnn-index.html"
+  },
+  {
+    "key": "tiktok-end-cnn-index.html",
+    "url": "https://transcripts.cnn.com/date/2025-01-19",
+    "retrievedAt": "2026-09-06T05:27:18.146374+00:00",
+    "bytes": 13909,
+    "sha256": "27ed8359a6afa73b443ce18690ffb03a501a293832ea8e574847c10223668170",
+    "path": "evidence/tiktok-end-cnn-index.html"
+  },
+  {
+    "key": "nyc-primary-cnn-index.html",
+    "url": "https://transcripts.cnn.com/date/2025-06-24",
+    "retrievedAt": "2026-09-06T05:27:18.185498+00:00",
+    "bytes": 22173,
+    "sha256": "9e821bc3ff4273dad743590ba29aead89dc665f9e769dc301d98969f5a4a4ba6",
+    "path": "evidence/nyc-primary-cnn-index.html"
+  },
+  {
+    "key": "nyc-hochul-opinion.html",
+    "url": "https://www.nytimes.com/2025/09/14/opinion/hochul-endorsement-mamdani.html",
+    "error": "HTTP Error 403: Forbidden",
+    "retrievedAt": "2026-09-06T05:27:18.254855+00:00"
+  },
+  {
+    "key": "eagles-ending-index.html",
+    "url": "https://www.philadelphiaeagles.com/game-day/2024/super-bowl/chiefs-at-eagles/",
+    "error": "HTTP Error 404: Not Found",
+    "retrievedAt": "2026-09-06T05:27:18.508503+00:00"
+  },
+  {
+    "key": "nyc-ending-official.html",
+    "url": "https://vote.nyc/page/election-results-summary-2025",
+    "retrievedAt": "2026-09-06T05:27:18.404407+00:00",
+    "bytes": 273017,
+    "sha256": "a2d160e2a2c7b1008a13d2738ca39f89092e2d5ebbb4cd4369cb5470d153ec78",
+    "path": "evidence/nyc-ending-official.html"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "role": "trump",
+  "status": "complete",
+  "startedAt": "2026-09-07T05:32:20Z",
+  "updatedAt": "2026-09-07T05:41:58Z",
+  "finishedAt": "2026-09-07T05:41:58Z",
+  "handoffComplete": true,
+  "workspace": "/Users/simonwacziarg/Documents/ChatGPT/Forecast",
+  "taskId": "01a07776-a544-7d53-89fa-4c56b8a878ca",
+  "ownedPaths": [
+    "docs/launch-work/playable-drafts/trump/",
+    "docs/launch-work/playable-drafts/status/trump.json"
+  ],
+  "reportPath": "docs/launch-work/playable-drafts/trump/report.md",
+  "files": [
+    { "path": "docs/launch-work/playable-drafts/trump/anchor-correction-v3.json", "sha256": "fa2630ff8477738f32bc24fd6bb24c821a0225bb8663eed6229589bce865584b" },
+    { "path": "docs/launch-work/playable-drafts/trump/candidate.json", "sha256": "ac1f07737d7171150ff10c8c3de85e2a0fb10f0eb28f1376075a8bc374706539" },
+    { "path": "docs/launch-work/playable-drafts/trump/evidence-manifest.json", "sha256": "04caab0402ca423c9ed18341862a15055533c86371f709271a64a16cba97c25f" },
+    { "path": "docs/launch-work/playable-drafts/trump/report.md", "sha256": "c18fce12e8d88f87413e20373cd1f483de6197ff8a6632cc0538a01aaea968b2" },
+    { "path": "docs/launch-work/playable-drafts/trump/score-packet.json", "sha256": "c24b49aa1672f0e912433022405c386958069ba301902c13d5a51d71194d7471" },
+    { "path": "docs/launch-work/playable-drafts/trump/score-packet.test.mjs", "sha256": "5e12effdf5a2070e1a03ba9da3850e8cea49c4742fe4ca250426da3a4ef04b6c" },
+    { "path": "docs/launch-work/playable-drafts/trump/study-draft.json", "sha256": "aa4d470e34f892812942d499484b1bc54885c81e946b29541ac42b95c5768e5e" }
+  ],
+  "tests": [
+    "node --experimental-strip-types docs/launch-work/playable-drafts/trump/score-packet.test.mjs",
+    "node --experimental-strip-types src/domain/eventStudy.test.ts",
+    "node --experimental-strip-types src/domain/dailyGame.test.ts",
+    "node --experimental-strip-types src/data/integration.test.ts",
+    "node --experimental-strip-types src/domain/launchRouting.test.ts",
+    "node --experimental-strip-types scripts/check-launch-readiness.test.mjs"
+  ]
+}

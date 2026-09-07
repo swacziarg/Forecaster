@@ -1,0 +1,61 @@
+{
+  "role": "tiktok",
+  "taskId": "01a07776-85a0-7532-8b03-e1ceb957e229",
+  "status": "complete",
+  "startedAt": "2026-09-06T18:07:31Z",
+  "updatedAt": "2026-09-06T18:25:43Z",
+  "finishedAt": "2026-09-06T18:25:43Z",
+  "workspace": "/Users/simonwacziarg/Documents/ChatGPT/Forecast",
+  "ownedPaths": [
+    "docs/launch-work/finish-pass/tiktok/",
+    "docs/launch-work/finish-pass/status/tiktok.json"
+  ],
+  "reportPath": "docs/launch-work/finish-pass/tiktok/completion.md",
+  "filesChanged": [
+    "docs/launch-work/finish-pass/tiktok/candidate-v4.json",
+    "docs/launch-work/finish-pass/tiktok/candidate-v4.md",
+    "docs/launch-work/finish-pass/tiktok/evidence-addendum-v4.json",
+    "docs/launch-work/finish-pass/tiktok/evidence-manifest-v4.json",
+    "docs/launch-work/finish-pass/tiktok/replay-v4.mjs",
+    "docs/launch-work/finish-pass/tiktok/measurements-v4.json",
+    "docs/launch-work/finish-pass/tiktok/evidence/",
+    "docs/launch-work/finish-pass/tiktok/completion.md",
+    "docs/launch-work/finish-pass/status/tiktok.json"
+  ],
+  "checks": [
+    "Finish-pass replay produced five impacts and all 25 event windows are usable.",
+    "Candidate, addendum, manifest, and measurement JSON passed jq validation.",
+    "replay-v4.mjs passed node --check.",
+    "All 14 evidence capture hashes and candidate artifact links passed integrity validation.",
+    "Bundled PDF extraction verified the official opinion, order, brief, and Jan. 10 transcript evidence.",
+    "Full application tests, build, readiness checks, and browser QA remain assigned to the launch lead and were not run by this role."
+  ],
+  "blockers": [
+    "Exact first-public web posting instants for the Dec. 6 opinion, Dec. 18 order, and Dec. 27 brief remain unavailable; v4 explicitly uses conservative public-by semantics and does not claim first distribution times.",
+    "Human editorial approval remains pending for the exact source, claim, runtime patch, study content hash, and release timestamp."
+  ],
+  "artifactHashes": {
+    "docs/launch-work/finish-pass/tiktok/candidate-v4.json": "694bcbb11ddb7f2e1dd3bc61bd5b4642c98577f36addcdfef71092e40145e15d",
+    "docs/launch-work/finish-pass/tiktok/candidate-v4.md": "3749917810107e8e0166a81584b0b6d32bb37c14c49e8f426627128407d4adc5",
+    "docs/launch-work/finish-pass/tiktok/evidence-addendum-v4.json": "9a6b4942121f632d5c61f88ed706d507b11a9ffc59db0c5a2c399af7ce35a4b2",
+    "docs/launch-work/finish-pass/tiktok/evidence-manifest-v4.json": "fde5ff25731021fb145415d0382f0cc4e90f1d31216100927fe0b16330b475df",
+    "docs/launch-work/finish-pass/tiktok/measurements-v4.json": "81ac7f9a0e2195d76b06e9953e19f4fa50882e27282600fce0a56ded0b55a587",
+    "docs/launch-work/finish-pass/tiktok/replay-v4.mjs": "f440827b7b300cef6e5e5cf5f0e962368a60237d565807fcbd394ca58d1c71c2",
+    "docs/launch-work/finish-pass/tiktok/completion.md": "03aca8e090ee3f7b9edb9a8bb3e39442a6acfcf892e579817769f64364c7b149",
+    "evidence/ap-race-call.html": "5f7c7324872e317d2969d2cff92f95a4be38136935e0489fab4d3d77269ae3a5",
+    "evidence/ap-dec6.html": "7aaeb3f341b3646595cfad9cd02fc551626f96f7ebc6cef3d9328c722b5f8803",
+    "evidence/ap-dec18.html": "50aea097ef4a6b3e00f9a24d44459fc2475a06cf2a4cc796c55d25497b54ae38",
+    "evidence/ap-dec27.html": "0e40094fb46c88be4413348b8c2f078c0ff29e8321033984cce1546a25e5544a",
+    "evidence/ap-jan10.html": "d84303e6f8e27b01f6587babc5da617eeacefcdd32cba76431e43d3521cc44be",
+    "evidence/cadc-dec6-opinion.pdf": "1bfb5dbe4384de347968e1ef6ff81412c9376884fe17173884477287edec9c8d",
+    "evidence/cadc-dec6-index.html": "ed69567f7e6454b966ff7b04d88c9e8cfb89a6da4ae14dccc5e14cbde6bc4569",
+    "evidence/scotus-dec18-order.pdf": "51a1aa500e74004cd97f85e58979c1fc5073e175722ac38e6c85b90e850e7a91",
+    "evidence/scotus-dec18-advisory.html": "50fc63b62d0a9dc7a3df2cb609f1709d93cb606232dc65cf848836c1fc17565b",
+    "evidence/scotus-docket.html": "2e5acc036ca274cf80ce35097f58de4c8945c643ce921de606cf28f93dd015e8",
+    "evidence/scotus-trump-brief.pdf": "b3074d8875c444b280b47951125182b00e87cf4ee21968987630d4d393500673",
+    "evidence/scotus-jan10-audio.html": "6d2d217e1a2ae58dc5ce72d46cbfaf308d820fd27487700f970fa72813bc0c8e",
+    "evidence/scotus-jan10-transcript.pdf": "5d1a6c69821a99f3c7ec584565d9bb24f0728f1f6ed86a7bf84a805755ee01a7",
+    "evidence/cnn-jan10-live.html": "0befb468ac0f65a5f4603d72646e796c07896c909264c3719369970c8c074c79"
+  },
+  "handoffComplete": true
+}

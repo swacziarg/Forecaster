@@ -1,0 +1,144 @@
+{
+  "artifactType": "Fresh post-freeze culture reserve measurements; not a published answer key",
+  "calculatedAt": "2026-09-06T16:09:42.300Z",
+  "invocation": "node --experimental-strip-types --input-type=module --eval 'import { readFileSync } from \"node:fs\"; import { normalizeObservationSeries, parseMarketCsv, calculateStudyImpacts, createTieGroups, MONTHS_PROFILE } from \"./src/domain/eventStudy.ts\"; import { oscarsStudy } from \"./src/data/oscars2026.ts\"; const csv = readFileSync(\"./public/data/oscars-2026/kalshi-hourly.csv\", \"utf8\"); const points = normalizeObservationSeries(parseMarketCsv(csv), 60); const impacts = calculateStudyImpacts(points, oscarsStudy.events, MONTHS_PROFILE); const groups = createTieGroups(impacts, MONTHS_PROFILE.tieThreshold);'",
+  "calculationFunctions": ["parseMarketCsv", "normalizeObservationSeries", "calculateStudyImpacts", "MONTHS_PROFILE", "createTieGroups"],
+  "source": {
+    "csv": "public/data/oscars-2026/kalshi-hourly.csv",
+    "rawPoints": 4168,
+    "normalizedPoints": 4168,
+    "normalizedSha256": "498a7ba35bb74924845de951b1a281ecf70382f4aff74f62f0529537c072eb54",
+    "eventStudyModule": "src/domain/eventStudy.ts",
+    "eventStudyModuleSha256": "9fdfcd16d70cdffd5d54469c215f68ecbf83070c6778754c07047b1eaa9a4cc6",
+    "selectionFile": "docs/launch-queue-research/frozen-selection-v1.json",
+    "selectionSha256": "79ca8b2e025f15e5fe1ff9040ed1c060d874bf188d2b239f39fc647c0ad33593",
+    "anchorsFile": "docs/launch-queue-research/anchors-v2.json",
+    "anchorsSha256": "168609f145c5a992e911c5479b0f2c3fe9e331f72420fdb1f5dd5f86febaffa3"
+  },
+  "profile": {
+    "id": "months-hourly-v1",
+    "cadenceMinutes": 60,
+    "anticipation": { "startHours": -84, "endHours": -12 },
+    "reference": { "startHours": -12, "endHours": 0 },
+    "immediate": { "startHours": 0, "endHours": 6 },
+    "stabilized": { "startHours": 18, "endHours": 36 },
+    "delayed": { "startHours": 48, "endHours": 72 },
+    "quality": { "minimumCoverage": 0.6, "maximumGapShare": 0.5, "minimumDistinctUpdates": 3, "maximumSpread": 0.2 },
+    "tieThreshold": 0.01
+  },
+  "all25WindowsUsable": true,
+  "qualitySummary": {
+    "events": 5,
+    "windowsPerEvent": 5,
+    "requiredWindows": 25,
+    "usableWindows": 25,
+    "coverage": "100% for every required window",
+    "maximumGapBuckets": 0,
+    "minimumDistinctUpdates": 6,
+    "medianSpreadRange": [0.01, 0.015],
+    "failedWindows": []
+  },
+  "events": [
+    {
+      "eventId": "nbr-best-film",
+      "informationKnownAt": "2025-12-03T17:00:00Z",
+      "levels": { "anticipation": 0.55, "reference": 0.59, "immediate": 0.625, "stabilized": 0.72, "delayed": 0.73 },
+      "responses": { "anticipationMove": 0.04, "immediateResponse": 0.035, "shortTermResponse": 0.13, "delayedIncrement": 0.01, "cumulativeDelayedResponse": 0.14 },
+      "displayedPercentagePoints": { "anticipationMove": 4, "immediateResponse": 3.5, "shortTermResponse": 13, "delayedIncrement": 1, "cumulativeDelayedResponse": 14 },
+      "windowQuality": {
+        "anticipation": { "start": "2025-11-30T05:00:00.000Z", "end": "2025-12-03T05:00:00.000Z", "expectedBuckets": 72, "validBuckets": 72, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 72, "medianSpread": 0.01, "status": "usable" },
+        "reference": { "start": "2025-12-03T05:00:00.000Z", "end": "2025-12-03T17:00:00.000Z", "expectedBuckets": 12, "validBuckets": 12, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 12, "medianSpread": 0.01, "status": "usable" },
+        "immediate": { "start": "2025-12-03T17:00:00.000Z", "end": "2025-12-03T23:00:00.000Z", "expectedBuckets": 6, "validBuckets": 6, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 6, "medianSpread": 0.01, "status": "usable" },
+        "stabilized": { "start": "2025-12-04T11:00:00.000Z", "end": "2025-12-05T05:00:00.000Z", "expectedBuckets": 18, "validBuckets": 18, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 18, "medianSpread": 0.015, "status": "usable" },
+        "delayed": { "start": "2025-12-05T17:00:00.000Z", "end": "2025-12-06T17:00:00.000Z", "expectedBuckets": 24, "validBuckets": 24, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 24, "medianSpread": 0.01, "status": "usable" }
+      },
+      "qualityStatus": "usable",
+      "ordinaryMovement": { "classification": "unusually large", "threshold": 0.035, "sampleCount": 100 },
+      "overlaps": []
+    },
+    {
+      "eventId": "critics-choice-best-picture",
+      "informationKnownAt": "2026-01-05T04:30:00Z",
+      "levels": { "anticipation": 0.7425, "reference": 0.7325, "immediate": 0.78, "stabilized": 0.7725, "delayed": 0.78 },
+      "responses": { "anticipationMove": -0.01, "immediateResponse": 0.0475, "shortTermResponse": 0.04, "delayedIncrement": 0.0075, "cumulativeDelayedResponse": 0.0475 },
+      "displayedPercentagePoints": { "anticipationMove": -1, "immediateResponse": 4.75, "shortTermResponse": 4, "delayedIncrement": 0.75, "cumulativeDelayedResponse": 4.75 },
+      "windowQuality": {
+        "anticipation": { "start": "2026-01-01T16:30:00.000Z", "end": "2026-01-04T16:30:00.000Z", "expectedBuckets": 72, "validBuckets": 72, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 72, "medianSpread": 0.01, "status": "usable" },
+        "reference": { "start": "2026-01-04T16:30:00.000Z", "end": "2026-01-05T04:30:00.000Z", "expectedBuckets": 12, "validBuckets": 12, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 12, "medianSpread": 0.01, "status": "usable" },
+        "immediate": { "start": "2026-01-05T04:30:00.000Z", "end": "2026-01-05T10:30:00.000Z", "expectedBuckets": 6, "validBuckets": 6, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 6, "medianSpread": 0.01, "status": "usable" },
+        "stabilized": { "start": "2026-01-05T22:30:00.000Z", "end": "2026-01-06T16:30:00.000Z", "expectedBuckets": 18, "validBuckets": 18, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 18, "medianSpread": 0.01, "status": "usable" },
+        "delayed": { "start": "2026-01-07T04:30:00.000Z", "end": "2026-01-08T04:30:00.000Z", "expectedBuckets": 24, "validBuckets": 24, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 24, "medianSpread": 0.01, "status": "usable" }
+      },
+      "qualityStatus": "usable",
+      "ordinaryMovement": { "classification": "unusually large", "threshold": 0.035, "sampleCount": 100 },
+      "overlaps": []
+    },
+    {
+      "eventId": "golden-globes-picture",
+      "informationKnownAt": "2026-01-12T04:45:00Z",
+      "levels": { "anticipation": 0.78, "reference": 0.78, "immediate": 0.84, "stabilized": 0.815, "delayed": 0.8275 },
+      "responses": { "anticipationMove": 0, "immediateResponse": 0.06, "shortTermResponse": 0.035, "delayedIncrement": 0.0125, "cumulativeDelayedResponse": 0.0475 },
+      "displayedPercentagePoints": { "anticipationMove": 0, "immediateResponse": 6, "shortTermResponse": 3.5, "delayedIncrement": 1.25, "cumulativeDelayedResponse": 4.75 },
+      "windowQuality": {
+        "anticipation": { "start": "2026-01-08T16:45:00.000Z", "end": "2026-01-11T16:45:00.000Z", "expectedBuckets": 72, "validBuckets": 72, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 72, "medianSpread": 0.01, "status": "usable" },
+        "reference": { "start": "2026-01-11T16:45:00.000Z", "end": "2026-01-12T04:45:00.000Z", "expectedBuckets": 12, "validBuckets": 12, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 12, "medianSpread": 0.01, "status": "usable" },
+        "immediate": { "start": "2026-01-12T04:45:00.000Z", "end": "2026-01-12T10:45:00.000Z", "expectedBuckets": 6, "validBuckets": 6, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 6, "medianSpread": 0.01, "status": "usable" },
+        "stabilized": { "start": "2026-01-12T22:45:00.000Z", "end": "2026-01-13T16:45:00.000Z", "expectedBuckets": 18, "validBuckets": 18, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 18, "medianSpread": 0.01, "status": "usable" },
+        "delayed": { "start": "2026-01-14T04:45:00.000Z", "end": "2026-01-15T04:45:00.000Z", "expectedBuckets": 24, "validBuckets": 24, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 24, "medianSpread": 0.01, "status": "usable" }
+      },
+      "qualityStatus": "usable",
+      "ordinaryMovement": { "classification": "ordinary", "threshold": 0.035, "sampleCount": 100 },
+      "overlaps": []
+    },
+    {
+      "eventId": "oscar-nominations",
+      "informationKnownAt": "2026-01-22T13:30:00Z",
+      "levels": { "anticipation": 0.77, "reference": 0.76, "immediate": 0.72, "stabilized": 0.71, "delayed": 0.7 },
+      "responses": { "anticipationMove": -0.01, "immediateResponse": -0.04, "shortTermResponse": -0.05, "delayedIncrement": -0.01, "cumulativeDelayedResponse": -0.06 },
+      "displayedPercentagePoints": { "anticipationMove": -1, "immediateResponse": -4, "shortTermResponse": -5, "delayedIncrement": -1, "cumulativeDelayedResponse": -6 },
+      "windowQuality": {
+        "anticipation": { "start": "2026-01-19T01:30:00.000Z", "end": "2026-01-22T01:30:00.000Z", "expectedBuckets": 72, "validBuckets": 72, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 72, "medianSpread": 0.01, "status": "usable" },
+        "reference": { "start": "2026-01-22T01:30:00.000Z", "end": "2026-01-22T13:30:00.000Z", "expectedBuckets": 12, "validBuckets": 12, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 12, "medianSpread": 0.01, "status": "usable" },
+        "immediate": { "start": "2026-01-22T13:30:00.000Z", "end": "2026-01-22T19:30:00.000Z", "expectedBuckets": 6, "validBuckets": 6, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 6, "medianSpread": 0.01, "status": "usable" },
+        "stabilized": { "start": "2026-01-23T07:30:00.000Z", "end": "2026-01-24T01:30:00.000Z", "expectedBuckets": 18, "validBuckets": 18, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 18, "medianSpread": 0.01, "status": "usable" },
+        "delayed": { "start": "2026-01-24T13:30:00.000Z", "end": "2026-01-25T13:30:00.000Z", "expectedBuckets": 24, "validBuckets": 24, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 24, "medianSpread": 0.01, "status": "usable" }
+      },
+      "qualityStatus": "usable",
+      "ordinaryMovement": { "classification": "unusually large", "threshold": 0.035, "sampleCount": 100 },
+      "overlaps": []
+    },
+    {
+      "eventId": "pga-top-prize",
+      "informationKnownAt": "2026-03-01T05:00:00Z",
+      "levels": { "anticipation": 0.77, "reference": 0.76, "immediate": 0.885, "stabilized": 0.815, "delayed": 0.7975 },
+      "responses": { "anticipationMove": -0.01, "immediateResponse": 0.125, "shortTermResponse": 0.055, "delayedIncrement": -0.0175, "cumulativeDelayedResponse": 0.0375 },
+      "displayedPercentagePoints": { "anticipationMove": -1, "immediateResponse": 12.5, "shortTermResponse": 5.5, "delayedIncrement": -1.75, "cumulativeDelayedResponse": 3.75 },
+      "windowQuality": {
+        "anticipation": { "start": "2026-02-25T17:00:00.000Z", "end": "2026-02-28T17:00:00.000Z", "expectedBuckets": 72, "validBuckets": 72, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 72, "medianSpread": 0.01, "status": "usable" },
+        "reference": { "start": "2026-02-28T17:00:00.000Z", "end": "2026-03-01T05:00:00.000Z", "expectedBuckets": 12, "validBuckets": 12, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 12, "medianSpread": 0.01, "status": "usable" },
+        "immediate": { "start": "2026-03-01T05:00:00.000Z", "end": "2026-03-01T11:00:00.000Z", "expectedBuckets": 6, "validBuckets": 6, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 6, "medianSpread": 0.01, "status": "usable" },
+        "stabilized": { "start": "2026-03-01T23:00:00.000Z", "end": "2026-03-02T17:00:00.000Z", "expectedBuckets": 18, "validBuckets": 18, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 18, "medianSpread": 0.01, "status": "usable" },
+        "delayed": { "start": "2026-03-03T05:00:00.000Z", "end": "2026-03-04T05:00:00.000Z", "expectedBuckets": 24, "validBuckets": 24, "coverage": 1, "maximumGapBuckets": 0, "distinctUpdates": 24, "medianSpread": 0.01, "status": "usable" }
+      },
+      "qualityStatus": "usable",
+      "ordinaryMovement": { "classification": "unusually large", "threshold": 0.035, "sampleCount": 100 },
+      "overlaps": []
+    }
+  ],
+  "tieGroups": [
+    ["nbr-best-film"],
+    ["pga-top-prize"],
+    ["critics-choice-best-picture", "golden-globes-picture"],
+    ["oscar-nominations"]
+  ],
+  "rankedBySignedResponse": [
+    { "eventId": "nbr-best-film", "shortTermResponse": 0.13, "percentagePoints": 13 },
+    { "eventId": "pga-top-prize", "shortTermResponse": 0.055, "percentagePoints": 5.5 },
+    { "eventId": "critics-choice-best-picture", "shortTermResponse": 0.04, "percentagePoints": 4 },
+    { "eventId": "golden-globes-picture", "shortTermResponse": 0.035, "percentagePoints": 3.5 },
+    { "eventId": "oscar-nominations", "shortTermResponse": -0.05, "percentagePoints": -5 }
+  ],
+  "comparablePairs": 9,
+  "excludedTiePairs": 1,
+  "warning": "These are retrospective research measurements from a visible, post-freeze calculation. They are not causal effects, approval, or a player-facing answer key."
+}

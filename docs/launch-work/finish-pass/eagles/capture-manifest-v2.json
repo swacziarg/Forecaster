@@ -1,0 +1,98 @@
+{
+  "artifactType": "Eagles targeted contemporary capture manifest",
+  "preparedAt": "2026-09-06T18:14:40Z",
+  "captureMethod": "Internet Archive CDX index plus retained WARC response body; compressed responses were decompressed only to make reviewable local HTML derivatives",
+  "caveat": "Archive captures and page JSON-LD publication metadata support conservative public-by bounds. They do not establish the exact first-public instant or prove that no earlier channel carried the information.",
+  "cdxIndexes": [
+    {"eventId": "falcons-collapse", "path": "captures/cdx-falcons.json", "sha256": "1fff49f36eb9eac938c815b118000552396fdff67fd2284a17e61ce5890e3e97"},
+    {"eventId": "barkley-record", "path": "captures/cdx-barkley.json", "sha256": "b7aa1978c19eb5e23e1699e04ebded853b495c2e69f834cb853b8f560b5ff1b7"},
+    {"eventId": "hurts-concussion", "path": "captures/cdx-hurts.json", "sha256": "3bb2cb3bd88c4a7bbdf2be362db33d7e4c7fba49a0913ab6e4cbba8f97417ea4"},
+    {"eventId": "snow-playoff", "path": "captures/cdx-snow.json", "sha256": "a574d07e09e513f526996c048de1aace664a8d6730d361075d73b294b809f17c"},
+    {"eventId": "nfc-title", "path": "captures/cdx-nfc.json", "sha256": "4342764f4425f2af3bec05d8d83d6a72a7dba8b2d6954d88f61147479b4ca0f6"}
+  ],
+  "captures": [
+    {
+      "id": "archive-falcons-20240917124518",
+      "eventId": "falcons-collapse",
+      "originalUrl": "https://www.philadelphiaeagles.com/news/game-recap-falcons-vs-eagles-week-2-2024",
+      "archiveTimestamp": "2024-09-17T12:45:18Z",
+      "archiveUrl": "https://web.archive.org/web/20240917124518id_/https://www.philadelphiaeagles.com/news/game-recap-falcons-vs-eagles-week-2-2024",
+      "warcDigest": "NNCKWI4K3W2Q7BWLCENNPH2FD3GZYTAF",
+      "capturePath": "captures/falcons-20240917124518.html.gz",
+      "captureSha256": "91aa959966ac9c7afd97286fd8c79e7e42cdb7eb7d61d7c146634b21a7167a80",
+      "reviewPath": "captures/falcons-20240917124518.html",
+      "reviewSha256": "e8642aa12200f36cb6971a72fa7e4c43a22b9beb8ffb1a1d9b4eed99144e8b29",
+      "extract": "The capture contains the 22–21 final. Its relevant page JSON-LD says datePublished 2024-09-17T03:09:00Z and dateModified 2024-09-17T04:59:45.324Z; publication precedes the gamebook-derived final at 03:13Z, so the final-result scoring boundary is unchanged."
+    },
+    {
+      "id": "archive-barkley-20241125101431",
+      "eventId": "barkley-record",
+      "originalUrl": "https://www.philadelphiaeagles.com/news/saquon-barkley-eagles-rams-historic-255-yard-performance-i-cant-do-it-alone",
+      "archiveTimestamp": "2024-11-25T10:14:31Z",
+      "archiveUrl": "https://web.archive.org/web/20241125101431id_/https://www.philadelphiaeagles.com/news/saquon-barkley-eagles-rams-historic-255-yard-performance-i-cant-do-it-alone",
+      "warcDigest": "CL6WFU25YSFJMG2NC2G35HUI7DBAMN7M",
+      "capturePath": "captures/barkley-20241125101431.html",
+      "captureSha256": "8e4ca5ee820b7e4054fb81550dc0bb6c2f5b5381713ec03b5326d5ce0d04272e",
+      "extract": "The capture contains the 37–20 final and Barkley’s 255 yards. Its relevant page JSON-LD says datePublished and dateModified 2024-11-25T06:51:48.356Z; the retained scoring cutoff is unchanged."
+    },
+    {
+      "id": "archive-hurts-injury-20241222204404",
+      "eventId": "hurts-concussion",
+      "originalUrl": "https://www.philadelphiaeagles.com/news/eagles-vs-commanders-live-updates-december-22-2024-nfl-week-16",
+      "archiveTimestamp": "2024-12-22T20:44:04Z",
+      "archiveUrl": "https://web.archive.org/web/20241222204404id_/https://www.philadelphiaeagles.com/news/eagles-vs-commanders-live-updates-december-22-2024-nfl-week-16",
+      "warcDigest": "EUUKYRCW7ARN5C3YDODW6WILOHRN4RWS",
+      "capturePath": "captures/hurts-20241222204404.html",
+      "captureSha256": "b39fef41503576cc56cb7c8f801e9f8d0a6409518a9511b0e2b4020397d6c797",
+      "extract": "The capture says Jalen Hurts is out for the remainder with a concussion, but it does not contain the 36–33 final. It supports an earlier injury-only public update and is not used as the combined-card scoring anchor."
+    },
+    {
+      "id": "archive-hurts-postgame-20241225065909",
+      "eventId": "hurts-concussion",
+      "originalUrl": "https://www.philadelphiaeagles.com/news/eagles-vs-commanders-live-updates-december-22-2024-nfl-week-16",
+      "archiveTimestamp": "2024-12-25T06:59:09Z",
+      "archiveUrl": "https://web.archive.org/web/20241225065909id_/https://www.philadelphiaeagles.com/news/eagles-vs-commanders-live-updates-december-22-2024-nfl-week-16",
+      "warcDigest": "WJKZ34MYJHGASHDSUJW5OH3C6467OE6Q",
+      "capturePath": "captures/hurts-20241225065909.html.gz",
+      "captureSha256": "7326bf16cb39bed61315d4da1f965131c1e66e214a26bfa11ff6be8699559bf6",
+      "reviewPath": "captures/hurts-20241225065909.html",
+      "reviewSha256": "91134601c14c5b64cc73ec678150ada46402c86e99028676da8aee0302152abd",
+      "extract": "The capture contains the complete 36–33 result and concussion claim. Relevant JSON-LD says datePublished 2024-12-22T22:25:00Z and dateModified 2024-12-22T23:26:58.564Z; 22:25Z is used as a conservative public-by bound."
+    },
+    {
+      "id": "archive-snow-pre-final-20250119230630",
+      "eventId": "snow-playoff",
+      "originalUrl": "https://www.philadelphiaeagles.com/news/rams-vs-eagles-live-updates-january-19-2025-nfl-divisional-round",
+      "archiveTimestamp": "2025-01-19T23:06:30Z",
+      "archiveUrl": "https://web.archive.org/web/20250119230630id_/https://www.philadelphiaeagles.com/news/rams-vs-eagles-live-updates-january-19-2025-nfl-divisional-round",
+      "warcDigest": "6JC4CACEWPO3DZX72MT3OETPU2XPH5ML",
+      "capturePath": "captures/snow-20250119230630.html",
+      "captureSha256": "0db349b82bb050b2c78ac300f9198ab4febb7143c0f91390d2bb9a9c6497fecf",
+      "extract": "The capture is a live-game page before the final and therefore cannot establish the postgame scoring boundary."
+    },
+    {
+      "id": "archive-snow-postgame-20250120091057",
+      "eventId": "snow-playoff",
+      "originalUrl": "https://www.philadelphiaeagles.com/news/rams-vs-eagles-live-updates-january-19-2025-nfl-divisional-round",
+      "archiveTimestamp": "2025-01-20T09:10:57Z",
+      "archiveUrl": "https://web.archive.org/web/20250120091057id_/https://www.philadelphiaeagles.com/news/rams-vs-eagles-live-updates-january-19-2025-nfl-divisional-round",
+      "warcDigest": "OTXDDYWXNR5VZMITSY4DFY5OGVGVMTAV",
+      "capturePath": "captures/snow-20250120091057.html.gz",
+      "captureSha256": "ef0ec445ee79bfd8f3639bf1d4335ecf377b37136c3e3371283faa7aa658ea2a",
+      "reviewPath": "captures/snow-20250120091057.html",
+      "reviewSha256": "4fc698f8f95002fe64e51160b6092a6671f9872abff283e7dc4fcbb7e36012ee",
+      "extract": "The capture contains the 28–22 final and NFC Championship advancement. Relevant JSON-LD says datePublished 2025-01-19T23:10:00Z and dateModified 2025-01-20T01:37:49.106Z; 23:10Z is used as a conservative public-by bound."
+    },
+    {
+      "id": "archive-nfc-20250127003536",
+      "eventId": "nfc-title",
+      "originalUrl": "https://www.philadelphiaeagles.com/news/spadaro-6-takeaways-from-a-dominant-nfc-championship-victory-over-the-commanders",
+      "archiveTimestamp": "2025-01-27T00:35:36Z",
+      "archiveUrl": "https://web.archive.org/web/20250127003536id_/https://www.philadelphiaeagles.com/news/spadaro-6-takeaways-from-a-dominant-nfc-championship-victory-over-the-commanders",
+      "warcDigest": "76S7WU77BTJDDWBTKLRY2AQ2LWEZLLJC",
+      "capturePath": "captures/nfc-20250127003536.html",
+      "captureSha256": "db7cf4d087975544003985d16f0ff868cf32d89ce854b20a5b6408b14ea78a1d",
+      "extract": "The capture contains the 55–23 final and Super Bowl advancement. Relevant JSON-LD says datePublished and dateModified 2025-01-27T00:22:04.795Z; 00:22:04.795Z is used as a conservative public-by bound."
+    }
+  ]
+}

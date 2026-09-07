@@ -1,0 +1,51 @@
+{
+  "role": "oscars",
+  "status": "complete",
+  "startedAt": "2026-09-06T20:13:47.300Z",
+  "finishedAt": "2026-09-06T20:35:27.300Z",
+  "updatedAt": "2026-09-06T20:35:27.300Z",
+  "workspace": "/Users/simonwacziarg/Documents/ChatGPT/Forecast",
+  "taskId": "01a07776-b625-7fc3-ae9b-b76a9e6b60b8",
+  "ownedPaths": [
+    "docs/launch-work/funnel-expansion/oscars/",
+    "docs/launch-work/funnel-expansion/status/oscars.json"
+  ],
+  "reportPath": "docs/launch-work/funnel-expansion/oscars/report.md",
+  "handoffComplete": true,
+  "artifactHashes": {
+    "candidate.json": "959d1ecfa0c8850d930cf73c17855a136bc9e107066dc259bae09df142e482c0",
+    "selection-freeze-v2.json": "f6c6d763abe05e75873eff8aabae81a061e56ee5caec1cae458536f311b5303d",
+    "anchors-v3.json": "dc7bcff2ca1cd6e73e72e948352d9907d55aad8c5ed6b2c99f91c19e36fc430b",
+    "evidence-manifest.json": "10151505c8c1c444ae3290375a1ca4597708a5beacd2ab8be3e4d3ba6f097bdd",
+    "measurements.json": "b0acb389187ab661897e515fa9b6472cde241fea21f5793a655c7872931c4230",
+    "ending.json": "428de58e03f546cf140d9fc3794c996f1da35f5c4ef5d8c80552be89d68410ee",
+    "report.md": "52dd0e732ae0bfc6095c86a6685b14f671328c0ace06baea71b868956e3c32b7",
+    "source-captures/01-nbr-official.html": "158f7868e6496ce41d6bf78f37d7bed60beb5d157b3464803a9d07b84a1a2d3d",
+    "source-captures/02-critics-official.html": "e0890c7b18dedfd2eafec6c1ba8a3ed74d16b73908e5f5d1192444f1205cd5fb",
+    "source-captures/03-globes-official.html": "97cd6acf26419d370c842640c11a9b7b884cd2727b3be9984d2984ff1b331ad3",
+    "source-captures/04-academy-official.pdf": "c26c15772d6ea934622b3be13dd79ab7f5720f33a3a6b3e76772a85548881293",
+    "source-captures/05-pga-official.html": "dde8782c42b54526e342efc5d2e775ac76eb59830f2b53704228b61d8e8931c5",
+    "source-captures/06-nbr-rotten-tomatoes.html": "f0513cc69a3b08552fb342c29d6b40a0fa23dd02283dd4605d0ac484eaa2354c",
+    "source-captures/07-critics-theweek.html": "dc6b4d4162255b536a0a601cb5229e42bdaf2f75c36383a41c8432ab158a0876",
+    "source-captures/08-globes-ap.html": "e0318586719223f4786466082d46086d2ab62b95b48b5bdb94821449f0333f4a",
+    "source-captures/09-nominations-ap.html": "2e5587168ab47cdfc6df669cca0403a2cee93f656866524ce3f3caf46cc2f0ec",
+    "source-captures/10-pga-ap.html": "0521c487167c155f39fbf78c57b8fef1a4436a8bb6e53f90886ec84e8dd0b593"
+  },
+  "checks": {
+    "candidateStudyValidation": "pass",
+    "sourceHashReplay": "pass",
+    "measurementReplay": "pass",
+    "projectTests": "pass",
+    "observations": 4168,
+    "windows": 25,
+    "usableWindows": 25,
+    "uniquePublisherCountPerCard": 2,
+    "pairwiseAgreement": "7/10 (70%)"
+  },
+  "unresolvedGates": [
+    "Independent human reviewer must confirm whether exact first-public seconds can replace the conservative page-availability bounds.",
+    "Independent reviewer must decide whether the exact 1.0 percentage-point Critics Choice/Golden Globes boundary should round into a tie under the existing comparator.",
+    "Independent reviewer must decide whether the adjacent televised precursors remain narratively distinct enough for the final funnel.",
+    "Independent reviewer identity, timestamp, and approval decision are still required before runtime publication."
+  ]
+}

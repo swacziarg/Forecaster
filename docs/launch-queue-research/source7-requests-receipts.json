@@ -1,0 +1,18 @@
+[
+  {
+    "key": "anora-critics-winners.html",
+    "url": "https://www.criticschoice.com/30th-annual-critics-choice-awards-list-of-nominees-and-winners-2025/",
+    "retrievedAt": "2026-09-06T13:57:06.534513+00:00",
+    "bytes": 191557,
+    "sha256": "f2ceffd027a069897ff885dfb0ddd430a4992d3f172ca2d80103ec959b59c67b",
+    "path": "evidence/anora-critics-winners.html"
+  },
+  {
+    "key": "nyc-ending-recap.pdf",
+    "url": "https://vote.nyc/sites/default/files/pdf/election_results/2025/20251104General%20Election/00000100000Citywide%20Mayor%20Citywide%20Recap.pdf",
+    "retrievedAt": "2026-09-06T13:57:06.371222+00:00",
+    "bytes": 231156,
+    "sha256": "f4293ed11e93c297ecfd0e89ec693c100b0b563de9490eaaa92b199997ab22b2",
+    "path": "evidence/nyc-ending-recap.pdf"
+  }
+]

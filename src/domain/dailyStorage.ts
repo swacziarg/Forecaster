@@ -40,7 +40,8 @@ export type DailyStats = {
   persistenceAvailable: boolean
 }
 
-const validTimestamp = (value: unknown): value is string => typeof value === 'string' && Number.isFinite(Date.parse(value))
+const timestampValue = (value: unknown) => typeof value === 'string' ? Date.parse(value) : Number.NaN
+const validTimestamp = (value: unknown): value is string => Number.isFinite(timestampValue(value))
 const isRecord = (value: unknown): value is Record<string, unknown> => typeof value === 'object' && value !== null && !Array.isArray(value)
 
 export function dailyAttemptKey(puzzle: DailyPuzzle) {
@@ -48,6 +49,7 @@ export function dailyAttemptKey(puzzle: DailyPuzzle) {
 }
 
 export function parseDailyAttempt(value: unknown, puzzle: DailyPuzzle): DailyAttempt | null {
+  const releaseTime = Date.parse(puzzle.releaseTime)
   if (!isRecord(value)
     || value.schemaVersion !== DAILY_ATTEMPT_SCHEMA_VERSION
     || value.puzzleId !== puzzle.id
@@ -58,14 +60,16 @@ export function parseDailyAttempt(value: unknown, puzzle: DailyPuzzle): DailyAtt
     || value.scoringVersion !== puzzle.scoring.version
     || !isPermutation(value.eventIds, puzzle.eventIds)
     || !isPermutation(value.order, puzzle.eventIds)
-    || !validTimestamp(value.updatedAt)) return null
+    || !validTimestamp(value.updatedAt)
+    || timestampValue(value.updatedAt) < releaseTime) return null
 
   let submission: DailySubmission | undefined
   if (value.submission !== undefined) {
     if (!isRecord(value.submission)
       || !isPermutation(value.submission.order, puzzle.eventIds)
       || !validTimestamp(value.submission.submittedAt)
-      || Date.parse(value.submission.submittedAt) < Date.parse(puzzle.releaseTime)
+      || timestampValue(value.submission.submittedAt) < releaseTime
+      || timestampValue(value.submission.submittedAt) > timestampValue(value.updatedAt)
       || (value.submission.playMode !== 'daily' && value.submission.playMode !== 'archive')
       || !Number.isInteger(value.submission.agreed)
       || !Number.isInteger(value.submission.comparable)) return null
@@ -136,16 +140,21 @@ function writeAttempt(storage: StorageLike | null | undefined, puzzle: DailyPuzz
 }
 
 export function saveDailyDraft(storage: StorageLike | null | undefined, puzzle: DailyPuzzle, order: readonly string[], timestamp: string) {
-  if (!isPermutation(order, puzzle.eventIds) || !validTimestamp(timestamp)) return { status: 'invalid' as const }
+  const timestampMs = timestampValue(timestamp)
+  if (!isPermutation(order, puzzle.eventIds) || !validTimestamp(timestamp) || timestampMs < Date.parse(puzzle.releaseTime)) return { status: 'invalid' as const }
   const existing = readDailyAttempt(storage, puzzle)
   if (existing.status === 'unavailable') return { status: 'unavailable' as const }
   if (existing.status === 'valid' && existing.attempt.submission) return { status: 'submitted' as const, attempt: existing.attempt }
+  if (existing.status === 'valid' && timestampValue(existing.attempt.updatedAt) >= timestampMs) return { status: 'stale' as const, attempt: existing.attempt }
   const attempt = baseAttempt(puzzle, order, timestamp)
   return writeAttempt(storage, puzzle, attempt) ? { status: 'saved' as const, attempt } : { status: 'unavailable' as const }
 }
 
 export function submitDailyAttempt(storage: StorageLike | null | undefined, puzzle: DailyPuzzle, order: readonly string[], agreement: { agreed: number; comparable: number; percent: number | null }, timestamp: string, playMode: 'daily' | 'archive') {
-  if (!isPermutation(order, puzzle.eventIds) || !validTimestamp(timestamp) || Date.parse(timestamp) < Date.parse(puzzle.releaseTime)) return { status: 'invalid' as const }
+  if (!isPermutation(order, puzzle.eventIds)
+    || !validTimestamp(timestamp)
+    || timestampValue(timestamp) < Date.parse(puzzle.releaseTime)
+    || (playMode !== 'daily' && playMode !== 'archive')) return { status: 'invalid' as const }
   const maximumPairs = puzzle.eventIds.length * (puzzle.eventIds.length - 1) / 2
   const expectedScore = agreement.comparable === 0 ? null : Math.round(agreement.agreed / agreement.comparable * 100)
   if (!Number.isInteger(agreement.agreed) || !Number.isInteger(agreement.comparable) || agreement.agreed < 0 || agreement.comparable < 0 || agreement.agreed > agreement.comparable || agreement.comparable > maximumPairs || agreement.percent !== expectedScore) return { status: 'invalid' as const }
@@ -160,12 +169,17 @@ export function submitDailyAttempt(storage: StorageLike | null | undefined, puzz
 export function collectDailyStats(storage: StorageLike | null | undefined, puzzles: readonly DailyPuzzle[], now: Date): DailyStats {
   const official = new Map<string, DailyAttempt>()
   let persistenceAvailable = true
+  const nowTimestamp = now.getTime()
   for (const [index, puzzle] of puzzles.entries()) {
     const read = readDailyAttempt(storage, puzzle)
     if (read.status === 'unavailable') persistenceAvailable = false
     if (read.status !== 'valid') continue
     const submission = read.attempt.submission
-    if (submission?.playMode === 'daily' && Date.parse(submission.submittedAt) < puzzleWindowEnd(puzzles, index)) official.set(puzzle.id, read.attempt)
+    const submittedAt = submission ? timestampValue(submission.submittedAt) : Number.NaN
+    if (submission?.playMode === 'daily'
+      && submittedAt >= Date.parse(puzzle.releaseTime)
+      && submittedAt < puzzleWindowEnd(puzzles, index)
+      && submittedAt <= nowTimestamp) official.set(puzzle.id, read.attempt)
   }
   const scores = [...official.values()].flatMap((attempt) => attempt.submission?.score === null || attempt.submission?.score === undefined ? [] : [attempt.submission.score])
   const current = currentDailyPuzzle(puzzles, now)

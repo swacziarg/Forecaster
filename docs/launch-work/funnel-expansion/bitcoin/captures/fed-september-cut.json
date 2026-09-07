@@ -1,0 +1,14 @@
+{
+  "id": "fed-september-cut",
+  "captureStatus": "retrieved-via-web-text",
+  "captureType": "authoritative-html-excerpt",
+  "sourceRole": "primary",
+  "publisher": "Federal Reserve Board",
+  "title": "Federal Reserve issues FOMC statement",
+  "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm",
+  "retrievedAt": "2026-09-06T20:21:50Z",
+  "passageLocation": "web capture lines 8-15",
+  "passage": "September 18, 2024\nFederal Reserve issues FOMC statement\nFor release at 2:00 p.m. EDT\nIn light of the progress on inflation and the balance of risks, the Committee decided to lower the target range for the federal funds rate by 1/2 percentage point to 4-3/4 to 5 percent.",
+  "passageSha256": "a4e76c8c139022f63fb64c186498213a983068b5a9fbd4015062de99d3a0e9f6",
+  "publicTime": { "value": "2024-09-18T18:00:00Z", "precision": "minute", "timezone": "America/New_York", "justification": "The page states 2:00 p.m. EDT; converted to 18:00 UTC for the study anchor." }
+}

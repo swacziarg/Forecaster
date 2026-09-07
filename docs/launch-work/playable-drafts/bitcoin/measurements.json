@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "calculatedAt": "2026-09-07T05:30:11Z",
+  "studyId": "bitcoin-100k-2024-v2",
+  "selectionFreezeSha256": "433984381fff969e009013ca006339427c8d812ad94e4616285720a3cbf79ad8",
+  "dataset": {
+    "normalizedPath": "public/data/bitcoin-2024/polymarket-hourly.csv",
+    "normalizedSha256": "5d7aa54719ff32af2892aaba94fa6b33adc714bf558d82691a480c75bfbbab69",
+    "rawSha256": "856e5338c22d56b08c21e7cbdb4da8f00e97cba4055a58be7e6572a4bd13b533",
+    "marketMetadataSha256": "f248b962c27c8fda3a51a16710aa2580eca15c3d95a97aa04dda9063699d40f7",
+    "normalizedObservations": 6609,
+    "missingBuckets": ["2024-05-01T19:00:00Z", "2024-07-21T18:00:00Z", "2024-11-05T22:00:00Z"]
+  },
+  "invocation": "readFileSync -> parseMarketCsv -> normalizeObservationPerspective(YES) -> normalizeObservationSeries(60) -> calculateStudyImpacts -> createTieGroups -> pairwiseAgreement",
+  "measurementProfile": "months-hourly-v1",
+  "windows": {
+    "required": 25,
+    "usable": 25,
+    "minimumCoverage": 0.6,
+    "maximumGapShare": 0.5,
+    "minimumDistinctUpdates": 3
+  },
+  "events": [
+    { "eventId": "hong-kong-etfs", "informationKnownAt": "2024-05-01T00:00:00Z", "shortTermResponse": -0.0125, "anticipationMove": -0.0775, "immediateResponse": -0.035, "delayedIncrement": 0, "cumulativeDelayedResponse": -0.0125, "qualityStatus": "usable", "overlaps": [], "ordinaryMovement": true },
+    { "eventId": "mtgox-repayments", "informationKnownAt": "2024-07-06T00:00:00Z", "shortTermResponse": 0.0225, "anticipationMove": -0.0325, "immediateResponse": -0.0025, "delayedIncrement": -0.01, "cumulativeDelayedResponse": 0.0125, "qualityStatus": "usable", "overlaps": [], "ordinaryMovement": true },
+    { "eventId": "fed-50-cut", "informationKnownAt": "2024-09-18T18:00:00Z", "shortTermResponse": 0.0275, "anticipationMove": -0.005, "immediateResponse": 0, "delayedIncrement": -0.0225, "cumulativeDelayedResponse": 0.005, "qualityStatus": "usable", "overlaps": [], "ordinaryMovement": true },
+    { "eventId": "trump-election", "informationKnownAt": "2024-11-06T10:34:00Z", "shortTermResponse": -0.035, "anticipationMove": 0.055, "immediateResponse": -0.0225, "delayedIncrement": 0.055, "cumulativeDelayedResponse": 0.02, "qualityStatus": "usable", "overlaps": ["microstrategy-purchase"], "ordinaryMovement": true },
+    { "eventId": "microstrategy-purchase", "informationKnownAt": "2024-11-12T08:01:01Z", "shortTermResponse": -0.0325, "anticipationMove": 0.315, "immediateResponse": -0.0225, "delayedIncrement": 0.0775, "cumulativeDelayedResponse": 0.045, "qualityStatus": "usable", "overlaps": ["trump-election"], "ordinaryMovement": true }
+  ],
+  "tieGroups": ["fed-50-cut+mtgox-repayments", "hong-kong-etfs", "microstrategy-purchase+trump-election"],
+  "pairwiseAgreement": { "agreed": 6, "comparable": 8, "percent": 75 },
+  "boundary": "Descriptive response under the retained YES probability series; not a causal estimate. Trump and MicroStrategy overlap, so neither response is isolated. The threshold crossing and resolution are reveal-only."
+}

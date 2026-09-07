@@ -1,0 +1,37 @@
+{
+  "role": "bitcoin",
+  "status": "complete",
+  "startedAt": "2026-09-07T05:30:11Z",
+  "updatedAt": "2026-09-07T05:38:48Z",
+  "finishedAt": "2026-09-07T05:38:48Z",
+  "workspace": "/Users/simonwacziarg/Documents/ChatGPT/Forecast",
+  "taskId": "01a07777-0cfb-70b0-93f4-20087e2521d6",
+  "reportPath": "docs/launch-work/playable-drafts/bitcoin/report.md",
+  "ownedPaths": [
+    "src/data/bitcoinFiveCard2024.ts",
+    "src/data/bitcoinFiveCard2024.test.ts",
+    "public/data/bitcoin-100k-2024-v2/",
+    "docs/launch-work/playable-drafts/bitcoin/",
+    "docs/launch-work/playable-drafts/status/bitcoin.json"
+  ],
+  "artifactHashes": {
+    "src/data/bitcoinFiveCard2024.ts": "b92c3ed93f343317201a789d53003e294ff029d2507194c46c183c76946144f8",
+    "src/data/bitcoinFiveCard2024.test.ts": "d70101dd380d78b57edeeb2fe60f919ce524592166f59d7e56ce906668566901",
+    "docs/launch-work/playable-drafts/bitcoin/evidence.json": "30206936cb631a4395445717ea39fe5006be81ca08615ddfe47455163653fa97",
+    "docs/launch-work/playable-drafts/bitcoin/measurements.json": "7f8edec1e34c3a9477a1be1369272a185db363a859c852e98f51e992b4f60e2f",
+    "docs/launch-work/playable-drafts/bitcoin/report.md": "96417cd586fe35765d176b7aa2674851eae8d60148f7e0112a50a49f773679ac",
+    "public/data/bitcoin-2024/polymarket-hourly.csv": "5d7aa54719ff32af2892aaba94fa6b33adc714bf558d82691a480c75bfbbab69",
+    "public/data/bitcoin-2024/raw-prices-history.json": "856e5338c22d56b08c21e7cbdb4da8f00e97cba4055a58be7e6572a4bd13b533",
+    "public/data/bitcoin-2024/raw-market.json": "f248b962c27c8fda3a51a16710aa2580eca15c3d95a97aa04dda9063699d40f7",
+    "public/data/bitcoin-2024/manifest.json": "5a829238df3f561d902aa1c00a29068b75be33dfabeb8409bd7cdfac2541c554"
+  },
+  "testCommand": "node --experimental-strip-types src/data/bitcoinFiveCard2024.test.ts",
+  "testResult": "passed",
+  "unresolvedGates": [
+    "Lead must register the v2 module and focused test in shared registry/test files without overwriting bitcoin-100k-2024-v1.",
+    "Lead/editor must independently review the conservative HKEX and Mt. Gox public-by cutoffs and the SEC acceptance-time anchor before publication.",
+    "Human approval remains required before any daily release; this does not block the completed local playable draft.",
+    "No release date is assigned by this worker; the September 7 Biden date does not authorize or schedule Bitcoin."
+  ],
+  "handoffComplete": true
+}

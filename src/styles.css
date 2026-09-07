@@ -562,17 +562,6 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
 .daily-takeaway h2 { margin-bottom: 12px; }
 .daily-takeaway p { color: #c5d3cb; line-height: 1.55; margin: 0; max-width: 690px; }
 .daily-takeaway p strong { color: white; }
-.daily-explainer { background: #fffefa; border: 1px solid #d8d7cf; margin-top: 14px; }
-.daily-explainer > summary { align-items: center; cursor: pointer; display: flex; font-family: var(--serif); font-size: 1.35rem; font-weight: 600; justify-content: space-between; min-height: 64px; padding: 14px 20px; }
-.daily-explainer > summary::marker { content: ''; }
-.daily-explainer[open] > summary svg { transform: rotate(180deg); }
-.daily-explainer > div { border-top: 1px solid #deddd5; padding: 6px 20px 22px; }
-.daily-explainer > div > p { color: #59665f; line-height: 1.55; }
-.daily-explainer article { border-top: 1px solid #deddd5; padding: 16px 0; }
-.daily-explainer article > div { display: flex; gap: 15px; justify-content: space-between; }
-.daily-explainer article > div span { color: #176846; font-weight: 850; }
-.daily-explainer article p { color: #59665f; font-size: .9rem; line-height: 1.5; margin: 6px 0; }
-.daily-explainer article a { align-items: center; color: #315e78; display: inline-flex; font-size: .8rem; font-weight: 750; gap: 4px; text-decoration: none; }
 .daily-explore-links { display: flex; flex-wrap: wrap; gap: 7px; padding-top: 16px; }
 .daily-explore-links button, .daily-explore-links a { align-items: center; background: #f1f2ec; border: 1px solid #d3d5cc; color: #24352d; display: inline-flex; font-size: .85rem; font-weight: 750; gap: 7px; min-height: 44px; padding: 8px 12px; text-decoration: none; }
 .daily-footer { align-items: center; border-top: 1px solid #d4d3ca; color: #59665f; display: flex; gap: 10px; margin-top: 28px; padding: 24px 4px 0; }
@@ -643,7 +632,6 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
   .daily-reaction-track { grid-column: 1 / -1; grid-row: 2; }
   .daily-reaction-row > b { font-size: .7rem; max-width: 145px; }
   .daily-takeaway { padding: 24px 20px; }
-  .daily-explainer > div { padding-left: 15px; padding-right: 15px; }
   .daily-state-page { padding-left: 16px; padding-right: 16px; }
 }
 
@@ -651,3 +639,13 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+.daily-background { background: #fffefa; border: 1px solid #d8d7cf; margin: 22px 0; padding: 18px 22px; }
+.daily-background h2 { font-family: var(--serif); font-size: 1.3rem; margin: 0 0 10px; }
+.daily-background p, .daily-study-details p { color: #58665e; font-size: .9rem; line-height: 1.55; margin: 8px 0; }
+.daily-background > div { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
+.daily-background a, .daily-study-details a { color: #315e78; font-size: .8rem; }
+.daily-study-details h3 { font-size: 1rem; margin: 20px 0 8px; }
+.daily-study-details ul { list-style: none; padding: 0; }
+.daily-study-details li { border-top: 1px solid #deddd5; padding: 10px 0; }
+.daily-study-details small { color: #58665e; display: block; margin-top: 4px; }

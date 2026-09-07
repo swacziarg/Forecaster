@@ -2,8 +2,8 @@ import { bidenDropoutStudy } from './bidenDropout2024.ts'
 import { assertValidDailyRegistry, DAILY_RELEASE_TIMEZONE, type DailyPuzzle } from '../domain/dailyGame.ts'
 import { studyRegistry } from './studies.ts'
 
-export const dailyPuzzles: readonly DailyPuzzle[] = [
-  {
+// Keep the original archive identity and saved attempts intact when relaunching.
+const bidenPreview: DailyPuzzle = {
     id: '2026-09-05-biden-dropout',
     number: 1,
     releaseTime: '2026-09-05T05:00:00Z',
@@ -16,6 +16,15 @@ export const dailyPuzzles: readonly DailyPuzzle[] = [
     eventIds: ['debate', 'stay-in-race', 'pelosi-clooney', 'trump-shooting', 'renewed-pressure'],
     initialOrder: ['stay-in-race', 'trump-shooting', 'renewed-pressure', 'debate', 'pelosi-clooney'],
     scoring: { version: 'pairwise-anchor-1pt-v1', tieThreshold: 0.01, tieGrouping: 'anchor-window' },
+  }
+
+export const dailyPuzzles: readonly DailyPuzzle[] = [
+  bidenPreview,
+  {
+    ...bidenPreview,
+    id: '2026-09-07-biden-dropout',
+    number: 2,
+    releaseTime: '2026-09-07T05:00:00Z',
   },
 ]
 
