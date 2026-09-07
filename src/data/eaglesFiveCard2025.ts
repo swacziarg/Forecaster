@@ -41,7 +41,7 @@ const events: StudyEvent[] = [
 ]
 
 export const eaglesFiveCardStudy: Study = {
-  id: 'eagles-super-bowl-lix-five-v1', slug: 'eagles-stop-threepeat', category: 'Sports', version: 1, status: 'editorial-review',
+  id: 'eagles-super-bowl-lix-five-v1', slug: 'eagles-stop-threepeat', category: 'Sports', version: 1, status: 'published', publishedAt: '2026-09-07T16:06:21Z',
   question: 'Which moments most changed Philadelphia’s chance of winning Super Bowl LIX?',
   orientation: 'Rank five consequential games, injuries, and playoff moments by their expected effect on the Eagles YES contract. The resolved Super Bowl result and full market record stay hidden until you lock your ranking.',
   market: { id: '503322', provider: 'Polymarket', title: 'Will the Eagles win Super Bowl 2025?', rules: 'Resolves YES if the Philadelphia Eagles win Super Bowl LIX; otherwise NO, including when NFL rules make that outcome impossible.', openedAt: '2024-07-09T15:37:44.526Z', closedAt: '2025-02-10T07:15:05Z', settledAt: '2025-02-10T07:15:05Z', status: 'settled', resolutionSourceUrl: 'https://www.philadelphiaeagles.com/game-day/2024/post/chiefs-at-eagles/', marketUrl: 'https://polymarket.com/event/superbowl-champion-2025/will-the-eagles-win-super-bowl-2025', volume: 11829712.587561 },
@@ -52,5 +52,5 @@ export const eaglesFiveCardStudy: Study = {
   sources,
   events,
   contextMarkers: [],
-  conclusion: { title: 'Super Bowl LIX: Philadelphia denies the three-peat', text: 'Philadelphia beat Kansas City 40–22 in Super Bowl LIX on February 9, 2025, denying the Chiefs a third consecutive Super Bowl victory. The provider resolved the Eagles championship contract YES. Keep the Super Bowl itself entirely in the ending.', sourceId: 'eagles-ending' },
+  conclusion: { title: 'Super Bowl LIX: Philadelphia denies the three-peat', text: 'Philadelphia beat Kansas City 40–22 in Super Bowl LIX on February 9, 2025, denying the Chiefs a third consecutive Super Bowl victory. The provider resolved the Eagles championship contract YES.', sourceId: 'eagles-ending' },
 }

@@ -41,7 +41,8 @@ export const oscarsFiveCard2026Study: Study = {
   id: 'oscars-best-picture-2026-v2',
   slug: 'oscars-best-picture-2026-v2',
   version: 2,
-  status: 'editorial-review',
+  status: 'published', publishedAt: '2026-09-07T16:06:21Z',
+  measurementNotes: ["These awards use different voters and categories. They are separate signals of support, not independent experiments. Source publication times are used conservatively when the first announcement time is uncertain.", "The one-percentage-point tie rule is inclusive. The Producers Guild and Critics Choice responses fall in one tie group; the Golden Globes response starts the next group because ties are measured from each group’s strongest response."],
   sources,
   events,
   conclusion: {

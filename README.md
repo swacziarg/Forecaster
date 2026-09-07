@@ -1,8 +1,8 @@
 # NexusPoint
 
-NexusPoint is a quick daily prediction-market puzzle. A player ranks five sourced historical headlines from the biggest rise in a selected contract's odds to the biggest fall, reveals a tie-aware score, and can share a spoiler-free result. The detailed market study remains available as optional post-game exploration.
+NexusPoint is a quick daily prediction-market puzzle. A player ranks five sourced historical headlines from the biggest rise in a selected contract's odds to the biggest fall, reveals a tie-aware score, and can share a spoiler-free result. Compact study details and sources remain available after the game.
 
-Eleven local, reproducible study versions are registered, including five editorial-review draft routes. The launch funnel now has six distinct dated proposals plus an optional buffer, while only the Biden launch date is approval-backed:
+Eleven reproducible study versions are registered. Six distinct editions are approved and scheduled for September 7–12, 2026: Biden, TikTok, Eagles, Oscars, Bitcoin and Canada, releasing daily at 05:00 UTC. The September 5 archive is preserved.
 
 - `/` — the five-card NexusPoint daily game, launching with “24 days that ended Biden’s campaign.”
 Full study pages and the `/studies` index are retired. All `/studies/*` URLs return to the daily game. Results retain compact Scoring rules, Study, and Stats dialogs; original sources and market data remain accessible there.
@@ -31,7 +31,7 @@ npm run dev
 3. Reveal once. A validated, versioned attempt record is saved by puzzle ID on the device when browser storage is available.
 4. See a prominent score out of 100, the two orders, a before/after probability chart, one takeaway, and tie treatment. Market movement is labeled in full as percentage points and kept distinct from the game score.
 5. Share through the device share sheet or copy a spoiler-free text result linked to that exact puzzle. Tiles represent completed 20-point score bands; the exact score is separate.
-6. Open “Why this order?” or the full archive study for the deeper evidence and methodology.
+6. Open Scoring rules, Study or Stats for tie rules, evidence, measurement limitations and saved daily statistics.
 
 ## Daily publication and local results
 

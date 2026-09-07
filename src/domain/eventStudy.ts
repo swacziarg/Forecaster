@@ -300,13 +300,13 @@ export const scoreImpactRanking = (userOrder: string[], marketOrder: string[]) =
   return Math.round((1 - distance / maximumDistance) * 100)
 }
 
-export function createTieGroups(impacts: StudyEventImpact[], threshold: number) {
+export function createTieGroups(impacts: StudyEventImpact[], threshold: number, boundaryTolerance = 0) {
   const usable = impacts.filter((impact) => impact.shortTermResponse !== null).sort((a, b) => b.shortTermResponse! - a.shortTermResponse!)
   const groups: string[][] = []
   for (const impact of usable) {
     const last = groups[groups.length - 1]
     const previous = last ? usable.find((candidate) => candidate.eventId === last[0]) : undefined
-    if (last && previous && Math.abs(previous.shortTermResponse! - impact.shortTermResponse!) <= threshold) last.push(impact.eventId)
+    if (last && previous && Math.abs(previous.shortTermResponse! - impact.shortTermResponse!) <= threshold + boundaryTolerance) last.push(impact.eventId)
     else groups.push([impact.eventId])
   }
   return groups

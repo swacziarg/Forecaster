@@ -11,7 +11,7 @@ const publicFile = (path: string) => readFileSync(`public${path}`)
 
 assert(canada2025Study.id === 'canada-liberal-comeback-v2', 'uses the v2 study identity')
 assert(canada2025Study.slug === 'canada-liberal-comeback', 'uses a unique playable slug')
-assert(canada2025Study.version === 2 && canada2025Study.status === 'editorial-review', 'is a local review draft, not published')
+assert(canada2025Study.version === 2 && canada2025Study.status === 'published', 'is the approved v2 edition')
 assert(canada2025Study.market.id === '517586', 'uses the exact Canada market')
 assert(canada2025Study.contract.selectedPerspective === 'YES', 'uses the exact YES perspective')
 assert(validateStudy(canada2025Study).length === 0, 'passes strict Study validation')

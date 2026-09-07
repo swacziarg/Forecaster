@@ -41,7 +41,7 @@ const events: StudyEvent[] = [
 ]
 
 export const tiktokStudy: Study = {
-  id: 'tiktok-banned-before-may-2025-v1', slug: 'tiktok-banned-before-may-2025', category: 'Culture', version: 1, status: 'editorial-review',
+  id: 'tiktok-banned-before-may-2025-v1', slug: 'tiktok-banned-before-may-2025', category: 'Culture', version: 1, status: 'published', publishedAt: '2026-09-07T16:06:21Z',
   question: 'Which moments most changed the chance of a US TikTok ban before May 2025?',
   orientation: 'Rank five consequential legal and political moments by their expected effect on the selected YES contract. The resolved outcome and market record stay hidden until you lock your ranking.',
   market: { id: '507276', provider: 'Polymarket', title: 'TikTok banned in the US before May 2025?', rules: 'YES required a federal law, policy or court-mandated ban on download and/or use affecting most Americans to take effect by April 30, 2025 at 11:59 p.m. ET. A sale achieving legal compliance meant NO.', openedAt: '2024-09-18T00:05:28.707Z', closedAt: '2025-01-22T00:31:19Z', settledAt: '2025-01-22T00:31:19Z', status: 'settled', resolutionSourceUrl: 'https://gamma-api.polymarket.com/markets/507276', marketUrl: 'https://polymarket.com/event/tiktok-banned-in-the-us-before-may-2025' },

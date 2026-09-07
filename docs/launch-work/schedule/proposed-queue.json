@@ -1,105 +1,11 @@
 {
   "schemaVersion": 2,
-  "preparedAt": "2026-09-07T05:40:00Z",
-  "status": "biden-approved-five-draft-funnel-proposed",
+  "preparedAt": "2026-09-07T16:07:35.734Z",
+  "status": "six-edition-launch-approved-and-scheduled",
   "releaseTimezone": "UTC",
   "releaseHour": "05:00",
-  "assumption": "The user explicitly chose Biden dropout September 7, 2026, then one edition per day. The established 05:00 UTC release hour is retained; later dates are proposals until exact human approval is recorded.",
+  "assumption": "User approved Biden September 7 followed by one per day and authorized the explicit five-edition September 8–12 lineup on September 7. Release hour remains 05:00 UTC (midnight Chicago for these dates).",
   "proposed": [
-    {
-      "id": "2026-09-08-tiktok-banned-before-may-2025",
-      "number": 3,
-      "releaseTime": "2026-09-08T05:00:00Z",
-      "releaseTimezone": "UTC",
-      "studyId": "tiktok-banned-before-may-2025-v1",
-      "studyVersion": 1,
-      "topic": "The app that went dark",
-      "question": "Which moments changed the chance of a US TikTok ban before May 2025?",
-      "eventIds": ["trump-elected", "appeal-lost", "supreme-review", "trump-pause", "supreme-argument"],
-      "initialOrder": ["supreme-review", "trump-elected", "supreme-argument", "appeal-lost", "trump-pause"],
-      "evidenceStatus": "evidence-integrated; ready for exact human approval",
-      "implementationStatus": "registered editorial-review draft; private DEV preview ready",
-      "approvalStatus": "pending",
-      "candidateArtifacts": "docs/launch-work/finish-pass/tiktok/candidate-v4.json and candidate-v4.md",
-      "privatePreviewPath": "/__preview/tiktok-banned-before-may-2025",
-      "scoring": {"version": "pairwise-anchor-1pt-v1", "tieThreshold": 0.01, "tieGrouping": "anchor-window"}
-    },
-    {
-      "id": "2026-09-09-eagles-stop-threepeat",
-      "number": 4,
-      "releaseTime": "2026-09-09T05:00:00Z",
-      "releaseTimezone": "UTC",
-      "studyId": "eagles-super-bowl-lix-five-v1",
-      "studyVersion": 1,
-      "topic": "Stop the three-peat",
-      "question": "Which moments most changed Philadelphia’s chance of winning Super Bowl LIX?",
-      "eventIds": ["falcons-collapse", "barkley-record", "hurts-concussion", "snow-playoff", "nfc-title"],
-      "initialOrder": ["hurts-concussion", "falcons-collapse", "nfc-title", "barkley-record", "snow-playoff"],
-      "evidenceStatus": "evidence-integrated; ready for exact human approval",
-      "implementationStatus": "registered editorial-review draft; private DEV preview ready",
-      "approvalStatus": "pending",
-      "candidateArtifacts": "docs/launch-work/finish-pass/eagles/candidate-v2.json and candidate-v2.md",
-      "privatePreviewPath": "/__preview/eagles-stop-threepeat",
-      "scoring": {"version": "pairwise-anchor-1pt-v1", "tieThreshold": 0.01, "tieGrouping": "anchor-window"}
-    },
-    {
-      "id": "2026-09-10-oscars-best-picture-2026",
-      "number": 5,
-      "releaseTime": "2026-09-10T05:00:00Z",
-      "releaseTimezone": "UTC",
-      "studyId": "oscars-best-picture-2026-v2",
-      "studyVersion": 2,
-      "topic": "One Battle After Another — Best Picture 2026",
-      "question": "Which awards-season events most raised this film’s Best Picture probability?",
-      "eventIds": ["nbr-best-film", "critics-choice-best-picture", "golden-globes-picture", "oscar-nominations", "pga-top-prize"],
-      "initialOrder": ["nbr-best-film", "critics-choice-best-picture", "golden-globes-picture", "oscar-nominations", "pga-top-prize"],
-      "evidenceStatus": "complete strict playable draft; publication gates remain",
-      "implementationStatus": "registered editorial-review v2 draft; private DEV preview ready",
-      "approvalStatus": "pending",
-      "candidateArtifacts": "docs/launch-work/funnel-expansion/oscars/candidate.json and report.md",
-      "runtimeArtifacts": "src/data/oscarsFiveCard2026.ts and src/data/oscarsFiveCard2026.test.ts",
-      "privatePreviewPath": "/__preview/oscars-best-picture-2026-v2",
-      "scoring": {"version": "months-hourly-v1", "tieThreshold": 0.01, "tieGrouping": "anchor-window"}
-    },
-    {
-      "id": "2026-09-11-bitcoin-100k-2024",
-      "number": 6,
-      "releaseTime": "2026-09-11T05:00:00Z",
-      "releaseTimezone": "UTC",
-      "studyId": "bitcoin-100k-2024-v2",
-      "studyVersion": 2,
-      "topic": "Bitcoin’s road to $100,000",
-      "question": "Which developments most changed the chance Bitcoin would reach $100,000 in 2024?",
-      "eventIds": ["hong-kong-etfs", "mtgox-repayments", "fed-50-cut", "trump-election", "microstrategy-purchase"],
-      "initialOrder": ["hong-kong-etfs", "mtgox-repayments", "fed-50-cut", "trump-election", "microstrategy-purchase"],
-      "evidenceStatus": "complete strict playable v2 draft; publication gates remain",
-      "implementationStatus": "registered editorial-review v2 draft; private DEV preview ready",
-      "approvalStatus": "pending",
-      "candidateArtifacts": "docs/launch-work/funnel-expansion/bitcoin/candidate.json and report.md",
-      "runtimeArtifacts": "src/data/bitcoinFiveCard2024.ts and src/data/bitcoinFiveCard2024.test.ts",
-      "privatePreviewPath": "/__preview/bitcoin-100k-2024-five-card",
-      "sourceCandidateId": "bitcoin-100k-2024-v1 eight-event study",
-      "scoring": {"version": "months-hourly-v1", "tieThreshold": 0.01, "tieGrouping": "anchor-window"}
-    },
-    {
-      "id": "2026-09-12-canada-liberal-comeback",
-      "number": 7,
-      "releaseTime": "2026-09-12T05:00:00Z",
-      "releaseTimezone": "UTC",
-      "studyId": "canada-liberal-comeback-v2",
-      "studyVersion": 2,
-      "topic": "The Canadian comeback",
-      "question": "Will the Liberal Party win the most seats in the next Canadian election?",
-      "eventIds": ["carney-leadership-launch", "tariff-retaliation", "carney-leadership-win", "election-call", "auto-tariff-response"],
-      "initialOrder": ["election-call", "carney-leadership-win", "tariff-retaliation", "auto-tariff-response", "carney-leadership-launch"],
-      "evidenceStatus": "complete strict playable v2 draft; three-level tie remains an editorial decision",
-      "implementationStatus": "registered editorial-review v2 draft; private DEV preview ready",
-      "approvalStatus": "pending",
-      "candidateArtifacts": "docs/launch-work/funnel-expansion/canada/candidate.json and report.md",
-      "runtimeArtifacts": "src/data/canada2025.ts and src/data/canada2025.test.ts",
-      "privatePreviewPath": "/__preview/canada-liberal-comeback",
-      "scoring": {"version": "months-hourly-v1", "tieThreshold": 0.01, "tieGrouping": "anchor-window"}
-    },
     {
       "id": "2026-09-13-trump-comeback-2024-buffer",
       "number": 8,
@@ -109,41 +15,248 @@
       "studyVersion": 1,
       "topic": "The comeback nobody could call",
       "question": "Which events most changed Donald Trump’s 2024 election probability?",
-      "eventIds": ["conviction", "butler", "rfk-endorsement", "harris-debate", "iowa-poll"],
-      "initialOrder": ["rfk-endorsement", "conviction", "iowa-poll", "butler", "harris-debate"],
+      "eventIds": [
+        "conviction",
+        "butler",
+        "rfk-endorsement",
+        "harris-debate",
+        "iowa-poll"
+      ],
+      "initialOrder": [
+        "rfk-endorsement",
+        "conviction",
+        "iowa-poll",
+        "butler",
+        "harris-debate"
+      ],
       "evidenceStatus": "ready for review, not approval-ready; upper-bound timing and repeated Butler decision remain",
       "implementationStatus": "candidate packet only; not registered",
       "approvalStatus": "pending",
       "candidateArtifacts": "docs/launch-work/funnel-expansion/trump/candidate.json and report.md",
       "buffer": true,
-      "scoring": {"version": "months-hourly-v1", "tieThreshold": 0.01, "tieGrouping": "anchor-window"}
+      "scoring": {
+        "version": "months-hourly-v1",
+        "tieThreshold": 0.01,
+        "tieGrouping": "anchor-window"
+      }
     }
   ],
   "approved": [
     {
       "id": "2026-09-07-biden-dropout",
+      "number": 2,
       "releaseTime": "2026-09-07T05:00:00Z",
+      "releaseTimezone": "UTC",
       "studyId": "biden-dropout-2024-v1",
       "studyVersion": 1,
-      "approvalStatus": "user-approved exact unchanged content"
+      "topic": "24 days that ended Biden’s campaign",
+      "question": "What pushed Biden toward the exit?",
+      "instruction": "June 27–July 21, 2024. Rank five headlines from the biggest rise in the odds of Biden ending his presidential campaign to the biggest fall.",
+      "eventIds": [
+        "debate",
+        "stay-in-race",
+        "pelosi-clooney",
+        "trump-shooting",
+        "renewed-pressure"
+      ],
+      "initialOrder": [
+        "stay-in-race",
+        "trump-shooting",
+        "renewed-pressure",
+        "debate",
+        "pelosi-clooney"
+      ],
+      "scoring": {
+        "version": "pairwise-anchor-1pt-v1",
+        "tieThreshold": 0.01,
+        "tieGrouping": "anchor-window"
+      },
+      "approvalStatus": "approved",
+      "contentHash": "c2d729061bf06d52d97dba11169a3e8297e6cae62b13c1615ed57a8a96333df6"
+    },
+    {
+      "id": "2026-09-08-tiktok-banned-before-may-2025",
+      "number": 3,
+      "releaseTime": "2026-09-08T05:00:00Z",
+      "releaseTimezone": "UTC",
+      "studyId": "tiktok-banned-before-may-2025-v1",
+      "studyVersion": 1,
+      "topic": "The app that went dark",
+      "eventIds": [
+        "trump-elected",
+        "appeal-lost",
+        "supreme-review",
+        "trump-pause",
+        "supreme-argument"
+      ],
+      "initialOrder": [
+        "supreme-review",
+        "trump-elected",
+        "supreme-argument",
+        "appeal-lost",
+        "trump-pause"
+      ],
+      "instruction": "November 2024–January 2025. Rank the headlines from the biggest rise in the chance of a US TikTok ban to the biggest fall.",
+      "scoring": {
+        "version": "pairwise-anchor-1pt-v2",
+        "tieThreshold": 0.01,
+        "tieGrouping": "anchor-window"
+      },
+      "question": "Which moments most changed the chance of a US TikTok ban before May 2025?",
+      "approvalStatus": "approved",
+      "contentHash": "9a0f66bf5e25a099c440a823e784478c72dd60fcca8713c720bc2583de62ef89"
+    },
+    {
+      "id": "2026-09-09-eagles-stop-threepeat",
+      "number": 4,
+      "releaseTime": "2026-09-09T05:00:00Z",
+      "releaseTimezone": "UTC",
+      "studyId": "eagles-super-bowl-lix-five-v1",
+      "studyVersion": 1,
+      "topic": "Stop the three-peat",
+      "eventIds": [
+        "falcons-collapse",
+        "barkley-record",
+        "hurts-concussion",
+        "snow-playoff",
+        "nfc-title"
+      ],
+      "initialOrder": [
+        "hurts-concussion",
+        "falcons-collapse",
+        "nfc-title",
+        "barkley-record",
+        "snow-playoff"
+      ],
+      "instruction": "September 2024–January 2025. Rank the headlines from the biggest rise in Philadelphia’s chance of winning Super Bowl LIX to the biggest fall.",
+      "scoring": {
+        "version": "pairwise-anchor-1pt-v2",
+        "tieThreshold": 0.01,
+        "tieGrouping": "anchor-window"
+      },
+      "question": "Which moments most changed Philadelphia’s chance of winning Super Bowl LIX?",
+      "approvalStatus": "approved",
+      "contentHash": "2b1bab8fe8de8389bd6e282c01da862eb6c8829af6ae4ed289ad0d8468afc45e"
+    },
+    {
+      "id": "2026-09-10-oscars-best-picture-2026",
+      "number": 5,
+      "releaseTime": "2026-09-10T05:00:00Z",
+      "releaseTimezone": "UTC",
+      "studyId": "oscars-best-picture-2026-v2",
+      "studyVersion": 2,
+      "topic": "One Battle After Another — Best Picture 2026",
+      "eventIds": [
+        "nbr-best-film",
+        "critics-choice-best-picture",
+        "golden-globes-picture",
+        "oscar-nominations",
+        "pga-top-prize"
+      ],
+      "initialOrder": [
+        "nbr-best-film",
+        "critics-choice-best-picture",
+        "golden-globes-picture",
+        "oscar-nominations",
+        "pga-top-prize"
+      ],
+      "instruction": "December 2025–February 2026. Rank the headlines from the biggest rise in One Battle After Another’s chance of winning Best Picture to the biggest fall.",
+      "scoring": {
+        "version": "pairwise-anchor-1pt-v2",
+        "tieThreshold": 0.01,
+        "tieGrouping": "anchor-window"
+      },
+      "question": "Which awards-season events most changed One Battle After Another’s chance of winning Best Picture?",
+      "approvalStatus": "approved",
+      "contentHash": "d8c655dc4c715063f6b186bf66be6b0b442574ed054c5cd4f7d822aaf7d3a023"
+    },
+    {
+      "id": "2026-09-11-bitcoin-100k-2024",
+      "number": 6,
+      "releaseTime": "2026-09-11T05:00:00Z",
+      "releaseTimezone": "UTC",
+      "studyId": "bitcoin-100k-2024-v2",
+      "studyVersion": 2,
+      "topic": "Bitcoin’s road to $100,000",
+      "eventIds": [
+        "hong-kong-etfs",
+        "mtgox-repayments",
+        "fed-50-cut",
+        "trump-election",
+        "microstrategy-purchase"
+      ],
+      "initialOrder": [
+        "hong-kong-etfs",
+        "mtgox-repayments",
+        "fed-50-cut",
+        "trump-election",
+        "microstrategy-purchase"
+      ],
+      "instruction": "April–November 2024. Rank the headlines from the biggest rise in Bitcoin’s chance of reaching $100,000 that year to the biggest fall.",
+      "scoring": {
+        "version": "pairwise-anchor-1pt-v2",
+        "tieThreshold": 0.01,
+        "tieGrouping": "anchor-window"
+      },
+      "question": "Which five developments most changed the chance Bitcoin would reach $100,000 in 2024?",
+      "approvalStatus": "approved",
+      "contentHash": "839b1b8f1970e64e52eace2d9212ea60fd8aad516dcaa396b765d392a982f0f4"
+    },
+    {
+      "id": "2026-09-12-canada-liberal-comeback",
+      "number": 7,
+      "releaseTime": "2026-09-12T05:00:00Z",
+      "releaseTimezone": "UTC",
+      "studyId": "canada-liberal-comeback-v2",
+      "studyVersion": 2,
+      "topic": "The Canadian comeback",
+      "eventIds": [
+        "carney-leadership-launch",
+        "tariff-retaliation",
+        "carney-leadership-win",
+        "election-call",
+        "auto-tariff-response"
+      ],
+      "initialOrder": [
+        "election-call",
+        "carney-leadership-win",
+        "tariff-retaliation",
+        "auto-tariff-response",
+        "carney-leadership-launch"
+      ],
+      "instruction": "January–April 2025. Rank the headlines from the biggest rise in the Liberals’ chance of winning the most seats to the biggest fall.",
+      "scoring": {
+        "version": "pairwise-anchor-1pt-v2",
+        "tieThreshold": 0.01,
+        "tieGrouping": "anchor-window"
+      },
+      "question": "Will the Liberal Party win the most seats in the next Canadian election?",
+      "approvalStatus": "approved",
+      "contentHash": "f1965963235b859da1583e09e95a12f74ab59f7065a0a57d960a11990b5a7af0"
     }
   ],
   "funnelTarget": {
     "minimumDistinctEditions": 6,
     "includesBiden": true,
-    "approvedDistinctEditions": 1,
-    "additionalSlots": ["2026-09-10", "2026-09-11", "2026-09-12"],
+    "approvedDistinctEditions": 6,
     "optionalBufferDate": "2026-09-13",
-    "candidates": ["oscars", "bitcoin", "canada", "trump"],
-    "recommendedOrder": ["oscars", "bitcoin", "canada", "trump"],
-    "note": "This is a six-distinct-edition proposal funnel, not six approved or registered daily entries. Biden is counted once despite the preserved September 5 archive identity and fresh September 7 launch identity. The September 13 Trump entry is an optional buffer and does not substitute for human approval."
+    "note": "Six distinct editions scheduled September 7–12. The preserved September 5 archive does not count twice. Trump is an unscheduled candidate."
   },
   "humanApproval": {
-    "status": "partial",
-    "approvedEntries": ["2026-09-07-biden-dropout"],
-    "pendingEntries": ["2026-09-08-tiktok-banned-before-may-2025", "2026-09-09-eagles-stop-threepeat", "2026-09-10-oscars-best-picture-2026", "2026-09-11-bitcoin-100k-2024", "2026-09-12-canada-liberal-comeback", "2026-09-13-trump-comeback-2024-buffer"],
-    "approver": null,
-    "approvedAt": null,
-    "note": "The exact Biden approval is stored in approvals.json. No approval is inferred for any other entry."
+    "status": "core-approved",
+    "approvedEntries": [
+      "2026-09-07-biden-dropout",
+      "2026-09-08-tiktok-banned-before-may-2025",
+      "2026-09-09-eagles-stop-threepeat",
+      "2026-09-10-oscars-best-picture-2026",
+      "2026-09-11-bitcoin-100k-2024",
+      "2026-09-12-canada-liberal-comeback"
+    ],
+    "pendingEntries": [
+      "2026-09-13-trump-comeback-2024-buffer"
+    ],
+    "approver": "Project owner",
+    "approvedAt": "2026-09-07T16:07:35.734Z",
+    "note": "Exact release identities and hashes are recorded in approvals.json."
   }
 }

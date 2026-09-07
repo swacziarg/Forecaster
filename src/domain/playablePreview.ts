@@ -48,6 +48,6 @@ export function createPrivatePreviewPuzzle(registration: StudyRegistration): Dai
     instruction: 'Private preview: rank the five developments by their effect on the selected contract. The market record and resolution remain sealed until you reveal.',
     eventIds,
     initialOrder: eventIds,
-    scoring: { version: 'pairwise-anchor-1pt-v1', tieThreshold: study.measurementProfile.tieThreshold, tieGrouping: 'anchor-window' },
+    scoring: { version: 'pairwise-anchor-1pt-v2', tieThreshold: study.measurementProfile.tieThreshold, tieGrouping: 'anchor-window' },
   }
 }

@@ -160,7 +160,9 @@ export function resolveDailyPuzzle(puzzles: readonly DailyPuzzle[], now: Date, r
 }
 
 export function scoreDailyOrder(order: readonly string[], impacts: StudyEventImpact[], scoring: DailyScoringRule) {
-  const tieGroups = createTieGroups(impacts, scoring.tieThreshold)
+  // v2 absorbs floating-point subtraction noise at the inclusive one-point boundary.
+  // Historical v1 submissions and their comparison groups retain the original rule.
+  const tieGroups = createTieGroups(impacts, scoring.tieThreshold, scoring.version === 'pairwise-anchor-1pt-v2' ? 1e-12 : 0)
   return { tieGroups, agreement: pairwiseAgreement([...order], tieGroups) }
 }
 

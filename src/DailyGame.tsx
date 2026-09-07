@@ -1,7 +1,7 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type TouchEvent as ReactTouchEvent, type ReactNode } from 'react'
 import { ArrowDown, ArrowRight, ArrowUp, BarChart3, BookOpen, Check, ChevronDown, Clock3, Copy, ExternalLink, Flame, GripVertical, HelpCircle, LockKeyhole, RotateCcw, Share2, Trophy, X } from 'lucide-react'
 import type { StudyRegistration } from './data/studies.ts'
-import { calculateStudyImpacts, createTieGroups, moveRankedItem, type MarketSeriesPoint, type StudyEventImpact } from './domain/eventStudy.ts'
+import { calculateStudyImpacts, moveRankedItem, type MarketSeriesPoint, type StudyEventImpact } from './domain/eventStudy.ts'
 import { completedScoreBands, createDailySharePayload, currentDailyPuzzle, getPreRevealBackground, getPreRevealCard, performShare, puzzleWindowEnd, scoreDailyOrder, type DailyPuzzle, type DailyResolution, type PreRevealCard } from './domain/dailyGame.ts'
 import { collectDailyStats, dailyAttemptKey, readDailyAttempt, saveDailyDraft, submitDailyAttempt, type DailySubmission, type StorageLike } from './domain/dailyStorage.ts'
 import type { Study } from './domain/study.ts'
@@ -102,7 +102,7 @@ function ScoringRules({ puzzle, returnFocus, onClose }: { puzzle: DailyPuzzle; r
 
 function StudyDetails({ study, returnFocus, onClose }: { study: Study; returnFocus: HTMLElement | null; onClose: () => void }) {
   const profile = study.measurementProfile
-  return <Modal title="Study" returnFocus={returnFocus} onClose={onClose}><div className="daily-study-details"><h3>{study.presentation.topicLabel}</h3><p>{study.contract.proposition}</p><h3>What the contract measures</h3><p>{study.market.rules}</p><h3>How the movement is measured</h3><p>We compare the median market probability in the {Math.abs(profile.reference.startHours)} hours before each headline with the median {profile.stabilized.startHours}–{profile.stabilized.endHours} hours afterward. Other news and anticipation can affect these windows; a measured change does not prove what caused it.</p><p>Data: {study.dataset.provider}. Source observations are retained with the study for verification.</p><div className="daily-explore-links"><a href={study.market.marketUrl} target="_blank" rel="noreferrer">Original market <ExternalLink size={14} /></a><a href={study.dataset.path} target="_blank" rel="noreferrer">Market data <ExternalLink size={14} /></a></div><h3>Sources</h3><ul>{study.sources.map((source) => <li key={source.id}><a href={source.url} target="_blank" rel="noreferrer">{source.title} <ExternalLink size={12} /></a><small>{source.publisher}</small></li>)}</ul></div></Modal>
+  return <Modal title="Study" returnFocus={returnFocus} onClose={onClose}><div className="daily-study-details"><h3>{study.presentation.topicLabel}</h3><p>{study.contract.proposition}</p><h3>What the contract measures</h3><p>{study.market.rules}</p><h3>How the movement is measured</h3><p>We compare the median market probability in the {Math.abs(profile.reference.startHours)} hours before each headline with the median {profile.stabilized.startHours}–{profile.stabilized.endHours} hours afterward. Other news and anticipation can affect these windows; a measured change does not prove what caused it.</p><p>Data: {study.dataset.provider}. Source observations are retained with the study for verification.</p><div className="daily-explore-links"><a href={study.market.marketUrl} target="_blank" rel="noreferrer">Original market <ExternalLink size={14} /></a><a href={study.dataset.path} target="_blank" rel="noreferrer">Market data <ExternalLink size={14} /></a></div>{study.measurementNotes && <><h3>Reading these results</h3>{study.measurementNotes.map((note) => <p key={note}>{note}</p>)}</>}<h3>Sources</h3><ul>{study.sources.map((source) => <li key={source.id}><a href={source.url} target="_blank" rel="noreferrer">{source.title} <ExternalLink size={12} /></a><small>{source.publisher}</small></li>)}</ul></div></Modal>
 }
 
 function Background({ study }: { study: Study }) {
@@ -223,7 +223,7 @@ function Result({ study, puzzle, puzzles, nextPuzzle, impacts, submission, now, 
 }) {
   const headingRef = useRef<HTMLHeadingElement>(null)
   const [shareFeedback, setShareFeedback] = useState('')
-  const tieGroups = createTieGroups(impacts, puzzle.scoring.tieThreshold)
+  const { tieGroups } = scoreDailyOrder(submission.order, impacts, puzzle.scoring)
   const marketGroup = new Map(tieGroups.flatMap((group, index) => group.map((id) => [id, index + 1] as const)))
   const byId = new Map(impacts.map((impact) => [impact.eventId, impact]))
   const usable = impacts.filter((impact) => impact.shortTermResponse !== null)

@@ -79,7 +79,7 @@ export const canada2025Study: Study = {
   slug: 'canada-liberal-comeback',
   category: 'Politics',
   version: 2,
-  status: 'editorial-review',
+  status: 'published', publishedAt: '2026-09-07T16:06:21Z',
   question: 'Will the Liberal Party win the most seats in the next Canadian election?',
   orientation: 'Rank five developments by the change in the exact YES-contract probability that the Liberal Party wins the most House of Commons seats. The resolved outcome and market record stay hidden until reveal.',
   market: {
@@ -99,6 +99,7 @@ export const canada2025Study: Study = {
   presentation: {
     topicLabel: 'The Canadian comeback', selectedContractShort: 'The Liberal Party wins the most seats', selectedContractLong: 'Will the Liberal Party win the most seats in the next Canadian election?', seriesLabel: 'Liberal Party YES probability', positiveLabel: 'Probability rose', negativeLabel: 'Probability fell', neutralLabel: 'Little detectable movement', eventNoun: 'development', timezone: 'America/Toronto', accent: '#C95858', zoomChoices: [{ label: 'All', hours: null }, { label: '5 days', hours: 120 }, { label: '48 hours', hours: 48 }],
   },
+  measurementNotes: ["The tariff retaliation, Carney campaign launch and Liberal leadership result form a three-event tie. Their differences are within one percentage point of the strongest response in that group. Those three pairs are excluded, leaving seven comparable pairs.", "Several sources give dates without precise publication times. Conservative cutoffs and contemporary AP reporting are used; changes can also reflect other campaign or trade news."],
   sources,
   events,
   background: {"title": "The parties and people to know", "claims": [{"id": "canada-policy", "text": "The governing Liberals under Justin Trudeau backed public spending on child care, dental coverage and housing, alongside a carbon tax on fuels. Pierre Poilievre led the opposition Conservatives, campaigning to scrap that tax.", "knownAt": "2025-01-17T01:10:00Z", "sourceIds": ["canada-policy-background", "carney-launch-ap"], "visibility": "pre-reveal"}, {"id": "canada-players", "text": "As this story begins in January 2025, Trudeau has announced he will step down. Mark Carney, a former governor of both Canada’s and Britain’s central banks, and Chrystia Freeland, Trudeau’s former finance minister, are leading contenders to replace him. Carney says any replacement for the carbon tax should still reduce emissions.", "knownAt": "2025-01-17T01:10:00Z", "sourceIds": ["carney-launch-ap"], "visibility": "pre-reveal"}]},

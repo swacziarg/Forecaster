@@ -17,7 +17,7 @@ const hash = (value: Buffer | string) => createHash('sha256').update(value).dige
 const studies = [tiktokStudy, eaglesFiveCardStudy, oscarsFiveCard2026Study, bitcoinFiveCardStudy, canada2025Study]
 for (const study of studies) {
   equal(validateStudy(study).length, 0, `${study.slug} passes strict validation`)
-  equal(study.status, 'editorial-review', `${study.slug} remains unpublished pending human approval`)
+  equal(study.status, 'published', `${study.slug} is approved for the launch schedule`)
   equal(studyRegistry.find(({ study: registered }) => registered.id === study.id)?.study.version, study.version, `${study.slug} is registered at its declared version`)
   const normalized = readFileSync(new URL(`../../public${study.dataset.path}`, import.meta.url))
   const raw = readFileSync(new URL(`../../public${study.dataset.rawPath}`, import.meta.url))

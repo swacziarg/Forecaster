@@ -17,7 +17,7 @@ equal(validateStudy(study).length, 0, 'v2 candidate passes strict Study validati
 equal(study.id, 'oscars-best-picture-2026-v2', 'uses the frozen v2 Study identity')
 equal(study.version, 2, 'uses Study version two')
 equal(study.slug, 'oscars-best-picture-2026-v2', 'uses a slug distinct from the v1 archive')
-equal(study.status, 'editorial-review', 'remains a private editorial-review draft')
+equal(study.status, 'published', 'is published for the approved launch schedule')
 equal(study.market.id, 'KXOSCARPIC-26-ONE', 'preserves the exact Kalshi market')
 equal(study.contract.id, 'KXOSCARPIC-26-ONE', 'preserves the exact contract identity')
 equal(study.contract.selectedPerspective, 'YES', 'preserves the selected YES perspective')
@@ -58,7 +58,7 @@ assert(impacts.every((impact) => impact.overlaps.length === 0), 'the existing co
 for (const impact of impacts) near(impact.shortTermResponse, ({ 'nbr-best-film': 0.13, 'critics-choice-best-picture': 0.04, 'golden-globes-picture': 0.03, 'oscar-nominations': -0.05, 'pga-top-prize': 0.05 } as Record<string, number>)[impact.eventId], `${impact.eventId} stabilized response`)
 
 const tieGroups = createTieGroups(impacts, study.measurementProfile.tieThreshold)
-equal(tieGroups.map((group) => group.join('+')).join(','), 'nbr-best-film,pga-top-prize,critics-choice-best-picture,golden-globes-picture,oscar-nominations', 'returns comparator tie groups without tuning the threshold')
+equal(tieGroups.map((group) => group.join('+')).join(','), 'nbr-best-film,pga-top-prize,critics-choice-best-picture,golden-globes-picture,oscar-nominations', 'preserves the historical raw v1 comparator fixture')
 const agreement = pairwiseAgreement(study.events.map((event) => event.id), tieGroups)
 equal(`${agreement.agreed}/${agreement.comparable}`, '7/10', 'distinguishes seven agreed from ten comparable chronological pairs')
 
@@ -88,3 +88,9 @@ assert(validateStudy(cutoffBreach).some((message) => message.includes('later sou
 assert(getPreRevealCard(cutoffBreach, 'nbr-best-film') === null, 'hindsight-cutoff breach removes the affected pre-reveal card')
 
 console.log('Oscars v2 playable draft tests passed')
+
+const { scoreDailyOrder } = await import('../domain/dailyGame.ts')
+const inclusiveScore = scoreDailyOrder(study.events.map((event) => event.id), impacts, { version: 'pairwise-anchor-1pt-v2', tieThreshold: 0.01, tieGrouping: 'anchor-window' })
+equal(inclusiveScore.tieGroups.map((group) => group.join('+')).join(','), 'nbr-best-film,pga-top-prize+critics-choice-best-picture,golden-globes-picture,oscar-nominations', 'launch v2 includes the mathematical one-point PGA/CCA tie')
+equal(inclusiveScore.agreement.comparable, 9, 'excludes the tied PGA/CCA pair from launch scoring')
+equal(inclusiveScore.agreement.percent, 78, 'launch score matches seven of nine comparable pairs')

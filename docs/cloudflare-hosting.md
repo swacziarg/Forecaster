@@ -1,6 +1,6 @@
 # Cloudflare hosting
 
-NexusPoint targets Cloudflare Workers Static Assets. `wrangler.jsonc` publishes only `dist/`, with single-page-application routing so direct links to `/studies` and individual studies open correctly. The game needs no runtime secrets, database, or custom Worker code.
+NexusPoint targets Cloudflare Workers Static Assets. `wrangler.jsonc` publishes only `dist/`, with single-page-application routing for daily links. Full study routes are retired and redirect to the game. The game needs no runtime secrets, database, or custom Worker code.
 
 ## GitHub automatic deployment
 
@@ -41,7 +41,7 @@ Run `npm test`, `npm run build:cloudflare`, `npm run check:launch-readiness -- -
 
 ## Launch schedule
 
-Hosting does not change the puzzle schedule. Edition #001 is the preserved September 5, 2026 archive, and #002 is the user-approved unchanged Biden launch for September 7 at 05:00 UTC. Its exact `/?daily=2026-09-07-biden-dropout` link is isolated from the September 5 archive identity. TikTok #003, Eagles #004, Oscars #005, Bitcoin #006, and Canada #007 are dated proposal-only funnel entries; Trump #008 is an optional buffer. They remain outside the live registry until exact human approval and a separately authorized release; see `docs/launch-work/schedule/`.
+Hosting does not change the puzzle schedule. Edition #001 is the preserved September 5, 2026 archive, and #002 is the user-approved unchanged Biden launch for September 7 at 05:00 UTC. Its exact `/?daily=2026-09-07-biden-dropout` link is isolated from the September 5 archive identity. TikTok #003, Eagles #004, Oscars #005, Bitcoin #006, and Canada #007 are approved and scheduled for September 8–12 at 05:00 UTC. The five studies are published, while the daily resolver keeps future editions sealed. Trump remains an optional unscheduled candidate. See `docs/launch-work/schedule/` and `docs/launch-work/launch-release-review.md`.
 
 ## Previous hosting attempt
 

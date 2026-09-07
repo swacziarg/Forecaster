@@ -160,3 +160,21 @@ equal(await performShare({ payload: {}, nativeShare: async () => { throw new Err
 equal(await performShare({ payload: {}, nativeShare: async () => { throw new Error('share failed') }, copy: async () => { throw new Error('clipboard failed') } }), 'unavailable', 'reports unavailable when both native share and clipboard fail')
 
 console.log('daily game tests passed')
+
+// Launch uses v2 inclusive boundaries without rewriting historical v1 results.
+const v2Scoring = { ...schedule[0].scoring, version: 'pairwise-anchor-1pt-v2' }
+const boundaryImpacts = [impact('a', 0.05), impact('b', 0.04), impact('c', 0.03), impact('d', 0.019999), impact('e', null)]
+equal(scoreDailyOrder(ids, boundaryImpacts, schedule[0].scoring).tieGroups[0].join('+'), 'a', 'preserves historical v1 floating-point behavior')
+equal(scoreDailyOrder(ids, boundaryImpacts, v2Scoring).tieGroups.map((group) => group.join('+')).join(','), 'a+b,c,d', 'v2 includes the exact boundary without chaining or admitting larger differences')
+equal(dailyPuzzles.length, 7, 'keeps the historical archive plus six launch editions')
+for (let i = 2; i < dailyPuzzles.length; i++) {
+  const puzzle = dailyPuzzles[i]
+  const start = Date.parse(puzzle.releaseTime)
+  equal(currentDailyPuzzle(dailyPuzzles, new Date(start - 1))?.id, dailyPuzzles[i - 1].id, 'previous edition remains current until the boundary')
+  equal(currentDailyPuzzle(dailyPuzzles, new Date(start))?.id, puzzle.id, 'next launch edition opens at its exact boundary')
+  equal(resolveDailyPuzzle(dailyPuzzles, new Date(start - 1), puzzle.id).kind, 'unreleased', 'future launch link remains sealed')
+  const archived = resolveDailyPuzzle(dailyPuzzles, new Date(start + 86400000), puzzle.id)
+  assert(archived.kind === 'puzzle' && archived.playMode === 'archive', 'shared edition link remains playable after its daily window')
+  equal(puzzle.scoring.version, 'pairwise-anchor-1pt-v2', 'future launch editions use inclusive v2 scoring')
+}
+equal(resolveDailyPuzzle(dailyPuzzles, new Date('2026-09-13T05:00:00Z')).kind, 'exhausted', 'reports the next real queue gap after Canada')

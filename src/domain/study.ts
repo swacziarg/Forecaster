@@ -150,6 +150,7 @@ export type Study = {
   contract: Contract
   dataset: Dataset
   measurementProfile: MeasurementProfile
+  measurementNotes?: string[]
   presentation: StudyPresentation
   sources: Source[]
   events: StudyEvent[]
