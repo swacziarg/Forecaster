@@ -5,18 +5,7 @@ NexusPoint is a quick daily prediction-market puzzle. A player ranks five source
 Eleven local, reproducible study versions are registered, including five editorial-review draft routes. The launch funnel now has six distinct dated proposals plus an optional buffer, while only the Biden launch date is approval-backed:
 
 - `/` — the five-card NexusPoint daily game, launching with “24 days that ended Biden’s campaign.”
-- `/studies/biden-dropout-24-days` — Biden’s 2024 withdrawal, five events, published.
-- `/studies/election-2024-v1` — the full 2024 U.S. election study, published.
-- `/studies/oscars-best-picture-2026` — 2026 Best Picture, five events, editorial review.
-- `/studies/fed-september-2024` — September 2024 Fed decision, five events, editorial review.
-- `/studies/eagles-super-bowl-lix` — Philadelphia Eagles win Super Bowl LIX, eight events, editorial review.
-- `/studies/bitcoin-100k-2024` — Bitcoin reaches $100,000 in 2024, eight events, editorial review.
-- `/studies/tiktok-banned-before-may-2025` — TikTok before May 2025, five events, editorial-review draft (not in the public archive).
-- `/studies/eagles-stop-threepeat` — Eagles stop the three-peat, five events, editorial-review draft (not in the public archive).
-- `/studies/oscars-best-picture-2026-v2` — One Battle After Another, five events, editorial-review draft (not in the public archive).
-- `/studies/bitcoin-100k-2024-five-card` — Bitcoin’s road to $100,000, five events, editorial-review draft (not in the public archive).
-- `/studies/canada-liberal-comeback` — the Canadian comeback, five events, editorial-review draft (not in the public archive).
-- `/studies` — portfolio index with contract, coverage, event count, category, and status.
+Full study pages and the `/studies` index are retired. All `/studies/*` URLs return to the daily game. Results retain compact Scoring rules, Study, and Stats dialogs; original sources and market data remain accessible there.
 
 No live market API or credentials are required at runtime.
 

@@ -433,12 +433,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
 
 /* Daily game */
 .daily-shell { background: #f4f1e9; color: #1c2a24; min-height: 100vh; }
-.daily-topbar { align-items: center; background: rgba(244, 241, 233, .96); border-bottom: 1px solid #d6d4ca; display: grid; grid-template-columns: 1fr auto 1fr; min-height: 64px; padding: 0 28px; position: sticky; top: 0; z-index: 10; }
+.daily-topbar { align-items: center; background: #f4f1e9; border-bottom: 1px solid #d6d4ca; display: grid; grid-template-columns: 1fr auto 1fr; min-height: 64px; padding: 0 28px; position: sticky; top: 0; z-index: 10; }
 .daily-brand { align-items: center; color: #153d2f; display: inline-flex; font-family: var(--serif); font-size: 21px; font-weight: 700; gap: 10px; text-decoration: none; width: fit-content; }
 .daily-number { color: #667069; font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; }
 .daily-number b { color: #a64434; }
 .daily-topbar nav { display: flex; gap: 6px; justify-content: flex-end; }
-.daily-topbar nav button { align-items: center; background: transparent; border: 0; color: #4d5d54; display: inline-flex; font-size: .875rem; font-weight: 750; gap: 6px; min-height: 44px; padding: 0 10px; }
+.daily-topbar nav button { justify-content: center; flex-shrink: 0; align-items: center; background: transparent; border: 0; color: #4d5d54; display: inline-flex; font-size: .875rem; font-weight: 750; gap: 6px; min-height: 44px; padding: 0 10px; }
 .daily-topbar nav button:hover { color: #153d2f; }
 .daily-game, .daily-result { margin: 0 auto; max-width: 800px; padding: 42px 20px 64px; }
 .daily-game-heading { text-align: center; }
@@ -580,12 +580,13 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
 .daily-topbar-simple { grid-template-columns: 1fr auto; }
 
 @media (max-width: 680px) {
-  .daily-topbar { grid-template-columns: minmax(94px, 1fr) auto auto; min-height: 58px; padding: 0 10px; }
+  .daily-topbar { grid-template-columns: minmax(0, 1fr) auto auto; column-gap: 8px; min-height: 64px; padding: 0 12px; }
   .daily-topbar-simple { grid-template-columns: 1fr auto; }
   .daily-brand { font-size: 16px; gap: 7px; }
   .daily-brand .brand-symbol { height: 22px; width: 22px; }
-  .daily-number { font-size: .64rem; letter-spacing: .04em; white-space: nowrap; }
-  .daily-topbar nav { gap: 0; }
+  .daily-number { display: flex; flex-direction: column; gap: 2px; font-size: .58rem; letter-spacing: .06em; text-align: center; white-space: nowrap; }
+  .daily-number b { font-size: .75rem; }
+  .daily-topbar nav { gap: 2px; }
   .daily-topbar nav button { padding: 0; width: 44px; }
   .daily-topbar nav button span { display: none; }
   .daily-topbar nav button svg { height: 20px; width: 20px; }
@@ -631,7 +632,9 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
   .daily-reaction-row { align-items: end; gap: 5px 8px; grid-template-columns: minmax(0, 1fr) auto; padding: 7px 0; }
   .daily-reaction-track { grid-column: 1 / -1; grid-row: 2; }
   .daily-reaction-row > b { font-size: .7rem; max-width: 145px; }
-  .daily-takeaway { padding: 24px 20px; }
+  .daily-takeaway { padding: 22px 20px; border-radius: 8px; }
+  .daily-takeaway h2 { font-size: 1.65rem; line-height: 1.12; text-wrap: balance; margin: 9px 0 14px; }
+  .daily-takeaway p { font-size: .9rem; line-height: 1.6; }
   .daily-state-page { padding-left: 16px; padding-right: 16px; }
 }
 
@@ -649,3 +652,14 @@ button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visibl
 .daily-study-details ul { list-style: none; padding: 0; }
 .daily-study-details li { border-top: 1px solid #deddd5; padding: 10px 0; }
 .daily-study-details small { color: #58665e; display: block; margin-top: 4px; }
+
+.daily-takeaway > a { align-items: center; display: inline-flex; gap: 8px; min-height: 44px; padding: 8px 12px; margin-top: 18px; border: 1px solid #739184; border-radius: 6px; color: #f4e0b5; font-size: .82rem; font-weight: 650; line-height: 1.4; text-decoration: none; }
+.daily-takeaway > a:visited { color: #f4e0b5; }
+.daily-takeaway > a:hover { background: #234f3f; color: #fff; }
+.daily-takeaway > a svg { flex-shrink: 0; }
+.daily-topbar button:focus-visible, .daily-takeaway > a:focus-visible { outline: 2px solid #c38b32; outline-offset: 3px; }
+@media (max-width: 360px) {
+  .daily-brand { font-size: 15px; gap: 5px; }
+  .daily-brand .brand-symbol { display: none; }
+  .daily-topbar { column-gap: 6px; }
+}

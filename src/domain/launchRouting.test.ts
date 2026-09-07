@@ -1,19 +1,10 @@
 import assert from 'node:assert/strict'
-import { studyRegistry } from '../data/studies.ts'
-import { resolveStudyRoute } from './launchRouting.ts'
+import { isRetiredStudyRoute } from './launchRouting.ts'
 
-const published = resolveStudyRoute('/studies/biden-dropout-24-days', studyRegistry)
-assert.equal(published.kind, 'published')
-if (published.kind === 'published') assert.equal(published.registration.study.slug, 'biden-dropout-24-days')
-
-const draft = resolveStudyRoute('/studies/oscars-best-picture-2026', studyRegistry)
-assert.equal(draft.kind, 'draft')
-
-const unknown = resolveStudyRoute('/studies/not-a-study', studyRegistry)
-assert.deepEqual(unknown, { kind: 'unknown', slug: 'not-a-study' })
-
-assert.equal(resolveStudyRoute('/studies', studyRegistry).kind, 'index')
-assert.equal(resolveStudyRoute('/studies/', studyRegistry).kind, 'index')
-assert.equal(resolveStudyRoute('/other', studyRegistry).kind, 'other')
-
+for (const path of ['/studies', '/studies/', '/studies/biden-dropout-24-days', '/studies/oscars-best-picture-2026', '/studies/not-a-study', '/studies/nested/path']) {
+  assert.equal(isRetiredStudyRoute(path), true, `${path} returns to the daily game`)
+}
+for (const path of ['/', '/__preview/tiktok-banned-before-may-2025', '/other', '/studies-extra']) {
+  assert.equal(isRetiredStudyRoute(path), false, `${path} is not a retired study route`)
+}
 console.log('launchRouting tests passed')
