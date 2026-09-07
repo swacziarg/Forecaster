@@ -8,7 +8,7 @@
   "proposed": [
     {
       "id": "2026-09-13-trump-comeback-2024-buffer",
-      "number": 8,
+      "number": 7,
       "releaseTime": "2026-09-13T05:00:00Z",
       "releaseTimezone": "UTC",
       "studyId": "trump-comeback-2024-v1",
@@ -44,7 +44,7 @@
   "approved": [
     {
       "id": "2026-09-07-biden-dropout",
-      "number": 2,
+      "number": 1,
       "releaseTime": "2026-09-07T05:00:00Z",
       "releaseTimezone": "UTC",
       "studyId": "biden-dropout-2024-v1",
@@ -76,7 +76,7 @@
     },
     {
       "id": "2026-09-08-tiktok-banned-before-may-2025",
-      "number": 3,
+      "number": 2,
       "releaseTime": "2026-09-08T05:00:00Z",
       "releaseTimezone": "UTC",
       "studyId": "tiktok-banned-before-may-2025-v1",
@@ -108,7 +108,7 @@
     },
     {
       "id": "2026-09-09-eagles-stop-threepeat",
-      "number": 4,
+      "number": 3,
       "releaseTime": "2026-09-09T05:00:00Z",
       "releaseTimezone": "UTC",
       "studyId": "eagles-super-bowl-lix-five-v1",
@@ -140,7 +140,7 @@
     },
     {
       "id": "2026-09-10-oscars-best-picture-2026",
-      "number": 5,
+      "number": 4,
       "releaseTime": "2026-09-10T05:00:00Z",
       "releaseTimezone": "UTC",
       "studyId": "oscars-best-picture-2026-v2",
@@ -172,7 +172,7 @@
     },
     {
       "id": "2026-09-11-bitcoin-100k-2024",
-      "number": 6,
+      "number": 5,
       "releaseTime": "2026-09-11T05:00:00Z",
       "releaseTimezone": "UTC",
       "studyId": "bitcoin-100k-2024-v2",
@@ -204,7 +204,7 @@
     },
     {
       "id": "2026-09-12-canada-liberal-comeback",
-      "number": 7,
+      "number": 6,
       "releaseTime": "2026-09-12T05:00:00Z",
       "releaseTimezone": "UTC",
       "studyId": "canada-liberal-comeback-v2",
@@ -240,7 +240,7 @@
     "includesBiden": true,
     "approvedDistinctEditions": 6,
     "optionalBufferDate": "2026-09-13",
-    "note": "Six distinct editions scheduled September 7–12. The preserved September 5 archive does not count twice. Trump is an unscheduled candidate."
+    "note": "Six distinct editions scheduled September 7–12. Prelaunch testing is excluded from the public schedule. Trump is an unscheduled candidate."
   },
   "humanApproval": {
     "status": "core-approved",

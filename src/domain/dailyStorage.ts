@@ -48,12 +48,33 @@ export function dailyAttemptKey(puzzle: DailyPuzzle) {
   return `eventlens.daily.attempt.v${DAILY_ATTEMPT_SCHEMA_VERSION}.${puzzle.id}.${puzzle.scoring.version}`
 }
 
+// Accept the published pre-correction numbers only for these exact edition IDs.
+// Puzzle identity, release, content, scoring and submission validation still apply.
+const previousLaunchNumbers: Record<string, number> = {
+  '2026-09-07-biden-dropout': 2,
+  '2026-09-08-tiktok-banned-before-may-2025': 3,
+  '2026-09-09-eagles-stop-threepeat': 4,
+  '2026-09-10-oscars-best-picture-2026': 5,
+  '2026-09-11-bitcoin-100k-2024': 6,
+  '2026-09-12-canada-liberal-comeback': 7,
+}
+
+export const DAILY_INTRO_KEY = 'nexuspoint.daily.intro.v1'
+
+export function hasSeenDailyIntro(storage: StorageLike | null | undefined) {
+  try { return storage?.getItem(DAILY_INTRO_KEY) === 'seen' } catch { return false }
+}
+
+export function rememberDailyIntro(storage: StorageLike | null | undefined) {
+  try { storage?.setItem(DAILY_INTRO_KEY, 'seen') } catch { /* Keep the game usable when storage is blocked. */ }
+}
+
 export function parseDailyAttempt(value: unknown, puzzle: DailyPuzzle): DailyAttempt | null {
   const releaseTime = Date.parse(puzzle.releaseTime)
   if (!isRecord(value)
     || value.schemaVersion !== DAILY_ATTEMPT_SCHEMA_VERSION
     || value.puzzleId !== puzzle.id
-    || value.puzzleNumber !== puzzle.number
+    || (value.puzzleNumber !== puzzle.number && !(previousLaunchNumbers[puzzle.id] === puzzle.number + 1 && value.puzzleNumber === previousLaunchNumbers[puzzle.id]))
     || value.releaseTime !== puzzle.releaseTime
     || value.studyId !== puzzle.studyId
     || value.studyVersion !== puzzle.studyVersion

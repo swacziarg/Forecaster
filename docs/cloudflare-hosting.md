@@ -41,7 +41,7 @@ Run `npm test`, `npm run build:cloudflare`, `npm run check:launch-readiness -- -
 
 ## Launch schedule
 
-Hosting does not change the puzzle schedule. Edition #001 is the preserved September 5, 2026 archive, and #002 is the user-approved unchanged Biden launch for September 7 at 05:00 UTC. Its exact `/?daily=2026-09-07-biden-dropout` link is isolated from the September 5 archive identity. TikTok #003, Eagles #004, Oscars #005, Bitcoin #006, and Canada #007 are approved and scheduled for September 8–12 at 05:00 UTC. The five studies are published, while the daily resolver keeps future editions sealed. Trump remains an optional unscheduled candidate. See `docs/launch-work/schedule/` and `docs/launch-work/launch-release-review.md`.
+Hosting does not change the puzzle schedule. Biden #001 launches September 7 at 05:00 UTC, followed by TikTok #002, Eagles #003, Oscars #004, Bitcoin #005, and Canada #006 on September 8–12. Prelaunch testing is excluded from public numbering. Existing launch attempts retain their IDs and scores. Future editions stay sealed until release. Trump remains unscheduled. See `docs/launch-work/schedule/`.
 
 ## Previous hosting attempt
 

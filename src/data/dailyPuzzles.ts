@@ -7,11 +7,11 @@ import { bidenDropoutStudy } from './bidenDropout2024.ts'
 import { assertValidDailyRegistry, DAILY_RELEASE_TIMEZONE, type DailyPuzzle } from '../domain/dailyGame.ts'
 import { studyRegistry } from './studies.ts'
 
-// Keep the original archive identity and saved attempts intact when relaunching.
-const bidenPreview: DailyPuzzle = {
-    id: '2026-09-05-biden-dropout',
+// Public numbering starts on the September 7 launch, excluding prelaunch testing.
+const bidenLaunch: DailyPuzzle = {
+    id: '2026-09-07-biden-dropout',
     number: 1,
-    releaseTime: '2026-09-05T05:00:00Z',
+    releaseTime: '2026-09-07T05:00:00Z',
     releaseTimezone: DAILY_RELEASE_TIMEZONE,
     studyId: bidenDropoutStudy.id,
     studyVersion: bidenDropoutStudy.version,
@@ -24,16 +24,10 @@ const bidenPreview: DailyPuzzle = {
   }
 
 export const dailyPuzzles: readonly DailyPuzzle[] = [
-  bidenPreview,
-  {
-    ...bidenPreview,
-    id: '2026-09-07-biden-dropout',
-    number: 2,
-    releaseTime: '2026-09-07T05:00:00Z',
-  },
+  bidenLaunch,
   {
     id: "2026-09-08-tiktok-banned-before-may-2025",
-    number: 3,
+    number: 2,
     releaseTime: "2026-09-08T05:00:00Z",
     releaseTimezone: "UTC",
     studyId: "tiktok-banned-before-may-2025-v1",
@@ -47,7 +41,7 @@ export const dailyPuzzles: readonly DailyPuzzle[] = [
   },
   {
     id: "2026-09-09-eagles-stop-threepeat",
-    number: 4,
+    number: 3,
     releaseTime: "2026-09-09T05:00:00Z",
     releaseTimezone: "UTC",
     studyId: "eagles-super-bowl-lix-five-v1",
@@ -61,7 +55,7 @@ export const dailyPuzzles: readonly DailyPuzzle[] = [
   },
   {
     id: "2026-09-10-oscars-best-picture-2026",
-    number: 5,
+    number: 4,
     releaseTime: "2026-09-10T05:00:00Z",
     releaseTimezone: "UTC",
     studyId: "oscars-best-picture-2026-v2",
@@ -75,7 +69,7 @@ export const dailyPuzzles: readonly DailyPuzzle[] = [
   },
   {
     id: "2026-09-11-bitcoin-100k-2024",
-    number: 6,
+    number: 5,
     releaseTime: "2026-09-11T05:00:00Z",
     releaseTimezone: "UTC",
     studyId: "bitcoin-100k-2024-v2",
@@ -89,7 +83,7 @@ export const dailyPuzzles: readonly DailyPuzzle[] = [
   },
   {
     id: "2026-09-12-canada-liberal-comeback",
-    number: 7,
+    number: 6,
     releaseTime: "2026-09-12T05:00:00Z",
     releaseTimezone: "UTC",
     studyId: "canada-liberal-comeback-v2",

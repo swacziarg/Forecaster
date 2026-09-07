@@ -1,6 +1,6 @@
 # NexusPoint launch handoff — September 7, 2026
 
-The core lineup is approved and scheduled: Biden September 7, TikTok September 8, Eagles September 9, Oscars September 10, Bitcoin September 11, Canada September 12. Release time is 05:00 UTC (midnight Chicago for these dates). The September 5 Biden #001 archive remains intact; launch editions are #002–#007.
+The core lineup is approved and scheduled: Biden September 7, TikTok September 8, Eagles September 9, Oscars September 10, Bitcoin September 11, Canada September 12. Release time is 05:00 UTC (midnight Chicago for these dates). Public launch editions are #001–#006. September 5 testing is excluded from the public registry; its local storage is untouched. Existing September 7 attempts with the previous #002 number restore as #001 without changing scores.
 
 Canonical runtime schedule: `src/data/dailyPuzzles.ts`. Authorization and exact hashes: `docs/launch-work/schedule/approvals.json`. Final evidence decisions: `docs/launch-work/launch-release-review.md`. Current readiness: `docs/launch-work/launch-readiness.md`. Next unscheduled slot is September 13; preparation plan: `docs/launch-work/next-batch.md`.
 
@@ -17,3 +17,5 @@ Deployment: pushes to `main` trigger Cloudflare Workers Builds for `nexuspoint`,
 Checks: `npm test`, `npm run build`, `npm run check:launch-readiness`, `npx wrangler deploy --dry-run`, `git diff --check`. The evidence suite preserves the legacy election's 3,863 observations, duplicate/missing buckets and golden response values. All nine suites and packaging checks passed for launch activation. A READY report meets the six-distinct-edition launch requirement; the seven-future-edition operating target remains a warning until the next batch is ready.
 
 Older worker reports and receipts are historical records, not the current approval state.
+
+First-time players automatically see “How to play” with a Let’s play button. Dismissal is remembered on the device under `nexuspoint.daily.intro.v1`; Help can reopen it. Saved completed results and private previews skip automatic onboarding.

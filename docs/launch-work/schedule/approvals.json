@@ -6,78 +6,84 @@
       "studyId": "biden-dropout-2024-v1",
       "studyVersion": 1,
       "releaseTime": "2026-09-07T05:00:00Z",
-      "contentHash": "c2d729061bf06d52d97dba11169a3e8297e6cae62b13c1615ed57a8a96333df6",
+      "contentHash": "7707542aedc20ca31878cc8cf13bc852253741f39a29fb417285ec945e97dd28",
       "status": "approved",
       "approverType": "human",
       "approver": "Project owner (user in task 01a07753-5ef2-7321-a64c-60818d9de4eb)",
       "approvedAt": "2026-09-06T20:14:16.827Z",
       "approvalBasis": "Direct user instruction received September 6, 2026; recorded at this timestamp: \"the release schedule is as follows: biden dropout sept 7, then whatever one per day after that\". Reuses the previously approved, unchanged Biden content. Release hour retains the existing 05:00 UTC convention. No approval inferred for other draft content.",
-      "sourceTaskId": "01a07753-5ef2-7321-a64c-60818d9de4eb"
+      "sourceTaskId": "01a07753-5ef2-7321-a64c-60818d9de4eb",
+      "numberingCorrection": "User explicitly requested September 7 launch day be Daily #001 on September 7, 2026. Public numbering corrected to #001–#006; content, release times, scoring and attempt IDs unchanged."
     },
     {
       "puzzleId": "2026-09-08-tiktok-banned-before-may-2025",
       "studyId": "tiktok-banned-before-may-2025-v1",
       "studyVersion": 1,
       "releaseTime": "2026-09-08T05:00:00Z",
-      "contentHash": "9a0f66bf5e25a099c440a823e784478c72dd60fcca8713c720bc2583de62ef89",
+      "contentHash": "9de73526e2d355c446f0617a68b41bd20dbc18af8ea1eb1c9fa3505dce362026",
       "status": "approved",
       "approverType": "human",
       "approver": "Project owner (user in task 01a07753-5ef2-7321-a64c-60818d9de4eb)",
       "approvedAt": "2026-09-07T16:07:35.734Z",
       "approvalBasis": "User reviewed the five editions, said “I think these look good,” and then “ok go” after the explicit September 7–12 lineup and final evidence-check/rollout steps were presented. This records that authorization, including the necessary launch preparation and v2 boundary correction, not a separate human review of generated hashes.",
-      "sourceTaskId": "01a07753-5ef2-7321-a64c-60818d9de4eb"
+      "sourceTaskId": "01a07753-5ef2-7321-a64c-60818d9de4eb",
+      "numberingCorrection": "User explicitly requested September 7 launch day be Daily #001 on September 7, 2026. Public numbering corrected to #001–#006; content, release times, scoring and attempt IDs unchanged."
     },
     {
       "puzzleId": "2026-09-09-eagles-stop-threepeat",
       "studyId": "eagles-super-bowl-lix-five-v1",
       "studyVersion": 1,
       "releaseTime": "2026-09-09T05:00:00Z",
-      "contentHash": "2b1bab8fe8de8389bd6e282c01da862eb6c8829af6ae4ed289ad0d8468afc45e",
+      "contentHash": "a0b0465101d72a7b4a15224c54bff69ea7b4618d01bd03b0e8f97113013e97a1",
       "status": "approved",
       "approverType": "human",
       "approver": "Project owner (user in task 01a07753-5ef2-7321-a64c-60818d9de4eb)",
       "approvedAt": "2026-09-07T16:07:35.734Z",
       "approvalBasis": "User reviewed the five editions, said “I think these look good,” and then “ok go” after the explicit September 7–12 lineup and final evidence-check/rollout steps were presented. This records that authorization, including the necessary launch preparation and v2 boundary correction, not a separate human review of generated hashes.",
-      "sourceTaskId": "01a07753-5ef2-7321-a64c-60818d9de4eb"
+      "sourceTaskId": "01a07753-5ef2-7321-a64c-60818d9de4eb",
+      "numberingCorrection": "User explicitly requested September 7 launch day be Daily #001 on September 7, 2026. Public numbering corrected to #001–#006; content, release times, scoring and attempt IDs unchanged."
     },
     {
       "puzzleId": "2026-09-10-oscars-best-picture-2026",
       "studyId": "oscars-best-picture-2026-v2",
       "studyVersion": 2,
       "releaseTime": "2026-09-10T05:00:00Z",
-      "contentHash": "d8c655dc4c715063f6b186bf66be6b0b442574ed054c5cd4f7d822aaf7d3a023",
+      "contentHash": "79136a6323e4a03199cbfac72921b5f444ce2e5854a9f59d115318238780d652",
       "status": "approved",
       "approverType": "human",
       "approver": "Project owner (user in task 01a07753-5ef2-7321-a64c-60818d9de4eb)",
       "approvedAt": "2026-09-07T16:07:35.734Z",
       "approvalBasis": "User reviewed the five editions, said “I think these look good,” and then “ok go” after the explicit September 7–12 lineup and final evidence-check/rollout steps were presented. This records that authorization, including the necessary launch preparation and v2 boundary correction, not a separate human review of generated hashes.",
-      "sourceTaskId": "01a07753-5ef2-7321-a64c-60818d9de4eb"
+      "sourceTaskId": "01a07753-5ef2-7321-a64c-60818d9de4eb",
+      "numberingCorrection": "User explicitly requested September 7 launch day be Daily #001 on September 7, 2026. Public numbering corrected to #001–#006; content, release times, scoring and attempt IDs unchanged."
     },
     {
       "puzzleId": "2026-09-11-bitcoin-100k-2024",
       "studyId": "bitcoin-100k-2024-v2",
       "studyVersion": 2,
       "releaseTime": "2026-09-11T05:00:00Z",
-      "contentHash": "839b1b8f1970e64e52eace2d9212ea60fd8aad516dcaa396b765d392a982f0f4",
+      "contentHash": "ec716277bcdb450e43228ebe17a7f0527cb114e890fea9a5ecca8251258a4295",
       "status": "approved",
       "approverType": "human",
       "approver": "Project owner (user in task 01a07753-5ef2-7321-a64c-60818d9de4eb)",
       "approvedAt": "2026-09-07T16:07:35.734Z",
       "approvalBasis": "User reviewed the five editions, said “I think these look good,” and then “ok go” after the explicit September 7–12 lineup and final evidence-check/rollout steps were presented. This records that authorization, including the necessary launch preparation and v2 boundary correction, not a separate human review of generated hashes.",
-      "sourceTaskId": "01a07753-5ef2-7321-a64c-60818d9de4eb"
+      "sourceTaskId": "01a07753-5ef2-7321-a64c-60818d9de4eb",
+      "numberingCorrection": "User explicitly requested September 7 launch day be Daily #001 on September 7, 2026. Public numbering corrected to #001–#006; content, release times, scoring and attempt IDs unchanged."
     },
     {
       "puzzleId": "2026-09-12-canada-liberal-comeback",
       "studyId": "canada-liberal-comeback-v2",
       "studyVersion": 2,
       "releaseTime": "2026-09-12T05:00:00Z",
-      "contentHash": "f1965963235b859da1583e09e95a12f74ab59f7065a0a57d960a11990b5a7af0",
+      "contentHash": "5d2db73c5b6756b3817fa9eec2de6efa62e7167bdbf07b681b1101a63d5a3a45",
       "status": "approved",
       "approverType": "human",
       "approver": "Project owner (user in task 01a07753-5ef2-7321-a64c-60818d9de4eb)",
       "approvedAt": "2026-09-07T16:07:35.734Z",
       "approvalBasis": "User reviewed the five editions, said “I think these look good,” and then “ok go” after the explicit September 7–12 lineup and final evidence-check/rollout steps were presented. This records that authorization, including the necessary launch preparation and v2 boundary correction, not a separate human review of generated hashes.",
-      "sourceTaskId": "01a07753-5ef2-7321-a64c-60818d9de4eb"
+      "sourceTaskId": "01a07753-5ef2-7321-a64c-60818d9de4eb",
+      "numberingCorrection": "User explicitly requested September 7 launch day be Daily #001 on September 7, 2026. Public numbering corrected to #001–#006; content, release times, scoring and attempt IDs unchanged."
     }
   ]
 }

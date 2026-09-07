@@ -1,5 +1,5 @@
 import { completedScoreBands, createDailySharePayload, currentDailyPuzzle, getPreRevealCard, performShare, resolveDailyPuzzle, scoreDailyOrder, validateDailyRegistry, type DailyPuzzle } from './dailyGame.ts'
-import { collectDailyStats, dailyAttemptKey, readDailyAttempt, saveDailyDraft, submitDailyAttempt, type StorageLike } from './dailyStorage.ts'
+import { collectDailyStats, dailyAttemptKey, hasSeenDailyIntro, rememberDailyIntro, readDailyAttempt, saveDailyDraft, submitDailyAttempt, type StorageLike } from './dailyStorage.ts'
 import { dailyPuzzles } from '../data/dailyPuzzles.ts'
 import { studyRegistry } from '../data/studies.ts'
 import { bidenDropoutStudy } from '../data/bidenDropout2024.ts'
@@ -47,12 +47,12 @@ equal(resolveDailyPuzzle([schedule[0]], new Date('2026-09-05T06:00:00Z')).kind, 
 equal(validateDailyRegistry(dailyPuzzles, studyRegistry.map(({ study }) => study)).length, 0, 'validates the published daily registry and pre-reveal evidence')
 equal(dailyPuzzles[0].studyId, bidenDropoutStudy.id, 'launches with the Biden dropout contract')
 equal(dailyPuzzles[0].number, 1, 'keeps the new edition numbered one')
-equal(currentDailyPuzzle(dailyPuzzles, new Date('2026-09-05T17:00:00Z'))?.id, '2026-09-05-biden-dropout', 'makes the new edition playable on launch day')
+equal(currentDailyPuzzle(dailyPuzzles, new Date('2026-09-05T17:00:00Z')), null, 'prelaunch testing is not an official daily edition')
 equal(currentDailyPuzzle(dailyPuzzles, new Date('2026-09-07T04:59:59.999Z')), null, 'does not open the September 7 launch early')
 equal(currentDailyPuzzle(dailyPuzzles, new Date('2026-09-07T05:00:00Z'))?.id, '2026-09-07-biden-dropout', 'opens the user-approved September 7 launch at midnight Chicago')
 equal(currentDailyPuzzle(dailyPuzzles, new Date('2026-09-08T04:59:59.999Z'))?.id, '2026-09-07-biden-dropout', 'keeps the September 7 launch active through its daily window')
-equal(resolveDailyPuzzle(dailyPuzzles, new Date('2026-09-07T06:00:00Z'), '2026-09-05-biden-dropout').kind, 'puzzle', 'preserves the original September 5 archive link after relaunch')
-assert(dailyAttemptKey(dailyPuzzles[0]) !== dailyAttemptKey(dailyPuzzles[1]), 'keeps September 5 archive submissions separate from September 7 launch attempts')
+equal(resolveDailyPuzzle(dailyPuzzles, new Date('2026-09-07T06:00:00Z'), '2026-09-05-biden-dropout').kind, 'unknown', 'retires the prelaunch test link from the official schedule')
+assert(dailyAttemptKey(dailyPuzzles[0]) !== dailyAttemptKey(dailyPuzzles[1]), 'keeps separate edition attempts isolated')
 assert(getPreRevealCard(bidenDropoutStudy, 'trump-shooting')?.sources.length, 'supports the shooting card with contemporary evidence')
 assert(!getPreRevealCard(bidenDropoutStudy, 'renewed-pressure')?.sources.some((source) => source.id === 'pressure'), 'keeps the later receptiveness report out of the Schiff card')
 assert(getPreRevealCard(tiktokStudy, 'appeal-lost')?.sources.some((source) => source.id === 'ap-dec6'), 'uses the precise AP public-by source for the TikTok appeal card')
@@ -166,8 +166,9 @@ const v2Scoring = { ...schedule[0].scoring, version: 'pairwise-anchor-1pt-v2' }
 const boundaryImpacts = [impact('a', 0.05), impact('b', 0.04), impact('c', 0.03), impact('d', 0.019999), impact('e', null)]
 equal(scoreDailyOrder(ids, boundaryImpacts, schedule[0].scoring).tieGroups[0].join('+'), 'a', 'preserves historical v1 floating-point behavior')
 equal(scoreDailyOrder(ids, boundaryImpacts, v2Scoring).tieGroups.map((group) => group.join('+')).join(','), 'a+b,c,d', 'v2 includes the exact boundary without chaining or admitting larger differences')
-equal(dailyPuzzles.length, 7, 'keeps the historical archive plus six launch editions')
-for (let i = 2; i < dailyPuzzles.length; i++) {
+equal(dailyPuzzles.length, 6, 'has six official launch editions')
+equal(dailyPuzzles.map(puzzle => puzzle.number).join(','), '1,2,3,4,5,6', 'numbers official editions consecutively from launch day')
+for (let i = 1; i < dailyPuzzles.length; i++) {
   const puzzle = dailyPuzzles[i]
   const start = Date.parse(puzzle.releaseTime)
   equal(currentDailyPuzzle(dailyPuzzles, new Date(start - 1))?.id, dailyPuzzles[i - 1].id, 'previous edition remains current until the boundary')
@@ -178,3 +179,32 @@ for (let i = 2; i < dailyPuzzles.length; i++) {
   equal(puzzle.scoring.version, 'pairwise-anchor-1pt-v2', 'future launch editions use inclusive v2 scoring')
 }
 equal(resolveDailyPuzzle(dailyPuzzles, new Date('2026-09-13T05:00:00Z')).kind, 'exhausted', 'reports the next real queue gap after Canada')
+
+// Renumbering must not discard drafts, change scores, or allow a second submission.
+const launchStorage = new MemoryStorage()
+const launch = dailyPuzzles[0]
+const previousLaunch = { ...launch, number: 2 }
+submitDailyAttempt(launchStorage, previousLaunch, launch.initialOrder, { agreed: 3, comparable: 10, percent: 30 }, '2026-09-07T06:00:00Z', 'daily')
+const migrated = readDailyAttempt(launchStorage, launch)
+assert(migrated.status === 'valid' && migrated.attempt.puzzleNumber === 1 && migrated.attempt.submission?.score === 30, 'restores the launch score under corrected edition number')
+equal(submitDailyAttempt(launchStorage, launch, launch.initialOrder, { agreed: 10, comparable: 10, percent: 100 }, '2026-09-07T07:00:00Z', 'daily').status, 'duplicate', 'renumbering cannot unlock a second submission')
+equal(collectDailyStats(launchStorage, dailyPuzzles, new Date('2026-09-07T07:00:00Z')).played, 1, 'renumbered launch submission remains in stats')
+equal(createDailySharePayload(launch, 30, 'https://nexuspoint.lol').title, 'NexusPoint Daily #1', 'sharing uses corrected launch number')
+const launchDrafts = new MemoryStorage()
+saveDailyDraft(launchDrafts, previousLaunch, [...launch.initialOrder].reverse(), '2026-09-07T06:00:00Z')
+const migratedDraft = readDailyAttempt(launchDrafts, launch)
+assert(migratedDraft.status === 'valid' && migratedDraft.attempt.order.join(',') === [...launch.initialOrder].reverse().join(','), 'renumbering preserves an unfinished order')
+const corruptNumber = JSON.parse(launchDrafts.getItem(dailyAttemptKey(launch))!)
+corruptNumber.puzzleNumber = 999
+launchDrafts.setItem(dailyAttemptKey(launch), JSON.stringify(corruptNumber))
+equal(readDailyAttempt(launchDrafts, launch).status, 'invalid', 'unrelated puzzle number mismatches remain invalid')
+
+const introStorage = new MemoryStorage()
+equal(hasSeenDailyIntro(introStorage), false, 'new players have not seen the intro')
+rememberDailyIntro(introStorage)
+equal(hasSeenDailyIntro(introStorage), true, 'dismissed intro is remembered on this device')
+equal(introStorage.values.size, 1, 'onboarding creates no attempt or score')
+rememberDailyIntro(unavailableStorage)
+rememberDailyIntro(quotaStorage)
+rememberDailyIntro(null)
+equal(hasSeenDailyIntro(unavailableStorage), false, 'blocked storage does not crash the introduction')

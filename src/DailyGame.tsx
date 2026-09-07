@@ -3,7 +3,7 @@ import { ArrowDown, ArrowRight, ArrowUp, BarChart3, BookOpen, Check, ChevronDown
 import type { StudyRegistration } from './data/studies.ts'
 import { calculateStudyImpacts, moveRankedItem, type MarketSeriesPoint, type StudyEventImpact } from './domain/eventStudy.ts'
 import { completedScoreBands, createDailySharePayload, currentDailyPuzzle, getPreRevealBackground, getPreRevealCard, performShare, puzzleWindowEnd, scoreDailyOrder, type DailyPuzzle, type DailyResolution, type PreRevealCard } from './domain/dailyGame.ts'
-import { collectDailyStats, dailyAttemptKey, readDailyAttempt, saveDailyDraft, submitDailyAttempt, type DailySubmission, type StorageLike } from './domain/dailyStorage.ts'
+import { collectDailyStats, dailyAttemptKey, hasSeenDailyIntro, rememberDailyIntro, readDailyAttempt, saveDailyDraft, submitDailyAttempt, type DailySubmission, type StorageLike } from './domain/dailyStorage.ts'
 import type { Study } from './domain/study.ts'
 
 const formatImpact = (value: number | null) => {
@@ -92,8 +92,17 @@ function Stats({ puzzles, returnFocus, onClose }: { puzzles: readonly DailyPuzzl
   return <Modal title="Your daily stats" returnFocus={returnFocus} onClose={onClose}><div className="daily-stats-grid"><div><Trophy size={20} /><strong>{stats.played}</strong><span>Played</span></div><div><BarChart3 size={20} /><strong>{stats.averageScore ?? '—'}</strong><span>Average score</span></div><div><Flame size={20} /><strong>{stats.currentStreak}</strong><span>Current streak</span></div></div><p className="daily-modal-note">Only on-time daily completions count. Archive plays never extend a streak. {stats.persistenceAvailable ? 'Results are saved on this device.' : 'Storage is unavailable in this browser.'}</p></Modal>
 }
 
-function Help({ puzzle, study, returnFocus, onClose }: { puzzle: DailyPuzzle; study: Study; returnFocus: HTMLElement | null; onClose: () => void }) {
-  return <Modal title="How to play" returnFocus={returnFocus} onClose={onClose}><ol className="daily-rules"><li><span>1</span><p><strong>Read the five headlines.</strong> Open Brief &amp; sources for more context and the original reporting or statement.</p></li><li><span>2</span><p><strong>Rank the market reaction.</strong> Swipe to scroll. Hold a tile briefly, then drag it to reorder, or use the arrow buttons. With a mouse, drag the card directly. Top: {study.presentation.positiveLabel}. Bottom: {study.presentation.negativeLabel}. Rank the largest shifts toward each end.</p></li><li><span>3</span><p><strong>Reveal once.</strong> Your score is the share of comparable pairs that match the market order. Responses within {formatThreshold(puzzle.scoring.tieThreshold)} of the strongest response in a group are tied.</p></li></ol><p className="daily-modal-note">This is a historical market puzzle. Measured movements are associations, not proof that a headline caused a price change.</p></Modal>
+function Help({ study, returnFocus, onClose }: { study: Study; returnFocus: HTMLElement | null; onClose: () => void }) {
+  return <Modal title="How to play" returnFocus={returnFocus} onClose={onClose}>
+    <p className="daily-intro">Five headlines. What moved the odds?</p>
+    <p className="daily-intro-context">NexusPoint is a daily game about how real news moved the odds. Prediction markets reflect how likely traders think an outcome is.</p>
+    <ol className="daily-rules">
+      <li><span>1</span><p><strong>Read the headlines.</strong> Tap Brief &amp; sources if you need more context.</p></li>
+      <li><span>2</span><p><strong>Put them in order.</strong> Top: {study.presentation.positiveLabel}. Bottom: {study.presentation.negativeLabel}. Hold a card to drag it, or use the arrows.</p></li>
+      <li><span>3</span><p><strong>Reveal your score.</strong> Compare your ranking with the market and get a score out of 100. One submission, then share.</p></li>
+    </ol>
+    <button className="daily-primary-button daily-intro-start" onClick={onClose}>Let’s play <ArrowRight size={18} /></button>
+  </Modal>
 }
 
 function ScoringRules({ puzzle, returnFocus, onClose }: { puzzle: DailyPuzzle; returnFocus: HTMLElement | null; onClose: () => void }) {
@@ -288,7 +297,7 @@ export function DailyGame({ registration, points, puzzle, playMode, nextPuzzle, 
   const [dragPosition, setDragPosition] = useState<DragPosition | null>(null)
   const [announcement, setAnnouncement] = useState('')
   const [persistenceMessage, setPersistenceMessage] = useState(() => initialRead.status === 'invalid' ? 'Saved progress was outdated or damaged, so this puzzle started fresh.' : initialRead.status === 'unavailable' ? 'Progress cannot be saved in this browser. Keep this tab open until you finish.' : '')
-  const [modal, setModal] = useState<'help' | 'stats' | 'scoring' | 'study' | null>(null)
+  const [modal, setModal] = useState<'help' | 'stats' | 'scoring' | 'study' | null>(() => !preview && !initialAttempt?.submission && !hasSeenDailyIntro(browserStorage()) ? 'help' : null)
   const [modalTrigger, setModalTrigger] = useState<HTMLElement | null>(null)
   const [now, setNow] = useState(() => new Date())
   const listRef = useRef<HTMLElement>(null)
@@ -513,7 +522,8 @@ export function DailyGame({ registration, points, puzzle, playMode, nextPuzzle, 
     }
   }
   const openModal = (name: 'help' | 'stats' | 'scoring' | 'study', trigger: HTMLElement) => { setModalTrigger(trigger); setModal(name) }
-  const overlays = <>{modal === 'scoring' && <ScoringRules puzzle={puzzle} returnFocus={modalTrigger} onClose={() => setModal(null)} />}{modal === 'study' && <StudyDetails study={study} returnFocus={modalTrigger} onClose={() => setModal(null)} />}{modal === 'help' && <Help puzzle={puzzle} study={study} returnFocus={modalTrigger} onClose={() => setModal(null)} />}{modal === 'stats' && <Stats puzzles={puzzles} returnFocus={modalTrigger} onClose={() => setModal(null)} />}</>
+  const closeHelp = () => { if (!preview) rememberDailyIntro(browserStorage()); setModal(null) }
+  const overlays = <>{modal === 'scoring' && <ScoringRules puzzle={puzzle} returnFocus={modalTrigger} onClose={() => setModal(null)} />}{modal === 'study' && <StudyDetails study={study} returnFocus={modalTrigger} onClose={() => setModal(null)} />}{modal === 'help' && <Help study={study} returnFocus={modalTrigger} onClose={closeHelp} />}{modal === 'stats' && <Stats puzzles={puzzles} returnFocus={modalTrigger} onClose={() => setModal(null)} />}</>
   const page = submission
     ? <><Topbar puzzle={puzzle} preview={preview} onHelp={(trigger) => openModal('help', trigger)} onStats={(trigger) => openModal('stats', trigger)} /><Result study={study} puzzle={puzzle} puzzles={puzzles} nextPuzzle={nextPuzzle} impacts={impacts} submission={submission} now={now} preview={preview} onScoring={(trigger) => openModal('scoring', trigger)} onStudy={(trigger) => openModal('study', trigger)} onStats={(trigger) => openModal('stats', trigger)} /></>
     : <><Topbar puzzle={puzzle} preview={preview} onHelp={(trigger) => openModal('help', trigger)} onStats={(trigger) => openModal('stats', trigger)} /><main className="daily-game"><header className="daily-game-heading"><span>{puzzle.topic} · {preview ? 'Private preview' : `Daily #${String(puzzle.number).padStart(3, '0')}`}</span><h1>{puzzle.question}</h1><p>{puzzle.instruction}</p>{preview ? <p className="daily-archive-note">Editorial review draft. This private result uses isolated practice storage and never counts toward official daily stats or streaks.</p> : playMode === 'archive' && <p className="daily-archive-note">Archive play does not count toward the current daily streak.</p>}</header><Background study={study} /><p className="daily-touch-hint">Hold a tile to drag · Or use the arrows</p><div className="daily-ranking-layout"><div className="daily-spectrum" aria-hidden="true"><span>{study.presentation.positiveShortLabel ?? study.presentation.positiveLabel}</span><i /><span>{study.presentation.negativeShortLabel ?? study.presentation.negativeLabel}</span></div><section ref={listRef} className={`daily-card-list ${dragPosition ? 'is-sorting' : ''}`} aria-label={`Rank the five headlines. Top: ${study.presentation.positiveLabel}. Bottom: ${study.presentation.negativeLabel}.`}>{order.map((id, index) => <Card key={id} card={byId.get(id)!} index={index} total={order.length} isDragging={dragPosition?.id === id} onMove={move} onDragStart={startDrag} onDragHold={holdToDrag} />)}</section></div><div className="daily-submit-dock"><button className="daily-primary-button" onClick={submit}>Reveal my score <ArrowRight size={19} /></button><span><LockKeyhole size={12} /> {preview ? 'Private preview only' : playMode === 'daily' ? 'One official submission' : 'Archive result only'}</span></div><Footer puzzle={puzzle} nextPuzzle={nextPuzzle} puzzles={puzzles} now={now} submitted={false} preview={preview} /><p className="sr-status" aria-live="polite">{announcement}</p></main>{dragPosition && <DragPreview card={byId.get(dragPosition.id)!} index={order.indexOf(dragPosition.id)} position={dragPosition} />}</>

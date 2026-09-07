@@ -9,7 +9,7 @@ import {
   STATIC_ARTIFACTS,
 } from './check-launch-readiness.mjs'
 
-const historicalPuzzle = dailyPuzzles[0]
+const historicalPuzzle = { ...dailyPuzzles[0], id: '2026-09-05-biden-dropout', releaseTime: '2026-09-05T05:00:00Z' }
 const datasetArtifacts = [
   bidenDropoutStudy.dataset.path,
   bidenDropoutStudy.dataset.rawPath,
