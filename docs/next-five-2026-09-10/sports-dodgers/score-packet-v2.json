@@ -1,0 +1,817 @@
+{
+  "generatedAt": "2026-09-10T16:08:02.539Z",
+  "studyId": "dodgers-repeat-2025-v2",
+  "studySha256": "7436f4d2c996a4b1930cbed5ff08f43453f8cd0935b8900bd0f4ac8588c6a1c5",
+  "selectionSha256": "1c7ba28ba05ccd1752fb17fca96fa74aef940ee14419000b8f3b331ae5ab5dd2",
+  "initialOrder": [
+    "seven-losses",
+    "nlds-escape",
+    "glasnow-injury",
+    "pennant-sweep",
+    "ohtani-return"
+  ],
+  "scoring": {
+    "version": "pairwise-anchor-1pt-v2",
+    "tieThreshold": 0.01,
+    "boundaryTolerance": 1e-12
+  },
+  "dataset": {
+    "id": "dodgers-repeat-2025-hourly-v1",
+    "provider": "Polymarket",
+    "path": "docs/next-five-2026-09-10/sports-dodgers/hourly.csv",
+    "rawPath": "docs/next-five-2026-09-10/sports-dodgers/raw-history.json",
+    "marketMetadataPath": "docs/next-five-2026-09-10/sports-dodgers/raw-market.json",
+    "manifestPath": "docs/next-five-2026-09-10/sports-dodgers/manifest.json",
+    "rawSha256": "aeb332243b883b899c219e3e3ab87867ebc30f7558a9079a17d51ed62e3271c1",
+    "marketMetadataSha256": "18f0e41653d894c5e7a38f85ae83aa94f2080b587e3a4107163b02a853b1179d",
+    "normalizedSha256": "d09119662e51d073983ce01096cb239f8205dbb07566b945da1e630a1a431aa8",
+    "retrievedAt": "2026-09-10T16:03:07.145711+00:00",
+    "coverageStart": "2025-02-26T21:00:00.000Z",
+    "coverageEnd": "2025-11-02T07:00:00.000Z",
+    "fullMarketLifetime": false,
+    "cadenceMinutes": 60,
+    "transformVersion": "polymarket-hourly-v1",
+    "provenanceUrl": "https://clob.polymarket.com/prices-history",
+    "requestParameters": "Exact YES token; 10-day chunks, fidelity=60; latest observation per UTC hour; no filling."
+  },
+  "audit": {
+    "observations": 5957,
+    "duplicateTimestamps": [],
+    "missingBuckets": [
+      "2025-06-13T07:00:00.000Z",
+      "2025-09-17T18:00:00.000Z",
+      "2025-10-29T10:00:00.000Z",
+      "2025-10-29T11:00:00.000Z",
+      "2025-10-29T12:00:00.000Z",
+      "2025-10-29T13:00:00.000Z"
+    ],
+    "outOfOrderRows": 0,
+    "coverageStart": "2025-02-26T21:00:00.000Z",
+    "coverageEnd": "2025-11-02T07:00:00.000Z"
+  },
+  "impacts": [
+    {
+      "eventId": "glasnow-injury",
+      "event": {
+        "id": "glasnow-injury",
+        "title": "Tyler Glasnow goes on the injured list",
+        "shortTitle": "Tyler Glasnow goes on the injured list",
+        "occurredAt": "2025-04-29T01:22:56.051Z",
+        "informationKnownAt": "2025-04-29T01:22:56.051Z",
+        "precision": "interval",
+        "timezone": "America/Los_Angeles",
+        "dateLabel": "2025-04-28",
+        "category": "glasnow-injury",
+        "mechanism": "Losing a leading starter threatens rotation depth and the postseason pitching plan. The earlier exit may have priced in part of the news.",
+        "expectedDirection": "negative",
+        "claims": [
+          {
+            "id": "glasnow-injury-fact",
+            "text": "Shoulder inflammation sidelines the Dodgers starter.",
+            "knownAt": "2025-04-29T01:22:56.051Z",
+            "sourceIds": [
+              "glasnow-injury-source"
+            ],
+            "visibility": "pre-reveal"
+          }
+        ],
+        "sourceRoles": [
+          {
+            "sourceId": "glasnow-injury-source",
+            "role": "primary"
+          }
+        ],
+        "retrospectiveInterpretation": "Observed change spans the full market information environment around this reporting cutoff.",
+        "competingExplanation": "Losing a leading starter threatens rotation depth and the postseason pitching plan. The earlier exit may have priced in part of the news.",
+        "attributionAssessment": "mixed"
+      },
+      "windows": {
+        "anticipation": {
+          "level": 0.27,
+          "start": "2025-04-25T13:22:56.051Z",
+          "end": "2025-04-28T13:22:56.051Z",
+          "quality": {
+            "expectedBuckets": 72,
+            "validBuckets": 72,
+            "tradedBuckets": 72,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 72,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "reference": {
+          "level": 0.265,
+          "start": "2025-04-28T13:22:56.051Z",
+          "end": "2025-04-29T01:22:56.051Z",
+          "quality": {
+            "expectedBuckets": 12,
+            "validBuckets": 12,
+            "tradedBuckets": 12,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 12,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "immediate": {
+          "level": 0.27,
+          "start": "2025-04-29T01:22:56.051Z",
+          "end": "2025-04-29T07:22:56.051Z",
+          "quality": {
+            "expectedBuckets": 6,
+            "validBuckets": 6,
+            "tradedBuckets": 6,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 6,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "stabilized": {
+          "level": 0.265,
+          "start": "2025-04-29T19:22:56.051Z",
+          "end": "2025-04-30T13:22:56.051Z",
+          "quality": {
+            "expectedBuckets": 18,
+            "validBuckets": 18,
+            "tradedBuckets": 18,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 18,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "delayed": {
+          "level": 0.27,
+          "start": "2025-05-01T01:22:56.051Z",
+          "end": "2025-05-02T01:22:56.051Z",
+          "quality": {
+            "expectedBuckets": 24,
+            "validBuckets": 24,
+            "tradedBuckets": 24,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 24,
+            "status": "usable",
+            "reasons": []
+          }
+        }
+      },
+      "anticipationMove": -0.0050000000000000044,
+      "immediateResponse": 0.0050000000000000044,
+      "shortTermResponse": 0,
+      "delayedIncrement": 0.0050000000000000044,
+      "cumulativeDelayedResponse": 0.0050000000000000044,
+      "logOddsResponse": 0,
+      "sensitivityShare": 0,
+      "counterfactualProbability": 0.265,
+      "attributedImpact": 0,
+      "qualityStatus": "usable",
+      "ordinaryMovement": {
+        "classification": "not detectable",
+        "threshold": 0.024999999999999994,
+        "sampleCount": 154
+      },
+      "overlaps": []
+    },
+    {
+      "eventId": "ohtani-return",
+      "event": {
+        "id": "ohtani-return",
+        "title": "Ohtani makes his Dodgers pitching debut",
+        "shortTitle": "Ohtani makes his Dodgers pitching debut",
+        "occurredAt": "2025-06-17T07:17:34.434Z",
+        "informationKnownAt": "2025-06-17T07:17:34.434Z",
+        "precision": "interval",
+        "timezone": "America/Los_Angeles",
+        "dateLabel": "2025-06-16",
+        "category": "ohtani-return",
+        "mechanism": "A two-way superstar returning to the mound offers a meaningful new option for the title defense. The return was announced earlier and Sasaki injury news shares this window.",
+        "expectedDirection": "positive",
+        "claims": [
+          {
+            "id": "ohtani-return-fact",
+            "text": "He allows one run in one inning.",
+            "knownAt": "2025-06-17T07:17:34.434Z",
+            "sourceIds": [
+              "ohtani-return-source"
+            ],
+            "visibility": "pre-reveal"
+          }
+        ],
+        "sourceRoles": [
+          {
+            "sourceId": "ohtani-return-source",
+            "role": "primary"
+          }
+        ],
+        "retrospectiveInterpretation": "Observed change spans the full market information environment around this reporting cutoff.",
+        "competingExplanation": "The return was announced earlier; Sasaki’s injury setback and other rotation news share this window.",
+        "attributionAssessment": "mixed"
+      },
+      "windows": {
+        "anticipation": {
+          "level": 0.255,
+          "start": "2025-06-13T19:17:34.434Z",
+          "end": "2025-06-16T19:17:34.434Z",
+          "quality": {
+            "expectedBuckets": 72,
+            "validBuckets": 72,
+            "tradedBuckets": 72,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 72,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "reference": {
+          "level": 0.265,
+          "start": "2025-06-16T19:17:34.434Z",
+          "end": "2025-06-17T07:17:34.434Z",
+          "quality": {
+            "expectedBuckets": 12,
+            "validBuckets": 12,
+            "tradedBuckets": 12,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 12,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "immediate": {
+          "level": 0.265,
+          "start": "2025-06-17T07:17:34.434Z",
+          "end": "2025-06-17T13:17:34.434Z",
+          "quality": {
+            "expectedBuckets": 6,
+            "validBuckets": 6,
+            "tradedBuckets": 6,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 6,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "stabilized": {
+          "level": 0.275,
+          "start": "2025-06-18T01:17:34.434Z",
+          "end": "2025-06-18T19:17:34.434Z",
+          "quality": {
+            "expectedBuckets": 18,
+            "validBuckets": 18,
+            "tradedBuckets": 18,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 18,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "delayed": {
+          "level": 0.26,
+          "start": "2025-06-19T07:17:34.434Z",
+          "end": "2025-06-20T07:17:34.434Z",
+          "quality": {
+            "expectedBuckets": 24,
+            "validBuckets": 24,
+            "tradedBuckets": 24,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 24,
+            "status": "usable",
+            "reasons": []
+          }
+        }
+      },
+      "anticipationMove": 0.010000000000000009,
+      "immediateResponse": 0,
+      "shortTermResponse": 0.010000000000000009,
+      "delayedIncrement": -0.015000000000000013,
+      "cumulativeDelayedResponse": -0.0050000000000000044,
+      "logOddsResponse": 0.05074011603851114,
+      "sensitivityShare": 0,
+      "counterfactualProbability": 0.275,
+      "attributedImpact": 0,
+      "qualityStatus": "usable",
+      "ordinaryMovement": {
+        "classification": "ordinary",
+        "threshold": 0.024999999999999994,
+        "sampleCount": 154
+      },
+      "overlaps": []
+    },
+    {
+      "eventId": "seven-losses",
+      "event": {
+        "id": "seven-losses",
+        "title": "Dodgers lose their seventh straight game",
+        "shortTitle": "Dodgers lose their seventh straight game",
+        "occurredAt": "2025-07-12T06:57:03.618Z",
+        "informationKnownAt": "2025-07-12T06:57:03.618Z",
+        "precision": "interval",
+        "timezone": "America/Los_Angeles",
+        "dateLabel": "2025-07-11",
+        "category": "seven-losses",
+        "mechanism": "A sustained slump challenges confidence in the favorite and tightens the division race. Much of the deterioration may have been reflected before the seventh loss.",
+        "expectedDirection": "negative",
+        "claims": [
+          {
+            "id": "seven-losses-fact",
+            "text": "Their division lead shrinks to four games.",
+            "knownAt": "2025-07-12T06:57:03.618Z",
+            "sourceIds": [
+              "seven-losses-source"
+            ],
+            "visibility": "pre-reveal"
+          }
+        ],
+        "sourceRoles": [
+          {
+            "sourceId": "seven-losses-source",
+            "role": "primary"
+          }
+        ],
+        "retrospectiveInterpretation": "Observed change spans the full market information environment around this reporting cutoff.",
+        "competingExplanation": "A sustained slump challenges confidence in the favorite and tightens the division race. Much of the deterioration may have been reflected before the seventh loss.",
+        "attributionAssessment": "mixed"
+      },
+      "windows": {
+        "anticipation": {
+          "level": 0.29,
+          "start": "2025-07-08T18:57:03.618Z",
+          "end": "2025-07-11T18:57:03.618Z",
+          "quality": {
+            "expectedBuckets": 72,
+            "validBuckets": 72,
+            "tradedBuckets": 72,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 72,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "reference": {
+          "level": 0.2825,
+          "start": "2025-07-11T18:57:03.618Z",
+          "end": "2025-07-12T06:57:03.618Z",
+          "quality": {
+            "expectedBuckets": 12,
+            "validBuckets": 12,
+            "tradedBuckets": 12,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 12,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "immediate": {
+          "level": 0.2775,
+          "start": "2025-07-12T06:57:03.618Z",
+          "end": "2025-07-12T12:57:03.618Z",
+          "quality": {
+            "expectedBuckets": 6,
+            "validBuckets": 6,
+            "tradedBuckets": 6,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 6,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "stabilized": {
+          "level": 0.28,
+          "start": "2025-07-13T00:57:03.618Z",
+          "end": "2025-07-13T18:57:03.618Z",
+          "quality": {
+            "expectedBuckets": 18,
+            "validBuckets": 18,
+            "tradedBuckets": 18,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 18,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "delayed": {
+          "level": 0.275,
+          "start": "2025-07-14T06:57:03.618Z",
+          "end": "2025-07-15T06:57:03.618Z",
+          "quality": {
+            "expectedBuckets": 24,
+            "validBuckets": 24,
+            "tradedBuckets": 24,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 24,
+            "status": "usable",
+            "reasons": []
+          }
+        }
+      },
+      "anticipationMove": -0.007500000000000007,
+      "immediateResponse": -0.004999999999999949,
+      "shortTermResponse": -0.0024999999999999467,
+      "delayedIncrement": -0.0050000000000000044,
+      "cumulativeDelayedResponse": -0.007499999999999951,
+      "logOddsResponse": -0.012367211793570587,
+      "sensitivityShare": 0,
+      "counterfactualProbability": 0.28,
+      "attributedImpact": 0,
+      "qualityStatus": "usable",
+      "ordinaryMovement": {
+        "classification": "not detectable",
+        "threshold": 0.024999999999999994,
+        "sampleCount": 154
+      },
+      "overlaps": []
+    },
+    {
+      "eventId": "nlds-escape",
+      "event": {
+        "id": "nlds-escape",
+        "title": "Dodgers advance on an 11th-inning throwing error",
+        "shortTitle": "Dodgers advance on an 11th-inning throwing error",
+        "occurredAt": "2025-10-10T07:11:42.629Z",
+        "informationKnownAt": "2025-10-10T07:11:42.629Z",
+        "precision": "interval",
+        "timezone": "America/Los_Angeles",
+        "dateLabel": "2025-10-09",
+        "category": "nlds-escape",
+        "mechanism": "A tense elimination of a major contender removes another playoff hurdle. Earlier series wins and other teams’ results also shape the title market.",
+        "expectedDirection": "positive",
+        "claims": [
+          {
+            "id": "nlds-escape-fact",
+            "text": "Los Angeles eliminates Philadelphia from the NLDS.",
+            "knownAt": "2025-10-10T07:11:42.629Z",
+            "sourceIds": [
+              "nlds-escape-source"
+            ],
+            "visibility": "pre-reveal"
+          }
+        ],
+        "sourceRoles": [
+          {
+            "sourceId": "nlds-escape-source",
+            "role": "primary"
+          }
+        ],
+        "retrospectiveInterpretation": "Observed change spans the full market information environment around this reporting cutoff.",
+        "competingExplanation": "A tense elimination of a major contender removes another playoff hurdle. Earlier series wins and other teams’ results also shape the title market.",
+        "attributionAssessment": "mixed"
+      },
+      "windows": {
+        "anticipation": {
+          "level": 0.36,
+          "start": "2025-10-06T19:11:42.629Z",
+          "end": "2025-10-09T19:11:42.629Z",
+          "quality": {
+            "expectedBuckets": 72,
+            "validBuckets": 72,
+            "tradedBuckets": 72,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 72,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "reference": {
+          "level": 0.3675,
+          "start": "2025-10-09T19:11:42.629Z",
+          "end": "2025-10-10T07:11:42.629Z",
+          "quality": {
+            "expectedBuckets": 12,
+            "validBuckets": 12,
+            "tradedBuckets": 12,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 12,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "immediate": {
+          "level": 0.415,
+          "start": "2025-10-10T07:11:42.629Z",
+          "end": "2025-10-10T13:11:42.629Z",
+          "quality": {
+            "expectedBuckets": 6,
+            "validBuckets": 6,
+            "tradedBuckets": 6,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 6,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "stabilized": {
+          "level": 0.435,
+          "start": "2025-10-11T01:11:42.629Z",
+          "end": "2025-10-11T19:11:42.629Z",
+          "quality": {
+            "expectedBuckets": 18,
+            "validBuckets": 18,
+            "tradedBuckets": 18,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 18,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "delayed": {
+          "level": 0.425,
+          "start": "2025-10-12T07:11:42.629Z",
+          "end": "2025-10-13T07:11:42.629Z",
+          "quality": {
+            "expectedBuckets": 24,
+            "validBuckets": 24,
+            "tradedBuckets": 24,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 24,
+            "status": "usable",
+            "reasons": []
+          }
+        }
+      },
+      "anticipationMove": 0.007500000000000007,
+      "immediateResponse": 0.04749999999999999,
+      "shortTermResponse": 0.0675,
+      "delayedIncrement": -0.010000000000000009,
+      "cumulativeDelayedResponse": 0.057499999999999996,
+      "logOddsResponse": 0.28147720189102726,
+      "sensitivityShare": 0,
+      "counterfactualProbability": 0.43500000000000005,
+      "attributedImpact": -5.551115123125783e-17,
+      "qualityStatus": "usable",
+      "ordinaryMovement": {
+        "classification": "unusually large",
+        "threshold": 0.024999999999999994,
+        "sampleCount": 154
+      },
+      "overlaps": []
+    },
+    {
+      "eventId": "pennant-sweep",
+      "event": {
+        "id": "pennant-sweep",
+        "title": "Dodgers sweep Milwaukee to reach the World Series",
+        "shortTitle": "Dodgers sweep Milwaukee to reach the World Series",
+        "occurredAt": "2025-10-18T06:39:41.955Z",
+        "informationKnownAt": "2025-10-18T06:39:41.955Z",
+        "precision": "interval",
+        "timezone": "America/Los_Angeles",
+        "dateLabel": "2025-10-17",
+        "category": "pennant-sweep",
+        "mechanism": "Only the championship series remains; this is advancement toward the contract outcome, not the resolving victory.",
+        "expectedDirection": "positive",
+        "claims": [
+          {
+            "id": "pennant-sweep-fact",
+            "text": "Ohtani hits three home runs in the clincher.",
+            "knownAt": "2025-10-18T06:39:41.955Z",
+            "sourceIds": [
+              "pennant-sweep-source"
+            ],
+            "visibility": "pre-reveal"
+          }
+        ],
+        "sourceRoles": [
+          {
+            "sourceId": "pennant-sweep-source",
+            "role": "primary"
+          }
+        ],
+        "retrospectiveInterpretation": "Observed change spans the full market information environment around this reporting cutoff.",
+        "competingExplanation": "Only the championship series remains; this is advancement toward the contract outcome, not the resolving victory.",
+        "attributionAssessment": "mixed"
+      },
+      "windows": {
+        "anticipation": {
+          "level": 0.59,
+          "start": "2025-10-14T18:39:41.955Z",
+          "end": "2025-10-17T18:39:41.955Z",
+          "quality": {
+            "expectedBuckets": 72,
+            "validBuckets": 72,
+            "tradedBuckets": 72,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 72,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "reference": {
+          "level": 0.66,
+          "start": "2025-10-17T18:39:41.955Z",
+          "end": "2025-10-18T06:39:41.955Z",
+          "quality": {
+            "expectedBuckets": 12,
+            "validBuckets": 12,
+            "tradedBuckets": 12,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 12,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "immediate": {
+          "level": 0.675,
+          "start": "2025-10-18T06:39:41.955Z",
+          "end": "2025-10-18T12:39:41.955Z",
+          "quality": {
+            "expectedBuckets": 6,
+            "validBuckets": 6,
+            "tradedBuckets": 6,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 6,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "stabilized": {
+          "level": 0.675,
+          "start": "2025-10-19T00:39:41.955Z",
+          "end": "2025-10-19T18:39:41.955Z",
+          "quality": {
+            "expectedBuckets": 18,
+            "validBuckets": 18,
+            "tradedBuckets": 18,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 18,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "delayed": {
+          "level": 0.675,
+          "start": "2025-10-20T06:39:41.955Z",
+          "end": "2025-10-21T06:39:41.955Z",
+          "quality": {
+            "expectedBuckets": 24,
+            "validBuckets": 24,
+            "tradedBuckets": 24,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 24,
+            "status": "usable",
+            "reasons": []
+          }
+        }
+      },
+      "anticipationMove": 0.07000000000000006,
+      "immediateResponse": 0.015000000000000013,
+      "shortTermResponse": 0.015000000000000013,
+      "delayedIncrement": 0,
+      "cumulativeDelayedResponse": 0.015000000000000013,
+      "logOddsResponse": 0.06759329113252832,
+      "sensitivityShare": 0,
+      "counterfactualProbability": 0.675,
+      "attributedImpact": 0,
+      "qualityStatus": "usable",
+      "ordinaryMovement": {
+        "classification": "ordinary",
+        "threshold": 0.024999999999999994,
+        "sampleCount": 154
+      },
+      "overlaps": []
+    }
+  ],
+  "tieGroups": [
+    [
+      "nlds-escape"
+    ],
+    [
+      "pennant-sweep",
+      "ohtani-return"
+    ],
+    [
+      "glasnow-injury",
+      "seven-losses"
+    ]
+  ],
+  "validation": {
+    "studyErrors": [],
+    "eligibleCards": 5,
+    "usableWindows": 25
+  }
+}

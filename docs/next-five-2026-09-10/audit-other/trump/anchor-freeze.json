@@ -1,0 +1,23 @@
+{
+  "policy": "Evidence corrections chosen without corrected-score consultation; previous scores known.",
+  "changes": [
+    {
+      "eventId": "butler",
+      "oldCutoff": "2024-07-14T00:00:00Z",
+      "newCutoff": "2024-07-13T23:35:06Z",
+      "reason": "Next retained CNN transcript marker after full supported claim. Marker is an upper bound, not an exact first-public second."
+    },
+    {
+      "eventId": "rfk-endorsement",
+      "oldCutoff": "2024-08-23T19:30:00Z",
+      "newCutoff": "2024-08-23T19:10:00Z",
+      "reason": "Next retained CNN transcript marker after full supported claim. Marker is an upper bound, not an exact first-public second."
+    },
+    {
+      "eventId": "iowa-poll",
+      "oldCutoff": "2024-11-03T00:00:00Z",
+      "newCutoff": "2024-11-02T23:05:01Z",
+      "reason": "Next retained CNN transcript marker after full supported claim. Marker is an upper bound, not an exact first-public second."
+    }
+  ]
+}

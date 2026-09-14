@@ -1,3 +1,4 @@
+import { EXACT_MOVE_SCORING } from './dailyGame.ts'
 import type { StudyRegistration } from '../data/studies.ts'
 import type { DailyPuzzle } from './dailyGame.ts'
 
@@ -48,6 +49,6 @@ export function createPrivatePreviewPuzzle(registration: StudyRegistration): Dai
     instruction: 'Private preview: rank the five developments by their effect on the selected contract. The market record and resolution remain sealed until you reveal.',
     eventIds,
     initialOrder: eventIds,
-    scoring: { version: 'pairwise-anchor-1pt-v2', tieThreshold: study.measurementProfile.tieThreshold, tieGrouping: 'anchor-window' },
+    scoring: { ...EXACT_MOVE_SCORING },
   }
 }

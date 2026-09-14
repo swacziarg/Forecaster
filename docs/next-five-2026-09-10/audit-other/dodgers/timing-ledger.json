@@ -1,0 +1,104 @@
+{
+  "artifactType": "Dodgers v2 independent source timing audit",
+  "officialGameFeeds": {
+    "glasnow-injury": {
+      "transactionEndpoint": "https://statsapi.mlb.com/api/v1/transactions?date=2025-04-28&teamId=119",
+      "transactionId": 832493,
+      "effectiveDate": "2025-04-28",
+      "description": "Los Angeles Dodgers placed RHP Tyler Glasnow on the 15-day injured list. Right shoulder inflammation.",
+      "pressRelease": "https://www.mlb.com/dodgers/press-release/press-release-dodgers-recall-noah-davis-042825",
+      "pressReleasePublishedAt": "2025-04-29T00:37:19.495Z",
+      "pressReleaseSnapshot": "glasnow-transaction-release-apr28.html",
+      "pressReleaseSha256": "194e122924a694901d5bf165d5e51ea3d6719090dbf191b03f7bf9fae4c02495",
+      "rawFile": "mlb-api/transactions-2025-04-28-team119.json"
+    },
+    "ohtani-return": {
+      "gamePk": 777490,
+      "scheduleEndpoint": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2025-06-16&teamId=119",
+      "liveEndpoint": "https://statsapi.mlb.com/api/v1.1/game/777490/feed/live",
+      "finalPlayEndTime": "2025-06-17T04:55:27.945Z",
+      "announcementUrl": "https://twitter.com/Dodgers/status/1934438311449473336",
+      "announcementTweetId": "1934438311449473336",
+      "announcementTweetTimestamp": "2025-06-16T02:30:08.232Z",
+      "announcementSnapshot": "ohtani-announcement-june15.html",
+      "announcementArticlePublishedAt": "2025-06-16T14:12:00Z",
+      "rawSchedule": "mlb-api/schedule-2025-06-16.json",
+      "rawLive": "mlb-api/game-777490-live.json",
+      "topFirstInningEndTime": "2025-06-17T02:22:02.631Z",
+      "bottomFirstInningEndTime": "2025-06-17T02:30:55.630Z",
+      "pitchingReplacementEndTime": "2025-06-17T02:31:59.850Z",
+      "parentAuditNote": "Use pitchingReplacementEndTime for the completed one-inning pitching appearance, not bottom of the first inning."
+    },
+    "seven-losses": {
+      "gamePk": 777143,
+      "scheduleEndpoint": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2025-07-11&teamId=119",
+      "liveEndpoint": "https://statsapi.mlb.com/api/v1.1/game/777143/feed/live",
+      "finalPlayEndTime": "2025-07-12T05:01:14.061Z",
+      "rawSchedule": "mlb-api/schedule-2025-07-11.json",
+      "rawLive": "mlb-api/game-777143-live.json"
+    },
+    "nlds-escape": {
+      "gamePk": 813042,
+      "scheduleEndpoint": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2025-10-09&teamId=119",
+      "liveEndpoint": "https://statsapi.mlb.com/api/v1.1/game/813042/feed/live",
+      "finalPlayEndTime": "2025-10-10T01:39:19.872Z",
+      "rawSchedule": "mlb-api/schedule-2025-10-09.json",
+      "rawLive": "mlb-api/game-813042-live.json"
+    },
+    "pennant-sweep": {
+      "gamePk": 813031,
+      "scheduleEndpoint": "https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=2025-10-17&teamId=119",
+      "liveEndpoint": "https://statsapi.mlb.com/api/v1.1/game/813031/feed/live",
+      "finalPlayEndTime": "2025-10-18T03:20:26.349Z",
+      "rawSchedule": "mlb-api/schedule-2025-10-17.json",
+      "rawLive": "mlb-api/game-813031-live.json"
+    }
+  },
+  "entries": [
+    {
+      "id": "glasnow-injury",
+      "url": "https://www.mlb.com/news/tyler-glasnow-injured-list-shoulder-inflammation",
+      "publishedAt": "2025-04-29T01:22:56.051Z",
+      "modifiedAt": "2025-04-29T01:22:56.051Z",
+      "eventBound": "2025-04-27 exit / 2025-04-28 IL placement",
+      "sha256": "e41c86dff4cb76971dfbebe8ae644c27b0b3a9ada78d9e48c4adcfe358f0bc12",
+      "claimSupport": "explicit; official transaction confirms April 28 IL placement"
+    },
+    {
+      "id": "ohtani-return",
+      "url": "https://www.mlb.com/news/shohei-ohtani-makes-dodgers-pitching-debut",
+      "publishedAt": "2025-06-17T06:31:00Z",
+      "modifiedAt": "2025-06-17T07:17:34.434Z",
+      "eventBound": "2025-06-16 local / 2025-06-17 UTC debut",
+      "sha256": "9e75c8ab32166e18547d4af3112fa17c303dedde2285350cf0604891cf8e520a",
+      "claimSupport": "explicit; page says one run in one inning"
+    },
+    {
+      "id": "seven-losses",
+      "url": "https://www.mlb.com/dodgers/news/dodgers-lose-7th-straight-game",
+      "publishedAt": "2025-07-12T06:57:00Z",
+      "modifiedAt": "2025-07-12T06:57:03.618Z",
+      "eventBound": "2025-07-11 local / 2025-07-12 UTC report",
+      "sha256": "781d07de8a7613889dddcbf8262d3484bf6fb2acf07b1fdb92fef555d26e7b69",
+      "claimSupport": "explicit"
+    },
+    {
+      "id": "nlds-escape",
+      "url": "https://www.mlb.com/news/dodgers-win-nlds-2025-vs-phillies",
+      "publishedAt": "2025-10-10T04:18:00Z",
+      "modifiedAt": "2025-10-10T07:11:42.629Z",
+      "eventBound": "2025-10-09 game / 2025-10-10 UTC report",
+      "sha256": "8704e98acd46e0306999c2bafb5e8ce22536b6bf6b56f6cd43b2a0625b2cb9cf",
+      "claimSupport": "explicit"
+    },
+    {
+      "id": "pennant-sweep",
+      "url": "https://www.mlb.com/dodgers/news/dodgers-win-2025-nlcs",
+      "publishedAt": "2025-10-18T06:08:00Z",
+      "modifiedAt": "2025-10-18T06:39:41.955Z",
+      "eventBound": "2025-10-17 game / 2025-10-18 UTC report",
+      "sha256": "f6a0ddba16d44a81ed1d2f3598094d83ad6dda772fc41eb0fae5a709c59e055e",
+      "claimSupport": "explicit"
+    }
+  ]
+}

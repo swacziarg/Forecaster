@@ -1,0 +1,13 @@
+{
+  "auditDate":"2026-09-10",
+  "method":"For each anchor, use the primary issuer's stated embargo/public delivery time where available. A page's current crawl/update time is not treated as the historical first-public time.",
+  "anchors":[
+    {"eventId":"july-jobs","sourceUrl":"https://www.bls.gov/news.release/archives/empsit_08022024.htm","firstPublic":"2024-08-02T12:30:00Z","basis":"BLS page states transmission embargoed until 8:30 a.m. ET Friday, August 2, 2024; headline reports payrolls +114,000 and unemployment 4.3%.","claimSupport":"direct","timingStatus":"verified"},
+    {"eventId":"july-cpi","sourceUrl":"https://www.bls.gov/news.release/archives/cpi_08142024.htm","firstPublic":"2024-08-14T12:30:00Z","basis":"BLS page states transmission embargoed until 8:30 a.m. ET Wednesday, August 14, 2024; headline reports CPI +0.2% m/m, +2.9% y/y, and all items less food and energy +0.2% m/m.","claimSupport":"direct","timingStatus":"verified"},
+    {"eventId":"powell-jackson-hole","sourceUrl":"https://www.federalreserve.gov/newsevents/speech/files/powell20240823a.pdf","htmlUrl":"https://www.federalreserve.gov/newsevents/speech/powell20240823a.htm","firstPublic":"2024-08-23T14:00:00Z","basis":"Fed PDF says 'For release on delivery 10:00 a.m. EDT (8:00 a.m. MDT) August 23, 2024'; 10:00 EDT equals 14:00 UTC. The HTML text contains 'The time has come for policy to adjust.'","claimSupport":"direct","timingStatus":"verified"},
+    {"eventId":"august-jobs","sourceUrl":"https://www.bls.gov/news.release/archives/empsit_09062024.htm","firstPublic":"2024-09-06T12:30:00Z","basis":"BLS page states transmission embargoed until 8:30 a.m. ET Friday, September 6, 2024; headline reports payrolls +142,000 and unemployment 4.2%. It also records June and July downward revisions.","claimSupport":"direct","timingStatus":"verified"},
+    {"eventId":"august-cpi","sourceUrl":"https://www.bls.gov/news.release/archives/cpi_09112024.htm","firstPublic":"2024-09-11T12:30:00Z","basis":"BLS page states transmission embargoed until 8:30 a.m. ET Wednesday, September 11, 2024; table reports all items less food and energy +0.3% m/m, the draft's core-CPI proxy.","claimSupport":"direct","timingStatus":"verified"}
+  ],
+  "corroboratingOfficialSchedule":"https://www.bls.gov/schedule/2024/08_sched_list.htm",
+  "marketMetadataCaveat":"The retained exact-token CSV begins 2024-07-25T19:00:00Z while raw-market metadata lists startDate 2024-08-02T20:43:54.565Z. This audit does not alter the raw series or decide provider semantics; it records the discrepancy. All five source-public times are after the metadata startDate except the July jobs report, which is a pre-start event and therefore should be explicitly disclosed when interpreting its window."
+}

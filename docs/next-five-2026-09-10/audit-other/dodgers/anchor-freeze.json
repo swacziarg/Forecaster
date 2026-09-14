@@ -1,0 +1,50 @@
+{
+  "policy": "Evidence-driven timing repair before corrected scoring; prior scores known.",
+  "entries": [
+    {
+      "eventId": "glasnow-injury",
+      "oldCutoff": "2025-04-29T01:22:56.051Z",
+      "newCutoff": "2025-04-29T00:37:19.495Z",
+      "evidence": "https://www.mlb.com/dodgers/press-release/press-release-dodgers-recall-noah-davis-042825",
+      "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/dodgers/glasnow-transaction-release-apr28.html",
+      "sha256": "194e122924a694901d5bf165d5e51ea3d6719090dbf191b03f7bf9fae4c02495",
+      "reason": "Original team roster announcement publication. Official transaction date corroborates April28; no precise earlier social announcement was established. Prior game exit occurred April27."
+    },
+    {
+      "eventId": "ohtani-return",
+      "oldCutoff": "2025-06-17T07:17:34.434Z",
+      "newCutoff": "2025-06-17T02:31:59.850Z",
+      "evidence": "https://statsapi.mlb.com/api/v1.1/game/777490/feed/live",
+      "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/dodgers/mlb-api/game-777490-live.json",
+      "sha256": "84336f5f5723fcd14a15877f141e54392483b850846ba7cf1b8d8591d38e406d",
+      "reason": "Historical pitching replacement makes the one-inning line final; inning top ended02:22:02, Banda replaced Ohtani02:31:59.850UTC. Scored event is the debut, not the June15 announcement or end of the whole game."
+    },
+    {
+      "eventId": "seven-losses",
+      "oldCutoff": "2025-07-12T06:57:03.618Z",
+      "newCutoff": "2025-07-12T05:01:14.061Z",
+      "evidence": "https://statsapi.mlb.com/api/v1.1/game/777143/feed/live",
+      "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/dodgers/mlb-api/game-777143-live.json",
+      "sha256": "23724358272302c711e8ef2a935e03a413fdd96ca27a0553155db601ec71dfb0",
+      "reason": "Historical public live-game result timestamp recorded in official MLB play-by-play, not retrieval or publication time of this current API snapshot."
+    },
+    {
+      "eventId": "nlds-escape",
+      "oldCutoff": "2025-10-10T07:11:42.629Z",
+      "newCutoff": "2025-10-10T01:39:19.872Z",
+      "evidence": "https://statsapi.mlb.com/api/v1.1/game/813042/feed/live",
+      "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/dodgers/mlb-api/game-813042-live.json",
+      "sha256": "4a74b3bb935cdab88428ee188d330528829929a3064c5334ef55bcfc18670639",
+      "reason": "Historical public live-game result timestamp recorded in official MLB play-by-play, not retrieval or publication time of this current API snapshot."
+    },
+    {
+      "eventId": "pennant-sweep",
+      "oldCutoff": "2025-10-18T06:39:41.955Z",
+      "newCutoff": "2025-10-18T03:20:26.349Z",
+      "evidence": "https://statsapi.mlb.com/api/v1.1/game/813031/feed/live",
+      "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/dodgers/mlb-api/game-813031-live.json",
+      "sha256": "cc4aad50cde836ee10c6a004f010835c03856b05a800fafd307f949ffef85d18",
+      "reason": "Historical public live-game result timestamp recorded in official MLB play-by-play, not retrieval or publication time of this current API snapshot."
+    }
+  ]
+}

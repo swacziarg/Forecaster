@@ -1,0 +1,5941 @@
+NATIONAL BASKETBALL ASSOCIATION OFFICIAL SCORER'S REPORT
+FINAL BOX
+Sunday, May 18, 2025 Paycom Center, Oklahoma City, OK
+Officials:
+ 
+#48 Scott Foster,
+ 
+#58 Josh Tiven,
+ 
+#60 James Williams,
+ 
+#26 Pat Fraher
+Game Duration: 
+2:20
+Attendance: 18203 
+(Sellout)
+VISITOR: 
+Denver Nuggets
+ 
+(3-4)
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+1
+Michael Porter Jr.
+F
+23:13
+3
+8
+0
+4
+0
+0
+2
+1
+3
+1
+2
+1
+0
+0
+-8
+6
+32
+Aaron Gordon
+F
+24:30
+2
+4
+1
+3
+3
+3
+4
+7
+11
+0
+1
+0
+4
+0
+-9
+8
+15
+Nikola Jokic
+C
+36:50
+5
+9
+1
+2
+9
+11
+1
+8
+9
+7
+3
+0
+5
+0
+-23
+20
+0
+Christian Braun
+G
+32:47
+7
+14
+2
+8
+3
+4
+2
+2
+4
+3
+5
+1
+2
+0
+-28
+19
+27
+Jamal Murray
+G
+34:45
+6
+16
+1
+8
+0
+0
+0
+1
+1
+2
+1
+3
+2
+1
+-21
+13
+4
+Russell Westbrook
+21:48
+2
+7
+2
+5
+0
+0
+1
+4
+5
+2
+3
+0
+4
+0
+-34
+6
+8
+Peyton Watson
+19:45
+1
+8
+0
+3
+2
+4
+2
+2
+4
+2
+1
+0
+2
+1
+-27
+4
+3
+Julian Strawther
+17:34
+3
+8
+0
+2
+0
+0
+1
+2
+3
+0
+0
+1
+3
+0
+-10
+6
+5
+Hunter Tyson
+09:36
+2
+3
+1
+2
+0
+0
+2
+1
+3
+1
+2
+0
+0
+0
+0
+5
+22
+Zeke Nnaji
+09:36
+0
+2
+0
+2
+0
+0
+0
+2
+2
+0
+1
+0
+0
+0
+0
+0
+24
+Jalen Pickett
+09:36
+2
+5
+2
+5
+0
+0
+0
+2
+2
+2
+0
+0
+0
+0
+0
+6
+31
+Vlatko Cancar
+DNP - Coach's Decision
+6
+DeAndre Jordan
+DNP - Coach's Decision
+9
+Dario Saric
+DNP - Coach's Decision
+240:00
+33
+84
+10
+44
+17
+22
+15
+32
+47
+20
+19
+6
+22
+2
+-32
+93
+39.3%
+22.7%
+77.3%
+TM REB: 9
+TOT TO: 23 (37 PTS)
+HOME: 
+OKLAHOMA CITY THUNDER
+ 
+(4-3)
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+8
+Jalen Williams
+F
+32:41
+10
+17
+2
+5
+2
+3
+1
+4
+5
+7
+0
+1
+1
+0
+35
+24
+7
+Chet Holmgren
+F
+28:27
+4
+9
+0
+3
+5
+6
+3
+8
+11
+1
+3
+1
+2
+1
+34
+13
+55
+Isaiah Hartenstein
+C
+17:05
+5
+7
+0
+0
+0
+0
+4
+3
+7
+1
+2
+0
+0
+0
+-7
+10
+5
+Luguentz Dort
+G
+17:15
+2
+7
+1
+5
+1
+2
+4
+1
+5
+2
+3
+2
+2
+0
+3
+6
+2
+Shai Gilgeous-Alexander
+G
+36:03
+12
+19
+3
+4
+8
+9
+0
+3
+3
+4
+2
+3
+0
+1
+32
+35
+22
+Cason Wallace
+28:35
+3
+10
+1
+6
+0
+0
+1
+2
+3
+5
+1
+2
+1
+0
+38
+7
+9
+Alex Caruso
+25:45
+5
+7
+1
+3
+0
+0
+0
+0
+0
+3
+3
+3
+0
+0
+40
+11
+21
+Aaron Wiggins
+19:22
+3
+11
+2
+8
+0
+0
+2
+2
+4
+3
+2
+2
+0
+1
+19
+8
+6
+Jaylin Williams
+07:40
+0
+3
+0
+1
+0
+0
+0
+2
+2
+1
+0
+1
+0
+0
+-6
+0
+11
+Isaiah Joe
+03:33
+1
+1
+1
+1
+2
+2
+0
+0
+0
+1
+2
+1
+0
+0
+4
+5
+25
+Ajay Mitchell
+07:40
+2
+2
+1
+1
+0
+0
+0
+1
+1
+0
+1
+0
+1
+0
+-6
+5
+34
+Kenrich Williams
+07:40
+0
+3
+0
+2
+1
+2
+0
+1
+1
+0
+0
+0
+0
+0
+-6
+1
+3
+Dillon Jones
+04:07
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+2
+0
+-10
+0
+13
+Ousmane Dieng
+04:07
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+-10
+0
+240:00
+47
+96
+12
+39
+19
+24
+15
+29
+44
+28
+19
+16
+9
+3
+32
+125
+49%
+30.8%
+79.2%
+TM REB: 10
+TOT TO: 10 (7 PTS)
+SCORE BY PERIOD
+1
+2
+3
+4
+FINAL
+Nuggets
+26
+20
+26
+21
+93
+THUNDER
+21
+39
+37
+28
+125
+Inactive: Nuggets - Holmes II (Injury/Illness - Right Achilles Tendon; Repair )
+Inactive: Thunder - Topic (Injury/Illness - Left Knee; Surgery )
+Points in the Paint: Nuggets 42 (21/33), THUNDER 64 (32/52)
+2nd Chance Points: Nuggets 14 (4/11), THUNDER 19 (6/11)
+Fast Break Points: Nuggets 14 (4/10), THUNDER 27 (11/17)
+ 
+Biggest Lead: Nuggets 11, THUNDER 43
+Lead Changes: 1
+Times Tied: 4
+Flagrant Fouls
+ 
+Nuggets (1): 
+11:10 3rd Gordon-FLG1
+ 
+THUNDER (0): 
+NONE
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL SCORER'S REPORT
+1st QUARTER ONLY
+Sunday, May 18, 2025 Paycom Center, Oklahoma City, OK
+Officials:
+ 
+#48 Scott Foster,
+ 
+#58 Josh Tiven,
+ 
+#60 James Williams,
+ 
+#26 Pat Fraher
+Period Duration: 
+0:25
+Attendance: 18203 
+(Sellout)
+VISITOR: 
+Denver Nuggets
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+1
+Michael Porter Jr.
+F
+06:53
+1
+2
+0
+0
+0
+0
+2
+0
+2
+0
+1
+0
+0
+0
+11
+2
+32
+Aaron Gordon
+F
+07:47
+1
+2
+0
+1
+1
+1
+1
+4
+5
+0
+0
+0
+1
+0
+11
+3
+15
+Nikola Jokic
+C
+12:00
+1
+3
+0
+0
+5
+6
+0
+4
+4
+3
+0
+0
+0
+0
+5
+7
+0
+Christian Braun
+G
+12:00
+4
+7
+1
+3
+0
+0
+0
+0
+0
+2
+0
+0
+1
+0
+5
+9
+27
+Jamal Murray
+G
+12:00
+1
+3
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+5
+2
+4
+Russell Westbrook
+05:07
+1
+3
+1
+2
+0
+0
+0
+2
+2
+0
+0
+0
+2
+0
+-6
+3
+8
+Peyton Watson
+04:13
+0
+0
+0
+0
+0
+2
+0
+1
+1
+0
+0
+0
+0
+0
+-6
+0
+31
+Vlatko Cancar
+DNP - Coach's Decision
+6
+DeAndre Jordan
+DNP - Coach's Decision
+22
+Zeke Nnaji
+DNP - Coach's Decision
+24
+Jalen Pickett
+DNP - Coach's Decision
+9
+Dario Saric
+DNP - Coach's Decision
+3
+Julian Strawther
+DNP - Coach's Decision
+5
+Hunter Tyson
+DNP - Coach's Decision
+60:00
+9
+20
+2
+6
+6
+9
+3
+11
+14
+5
+1
+1
+4
+0
+5
+26
+45%
+33.3%
+66.7%
+TM REB: 4
+TOT TO: 4 (2 PTS)
+HOME: 
+OKLAHOMA CITY THUNDER
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+8
+Jalen Williams
+F
+07:23
+0
+1
+0
+0
+0
+0
+0
+1
+1
+1
+0
+0
+1
+0
+-11
+0
+7
+Chet Holmgren
+F
+09:47
+3
+6
+0
+1
+0
+0
+0
+4
+4
+0
+1
+0
+0
+1
+0
+6
+55
+Isaiah Hartenstein
+C
+06:29
+2
+3
+0
+0
+0
+0
+2
+0
+2
+0
+1
+0
+0
+0
+-11
+4
+5
+Luguentz Dort
+G
+05:35
+0
+3
+0
+2
+0
+0
+0
+1
+1
+0
+2
+0
+0
+0
+-8
+0
+2
+Shai Gilgeous-Alexander
+G
+12:00
+2
+3
+0
+0
+0
+0
+0
+0
+0
+1
+0
+1
+0
+0
+-5
+4
+22
+Cason Wallace
+07:44
+1
+4
+0
+2
+0
+0
+0
+1
+1
+2
+1
+0
+0
+0
+1
+2
+9
+Alex Caruso
+06:25
+1
+3
+1
+3
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+3
+3
+21
+Aaron Wiggins
+04:37
+1
+2
+0
+0
+0
+0
+1
+0
+1
+2
+0
+1
+0
+1
+6
+2
+13
+Ousmane Dieng
+DNP - Coach's Decision
+11
+Isaiah Joe
+DNP - Coach's Decision
+3
+Dillon Jones
+DNP - Coach's Decision
+25
+Ajay Mitchell
+DNP - Coach's Decision
+6
+Jaylin Williams
+DNP - Coach's Decision
+34
+Kenrich Williams
+DNP - Coach's Decision
+60:00
+10
+25
+1
+8
+0
+0
+3
+7
+10
+6
+5
+2
+1
+2
+-5
+21
+40%
+12.5%
+0%
+TM REB: 1
+TOT TO: 1 (0 PTS)
+SCORE BY PERIOD
+1
+FINAL
+Nuggets
+26
+26
+THUNDER
+21
+21
+Inactive: Nuggets - Holmes II (Injury/Illness - Right Achilles Tendon; Repair )
+Inactive: Thunder - Topic (Injury/Illness - Left Knee; Surgery )
+Points in the Paint: Nuggets 14 (7/11), THUNDER 16 (8/15)
+2nd Chance Points: Nuggets 3 (1/1), THUNDER 4 (2/3)
+Fast Break Points: Nuggets 2 (0/1), THUNDER 2 (1/3)
+ 
+Biggest Lead: Nuggets 11, THUNDER 0
+Lead Changes: 0
+Times Tied: 2
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL SCORER'S REPORT
+2nd QUARTER ONLY
+Sunday, May 18, 2025 Paycom Center, Oklahoma City, OK
+Officials:
+ 
+#48 Scott Foster,
+ 
+#58 Josh Tiven,
+ 
+#60 James Williams,
+ 
+#26 Pat Fraher
+Period Duration: 
+0:31
+Attendance: 18203 
+(Sellout)
+VISITOR: 
+Denver Nuggets
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+1
+Michael Porter Jr.
+F
+06:37
+0
+2
+0
+2
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+-4
+0
+32
+Aaron Gordon
+F
+09:29
+1
+1
+1
+1
+2
+2
+2
+1
+3
+0
+0
+0
+1
+0
+-12
+5
+15
+Nikola Jokic
+C
+10:27
+3
+5
+0
+1
+4
+5
+1
+1
+2
+0
+1
+0
+3
+0
+-11
+10
+0
+Christian Braun
+G
+09:04
+1
+4
+1
+4
+0
+0
+0
+1
+1
+0
+2
+1
+1
+0
+-17
+3
+27
+Jamal Murray
+G
+09:20
+1
+4
+0
+2
+0
+0
+0
+0
+0
+1
+0
+1
+1
+0
+-11
+2
+4
+Russell Westbrook
+07:46
+0
+0
+0
+0
+0
+0
+1
+2
+3
+2
+1
+0
+0
+0
+-17
+0
+8
+Peyton Watson
+04:04
+0
+3
+0
+1
+0
+0
+1
+1
+2
+0
+1
+0
+0
+0
+-15
+0
+3
+Julian Strawther
+03:13
+0
+1
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+2
+0
+-8
+0
+31
+Vlatko Cancar
+DNP - Coach's Decision
+6
+DeAndre Jordan
+DNP - Coach's Decision
+22
+Zeke Nnaji
+DNP - Coach's Decision
+24
+Jalen Pickett
+DNP - Coach's Decision
+9
+Dario Saric
+DNP - Coach's Decision
+5
+Hunter Tyson
+DNP - Coach's Decision
+60:00
+6
+20
+2
+12
+6
+7
+5
+7
+12
+3
+5
+2
+8
+0
+-19
+20
+30%
+16.7%
+85.7%
+TM REB: 2
+TOT TO: 8 (10 PTS)
+HOME: 
+OKLAHOMA CITY THUNDER
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+8
+Jalen Williams
+F
+10:47
+8
+11
+1
+2
+0
+1
+0
+0
+0
+2
+0
+1
+0
+0
+22
+17
+7
+Chet Holmgren
+F
+06:58
+1
+2
+0
+1
+0
+0
+1
+2
+3
+0
+1
+1
+1
+0
+11
+2
+55
+Isaiah Hartenstein
+C
+05:08
+1
+2
+0
+0
+0
+0
+2
+1
+3
+1
+1
+0
+0
+0
+6
+2
+5
+Luguentz Dort
+G
+06:11
+2
+3
+1
+2
+0
+0
+3
+0
+3
+2
+0
+2
+1
+0
+4
+5
+2
+Shai Gilgeous-Alexander
+G
+09:49
+2
+4
+1
+1
+3
+4
+0
+3
+3
+2
+2
+0
+0
+1
+17
+8
+22
+Cason Wallace
+07:58
+0
+1
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+19
+0
+9
+Alex Caruso
+08:28
+1
+1
+0
+0
+0
+0
+0
+0
+0
+2
+2
+1
+0
+0
+11
+2
+21
+Aaron Wiggins
+04:41
+1
+5
+1
+5
+0
+0
+0
+0
+0
+1
+0
+1
+0
+0
+5
+3
+13
+Ousmane Dieng
+DNP - Coach's Decision
+11
+Isaiah Joe
+DNP - Coach's Decision
+3
+Dillon Jones
+DNP - Coach's Decision
+25
+Ajay Mitchell
+DNP - Coach's Decision
+6
+Jaylin Williams
+DNP - Coach's Decision
+34
+Kenrich Williams
+DNP - Coach's Decision
+60:00
+16
+29
+4
+12
+3
+5
+6
+6
+12
+10
+6
+6
+2
+1
+19
+39
+55.2%
+33.3%
+60%
+TM REB: 4
+TOT TO: 2 (0 PTS)
+SCORE BY PERIOD
+2
+FINAL
+Nuggets
+20
+20
+THUNDER
+39
+39
+Inactive: Nuggets - Holmes II (Injury/Illness - Right Achilles Tendon; Repair )
+Inactive: Thunder - Topic (Injury/Illness - Left Knee; Surgery )
+Points in the Paint: Nuggets 6 (3/6), THUNDER 24 (12/17)
+2nd Chance Points: Nuggets 4 (1/3), THUNDER 7 (3/5)
+Fast Break Points: Nuggets 3 (1/3), THUNDER 8 (4/6)
+ 
+Biggest Lead: Nuggets 5, THUNDER 14
+Lead Changes: 1
+Times Tied: 2
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL SCORER'S REPORT
+FIRST HALF
+Sunday, May 18, 2025 Paycom Center, Oklahoma City, OK
+Officials:
+ 
+#48 Scott Foster,
+ 
+#58 Josh Tiven,
+ 
+#60 James Williams,
+ 
+#26 Pat Fraher
+Period Duration: 
+1:00
+Attendance: 18203 
+(Sellout)
+VISITOR: 
+Denver Nuggets
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+1
+Michael Porter Jr.
+F
+13:30
+1
+4
+0
+2
+0
+0
+2
+1
+3
+0
+1
+0
+0
+0
+7
+2
+32
+Aaron Gordon
+F
+17:16
+2
+3
+1
+2
+3
+3
+3
+5
+8
+0
+0
+0
+2
+0
+-1
+8
+15
+Nikola Jokic
+C
+22:27
+4
+8
+0
+1
+9
+11
+1
+5
+6
+3
+1
+0
+3
+0
+-6
+17
+0
+Christian Braun
+G
+21:04
+5
+11
+2
+7
+0
+0
+0
+1
+1
+2
+2
+1
+2
+0
+-12
+12
+27
+Jamal Murray
+G
+21:20
+2
+7
+0
+2
+0
+0
+0
+0
+0
+1
+0
+2
+1
+0
+-6
+4
+4
+Russell Westbrook
+12:53
+1
+3
+1
+2
+0
+0
+1
+4
+5
+2
+1
+0
+2
+0
+-23
+3
+8
+Peyton Watson
+08:17
+0
+3
+0
+1
+0
+2
+1
+2
+3
+0
+1
+0
+0
+0
+-21
+0
+3
+Julian Strawther
+03:13
+0
+1
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+2
+0
+-8
+0
+31
+Vlatko Cancar
+DNP - Coach's Decision
+6
+DeAndre Jordan
+DNP - Coach's Decision
+22
+Zeke Nnaji
+DNP - Coach's Decision
+24
+Jalen Pickett
+DNP - Coach's Decision
+9
+Dario Saric
+DNP - Coach's Decision
+5
+Hunter Tyson
+DNP - Coach's Decision
+120:00
+15
+40
+4
+18
+12
+16
+8
+18
+26
+8
+6
+3
+12
+0
+-14
+46
+37.5%
+22.2%
+75%
+TM REB: 6
+TOT TO: 12 (12 PTS)
+HOME: 
+OKLAHOMA CITY THUNDER
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+8
+Jalen Williams
+F
+18:10
+8
+12
+1
+2
+0
+1
+0
+1
+1
+3
+0
+1
+1
+0
+11
+17
+7
+Chet Holmgren
+F
+16:45
+4
+8
+0
+2
+0
+0
+1
+6
+7
+0
+2
+1
+1
+1
+11
+8
+55
+Isaiah Hartenstein
+C
+11:37
+3
+5
+0
+0
+0
+0
+4
+1
+5
+1
+2
+0
+0
+0
+-5
+6
+5
+Luguentz Dort
+G
+11:46
+2
+6
+1
+4
+0
+0
+3
+1
+4
+2
+2
+2
+1
+0
+-4
+5
+2
+Shai Gilgeous-Alexander
+G
+21:49
+4
+7
+1
+1
+3
+4
+0
+3
+3
+3
+2
+1
+0
+1
+12
+12
+22
+Cason Wallace
+15:42
+1
+5
+0
+3
+0
+0
+0
+1
+1
+2
+1
+0
+0
+0
+20
+2
+9
+Alex Caruso
+14:53
+2
+4
+1
+3
+0
+0
+0
+0
+0
+2
+2
+1
+0
+0
+14
+5
+21
+Aaron Wiggins
+09:18
+2
+7
+1
+5
+0
+0
+1
+0
+1
+3
+0
+2
+0
+1
+11
+5
+13
+Ousmane Dieng
+DNP - Coach's Decision
+11
+Isaiah Joe
+DNP - Coach's Decision
+3
+Dillon Jones
+DNP - Coach's Decision
+25
+Ajay Mitchell
+DNP - Coach's Decision
+6
+Jaylin Williams
+DNP - Coach's Decision
+34
+Kenrich Williams
+DNP - Coach's Decision
+120:00
+26
+54
+5
+20
+3
+5
+9
+13
+22
+16
+11
+8
+3
+3
+14
+60
+48.1%
+25%
+60%
+TM REB: 5
+TOT TO: 3 (0 PTS)
+SCORE BY PERIOD
+1
+2
+FINAL
+Nuggets
+26
+20
+46
+THUNDER
+21
+39
+60
+Inactive: Nuggets - Holmes II (Injury/Illness - Right Achilles Tendon; Repair )
+Inactive: Thunder - Topic (Injury/Illness - Left Knee; Surgery )
+Points in the Paint: Nuggets 20 (10/17), THUNDER 40 (20/32)
+2nd Chance Points: Nuggets 7 (2/4), THUNDER 11 (5/8)
+Fast Break Points: Nuggets 5 (1/4), THUNDER 10 (5/9)
+ 
+Biggest Lead: Nuggets 11, THUNDER 14
+Lead Changes: 1
+Times Tied: 4
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL SCORER'S REPORT
+3rd QUARTER ONLY
+Sunday, May 18, 2025 Paycom Center, Oklahoma City, OK
+Officials:
+ 
+#48 Scott Foster,
+ 
+#58 Josh Tiven,
+ 
+#60 James Williams,
+ 
+#26 Pat Fraher
+Period Duration: 
+0:34
+Attendance: 18203 
+(Sellout)
+VISITOR: 
+Denver Nuggets
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+1
+Michael Porter Jr.
+F
+07:19
+2
+4
+0
+2
+0
+0
+0
+0
+0
+1
+1
+1
+0
+0
+-8
+4
+32
+Aaron Gordon
+F
+07:14
+0
+1
+0
+1
+0
+0
+1
+2
+3
+0
+1
+0
+2
+0
+-8
+0
+15
+Nikola Jokic
+C
+11:59
+1
+1
+1
+1
+0
+0
+0
+2
+2
+4
+1
+0
+1
+0
+-10
+3
+0
+Christian Braun
+G
+09:19
+2
+2
+0
+0
+3
+4
+2
+1
+3
+1
+2
+0
+0
+0
+-9
+7
+27
+Jamal Murray
+G
+11:01
+3
+8
+1
+6
+0
+0
+0
+1
+1
+1
+1
+0
+1
+1
+-8
+7
+4
+Russell Westbrook
+06:31
+1
+2
+1
+2
+0
+0
+0
+0
+0
+0
+2
+0
+1
+0
+-4
+3
+8
+Peyton Watson
+01:52
+0
+2
+0
+1
+0
+0
+1
+0
+1
+1
+0
+0
+0
+0
+-6
+0
+3
+Julian Strawther
+04:45
+1
+3
+0
+1
+0
+0
+1
+1
+2
+0
+0
+0
+0
+0
+-2
+2
+31
+Vlatko Cancar
+DNP - Coach's Decision
+6
+DeAndre Jordan
+DNP - Coach's Decision
+22
+Zeke Nnaji
+DNP - Coach's Decision
+24
+Jalen Pickett
+DNP - Coach's Decision
+9
+Dario Saric
+DNP - Coach's Decision
+5
+Hunter Tyson
+DNP - Coach's Decision
+60:00
+10
+23
+3
+14
+3
+4
+5
+7
+12
+8
+8
+1
+5
+1
+-11
+26
+43.5%
+21.4%
+75%
+TM REB: 1
+TOT TO: 5 (10 PTS)
+HOME: 
+OKLAHOMA CITY THUNDER
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+8
+Jalen Williams
+F
+10:11
+1
+4
+0
+2
+0
+0
+1
+2
+3
+4
+0
+0
+0
+0
+11
+2
+7
+Chet Holmgren
+F
+07:22
+0
+0
+0
+0
+5
+6
+2
+1
+3
+1
+0
+0
+0
+0
+10
+5
+55
+Isaiah Hartenstein
+C
+05:28
+2
+2
+0
+0
+0
+0
+0
+2
+2
+0
+0
+0
+0
+0
+-2
+4
+5
+Luguentz Dort
+G
+05:29
+0
+1
+0
+1
+1
+2
+1
+0
+1
+0
+1
+0
+1
+0
+7
+1
+2
+Shai Gilgeous-Alexander
+G
+09:54
+3
+7
+1
+2
+4
+4
+0
+0
+0
+0
+0
+1
+0
+0
+7
+11
+22
+Cason Wallace
+08:33
+2
+5
+1
+3
+0
+0
+1
+1
+2
+3
+0
+2
+1
+0
+5
+5
+9
+Alex Caruso
+06:32
+3
+3
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+13
+6
+21
+Aaron Wiggins
+06:31
+1
+3
+1
+2
+0
+0
+0
+2
+2
+0
+2
+0
+0
+0
+4
+3
+13
+Ousmane Dieng
+DNP - Coach's Decision
+11
+Isaiah Joe
+DNP - Coach's Decision
+3
+Dillon Jones
+DNP - Coach's Decision
+25
+Ajay Mitchell
+DNP - Coach's Decision
+6
+Jaylin Williams
+DNP - Coach's Decision
+34
+Kenrich Williams
+DNP - Coach's Decision
+60:00
+12
+25
+3
+10
+10
+12
+5
+8
+13
+8
+4
+4
+2
+0
+11
+37
+48%
+30%
+83.3%
+TM REB: 3
+TOT TO: 2 (4 PTS)
+SCORE BY PERIOD
+3
+FINAL
+Nuggets
+26
+26
+THUNDER
+37
+37
+Inactive: Nuggets - Holmes II (Injury/Illness - Right Achilles Tendon; Repair )
+Inactive: Thunder - Topic (Injury/Illness - Left Knee; Surgery )
+Points in the Paint: Nuggets 12 (6/8), THUNDER 18 (9/14)
+2nd Chance Points: Nuggets 2 (1/5), THUNDER 5 (0/2)
+Fast Break Points: Nuggets 4 (1/1), THUNDER 10 (5/7)
+ 
+Biggest Lead: Nuggets 0, THUNDER 27
+Lead Changes: 0
+Times Tied: 0
+Flagrant Fouls
+ 
+Nuggets (1): 
+11:10 3rd Gordon-FLG1
+ 
+THUNDER (0): 
+NONE
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL SCORER'S REPORT
+1st QUARTER - 3rd QUARTER
+Sunday, May 18, 2025 Paycom Center, Oklahoma City, OK
+Officials:
+ 
+#48 Scott Foster,
+ 
+#58 Josh Tiven,
+ 
+#60 James Williams,
+ 
+#26 Pat Fraher
+Period Duration: 
+1:50
+Attendance: 18203 
+(Sellout)
+VISITOR: 
+Denver Nuggets
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+1
+Michael Porter Jr.
+F
+20:49
+3
+8
+0
+4
+0
+0
+2
+1
+3
+1
+2
+1
+0
+0
+-1
+6
+32
+Aaron Gordon
+F
+24:30
+2
+4
+1
+3
+3
+3
+4
+7
+11
+0
+1
+0
+4
+0
+-9
+8
+15
+Nikola Jokic
+C
+34:26
+5
+9
+1
+2
+9
+11
+1
+7
+8
+7
+2
+0
+4
+0
+-16
+20
+0
+Christian Braun
+G
+30:23
+7
+13
+2
+7
+3
+4
+2
+2
+4
+3
+4
+1
+2
+0
+-21
+19
+27
+Jamal Murray
+G
+32:21
+5
+15
+1
+8
+0
+0
+0
+1
+1
+2
+1
+2
+2
+1
+-14
+11
+4
+Russell Westbrook
+19:24
+2
+5
+2
+4
+0
+0
+1
+4
+5
+2
+3
+0
+3
+0
+-27
+6
+8
+Peyton Watson
+10:09
+0
+5
+0
+2
+0
+2
+2
+2
+4
+1
+1
+0
+0
+0
+-27
+0
+3
+Julian Strawther
+07:58
+1
+4
+0
+2
+0
+0
+1
+1
+2
+0
+0
+0
+2
+0
+-10
+2
+31
+Vlatko Cancar
+DNP - Coach's Decision
+6
+DeAndre Jordan
+DNP - Coach's Decision
+22
+Zeke Nnaji
+DNP - Coach's Decision
+24
+Jalen Pickett
+DNP - Coach's Decision
+9
+Dario Saric
+DNP - Coach's Decision
+5
+Hunter Tyson
+DNP - Coach's Decision
+180:00
+25
+63
+7
+32
+15
+20
+13
+25
+38
+16
+14
+4
+17
+1
+-25
+72
+39.7%
+21.9%
+75%
+TM REB: 7
+TOT TO: 17 (22 PTS)
+HOME: 
+OKLAHOMA CITY THUNDER
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+8
+Jalen Williams
+F
+28:21
+9
+16
+1
+4
+0
+1
+1
+3
+4
+7
+0
+1
+1
+0
+22
+19
+7
+Chet Holmgren
+F
+24:07
+4
+8
+0
+2
+5
+6
+3
+7
+10
+1
+2
+1
+1
+1
+21
+13
+55
+Isaiah Hartenstein
+C
+17:05
+5
+7
+0
+0
+0
+0
+4
+3
+7
+1
+2
+0
+0
+0
+-7
+10
+5
+Luguentz Dort
+G
+17:15
+2
+7
+1
+5
+1
+2
+4
+1
+5
+2
+3
+2
+2
+0
+3
+6
+2
+Shai Gilgeous-Alexander
+G
+31:43
+7
+14
+2
+3
+7
+8
+0
+3
+3
+3
+2
+2
+0
+1
+19
+23
+22
+Cason Wallace
+24:15
+3
+10
+1
+6
+0
+0
+1
+2
+3
+5
+1
+2
+1
+0
+25
+7
+9
+Alex Caruso
+21:25
+5
+7
+1
+3
+0
+0
+0
+0
+0
+2
+3
+2
+0
+0
+27
+11
+21
+Aaron Wiggins
+15:49
+3
+10
+2
+7
+0
+0
+1
+2
+3
+3
+2
+2
+0
+1
+15
+8
+13
+Ousmane Dieng
+DNP - Coach's Decision
+11
+Isaiah Joe
+DNP - Coach's Decision
+3
+Dillon Jones
+DNP - Coach's Decision
+25
+Ajay Mitchell
+DNP - Coach's Decision
+6
+Jaylin Williams
+DNP - Coach's Decision
+34
+Kenrich Williams
+DNP - Coach's Decision
+180:00
+38
+79
+8
+30
+13
+17
+14
+21
+35
+24
+15
+12
+5
+3
+25
+97
+48.1%
+26.7%
+76.5%
+TM REB: 8
+TOT TO: 5 (4 PTS)
+SCORE BY PERIOD
+1
+2
+3
+FINAL
+Nuggets
+26
+20
+26
+72
+THUNDER
+21
+39
+37
+97
+Inactive: Nuggets - Holmes II (Injury/Illness - Right Achilles Tendon; Repair )
+Inactive: Thunder - Topic (Injury/Illness - Left Knee; Surgery )
+Points in the Paint: Nuggets 32 (16/25), THUNDER 58 (29/46)
+2nd Chance Points: Nuggets 9 (3/9), THUNDER 16 (5/10)
+Fast Break Points: Nuggets 9 (2/5), THUNDER 20 (10/16)
+ 
+Biggest Lead: Nuggets 11, THUNDER 27
+Lead Changes: 1
+Times Tied: 4
+Flagrant Fouls
+ 
+Nuggets (1): 
+11:10 3rd Gordon-FLG1
+ 
+THUNDER (0): 
+NONE
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL SCORER'S REPORT
+4th QUARTER ONLY
+Sunday, May 18, 2025 Paycom Center, Oklahoma City, OK
+Officials:
+ 
+#48 Scott Foster,
+ 
+#58 Josh Tiven,
+ 
+#60 James Williams,
+ 
+#26 Pat Fraher
+Period Duration: 
+0:25
+Attendance: 18203 
+(Sellout)
+VISITOR: 
+Denver Nuggets
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+1
+Michael Porter Jr.
+F
+02:24
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+-7
+0
+32
+Aaron Gordon
+F
+00:00
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+15
+Nikola Jokic
+C
+02:24
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+1
+0
+1
+0
+-7
+0
+0
+Christian Braun
+G
+02:24
+0
+1
+0
+1
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+-7
+0
+27
+Jamal Murray
+G
+02:24
+1
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+-7
+2
+4
+Russell Westbrook
+02:24
+0
+2
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+-7
+0
+8
+Peyton Watson
+09:36
+1
+3
+0
+1
+2
+2
+0
+0
+0
+1
+0
+0
+2
+1
+0
+4
+3
+Julian Strawther
+09:36
+2
+4
+0
+0
+0
+0
+0
+1
+1
+0
+0
+1
+1
+0
+0
+4
+5
+Hunter Tyson
+09:36
+2
+3
+1
+2
+0
+0
+2
+1
+3
+1
+2
+0
+0
+0
+0
+5
+22
+Zeke Nnaji
+09:36
+0
+2
+0
+2
+0
+0
+0
+2
+2
+0
+1
+0
+0
+0
+0
+0
+24
+Jalen Pickett
+09:36
+2
+5
+2
+5
+0
+0
+0
+2
+2
+2
+0
+0
+0
+0
+0
+6
+31
+Vlatko Cancar
+DNP - Coach's Decision
+6
+DeAndre Jordan
+DNP - Coach's Decision
+9
+Dario Saric
+DNP - Coach's Decision
+60:00
+8
+21
+3
+12
+2
+2
+2
+7
+9
+4
+5
+2
+5
+1
+-7
+21
+38.1%
+25%
+100%
+TM REB: 2
+TOT TO: 6 (15 PTS)
+HOME: 
+OKLAHOMA CITY THUNDER
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+8
+Jalen Williams
+F
+04:20
+1
+1
+1
+1
+2
+2
+0
+1
+1
+0
+0
+0
+0
+0
+13
+5
+7
+Chet Holmgren
+F
+04:20
+0
+1
+0
+1
+0
+0
+0
+1
+1
+0
+1
+0
+1
+0
+13
+0
+55
+Isaiah Hartenstein
+C
+00:00
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+5
+Luguentz Dort
+G
+00:00
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+2
+Shai Gilgeous-Alexander
+G
+04:20
+5
+5
+1
+1
+1
+1
+0
+0
+0
+1
+0
+1
+0
+0
+13
+12
+22
+Cason Wallace
+04:20
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+13
+0
+9
+Alex Caruso
+04:20
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+1
+0
+0
+13
+0
+21
+Aaron Wiggins
+03:33
+0
+1
+0
+1
+0
+0
+1
+0
+1
+0
+0
+0
+0
+0
+4
+0
+6
+Jaylin Williams
+07:40
+0
+3
+0
+1
+0
+0
+0
+2
+2
+1
+0
+1
+0
+0
+-6
+0
+11
+Isaiah Joe
+03:33
+1
+1
+1
+1
+2
+2
+0
+0
+0
+1
+2
+1
+0
+0
+4
+5
+25
+Ajay Mitchell
+07:40
+2
+2
+1
+1
+0
+0
+0
+1
+1
+0
+1
+0
+1
+0
+-6
+5
+34
+Kenrich Williams
+07:40
+0
+3
+0
+2
+1
+2
+0
+1
+1
+0
+0
+0
+0
+0
+-6
+1
+3
+Dillon Jones
+04:07
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+2
+0
+-10
+0
+13
+Ousmane Dieng
+04:07
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+-10
+0
+60:00
+9
+17
+4
+9
+6
+7
+1
+8
+9
+4
+4
+4
+4
+0
+7
+28
+52.9%
+44.4%
+85.7%
+TM REB: 2
+TOT TO: 5 (3 PTS)
+SCORE BY PERIOD
+4
+FINAL
+Nuggets
+21
+21
+THUNDER
+28
+28
+Inactive: Nuggets - Holmes II (Injury/Illness - Right Achilles Tendon; Repair )
+Inactive: Thunder - Topic (Injury/Illness - Left Knee; Surgery )
+Points in the Paint: Nuggets 10 (5/8), THUNDER 6 (3/6)
+2nd Chance Points: Nuggets 5 (1/2), THUNDER 3 (1/1)
+Fast Break Points: Nuggets 5 (2/5), THUNDER 7 (1/1)
+ 
+Biggest Lead: Nuggets 0, THUNDER 43
+Lead Changes: 0
+Times Tied: 0
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL SCORER'S REPORT
+SECOND HALF
+Sunday, May 18, 2025 Paycom Center, Oklahoma City, OK
+Officials:
+ 
+#48 Scott Foster,
+ 
+#58 Josh Tiven,
+ 
+#60 James Williams,
+ 
+#26 Pat Fraher
+Period Duration: 
+1:03
+Attendance: 18203 
+(Sellout)
+VISITOR: 
+Denver Nuggets
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+1
+Michael Porter Jr.
+F
+09:43
+2
+4
+0
+2
+0
+0
+0
+0
+0
+1
+1
+1
+0
+0
+-15
+4
+32
+Aaron Gordon
+F
+07:14
+0
+1
+0
+1
+0
+0
+1
+2
+3
+0
+1
+0
+2
+0
+-8
+0
+15
+Nikola Jokic
+C
+14:23
+1
+1
+1
+1
+0
+0
+0
+3
+3
+4
+2
+0
+2
+0
+-17
+3
+0
+Christian Braun
+G
+11:43
+2
+3
+0
+1
+3
+4
+2
+1
+3
+1
+3
+0
+0
+0
+-16
+7
+27
+Jamal Murray
+G
+13:25
+4
+9
+1
+6
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+-15
+9
+4
+Russell Westbrook
+08:55
+1
+4
+1
+3
+0
+0
+0
+0
+0
+0
+2
+0
+2
+0
+-11
+3
+8
+Peyton Watson
+11:28
+1
+5
+0
+2
+2
+2
+1
+0
+1
+2
+0
+0
+2
+1
+-6
+4
+3
+Julian Strawther
+14:21
+3
+7
+0
+1
+0
+0
+1
+2
+3
+0
+0
+1
+1
+0
+-2
+6
+5
+Hunter Tyson
+09:36
+2
+3
+1
+2
+0
+0
+2
+1
+3
+1
+2
+0
+0
+0
+0
+5
+22
+Zeke Nnaji
+09:36
+0
+2
+0
+2
+0
+0
+0
+2
+2
+0
+1
+0
+0
+0
+0
+0
+24
+Jalen Pickett
+09:36
+2
+5
+2
+5
+0
+0
+0
+2
+2
+2
+0
+0
+0
+0
+0
+6
+31
+Vlatko Cancar
+DNP - Coach's Decision
+6
+DeAndre Jordan
+DNP - Coach's Decision
+9
+Dario Saric
+DNP - Coach's Decision
+120:00
+18
+44
+6
+26
+5
+6
+7
+14
+21
+12
+13
+3
+10
+2
+-18
+47
+40.9%
+23.1%
+83.3%
+TM REB: 3
+TOT TO: 11 (25 PTS)
+HOME: 
+OKLAHOMA CITY THUNDER
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+8
+Jalen Williams
+F
+14:31
+2
+5
+1
+3
+2
+2
+1
+3
+4
+4
+0
+0
+0
+0
+24
+7
+7
+Chet Holmgren
+F
+11:42
+0
+1
+0
+1
+5
+6
+2
+2
+4
+1
+1
+0
+1
+0
+23
+5
+55
+Isaiah Hartenstein
+C
+05:28
+2
+2
+0
+0
+0
+0
+0
+2
+2
+0
+0
+0
+0
+0
+-2
+4
+5
+Luguentz Dort
+G
+05:29
+0
+1
+0
+1
+1
+2
+1
+0
+1
+0
+1
+0
+1
+0
+7
+1
+2
+Shai Gilgeous-Alexander
+G
+14:14
+8
+12
+2
+3
+5
+5
+0
+0
+0
+1
+0
+2
+0
+0
+20
+23
+22
+Cason Wallace
+12:53
+2
+5
+1
+3
+0
+0
+1
+1
+2
+3
+0
+2
+1
+0
+18
+5
+9
+Alex Caruso
+10:52
+3
+3
+0
+0
+0
+0
+0
+0
+0
+1
+1
+2
+0
+0
+26
+6
+21
+Aaron Wiggins
+10:04
+1
+4
+1
+3
+0
+0
+1
+2
+3
+0
+2
+0
+0
+0
+8
+3
+6
+Jaylin Williams
+07:40
+0
+3
+0
+1
+0
+0
+0
+2
+2
+1
+0
+1
+0
+0
+-6
+0
+11
+Isaiah Joe
+03:33
+1
+1
+1
+1
+2
+2
+0
+0
+0
+1
+2
+1
+0
+0
+4
+5
+25
+Ajay Mitchell
+07:40
+2
+2
+1
+1
+0
+0
+0
+1
+1
+0
+1
+0
+1
+0
+-6
+5
+34
+Kenrich Williams
+07:40
+0
+3
+0
+2
+1
+2
+0
+1
+1
+0
+0
+0
+0
+0
+-6
+1
+3
+Dillon Jones
+04:07
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+2
+0
+-10
+0
+13
+Ousmane Dieng
+04:07
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+-10
+0
+120:00
+21
+42
+7
+19
+16
+19
+6
+16
+22
+12
+8
+8
+6
+0
+18
+65
+50%
+36.8%
+84.2%
+TM REB: 5
+TOT TO: 7 (7 PTS)
+SCORE BY PERIOD
+3
+4
+FINAL
+Nuggets
+26
+21
+47
+THUNDER
+37
+28
+65
+Inactive: Nuggets - Holmes II (Injury/Illness - Right Achilles Tendon; Repair )
+Inactive: Thunder - Topic (Injury/Illness - Left Knee; Surgery )
+Points in the Paint: Nuggets 22 (11/16), THUNDER 24 (12/20)
+2nd Chance Points: Nuggets 7 (2/7), THUNDER 8 (1/3)
+Fast Break Points: Nuggets 9 (3/6), THUNDER 17 (6/8)
+ 
+Biggest Lead: Nuggets 0, THUNDER 43
+Lead Changes: 0
+Times Tied: 0
+Flagrant Fouls
+ 
+Nuggets (1): 
+11:10 3rd Gordon-FLG1
+ 
+THUNDER (0): 
+NONE
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL PLAY-BY-PLAY
+1st QUARTER
+Denver Nuggets at OKLAHOMA CITY THUNDER
+Sunday, May 18, 2025 Paycom Center, Oklahoma City, OK
+THUNDER Starters: 
+S.Gilgeous-Alexander
+ 
+C.Holmgren
+ 
+I.Hartenstein
+ 
+L.Dort
+ 
+J.Williams
+Nuggets Starters: 
+J.Murray
+ 
+N.Jokic
+ 
+C.Braun
+ 
+A.Gordon
+ 
+M.PorterJr.
+Time
+THUNDER
+Score
+Lead
+Nuggets
+12:00
+Start of Period (2:40 PM)
+12:00
+JUMP BALL C.Holmgren VS. N.Jokic: TIP TO C.Braun
+11:34
+0-2
+-2
+C.Braun 12' Floating Shot (N.Jokic)
+11:16
+M.PorterJr. P.FOUL (P1, T1) (S.Foster)
+11:05
+C.Holmgren Driving Layup
+2-2
+TIE
+10:55
+2-4
+-2
+C.Braun Driving Dunk
+10:34
+MISS J.Williams 1' Driving Floating Bank Shot
+10:30
+I.Hartenstein REBOUND
+10:30
+I.Hartenstein Tip Dunk
+4-4
+TIE
+10:11
+4-6
+-2
+N.Jokic Reverse Layup (C.Braun)
+10:01
+MISS L.Dort 25' 3PT Jump Shot
+09:57
+A.Gordon REBOUND
+09:47
+MISS C.Braun 23' 3PT Jump Shot
+09:45
+M.PorterJr. REBOUND
+09:44
+4-8
+-4
+M.PorterJr. Putback Layup
+09:44
+TIMEOUT (1)
+09:30
+S.Gilgeous-Alexander 16' Pullup Shot
+(J.Williams)
+6-8
+-2
+09:05
+6-11
+-5
+C.Braun 30' 3PT Pullup Shot
+08:57
+I.Hartenstein Cutting Dunk (S.Gilgeous-
+Alexander)
+8-11
+-3
+08:41
+MISS J.Murray Driving Finger Roll Layup
+08:39
+C.Holmgren REBOUND
+08:34
+MISS L.Dort 26' 3PT FB Running Shot
+08:29
+A.Gordon REBOUND
+08:25
+L.Dort S.FOUL (P1, T1) (J.Williams)
+08:25
+8-12
+-4
+N.Jokic Free Throw 1 of 2
+08:25
+8-13
+-5
+N.Jokic Free Throw 2 of 2
+08:19
+MISS C.Holmgren 23' Jump Shot
+08:14
+A.Gordon REBOUND
+07:59
+MISS C.Braun 26' 3PT Step Back Shot
+07:59
+M.PorterJr. REBOUND
+07:44
+L.Dort S.FOUL (P2, T2) (J.Tiven)
+07:44
+8-14
+-6
+N.Jokic Free Throw 1 of 2
+07:44
+SUB
+07:44
+MISS N.Jokic Free Throw 2 of 2
+07:42
+J.Williams REBOUND
+07:32
+MISS L.Dort 12' Driving Floating Bank Shot
+07:29
+N.Jokic REBOUND
+07:23
+MISS A.Gordon 26' 3PT Pullup Shot
+07:19
+L.Dort REBOUND
+07:12
+MISS I.Hartenstein Alley Oop Dunk
+07:12
+I.Hartenstein REBOUND
+07:10
+MISS C.Wallace 23' 3PT Jump Shot
+07:07
+Nuggets REBOUND
+06:59
+MISS M.PorterJr. 9' Fadeaway Shot
+06:56
+A.Gordon REBOUND
+06:53
+S.Gilgeous-Alexander STEAL
+A.Gordon Bad Pass 
+TURNOVER #1
+06:41
+MISS C.Wallace 6' Driving Floating Shot
+06:39
+A.Gordon REBOUND
+06:25
+I.Hartenstein S.FOUL (P1, T3) (J.Tiven)
+06:25
+8-15
+-7
+N.Jokic Free Throw 1 of 2
+06:25
+SUB: A.Caruso FOR L.Dort
+06:25
+8-16
+-8
+N.Jokic Free Throw 2 of 2
+06:10
+MISS A.Caruso 25' 3PT Jump Shot
+06:04
+N.Jokic REBOUND
+05:57
+8-18
+-10
+C.Braun Cutting Layup (N.Jokic)
+05:43
+S.Gilgeous-Alexander Driving Finger Roll Layup
+10-18
+-8
+05:31
+10-20
+-10
+A.Gordon Cutting Layup (N.Jokic)
+05:31
+C.Wallace S.FOUL (P1, T4) (J.Williams)
+05:31
+SUB: C.Holmgren FOR I.Hartenstein
+05:31
+10-21
+-11
+A.Gordon Free Throw 1 of 1
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL PLAY-BY-PLAY
+05:16
+J.Williams Bad Pass 
+TURNOVER #1
+J.Murray STEAL
+05:07
+C.Braun Traveling 
+TURNOVER #2
+05:07
+SUB: R.Westbrook FOR M.PorterJr.
+04:53
+MISS C.Wallace 26' 3PT Jump Shot
+04:48
+N.Jokic REBOUND
+04:37
+TIMEOUT (1)
+04:37
+SUB: A.Wiggins FOR J.Williams
+04:33
+C.Holmgren BLOCK
+MISS J.Murray 14' Step Back Shot
+04:29
+C.Holmgren REBOUND
+04:21
+MISS A.Caruso 25' 3PT Jump Shot
+04:19
+R.Westbrook REBOUND
+04:13
+A.Wiggins BLOCK
+MISS R.Westbrook FB Running Layup
+04:13
+Nuggets REBOUND
+04:13
+SUB: P.Watson FOR A.Gordon
+04:04
+C.Holmgren S.FOUL (P1.PN) (J.Tiven)
+04:04
+MISS P.Watson Free Throw 1 of 2
+04:04
+MISS P.Watson Free Throw 2 of 2
+04:03
+C.Holmgren REBOUND
+03:45
+C.Holmgren Alley Oop Dunk (C.Wallace)
+12-21
+-9
+03:27
+MISS C.Braun 21' Pullup Shot
+03:25
+C.Wallace REBOUND
+03:14
+MISS A.Wiggins Cutting Layup
+03:12
+N.Jokic REBOUND
+03:02
+A.Wiggins STEAL
+R.Westbrook Bad Pass 
+TURNOVER #3
+02:58
+MISS C.Holmgren FB Running Layup
+02:55
+R.Westbrook REBOUND
+02:37
+MISS R.Westbrook 25' 3PT Jump Shot
+02:33
+C.Holmgren REBOUND
+02:30
+C.Wallace FB Running Dunk (A.Wiggins)
+14-21
+-7
+02:04
+MISS N.Jokic 7' Hook
+02:04
+THUNDER REBOUND
+01:55
+MISS S.Gilgeous-Alexander 10' Driving Floating
+Shot
+01:52
+P.Watson REBOUND
+01:40
+14-24
+-10
+R.Westbrook 23' 3PT Jump Shot (C.Braun)
+01:27
+C.Holmgren Alley Oop Dunk (C.Wallace)
+16-24
+-8
+01:03
+16-26
+-10
+J.Murray Driving Layup
+:50.8
+A.Caruso 26' 3PT Pullup Shot (A.Wiggins)
+19-26
+-7
+:29.6
+R.Westbrook Out Of Bounds Bad Pass
+TURNOVER #4
+:16.4
+MISS C.Holmgren 23' 3PT Jump Shot
+:13.8
+A.Wiggins REBOUND
+:13.8
+A.Wiggins Tip Layup
+21-26
+-5
+:01.0
+MISS N.Jokic 23' Turnaround Fadeaway Shot
+:01.0
+Nuggets REBOUND
+End of 1st QUARTER (21-26) 
+End of Period (3:06 PM)
+1st QUARTER
+Denver Nuggets at OKLAHOMA CITY THUNDER
+Sunday, May 18, 2025 Paycom Center, Oklahoma City, OK
+THUNDER Starters: 
+S.Gilgeous-Alexander
+ 
+C.Holmgren
+ 
+I.Hartenstein
+ 
+L.Dort
+ 
+J.Williams
+Nuggets Starters: 
+J.Murray
+ 
+N.Jokic
+ 
+C.Braun
+ 
+A.Gordon
+ 
+M.PorterJr.
+Time
+THUNDER
+Score
+Lead
+Nuggets
+BIG
+ 
+HOME 
+LEAD 0
+*LEAD CHANGES 0
+BIG
+ 
+VISITOR 
+LEAD 11
+TIMES TIED 2
+1 FOR 0 PTS
+TURNOVERS
+4 FOR 2 PTS
+10/25 FOR 40%
+FIELD GOALS
+9/20 FOR 45%
+0/0 FOR 0%
+FREE THROWS
+66.6666666666667/9 FOR 66.7%
+OFF: 3 DEF: 8
+REBOUNDS
+OFF: 6 DEF: 12
+C.Holmgren: 6
+HIGH SCORER
+C.Braun: 9
+C.Holmgren: 4
+HIGH REBOUNDER
+A.Gordon: 5
+C.Wallace, A.Wiggins: 2
+HIGH ASSISTS
+N.Jokic: 3
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL PLAY-BY-PLAY
+2nd QUARTER
+Denver Nuggets at OKLAHOMA CITY THUNDER
+Sunday, May 18, 2025 Paycom Center, Oklahoma City, OK
+THUNDER Starters: 
+S.Gilgeous-Alexander
+ 
+A.Wiggins
+ 
+C.Wallace
+ 
+J.Williams
+ 
+I.Hartenstein
+Nuggets Starters: 
+C.Braun
+ 
+R.Westbrook
+ 
+P.Watson
+ 
+J.Strawther
+ 
+A.Gordon
+Time
+THUNDER
+Score
+Lead
+Nuggets
+12:00
+Start of Period (3:09 PM)
+12:00
+Possession: Thunder
+21-26
+-5
+11:46
+J.Williams Driving Layup (I.Hartenstein)
+23-26
+-3
+11:32
+A.Wiggins STEAL
+J.Strawther Lost Ball 
+TURNOVER #5
+11:28
+S.Gilgeous-Alexander FB Running Layup
+25-26
+-1
+11:13
+MISS P.Watson 23' 3PT Jump Shot
+11:09
+S.Gilgeous-Alexander REBOUND
+11:01
+MISS S.Gilgeous-Alexander Driving Layup
+11:00
+I.Hartenstein REBOUND
+10:58
+J.Williams 3' Driving Floating Bank Shot
+(A.Wiggins)
+27-26
++1*
+10:58
+C.Braun S.FOUL (P1, T1) (J.Tiven)
+10:58
+SUB: J.Murray FOR C.Braun
+10:58
+SUB: L.Dort FOR S.Gilgeous-Alexander
+10:58
+MISS J.Williams Free Throw 1 of 1
+10:56
+P.Watson REBOUND
+10:38
+J.Strawther Out Of Bounds Bad Pass
+TURNOVER #6
+10:28
+MISS J.Williams Driving Finger Roll Layup
+10:27
+I.Hartenstein REBOUND
+10:27
+I.Hartenstein Tip Dunk
+29-26
++3
+10:27
+TIMEOUT (2)
+10:27
+SUB: A.Caruso FOR C.Wallace
+10:27
+SUB: N.Jokic FOR P.Watson
+10:13
+MISS J.Murray 27' 3PT Jump Shot
+10:10
+I.Hartenstein REBOUND
+10:03
+MISS A.Wiggins 23' 3PT Jump Shot
+09:58
+R.Westbrook REBOUND
+09:53
+29-29
+TIE
+A.Gordon 26' 3PT FB Running Pullup Shot
+(R.Westbrook)
+09:26
+A.Wiggins 26' 3PT Step Back Shot (L.Dort)
+32-29
++3
+09:07
+MISS J.Strawther 23' 3PT Jump Shot
+09:07
+THUNDER REBOUND
+08:55
+MISS I.Hartenstein 7' Driving Floating Shot
+08:53
+N.Jokic REBOUND
+08:47
+I.Hartenstein P.FOUL (P2, T1) (S.Foster)
+08:47
+SUB: C.Holmgren FOR I.Hartenstein
+08:47
+SUB: M.PorterJr. FOR J.Strawther
+08:47
+SUB: S.Gilgeous-Alexander FOR J.Williams
+08:43
+MISS N.Jokic 26' 3PT Jump Shot
+08:40
+S.Gilgeous-Alexander REBOUND
+08:34
+MISS A.Wiggins 27' 3PT FB Running Shot
+08:30
+L.Dort REBOUND
+08:21
+MISS A.Wiggins 23' 3PT Jump Shot
+08:17
+L.Dort REBOUND
+08:17
+L.Dort Lost Ball 
+TURNOVER #2
+J.Murray STEAL
+08:12
+MISS M.PorterJr. 23' 3PT FB Running Shot
+08:09
+C.Holmgren REBOUND
+08:02
+R.Westbrook P.FOUL (P1, T2) (J.Tiven)
+08:02
+SUB: C.Braun FOR R.Westbrook
+07:50
+MISS A.Wiggins 26' 3PT Jump Shot
+07:47
+M.PorterJr. REBOUND
+07:34
+32-31
++1
+N.Jokic Driving Layup
+07:34
+C.Holmgren S.FOUL (P2, T2) (J.Williams)
+07:34
+SUB: J.Williams FOR A.Wiggins
+07:34
+32-32
+TIE
+N.Jokic Free Throw 1 of 1
+07:20
+L.Dort 23' 3PT Jump Shot (J.Williams)
+35-32
++3
+07:09
+L.Dort STEAL
+A.Gordon Lost Ball 
+TURNOVER #7
+07:07
+A.Caruso FB Running Dunk (L.Dort)
+37-32
++5
+06:48
+37-35
++2
+C.Braun 26' 3PT Step Back Shot
+06:31
+MISS L.Dort 23' 3PT Jump Shot
+06:28
+C.Holmgren REBOUND
+06:25
+C.Braun S.FOUL (P2, T3) (J.Williams) Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL PLAY-BY-PLAY
+06:25
+MISS S.Gilgeous-Alexander Free Throw 1 of 2
+06:25
+SUB: C.Wallace FOR L.Dort
+06:25
+SUB: I.Hartenstein FOR A.Caruso
+06:25
+S.Gilgeous-Alexander Free Throw 2 of 2
+38-35
++3
+06:12
+MISS J.Murray 15' Fadeaway Shot
+06:08
+A.Gordon REBOUND
+06:07
+MISS M.PorterJr. 23' 3PT Jump Shot
+06:05
+S.Gilgeous-Alexander REBOUND
+05:57
+MISS C.Holmgren 25' 3PT Jump Shot
+05:54
+A.Gordon REBOUND
+05:37
+S.Gilgeous-Alexander P.FOUL (P1, T3)
+(J.Williams)
+05:28
+N.Jokic Out Of Bounds Lost Ball TURNOVER #8
+05:19
+MISS J.Williams 27' 3PT Jump Shot
+05:16
+C.Braun REBOUND
+05:09
+MISS C.Braun 26' 3PT Pullup Shot
+05:06
+A.Gordon REBOUND
+04:59
+S.Gilgeous-Alexander S.FOUL (P2, T4) (S.Foster)
+04:59
+38-36
++2
+A.Gordon Free Throw 1 of 2
+04:59
+SUB: A.Caruso FOR C.Holmgren
+04:59
+SUB: L.Dort FOR I.Hartenstein
+04:59
+SUB: R.Westbrook FOR J.Murray
+04:59
+38-37
++1
+A.Gordon Free Throw 2 of 2
+04:47
+J.Williams Cutting Layup (A.Caruso)
+40-37
++3
+04:29
+MISS N.Jokic Cutting Layup
+04:28
+N.Jokic REBOUND
+04:26
+L.Dort STEAL
+N.Jokic Lost Ball 
+TURNOVER #9
+04:18
+MISS S.Gilgeous-Alexander FB Running Finger
+Roll Layup
+04:16
+R.Westbrook REBOUND
+04:15
+A.Caruso P.FOUL (P1.PN) (J.Williams)
+04:15
+40-38
++2
+N.Jokic Free Throw 1 of 2
+04:15
+SUB: P.Watson FOR A.Gordon
+04:15
+40-39
++1
+N.Jokic Free Throw 2 of 2
+04:04
+MISS C.Wallace 25' 3PT Jump Shot
+04:02
+THUNDER REBOUND
+04:02
+P.Watson L.B Foul (P1, T4) (J.Williams)
+03:50
+MISS J.Williams Driving Reverse Layup
+03:47
+L.Dort REBOUND
+03:47
+L.Dort Tip Layup
+42-39
++3
+03:32
+S.Gilgeous-Alexander BLOCK
+MISS P.Watson Cutting Layup
+03:29
+R.Westbrook REBOUND
+03:24
+MISS C.Braun 24' 3PT Jump Shot
+03:21
+P.Watson REBOUND
+03:21
+SUB: A.Wiggins FOR L.Dort
+03:21
+SUB: J.Murray FOR M.PorterJr.
+03:11
+42-41
++1
+J.Murray 17' Pullup Shot (R.Westbrook)
+03:10
+TIMEOUT (2)
+03:10
+SUB: C.Holmgren FOR A.Wiggins
+02:57
+C.Holmgren Alley Oop Layup (S.Gilgeous-
+Alexander)
+44-41
++3
+02:30
+MISS C.Braun 27' 3PT Pullup Shot
+02:28
+THUNDER REBOUND
+02:18
+J.Williams 25' 3PT Jump Shot (S.Gilgeous-
+Alexander)
+47-41
++6
+01:59
+C.Holmgren STEAL
+J.Murray Bad Pass 
+TURNOVER #10
+01:55
+C.Holmgren Lost Ball 
+TURNOVER #3
+C.Braun STEAL
+01:48
+MISS P.Watson FB Running Layup
+01:46
+C.Holmgren REBOUND
+01:44
+J.Williams FB Running Dunk
+49-41
++8
+01:44
+TIMEOUT (3)
+01:44
+SUB: A.Gordon FOR R.Westbrook
+01:44
+SUB: M.PorterJr. FOR P.Watson
+2nd QUARTER
+Denver Nuggets at OKLAHOMA CITY THUNDER
+Sunday, May 18, 2025 Paycom Center, Oklahoma City, OK
+THUNDER Starters: 
+S.Gilgeous-Alexander
+ 
+A.Wiggins
+ 
+C.Wallace
+ 
+J.Williams
+ 
+I.Hartenstein
+Nuggets Starters: 
+C.Braun
+ 
+R.Westbrook
+ 
+P.Watson
+ 
+J.Strawther
+ 
+A.Gordon
+Time
+THUNDER
+Score
+Lead
+Nuggets
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL PLAY-BY-PLAY
+01:28
+49-43
++6
+N.Jokic 3' Driving Floating Shot
+01:16
+S.Gilgeous-Alexander 26' 3PT Pullup Shot
+(J.Williams)
+52-43
++9
+01:02
+J.Williams STEAL
+N.Jokic Lost Ball 
+TURNOVER #11
+01:00
+J.Williams Driving Dunk
+54-43
++11
+:52.4
+A.Caruso STEAL
+C.Braun Bad Pass 
+TURNOVER #12
+:47.7
+J.Williams FB Running Layup (A.Caruso)
+56-43
++13
+:33.7
+A.Caruso S.FOUL (P2.PN) (S.Foster)
+:33.7
+MISS N.Jokic Free Throw 1 of 2
+:33.7
+SUB: A.Wiggins FOR A.Caruso
+:33.7
+SUB: R.Westbrook FOR M.PorterJr.
+:33.7
+56-44
++12
+N.Jokic Free Throw 2 of 2
+:29.5
+N.Jokic S.FOUL (P1.PN) (J.Williams)
+:29.5
+S.Gilgeous-Alexander Free Throw 1 of 2
+57-44
++13
+:29.5
+SUB: I.Hartenstein FOR A.Wiggins
+:29.5
+S.Gilgeous-Alexander Free Throw 2 of 2
+58-44
++14
+:17.5
+58-46
++12
+N.Jokic 6' Floating Shot (J.Murray)
+:03.6
+J.Williams 10' Pullup Shot
+60-46
++14
+:00.3
+MISS J.Murray 50' 3PT Pullup Shot
+:00.1
+Nuggets REBOUND
+End of 2nd QUARTER (60-46) 
+End of Period (3:41 PM)
+2nd QUARTER
+Denver Nuggets at OKLAHOMA CITY THUNDER
+Sunday, May 18, 2025 Paycom Center, Oklahoma City, OK
+THUNDER Starters: 
+S.Gilgeous-Alexander
+ 
+A.Wiggins
+ 
+C.Wallace
+ 
+J.Williams
+ 
+I.Hartenstein
+Nuggets Starters: 
+C.Braun
+ 
+R.Westbrook
+ 
+P.Watson
+ 
+J.Strawther
+ 
+A.Gordon
+Time
+THUNDER
+Score
+Lead
+Nuggets
+BIG
+ 
+HOME 
+LEAD 14
+*LEAD CHANGES 1
+BIG
+ 
+VISITOR 
+LEAD 5
+TIMES TIED 2
+2 FOR 0 PTS
+TURNOVERS
+8 FOR 10 PTS
+16/29 FOR 55.2%
+FIELD GOALS
+6/20 FOR 30%
+60/5 FOR 60%
+FREE THROWS
+85.7142857142857/7 FOR 85.7%
+OFF: 8 DEF: 8
+REBOUNDS
+OFF: 7 DEF: 7
+J.Williams: 17
+HIGH SCORER
+N.Jokic: 10
+4 TIED: 3
+HIGH REBOUNDER
+A.Gordon, R.Westbrook: 3
+4 TIED: 2
+HIGH ASSISTS
+R.Westbrook: 2
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL PLAY-BY-PLAY
+3rd QUARTER
+Denver Nuggets at OKLAHOMA CITY THUNDER
+Sunday, May 18, 2025 Paycom Center, Oklahoma City, OK
+THUNDER Starters: 
+S.Gilgeous-Alexander
+ 
+C.Holmgren
+ 
+J.Williams
+ 
+L.Dort
+ 
+A.Caruso
+Nuggets Starters: 
+C.Braun
+ 
+N.Jokic
+ 
+J.Murray
+ 
+A.Gordon
+ 
+M.PorterJr.
+Time
+THUNDER
+Score
+Lead
+Nuggets
+12:00
+Start of Period (3:57 PM)
+12:00
+Possession: Thunder
+60-46
++14
+11:46
+MISS L.Dort 23' 3PT Jump Shot
+11:41
+N.Jokic REBOUND
+11:34
+S.Gilgeous-Alexander STEAL
+J.Murray Lost Ball 
+TURNOVER #13
+11:30
+S.Gilgeous-Alexander FB Running Dunk
+62-46
++16
+11:10
+A.Gordon FLAGRANT FOUL TYPE1 (P1, T1)
+(J.Tiven)
+11:10
+A.Gordon Foul TURNOVER #14
+11:10
+TIMEOUT (4)
+11:10
+Nuggets Coach's Challenge A.Gordon Offensive (J.Tiven): Call Stands: Corrected to Flagrant Foul on A. Gordon
+11:10
+S.Gilgeous-Alexander Flagrant Free Throw 1 of 2
+63-46
++17
+11:10
+S.Gilgeous-Alexander Flagrant Free Throw 2 of 2
+64-46
++18
+11:01
+J.Williams 9' Pullup Shot
+66-46
++20
+10:44
+MISS J.Murray 25' 3PT Jump Shot
+10:44
+A.Gordon REBOUND
+10:38
+L.Dort P.FOUL (P3, T1) (J.Tiven)
+10:37
+MISS M.PorterJr. 26' 3PT Jump Shot
+10:33
+C.Holmgren REBOUND
+10:24
+S.Gilgeous-Alexander 26' 3PT Step Back Shot
+69-46
++23
+10:22
+TIMEOUT (5)
+10:05
+69-48
++21
+M.PorterJr. Cutting Layup (N.Jokic)
+09:46
+C.Braun P.FOUL (P3, T2) (J.Williams)
+09:34
+A.Caruso Reverse Layup (C.Holmgren)
+71-48
++23
+09:19
+71-50
++21
+C.Braun Cutting Dunk (N.Jokic)
+09:07
+N.Jokic S.FOUL (P2, T3) (J.Tiven)
+09:07
+MISS L.Dort Free Throw 1 of 2
+09:07
+L.Dort Free Throw 2 of 2
+72-50
++22
+08:55
+72-53
++19
+J.Murray 25' 3PT Jump Shot (N.Jokic)
+08:39
+MISS J.Williams 26' 3PT Jump Shot
+08:37
+A.Gordon REBOUND
+08:34
+A.Caruso P.FOUL (P3, T2) (J.Williams)
+08:34
+SUB: I.Hartenstein FOR C.Holmgren
+08:34
+SUB: C.Wallace FOR A.Caruso
+08:20
+MISS J.Murray 26' 3PT Jump Shot
+08:17
+I.Hartenstein REBOUND
+08:17
+C.Braun P.FOUL (P4, T4) (S.Foster)
+08:07
+MISS J.Williams 27' 3PT Jump Shot
+08:02
+L.Dort REBOUND
+08:01
+L.Dort Bad Pass 
+TURNOVER #4
+M.PorterJr. STEAL
+07:59
+72-55
++17
+M.PorterJr. Driving Dunk
+07:45
+I.Hartenstein Cutting Layup (J.Williams)
+74-55
++19
+07:30
+MISS J.Murray 25' 3PT Pullup Shot
+07:28
+C.Braun REBOUND
+07:23
+74-57
++17
+J.Murray Driving Finger Roll Layup (C.Braun)
+07:12
+MISS S.Gilgeous-Alexander Driving Layup
+07:10
+A.Gordon REBOUND
+07:00
+C.Wallace STEAL
+A.Gordon Bad Pass 
+TURNOVER #15
+06:55
+S.Gilgeous-Alexander FB Running Finger Roll
+Layup
+76-57
++19
+06:37
+MISS M.PorterJr. 25' 3PT Jump Shot
+06:35
+J.Williams REBOUND
+06:31
+C.Wallace FB Running Dunk (J.Williams)
+78-57
++21
+06:31
+TIMEOUT (6)
+06:31
+SUB: A.Wiggins FOR L.Dort
+06:31
+SUB: R.Westbrook FOR M.PorterJr.
+06:16
+A.Wiggins S.FOUL (P1, T3) (S.Foster)
+06:16
+MISS C.Braun Free Throw 1 of 2
+06:16
+78-58
++20
+C.Braun Free Throw 2 of 2
+06:06
+C.Wallace 24' 3PT Bank Shot (J.Williams)
+81-58
++23
+05:53
+MISS J.Murray 26' 3PT Step Back Shot
+05:49
+C.Braun REBOUND
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL PLAY-BY-PLAY
+05:47
+MISS A.Gordon 23' 3PT Jump Shot
+05:44
+A.Wiggins REBOUND
+05:35
+MISS J.Williams Driving Reverse Layup
+05:33
+N.Jokic REBOUND
+05:30
+81-60
++21
+C.Braun FB Running Layup (N.Jokic)
+05:14
+I.Hartenstein 9' Floating Shot (C.Wallace)
+83-60
++23
+05:01
+83-63
++20
+R.Westbrook 23' 3PT Jump Shot (J.Murray)
+04:46
+R.Westbrook P.FOUL (P2.PN) (J.Williams)
+04:46
+S.Gilgeous-Alexander Free Throw 1 of 2
+84-63
++21
+04:46
+SUB: J.Strawther FOR A.Gordon
+04:46
+S.Gilgeous-Alexander Free Throw 2 of 2
+85-63
++22
+04:33
+MISS R.Westbrook 23' 3PT Jump Shot
+04:29
+J.Williams REBOUND
+04:25
+MISS A.Wiggins 25' 3PT FB Running Shot
+04:22
+J.Williams REBOUND
+04:19
+MISS S.Gilgeous-Alexander 31' 3PT Jump Shot
+04:14
+C.Wallace REBOUND
+04:02
+MISS S.Gilgeous-Alexander 20' Turnaround
+Fadeaway Shot
+03:59
+C.Braun REBOUND
+03:56
+A.Wiggins S.FOUL (P2, T4) (S.Foster)
+03:56
+85-64
++21
+C.Braun Free Throw 1 of 2
+03:56
+SUB: C.Holmgren FOR S.Gilgeous-Alexander
+03:56
+SUB: A.Caruso FOR I.Hartenstein
+03:56
+85-65
++20
+C.Braun Free Throw 2 of 2
+03:39
+MISS C.Wallace 23' 3PT Jump Shot
+03:34
+J.Strawther REBOUND
+03:17
+C.Wallace STEAL
+N.Jokic Lost Ball 
+TURNOVER #16
+03:13
+A.Caruso FB Running Layup (C.Wallace)
+87-65
++22
+03:00
+87-67
++20
+J.Murray 20' Pullup Shot
+02:45
+MISS C.Wallace 23' 3PT Jump Shot
+02:42
+C.Holmgren REBOUND
+02:42
+J.Murray S.FOUL (P1.PN) (S.Foster)
+02:42
+C.Holmgren Free Throw 1 of 2
+88-67
++21
+02:42
+SUB: P.Watson FOR C.Braun
+02:42
+C.Holmgren Free Throw 2 of 2
+89-67
++22
+02:24
+MISS P.Watson 26' 3PT Jump Shot
+02:20
+C.Wallace REBOUND
+02:18
+A.Caruso FB Running Dunk (J.Williams)
+91-67
++24
+02:05
+MISS J.Strawther 25' 3PT Jump Shot
+02:02
+P.Watson REBOUND
+02:00
+MISS P.Watson Driving Layup
+02:00
+J.Strawther REBOUND
+01:56
+MISS J.Strawther 9' Driving Floating Shot
+01:54
+A.Wiggins REBOUND
+01:50
+C.Wallace Out Of Bounds Bad Pass TURNOVER
+#5
+01:50
+SUB: S.Gilgeous-Alexander FOR J.Williams
+01:50
+SUB: M.PorterJr. FOR J.Murray
+01:30
+91-69
++22
+J.Strawther 10' Driving Floating Shot
+(P.Watson)
+01:08
+A.Wiggins 23' 3PT Jump Shot (C.Wallace)
+94-69
++25
+:55.9
+A.Caruso STEAL
+R.Westbrook Bad Pass 
+TURNOVER #17
+:51.3
+MISS A.Wiggins FB Running Layup
+:51.0
+C.Holmgren REBOUND
+:51.0
+R.Westbrook S.FOUL (P3.PN) (J.Tiven)
+:51.0
+SUB: I.Hartenstein FOR A.Caruso
+:51.0
+SUB: J.Murray FOR P.Watson
+:51.0
+C.Holmgren Free Throw 1 of 2
+95-69
++26
+:51.0
+C.Holmgren Free Throw 2 of 2
+96-69
++27
+:39.3
+MISS J.Murray 26' 3PT Jump Shot
+:37.3
+I.Hartenstein REBOUND
+:27.5
+MISS S.Gilgeous-Alexander 12' Fadeaway Shot
+3rd QUARTER
+Denver Nuggets at OKLAHOMA CITY THUNDER
+Sunday, May 18, 2025 Paycom Center, Oklahoma City, OK
+THUNDER Starters: 
+S.Gilgeous-Alexander
+ 
+C.Holmgren
+ 
+J.Williams
+ 
+L.Dort
+ 
+A.Caruso
+Nuggets Starters: 
+C.Braun
+ 
+N.Jokic
+ 
+J.Murray
+ 
+A.Gordon
+ 
+M.PorterJr.
+Time
+THUNDER
+Score
+Lead
+Nuggets
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL PLAY-BY-PLAY
+:25.0
+J.Murray REBOUND
+:12.1
+96-72
++24
+N.Jokic 26' 3PT Jump Shot (M.PorterJr.)
+:01.9
+MISS C.Wallace Driving Layup
+J.Murray BLOCK
+:01.9
+THUNDER REBOUND
+:01.9
+TIMEOUT (3)
+:01.9
+SUB: J.Williams FOR C.Wallace
+:01.9
+SUB: A.Caruso FOR I.Hartenstein
+:01.9
+SUB: P.Watson FOR J.Strawther
+:01.9
+SUB: C.Braun FOR N.Jokic
+:00.4
+M.PorterJr. S.FOUL (P2.PN) (S.Foster)
+:00.4
+MISS C.Holmgren Free Throw 1 of 2
+:00.4
+SUB: C.Wallace FOR S.Gilgeous-Alexander
+:00.4
+SUB: L.Dort FOR A.Caruso
+:00.4
+C.Holmgren Free Throw 2 of 2
+97-72
++25
+End of 3rd QUARTER (97-72) 
+End of Period (4:31 PM)
+3rd QUARTER
+Denver Nuggets at OKLAHOMA CITY THUNDER
+Sunday, May 18, 2025 Paycom Center, Oklahoma City, OK
+THUNDER Starters: 
+S.Gilgeous-Alexander
+ 
+C.Holmgren
+ 
+J.Williams
+ 
+L.Dort
+ 
+A.Caruso
+Nuggets Starters: 
+C.Braun
+ 
+N.Jokic
+ 
+J.Murray
+ 
+A.Gordon
+ 
+M.PorterJr.
+Time
+THUNDER
+Score
+Lead
+Nuggets
+BIG
+ 
+HOME 
+LEAD 27
+*LEAD CHANGES 0
+BIG
+ 
+VISITOR 
+LEAD 0
+TIMES TIED 0
+2 FOR 4 PTS
+TURNOVERS
+5 FOR 10 PTS
+12/25 FOR 48%
+FIELD GOALS
+10/23 FOR 43.5%
+83.3333333333333/12 FOR 83.3%
+FREE THROWS
+75/4 FOR 75%
+OFF: 8 DEF: 8
+REBOUNDS
+OFF: 6 DEF: 7
+S.Gilgeous-Alexander: 11
+HIGH SCORER
+C.Braun, J.Murray: 7
+J.Williams, C.Holmgren: 3
+HIGH REBOUNDER
+A.Gordon, C.Braun: 3
+J.Williams: 4
+HIGH ASSISTS
+N.Jokic: 4
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL PLAY-BY-PLAY
+4th QUARTER
+Denver Nuggets at OKLAHOMA CITY THUNDER
+Sunday, May 18, 2025 Paycom Center, Oklahoma City, OK
+THUNDER Starters: 
+C.Holmgren
+ 
+J.Williams
+ 
+C.Wallace
+ 
+S.Gilgeous-Alexander
+ 
+A.Caruso
+Nuggets Starters: 
+C.Braun
+ 
+M.PorterJr.
+ 
+R.Westbrook
+ 
+J.Murray
+ 
+N.Jokic
+Time
+THUNDER
+Score
+Lead
+Nuggets
+12:00
+Start of Period (4:34 PM)
+12:00
+97-72
++25
+Possession: Nuggets
+11:43
+MISS C.Braun 23' 3PT Jump Shot
+11:41
+THUNDER REBOUND
+11:41
+TIMEOUT (4)
+11:41
+Thunder Coach's Challenge Stoppage - Out Of Bounds: Call Overturned: Miscellaneous
+11:24
+C.Holmgren Bad Pass 
+TURNOVER #6
+J.Murray STEAL
+11:20
+R.Westbrook Out Of Bounds Bad Pass
+TURNOVER #18
+11:07
+S.Gilgeous-Alexander 10' Pullup Bank Shot
+99-72
++27
+11:07
+C.Braun S.FOUL (P5, T1) (S.Foster)
+11:07
+S.Gilgeous-Alexander Free Throw 1 of 1
+100-72
++28
+10:45
+MISS R.Westbrook 23' 3PT Jump Shot
+10:42
+C.Holmgren REBOUND
+10:35
+S.Gilgeous-Alexander 16' Pullup Shot
+102-72
++30
+10:25
+MISS R.Westbrook Driving Layup
+10:23
+J.Williams REBOUND
+10:19
+N.Jokic S.FOUL (P3, T2) (J.Williams)
+10:19
+J.Williams Free Throw 1 of 2
+103-72
++31
+10:19
+J.Williams Free Throw 2 of 2
+104-72
++32
+10:03
+104-74
++30
+J.Murray Driving Layup
+09:48
+MISS C.Holmgren 26' 3PT Jump Shot
+09:46
+N.Jokic REBOUND
+09:40
+A.Caruso STEAL
+N.Jokic Lost Ball 
+TURNOVER #19
+09:36
+S.Gilgeous-Alexander FB Running Dunk
+(A.Caruso)
+106-74
++32
+09:36
+TIMEOUT (7)
+09:36
+SUB: J.Pickett FOR C.Braun
+09:36
+SUB: Z.Nnaji FOR M.PorterJr.
+09:36
+SUB: P.Watson FOR R.Westbrook
+09:36
+SUB: H.Tyson FOR J.Murray
+09:36
+SUB: J.Strawther FOR N.Jokic
+09:11
+Nuggets Shot Clock 
+TURNOVER #20
+08:50
+S.Gilgeous-Alexander 16' Pullup Shot
+108-74
++34
+08:28
+108-76
++32
+J.Strawther 7' Driving Floating Shot (J.Pickett)
+08:08
+J.Williams 26' 3PT Jump Shot (S.Gilgeous-
+Alexander)
+111-76
++35
+07:56
+S.Gilgeous-Alexander STEAL
+P.Watson Lost Ball 
+TURNOVER #21
+07:47
+S.Gilgeous-Alexander 25' 3PT Pullup Shot
+114-76
++38
+07:40
+C.Holmgren P.FOUL (P3, T1) (S.Foster)
+07:40
+SUB: K.Williams FOR S.Gilgeous-Alexander
+07:40
+SUB: A.Mitchell FOR C.Holmgren
+07:40
+SUB: I.Joe FOR J.Williams
+07:40
+SUB: J.Williams FOR A.Caruso
+07:40
+SUB: A.Wiggins FOR C.Wallace
+07:29
+MISS P.Watson 28' 3PT Pullup Shot
+07:28
+H.Tyson REBOUND
+07:28
+I.Joe P.FOUL (P1, T2) (S.Foster)
+07:24
+I.Joe S.FOUL (P2, T3) (J.Tiven)
+07:24
+114-77
++37
+P.Watson Free Throw 1 of 2
+07:24
+114-78
++36
+P.Watson Free Throw 2 of 2
+07:08
+MISS A.Wiggins 26' 3PT Jump Shot
+07:04
+J.Strawther REBOUND
+06:58
+MISS Z.Nnaji 26' 3PT Jump Shot
+06:55
+J.Williams REBOUND
+06:44
+MISS K.Williams 25' 3PT Pullup Shot
+06:40
+Z.Nnaji REBOUND
+06:35
+114-80
++34
+J.Strawther FB Running Dunk (H.Tyson)
+06:09
+I.Joe 26' 3PT Pullup Shot (J.Williams)
+117-80
++37
+05:47
+117-82
++35
+H.Tyson 14' Pullup Shot (J.Pickett)
+05:25
+A.Mitchell 6' Driving Floating Shot
+119-82
++37
+05:08
+MISS J.Pickett 26' 3PT Pullup Shot
+05:05
+A.Mitchell REBOUND Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL PLAY-BY-PLAY
+05:00
+Z.Nnaji P.FOUL (P1, T3) (J.Tiven)
+04:52
+A.Mitchell Back Court 
+TURNOVER #7
+04:45
+J.Williams STEAL
+J.Strawther Bad Pass 
+TURNOVER #22
+04:41
+H.Tyson S.FOUL (P1, T4) (S.Foster)
+04:41
+I.Joe Free Throw 1 of 2
+120-82
++38
+04:41
+I.Joe Free Throw 2 of 2
+121-82
++39
+04:38
+I.Joe STEAL
+P.Watson Bad Pass 
+TURNOVER #23
+04:34
+MISS K.Williams 25' 3PT Jump Shot
+04:31
+A.Wiggins REBOUND
+04:23
+A.Mitchell 23' 3PT Jump Shot (I.Joe)
+124-82
++42
+04:10
+MISS J.Pickett 25' 3PT Jump Shot
+04:07
+Nuggets REBOUND
+04:07
+A.Mitchell L.B Foul (P1, T4) (J.Tiven)
+04:07
+SUB: O.Dieng FOR I.Joe
+04:07
+SUB: D.Jones FOR A.Wiggins
+03:54
+MISS J.Strawther 15' Jump Shot
+03:51
+J.Williams REBOUND
+03:46
+H.Tyson S.FOUL (P2.PN) (J.Tiven)
+03:46
+MISS K.Williams Free Throw 1 of 2
+03:46
+K.Williams Free Throw 2 of 2
+125-82
++43
+03:27
+MISS Z.Nnaji 23' 3PT Jump Shot
+03:24
+K.Williams REBOUND
+03:06
+D.Jones Out Of Bounds Bad Pass TURNOVER
+#8
+02:47
+125-85
++40
+J.Pickett 27' 3PT Pullup Shot
+02:24
+MISS J.Williams Driving Layup
+P.Watson BLOCK
+02:22
+J.Pickett REBOUND
+02:16
+MISS J.Strawther FB Running Finger Roll
+Layup
+02:13
+D.Jones REBOUND
+02:02
+D.Jones Lost Ball 
+TURNOVER #9
+J.Strawther STEAL
+01:58
+MISS H.Tyson 23' 3PT FB Running Shot
+01:54
+O.Dieng REBOUND
+01:45
+MISS J.Williams 24' 3PT Jump Shot
+01:42
+J.Pickett REBOUND
+01:36
+MISS P.Watson FB Running Layup
+01:31
+H.Tyson REBOUND
+01:31
+125-88
++37
+H.Tyson 23' 3PT Jump Shot
+01:13
+MISS K.Williams Driving Layup
+01:12
+Z.Nnaji REBOUND
+01:07
+125-91
++34
+J.Pickett 27' 3PT FB Running Shot (P.Watson)
+:47.4
+MISS J.Williams 6' Floating Shot
+:45.7
+H.Tyson REBOUND
+:37.9
+125-93
++32
+P.Watson Driving Layup
+:13.4
+THUNDER Shot Clock 
+TURNOVER #10
+:00.2
+MISS J.Pickett 27' 3PT Jump Shot
+:00.1
+Nuggets REBOUND
+End of 4th QUARTER (125-93) 
+End of Period (5:01 PM)
+4th QUARTER
+Denver Nuggets at OKLAHOMA CITY THUNDER
+Sunday, May 18, 2025 Paycom Center, Oklahoma City, OK
+THUNDER Starters: 
+C.Holmgren
+ 
+J.Williams
+ 
+C.Wallace
+ 
+S.Gilgeous-Alexander
+ 
+A.Caruso
+Nuggets Starters: 
+C.Braun
+ 
+M.PorterJr.
+ 
+R.Westbrook
+ 
+J.Murray
+ 
+N.Jokic
+Time
+THUNDER
+Score
+Lead
+Nuggets
+BIG
+ 
+HOME 
+LEAD 43
+*LEAD CHANGES 0
+BIG
+ 
+VISITOR 
+LEAD 0
+TIMES TIED 0
+5 FOR 3 PTS
+TURNOVERS
+6 FOR 15 PTS
+9/17 FOR 52.9%
+FIELD GOALS
+8/21 FOR 38.1%
+85.7142857142857/7 FOR 85.7%
+FREE THROWS
+100/2 FOR 100%
+OFF: 2 DEF: 9
+REBOUNDS
+OFF: 4 DEF: 7
+S.Gilgeous-Alexander: 12
+HIGH SCORER
+J.Pickett: 6
+J.Williams: 2
+HIGH REBOUNDER
+H.Tyson: 3
+4 TIED: 1
+HIGH ASSISTS
+J.Pickett: 2
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved

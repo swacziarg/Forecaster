@@ -1,0 +1,23 @@
+{
+  "artifactType":"historical event-response score packet",
+  "status":"complete-for-editorial-review",
+  "preparedAt":"2026-09-10",
+  "studyId":"fed-september-2024-five-card-v2",
+  "invocation":"parseMarketCsv -> normalizeObservationSeries(60) -> calculateStudyImpacts(points, fedStudy.events, MONTHS_PROFILE) -> createTieGroups(impacts, 0.01, 1e-12) -> pairwiseAgreement",
+  "calculationFunctions":["parseMarketCsv","normalizeObservationSeries","calculateStudyImpacts","MONTHS_PROFILE","createTieGroups","pairwiseAgreement"],
+  "dataset":{"csv":"public/data/fed-2024/polymarket-hourly.csv","rawPoints":1323,"normalizedPoints":1323,"normalizedSha256":"070e10e264ba2f78b4dff984b6fb22d6f2a45305375a71de24c458dfc0dd0d26","exactToken":"106191328358576540351439267765925450329859429577455659884974413809922495874408","retainedObservedCoverage":"2024-07-25T19:00:00Z/2024-09-18T21:00:00Z","providerStartDate":"2024-08-02T20:43:54.565Z","metadataCaveat":"Observed retained rows before provider startDate are preserved and disclosed; no rows were filled or removed for this replay."},
+  "profile":{"id":"months-hourly-v1","cadenceMinutes":60,"anticipation":[-84,-12],"reference":[-12,0],"immediate":[0,6],"stabilized":[18,36],"delayed":[48,72],"quality":{"minimumCoverage":0.6,"maximumGapShare":0.5,"minimumDistinctUpdates":3,"maximumSpread":0.2},"tieThreshold":0.01,"scoringVersion":"pairwise-anchor-1pt-v2"},
+  "all25WindowsUsable":true,
+  "events":[
+    {"eventId":"july-jobs","levels":{"anticipation":0.11,"reference":0.185,"immediate":0.5375,"stabilized":0.4625,"delayed":0.5275},"responses":{"anticipationMove":0.075,"immediateResponse":0.3525,"shortTermResponse":0.2775,"delayedIncrement":0.065,"cumulativeDelayedResponse":0.3425},"quality":{"allWindows":"usable","validBuckets":"72/12/6/18/24","maxGapBuckets":0,"distinctUpdates":"72/12/6/18/24"},"ordinaryMovement":{"classification":"ordinary","threshold":0.4045,"sampleCount":16},"overlaps":[]},
+    {"eventId":"july-cpi","levels":{"anticipation":0.315,"reference":0.325,"immediate":0.245,"stabilized":0.135,"delayed":0.145},"responses":{"anticipationMove":0.01,"immediateResponse":-0.08,"shortTermResponse":-0.19,"delayedIncrement":0.01,"cumulativeDelayedResponse":-0.18},"quality":{"allWindows":"usable","validBuckets":"72/12/6/18/24","maxGapBuckets":0,"distinctUpdates":"72/12/6/18/24"},"ordinaryMovement":{"classification":"ordinary","threshold":0.4045,"sampleCount":16},"overlaps":[]},
+    {"eventId":"powell-jackson-hole","levels":{"anticipation":0.18,"reference":0.175,"immediate":0.215,"stabilized":0.215,"delayed":0.215},"responses":{"anticipationMove":-0.005,"immediateResponse":0.04,"shortTermResponse":0.04,"delayedIncrement":0,"cumulativeDelayedResponse":0.04},"quality":{"allWindows":"usable","validBuckets":"72/12/6/18/24","maxGapBuckets":0,"distinctUpdates":"72/12/6/18/24"},"ordinaryMovement":{"classification":"ordinary","threshold":0.4045,"sampleCount":16},"overlaps":[]},
+    {"eventId":"august-jobs","levels":{"anticipation":0.275,"reference":0.33,"immediate":0.245,"stabilized":0.265,"delayed":0.255},"responses":{"anticipationMove":0.055,"immediateResponse":-0.085,"shortTermResponse":-0.065,"delayedIncrement":-0.01,"cumulativeDelayedResponse":-0.075},"quality":{"allWindows":"usable","validBuckets":"72/12/6/18/24","maxGapBuckets":0,"distinctUpdates":"72/12/6/18/24"},"ordinaryMovement":{"classification":"ordinary","threshold":0.4045,"sampleCount":16},"overlaps":["august-cpi"]},
+    {"eventId":"august-cpi","levels":{"anticipation":0.245,"reference":0.2425,"immediate":0.08,"stabilized":0.08,"delayed":0.335},"responses":{"anticipationMove":-0.0025,"immediateResponse":-0.1625,"shortTermResponse":-0.1625,"delayedIncrement":0.255,"cumulativeDelayedResponse":0.0925},"quality":{"allWindows":"usable","validBuckets":"72/12/6/18/24","maxGapBuckets":0,"distinctUpdates":"72/12/6/18/24"},"ordinaryMovement":{"classification":"ordinary","threshold":0.4045,"sampleCount":16},"overlaps":["august-jobs"]}
+  ],
+  "tieGroupsByShortTermResponse":[["july-jobs"],["powell-jackson-hole"],["august-jobs"],["august-cpi"],["july-cpi"]],
+  "initialOrder":["july-jobs","july-cpi","powell-jackson-hole","august-jobs","august-cpi"],
+  "pairwiseAgreement":{"agreed":7,"comparable":10,"percent":70},
+  "interpretation":{"unit":"percentage-point change in observed YES contract price level","notAProbabilityForecast":true,"causality":"No causal attribution is made; windows can contain other news, anticipation, and market movement."},
+  "endingExclusion":{"eventId":"fed-decision","rule":"The September 18 FOMC decision is reveal-only and is not a scored card."}
+}

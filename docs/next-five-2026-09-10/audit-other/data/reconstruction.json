@@ -1,0 +1,71 @@
+{
+  "method": "For each retained raw history point, floor Unix seconds to its UTC hour and compare the last point in each hour with CSV q/raw_price. No interpolation was used.",
+  "datasets": {
+    "fed": {
+      "csv": "public/data/fed-2024/polymarket-hourly.csv",
+      "raw": "public/data/fed-2024/raw-prices-history.json",
+      "metadata": "public/data/fed-2024/raw-market.json",
+      "marketId": "504069",
+      "tokenId": "106191328358576540351439267765925450329859429577455659884974413809922495874408",
+      "csvRows": 1323,
+      "rawRows": 1323,
+      "uniqueRawHours": 1323,
+      "missingCsvHours": 0,
+      "priceMismatches": 0,
+      "csvSha256": "070e10e264ba2f78b4dff984b6fb22d6f2a45305375a71de24c458dfc0dd0d26",
+      "rawSha256": "be919d763a5464a2d6198c7cb0ebb7f7ec8d99c1243f50e4bf4f0e2b0a5f67dd",
+      "metadataSha256": "efaad084b9ff1cfdbdb481fd9c00450aa23c38ddf8cec55912ff2664eb9ae72e"
+    },
+    "thunder": {
+      "csv": "docs/next-five-2026-09-10/sports/thunder-hourly.csv",
+      "raw": "docs/next-five-2026-09-10/sports/thunder-history-raw.json",
+      "metadata": "docs/next-five-2026-09-10/sports/nba-champion-2024-2025-metadata.json",
+      "marketId": "507884",
+      "tokenId": "83527644927648970835156950007024690327726158617181889316317174894904268227846",
+      "csvRows": 6514,
+      "rawRows": 6516,
+      "uniqueRawHours": 6515,
+      "missingCsvHours": 1,
+      "missingHour": "2024-10-02T14:00:00.000Z",
+      "priceMismatches": 0,
+      "duplicateHour": "2024-10-02T14:00:00.000Z",
+      "duplicatePoints": [{"t": 1727877602, "p": 0.12}, {"t": 1727877607, "p": 0.12}],
+      "csvSha256": "558a508d02ddf5ef25a91a5a56d95b3e35220e2e82c6bc880626e604ae892664",
+      "rawSha256": "e2a215cb995e4fcaf52e923e9809df1dcf78680d91f004cdfb33f328bd523130",
+      "metadataSha256": "15a94415c2be5b93830986e23b76cdae77e5bbaa4e8f68f105c860ec4df6b768"
+    },
+    "dodgers": {
+      "csv": "docs/next-five-2026-09-10/sports-dodgers/hourly.csv",
+      "raw": "docs/next-five-2026-09-10/sports-dodgers/raw-history.json",
+      "metadata": "docs/next-five-2026-09-10/sports-dodgers/raw-market.json",
+      "marketId": "525410",
+      "tokenId": "50056291296373013403053264672448796961558656386670931029485176637893947669174",
+      "csvRows": 5957,
+      "rawRows": 5959,
+      "uniqueRawHours": 5957,
+      "missingCsvHours": 0,
+      "priceMismatches": 0,
+      "duplicateHours": ["2025-07-23T05:00:00.000Z", "2025-08-26T03:00:00.000Z"],
+      "csvSha256": "d09119662e51d073983ce01096cb239f8205dbb07566b945da1e630a1a431aa8",
+      "rawSha256": "aeb332243b883b899c219e3e3ab87867ebc30f7558a9079a17d51ed62e3271c1",
+      "metadataSha256": "18f0e41653d894c5e7a38f85ae83aa94f2080b587e3a4107163b02a853b1179d"
+    },
+    "nyc": {
+      "csv": "docs/launch-queue-research/datasets/nyc-hourly.csv",
+      "raw": "docs/launch-queue-research/evidence/nyc-history-000.json through nyc-history-019.json",
+      "metadata": "docs/launch-queue-research/evidence/nyc-event.json",
+      "marketId": "538932",
+      "tokenId": "33945469250963963541781051637999677727672635213493648594066577298999471399137",
+      "csvRows": 4711,
+      "rawRows": 4713,
+      "uniqueRawHours": 4711,
+      "missingCsvHours": 0,
+      "priceMismatches": 0,
+      "duplicateHours": ["2025-07-23T05:00:00.000Z", "2025-08-26T03:00:00.000Z"],
+      "csvSha256": "a2bf3f12c21289f5718135859fe0018819a595a958503a2b096a7bd474560b13",
+      "metadataSha256": "0fc388ea6ee570076fea0cb6be694c02138f19d57b39ce167381a08db8e06b01",
+      "identityNote": "The per-chunk history files do not embed tokenId; market 538932 and its selected YES token are established by nyc-event.json and matched by the live CLOB recheck."
+    }
+  },
+  "csvFlags": "All four CSVs contain mark_type=trade and stale=false on every row; no synthetic rows were found."
+}

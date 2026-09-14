@@ -1,0 +1,365 @@
+{
+  "id": "fed-september-2024-v2",
+  "slug": "fed-september-2024-five-card",
+  "category": "Macroeconomics",
+  "version": 2,
+  "status": "editorial-review",
+  "question": "What changed the chance of a half-point Fed rate cut?",
+  "orientation": "August–September 2024. Rank five headlines from the biggest rise in the chance of a cut of at least half a percentage point to the biggest fall.",
+  "market": {
+    "id": "504069",
+    "provider": "Polymarket",
+    "title": "Fed decreases interest rates by 50+ bps after September 2024 meeting?",
+    "rules": "YES if the upper bound of the federal-funds target range falls by at least 50 basis points after the September 2024 meeting.",
+    "openedAt": "2024-07-25T14:47:42.952096Z",
+    "providerStartDate": "2024-08-02T20:43:54.565Z",
+    "closedAt": "2024-09-18T21:09:08Z",
+    "status": "settled",
+    "resolutionSourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm",
+    "marketUrl": "https://polymarket.com/event/fed-interest-rates-september-2024/fed-decreases-interest-rates-by-50-bps-after-september-2024-meeting"
+  },
+  "contract": {
+    "id": "106191328358576540351439267765925450329859429577455659884974413809922495874408",
+    "proposition": "The Fed decreases rates by at least 50 basis points after its September 2024 meeting",
+    "nativeSide": "YES",
+    "selectedPerspective": "YES",
+    "resolution": "YES"
+  },
+  "dataset": {
+    "id": "polymarket-fed-september-2024-hourly-v2",
+    "provider": "Polymarket",
+    "path": "/data/fed-2024/polymarket-hourly.csv",
+    "rawPath": "/data/fed-2024/raw-prices-history.json",
+    "marketMetadataPath": "/data/fed-2024/raw-market.json",
+    "manifestPath": "/data/fed-2024/manifest.json",
+    "rawSha256": "be919d763a5464a2d6198c7cb0ebb7f7ec8d99c1243f50e4bf4f0e2b0a5f67dd",
+    "marketMetadataSha256": "efaad084b9ff1cfdbdb481fd9c00450aa23c38ddf8cec55912ff2664eb9ae72e",
+    "normalizedSha256": "070e10e264ba2f78b4dff984b6fb22d6f2a45305375a71de24c458dfc0dd0d26",
+    "retrievedAt": "2026-09-04T03:44:31.385Z",
+    "coverageStart": "2024-07-25T19:00:00Z",
+    "coverageEnd": "2024-09-18T21:00:00Z",
+    "fullMarketLifetime": false,
+    "cadenceMinutes": 60,
+    "transformVersion": "polymarket-hourly-v1",
+    "provenanceUrl": "https://docs.polymarket.com/api-reference/markets/get-prices-history",
+    "requestParameters": "token_id=106191328358576540351439267765925450329859429577455659884974413809922495874408; fidelity=60; start=2024-07-25T18:00:00Z; end=2024-09-19T22:00:00Z; 10-day chunks"
+  },
+  "measurementProfile": {
+    "id": "months-hourly-v1",
+    "label": "Months / hourly",
+    "cadenceMinutes": 60,
+    "anticipation": {
+      "startHours": -84,
+      "endHours": -12
+    },
+    "reference": {
+      "startHours": -12,
+      "endHours": 0
+    },
+    "immediate": {
+      "startHours": 0,
+      "endHours": 6
+    },
+    "stabilized": {
+      "startHours": 18,
+      "endHours": 36
+    },
+    "delayed": {
+      "startHours": 48,
+      "endHours": 72
+    },
+    "quality": {
+      "minimumCoverage": 0.6,
+      "maximumGapShare": 0.5,
+      "minimumDistinctUpdates": 3,
+      "maximumSpread": 0.2
+    },
+    "tieThreshold": 0.01
+  },
+  "presentation": {
+    "topicLabel": "September 2024 Fed decision",
+    "selectedContractShort": "50+ bp cut",
+    "selectedContractLong": "Fed cuts 50+ basis points in September 2024",
+    "seriesLabel": "50+ bp cut probability",
+    "positiveLabel": "Raises 50+ bp chance",
+    "negativeLabel": "Lowers 50+ bp chance",
+    "neutralLabel": "Ambiguous",
+    "eventNoun": "macro event",
+    "timezone": "America/New_York",
+    "accent": "#315e78",
+    "zoomChoices": [
+      {
+        "label": "All",
+        "hours": null
+      },
+      {
+        "label": "30d",
+        "hours": 720
+      },
+      {
+        "label": "14d",
+        "hours": 336
+      },
+      {
+        "label": "7d",
+        "hours": 168
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "bls-jobs-aug",
+      "title": "The Employment Situation — July 2024",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "url": "https://www.bls.gov/news.release/archives/empsit_08022024.htm",
+      "publishedAt": "2024-08-02T12:30:00Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-04T03:44:31.385Z",
+      "archivedUrl": "https://www.bls.gov/news.release/archives/empsit_08022024.htm",
+      "correctionStatus": "none"
+    },
+    {
+      "id": "bls-cpi-aug",
+      "title": "Consumer Price Index — July 2024",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "url": "https://www.bls.gov/news.release/archives/cpi_08142024.htm",
+      "publishedAt": "2024-08-14T12:30:00Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-04T03:44:31.385Z",
+      "archivedUrl": "https://www.bls.gov/news.release/archives/cpi_08142024.htm",
+      "correctionStatus": "none"
+    },
+    {
+      "id": "fed-jackson-hole",
+      "title": "Review and Outlook",
+      "publisher": "Federal Reserve Board",
+      "url": "https://www.federalreserve.gov/newsevents/speech/powell20240823a.htm",
+      "publishedAt": "2024-08-23T14:00:00Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-04T03:44:31.385Z",
+      "archivedUrl": "https://www.federalreserve.gov/newsevents/speech/powell20240823a.htm",
+      "correctionStatus": "none",
+      "timestampMeaning": "Release-on-delivery time of 10:00 a.m. EDT in the official speech PDF, not the HTML footer Last Update date.",
+      "timingEvidenceUrl": "https://www.federalreserve.gov/newsevents/speech/files/powell20240823a.pdf"
+    },
+    {
+      "id": "bls-jobs-sep",
+      "title": "The Employment Situation — August 2024",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "url": "https://www.bls.gov/news.release/archives/empsit_09062024.htm",
+      "publishedAt": "2024-09-06T12:30:00Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-04T03:44:31.385Z",
+      "archivedUrl": "https://www.bls.gov/news.release/archives/empsit_09062024.htm",
+      "correctionStatus": "none"
+    },
+    {
+      "id": "bls-cpi-sep",
+      "title": "Consumer Price Index — August 2024",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "url": "https://www.bls.gov/news.release/archives/cpi_09112024.htm",
+      "publishedAt": "2024-09-11T12:30:00Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-04T03:44:31.385Z",
+      "archivedUrl": "https://www.bls.gov/news.release/archives/cpi_09112024.htm",
+      "correctionStatus": "none"
+    },
+    {
+      "id": "fed-decision",
+      "title": "Federal Reserve issues FOMC statement, September 18 2024",
+      "publisher": "Federal Reserve Board",
+      "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm",
+      "publishedAt": "2024-09-18T18:00:00Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-04T03:44:31.385Z",
+      "archivedUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm",
+      "correctionStatus": "none"
+    }
+  ],
+  "events": [
+    {
+      "id": "july-jobs",
+      "title": "July jobs report shows a sharp hiring slowdown",
+      "shortTitle": "Weak July jobs",
+      "occurredAt": "2024-08-02T12:30:00Z",
+      "informationKnownAt": "2024-08-02T12:30:00Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "dateLabel": "Aug 2",
+      "category": "Employment",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "july-jobs-fact",
+          "text": "Payroll employment rose by 114,000 in July and unemployment increased to 4.3%.",
+          "knownAt": "2024-08-02T12:30:00Z",
+          "sourceIds": [
+            "bls-jobs-aug"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "bls-jobs-aug",
+          "role": "primary"
+        }
+      ],
+      "mechanism": "A weaker labor market increases the case for front-loading rate cuts, including a half-point move.",
+      "retrospectiveInterpretation": "The report opened a materially weaker growth scenario and increased expectations of a larger September cut.",
+      "competingExplanation": "Risk-off trading and the Sahm-rule discussion arrived with the same report.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "july-cpi",
+      "title": "July CPI confirms further disinflation",
+      "shortTitle": "July CPI",
+      "occurredAt": "2024-08-14T12:30:00Z",
+      "informationKnownAt": "2024-08-14T12:30:00Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "dateLabel": "Aug 14",
+      "category": "Inflation",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "july-cpi-fact",
+          "text": "Headline CPI rose 0.2% in July and 2.9% over twelve months; core CPI rose 0.2%.",
+          "knownAt": "2024-08-14T12:30:00Z",
+          "sourceIds": [
+            "bls-cpi-aug"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "bls-cpi-aug",
+          "role": "primary"
+        }
+      ],
+      "mechanism": "Continued disinflation gives the FOMC more room to respond forcefully to labor-market weakness.",
+      "retrospectiveInterpretation": "The release supported easing but did not itself require a 50-basis-point first cut.",
+      "competingExplanation": "The market was still digesting the early-August growth scare and subsequent stabilization.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "powell-jackson-hole",
+      "title": "Powell says the time has come to adjust policy",
+      "shortTitle": "Jackson Hole pivot",
+      "occurredAt": "2024-08-23T14:00:00Z",
+      "informationKnownAt": "2024-08-23T14:00:00Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "dateLabel": "Aug 23",
+      "category": "FOMC communication",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "powell-jackson-hole-fact",
+          "text": "Powell said the time had come for policy to adjust and emphasized downside employment risks.",
+          "knownAt": "2024-08-23T14:00:00Z",
+          "sourceIds": [
+            "fed-jackson-hole"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "fed-jackson-hole",
+          "role": "primary"
+        }
+      ],
+      "mechanism": "An explicit pivot confirms a September cut and leaves the opening move’s size responsive to incoming labor data.",
+      "retrospectiveInterpretation": "The speech removed uncertainty about whether easing would start, while preserving ambiguity about 25 versus 50 basis points.",
+      "competingExplanation": "The cut itself was already heavily anticipated before the speech.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "august-jobs",
+      "title": "August adds 142,000 jobs; earlier months revised lower",
+      "shortTitle": "August jobs",
+      "occurredAt": "2024-09-06T12:30:00Z",
+      "informationKnownAt": "2024-09-06T12:30:00Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "dateLabel": "Sep 6",
+      "category": "Employment",
+      "expectedDirection": "ambiguous",
+      "claims": [
+        {
+          "id": "august-jobs-fact",
+          "text": "Payrolls rose by 142,000 in August, prior months were revised lower, and unemployment was 4.2%, little changed.",
+          "knownAt": "2024-09-06T12:30:00Z",
+          "sourceIds": [
+            "bls-jobs-sep"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "bls-jobs-sep",
+          "role": "primary"
+        }
+      ],
+      "mechanism": "Weak revisions support a larger cut, while the unemployment decline reduces the urgency for an emergency-sized move.",
+      "retrospectiveInterpretation": "The mixed report kept both 25- and 50-basis-point outcomes plausible.",
+      "competingExplanation": "Positioning before the final CPI release could dominate the immediate response.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "august-cpi",
+      "title": "August core inflation rises 0.3%",
+      "shortTitle": "August core CPI",
+      "occurredAt": "2024-09-11T12:30:00Z",
+      "informationKnownAt": "2024-09-11T12:30:00Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "dateLabel": "Sep 11",
+      "category": "Inflation",
+      "expectedDirection": "negative",
+      "claims": [
+        {
+          "id": "august-cpi-fact",
+          "text": "Headline CPI rose 0.2% in August while core CPI rose 0.3%.",
+          "knownAt": "2024-09-11T12:30:00Z",
+          "sourceIds": [
+            "bls-cpi-sep"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "bls-cpi-sep",
+          "role": "primary"
+        }
+      ],
+      "mechanism": "A firmer core reading weakens the case for a half-point cut at the immediately following meeting.",
+      "retrospectiveInterpretation": "The last major inflation release pointed toward a more cautious first step.",
+      "competingExplanation": "Labor-market risk and subsequent policy reporting remained important before the decision.",
+      "attributionAssessment": "mixed"
+    }
+  ],
+  "contextMarkers": [],
+  "conclusion": {
+    "title": "The FOMC cuts by 50 basis points",
+    "text": "The September 18, 2024 FOMC statement records a 50-basis-point reduction; the exact contract resolved YES. This is reveal-only and is not a scored card.",
+    "sourceId": "fed-decision"
+  },
+  "ending": {
+    "title": "The FOMC cuts by 50 basis points",
+    "occurredAt": "2024-09-18T18:00:00Z",
+    "source": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm",
+    "revealOnly": true
+  },
+  "approval": "pending",
+  "measurementNotes": [
+    "The provider metadata createdAt is July 25 at 14:47:42.952096Z; openedAt uses that creation bound, not a separately verified first-trade timestamp. Provider startDate is August 2, a different field.",
+    "On September 10, the lead fetched the original July 25–August 4 public prices-history request with the exact YES token. All 239 observations match the retained first response exactly, including the pre-August-2 baseline. See review/fed-early-history-check.json.",
+    "Provider closedTime is not represented as a separately verified settlement transaction time. Full market lifetime is not asserted.",
+    "Independent timing audit: all five scheduled issuer release times confirmed. The official Powell PDF supplies the 10:00 a.m. EDT embargo. No scored timestamp or raw price changed. Changes describe contract prices, not isolated causality; core CPI means all items less food and energy."
+  ]
+}

@@ -84,6 +84,71 @@
       "approvalBasis": "User reviewed the five editions, said “I think these look good,” and then “ok go” after the explicit September 7–12 lineup and final evidence-check/rollout steps were presented. This records that authorization, including the necessary launch preparation and v2 boundary correction, not a separate human review of generated hashes.",
       "sourceTaskId": "01a07753-5ef2-7321-a64c-60818d9de4eb",
       "numberingCorrection": "User explicitly requested September 7 launch day be Daily #001 on September 7, 2026. Public numbering corrected to #001–#006; content, release times, scoring and attempt IDs unchanged."
+    },
+    {
+      "puzzleId": "2026-09-13-trump-comeback-2024",
+      "studyId": "trump-comeback-2024-v2",
+      "studyVersion": 2,
+      "releaseTime": "2026-09-13T05:00:00Z",
+      "contentHash": "d701540a4354c58a93166c71a74909ca30b1c9a59a0c17b2575a7d442b377d7d",
+      "status": "approved",
+      "approverType": "human",
+      "approver": "Project owner in task 01a08c07-cb79-7c70-b8ec-fc8f20155e46",
+      "approvedAt": "2026-09-14T01:19:59.060Z",
+      "approvalBasis": "User approved the repaired five-edition September13–17 lineup with exact-move scoring: “ok send them in. commit and push.” Public dataset paths were packaged without changing original prices or scored headlines. Earlier user “go” authorized exact-move scoring. September11–12 retain their released rules because activation now occurs September13.",
+      "sourceTaskId": "01a08c07-cb79-7c70-b8ec-fc8f20155e46"
+    },
+    {
+      "puzzleId": "2026-09-14-thunder-first-title-2025",
+      "studyId": "thunder-first-title-2025-v3",
+      "studyVersion": 3,
+      "releaseTime": "2026-09-14T05:00:00Z",
+      "contentHash": "d764557511c2b5b1b0cfeb8b9e2af2ef1cc6b6f851fbe33be8f40d83b435d638",
+      "status": "approved",
+      "approverType": "human",
+      "approver": "Project owner in task 01a08c07-cb79-7c70-b8ec-fc8f20155e46",
+      "approvedAt": "2026-09-14T01:19:59.060Z",
+      "approvalBasis": "User approved the repaired five-edition September13–17 lineup with exact-move scoring: “ok send them in. commit and push.” Public dataset paths were packaged without changing original prices or scored headlines. Earlier user “go” authorized exact-move scoring. September11–12 retain their released rules because activation now occurs September13.",
+      "sourceTaskId": "01a08c07-cb79-7c70-b8ec-fc8f20155e46"
+    },
+    {
+      "puzzleId": "2026-09-15-fed-september-2024-five-card",
+      "studyId": "fed-september-2024-v2",
+      "studyVersion": 2,
+      "releaseTime": "2026-09-15T05:00:00Z",
+      "contentHash": "4f4976875f8241b0e3757f17f29278b323687f37db1e92a52d73904eea11cfef",
+      "status": "approved",
+      "approverType": "human",
+      "approver": "Project owner in task 01a08c07-cb79-7c70-b8ec-fc8f20155e46",
+      "approvedAt": "2026-09-14T01:19:59.061Z",
+      "approvalBasis": "User approved the repaired five-edition September13–17 lineup with exact-move scoring: “ok send them in. commit and push.” Public dataset paths were packaged without changing original prices or scored headlines. Earlier user “go” authorized exact-move scoring. September11–12 retain their released rules because activation now occurs September13.",
+      "sourceTaskId": "01a08c07-cb79-7c70-b8ec-fc8f20155e46"
+    },
+    {
+      "puzzleId": "2026-09-16-nyc-mamdani-2025",
+      "studyId": "nyc-mamdani-2025-v2",
+      "studyVersion": 2,
+      "releaseTime": "2026-09-16T05:00:00Z",
+      "contentHash": "4a28bf7872a197c4ecc3a79518e66024a6979c164b557ef48fae1580ed559c5e",
+      "status": "approved",
+      "approverType": "human",
+      "approver": "Project owner in task 01a08c07-cb79-7c70-b8ec-fc8f20155e46",
+      "approvedAt": "2026-09-14T01:19:59.061Z",
+      "approvalBasis": "User approved the repaired five-edition September13–17 lineup with exact-move scoring: “ok send them in. commit and push.” Public dataset paths were packaged without changing original prices or scored headlines. Earlier user “go” authorized exact-move scoring. September11–12 retain their released rules because activation now occurs September13.",
+      "sourceTaskId": "01a08c07-cb79-7c70-b8ec-fc8f20155e46"
+    },
+    {
+      "puzzleId": "2026-09-17-dodgers-repeat-2025",
+      "studyId": "dodgers-repeat-2025-v3",
+      "studyVersion": 3,
+      "releaseTime": "2026-09-17T05:00:00Z",
+      "contentHash": "ba1267a5fc6cae2725e4fbc57f61b14cf0ea94181ac3af0efd7ead5710cb4f00",
+      "status": "approved",
+      "approverType": "human",
+      "approver": "Project owner in task 01a08c07-cb79-7c70-b8ec-fc8f20155e46",
+      "approvedAt": "2026-09-14T01:19:59.062Z",
+      "approvalBasis": "User approved the repaired five-edition September13–17 lineup with exact-move scoring: “ok send them in. commit and push.” Public dataset paths were packaged without changing original prices or scored headlines. Earlier user “go” authorized exact-move scoring. September11–12 retain their released rules because activation now occurs September13.",
+      "sourceTaskId": "01a08c07-cb79-7c70-b8ec-fc8f20155e46"
     }
   ]
 }

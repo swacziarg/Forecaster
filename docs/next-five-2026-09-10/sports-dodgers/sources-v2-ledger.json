@@ -1,0 +1,45 @@
+{
+  "retrievedAt": "2026-09-10T16:07:26.811213+00:00",
+  "sources": [
+    {
+      "id": "glasnow-injury",
+      "url": "https://www.mlb.com/news/tyler-glasnow-injured-list-shoulder-inflammation",
+      "path": "docs/next-five-2026-09-10/sports-dodgers/glasnow-injury.html",
+      "success": true,
+      "error": "",
+      "sha256": "e41c86dff4cb76971dfbebe8ae644c27b0b3a9ada78d9e48c4adcfe358f0bc12"
+    },
+    {
+      "id": "ohtani-return",
+      "url": "https://www.mlb.com/news/shohei-ohtani-makes-dodgers-pitching-debut",
+      "path": "docs/next-five-2026-09-10/sports-dodgers/ohtani-return.html",
+      "success": true,
+      "error": "",
+      "sha256": "9e75c8ab32166e18547d4af3112fa17c303dedde2285350cf0604891cf8e520a"
+    },
+    {
+      "id": "seven-losses",
+      "url": "https://www.mlb.com/dodgers/news/dodgers-lose-7th-straight-game",
+      "path": "docs/next-five-2026-09-10/sports-dodgers/seven-losses.html",
+      "success": true,
+      "error": "",
+      "sha256": "781d07de8a7613889dddcbf8262d3484bf6fb2acf07b1fdb92fef555d26e7b69"
+    },
+    {
+      "id": "nlds-escape",
+      "url": "https://www.mlb.com/news/dodgers-win-nlds-2025-vs-phillies",
+      "path": "docs/next-five-2026-09-10/sports-dodgers/nlds-escape.html",
+      "success": true,
+      "error": "",
+      "sha256": "8704e98acd46e0306999c2bafb5e8ce22536b6bf6b56f6cd43b2a0625b2cb9cf"
+    },
+    {
+      "id": "pennant-sweep",
+      "url": "https://www.mlb.com/dodgers/news/dodgers-win-2025-nlcs",
+      "path": "docs/next-five-2026-09-10/sports-dodgers/pennant-sweep.html",
+      "success": true,
+      "error": "",
+      "sha256": "f6a0ddba16d44a81ed1d2f3598094d83ad6dda772fc41eb0fae5a709c59e055e"
+    }
+  ]
+}

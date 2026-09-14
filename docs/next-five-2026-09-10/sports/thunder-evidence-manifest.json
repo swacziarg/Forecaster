@@ -1,0 +1,85 @@
+{
+  "artifactType": "Thunder five-card retained evidence manifest",
+  "preparedAt": "2026-09-10T16:18:07.436171+00:00",
+  "capturePolicy": "NBA game recap timestamps omit timezone. Treat as date-only and use 12:00 UTC the following day, covering even UTC-12 rather than inventing a timezone. Other source timestamps use retained exact UTC metadata. These bounds are conservative and can include later news; they do not identify isolated causal effects.",
+  "sources": [
+    {
+      "id": "nba-denver-opener",
+      "url": "https://www.nba.com/game/OKC-vs-DEN-0022400075/boxscore",
+      "localPath": "evidence/nba-denver-opener.html",
+      "sha256": "ca659cf44cabd3806063d3f98f24422028fe73c72ff6c8b3b7fa2cbe433c70fd",
+      "publishedAt": "2024-10-25",
+      "publishedPrecision": "day",
+      "retrievedAt": "2026-09-10T16:06:41.319513+00:00",
+      "eventId": "denver-opener",
+      "snapshotHash": "ca659cf44cabd3806063d3f98f24422028fe73c72ff6c8b3b7fa2cbe433c70fd",
+      "informationKnownAt": "2024-10-26T12:00:00Z"
+    },
+    {
+      "id": "nba-chet-injury",
+      "url": "https://cdn-uat.nba.com/news/chet-holmgren-thunder-hip-injury",
+      "localPath": "evidence/nba-chet-injury.html",
+      "sha256": "9737ea23a2b9d4549797f6df6fab9c0b2f0c96c7dab582014f289af4ca49f7d1",
+      "publishedAt": "2024-11-11T02:08:25Z",
+      "retrievedAt": "2026-09-10T16:06:42.666675+00:00",
+      "eventId": "chet-injury",
+      "publishedPrecision": "instant",
+      "snapshotHash": "9737ea23a2b9d4549797f6df6fab9c0b2f0c96c7dab582014f289af4ca49f7d1",
+      "updatedAt": "2024-11-11T12:47:34Z",
+      "informationKnownAt": "2024-11-11T12:47:34Z"
+    },
+    {
+      "id": "nba-regular-season-finale",
+      "url": "https://www.nba.com/game/okc-vs-nop-0022401196",
+      "localPath": "evidence/nba-regular-season-finale.html",
+      "sha256": "4b72a57a81c7e0322adb9c7e411ba6dcf24a4e06f7f912f0df17a509e5620481",
+      "publishedAt": "2025-04-13",
+      "publishedPrecision": "day",
+      "retrievedAt": "2026-09-10T16:06:46.860817+00:00",
+      "eventId": "regular-season-best",
+      "snapshotHash": "4b72a57a81c7e0322adb9c7e411ba6dcf24a4e06f7f912f0df17a509e5620481",
+      "informationKnownAt": "2025-04-14T12:00:00Z"
+    },
+    {
+      "id": "nba-grizzlies-sweep",
+      "url": "https://www.nba.com/game/0042400144",
+      "localPath": "evidence/nba-grizzlies-sweep.html",
+      "sha256": "668e45192753fcc82940b7200487ad366d85fbad19fdc1fa3df35b82ff179e32",
+      "publishedAt": "2025-04-26",
+      "publishedPrecision": "day",
+      "retrievedAt": "2026-09-10T16:06:48.390852+00:00",
+      "eventId": "grizzlies-sweep",
+      "snapshotHash": "668e45192753fcc82940b7200487ad366d85fbad19fdc1fa3df35b82ff179e32",
+      "informationKnownAt": "2025-04-27T12:00:00Z"
+    },
+    {
+      "id": "nba-west-finals",
+      "url": "https://www.nba.com/thunder/news/release-finals-250528",
+      "localPath": "evidence/nba-west-finals.html",
+      "sha256": "dfe12b85dc151a90b458ea39808edafac884066d96779319ce90a936a0d7b876",
+      "publishedAt": "2025-05-29T03:20:17Z",
+      "retrievedAt": "2026-09-10T16:06:50.183255+00:00",
+      "eventId": "west-finals",
+      "publishedPrecision": "instant",
+      "snapshotHash": "dfe12b85dc151a90b458ea39808edafac884066d96779319ce90a936a0d7b876",
+      "informationKnownAt": "2025-05-29T03:21:00Z"
+    },
+    {
+      "id": "thunder-ending",
+      "url": "https://www.nba.com/game/IND-vs-OKC-0042400407",
+      "localPath": "evidence/thunder-ending.html",
+      "sha256": "212822549afd69236e017eb4215087d33fbe89265dc71a0362b2be57c652192d",
+      "publishedAt": "2025-06-23",
+      "role": "reveal-only conclusion",
+      "publishedPrecision": "day",
+      "retrievedAt": "2026-09-10T16:06:51.219828+00:00",
+      "snapshotHash": "212822549afd69236e017eb4215087d33fbe89265dc71a0362b2be57c652192d"
+    }
+  ],
+  "marketMetadata": {
+    "localPath": "nba-champion-2024-2025-metadata.json",
+    "sha256": "15a94415c2be5b93830986e23b76cdae77e5bbaa4e8f68f105c860ec4df6b768",
+    "eventId": "12815",
+    "marketId": "507884"
+  }
+}

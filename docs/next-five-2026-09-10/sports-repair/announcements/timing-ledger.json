@@ -1,0 +1,55 @@
+{
+  "artifactType": "Thunder announcement timing repair evidence",
+  "preparedAt": "2026-09-10T16:14:17Z",
+  "method": "Snowflake tweet timestamps are decoded with epoch 1288834974657; article timestamps come from retained JSON-LD. The source page was copied locally with its original bytes and hash.",
+  "entries": [
+    {
+      "id": "holmgren-fracture",
+      "headline": "Thunder announce Chet Holmgren pelvic fracture",
+      "eventDate": "2024-11-10",
+      "occurredAtBound": "2024-11-10",
+      "informationKnownAt": "2024-11-11T02:08:25Z",
+      "informationPrecision": "instant",
+      "primaryEvidence": {
+        "url": "https://www.nba.com/news/chet-holmgren-thunder-hip-injury",
+        "localSnapshot": "nba-chet-injury-snapshot.html",
+        "sha256": "9737ea23a2b9d4549797f6df6fab9c0b2f0c96c7dab582014f289af4ca49f7d1",
+        "datePublished": "2024-11-11T02:08:25Z",
+        "dateModified": "2024-11-11T12:47:34Z",
+        "evidence": "The retained NBA News Services page states that the team announced the right iliac wing fracture and expected return this season."
+      },
+      "independentSocialCorroboration": {
+        "url": "https://twitter.com/jxlorenzi/status/1855857731422351510",
+        "tweetId": "1855857731422351510",
+        "tweetTimestamp": "2024-11-11T06:18:57.997Z",
+        "text": "Per the Thunder, Chet Holmgren suffered a right iliac wing fracture on Sunday night. He’s expected to return this season, and a status update will be provided in 8-10 weeks.",
+        "role": "Secondary reporter contemporaneous corroboration; later than the retained article publication."
+      },
+      "limitation": "The linked team page was not independently retrievable in this environment, so the cutoff uses the retained NBA article's JSON-LD publication instant rather than claiming an earlier team-post time."
+    },
+    {
+      "id": "holmgren-return-announcement",
+      "headline": "Chet Holmgren announces return",
+      "eventDate": "2025-02-06",
+      "occurredAtBound": "2025-02-06",
+      "informationKnownAt": "2025-02-06T14:42:10.195Z",
+      "informationPrecision": "instant",
+      "primaryEvidence": {
+        "url": "https://twitter.com/ChetHolmgren/status/1887512110986633513",
+        "tweetId": "1887512110986633513",
+        "tweetTimestamp": "2025-02-06T14:42:10.195Z",
+        "text": "I’m back",
+        "role": "Player's own announcement, embedded by the contemporaneous NBA/AP article."
+      },
+      "independentArticleCorroboration": {
+        "url": "https://www.nba.com/news/thunder-chet-holmgren-to-return-friday",
+        "localSnapshot": "chet-return-snapshot.html",
+        "sha256": "2418d7cd8b58e976921a9f25564fa98a236a32816d5c5a03d95f3f617c4c6ad0",
+        "datePublished": "2025-02-06T15:00:14Z",
+        "dateModified": "2025-02-08T06:38:24Z",
+        "evidence": "The article reports the return announcement and embeds the player's tweet; its later game recap is not used as the event headline."
+      },
+      "limitation": "The announcement is scored at the player's tweet timestamp; the February 7 Toronto game is a separate later result and is excluded from this event."
+    }
+  ]
+}

@@ -1,0 +1,6196 @@
+NATIONAL BASKETBALL ASSOCIATION OFFICIAL SCORER'S REPORT
+FINAL BOX
+Wednesday, May 28, 2025 Paycom Center, Oklahoma City, OK
+Officials:
+ 
+#19 James Capers,
+ 
+#8 Marc Davis,
+ 
+#46 Ben Taylor,
+ 
+#14 Ed Malloy
+Game Duration: 
+2:12
+Attendance: 18203 
+(Sellout)
+VISITOR: 
+Minnesota Timberwolves
+ 
+(1-4)
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+3
+Jaden McDaniels
+F
+20:49
+2
+13
+1
+5
+0
+0
+2
+3
+5
+1
+1
+0
+1
+0
+-16
+5
+30
+Julius Randle
+F
+31:23
+8
+14
+4
+6
+4
+5
+1
+4
+5
+3
+2
+1
+4
+0
+-28
+24
+27
+Rudy Gobert
+C
+19:21
+1
+1
+0
+0
+0
+0
+1
+4
+5
+1
+2
+0
+1
+1
+-7
+2
+5
+Anthony Edwards
+G
+38:30
+7
+18
+1
+7
+4
+6
+0
+6
+6
+2
+2
+0
+3
+1
+-29
+19
+10
+Mike Conley
+G
+21:06
+0
+3
+0
+1
+0
+0
+0
+0
+0
+1
+2
+2
+1
+1
+-22
+0
+0
+Donte DiVincenzo
+22:25
+2
+4
+2
+4
+0
+0
+0
+6
+6
+2
+2
+1
+2
+0
+-21
+6
+9
+Nickeil Alexander-Walker
+20:20
+0
+8
+0
+4
+0
+0
+0
+2
+2
+3
+1
+0
+2
+0
+-12
+0
+11
+Naz Reid
+24:05
+5
+6
+1
+1
+0
+0
+2
+3
+5
+0
+4
+1
+5
+3
+-21
+11
+00
+Terrence Shannon Jr.
+15:45
+3
+8
+1
+3
+4
+4
+0
+1
+1
+0
+3
+1
+1
+0
+-10
+11
+4
+Rob Dillingham
+06:34
+3
+5
+1
+1
+0
+0
+0
+1
+1
+2
+1
+0
+0
+0
+4
+7
+8
+Josh Minott
+06:34
+1
+2
+1
+2
+0
+0
+0
+0
+0
+1
+0
+0
+1
+0
+4
+3
+22
+Jaylen Clark
+06:34
+1
+1
+0
+0
+0
+0
+0
+1
+1
+0
+0
+1
+0
+0
+4
+2
+55
+Luka Garza
+06:34
+2
+2
+0
+0
+0
+0
+2
+0
+2
+0
+0
+0
+0
+0
+4
+4
+7
+Joe Ingles
+DNP - Coach's Decision
+33
+Leonard Miller
+DNP - Coach's Decision
+240:00
+35
+85
+12
+34
+12
+15
+8
+31
+39
+16
+20
+7
+21
+6
+-30
+94
+41.2%
+35.3%
+80%
+TM REB: 6
+TOT TO: 21 (18 PTS)
+HOME: 
+OKLAHOMA CITY THUNDER
+ 
+(4-1)
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+8
+Jalen Williams
+F
+32:28
+7
+14
+1
+4
+4
+5
+0
+8
+8
+5
+2
+1
+4
+1
+25
+19
+7
+Chet Holmgren
+F
+30:17
+8
+13
+2
+4
+4
+6
+1
+6
+7
+0
+3
+0
+0
+3
+21
+22
+55
+Isaiah Hartenstein
+C
+17:02
+4
+5
+0
+0
+0
+0
+1
+4
+5
+0
+1
+2
+1
+2
+11
+8
+5
+Luguentz Dort
+G
+38:03
+4
+11
+4
+10
+0
+0
+1
+3
+4
+1
+2
+3
+2
+0
+24
+12
+2
+Shai Gilgeous-Alexander
+G
+33:36
+14
+25
+2
+4
+4
+4
+1
+6
+7
+8
+2
+2
+2
+0
+23
+34
+9
+Alex Caruso
+24:13
+1
+5
+0
+3
+6
+6
+1
+2
+3
+3
+5
+4
+0
+0
+13
+8
+22
+Cason Wallace
+24:09
+2
+6
+1
+3
+0
+0
+1
+1
+2
+3
+1
+0
+1
+2
+25
+5
+21
+Aaron Wiggins
+08:21
+0
+1
+0
+1
+0
+0
+0
+2
+2
+1
+1
+0
+0
+0
+16
+0
+34
+Kenrich Williams
+07:07
+0
+0
+0
+0
+0
+0
+1
+3
+4
+0
+0
+1
+0
+0
+12
+0
+11
+Isaiah Joe
+05:32
+4
+4
+3
+3
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+-2
+11
+6
+Jaylin Williams
+05:14
+0
+1
+0
+1
+0
+0
+0
+1
+1
+2
+3
+1
+2
+0
+-4
+0
+25
+Ajay Mitchell
+05:14
+1
+1
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+1
+0
+-4
+2
+3
+Dillon Jones
+04:22
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+0
+0
+1
+0
+-5
+0
+13
+Ousmane Dieng
+04:22
+1
+2
+1
+2
+0
+0
+0
+0
+0
+2
+0
+0
+0
+0
+-5
+3
+240:00
+46
+88
+14
+35
+18
+21
+7
+39
+46
+26
+20
+14
+14
+8
+30
+124
+52.3%
+40%
+85.7%
+TM REB: 7
+TOT TO: 16 (19 PTS)
+SCORE BY PERIOD
+1
+2
+3
+4
+FINAL
+Timberwolves
+9
+23
+30
+32
+94
+THUNDER
+26
+39
+23
+36
+124
+Inactive: Timberwolves -
+Inactive: Thunder - Topic (Injury/Illness - Left Knee; Surgery )
+Points in the Paint: Timberwolves 42 (21/43), THUNDER 54 (27/42)
+2nd Chance Points: Timberwolves 9 (4/8), THUNDER 9 (4/8)
+Fast Break Points: Timberwolves 11 (3/9), THUNDER 19 (8/11)
+ 
+Biggest Lead: Timberwolves 3, THUNDER 39
+Lead Changes: 1
+Times Tied: 1
+Technical fouls - Individual
+ 
+Timberwolves (1): 
+Finch 2:38 1st
+ 
+THUNDER (0): 
+NONE
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL SCORER'S REPORT
+1st QUARTER ONLY
+Wednesday, May 28, 2025 Paycom Center, Oklahoma City, OK
+Officials:
+ 
+#19 James Capers,
+ 
+#8 Marc Davis,
+ 
+#46 Ben Taylor,
+ 
+#14 Ed Malloy
+Period Duration: 
+0:25
+Attendance: 18203 
+(Sellout)
+VISITOR: 
+Minnesota Timberwolves
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+3
+Jaden McDaniels
+F
+06:28
+0
+6
+0
+3
+0
+0
+1
+1
+2
+0
+0
+0
+0
+0
+-6
+0
+30
+Julius Randle
+F
+09:22
+1
+3
+1
+2
+0
+0
+0
+1
+1
+0
+0
+0
+2
+0
+-16
+3
+27
+Rudy Gobert
+C
+09:06
+0
+0
+0
+0
+0
+0
+1
+3
+4
+1
+1
+0
+0
+1
+-7
+0
+5
+Anthony Edwards
+G
+12:00
+2
+5
+0
+2
+2
+2
+0
+2
+2
+0
+1
+0
+0
+0
+-17
+6
+10
+Mike Conley
+G
+06:28
+0
+2
+0
+1
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+-6
+0
+0
+Donte DiVincenzo
+05:32
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+-11
+0
+9
+Nickeil Alexander-Walker
+05:32
+0
+4
+0
+1
+0
+0
+0
+0
+0
+0
+1
+0
+0
+0
+-11
+0
+11
+Naz Reid
+05:32
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+1
+2
+1
+-11
+0
+22
+Jaylen Clark
+DNP - Coach's Decision
+4
+Rob Dillingham
+DNP - Coach's Decision
+55
+Luka Garza
+DNP - Coach's Decision
+7
+Joe Ingles
+DNP - Coach's Decision
+33
+Leonard Miller
+DNP - Coach's Decision
+8
+Josh Minott
+DNP - Coach's Decision
+00
+Terrence Shannon Jr.
+DNP - Coach's Decision
+60:00
+3
+20
+1
+9
+2
+2
+2
+9
+11
+1
+4
+1
+4
+2
+-17
+9
+15%
+11.1%
+100%
+TM REB: 0
+TOT TO: 4 (4 PTS)
+HOME: 
+OKLAHOMA CITY THUNDER
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+8
+Jalen Williams
+F
+08:16
+1
+4
+0
+1
+0
+0
+0
+3
+3
+1
+0
+0
+0
+0
+12
+2
+7
+Chet Holmgren
+F
+08:16
+3
+5
+1
+2
+0
+0
+0
+1
+1
+0
+1
+0
+0
+0
+12
+7
+55
+Isaiah Hartenstein
+C
+08:33
+1
+1
+0
+0
+0
+0
+0
+3
+3
+0
+1
+1
+1
+1
+13
+2
+5
+Luguentz Dort
+G
+11:02
+0
+1
+0
+1
+0
+0
+0
+2
+2
+0
+1
+0
+0
+0
+14
+0
+2
+Shai Gilgeous-Alexander
+G
+12:00
+5
+7
+1
+1
+1
+1
+0
+3
+3
+5
+1
+0
+1
+0
+17
+12
+9
+Alex Caruso
+07:11
+0
+1
+0
+1
+0
+0
+0
+0
+0
+1
+1
+1
+0
+0
+9
+0
+22
+Cason Wallace
+03:44
+1
+3
+1
+2
+0
+0
+0
+1
+1
+0
+1
+0
+0
+0
+5
+3
+21
+Aaron Wiggins
+00:58
+0
+1
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+3
+0
+13
+Ousmane Dieng
+DNP - Coach's Decision
+11
+Isaiah Joe
+DNP - Coach's Decision
+3
+Dillon Jones
+DNP - Coach's Decision
+25
+Ajay Mitchell
+DNP - Coach's Decision
+6
+Jaylin Williams
+DNP - Coach's Decision
+34
+Kenrich Williams
+DNP - Coach's Decision
+60:00
+11
+23
+3
+9
+1
+1
+0
+13
+13
+7
+6
+2
+2
+1
+17
+26
+47.8%
+33.3%
+100%
+TM REB: 5
+TOT TO: 3 (0 PTS)
+SCORE BY PERIOD
+1
+FINAL
+Timberwolves
+9
+9
+THUNDER
+26
+26
+Inactive: Timberwolves -
+Inactive: Thunder - Topic (Injury/Illness - Left Knee; Surgery )
+Points in the Paint: Timberwolves 4 (2/9), THUNDER 16 (8/13)
+2nd Chance Points: Timberwolves 3 (1/2), THUNDER 0 (0/1)
+Fast Break Points: Timberwolves 0 (0/2), THUNDER 6 (3/4)
+ 
+Biggest Lead: Timberwolves 3, THUNDER 17
+Lead Changes: 1
+Times Tied: 1
+Technical fouls - Individual
+ 
+Timberwolves (1): 
+Finch 2:38 1st
+ 
+THUNDER (0): 
+NONE
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL SCORER'S REPORT
+2nd QUARTER ONLY
+Wednesday, May 28, 2025 Paycom Center, Oklahoma City, OK
+Officials:
+ 
+#19 James Capers,
+ 
+#8 Marc Davis,
+ 
+#46 Ben Taylor,
+ 
+#14 Ed Malloy
+Period Duration: 
+0:31
+Attendance: 18203 
+(Sellout)
+VISITOR: 
+Minnesota Timberwolves
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+3
+Jaden McDaniels
+F
+08:03
+1
+2
+1
+1
+0
+0
+0
+2
+2
+1
+1
+0
+1
+0
+-12
+3
+30
+Julius Randle
+F
+07:32
+2
+4
+1
+2
+0
+0
+0
+0
+0
+1
+0
+1
+2
+0
+-11
+5
+27
+Rudy Gobert
+C
+02:54
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+-3
+0
+5
+Anthony Edwards
+G
+09:04
+1
+5
+0
+3
+1
+2
+0
+3
+3
+1
+0
+0
+1
+1
+-11
+3
+10
+Mike Conley
+G
+04:25
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+1
+1
+-9
+0
+0
+Donte DiVincenzo
+06:39
+1
+1
+1
+1
+0
+0
+0
+3
+3
+0
+2
+0
+2
+0
+-10
+3
+9
+Nickeil Alexander-Walker
+07:35
+0
+1
+0
+0
+0
+0
+0
+1
+1
+1
+0
+0
+1
+0
+-7
+0
+11
+Naz Reid
+05:31
+2
+2
+0
+0
+0
+0
+0
+0
+0
+0
+2
+0
+2
+0
+-6
+4
+00
+Terrence Shannon Jr.
+08:17
+2
+3
+1
+2
+0
+0
+0
+0
+0
+0
+3
+0
+0
+0
+-11
+5
+22
+Jaylen Clark
+DNP - Coach's Decision
+4
+Rob Dillingham
+DNP - Coach's Decision
+55
+Luka Garza
+DNP - Coach's Decision
+7
+Joe Ingles
+DNP - Coach's Decision
+33
+Leonard Miller
+DNP - Coach's Decision
+8
+Josh Minott
+DNP - Coach's Decision
+60:00
+9
+18
+4
+9
+1
+2
+0
+9
+9
+5
+9
+2
+10
+2
+-16
+23
+50%
+44.4%
+50%
+TM REB: 1
+TOT TO: 10 (10 PTS)
+HOME: 
+OKLAHOMA CITY THUNDER
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+8
+Jalen Williams
+F
+09:08
+4
+5
+1
+2
+4
+5
+0
+3
+3
+1
+0
+1
+2
+0
+14
+13
+7
+Chet Holmgren
+F
+06:57
+2
+3
+1
+1
+3
+4
+0
+1
+1
+0
+1
+0
+0
+1
+10
+8
+55
+Isaiah Hartenstein
+C
+01:47
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+1
+0
+5
+Luguentz Dort
+G
+09:04
+0
+2
+0
+2
+0
+0
+0
+0
+0
+1
+0
+1
+0
+0
+11
+0
+2
+Shai Gilgeous-Alexander
+G
+06:35
+3
+7
+0
+1
+2
+2
+1
+0
+1
+0
+0
+1
+0
+0
+7
+8
+9
+Alex Caruso
+05:31
+1
+2
+0
+1
+6
+6
+0
+1
+1
+0
+2
+2
+0
+0
+4
+8
+22
+Cason Wallace
+09:18
+1
+2
+0
+1
+0
+0
+0
+0
+0
+2
+0
+0
+0
+0
+10
+2
+21
+Aaron Wiggins
+06:31
+0
+0
+0
+0
+0
+0
+0
+2
+2
+1
+1
+0
+0
+0
+12
+0
+34
+Kenrich Williams
+04:51
+0
+0
+0
+0
+0
+0
+1
+2
+3
+0
+0
+1
+0
+0
+9
+0
+11
+Isaiah Joe
+00:18
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+2
+0
+13
+Ousmane Dieng
+DNP - Coach's Decision
+3
+Dillon Jones
+DNP - Coach's Decision
+25
+Ajay Mitchell
+DNP - Coach's Decision
+6
+Jaylin Williams
+DNP - Coach's Decision
+60:00
+11
+21
+2
+8
+15
+17
+2
+9
+11
+5
+4
+7
+2
+1
+16
+39
+52.4%
+25%
+88.2%
+TM REB: 1
+TOT TO: 2 (2 PTS)
+SCORE BY PERIOD
+2
+FINAL
+Timberwolves
+23
+23
+THUNDER
+39
+39
+Inactive: Timberwolves -
+Inactive: Thunder - Topic (Injury/Illness - Left Knee; Surgery )
+Points in the Paint: Timberwolves 10 (5/9), THUNDER 14 (7/10)
+2nd Chance Points: Timberwolves 0 (0/0), THUNDER 0 (0/2)
+Fast Break Points: Timberwolves 2 (1/3), THUNDER 8 (3/5)
+ 
+Biggest Lead: Timberwolves 0, THUNDER 33
+Lead Changes: 0
+Times Tied: 0
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL SCORER'S REPORT
+FIRST HALF
+Wednesday, May 28, 2025 Paycom Center, Oklahoma City, OK
+Officials:
+ 
+#19 James Capers,
+ 
+#8 Marc Davis,
+ 
+#46 Ben Taylor,
+ 
+#14 Ed Malloy
+Period Duration: 
+1:00
+Attendance: 18203 
+(Sellout)
+VISITOR: 
+Minnesota Timberwolves
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+3
+Jaden McDaniels
+F
+14:31
+1
+8
+1
+4
+0
+0
+1
+3
+4
+1
+1
+0
+1
+0
+-18
+3
+30
+Julius Randle
+F
+16:54
+3
+7
+2
+4
+0
+0
+0
+1
+1
+1
+0
+1
+4
+0
+-27
+8
+27
+Rudy Gobert
+C
+12:00
+0
+0
+0
+0
+0
+0
+1
+3
+4
+1
+1
+0
+0
+1
+-10
+0
+5
+Anthony Edwards
+G
+21:04
+3
+10
+0
+5
+3
+4
+0
+5
+5
+1
+1
+0
+1
+1
+-28
+9
+10
+Mike Conley
+G
+10:53
+0
+2
+0
+1
+0
+0
+0
+0
+0
+1
+2
+1
+1
+1
+-15
+0
+0
+Donte DiVincenzo
+12:11
+1
+1
+1
+1
+0
+0
+0
+4
+4
+0
+2
+0
+2
+0
+-21
+3
+9
+Nickeil Alexander-Walker
+13:07
+0
+5
+0
+1
+0
+0
+0
+1
+1
+1
+1
+0
+1
+0
+-18
+0
+11
+Naz Reid
+11:03
+2
+2
+0
+0
+0
+0
+0
+1
+1
+0
+2
+1
+4
+1
+-17
+4
+00
+Terrence Shannon Jr.
+08:17
+2
+3
+1
+2
+0
+0
+0
+0
+0
+0
+3
+0
+0
+0
+-11
+5
+22
+Jaylen Clark
+DNP - Coach's Decision
+4
+Rob Dillingham
+DNP - Coach's Decision
+55
+Luka Garza
+DNP - Coach's Decision
+7
+Joe Ingles
+DNP - Coach's Decision
+33
+Leonard Miller
+DNP - Coach's Decision
+8
+Josh Minott
+DNP - Coach's Decision
+120:00
+12
+38
+5
+18
+3
+4
+2
+18
+20
+6
+13
+3
+14
+4
+-33
+32
+31.6%
+27.8%
+75%
+TM REB: 1
+TOT TO: 14 (14 PTS)
+HOME: 
+OKLAHOMA CITY THUNDER
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+8
+Jalen Williams
+F
+17:24
+5
+9
+1
+3
+4
+5
+0
+6
+6
+2
+0
+1
+2
+0
+26
+15
+7
+Chet Holmgren
+F
+15:13
+5
+8
+2
+3
+3
+4
+0
+2
+2
+0
+2
+0
+0
+1
+22
+15
+55
+Isaiah Hartenstein
+C
+10:20
+1
+1
+0
+0
+0
+0
+0
+3
+3
+0
+1
+2
+1
+1
+14
+2
+5
+Luguentz Dort
+G
+20:06
+0
+3
+0
+3
+0
+0
+0
+2
+2
+1
+1
+1
+0
+0
+25
+0
+2
+Shai Gilgeous-Alexander
+G
+18:35
+8
+14
+1
+2
+3
+3
+1
+3
+4
+5
+1
+1
+1
+0
+24
+20
+9
+Alex Caruso
+12:42
+1
+3
+0
+2
+6
+6
+0
+1
+1
+1
+3
+3
+0
+0
+13
+8
+22
+Cason Wallace
+13:02
+2
+5
+1
+3
+0
+0
+0
+1
+1
+2
+1
+0
+0
+0
+15
+5
+21
+Aaron Wiggins
+07:29
+0
+1
+0
+1
+0
+0
+0
+2
+2
+1
+1
+0
+0
+0
+15
+0
+34
+Kenrich Williams
+04:51
+0
+0
+0
+0
+0
+0
+1
+2
+3
+0
+0
+1
+0
+0
+9
+0
+11
+Isaiah Joe
+00:18
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+2
+0
+13
+Ousmane Dieng
+DNP - Coach's Decision
+3
+Dillon Jones
+DNP - Coach's Decision
+25
+Ajay Mitchell
+DNP - Coach's Decision
+6
+Jaylin Williams
+DNP - Coach's Decision
+120:00
+22
+44
+5
+17
+16
+18
+2
+22
+24
+12
+10
+9
+4
+2
+33
+65
+50%
+29.4%
+88.9%
+TM REB: 6
+TOT TO: 5 (2 PTS)
+SCORE BY PERIOD
+1
+2
+FINAL
+Timberwolves
+9
+23
+32
+THUNDER
+26
+39
+65
+Inactive: Timberwolves -
+Inactive: Thunder - Topic (Injury/Illness - Left Knee; Surgery )
+Points in the Paint: Timberwolves 14 (7/18), THUNDER 30 (15/23)
+2nd Chance Points: Timberwolves 3 (1/2), THUNDER 0 (0/3)
+Fast Break Points: Timberwolves 2 (1/5), THUNDER 14 (6/9)
+ 
+Biggest Lead: Timberwolves 3, THUNDER 33
+Lead Changes: 1
+Times Tied: 1
+Technical fouls - Individual
+ 
+Timberwolves (1): 
+Finch 2:38 1st
+ 
+THUNDER (0): 
+NONE
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL SCORER'S REPORT
+3rd QUARTER ONLY
+Wednesday, May 28, 2025 Paycom Center, Oklahoma City, OK
+Officials:
+ 
+#19 James Capers,
+ 
+#8 Marc Davis,
+ 
+#46 Ben Taylor,
+ 
+#14 Ed Malloy
+Period Duration: 
+0:25
+Attendance: 18203 
+(Sellout)
+VISITOR: 
+Minnesota Timberwolves
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+3
+Jaden McDaniels
+F
+04:47
+1
+3
+0
+1
+0
+0
+1
+0
+1
+0
+0
+0
+0
+0
+1
+2
+30
+Julius Randle
+F
+09:03
+4
+4
+2
+2
+3
+3
+0
+1
+1
+1
+2
+0
+0
+0
+7
+13
+27
+Rudy Gobert
+C
+07:21
+1
+1
+0
+0
+0
+0
+0
+1
+1
+0
+1
+0
+1
+0
+3
+2
+5
+Anthony Edwards
+G
+12:00
+4
+7
+1
+2
+1
+2
+0
+1
+1
+1
+0
+0
+0
+0
+7
+10
+10
+Mike Conley
+G
+04:47
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+1
+0
+0
+Donte DiVincenzo
+07:13
+1
+2
+1
+2
+0
+0
+0
+2
+2
+1
+0
+0
+0
+0
+6
+3
+9
+Nickeil Alexander-Walker
+07:13
+0
+3
+0
+3
+0
+0
+0
+1
+1
+2
+0
+0
+1
+0
+6
+0
+11
+Naz Reid
+07:36
+0
+1
+0
+0
+0
+0
+2
+2
+4
+0
+2
+0
+1
+1
+4
+0
+00
+Terrence Shannon Jr.
+00:00
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+22
+Jaylen Clark
+DNP - Coach's Decision
+4
+Rob Dillingham
+DNP - Coach's Decision
+55
+Luka Garza
+DNP - Coach's Decision
+7
+Joe Ingles
+DNP - Coach's Decision
+33
+Leonard Miller
+DNP - Coach's Decision
+8
+Josh Minott
+DNP - Coach's Decision
+60:00
+11
+21
+4
+10
+4
+5
+3
+8
+11
+5
+5
+1
+3
+1
+7
+30
+52.4%
+40%
+80%
+TM REB: 3
+TOT TO: 3 (2 PTS)
+HOME: 
+OKLAHOMA CITY THUNDER
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+8
+Jalen Williams
+F
+08:18
+1
+2
+0
+0
+0
+0
+0
+0
+0
+1
+2
+0
+1
+0
+-9
+2
+7
+Chet Holmgren
+F
+08:18
+0
+0
+0
+0
+1
+2
+0
+2
+2
+0
+1
+0
+0
+1
+-9
+1
+55
+Isaiah Hartenstein
+C
+06:42
+3
+4
+0
+0
+0
+0
+1
+1
+2
+0
+0
+0
+0
+1
+-3
+6
+5
+Luguentz Dort
+G
+12:00
+2
+5
+2
+4
+0
+0
+1
+0
+1
+0
+0
+0
+1
+0
+-7
+6
+2
+Shai Gilgeous-Alexander
+G
+12:00
+4
+9
+0
+1
+0
+0
+0
+2
+2
+2
+1
+1
+1
+0
+-7
+8
+9
+Alex Caruso
+06:57
+0
+2
+0
+1
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+-4
+0
+22
+Cason Wallace
+04:21
+0
+0
+0
+0
+0
+0
+1
+0
+1
+0
+0
+0
+0
+0
+2
+0
+21
+Aaron Wiggins
+00:00
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+34
+Kenrich Williams
+01:24
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+2
+0
+11
+Isaiah Joe
+00:00
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+13
+Ousmane Dieng
+DNP - Coach's Decision
+3
+Dillon Jones
+DNP - Coach's Decision
+25
+Ajay Mitchell
+DNP - Coach's Decision
+6
+Jaylin Williams
+DNP - Coach's Decision
+60:00
+10
+22
+2
+6
+1
+2
+3
+6
+9
+4
+5
+1
+3
+2
+-7
+23
+45.5%
+33.3%
+50%
+TM REB: 1
+TOT TO: 3 (6 PTS)
+SCORE BY PERIOD
+3
+FINAL
+Timberwolves
+30
+30
+THUNDER
+23
+23
+Inactive: Timberwolves -
+Inactive: Thunder - Topic (Injury/Illness - Left Knee; Surgery )
+Points in the Paint: Timberwolves 12 (6/9), THUNDER 14 (7/12)
+2nd Chance Points: Timberwolves 0 (0/2), THUNDER 4 (2/3)
+Fast Break Points: Timberwolves 3 (1/2), THUNDER 2 (1/1)
+ 
+Biggest Lead: Timberwolves 0, THUNDER 37
+Lead Changes: 0
+Times Tied: 0
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL SCORER'S REPORT
+1st QUARTER - 3rd QUARTER
+Wednesday, May 28, 2025 Paycom Center, Oklahoma City, OK
+Officials:
+ 
+#19 James Capers,
+ 
+#8 Marc Davis,
+ 
+#46 Ben Taylor,
+ 
+#14 Ed Malloy
+Period Duration: 
+1:42
+Attendance: 18203 
+(Sellout)
+VISITOR: 
+Minnesota Timberwolves
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+3
+Jaden McDaniels
+F
+19:18
+2
+11
+1
+5
+0
+0
+2
+3
+5
+1
+1
+0
+1
+0
+-17
+5
+30
+Julius Randle
+F
+25:57
+7
+11
+4
+6
+3
+3
+0
+2
+2
+2
+2
+1
+4
+0
+-20
+21
+27
+Rudy Gobert
+C
+19:21
+1
+1
+0
+0
+0
+0
+1
+4
+5
+1
+2
+0
+1
+1
+-7
+2
+5
+Anthony Edwards
+G
+33:04
+7
+17
+1
+7
+4
+6
+0
+6
+6
+2
+1
+0
+1
+1
+-21
+19
+10
+Mike Conley
+G
+15:40
+0
+2
+0
+1
+0
+0
+0
+0
+0
+1
+2
+2
+1
+1
+-14
+0
+0
+Donte DiVincenzo
+19:24
+2
+3
+2
+3
+0
+0
+0
+6
+6
+1
+2
+0
+2
+0
+-15
+6
+9
+Nickeil Alexander-Walker
+20:20
+0
+8
+0
+4
+0
+0
+0
+2
+2
+3
+1
+0
+2
+0
+-12
+0
+11
+Naz Reid
+18:39
+2
+3
+0
+0
+0
+0
+2
+3
+5
+0
+4
+1
+5
+2
+-13
+4
+00
+Terrence Shannon Jr.
+08:17
+2
+3
+1
+2
+0
+0
+0
+0
+0
+0
+3
+0
+0
+0
+-11
+5
+22
+Jaylen Clark
+DNP - Coach's Decision
+4
+Rob Dillingham
+DNP - Coach's Decision
+55
+Luka Garza
+DNP - Coach's Decision
+7
+Joe Ingles
+DNP - Coach's Decision
+33
+Leonard Miller
+DNP - Coach's Decision
+8
+Josh Minott
+DNP - Coach's Decision
+180:00
+23
+59
+9
+28
+7
+9
+5
+26
+31
+11
+18
+4
+17
+5
+-26
+62
+39%
+32.1%
+77.8%
+TM REB: 4
+TOT TO: 17 (16 PTS)
+HOME: 
+OKLAHOMA CITY THUNDER
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+8
+Jalen Williams
+F
+25:42
+6
+11
+1
+3
+4
+5
+0
+6
+6
+3
+2
+1
+3
+0
+17
+17
+7
+Chet Holmgren
+F
+23:31
+5
+8
+2
+3
+4
+6
+0
+4
+4
+0
+3
+0
+0
+2
+13
+16
+55
+Isaiah Hartenstein
+C
+17:02
+4
+5
+0
+0
+0
+0
+1
+4
+5
+0
+1
+2
+1
+2
+11
+8
+5
+Luguentz Dort
+G
+32:06
+2
+8
+2
+7
+0
+0
+1
+2
+3
+1
+1
+1
+1
+0
+18
+6
+2
+Shai Gilgeous-Alexander
+G
+30:35
+12
+23
+1
+3
+3
+3
+1
+5
+6
+7
+2
+2
+2
+0
+17
+28
+9
+Alex Caruso
+19:39
+1
+5
+0
+3
+6
+6
+0
+1
+1
+2
+4
+3
+0
+0
+9
+8
+22
+Cason Wallace
+17:23
+2
+5
+1
+3
+0
+0
+1
+1
+2
+2
+1
+0
+0
+0
+17
+5
+21
+Aaron Wiggins
+07:29
+0
+1
+0
+1
+0
+0
+0
+2
+2
+1
+1
+0
+0
+0
+15
+0
+34
+Kenrich Williams
+06:15
+0
+0
+0
+0
+0
+0
+1
+3
+4
+0
+0
+1
+0
+0
+11
+0
+11
+Isaiah Joe
+00:18
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+2
+0
+13
+Ousmane Dieng
+DNP - Coach's Decision
+3
+Dillon Jones
+DNP - Coach's Decision
+25
+Ajay Mitchell
+DNP - Coach's Decision
+6
+Jaylin Williams
+DNP - Coach's Decision
+180:00
+32
+66
+7
+23
+17
+20
+5
+28
+33
+16
+15
+10
+7
+4
+26
+88
+48.5%
+30.4%
+85%
+TM REB: 7
+TOT TO: 8 (8 PTS)
+SCORE BY PERIOD
+1
+2
+3
+FINAL
+Timberwolves
+9
+23
+30
+62
+THUNDER
+26
+39
+23
+88
+Inactive: Timberwolves -
+Inactive: Thunder - Topic (Injury/Illness - Left Knee; Surgery )
+Points in the Paint: Timberwolves 26 (13/27), THUNDER 44 (22/35)
+2nd Chance Points: Timberwolves 3 (1/4), THUNDER 4 (2/6)
+Fast Break Points: Timberwolves 5 (2/7), THUNDER 16 (7/10)
+ 
+Biggest Lead: Timberwolves 3, THUNDER 37
+Lead Changes: 1
+Times Tied: 1
+Technical fouls - Individual
+ 
+Timberwolves (1): 
+Finch 2:38 1st
+ 
+THUNDER (0): 
+NONE
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL SCORER'S REPORT
+4th QUARTER ONLY
+Wednesday, May 28, 2025 Paycom Center, Oklahoma City, OK
+Officials:
+ 
+#19 James Capers,
+ 
+#8 Marc Davis,
+ 
+#46 Ben Taylor,
+ 
+#14 Ed Malloy
+Period Duration: 
+0:25
+Attendance: 18203 
+(Sellout)
+VISITOR: 
+Minnesota Timberwolves
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+3
+Jaden McDaniels
+F
+01:31
+0
+2
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+30
+Julius Randle
+F
+05:26
+1
+3
+0
+0
+1
+2
+1
+2
+3
+1
+0
+0
+0
+0
+-8
+3
+27
+Rudy Gobert
+C
+00:00
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+5
+Anthony Edwards
+G
+05:26
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+2
+0
+-8
+0
+10
+Mike Conley
+G
+05:26
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+-8
+0
+0
+Donte DiVincenzo
+03:01
+0
+1
+0
+1
+0
+0
+0
+0
+0
+1
+0
+1
+0
+0
+-6
+0
+9
+Nickeil Alexander-Walker
+00:00
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+11
+Naz Reid
+05:26
+3
+3
+1
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+-8
+7
+00
+Terrence Shannon Jr.
+07:28
+1
+5
+0
+1
+4
+4
+0
+1
+1
+0
+0
+1
+1
+0
+1
+6
+4
+Rob Dillingham
+06:34
+3
+5
+1
+1
+0
+0
+0
+1
+1
+2
+1
+0
+0
+0
+4
+7
+8
+Josh Minott
+06:34
+1
+2
+1
+2
+0
+0
+0
+0
+0
+1
+0
+0
+1
+0
+4
+3
+22
+Jaylen Clark
+06:34
+1
+1
+0
+0
+0
+0
+0
+1
+1
+0
+0
+1
+0
+0
+4
+2
+55
+Luka Garza
+06:34
+2
+2
+0
+0
+0
+0
+2
+0
+2
+0
+0
+0
+0
+0
+4
+4
+7
+Joe Ingles
+DNP - Coach's Decision
+33
+Leonard Miller
+DNP - Coach's Decision
+60:00
+12
+26
+3
+6
+5
+6
+3
+5
+8
+5
+2
+3
+4
+1
+-4
+32
+46.2%
+50%
+83.3%
+TM REB: 2
+TOT TO: 4 (2 PTS)
+HOME: 
+OKLAHOMA CITY THUNDER
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+8
+Jalen Williams
+F
+06:46
+1
+3
+0
+1
+0
+0
+0
+2
+2
+2
+0
+0
+1
+1
+8
+2
+7
+Chet Holmgren
+F
+06:46
+3
+5
+0
+1
+0
+0
+1
+2
+3
+0
+0
+0
+0
+1
+8
+6
+55
+Isaiah Hartenstein
+C
+00:00
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+5
+Luguentz Dort
+G
+05:57
+2
+3
+2
+3
+0
+0
+0
+1
+1
+0
+1
+2
+1
+0
+6
+6
+2
+Shai Gilgeous-Alexander
+G
+03:01
+2
+2
+1
+1
+1
+1
+0
+1
+1
+1
+0
+0
+0
+0
+6
+6
+9
+Alex Caruso
+04:34
+0
+0
+0
+0
+0
+0
+1
+1
+2
+1
+1
+1
+0
+0
+4
+0
+22
+Cason Wallace
+06:46
+0
+1
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+1
+2
+8
+0
+21
+Aaron Wiggins
+00:52
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+34
+Kenrich Williams
+00:52
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+11
+Isaiah Joe
+05:14
+4
+4
+3
+3
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+-4
+11
+6
+Jaylin Williams
+05:14
+0
+1
+0
+1
+0
+0
+0
+1
+1
+2
+3
+1
+2
+0
+-4
+0
+25
+Ajay Mitchell
+05:14
+1
+1
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+1
+0
+-4
+2
+3
+Dillon Jones
+04:22
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+0
+0
+1
+0
+-5
+0
+13
+Ousmane Dieng
+04:22
+1
+2
+1
+2
+0
+0
+0
+0
+0
+2
+0
+0
+0
+0
+-5
+3
+60:00
+14
+22
+7
+12
+1
+1
+2
+11
+13
+10
+5
+4
+7
+4
+4
+36
+63.6%
+58.3%
+100%
+TM REB: 0
+TOT TO: 8 (11 PTS)
+SCORE BY PERIOD
+4
+FINAL
+Timberwolves
+32
+32
+THUNDER
+36
+36
+Inactive: Timberwolves -
+Inactive: Thunder - Topic (Injury/Illness - Left Knee; Surgery )
+Points in the Paint: Timberwolves 16 (8/16), THUNDER 10 (5/7)
+2nd Chance Points: Timberwolves 6 (3/4), THUNDER 5 (2/2)
+Fast Break Points: Timberwolves 6 (1/2), THUNDER 3 (1/1)
+ 
+Biggest Lead: Timberwolves 0, THUNDER 39
+Lead Changes: 0
+Times Tied: 0
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL SCORER'S REPORT
+SECOND HALF
+Wednesday, May 28, 2025 Paycom Center, Oklahoma City, OK
+Officials:
+ 
+#19 James Capers,
+ 
+#8 Marc Davis,
+ 
+#46 Ben Taylor,
+ 
+#14 Ed Malloy
+Period Duration: 
+0:55
+Attendance: 18203 
+(Sellout)
+VISITOR: 
+Minnesota Timberwolves
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+3
+Jaden McDaniels
+F
+06:18
+1
+5
+0
+1
+0
+0
+1
+0
+1
+0
+0
+0
+0
+0
+2
+2
+30
+Julius Randle
+F
+14:29
+5
+7
+2
+2
+4
+5
+1
+3
+4
+2
+2
+0
+0
+0
+-1
+16
+27
+Rudy Gobert
+C
+07:21
+1
+1
+0
+0
+0
+0
+0
+1
+1
+0
+1
+0
+1
+0
+3
+2
+5
+Anthony Edwards
+G
+17:26
+4
+8
+1
+2
+1
+2
+0
+1
+1
+1
+1
+0
+2
+0
+-1
+10
+10
+Mike Conley
+G
+10:13
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+0
+-7
+0
+0
+Donte DiVincenzo
+10:14
+1
+3
+1
+3
+0
+0
+0
+2
+2
+2
+0
+1
+0
+0
+0
+3
+9
+Nickeil Alexander-Walker
+07:13
+0
+3
+0
+3
+0
+0
+0
+1
+1
+2
+0
+0
+1
+0
+6
+0
+11
+Naz Reid
+13:02
+3
+4
+1
+1
+0
+0
+2
+2
+4
+0
+2
+0
+1
+2
+-4
+7
+00
+Terrence Shannon Jr.
+07:28
+1
+5
+0
+1
+4
+4
+0
+1
+1
+0
+0
+1
+1
+0
+1
+6
+4
+Rob Dillingham
+06:34
+3
+5
+1
+1
+0
+0
+0
+1
+1
+2
+1
+0
+0
+0
+4
+7
+8
+Josh Minott
+06:34
+1
+2
+1
+2
+0
+0
+0
+0
+0
+1
+0
+0
+1
+0
+4
+3
+22
+Jaylen Clark
+06:34
+1
+1
+0
+0
+0
+0
+0
+1
+1
+0
+0
+1
+0
+0
+4
+2
+55
+Luka Garza
+06:34
+2
+2
+0
+0
+0
+0
+2
+0
+2
+0
+0
+0
+0
+0
+4
+4
+7
+Joe Ingles
+DNP - Coach's Decision
+33
+Leonard Miller
+DNP - Coach's Decision
+120:00
+23
+47
+7
+16
+9
+11
+6
+13
+19
+10
+7
+4
+7
+2
+3
+62
+48.9%
+43.8%
+81.8%
+TM REB: 5
+TOT TO: 7 (4 PTS)
+HOME: 
+OKLAHOMA CITY THUNDER
+POS
+MIN
+FG
+FGA
+3P
+3PA
+FT
+FTA
+OR
+DR
+TOT
+A
+PF
+ST
+TO
+BS
++/-
+PTS
+8
+Jalen Williams
+F
+15:04
+2
+5
+0
+1
+0
+0
+0
+2
+2
+3
+2
+0
+2
+1
+-1
+4
+7
+Chet Holmgren
+F
+15:04
+3
+5
+0
+1
+1
+2
+1
+4
+5
+0
+1
+0
+0
+2
+-1
+7
+55
+Isaiah Hartenstein
+C
+06:42
+3
+4
+0
+0
+0
+0
+1
+1
+2
+0
+0
+0
+0
+1
+-3
+6
+5
+Luguentz Dort
+G
+17:57
+4
+8
+4
+7
+0
+0
+1
+1
+2
+0
+1
+2
+2
+0
+-1
+12
+2
+Shai Gilgeous-Alexander
+G
+15:01
+6
+11
+1
+2
+1
+1
+0
+3
+3
+3
+1
+1
+1
+0
+-1
+14
+9
+Alex Caruso
+11:31
+0
+2
+0
+1
+0
+0
+1
+1
+2
+2
+2
+1
+0
+0
+0
+0
+22
+Cason Wallace
+11:07
+0
+1
+0
+0
+0
+0
+1
+0
+1
+1
+0
+0
+1
+2
+10
+0
+21
+Aaron Wiggins
+00:52
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+0
+34
+Kenrich Williams
+02:16
+0
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+3
+0
+11
+Isaiah Joe
+05:14
+4
+4
+3
+3
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+-4
+11
+6
+Jaylin Williams
+05:14
+0
+1
+0
+1
+0
+0
+0
+1
+1
+2
+3
+1
+2
+0
+-4
+0
+25
+Ajay Mitchell
+05:14
+1
+1
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+1
+0
+-4
+2
+3
+Dillon Jones
+04:22
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+0
+0
+1
+0
+-5
+0
+13
+Ousmane Dieng
+04:22
+1
+2
+1
+2
+0
+0
+0
+0
+0
+2
+0
+0
+0
+0
+-5
+3
+120:00
+24
+44
+9
+18
+2
+3
+5
+17
+22
+14
+10
+5
+10
+6
+-3
+59
+54.5%
+50%
+66.7%
+TM REB: 1
+TOT TO: 11 (17 PTS)
+SCORE BY PERIOD
+3
+4
+FINAL
+Timberwolves
+30
+32
+62
+THUNDER
+23
+36
+59
+Inactive: Timberwolves -
+Inactive: Thunder - Topic (Injury/Illness - Left Knee; Surgery )
+Points in the Paint: Timberwolves 28 (14/25), THUNDER 24 (12/19)
+2nd Chance Points: Timberwolves 6 (3/6), THUNDER 9 (4/5)
+Fast Break Points: Timberwolves 9 (2/4), THUNDER 5 (2/2)
+ 
+Biggest Lead: Timberwolves 0, THUNDER 39
+Lead Changes: 0
+Times Tied: 0
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL PLAY-BY-PLAY
+1st QUARTER
+Minnesota Timberwolves at OKLAHOMA CITY THUNDER
+Wednesday, May 28, 2025 Paycom Center, Oklahoma City, OK
+THUNDER Starters: 
+S.Gilgeous-Alexander
+ 
+L.Dort
+ 
+C.Holmgren
+ 
+J.Williams
+ 
+I.Hartenstein
+Timberwolves Starters: 
+M.Conley
+ 
+R.Gobert
+ 
+J.Randle
+ 
+A.Edwards
+ 
+J.McDaniels
+Time
+THUNDER
+Score
+Lead
+Timberwolves
+12:00
+Start of Period (7:44 PM)
+12:00
+JUMP BALL C.Holmgren VS. R.Gobert: TIP TO J.Randle
+11:44
+MISS J.McDaniels 24' 3PT Jump Shot
+11:41
+J.McDaniels REBOUND
+11:39
+MISS J.McDaniels Putback Layup
+11:38
+R.Gobert REBOUND
+11:35
+0-3
+-3
+J.Randle 28' 3PT Jump Shot (R.Gobert)
+11:10
+MISS C.Holmgren 13' Turnaround Fadeaway
+Shot
+11:09
+THUNDER REBOUND
+11:09
+R.Gobert L.B Foul (P1, T1) (M.Davis)
+10:56
+MISS J.Williams 26' 3PT Jump Shot
+10:55
+THUNDER REBOUND
+10:55
+THUNDER Shot Clock 
+TURNOVER #1
+10:39
+MISS J.McDaniels 13' Driving Hook
+10:37
+L.Dort REBOUND
+10:25
+MISS J.Williams 5' Driving Floating Shot
+10:22
+R.Gobert REBOUND
+10:18
+L.Dort P.FOUL (P1, T1) (M.Davis)
+10:01
+C.Holmgren P.FOUL (P1, T2) (M.Davis)
+09:55
+MISS J.McDaniels 17' Step Back Shot
+09:52
+S.Gilgeous-Alexander REBOUND
+09:42
+C.Holmgren 23' 3PT Jump Shot (S.Gilgeous-
+Alexander)
+3-3
+TIE
+09:26
+MISS J.Randle 23' 3PT Jump Shot
+09:21
+I.Hartenstein REBOUND
+09:17
+C.Holmgren FB Running Dunk (S.Gilgeous-
+Alexander)
+5-3
++2*
+09:03
+MISS M.Conley 6' Driving Floating Shot
+09:01
+C.Holmgren REBOUND
+08:51
+I.Hartenstein Alley Oop Layup (S.Gilgeous-
+Alexander)
+7-3
++4
+08:35
+MISS M.Conley 25' 3PT Step Back Shot
+08:31
+J.Williams REBOUND
+08:23
+MISS S.Gilgeous-Alexander 12' Step Back Shot
+R.Gobert BLOCK
+08:20
+R.Gobert REBOUND
+08:15
+I.Hartenstein BLOCK
+MISS J.Randle FB Running Layup
+08:12
+J.Williams REBOUND
+08:12
+M.Conley P.FOUL (P1, T2) (J.Capers)
+08:01
+S.Gilgeous-Alexander Driving Finger Roll Layup
+(J.Williams)
+9-3
++6
+07:44
+MISS J.McDaniels 23' 3PT Jump Shot
+07:42
+I.Hartenstein REBOUND
+07:31
+MISS C.Holmgren 26' 3PT Jump Shot
+07:27
+R.Gobert REBOUND
+07:19
+MISS J.McDaniels 24' 3PT Jump Shot
+07:16
+J.Williams REBOUND
+07:11
+C.Holmgren FB Running Alley Oop Dunk
+(S.Gilgeous-Alexander)
+11-3
++8
+07:11
+TIMEOUT (1)
+07:11
+SUB: A.Caruso FOR I.Hartenstein
+06:53
+11-5
++6
+A.Edwards Driving Reverse Layup
+06:38
+MISS J.Williams 14' Pullup Shot
+06:34
+J.McDaniels REBOUND
+06:21
+A.Caruso STEAL
+J.Randle Lost Ball 
+TURNOVER #1
+06:17
+S.Gilgeous-Alexander FB Running Dunk
+(A.Caruso)
+13-5
++8
+05:57
+13-7
++6
+A.Edwards Driving Finger Roll Layup
+05:43
+MISS S.Gilgeous-Alexander 16' Pullup Shot
+05:41
+A.Edwards REBOUND
+05:34
+MISS A.Edwards 27' 3PT Step Back Shot
+05:32
+THUNDER REBOUND
+05:32
+SUB: D.DiVincenzo FOR J.McDaniels
+05:32
+SUB: N.Alexander-Walker FOR M.Conley Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL PLAY-BY-PLAY
+05:32
+SUB: N.Reid FOR R.Gobert
+05:23
+N.Alexander-Walker P.FOUL (P1, T3) (B.Taylor)
+05:18
+J.Williams 12' Driving Floating Shot
+15-7
++8
+05:07
+J.Randle Out Of Bounds Bad Pass TURNOVER
+#2
+04:46
+S.Gilgeous-Alexander Lost Ball 
+TURNOVER #2
+N.Reid STEAL
+04:44
+N.Reid Out Of Bounds Lost Ball TURNOVER #3
+04:34
+S.Gilgeous-Alexander Driving Finger Roll Layup
+17-7
++10
+04:08
+MISS N.Alexander-Walker 16' Turnaround
+Fadeaway Shot
+04:03
+L.Dort REBOUND
+03:53
+S.Gilgeous-Alexander 7' Driving Floating Shot
+19-7
++12
+03:44
+S.Gilgeous-Alexander P.FOUL (P1, T3) (J.Capers)
+03:44
+SUB: C.Wallace FOR C.Holmgren
+03:44
+SUB: I.Hartenstein FOR J.Williams
+03:27
+I.Hartenstein STEAL
+N.Reid Lost Ball 
+TURNOVER #4
+03:15
+MISS A.Caruso 23' 3PT Jump Shot
+03:11
+J.Randle REBOUND
+03:06
+MISS N.Alexander-Walker FB Running Finger
+Roll Layup
+03:04
+I.Hartenstein REBOUND
+02:59
+S.Gilgeous-Alexander 25' 3PT Pullup Shot
+22-7
++15
+02:42
+MISS A.Edwards Driving Layup
+02:41
+S.Gilgeous-Alexander REBOUND
+02:38
+MISS C.Wallace FB Running Layup
+N.Reid BLOCK
+02:38
+THUNDER REBOUND
+02:38
+TIMEOUT (1)
+02:38
+Technical Foul C.Finch 
+(J.Capers)
+02:38
+SUB: R.Gobert FOR J.Randle
+02:38
+S.Gilgeous-Alexander Technical Free Throw 1 of
+1
+23-7
++16
+02:27
+A.Edwards P.FOUL (P1, T4) (M.Davis)
+02:24
+I.Hartenstein Offensive (P1) (M.Davis)
+02:24
+I.Hartenstein Foul TURNOVER #3
+02:16
+C.Wallace P.FOUL (P1, T4) (J.Capers)
+01:59
+MISS N.Alexander-Walker 4' Floating Shot
+01:59
+THUNDER REBOUND
+01:47
+MISS C.Wallace 25' 3PT Jump Shot
+01:43
+A.Edwards REBOUND
+01:35
+A.Caruso S.FOUL (P1.PN) (J.Capers)
+01:35
+23-8
++15
+A.Edwards Free Throw 1 of 2
+01:35
+23-9
++14
+A.Edwards Free Throw 2 of 2
+01:21
+MISS L.Dort 26' 3PT Jump Shot
+01:17
+N.Reid REBOUND
+01:02
+MISS A.Edwards 26' 3PT Jump Shot
+:58.6
+C.Wallace REBOUND
+:58.6
+SUB: A.Wiggins FOR L.Dort
+:43.9
+MISS A.Wiggins 24' 3PT Jump Shot
+:41.1
+D.DiVincenzo REBOUND
+:26.8
+MISS N.Alexander-Walker 26' 3PT Jump Shot
+:26.8
+S.Gilgeous-Alexander REBOUND
+:00.6
+C.Wallace 24' 3PT Jump Shot (S.Gilgeous-
+Alexander)
+26-9
++17
+End of 1st QUARTER (26-9) 
+End of Period (8:10 PM)
+1st QUARTER
+Minnesota Timberwolves at OKLAHOMA CITY THUNDER
+Wednesday, May 28, 2025 Paycom Center, Oklahoma City, OK
+THUNDER Starters: 
+S.Gilgeous-Alexander
+ 
+L.Dort
+ 
+C.Holmgren
+ 
+J.Williams
+ 
+I.Hartenstein
+Timberwolves Starters: 
+M.Conley
+ 
+R.Gobert
+ 
+J.Randle
+ 
+A.Edwards
+ 
+J.McDaniels
+Time
+THUNDER
+Score
+Lead
+Timberwolves
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+BIG
+ 
+HOME 
+LEAD 17
+*LEAD CHANGES 1
+BIG
+ 
+VISITOR 
+LEAD 3
+TIMES TIED 1
+3 FOR 0 PTS
+TURNOVERS
+4 FOR 4 PTS
+11/23 FOR 47.8%
+FIELD GOALS
+3/20 FOR 15%
+100/1 FOR 100%
+FREE THROWS
+100/2 FOR 100%
+OFF: 3 DEF: 15
+REBOUNDS
+OFF: 2 DEF: 9
+S.Gilgeous-Alexander: 12
+HIGH SCORER
+A.Edwards: 6
+J.Williams, I.Hartenstein, S.Gilgeous-
+Alexander: 3
+HIGH REBOUNDER
+R.Gobert: 4
+S.Gilgeous-Alexander: 5
+HIGH ASSISTS
+R.Gobert: 1
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL PLAY-BY-PLAY
+2nd QUARTER
+Minnesota Timberwolves at OKLAHOMA CITY THUNDER
+Wednesday, May 28, 2025 Paycom Center, Oklahoma City, OK
+THUNDER Starters: 
+A.Caruso
+ 
+A.Wiggins
+ 
+C.Wallace
+ 
+C.Holmgren
+ 
+J.Williams
+Timberwolves Starters: 
+D.DiVincenzo
+ 
+N.Alexander-Walker
+ 
+N.Reid
+ 
+J.Randle
+ 
+T.ShannonJr.
+Time
+THUNDER
+Score
+Lead
+Timberwolves
+12:00
+Start of Period (8:13 PM)
+12:00
+Possession: Thunder
+26-9
++17
+11:44
+A.Caruso Driving Finger Roll Layup
+28-9
++19
+11:34
+A.Caruso P.FOUL (P2, T1) (J.Capers)
+11:22
+28-11
++17
+N.Reid Driving Layup
+11:07
+MISS C.Wallace 25' 3PT Jump Shot
+11:04
+D.DiVincenzo REBOUND
+10:54
+A.Caruso STEAL
+J.Randle Bad Pass 
+TURNOVER #5
+10:53
+N.Reid S.FOUL (P1, T1) (J.Capers)
+10:53
+A.Caruso Free Throw 1 of 2
+29-11
++18
+10:53
+A.Caruso Free Throw 2 of 2
+30-11
++19
+10:29
+30-14
++16
+T.ShannonJr. 22' 3PT Jump Shot (J.Randle)
+10:12
+T.ShannonJr. S.FOUL (P1, T2) (M.Davis)
+10:12
+A.Caruso Free Throw 1 of 2
+31-14
++17
+10:12
+SUB: M.Conley FOR N.Alexander-Walker
+10:12
+A.Caruso Free Throw 2 of 2
+32-14
++18
+10:02
+SUB: K.Williams FOR A.Caruso
+09:53
+N.Reid Out Of Bounds Bad Pass TURNOVER #6
+09:35
+J.Williams Bad Pass 
+TURNOVER #4
+M.Conley STEAL
+09:25
+C.Holmgren BLOCK
+MISS J.Randle Driving Layup
+09:24
+A.Wiggins REBOUND
+09:18
+C.Holmgren FB Running Dunk (C.Wallace)
+34-14
++20
+09:06
+J.Williams STEAL
+N.Reid Lost Ball 
+TURNOVER #7
+09:04
+J.Williams FB Running Finger Roll Layup
+36-14
++22
+09:04
+T.ShannonJr. S.FOUL (P2, T3) (J.Capers)
+09:04
+TIMEOUT (2)
+09:04
+SUB: L.Dort FOR K.Williams
+09:04
+SUB: A.Edwards FOR D.DiVincenzo
+09:04
+SUB: J.McDaniels FOR N.Reid
+09:04
+MISS J.Williams Free Throw 1 of 1
+09:03
+J.McDaniels REBOUND
+08:46
+MISS A.Edwards 22' 3PT Step Back Shot
+08:43
+J.Williams REBOUND
+08:32
+J.Williams Driving Layup (A.Wiggins)
+38-14
++24
+08:16
+A.Wiggins S.FOUL (P1, T2) (J.Capers)
+08:16
+38-15
++23
+A.Edwards Free Throw 1 of 2
+08:16
+MISS A.Edwards Free Throw 2 of 2
+08:15
+A.Wiggins REBOUND
+08:06
+C.Holmgren 25' 3PT Jump Shot (J.Williams)
+41-15
++26
+07:52
+41-18
++23
+J.Randle 24' 3PT Jump Shot (J.McDaniels)
+07:35
+J.Williams 25' 3PT Jump Shot (C.Wallace)
+44-18
++26
+07:15
+MISS J.Randle 23' 3PT Jump Shot
+07:12
+J.Williams REBOUND
+07:04
+J.Williams Lost Ball 
+TURNOVER #5
+J.Randle STEAL
+07:01
+44-20
++24
+J.Randle FB Running Layup
+06:51
+MISS C.Holmgren Dunk
+M.Conley BLOCK
+06:49
+A.Edwards REBOUND
+06:44
+MISS A.Edwards 8' FB Driving Floating Shot
+06:43
+C.Holmgren REBOUND
+06:35
+J.McDaniels S.FOUL (P1, T4) (J.Capers)
+06:35
+C.Holmgren Free Throw 1 of 2
+45-20
++25
+06:35
+SUB: S.Gilgeous-Alexander FOR J.Williams
+06:35
+C.Holmgren Free Throw 2 of 2
+46-20
++26
+06:29
+S.Gilgeous-Alexander STEAL
+M.Conley Lost Ball 
+TURNOVER #8
+06:26
+C.Wallace FB Running Layup
+48-20
++28
+06:08
+48-22
++26
+T.ShannonJr. Driving Reverse Layup
+(M.Conley)
+05:47
+M.Conley P.FOUL (P2.PN) (M.Davis)
+05:47
+MISS C.Holmgren Free Throw 1 of 2
+05:47
+SUB: A.Caruso FOR A.Wiggins
+05:47
+SUB: R.Gobert FOR M.Conley
+05:47
+SUB: N.Alexander-Walker FOR J.Randle
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL PLAY-BY-PLAY
+05:47
+C.Holmgren Free Throw 2 of 2
+49-22
++27
+05:32
+49-24
++25
+A.Edwards 7' Driving Bank Hook
+05:20
+S.Gilgeous-Alexander Driving Finger Roll Layup
+51-24
++27
+05:04
+MISS T.ShannonJr. 24' 3PT Jump Shot
+05:03
+Timberwolves REBOUND
+05:03
+C.Holmgren L.B Foul (P2, T3) (B.Taylor)
+05:03
+SUB: K.Williams FOR C.Holmgren
+05:02
+L.Dort STEAL
+J.McDaniels Bad Pass 
+TURNOVER #9
+04:57
+MISS A.Caruso 23' 3PT FB Running Shot
+04:53
+S.Gilgeous-Alexander REBOUND
+04:52
+MISS S.Gilgeous-Alexander 12' Jump Shot
+04:49
+A.Edwards REBOUND
+04:44
+MISS A.Edwards 32' 3PT Pullup Shot
+04:41
+K.Williams REBOUND
+04:35
+MISS L.Dort 26' 3PT Jump Shot
+04:31
+J.McDaniels REBOUND
+04:15
+51-27
++24
+J.McDaniels 27' 3PT Jump Shot (A.Edwards)
+03:58
+S.Gilgeous-Alexander 19' Pullup Shot
+53-27
++26
+03:46
+MISS J.McDaniels 11' Driving Floating Shot
+03:43
+A.Caruso REBOUND
+03:43
+T.ShannonJr. P.FOUL (P3.PN) (M.Davis)
+03:43
+A.Caruso Free Throw 1 of 2
+54-27
++27
+03:43
+SUB: D.DiVincenzo FOR T.ShannonJr.
+03:43
+SUB: J.Williams FOR C.Wallace
+03:43
+A.Caruso Free Throw 2 of 2
+55-27
++28
+03:30
+N.Alexander-Walker Out Of Bounds Bad Pass
+TURNOVER #10
+03:14
+MISS S.Gilgeous-Alexander 26' 3PT Step Back
+Shot
+03:10
+A.Edwards REBOUND
+03:05
+MISS N.Alexander-Walker FB Running Layup
+03:02
+J.Williams REBOUND
+02:57
+MISS S.Gilgeous-Alexander FB Running Finger
+Roll Layup
+A.Edwards BLOCK
+02:55
+D.DiVincenzo REBOUND
+02:54
+A.Caruso STEAL
+D.DiVincenzo Bad Pass 
+TURNOVER #11
+02:53
+D.DiVincenzo S.FOUL (P1.PN) (B.Taylor)
+02:53
+TIMEOUT (2)
+02:53
+SUB: N.Reid FOR R.Gobert
+02:53
+S.Gilgeous-Alexander Free Throw 1 of 2
+56-27
++29
+02:53
+S.Gilgeous-Alexander Free Throw 2 of 2
+57-27
++30
+02:36
+K.Williams STEAL
+A.Edwards Bad Pass 
+TURNOVER #12
+02:26
+MISS S.Gilgeous-Alexander 20' Pullup Shot
+02:22
+K.Williams REBOUND
+02:20
+MISS L.Dort 25' 3PT Jump Shot
+02:16
+N.Alexander-Walker REBOUND
+02:14
+A.Caruso P.FOUL (P3, T4) (M.Davis)
+02:14
+SUB: I.Hartenstein FOR A.Caruso
+02:06
+I.Hartenstein STEAL
+D.DiVincenzo Lost Ball 
+TURNOVER #13
+01:57
+MISS J.Williams 26' 3PT Pullup Shot
+01:53
+D.DiVincenzo REBOUND
+01:34
+MISS A.Edwards 29' 3PT Pullup Shot
+01:30
+K.Williams REBOUND
+01:19
+D.DiVincenzo S.FOUL (P2.PN) (M.Davis)
+01:19
+J.Williams Free Throw 1 of 2
+58-27
++31
+01:19
+SUB: C.Wallace FOR K.Williams
+01:19
+SUB: J.Randle FOR J.McDaniels
+01:19
+J.Williams Free Throw 2 of 2
+59-27
++32
+01:12
+59-30
++29
+D.DiVincenzo 24' 3PT Jump Shot (N.Alexander-
+Walker)
+:51.8
+J.Williams 23' Pullup Shot (L.Dort)
+61-30
++31
+:43.2
+61-32
++29
+N.Reid Driving Layup
+:27.7
+N.Reid S.FOUL (P2.PN) (B.Taylor)
+2nd QUARTER
+Minnesota Timberwolves at OKLAHOMA CITY THUNDER
+Wednesday, May 28, 2025 Paycom Center, Oklahoma City, OK
+THUNDER Starters: 
+A.Caruso
+ 
+A.Wiggins
+ 
+C.Wallace
+ 
+C.Holmgren
+ 
+J.Williams
+Timberwolves Starters: 
+D.DiVincenzo
+ 
+N.Alexander-Walker
+ 
+N.Reid
+ 
+J.Randle
+ 
+T.ShannonJr.
+Time
+THUNDER
+Score
+Lead
+Timberwolves
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL PLAY-BY-PLAY
+:27.7
+J.Williams Free Throw 1 of 2
+62-32
++30
+:27.7
+SUB: K.Williams FOR I.Hartenstein
+:27.7
+J.Williams Free Throw 2 of 2
+63-32
++31
+:18.4
+J.Randle Out Of Bounds Lost Ball TURNOVER
+#14
+:18.4
+SUB: A.Wiggins FOR C.Wallace
+:18.4
+SUB: I.Joe FOR K.Williams
+:18.4
+SUB: J.McDaniels FOR N.Reid
+:02.8
+S.Gilgeous-Alexander Driving Finger Roll Layup
+65-32
++33
+End of 2nd QUARTER (65-32) 
+End of Period (8:45 PM)
+2nd QUARTER
+Minnesota Timberwolves at OKLAHOMA CITY THUNDER
+Wednesday, May 28, 2025 Paycom Center, Oklahoma City, OK
+THUNDER Starters: 
+A.Caruso
+ 
+A.Wiggins
+ 
+C.Wallace
+ 
+C.Holmgren
+ 
+J.Williams
+Timberwolves Starters: 
+D.DiVincenzo
+ 
+N.Alexander-Walker
+ 
+N.Reid
+ 
+J.Randle
+ 
+T.ShannonJr.
+Time
+THUNDER
+Score
+Lead
+Timberwolves
+BIG
+ 
+HOME 
+LEAD 33
+*LEAD CHANGES 0
+BIG
+ 
+VISITOR 
+LEAD 0
+TIMES TIED 0
+2 FOR 2 PTS
+TURNOVERS
+10 FOR 10 PTS
+11/21 FOR 52.4%
+FIELD GOALS
+9/18 FOR 50%
+88.2352941176471/17 FOR 88.2%
+FREE THROWS
+50/2 FOR 50%
+OFF: 3 DEF: 9
+REBOUNDS
+OFF: 1 DEF: 9
+J.Williams: 13
+HIGH SCORER
+J.Randle, T.ShannonJr.: 5
+J.Williams, K.Williams: 3
+HIGH REBOUNDER
+A.Edwards, D.DiVincenzo: 3
+C.Wallace: 2
+HIGH ASSISTS
+5 TIED: 1
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL PLAY-BY-PLAY
+3rd QUARTER
+Minnesota Timberwolves at OKLAHOMA CITY THUNDER
+Wednesday, May 28, 2025 Paycom Center, Oklahoma City, OK
+THUNDER Starters: 
+S.Gilgeous-Alexander
+ 
+L.Dort
+ 
+J.Williams
+ 
+I.Hartenstein
+ 
+C.Holmgren
+Timberwolves Starters: 
+J.McDaniels
+ 
+A.Edwards
+ 
+J.Randle
+ 
+M.Conley
+ 
+R.Gobert
+Time
+THUNDER
+Score
+Lead
+Timberwolves
+12:00
+Start of Period (9:01 PM)
+12:00
+Possession: Thunder
+65-32
++33
+11:44
+I.Hartenstein Cutting Layup (J.Williams)
+67-32
++35
+11:28
+MISS J.McDaniels 25' 3PT Jump Shot
+11:25
+J.McDaniels REBOUND
+11:24
+R.Gobert Offensive (P2) (M.Davis)
+11:24
+R.Gobert Foul TURNOVER #15
+11:15
+MISS J.Williams 9' Pullup Shot
+11:12
+L.Dort REBOUND
+11:01
+MISS S.Gilgeous-Alexander 20' Turnaround
+Fadeaway Shot
+10:57
+A.Edwards REBOUND
+10:51
+MISS A.Edwards 15' Driving Floating Shot
+10:48
+C.Holmgren REBOUND
+10:43
+S.Gilgeous-Alexander Driving Reverse Layup
+69-32
++37
+10:29
+69-34
++35
+J.McDaniels 14' Pullup Shot (J.Randle)
+10:10
+MISS L.Dort 13' Pullup Shot
+10:06
+I.Hartenstein REBOUND
+10:06
+I.Hartenstein Tip Layup
+71-34
++37
+09:49
+71-36
++35
+A.Edwards 13' Pullup Shot
+09:31
+I.Hartenstein 11' Floating Shot (S.Gilgeous-
+Alexander)
+73-36
++37
+09:18
+J.Williams S.FOUL (P1, T1) (B.Taylor)
+09:18
+73-37
++36
+J.Randle Free Throw 1 of 2
+09:18
+73-38
++35
+J.Randle Free Throw 2 of 2
+09:06
+J.Williams Out Of Bounds Lost Ball TURNOVER
+#6
+08:52
+C.Holmgren BLOCK
+MISS J.McDaniels Layup
+08:50
+I.Hartenstein REBOUND
+08:41
+MISS S.Gilgeous-Alexander 8' Fadeaway Shot
+08:40
+Timberwolves REBOUND
+08:31
+73-40
++33
+R.Gobert Dunk (A.Edwards)
+08:10
+MISS I.Hartenstein 12' Floating Shot
+08:07
+R.Gobert REBOUND
+07:57
+MISS A.Edwards 28' 3PT Pullup Shot
+07:57
+THUNDER REBOUND
+07:41
+S.Gilgeous-Alexander Bad Pass 
+TURNOVER #7
+M.Conley STEAL
+07:37
+73-43
++30
+A.Edwards 26' 3PT FB Running Pullup Shot
+07:36
+TIMEOUT (3)
+07:36
+SUB: A.Caruso FOR I.Hartenstein
+07:36
+SUB: N.Reid FOR R.Gobert
+07:23
+J.Williams Driving Finger Roll Layup
+75-43
++32
+07:13
+J.Williams P.FOUL (P2, T2) (M.Davis)
+07:13
+SUB: D.DiVincenzo FOR J.McDaniels
+07:13
+SUB: N.Alexander-Walker FOR M.Conley
+07:02
+75-45
++30
+J.Randle Driving Reverse Layup
+06:48
+MISS S.Gilgeous-Alexander Driving Layup
+N.Reid BLOCK
+06:45
+D.DiVincenzo REBOUND
+06:40
+75-47
++28
+A.Edwards Driving Layup (D.DiVincenzo)
+06:20
+S.Gilgeous-Alexander 16' Step Back Shot
+77-47
++30
+06:05
+77-50
++27
+J.Randle 27' 3PT Pullup Shot
+05:50
+J.Randle S.FOUL (P1, T1) (M.Davis)
+05:50
+C.Holmgren Free Throw 1 of 2
+78-50
++28
+05:50
+MISS C.Holmgren Free Throw 2 of 2
+05:48
+Timberwolves REBOUND
+05:36
+S.Gilgeous-Alexander S.FOUL (P2, T3) (M.Davis)
+05:36
+MISS A.Edwards Free Throw 1 of 2
+05:36
+78-51
++27
+A.Edwards Free Throw 2 of 2
+05:24
+N.Reid P.FOUL (P3, T2) (B.Taylor)
+05:16
+MISS A.Caruso Driving Finger Roll Layup
+05:13
+D.DiVincenzo REBOUND
+05:09
+MISS N.Alexander-Walker 23' 3PT FB Running
+Shot Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL PLAY-BY-PLAY
+05:06
+S.Gilgeous-Alexander REBOUND
+04:55
+L.Dort Bad Pass 
+TURNOVER #8
+04:55
+C.Holmgren L.B Foul (P3, T4) (M.Davis)
+04:39
+78-54
++24
+J.Randle 25' 3PT Jump Shot (N.Alexander-
+Walker)
+04:21
+SUB: C.Wallace FOR J.Williams
+04:21
+SUB: K.Williams FOR C.Holmgren
+04:15
+MISS S.Gilgeous-Alexander 25' 3PT Step Back
+Shot
+04:12
+J.Randle REBOUND
+03:58
+S.Gilgeous-Alexander STEAL
+N.Alexander-Walker Bad Pass 
+TURNOVER #16
+03:56
+S.Gilgeous-Alexander FB Running Dunk
+80-54
++26
+03:40
+80-56
++24
+J.Randle 4' Driving Floating Shot
+03:40
+A.Caruso S.FOUL (P4.PN) (B.Taylor)
+03:40
+80-57
++23
+J.Randle Free Throw 1 of 1
+03:24
+L.Dort 23' 3PT Jump Shot (A.Caruso)
+83-57
++26
+03:09
+MISS A.Edwards 5' Driving Floating Shot
+03:07
+K.Williams REBOUND
+03:01
+MISS L.Dort 29' 3PT Jump Shot
+02:58
+C.Wallace REBOUND
+02:57
+J.Randle P.FOUL (P2, T3) (J.Capers)
+02:57
+TIMEOUT (3)
+02:57
+SUB: I.Hartenstein FOR K.Williams
+02:57
+SUB: R.Gobert FOR J.Randle
+02:49
+S.Gilgeous-Alexander 8' Driving Floating Shot
+85-57
++28
+02:31
+85-60
++25
+D.DiVincenzo 24' 3PT Pullup Shot
+(N.Alexander-Walker)
+02:11
+MISS A.Caruso 24' 3PT Jump Shot
+02:10
+N.Reid REBOUND
+01:58
+85-62
++23
+A.Edwards 15' Step Back Shot
+01:39
+L.Dort 25' 3PT Jump Shot (S.Gilgeous-
+Alexander)
+88-62
++26
+01:23
+MISS N.Alexander-Walker 26' 3PT Jump Shot
+01:20
+N.Reid REBOUND
+01:18
+MISS D.DiVincenzo 23' 3PT Pullup Shot
+01:15
+N.Reid REBOUND
+01:14
+I.Hartenstein BLOCK
+MISS N.Reid Putback Layup
+01:11
+S.Gilgeous-Alexander REBOUND
+:51.0
+MISS S.Gilgeous-Alexander 14' Driving Floating
+Shot
+:49.4
+N.Reid REBOUND
+:39.1
+N.Reid Offensive (P4) (M.Davis)
+:39.1
+N.Reid Foul TURNOVER #17
+:39.1
+SUB: J.Williams FOR A.Caruso
+:39.1
+SUB: C.Holmgren FOR I.Hartenstein
+:27.9
+MISS L.Dort 23' 3PT Jump Shot
+:24.5
+N.Alexander-Walker REBOUND
+:03.6
+MISS N.Alexander-Walker 26' 3PT Jump Shot
+:00.4
+C.Holmgren REBOUND
+End of 3rd QUARTER (88-62) 
+End of Period (9:26 PM)
+3rd QUARTER
+Minnesota Timberwolves at OKLAHOMA CITY THUNDER
+Wednesday, May 28, 2025 Paycom Center, Oklahoma City, OK
+THUNDER Starters: 
+S.Gilgeous-Alexander
+ 
+L.Dort
+ 
+J.Williams
+ 
+I.Hartenstein
+ 
+C.Holmgren
+Timberwolves Starters: 
+J.McDaniels
+ 
+A.Edwards
+ 
+J.Randle
+ 
+M.Conley
+ 
+R.Gobert
+Time
+THUNDER
+Score
+Lead
+Timberwolves
+BIG
+ 
+HOME 
+LEAD 37
+*LEAD CHANGES 0
+BIG
+ 
+VISITOR 
+LEAD 0
+TIMES TIED 0
+3 FOR 6 PTS
+TURNOVERS
+3 FOR 2 PTS
+10/22 FOR 45.5%
+FIELD GOALS
+11/21 FOR 52.4%
+50/2 FOR 50%
+FREE THROWS
+80/5 FOR 80%
+OFF: 3 DEF: 7
+REBOUNDS
+OFF: 4 DEF: 10
+S.Gilgeous-Alexander: 8
+HIGH SCORER
+J.Randle: 13
+C.Holmgren, I.Hartenstein, S.Gilgeous-
+Alexander: 2
+HIGH REBOUNDER
+N.Reid: 4
+S.Gilgeous-Alexander: 2
+HIGH ASSISTS
+N.Alexander-Walker: 2
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL PLAY-BY-PLAY
+4th QUARTER
+Minnesota Timberwolves at OKLAHOMA CITY THUNDER
+Wednesday, May 28, 2025 Paycom Center, Oklahoma City, OK
+THUNDER Starters: 
+S.Gilgeous-Alexander
+ 
+C.Holmgren
+ 
+J.Williams
+ 
+C.Wallace
+ 
+A.Caruso
+Timberwolves Starters: 
+D.DiVincenzo
+ 
+A.Edwards
+ 
+N.Reid
+ 
+J.Randle
+ 
+M.Conley
+Time
+THUNDER
+Score
+Lead
+Timberwolves
+12:00
+Start of Period (9:30 PM)
+12:00
+88-62
++26
+Possession: Timberwolves
+11:44
+C.Wallace BLOCK
+MISS A.Edwards Driving Layup
+11:41
+C.Holmgren REBOUND
+11:32
+MISS J.Williams 23' 3PT Jump Shot
+11:31
+A.Caruso REBOUND
+11:28
+S.Gilgeous-Alexander 26' 3PT Jump Shot
+(A.Caruso)
+91-62
++29
+11:11
+A.Caruso S.FOUL (P5, T1) (J.Capers)
+11:11
+91-63
++28
+J.Randle Free Throw 1 of 2
+11:11
+SUB: L.Dort FOR A.Caruso
+11:11
+MISS J.Randle Free Throw 2 of 2
+11:11
+S.Gilgeous-Alexander REBOUND
+10:53
+MISS C.Holmgren 20' Pullup Shot
+10:48
+J.Randle REBOUND
+10:37
+91-65
++26
+N.Reid Driving Finger Roll Layup
+10:17
+MISS C.Wallace Driving Layup
+N.Reid BLOCK
+10:16
+C.Holmgren REBOUND
+10:15
+C.Holmgren Putback Layup
+93-65
++28
+10:05
+L.Dort STEAL
+A.Edwards Lost Ball 
+TURNOVER #18
+10:03
+L.Dort Bad Pass 
+TURNOVER #9
+D.DiVincenzo STEAL
+10:00
+J.Williams BLOCK
+MISS M.Conley Layup
+09:58
+J.Randle REBOUND
+09:58
+93-67
++26
+J.Randle Tip Layup
+09:44
+S.Gilgeous-Alexander 6' Driving Floating Shot
+95-67
++28
+09:44
+A.Edwards S.FOUL (P2, T1) (M.Davis)
+09:44
+S.Gilgeous-Alexander Free Throw 1 of 1
+96-67
++29
+09:31
+96-69
++27
+N.Reid 8' Driving Floating Shot (D.DiVincenzo)
+09:18
+C.Holmgren 21' Jump Shot (S.Gilgeous-
+Alexander)
+98-69
++29
+09:08
+MISS D.DiVincenzo 25' 3PT Pullup Shot
+09:06
+J.Williams REBOUND
+09:00
+L.Dort 23' 3PT Jump Shot (C.Wallace)
+101-69
++32
+08:59
+TIMEOUT (4)
+08:59
+SUB: A.Caruso FOR S.Gilgeous-Alexander
+08:59
+SUB: J.McDaniels FOR D.DiVincenzo
+08:45
+101-72
++29
+N.Reid 23' 3PT Jump Shot (J.Randle)
+08:30
+J.Williams Driving Finger Roll Layup
+103-72
++31
+08:13
+MISS J.McDaniels 8' Turnaround Shot
+08:11
+C.Holmgren REBOUND
+07:59
+J.Williams Out Of Bounds Bad Pass TURNOVER
+#10
+07:45
+MISS J.McDaniels 17' Step Back Shot
+07:42
+J.Williams REBOUND
+07:28
+MISS C.Holmgren 25' 3PT Jump Shot
+07:28
+Timberwolves REBOUND
+07:28
+SUB: T.ShannonJr. FOR J.McDaniels
+07:11
+L.Dort STEAL
+A.Edwards Lost Ball 
+TURNOVER #19
+06:54
+MISS J.Williams 2' Driving Floating Shot
+06:53
+J.Randle REBOUND
+06:49
+C.Wallace BLOCK
+MISS J.Randle FB Running Layup
+06:49
+Timberwolves REBOUND
+06:42
+C.Holmgren BLOCK
+MISS J.Randle Driving Layup
+06:40
+L.Dort REBOUND
+06:36
+L.Dort 25' 3PT FB Running Shot (J.Williams)
+106-72
++34
+06:34
+TIMEOUT (5)
+06:34
+SUB: R.Dillingham FOR A.Edwards
+06:34
+SUB: J.Clark FOR M.Conley
+06:34
+SUB: J.Minott FOR N.Reid
+06:34
+SUB: L.Garza FOR J.Randle
+06:18
+A.Caruso STEAL
+J.Minott Lost Ball 
+TURNOVER #20
+06:11
+C.Wallace Out Of Bounds Bad Pass TURNOVER
+#11 Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+NATIONAL BASKETBALL ASSOCIATION
+OFFICIAL PLAY-BY-PLAY
+06:04
+MISS J.Minott 26' 3PT Jump Shot
+06:00
+A.Caruso REBOUND
+05:47
+MISS L.Dort 27' 3PT Pullup Shot
+05:44
+J.Clark REBOUND
+05:37
+106-74
++32
+T.ShannonJr. Driving Reverse Layup (J.Minott)
+05:20
+C.Holmgren 22' Pullup Shot (J.Williams)
+108-74
++34
+05:14
+L.Dort P.FOUL (P2, T2) (B.Taylor)
+05:14
+SUB: K.Williams FOR L.Dort
+05:14
+SUB: A.Wiggins FOR C.Holmgren
+05:14
+SUB: I.Joe FOR J.Williams
+05:14
+SUB: A.Mitchell FOR A.Caruso
+05:14
+SUB: J.Williams FOR C.Wallace
+05:04
+MISS T.ShannonJr. 26' 3PT Pullup Shot
+04:59
+J.Williams REBOUND
+04:54
+A.Mitchell Bad Pass 
+TURNOVER #12
+J.Clark STEAL
+04:51
+J.Williams S.FOUL (P1, T3) (M.Davis)
+04:51
+108-75
++33
+T.ShannonJr. Free Throw 1 of 2
+04:51
+108-76
++32
+T.ShannonJr. Free Throw 2 of 2
+04:39
+I.Joe 25' 3PT Pullup Shot (J.Williams)
+111-76
++35
+04:27
+MISS R.Dillingham 22' Step Back Shot
+04:25
+I.Joe REBOUND
+04:22
+SUB: D.Jones FOR K.Williams
+04:22
+SUB: O.Dieng FOR A.Wiggins
+04:22
+JUMP BALL I.Joe VS. J.Clark: TIP TO A.Mitchell
+04:17
+I.Joe 23' 3PT Jump Shot (O.Dieng)
+114-76
++38
+04:04
+114-79
++35
+R.Dillingham 24' 3PT Step Back Shot
+03:43
+O.Dieng 29' 3PT Step Back Shot
+117-79
++38
+03:25
+MISS T.ShannonJr. 13' Driving Floating Shot
+03:24
+L.Garza REBOUND
+03:24
+117-81
++36
+L.Garza Putback Layup
+03:16
+J.Williams Offensive (P2) (M.Davis)
+03:16
+J.Williams Foul TURNOVER #13
+03:07
+I.Joe Violation: Kicked Ball (J.Capers)
+03:01
+MISS R.Dillingham 14' Driving Floating Shot
+02:58
+A.Mitchell REBOUND
+02:52
+I.Joe 23' 3PT Jump Shot (O.Dieng)
+120-81
++39
+02:36
+MISS T.ShannonJr. 20' Pullup Shot
+02:33
+D.Jones REBOUND
+02:33
+D.Jones Palming 
+TURNOVER #14
+02:28
+MISS T.ShannonJr. Driving Layup
+02:24
+L.Garza REBOUND
+02:23
+120-83
++37
+L.Garza Putback Layup
+02:11
+I.Joe Cutting Layup (D.Jones)
+122-83
++39
+01:57
+122-85
++37
+J.Clark 6' Driving Floating Shot (R.Dillingham)
+01:51
+R.Dillingham P.FOUL (P1, T2) (B.Taylor)
+01:41
+J.Williams Lost Ball 
+TURNOVER #15
+T.ShannonJr. STEAL
+01:36
+J.Williams S.FOUL (P3, T4) (B.Taylor)
+01:36
+122-86
++36
+T.ShannonJr. Free Throw 1 of 2
+01:36
+122-87
++35
+T.ShannonJr. Free Throw 2 of 2
+01:19
+MISS J.Williams 26' 3PT Jump Shot
+01:15
+T.ShannonJr. REBOUND
+01:12
+J.Williams STEAL
+T.ShannonJr. Bad Pass 
+TURNOVER #21
+01:04
+A.Mitchell Driving Finger Roll Layup (J.Williams)
+124-87
++37
+:57.3
+124-89
++35
+R.Dillingham 15' Step Back Shot
+:41.2
+MISS O.Dieng 23' 3PT Jump Shot
+:38.6
+R.Dillingham REBOUND
+:33.8
+124-91
++33
+R.Dillingham FB Running Finger Roll Layup
+:09.2
+THUNDER Shot Clock 
+TURNOVER #16
+:04.3
+124-94
++30
+J.Minott 25' 3PT Jump Shot (R.Dillingham)
+End of 4th QUARTER (124-94) 
+End of Period (9:57 PM)
+4th QUARTER
+Minnesota Timberwolves at OKLAHOMA CITY THUNDER
+Wednesday, May 28, 2025 Paycom Center, Oklahoma City, OK
+THUNDER Starters: 
+S.Gilgeous-Alexander
+ 
+C.Holmgren
+ 
+J.Williams
+ 
+C.Wallace
+ 
+A.Caruso
+Timberwolves Starters: 
+D.DiVincenzo
+ 
+A.Edwards
+ 
+N.Reid
+ 
+J.Randle
+ 
+M.Conley
+Time
+THUNDER
+Score
+Lead
+Timberwolves
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved
+BIG
+ 
+HOME 
+LEAD 39
+*LEAD CHANGES 0
+BIG
+ 
+VISITOR 
+LEAD 0
+TIMES TIED 0
+8 FOR 11 PTS
+TURNOVERS
+4 FOR 2 PTS
+14/22 FOR 63.6%
+FIELD GOALS
+12/26 FOR 46.2%
+100/1 FOR 100%
+FREE THROWS
+83.3333333333333/6 FOR 83.3%
+OFF: 2 DEF: 11
+REBOUNDS
+OFF: 4 DEF: 6
+I.Joe: 11
+HIGH SCORER
+N.Reid, R.Dillingham: 7
+C.Holmgren: 3
+HIGH REBOUNDER
+J.Randle: 3
+J.Williams, J.Williams, O.Dieng: 2
+HIGH ASSISTS
+R.Dillingham: 2
+ Copyright (c) 2025 NBA Properties, INC. All Rights Reserved

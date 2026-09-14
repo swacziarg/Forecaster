@@ -1,0 +1,356 @@
+{
+  "id": "dodgers-repeat-2025-v2",
+  "slug": "dodgers-repeat-2025",
+  "category": "Sports",
+  "version": 2,
+  "status": "editorial-review",
+  "question": "What changed the Dodgers’ chance of repeating as World Series champions?",
+  "orientation": "April–October 2025. Rank five headlines from the biggest rise in the Dodgers’ title odds to the biggest fall.",
+  "market": {
+    "id": "525410",
+    "provider": "Polymarket",
+    "title": "Will the Los Angeles Dodgers win the 2025 World Series?",
+    "rules": "This market will resolve according to the team that wins the 2025 MLB World Series. \n\nIf at any point it becomes impossible for this team to win the World Series based on the rules of the MLB (e.g., they are eliminated in the playoff bracket), this market will resolve immediately to “No”.\n\nIf the 2025  MLB season is permanently canceled or has not been completed by February 28, 2026, 11:59 PM this market will resolve to “Other”.\n",
+    "openedAt": "2025-02-26T20:10:37.66Z",
+    "closedAt": "2025-11-02T07:46:27.000Z",
+    "status": "settled",
+    "resolutionSourceUrl": "https://www.mlb.com/news/dodgers-win-2025-world-series",
+    "marketUrl": "https://polymarket.com/event/world-series-champion-2025/will-the-los-angeles-dodgers-win-the-2025-world-series",
+    "volume": 10561644.990771
+  },
+  "contract": {
+    "id": "50056291296373013403053264672448796961558656386670931029485176637893947669174",
+    "proposition": "Will the Los Angeles Dodgers win the 2025 World Series?",
+    "nativeSide": "YES",
+    "selectedPerspective": "YES",
+    "resolution": "YES"
+  },
+  "dataset": {
+    "id": "dodgers-repeat-2025-hourly-v1",
+    "provider": "Polymarket",
+    "path": "docs/next-five-2026-09-10/sports-dodgers/hourly.csv",
+    "rawPath": "docs/next-five-2026-09-10/sports-dodgers/raw-history.json",
+    "marketMetadataPath": "docs/next-five-2026-09-10/sports-dodgers/raw-market.json",
+    "manifestPath": "docs/next-five-2026-09-10/sports-dodgers/manifest.json",
+    "rawSha256": "aeb332243b883b899c219e3e3ab87867ebc30f7558a9079a17d51ed62e3271c1",
+    "marketMetadataSha256": "18f0e41653d894c5e7a38f85ae83aa94f2080b587e3a4107163b02a853b1179d",
+    "normalizedSha256": "d09119662e51d073983ce01096cb239f8205dbb07566b945da1e630a1a431aa8",
+    "retrievedAt": "2026-09-10T16:03:07.145711+00:00",
+    "coverageStart": "2025-02-26T21:00:00.000Z",
+    "coverageEnd": "2025-11-02T07:00:00.000Z",
+    "fullMarketLifetime": false,
+    "cadenceMinutes": 60,
+    "transformVersion": "polymarket-hourly-v1",
+    "provenanceUrl": "https://clob.polymarket.com/prices-history",
+    "requestParameters": "Exact YES token; 10-day chunks, fidelity=60; latest observation per UTC hour; no filling."
+  },
+  "measurementProfile": {
+    "id": "months-hourly-v1",
+    "label": "Months / hourly",
+    "cadenceMinutes": 60,
+    "anticipation": {
+      "startHours": -84,
+      "endHours": -12
+    },
+    "reference": {
+      "startHours": -12,
+      "endHours": 0
+    },
+    "immediate": {
+      "startHours": 0,
+      "endHours": 6
+    },
+    "stabilized": {
+      "startHours": 18,
+      "endHours": 36
+    },
+    "delayed": {
+      "startHours": 48,
+      "endHours": 72
+    },
+    "quality": {
+      "minimumCoverage": 0.6,
+      "maximumGapShare": 0.5,
+      "minimumDistinctUpdates": 3,
+      "maximumSpread": 0.2
+    },
+    "tieThreshold": 0.01
+  },
+  "measurementNotes": [
+    "Scores describe contract-price changes, not isolated causal effects.",
+    "Public availability uses the retained MLB article’s latest declared same-day update. These are conservative reporting cutoffs, not verified final-whistle or first-announcement times.",
+    "Live captures and hashes establish what was retrieved now, not historical page immutability.",
+    "Ohtani’s pitching return shares a news cycle with Sasaki’s injury update. Treat the response as mixed news, not the return’s isolated effect.",
+    "The initial set was replaced after editorial review for headline significance. New cards were frozen before scoring; the retained pennant card was already measured. See selection-freeze-v2.json.",
+    "The contract snapshot may not cover every observation in the market lifetime."
+  ],
+  "presentation": {
+    "topicLabel": "Dodgers title defense",
+    "selectedContractShort": "Dodgers win",
+    "selectedContractLong": "Dodgers win the 2025 World Series",
+    "seriesLabel": "Dodgers championship probability",
+    "positiveLabel": "Raises Dodgers title chance",
+    "negativeLabel": "Lowers Dodgers title chance",
+    "neutralLabel": "Ambiguous",
+    "eventNoun": "headline",
+    "timezone": "America/Los_Angeles",
+    "accent": "#005a9c",
+    "zoomChoices": [
+      {
+        "label": "All",
+        "hours": null
+      },
+      {
+        "label": "30d",
+        "hours": 720
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "glasnow-injury-source",
+      "title": "Tyler Glasnow goes on the injured list",
+      "publisher": "MLB",
+      "url": "https://www.mlb.com/news/tyler-glasnow-injured-list-shoulder-inflammation",
+      "publishedAt": "2025-04-29T01:22:56.051Z",
+      "publishedPrecision": "instant",
+      "updatedAt": "2025-04-29T01:22:56.051Z",
+      "retrievedAt": "2026-09-10T16:07:26.811213+00:00",
+      "snapshotHash": "e41c86dff4cb76971dfbebe8ae644c27b0b3a9ada78d9e48c4adcfe358f0bc12",
+      "correctionStatus": "none"
+    },
+    {
+      "id": "ohtani-return-source",
+      "title": "Ohtani makes his Dodgers pitching debut",
+      "publisher": "MLB",
+      "url": "https://www.mlb.com/news/shohei-ohtani-makes-dodgers-pitching-debut",
+      "publishedAt": "2025-06-17T06:31:00Z",
+      "publishedPrecision": "instant",
+      "updatedAt": "2025-06-17T07:17:34.434Z",
+      "retrievedAt": "2026-09-10T16:07:26.811213+00:00",
+      "snapshotHash": "9e75c8ab32166e18547d4af3112fa17c303dedde2285350cf0604891cf8e520a",
+      "correctionStatus": "none"
+    },
+    {
+      "id": "seven-losses-source",
+      "title": "Dodgers lose their seventh straight game",
+      "publisher": "MLB",
+      "url": "https://www.mlb.com/dodgers/news/dodgers-lose-7th-straight-game",
+      "publishedAt": "2025-07-12T06:57:00Z",
+      "publishedPrecision": "instant",
+      "updatedAt": "2025-07-12T06:57:03.618Z",
+      "retrievedAt": "2026-09-10T16:07:26.811213+00:00",
+      "snapshotHash": "781d07de8a7613889dddcbf8262d3484bf6fb2acf07b1fdb92fef555d26e7b69",
+      "correctionStatus": "none"
+    },
+    {
+      "id": "nlds-escape-source",
+      "title": "Dodgers advance on an 11th-inning throwing error",
+      "publisher": "MLB",
+      "url": "https://www.mlb.com/news/dodgers-win-nlds-2025-vs-phillies",
+      "publishedAt": "2025-10-10T04:18:00Z",
+      "publishedPrecision": "instant",
+      "updatedAt": "2025-10-10T07:11:42.629Z",
+      "retrievedAt": "2026-09-10T16:07:26.811213+00:00",
+      "snapshotHash": "8704e98acd46e0306999c2bafb5e8ce22536b6bf6b56f6cd43b2a0625b2cb9cf",
+      "correctionStatus": "none"
+    },
+    {
+      "id": "pennant-sweep-source",
+      "title": "Dodgers sweep Milwaukee to reach the World Series",
+      "publisher": "MLB",
+      "url": "https://www.mlb.com/dodgers/news/dodgers-win-2025-nlcs",
+      "publishedAt": "2025-10-18T06:08:00Z",
+      "publishedPrecision": "instant",
+      "updatedAt": "2025-10-18T06:39:41.955Z",
+      "retrievedAt": "2026-09-10T16:07:26.811213+00:00",
+      "snapshotHash": "f6a0ddba16d44a81ed1d2f3598094d83ad6dda772fc41eb0fae5a709c59e055e",
+      "correctionStatus": "none"
+    },
+    {
+      "id": "ending",
+      "title": "Dodgers win the 2025 World Series",
+      "publisher": "MLB",
+      "url": "https://www.mlb.com/news/dodgers-win-2025-world-series",
+      "publishedAt": "2025-11-02T07:20:00Z",
+      "updatedAt": "2025-11-02T19:07:02.973Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-10T16:07:26.811213+00:00",
+      "snapshotHash": "fc17ca07a988fa7198a5af347ca6928b0115dd576652500726a2cfb6a4980c15",
+      "correctionStatus": "none"
+    }
+  ],
+  "events": [
+    {
+      "id": "glasnow-injury",
+      "title": "Tyler Glasnow goes on the injured list",
+      "shortTitle": "Tyler Glasnow goes on the injured list",
+      "occurredAt": "2025-04-29T01:22:56.051Z",
+      "informationKnownAt": "2025-04-29T01:22:56.051Z",
+      "precision": "interval",
+      "timezone": "America/Los_Angeles",
+      "dateLabel": "2025-04-28",
+      "category": "glasnow-injury",
+      "mechanism": "Losing a leading starter threatens rotation depth and the postseason pitching plan. The earlier exit may have priced in part of the news.",
+      "expectedDirection": "negative",
+      "claims": [
+        {
+          "id": "glasnow-injury-fact",
+          "text": "Shoulder inflammation sidelines the Dodgers starter.",
+          "knownAt": "2025-04-29T01:22:56.051Z",
+          "sourceIds": [
+            "glasnow-injury-source"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "glasnow-injury-source",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "Observed change spans the full market information environment around this reporting cutoff.",
+      "competingExplanation": "Losing a leading starter threatens rotation depth and the postseason pitching plan. The earlier exit may have priced in part of the news.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "ohtani-return",
+      "title": "Ohtani makes his Dodgers pitching debut",
+      "shortTitle": "Ohtani makes his Dodgers pitching debut",
+      "occurredAt": "2025-06-17T07:17:34.434Z",
+      "informationKnownAt": "2025-06-17T07:17:34.434Z",
+      "precision": "interval",
+      "timezone": "America/Los_Angeles",
+      "dateLabel": "2025-06-16",
+      "category": "ohtani-return",
+      "mechanism": "A two-way superstar returning to the mound offers a meaningful new option for the title defense. The return was announced earlier and Sasaki injury news shares this window.",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "ohtani-return-fact",
+          "text": "He allows one run in one inning.",
+          "knownAt": "2025-06-17T07:17:34.434Z",
+          "sourceIds": [
+            "ohtani-return-source"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "ohtani-return-source",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "Observed change spans the full market information environment around this reporting cutoff.",
+      "competingExplanation": "The return was announced earlier; Sasaki’s injury setback and other rotation news share this window.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "seven-losses",
+      "title": "Dodgers lose their seventh straight game",
+      "shortTitle": "Dodgers lose their seventh straight game",
+      "occurredAt": "2025-07-12T06:57:03.618Z",
+      "informationKnownAt": "2025-07-12T06:57:03.618Z",
+      "precision": "interval",
+      "timezone": "America/Los_Angeles",
+      "dateLabel": "2025-07-11",
+      "category": "seven-losses",
+      "mechanism": "A sustained slump challenges confidence in the favorite and tightens the division race. Much of the deterioration may have been reflected before the seventh loss.",
+      "expectedDirection": "negative",
+      "claims": [
+        {
+          "id": "seven-losses-fact",
+          "text": "Their division lead shrinks to four games.",
+          "knownAt": "2025-07-12T06:57:03.618Z",
+          "sourceIds": [
+            "seven-losses-source"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "seven-losses-source",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "Observed change spans the full market information environment around this reporting cutoff.",
+      "competingExplanation": "A sustained slump challenges confidence in the favorite and tightens the division race. Much of the deterioration may have been reflected before the seventh loss.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "nlds-escape",
+      "title": "Dodgers advance on an 11th-inning throwing error",
+      "shortTitle": "Dodgers advance on an 11th-inning throwing error",
+      "occurredAt": "2025-10-10T07:11:42.629Z",
+      "informationKnownAt": "2025-10-10T07:11:42.629Z",
+      "precision": "interval",
+      "timezone": "America/Los_Angeles",
+      "dateLabel": "2025-10-09",
+      "category": "nlds-escape",
+      "mechanism": "A tense elimination of a major contender removes another playoff hurdle. Earlier series wins and other teams’ results also shape the title market.",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "nlds-escape-fact",
+          "text": "Los Angeles eliminates Philadelphia from the NLDS.",
+          "knownAt": "2025-10-10T07:11:42.629Z",
+          "sourceIds": [
+            "nlds-escape-source"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "nlds-escape-source",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "Observed change spans the full market information environment around this reporting cutoff.",
+      "competingExplanation": "A tense elimination of a major contender removes another playoff hurdle. Earlier series wins and other teams’ results also shape the title market.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "pennant-sweep",
+      "title": "Dodgers sweep Milwaukee to reach the World Series",
+      "shortTitle": "Dodgers sweep Milwaukee to reach the World Series",
+      "occurredAt": "2025-10-18T06:39:41.955Z",
+      "informationKnownAt": "2025-10-18T06:39:41.955Z",
+      "precision": "interval",
+      "timezone": "America/Los_Angeles",
+      "dateLabel": "2025-10-17",
+      "category": "pennant-sweep",
+      "mechanism": "Only the championship series remains; this is advancement toward the contract outcome, not the resolving victory.",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "pennant-sweep-fact",
+          "text": "Ohtani hits three home runs in the clincher.",
+          "knownAt": "2025-10-18T06:39:41.955Z",
+          "sourceIds": [
+            "pennant-sweep-source"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "pennant-sweep-source",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "Observed change spans the full market information environment around this reporting cutoff.",
+      "competingExplanation": "Only the championship series remains; this is advancement toward the contract outcome, not the resolving victory.",
+      "attributionAssessment": "mixed"
+    }
+  ],
+  "contextMarkers": [],
+  "conclusion": {
+    "title": "The repeat",
+    "text": "The Dodgers won the 2025 World Series. The selected contract resolved YES.",
+    "sourceId": "ending"
+  }
+}

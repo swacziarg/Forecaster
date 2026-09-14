@@ -1,0 +1,12 @@
+{
+  "capturedAt": "2026-09-10T15:58:17.137027+00:00",
+  "scope": "Research and draft preparation only; request owner approval before adding to schedule.",
+  "firstUnscheduledRelease": "2026-09-13T05:00:00Z",
+  "lastProposedRelease": "2026-09-17T05:00:00Z",
+  "files": {
+    "src/data/dailyPuzzles.ts": "62bbd66b5819dcff58c2567d0ea2a741769f094494b2d1e235cfff1d85da4b21",
+    "src/data/studies.ts": "b47010b0dcb7d68d4803b95fd54935b6d85174a6505fdedc1df16dd96d030f8d",
+    "docs/launch-work/schedule/approvals.json": "781463c4c81c334cf2be480e271aa84ae6ce801c3463c333ae34e29b53f48068",
+    "docs/launch-work/schedule/proposed-queue.json": "bffd42ff902da5dc6871455ac7ee7877d754e9048e2995db40e4206cdc385857"
+  }
+}

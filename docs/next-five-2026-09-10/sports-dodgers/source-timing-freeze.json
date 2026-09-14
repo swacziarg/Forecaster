@@ -1,0 +1,36 @@
+{
+  "preparedAt": "2026-09-10T16:05:16.509Z",
+  "selectedBeforeScoring": true,
+  "timings": {
+    "perfect-start": {
+      "publishedAt": "2025-04-03T05:21:00Z",
+      "modifiedAt": "2025-04-03T14:14:24.382Z",
+      "informationKnownAt": "2025-04-03T14:14:24.382Z",
+      "policy": "Use latest declared same-day publication/update time as conservative article availability bound, not exact event time. Live capture does not prove historical immutability."
+    },
+    "sasaki-setback": {
+      "publishedAt": "2025-06-16T04:56:00Z",
+      "modifiedAt": "2025-06-16T04:56:29.248Z",
+      "informationKnownAt": "2025-06-16T04:56:29.248Z",
+      "policy": "Use latest declared same-day publication/update time as conservative article availability bound, not exact event time. Live capture does not prove historical immutability."
+    },
+    "stewart-deadline": {
+      "publishedAt": "2025-07-31T21:06:18.567Z",
+      "modifiedAt": "2025-07-31T21:06:18.567Z",
+      "informationKnownAt": "2025-07-31T21:06:18.567Z",
+      "policy": "Use latest declared same-day publication/update time as conservative article availability bound, not exact event time. Live capture does not prove historical immutability."
+    },
+    "division-clinch": {
+      "publishedAt": "2025-09-26T00:26:00Z",
+      "modifiedAt": "2025-09-26T04:00:04.986Z",
+      "informationKnownAt": "2025-09-26T04:00:04.986Z",
+      "policy": "Use latest declared same-day publication/update time as conservative article availability bound, not exact event time. Live capture does not prove historical immutability."
+    },
+    "pennant-sweep": {
+      "publishedAt": "2025-10-18T06:08:00Z",
+      "modifiedAt": "2025-10-18T06:39:41.955Z",
+      "informationKnownAt": "2025-10-18T06:39:41.955Z",
+      "policy": "Use latest declared same-day publication/update time as conservative article availability bound, not exact event time. Live capture does not prove historical immutability."
+    }
+  }
+}

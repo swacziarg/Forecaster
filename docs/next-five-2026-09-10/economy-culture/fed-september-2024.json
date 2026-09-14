@@ -1,0 +1,41 @@
+{
+  "id": "fed-september-2024-five-card-v2",
+  "status": "ready-for-review",
+  "topic": "economy",
+  "title": "The Fed's 25-or-50-point September decision",
+  "market": {
+    "provider": "Polymarket",
+    "providerId": "504069",
+    "url": "https://polymarket.com/event/fed-interest-rates-september-2024/fed-decreases-interest-rates-by-50-bps-after-september-2024-meeting",
+    "metadataUrl": "https://gamma-api.polymarket.com/markets/504069",
+    "proposition": "The Fed decreases rates by at least 50 basis points after its September 2024 meeting.",
+    "exactContract": "106191328358576540351439267765925450329859429577455659884974413809922495874408",
+    "resolution": "YES",
+    "openedAt": "2024-07-25T18:13:32Z",
+    "closedAt": "2024-09-18T21:09:08Z",
+    "resolutionSource": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm"
+  },
+  "dataset": {
+    "path": "/data/fed-2024/polymarket-hourly.csv",
+    "manifest": "public/data/fed-2024/manifest.json",
+    "coverage": "2024-07-25T19:00:00Z/2024-09-18T21:00:00Z",
+    "strictAuditCoverage": "2024-08-02T21:00:00Z/2024-09-18T21:00:00Z",
+    "observations": 1323,
+    "strictAuditObservations": 1129,
+    "strictAuditMissingBuckets": 0,
+    "rawSha256": "be919d763a5464a2d6198c7cb0ebb7f7ec8d99c1243f50e4bf4f0e2b0a5f67dd",
+    "normalizedSha256": "070e10e264ba2f78b4dff984b6fb22d6f2a45305375a71de24c458dfc0dd0d26",
+    "historyApi": "https://docs.polymarket.com/api-reference/markets/get-prices-history"
+  },
+  "events": [
+    {"id":"august-5-global-selloff","date":"2024-08-05","headline":"Global markets fall as weak US data and yen carry-trade unwinding raise growth fears","source":"https://www.pbs.org/newshour/economy/dow-drops-nearly-1000-points-and-japanese-stocks-suffer-worst-crash-since-1987-on-economy-fears","sourceDate":"2024-08-05","direction":"positive","plausibleImpact":"A sudden risk-off episode and recession concern could make traders expect the Fed to front-load easing, including a 50-point opening cut.","caveat":"The selloff also reflected Bank of Japan policy and leveraged positioning; attribution to the Fed contract is plausible, not proven."},
+    {"id":"july-cpi","date":"2024-08-14","headline":"July CPI confirms continued disinflation","source":"https://www.bls.gov/news.release/archives/cpi_08142024.htm","sourceDate":"2024-08-14","direction":"positive","plausibleImpact":"Lower inflation gives policymakers room to respond more forcefully to labor-market weakness.","caveat":"The report supported easing but did not by itself determine a 50-point first move."},
+    {"id":"jackson-hole-pivot","date":"2024-08-23","headline":"Powell says the time has come for policy to adjust","source":"https://www.federalreserve.gov/newsevents/speech/powell20240823a.htm","sourceDate":"2024-08-23","direction":"positive","plausibleImpact":"The explicit pivot confirms that easing is coming and leaves the opening move size as the central uncertainty.","caveat":"A September cut was already widely anticipated before the speech."},
+    {"id":"august-jobs","date":"2024-09-06","headline":"August payrolls are softer, with downward revisions, while unemployment edges lower","source":"https://www.bls.gov/news.release/archives/empsit_09062024.htm","sourceDate":"2024-09-06","direction":"ambiguous","plausibleImpact":"Softer revisions support a larger cut, while the lower unemployment rate reduces pressure for an emergency-sized move.","caveat":"This was a mixed report and should be presented as genuinely ambiguous."},
+    {"id":"august-core-cpi","date":"2024-09-11","headline":"August core CPI runs firmer than expected","source":"https://www.bls.gov/news.release/archives/cpi_09112024.htm","sourceDate":"2024-09-11","direction":"negative","plausibleImpact":"Firmer core inflation weakens the case for a half-point first cut immediately after the meeting.","caveat":"Labor-market risk and later policy communication remained relevant."}
+  ],
+  "ending": {"date":"2024-09-18","source":"https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm","text":"The FOMC cut the target range by 50 basis points; the exact contract resolved YES. Keep this reveal separate from the five scored cards."},
+  "measurementNote":"Use the existing retained series and pairwise-anchor-1pt-v2. Existing broad daily medians show a 51.75 percentage-point drawdown from August 5 to September 12 and a 26-point rebound from September 12 to September 15; these are context, not headline-specific causal claims.",
+  "unresolvedGates":["Independent editorial review of macro accessibility and overlap timing","Recompute five-card windows from the retained full-lifetime CSV before registration","Reconcile the raw provider startDate of 2024-08-02T20:43:54.565Z with the retained CSV's earlier July 25 observations; score only the strict post-start continuous window"],
+  "approval":"pending"
+}

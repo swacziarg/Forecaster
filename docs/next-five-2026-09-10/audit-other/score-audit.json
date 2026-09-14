@@ -1,0 +1,2983 @@
+{
+  "status": "Draft audit only; schedule unchanged",
+  "editions": [
+    {
+      "number": 7,
+      "topic": "Trump’s 2024 comeback",
+      "study": "docs/next-five-2026-09-10/audit-other/trump/study-draft-v2.json",
+      "studySha256": "41aeeee4dde6c3ba6939b70fa17e366d0ca7da2a9580d71b24f50e6cfa1ea372",
+      "csvSha256": "7756111859cbca9f2185795608029323fb21e9505f0314d4700cf7d8b9cc579d",
+      "cards": [
+        {
+          "id": "conviction",
+          "title": "New York jury finds Trump guilty on 34 felony counts",
+          "cutoff": "2024-05-30T21:15:07Z",
+          "oldPp": -1.9999999999999907,
+          "newPp": -1.9999999999999907,
+          "windows": {
+            "anticipation": {
+              "level": 0.565,
+              "start": "2024-05-27T09:15:07.000Z",
+              "end": "2024-05-30T09:15:07.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.565,
+              "start": "2024-05-30T09:15:07.000Z",
+              "end": "2024-05-30T21:15:07.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.535,
+              "start": "2024-05-30T21:15:07.000Z",
+              "end": "2024-05-31T03:15:07.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.545,
+              "start": "2024-05-31T15:15:07.000Z",
+              "end": "2024-06-01T09:15:07.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.535,
+              "start": "2024-06-01T21:15:07.000Z",
+              "end": "2024-06-02T21:15:07.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "butler",
+          "title": "Trump survives a shooting at his Pennsylvania rally",
+          "cutoff": "2024-07-13T23:35:06Z",
+          "oldPp": 9.999999999999998,
+          "newPp": 9.999999999999998,
+          "windows": {
+            "anticipation": {
+              "level": 0.605,
+              "start": "2024-07-10T11:35:06.000Z",
+              "end": "2024-07-13T11:35:06.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.595,
+              "start": "2024-07-13T11:35:06.000Z",
+              "end": "2024-07-13T23:35:06.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.695,
+              "start": "2024-07-13T23:35:06.000Z",
+              "end": "2024-07-14T05:35:06.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.695,
+              "start": "2024-07-14T17:35:06.000Z",
+              "end": "2024-07-15T11:35:06.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.705,
+              "start": "2024-07-15T23:35:06.000Z",
+              "end": "2024-07-16T23:35:06.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "rfk-endorsement",
+          "title": "Robert F. Kennedy Jr. suspends his campaign and endorses Trump",
+          "cutoff": "2024-08-23T19:10:00Z",
+          "oldPp": -1.1749999999999927,
+          "newPp": -1.1749999999999927,
+          "windows": {
+            "anticipation": {
+              "level": 0.518,
+              "start": "2024-08-20T07:10:00.000Z",
+              "end": "2024-08-23T07:10:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.5097499999999999,
+              "start": "2024-08-23T07:10:00.000Z",
+              "end": "2024-08-23T19:10:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.5017499999999999,
+              "start": "2024-08-23T19:10:00.000Z",
+              "end": "2024-08-24T01:10:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.498,
+              "start": "2024-08-24T13:10:00.000Z",
+              "end": "2024-08-25T07:10:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.4955,
+              "start": "2024-08-25T19:10:00.000Z",
+              "end": "2024-08-26T19:10:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "harris-debate",
+          "title": "Harris and Trump meet in their first presidential debate",
+          "cutoff": "2024-09-11T02:45:00Z",
+          "oldPp": -2.599999999999997,
+          "newPp": -2.599999999999997,
+          "windows": {
+            "anticipation": {
+              "level": 0.51625,
+              "start": "2024-09-07T14:45:00.000Z",
+              "end": "2024-09-10T14:45:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.5195,
+              "start": "2024-09-10T14:45:00.000Z",
+              "end": "2024-09-11T02:45:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.49075,
+              "start": "2024-09-11T02:45:00.000Z",
+              "end": "2024-09-11T08:45:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.4935,
+              "start": "2024-09-11T20:45:00.000Z",
+              "end": "2024-09-12T14:45:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.4915,
+              "start": "2024-09-13T02:45:00.000Z",
+              "end": "2024-09-14T02:45:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "iowa-poll",
+          "title": "Final Iowa Poll puts Harris ahead of Trump, 47% to 44%",
+          "cutoff": "2024-11-02T23:05:01Z",
+          "oldPp": -3.4500000000000086,
+          "newPp": -3.4500000000000086,
+          "windows": {
+            "anticipation": {
+              "level": 0.627,
+              "start": "2024-10-30T11:05:01.000Z",
+              "end": "2024-11-02T11:05:01.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.5895,
+              "start": "2024-11-02T11:05:01.000Z",
+              "end": "2024-11-02T23:05:01.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.548,
+              "start": "2024-11-02T23:05:01.000Z",
+              "end": "2024-11-03T05:05:01.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.5549999999999999,
+              "start": "2024-11-03T17:05:01.000Z",
+              "end": "2024-11-04T11:05:01.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.61,
+              "start": "2024-11-04T23:05:01.000Z",
+              "end": "2024-11-05T23:05:01.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 23,
+                "tradedBuckets": 23,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 0.9583333333333334,
+                "maximumGapBuckets": 1,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 23,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        }
+      ],
+      "extraDiagnostics": [],
+      "tieGroups": [
+        [
+          "butler"
+        ],
+        [
+          "rfk-endorsement",
+          "conviction"
+        ],
+        [
+          "harris-debate",
+          "iowa-poll"
+        ]
+      ],
+      "sensitivity": [
+        {
+          "hours": -1,
+          "tieGroups": [
+            [
+              "butler"
+            ],
+            [
+              "rfk-endorsement",
+              "conviction"
+            ],
+            [
+              "harris-debate"
+            ],
+            [
+              "iowa-poll"
+            ]
+          ],
+          "moves": [
+            {
+              "id": "conviction",
+              "pp": -1.9999999999999907,
+              "quality": "usable"
+            },
+            {
+              "id": "butler",
+              "pp": 9.999999999999998,
+              "quality": "usable"
+            },
+            {
+              "id": "rfk-endorsement",
+              "pp": -1.050000000000001,
+              "quality": "usable"
+            },
+            {
+              "id": "harris-debate",
+              "pp": -2.650000000000002,
+              "quality": "usable"
+            },
+            {
+              "id": "iowa-poll",
+              "pp": -3.850000000000009,
+              "quality": "usable"
+            }
+          ]
+        },
+        {
+          "hours": 0,
+          "tieGroups": [
+            [
+              "butler"
+            ],
+            [
+              "rfk-endorsement",
+              "conviction"
+            ],
+            [
+              "harris-debate",
+              "iowa-poll"
+            ]
+          ],
+          "moves": [
+            {
+              "id": "conviction",
+              "pp": -1.9999999999999907,
+              "quality": "usable"
+            },
+            {
+              "id": "butler",
+              "pp": 9.999999999999998,
+              "quality": "usable"
+            },
+            {
+              "id": "rfk-endorsement",
+              "pp": -1.1749999999999927,
+              "quality": "usable"
+            },
+            {
+              "id": "harris-debate",
+              "pp": -2.599999999999997,
+              "quality": "usable"
+            },
+            {
+              "id": "iowa-poll",
+              "pp": -3.4500000000000086,
+              "quality": "usable"
+            }
+          ]
+        },
+        {
+          "hours": 1,
+          "tieGroups": [
+            [
+              "butler"
+            ],
+            [
+              "rfk-endorsement",
+              "conviction"
+            ],
+            [
+              "harris-debate",
+              "iowa-poll"
+            ]
+          ],
+          "moves": [
+            {
+              "id": "conviction",
+              "pp": -1.9999999999999907,
+              "quality": "usable"
+            },
+            {
+              "id": "butler",
+              "pp": 9.999999999999998,
+              "quality": "usable"
+            },
+            {
+              "id": "rfk-endorsement",
+              "pp": -1.19999999999999,
+              "quality": "usable"
+            },
+            {
+              "id": "harris-debate",
+              "pp": -2.5749999999999993,
+              "quality": "usable"
+            },
+            {
+              "id": "iowa-poll",
+              "pp": -3.1499999999999972,
+              "quality": "usable"
+            }
+          ]
+        }
+      ],
+      "groupsStable": false
+    },
+    {
+      "number": 9,
+      "topic": "The Fed’s half-point decision",
+      "study": "docs/next-five-2026-09-10/audit-other/fed/study-draft-v2.json",
+      "studySha256": "813a7e79363f50d4b72860c964dfd22940a1a95e3a1d2d5ed1c6f40630efc475",
+      "csvSha256": "070e10e264ba2f78b4dff984b6fb22d6f2a45305375a71de24c458dfc0dd0d26",
+      "cards": [
+        {
+          "id": "july-jobs",
+          "title": "July jobs report shows a sharp hiring slowdown",
+          "cutoff": "2024-08-02T12:30:00Z",
+          "oldPp": 27.750000000000004,
+          "newPp": 27.750000000000004,
+          "windows": {
+            "anticipation": {
+              "level": 0.11,
+              "start": "2024-07-30T00:30:00.000Z",
+              "end": "2024-08-02T00:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.185,
+              "start": "2024-08-02T00:30:00.000Z",
+              "end": "2024-08-02T12:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.5375,
+              "start": "2024-08-02T12:30:00.000Z",
+              "end": "2024-08-02T18:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.4625,
+              "start": "2024-08-03T06:30:00.000Z",
+              "end": "2024-08-04T00:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.5275000000000001,
+              "start": "2024-08-04T12:30:00.000Z",
+              "end": "2024-08-05T12:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "july-cpi",
+          "title": "July CPI confirms further disinflation",
+          "cutoff": "2024-08-14T12:30:00Z",
+          "oldPp": -19,
+          "newPp": -19,
+          "windows": {
+            "anticipation": {
+              "level": 0.315,
+              "start": "2024-08-11T00:30:00.000Z",
+              "end": "2024-08-14T00:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.325,
+              "start": "2024-08-14T00:30:00.000Z",
+              "end": "2024-08-14T12:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.245,
+              "start": "2024-08-14T12:30:00.000Z",
+              "end": "2024-08-14T18:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.135,
+              "start": "2024-08-15T06:30:00.000Z",
+              "end": "2024-08-16T00:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.145,
+              "start": "2024-08-16T12:30:00.000Z",
+              "end": "2024-08-17T12:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "powell-jackson-hole",
+          "title": "Powell says the time has come to adjust policy",
+          "cutoff": "2024-08-23T14:00:00Z",
+          "oldPp": 4.000000000000001,
+          "newPp": 4.000000000000001,
+          "windows": {
+            "anticipation": {
+              "level": 0.18,
+              "start": "2024-08-20T02:00:00.000Z",
+              "end": "2024-08-23T02:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.175,
+              "start": "2024-08-23T02:00:00.000Z",
+              "end": "2024-08-23T14:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.215,
+              "start": "2024-08-23T14:00:00.000Z",
+              "end": "2024-08-23T20:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.215,
+              "start": "2024-08-24T08:00:00.000Z",
+              "end": "2024-08-25T02:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.215,
+              "start": "2024-08-25T14:00:00.000Z",
+              "end": "2024-08-26T14:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "august-jobs",
+          "title": "August adds 142,000 jobs; earlier months revised lower",
+          "cutoff": "2024-09-06T12:30:00Z",
+          "oldPp": -6.5,
+          "newPp": -6.5,
+          "windows": {
+            "anticipation": {
+              "level": 0.275,
+              "start": "2024-09-03T00:30:00.000Z",
+              "end": "2024-09-06T00:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.33,
+              "start": "2024-09-06T00:30:00.000Z",
+              "end": "2024-09-06T12:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.245,
+              "start": "2024-09-06T12:30:00.000Z",
+              "end": "2024-09-06T18:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.265,
+              "start": "2024-09-07T06:30:00.000Z",
+              "end": "2024-09-08T00:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.255,
+              "start": "2024-09-08T12:30:00.000Z",
+              "end": "2024-09-09T12:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "august-cpi",
+          "title": "August core inflation rises 0.3%",
+          "cutoff": "2024-09-11T12:30:00Z",
+          "oldPp": -16.249999999999996,
+          "newPp": -16.249999999999996,
+          "windows": {
+            "anticipation": {
+              "level": 0.245,
+              "start": "2024-09-08T00:30:00.000Z",
+              "end": "2024-09-11T00:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.2425,
+              "start": "2024-09-11T00:30:00.000Z",
+              "end": "2024-09-11T12:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.08,
+              "start": "2024-09-11T12:30:00.000Z",
+              "end": "2024-09-11T18:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.08,
+              "start": "2024-09-12T06:30:00.000Z",
+              "end": "2024-09-13T00:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.335,
+              "start": "2024-09-13T12:30:00.000Z",
+              "end": "2024-09-14T12:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        }
+      ],
+      "extraDiagnostics": [],
+      "tieGroups": [
+        [
+          "july-jobs"
+        ],
+        [
+          "powell-jackson-hole"
+        ],
+        [
+          "august-jobs"
+        ],
+        [
+          "august-cpi"
+        ],
+        [
+          "july-cpi"
+        ]
+      ],
+      "sensitivity": [
+        {
+          "hours": -1,
+          "tieGroups": [
+            [
+              "july-jobs"
+            ],
+            [
+              "powell-jackson-hole"
+            ],
+            [
+              "august-jobs"
+            ],
+            [
+              "august-cpi"
+            ],
+            [
+              "july-cpi"
+            ]
+          ],
+          "moves": [
+            {
+              "id": "july-jobs",
+              "pp": 27.750000000000004,
+              "quality": "usable"
+            },
+            {
+              "id": "july-cpi",
+              "pp": -19,
+              "quality": "usable"
+            },
+            {
+              "id": "powell-jackson-hole",
+              "pp": 4.499999999999998,
+              "quality": "usable"
+            },
+            {
+              "id": "august-jobs",
+              "pp": -6.5,
+              "quality": "usable"
+            },
+            {
+              "id": "august-cpi",
+              "pp": -15.999999999999998,
+              "quality": "usable"
+            }
+          ]
+        },
+        {
+          "hours": 0,
+          "tieGroups": [
+            [
+              "july-jobs"
+            ],
+            [
+              "powell-jackson-hole"
+            ],
+            [
+              "august-jobs"
+            ],
+            [
+              "august-cpi"
+            ],
+            [
+              "july-cpi"
+            ]
+          ],
+          "moves": [
+            {
+              "id": "july-jobs",
+              "pp": 27.750000000000004,
+              "quality": "usable"
+            },
+            {
+              "id": "july-cpi",
+              "pp": -19,
+              "quality": "usable"
+            },
+            {
+              "id": "powell-jackson-hole",
+              "pp": 4.000000000000001,
+              "quality": "usable"
+            },
+            {
+              "id": "august-jobs",
+              "pp": -6.5,
+              "quality": "usable"
+            },
+            {
+              "id": "august-cpi",
+              "pp": -16.249999999999996,
+              "quality": "usable"
+            }
+          ]
+        },
+        {
+          "hours": 1,
+          "tieGroups": [
+            [
+              "july-jobs"
+            ],
+            [
+              "powell-jackson-hole"
+            ],
+            [
+              "august-jobs"
+            ],
+            [
+              "august-cpi"
+            ],
+            [
+              "july-cpi"
+            ]
+          ],
+          "moves": [
+            {
+              "id": "july-jobs",
+              "pp": 27.500000000000004,
+              "quality": "usable"
+            },
+            {
+              "id": "july-cpi",
+              "pp": -19,
+              "quality": "usable"
+            },
+            {
+              "id": "powell-jackson-hole",
+              "pp": 3.7500000000000004,
+              "quality": "usable"
+            },
+            {
+              "id": "august-jobs",
+              "pp": -6.5,
+              "quality": "usable"
+            },
+            {
+              "id": "august-cpi",
+              "pp": -15.999999999999998,
+              "quality": "usable"
+            }
+          ]
+        }
+      ],
+      "groupsStable": true
+    },
+    {
+      "number": 10,
+      "topic": "Mamdani’s New York upset",
+      "study": "docs/next-five-2026-09-10/audit-other/nyc/study-draft-v2.json",
+      "studySha256": "f8a81323b69c109dc0ee35e660081e26059f7f2e20d332b76f3cdb05519915b7",
+      "csvSha256": "a2bf3f12c21289f5718135859fe0018819a595a958503a2b096a7bd474560b13",
+      "cards": [
+        {
+          "id": "aoc-endorsement",
+          "title": "Alexandria Ocasio-Cortez endorses Zohran Mamdani",
+          "cutoff": "2025-06-05T11:05:00Z",
+          "oldPp": 0.27499999999999747,
+          "newPp": 0.1999999999999974,
+          "windows": {
+            "anticipation": {
+              "level": 0.12075,
+              "start": "2025-06-01T23:05:00.000Z",
+              "end": "2025-06-04T23:05:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.14,
+              "start": "2025-06-04T23:05:00.000Z",
+              "end": "2025-06-05T11:05:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.13375,
+              "start": "2025-06-05T11:05:00.000Z",
+              "end": "2025-06-05T17:05:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.142,
+              "start": "2025-06-06T05:05:00.000Z",
+              "end": "2025-06-06T23:05:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.1755,
+              "start": "2025-06-07T11:05:00.000Z",
+              "end": "2025-06-08T11:05:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "primary-breakthrough",
+          "title": "Cuomo concedes the Democratic primary to Mamdani",
+          "cutoff": "2025-06-25T02:26:09.916000Z",
+          "oldPp": 33.80000000000001,
+          "newPp": 33.80000000000001,
+          "windows": {
+            "anticipation": {
+              "level": 0.1935,
+              "start": "2025-06-21T14:26:09.916Z",
+              "end": "2025-06-24T14:26:09.916Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.40349999999999997,
+              "start": "2025-06-24T14:26:09.916Z",
+              "end": "2025-06-25T02:26:09.916Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.7435,
+              "start": "2025-06-25T02:26:09.916Z",
+              "end": "2025-06-25T08:26:09.916Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.7415,
+              "start": "2025-06-25T20:26:09.916Z",
+              "end": "2025-06-26T14:26:09.916Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.7415,
+              "start": "2025-06-27T02:26:09.916Z",
+              "end": "2025-06-28T02:26:09.916Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "cuomo-independent",
+          "title": "Cuomo announces he will continue as an independent",
+          "cutoff": "2025-07-14T18:41:18.099000Z",
+          "oldPp": -0.924999999999998,
+          "newPp": -0.8500000000000063,
+          "windows": {
+            "anticipation": {
+              "level": 0.73275,
+              "start": "2025-07-11T06:41:18.099Z",
+              "end": "2025-07-14T06:41:18.099Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.72975,
+              "start": "2025-07-14T06:41:18.099Z",
+              "end": "2025-07-14T18:41:18.099Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.7330000000000001,
+              "start": "2025-07-14T18:41:18.099Z",
+              "end": "2025-07-15T00:41:18.099Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.72125,
+              "start": "2025-07-15T12:41:18.099Z",
+              "end": "2025-07-16T06:41:18.099Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.71075,
+              "start": "2025-07-16T18:41:18.099Z",
+              "end": "2025-07-17T18:41:18.099Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "hochul-endorsement",
+          "title": "Governor Kathy Hochul endorses Mamdani",
+          "cutoff": "2025-09-14T23:28:21.601000Z",
+          "oldPp": 1.8000000000000016,
+          "newPp": 1.1749999999999927,
+          "windows": {
+            "anticipation": {
+              "level": 0.809,
+              "start": "2025-09-11T11:28:21.601Z",
+              "end": "2025-09-14T11:28:21.601Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.81025,
+              "start": "2025-09-14T11:28:21.601Z",
+              "end": "2025-09-14T23:28:21.601Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.81475,
+              "start": "2025-09-14T23:28:21.601Z",
+              "end": "2025-09-15T05:28:21.601Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.822,
+              "start": "2025-09-15T17:28:21.601Z",
+              "end": "2025-09-16T11:28:21.601Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.835,
+              "start": "2025-09-16T23:28:21.601Z",
+              "end": "2025-09-17T23:28:21.601Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 23,
+                "tradedBuckets": 23,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 0.9583333333333334,
+                "maximumGapBuckets": 1,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 23,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "adams-exit",
+          "title": "Mayor Eric Adams ends his reelection campaign",
+          "cutoff": "2025-09-28T17:11:44.355000Z",
+          "oldPp": -1.0250000000000092,
+          "newPp": -1.0250000000000092,
+          "windows": {
+            "anticipation": {
+              "level": 0.87375,
+              "start": "2025-09-25T05:11:44.355Z",
+              "end": "2025-09-28T05:11:44.355Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.8705,
+              "start": "2025-09-28T05:11:44.355Z",
+              "end": "2025-09-28T17:11:44.355Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.83925,
+              "start": "2025-09-28T17:11:44.355Z",
+              "end": "2025-09-28T23:11:44.355Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.86025,
+              "start": "2025-09-29T11:11:44.355Z",
+              "end": "2025-09-30T05:11:44.355Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.86175,
+              "start": "2025-09-30T17:11:44.355Z",
+              "end": "2025-10-01T17:11:44.355Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        }
+      ],
+      "extraDiagnostics": [
+        {
+          "eventId": "aoc-endorsement",
+          "type": "earlier-publication uncertainty diagnostic only",
+          "scenarios": [
+            {
+              "hours": -6,
+              "movementPp": 2.5500000000000007,
+              "tieGroups": [
+                [
+                  "primary-breakthrough"
+                ],
+                [
+                  "aoc-endorsement"
+                ],
+                [
+                  "hochul-endorsement"
+                ],
+                [
+                  "cuomo-independent",
+                  "adams-exit"
+                ]
+              ]
+            },
+            {
+              "hours": -3,
+              "movementPp": 1.6249999999999987,
+              "tieGroups": [
+                [
+                  "primary-breakthrough"
+                ],
+                [
+                  "aoc-endorsement",
+                  "hochul-endorsement"
+                ],
+                [
+                  "cuomo-independent",
+                  "adams-exit"
+                ]
+              ]
+            },
+            {
+              "hours": -1,
+              "movementPp": 0.34999999999999754,
+              "tieGroups": [
+                [
+                  "primary-breakthrough"
+                ],
+                [
+                  "hochul-endorsement",
+                  "aoc-endorsement"
+                ],
+                [
+                  "cuomo-independent",
+                  "adams-exit"
+                ]
+              ]
+            },
+            {
+              "hours": 0,
+              "movementPp": 0.1999999999999974,
+              "tieGroups": [
+                [
+                  "primary-breakthrough"
+                ],
+                [
+                  "hochul-endorsement",
+                  "aoc-endorsement"
+                ],
+                [
+                  "cuomo-independent",
+                  "adams-exit"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "eventId": "hochul-endorsement",
+          "type": "earlier-publication uncertainty diagnostic only",
+          "scenarios": [
+            {
+              "hours": -6,
+              "movementPp": 0.7749999999999924,
+              "tieGroups": [
+                [
+                  "primary-breakthrough"
+                ],
+                [
+                  "hochul-endorsement",
+                  "aoc-endorsement"
+                ],
+                [
+                  "cuomo-independent",
+                  "adams-exit"
+                ]
+              ]
+            },
+            {
+              "hours": -3,
+              "movementPp": 0.9499999999999953,
+              "tieGroups": [
+                [
+                  "primary-breakthrough"
+                ],
+                [
+                  "hochul-endorsement",
+                  "aoc-endorsement"
+                ],
+                [
+                  "cuomo-independent",
+                  "adams-exit"
+                ]
+              ]
+            },
+            {
+              "hours": -1,
+              "movementPp": 1.0499999999999954,
+              "tieGroups": [
+                [
+                  "primary-breakthrough"
+                ],
+                [
+                  "hochul-endorsement",
+                  "aoc-endorsement"
+                ],
+                [
+                  "cuomo-independent",
+                  "adams-exit"
+                ]
+              ]
+            },
+            {
+              "hours": 0,
+              "movementPp": 1.1749999999999927,
+              "tieGroups": [
+                [
+                  "primary-breakthrough"
+                ],
+                [
+                  "hochul-endorsement",
+                  "aoc-endorsement"
+                ],
+                [
+                  "cuomo-independent",
+                  "adams-exit"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "tieGroups": [
+        [
+          "primary-breakthrough"
+        ],
+        [
+          "hochul-endorsement",
+          "aoc-endorsement"
+        ],
+        [
+          "cuomo-independent",
+          "adams-exit"
+        ]
+      ],
+      "sensitivity": [
+        {
+          "hours": -1,
+          "tieGroups": [
+            [
+              "primary-breakthrough"
+            ],
+            [
+              "hochul-endorsement",
+              "aoc-endorsement"
+            ],
+            [
+              "cuomo-independent",
+              "adams-exit"
+            ]
+          ],
+          "moves": [
+            {
+              "id": "aoc-endorsement",
+              "pp": 0.34999999999999754,
+              "quality": "usable"
+            },
+            {
+              "id": "primary-breakthrough",
+              "pp": 33.62500000000001,
+              "quality": "usable"
+            },
+            {
+              "id": "cuomo-independent",
+              "pp": -0.7500000000000062,
+              "quality": "usable"
+            },
+            {
+              "id": "hochul-endorsement",
+              "pp": 1.0499999999999954,
+              "quality": "usable"
+            },
+            {
+              "id": "adams-exit",
+              "pp": -1.1750000000000038,
+              "quality": "usable"
+            }
+          ]
+        },
+        {
+          "hours": 0,
+          "tieGroups": [
+            [
+              "primary-breakthrough"
+            ],
+            [
+              "hochul-endorsement",
+              "aoc-endorsement"
+            ],
+            [
+              "cuomo-independent",
+              "adams-exit"
+            ]
+          ],
+          "moves": [
+            {
+              "id": "aoc-endorsement",
+              "pp": 0.1999999999999974,
+              "quality": "usable"
+            },
+            {
+              "id": "primary-breakthrough",
+              "pp": 33.80000000000001,
+              "quality": "usable"
+            },
+            {
+              "id": "cuomo-independent",
+              "pp": -0.8500000000000063,
+              "quality": "usable"
+            },
+            {
+              "id": "hochul-endorsement",
+              "pp": 1.1749999999999927,
+              "quality": "usable"
+            },
+            {
+              "id": "adams-exit",
+              "pp": -1.0250000000000092,
+              "quality": "usable"
+            }
+          ]
+        },
+        {
+          "hours": 1,
+          "tieGroups": [
+            [
+              "primary-breakthrough"
+            ],
+            [
+              "hochul-endorsement"
+            ],
+            [
+              "aoc-endorsement"
+            ],
+            [
+              "cuomo-independent",
+              "adams-exit"
+            ]
+          ],
+          "moves": [
+            {
+              "id": "aoc-endorsement",
+              "pp": 0.27499999999999747,
+              "quality": "usable"
+            },
+            {
+              "id": "primary-breakthrough",
+              "pp": 33.80000000000001,
+              "quality": "usable"
+            },
+            {
+              "id": "cuomo-independent",
+              "pp": -0.924999999999998,
+              "quality": "usable"
+            },
+            {
+              "id": "hochul-endorsement",
+              "pp": 1.8000000000000016,
+              "quality": "usable"
+            },
+            {
+              "id": "adams-exit",
+              "pp": -1.0000000000000009,
+              "quality": "usable"
+            }
+          ]
+        }
+      ],
+      "groupsStable": false
+    },
+    {
+      "number": 11,
+      "topic": "Dodgers’ title defense",
+      "study": "docs/next-five-2026-09-10/audit-other/dodgers/study-draft-v3.json",
+      "studySha256": "5091abe4904e35410081cf2db8044d322d20d83b2e247d511f441866112448aa",
+      "csvSha256": "d09119662e51d073983ce01096cb239f8205dbb07566b945da1e630a1a431aa8",
+      "cards": [
+        {
+          "id": "glasnow-injury",
+          "title": "Tyler Glasnow goes on the injured list",
+          "cutoff": "2025-04-29T00:37:19.495Z",
+          "oldPp": 0,
+          "newPp": 0,
+          "windows": {
+            "anticipation": {
+              "level": 0.27,
+              "start": "2025-04-25T12:37:19.495Z",
+              "end": "2025-04-28T12:37:19.495Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.265,
+              "start": "2025-04-28T12:37:19.495Z",
+              "end": "2025-04-29T00:37:19.495Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.27,
+              "start": "2025-04-29T00:37:19.495Z",
+              "end": "2025-04-29T06:37:19.495Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.265,
+              "start": "2025-04-29T18:37:19.495Z",
+              "end": "2025-04-30T12:37:19.495Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.27,
+              "start": "2025-05-01T00:37:19.495Z",
+              "end": "2025-05-02T00:37:19.495Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "ohtani-return",
+          "title": "Ohtani makes his Dodgers pitching debut",
+          "cutoff": "2025-06-17T02:31:59.850Z",
+          "oldPp": 1.0000000000000009,
+          "newPp": 0,
+          "windows": {
+            "anticipation": {
+              "level": 0.255,
+              "start": "2025-06-13T14:31:59.850Z",
+              "end": "2025-06-16T14:31:59.850Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.265,
+              "start": "2025-06-16T14:31:59.850Z",
+              "end": "2025-06-17T02:31:59.850Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.265,
+              "start": "2025-06-17T02:31:59.850Z",
+              "end": "2025-06-17T08:31:59.850Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.265,
+              "start": "2025-06-17T20:31:59.850Z",
+              "end": "2025-06-18T14:31:59.850Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.265,
+              "start": "2025-06-19T02:31:59.850Z",
+              "end": "2025-06-20T02:31:59.850Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "seven-losses",
+          "title": "Dodgers lose their seventh straight game",
+          "cutoff": "2025-07-12T05:01:14.061Z",
+          "oldPp": -0.24999999999999467,
+          "newPp": -0.9999999999999953,
+          "windows": {
+            "anticipation": {
+              "level": 0.29,
+              "start": "2025-07-08T17:01:14.061Z",
+              "end": "2025-07-11T17:01:14.061Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.285,
+              "start": "2025-07-11T17:01:14.061Z",
+              "end": "2025-07-12T05:01:14.061Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.28,
+              "start": "2025-07-12T05:01:14.061Z",
+              "end": "2025-07-12T11:01:14.061Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.275,
+              "start": "2025-07-12T23:01:14.061Z",
+              "end": "2025-07-13T17:01:14.061Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.275,
+              "start": "2025-07-14T05:01:14.061Z",
+              "end": "2025-07-15T05:01:14.061Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "nlds-escape",
+          "title": "Dodgers advance on an 11th-inning walk-off error",
+          "cutoff": "2025-10-10T01:39:19.872Z",
+          "oldPp": 6.75,
+          "newPp": 10.999999999999998,
+          "windows": {
+            "anticipation": {
+              "level": 0.36,
+              "start": "2025-10-06T13:39:19.872Z",
+              "end": "2025-10-09T13:39:19.872Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.325,
+              "start": "2025-10-09T13:39:19.872Z",
+              "end": "2025-10-10T01:39:19.872Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.4025,
+              "start": "2025-10-10T01:39:19.872Z",
+              "end": "2025-10-10T07:39:19.872Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.435,
+              "start": "2025-10-10T19:39:19.872Z",
+              "end": "2025-10-11T13:39:19.872Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.415,
+              "start": "2025-10-12T01:39:19.872Z",
+              "end": "2025-10-13T01:39:19.872Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "pennant-sweep",
+          "title": "Dodgers sweep Milwaukee to reach the World Series",
+          "cutoff": "2025-10-18T03:20:26.349Z",
+          "oldPp": 1.5000000000000013,
+          "newPp": 2.0000000000000018,
+          "windows": {
+            "anticipation": {
+              "level": 0.59,
+              "start": "2025-10-14T15:20:26.349Z",
+              "end": "2025-10-17T15:20:26.349Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.655,
+              "start": "2025-10-17T15:20:26.349Z",
+              "end": "2025-10-18T03:20:26.349Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.69,
+              "start": "2025-10-18T03:20:26.349Z",
+              "end": "2025-10-18T09:20:26.349Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.675,
+              "start": "2025-10-18T21:20:26.349Z",
+              "end": "2025-10-19T15:20:26.349Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.675,
+              "start": "2025-10-20T03:20:26.349Z",
+              "end": "2025-10-21T03:20:26.349Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        }
+      ],
+      "extraDiagnostics": [
+        {
+          "eventId": "ohtani-return",
+          "type": "6h pre-first-play baseline diagnostic only",
+          "sampleCount": 6,
+          "before": 0.265,
+          "changePp": 0
+        },
+        {
+          "eventId": "seven-losses",
+          "type": "6h pre-first-play baseline diagnostic only",
+          "sampleCount": 6,
+          "before": 0.285,
+          "changePp": -0.9999999999999953
+        },
+        {
+          "eventId": "nlds-escape",
+          "type": "6h pre-first-play baseline diagnostic only",
+          "sampleCount": 6,
+          "before": 0.325,
+          "changePp": 10.999999999999998
+        },
+        {
+          "eventId": "pennant-sweep",
+          "type": "6h pre-first-play baseline diagnostic only",
+          "sampleCount": 6,
+          "before": 0.65,
+          "changePp": 2.500000000000002
+        },
+        {
+          "eventId": "glasnow-injury",
+          "type": "earlier-publication uncertainty diagnostic only",
+          "scenarios": [
+            {
+              "hours": -6,
+              "movementPp": 0.5000000000000004,
+              "tieGroups": [
+                [
+                  "nlds-escape"
+                ],
+                [
+                  "pennant-sweep"
+                ],
+                [
+                  "glasnow-injury",
+                  "ohtani-return"
+                ],
+                [
+                  "seven-losses"
+                ]
+              ]
+            },
+            {
+              "hours": -3,
+              "movementPp": 0.5000000000000004,
+              "tieGroups": [
+                [
+                  "nlds-escape"
+                ],
+                [
+                  "pennant-sweep"
+                ],
+                [
+                  "glasnow-injury",
+                  "ohtani-return"
+                ],
+                [
+                  "seven-losses"
+                ]
+              ]
+            },
+            {
+              "hours": -1,
+              "movementPp": 0,
+              "tieGroups": [
+                [
+                  "nlds-escape"
+                ],
+                [
+                  "pennant-sweep"
+                ],
+                [
+                  "glasnow-injury",
+                  "ohtani-return",
+                  "seven-losses"
+                ]
+              ]
+            },
+            {
+              "hours": 0,
+              "movementPp": 0,
+              "tieGroups": [
+                [
+                  "nlds-escape"
+                ],
+                [
+                  "pennant-sweep"
+                ],
+                [
+                  "glasnow-injury",
+                  "ohtani-return",
+                  "seven-losses"
+                ]
+              ]
+            }
+          ]
+        }
+      ],
+      "tieGroups": [
+        [
+          "nlds-escape"
+        ],
+        [
+          "pennant-sweep"
+        ],
+        [
+          "glasnow-injury",
+          "ohtani-return",
+          "seven-losses"
+        ]
+      ],
+      "sensitivity": [
+        {
+          "hours": -1,
+          "tieGroups": [
+            [
+              "nlds-escape"
+            ],
+            [
+              "pennant-sweep"
+            ],
+            [
+              "glasnow-injury",
+              "ohtani-return",
+              "seven-losses"
+            ]
+          ],
+          "moves": [
+            {
+              "id": "glasnow-injury",
+              "pp": 0,
+              "quality": "usable"
+            },
+            {
+              "id": "ohtani-return",
+              "pp": 0,
+              "quality": "usable"
+            },
+            {
+              "id": "seven-losses",
+              "pp": -0.9999999999999953,
+              "quality": "usable"
+            },
+            {
+              "id": "nlds-escape",
+              "pp": 10.999999999999998,
+              "quality": "usable"
+            },
+            {
+              "id": "pennant-sweep",
+              "pp": 2.0000000000000018,
+              "quality": "usable"
+            }
+          ]
+        },
+        {
+          "hours": 0,
+          "tieGroups": [
+            [
+              "nlds-escape"
+            ],
+            [
+              "pennant-sweep"
+            ],
+            [
+              "glasnow-injury",
+              "ohtani-return",
+              "seven-losses"
+            ]
+          ],
+          "moves": [
+            {
+              "id": "glasnow-injury",
+              "pp": 0,
+              "quality": "usable"
+            },
+            {
+              "id": "ohtani-return",
+              "pp": 0,
+              "quality": "usable"
+            },
+            {
+              "id": "seven-losses",
+              "pp": -0.9999999999999953,
+              "quality": "usable"
+            },
+            {
+              "id": "nlds-escape",
+              "pp": 10.999999999999998,
+              "quality": "usable"
+            },
+            {
+              "id": "pennant-sweep",
+              "pp": 2.0000000000000018,
+              "quality": "usable"
+            }
+          ]
+        },
+        {
+          "hours": 1,
+          "tieGroups": [
+            [
+              "nlds-escape"
+            ],
+            [
+              "pennant-sweep"
+            ],
+            [
+              "ohtani-return",
+              "glasnow-injury",
+              "seven-losses"
+            ]
+          ],
+          "moves": [
+            {
+              "id": "glasnow-injury",
+              "pp": 0,
+              "quality": "usable"
+            },
+            {
+              "id": "ohtani-return",
+              "pp": 0.5000000000000004,
+              "quality": "usable"
+            },
+            {
+              "id": "seven-losses",
+              "pp": -0.24999999999999467,
+              "quality": "usable"
+            },
+            {
+              "id": "nlds-escape",
+              "pp": 10.999999999999998,
+              "quality": "usable"
+            },
+            {
+              "id": "pennant-sweep",
+              "pp": 2.0000000000000018,
+              "quality": "usable"
+            }
+          ]
+        }
+      ],
+      "groupsStable": true
+    }
+  ]
+}

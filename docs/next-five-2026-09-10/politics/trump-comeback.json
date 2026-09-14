@@ -1,0 +1,39 @@
+{
+  "artifactType": "NexusPoint candidate edition",
+  "title": "The comeback nobody could call",
+  "category": "Politics",
+  "status": "editorial-review",
+  "contract": {
+    "provider": "Polymarket",
+    "marketId": "253591",
+    "tokenId": "21742633143463906290569050155826241533067272736897614950488156847949938836455",
+    "question": "Will Donald Trump win the 2024 US Presidential Election?",
+    "selectedSide": "YES",
+    "resolvedOutcome": "YES",
+    "marketUrl": "https://polymarket.com/event/presidential-election-winner-2024/will-donald-trump-win-the-2024-us-presidential-election",
+    "resolutionUrl": "https://gamma-api.polymarket.com/markets/253591",
+    "rulesSummary": "YES if Donald J. Trump wins the 2024 US presidential election; AP, Fox News and NBC must call the same winner, with inauguration as fallback."
+  },
+  "dataReadiness": {
+    "status": "ready-for-review",
+    "series": "docs/launch-queue-research/datasets/trump-hourly.csv",
+    "seriesSha256": "7756111859cbca9f2185795608029323fb21e9505f0314d4700cf7d8b9cc579d",
+    "normalized": "docs/launch-queue-research/evidence/trump-normalized.json",
+    "normalizedSha256": "7b75c8dd3b85c151c76bded476ae6e32fa3084781c77cfa176f632e527bdd380",
+    "observations": 4549,
+    "rawRows": 4550,
+    "coverage": "2024-05-01T00:00:00Z/2024-11-06T15:00:00Z",
+    "missingHourlyBuckets": 3,
+    "windowStatus": "25/25 usable; Iowa delayed window 23/24 buckets",
+    "measurement": "Hourly YES contract price; descriptive percentage-point response, no causal attribution and no missing-bucket filling."
+  },
+  "cards": [
+    {"id":"conviction","date":"2024-05-30","publicationTime":"2024-05-30T21:15:07Z","timePrecision":"live-reporting upper bound","text":"A New York jury finds Donald Trump guilty on 34 felony counts.","sourceUrls":["https://manhattanda.org/d-a-bragg-announces-34-count-felony-trial-conviction-of-donald-j-trump/","https://transcripts.cnn.com/show/se/date/2024-05-30/segment/05"],"whyItMattered":"A historic criminal conviction created legal and political downside while also inviting a mobilization response.","observedResponse":"stabilized -2.00 pp; delayed cumulative -3.00 pp","caveat":"Verdict expectations and courthouse reporting were already moving the contract before the cutoff."},
+    {"id":"butler","date":"2024-07-13","publicationTime":"2024-07-14T00:00:00Z","timePrecision":"live-reporting upper bound","text":"Donald Trump survives an assassination attempt at a Pennsylvania rally.","sourceUrls":["https://transcripts.cnn.com/show/cnr/date/2024-07-13/segment/08"],"whyItMattered":"The shooting changed the campaign's safety, sympathy, convention and turnout narrative immediately.","observedResponse":"stabilized +10.00 pp; delayed cumulative +11.00 pp","caveat":"The cutoff is the end of a live reporting hour; other campaign developments shared the response window."},
+    {"id":"rfk-endorsement","date":"2024-08-23","publicationTime":"2024-08-23T19:30:00Z","timePrecision":"broadcast upper bound","text":"Robert F. Kennedy Jr. suspends his campaign and endorses Trump.","sourceUrls":["https://robertfkennedyjr.substack.com/p/why-i-am-suspending-my-campaign-for","https://transcripts.cnn.com/show/cnc/date/2024-08-23/segment/11"],"whyItMattered":"A rival presidential campaign joined Trump's coalition, changing the field and potential vote transfer.","observedResponse":"stabilized -1.175 pp; delayed cumulative -1.425 pp","caveat":"The decision was discussed before the speech; the negative movement is observed, not explained away."},
+    {"id":"harris-debate","date":"2024-09-10","publicationTime":"2024-09-11T02:45:00Z","timePrecision":"approximate broadcast-end upper bound","text":"Kamala Harris and Donald Trump meet in their first presidential debate.","sourceUrls":["https://abc.com/news/5e38600c-4732-4cd2-a99c-3dedfa81beb0/category/1138628","https://www.nielsen.com/news-center/2024/over-67-million-viewers-tune-in-for-abc-news-harris-trump-debate/","https://abcnews.go.com/Politics/harris-trump-presidential-debate-transcript/story?id=113560542"],"whyItMattered":"The replacement Democratic nominee's first national test could change expectations in a close election.","observedResponse":"stabilized -2.60 pp; delayed cumulative -2.80 pp","caveat":"The ABC page was later edited; the packet uses the approximate broadcast end and does not backdate later transcript content."},
+    {"id":"iowa-poll","date":"2024-11-02","publicationTime":"2024-11-03T00:00:00Z","timePrecision":"broadcast upper bound","text":"A final Iowa poll puts Harris ahead of Trump, 47% to 44%.","sourceUrls":["https://transcripts.cnn.com/show/cnr/date/2024-11-02/segment/08","https://www.investing.com/news/world-news/harris-tops-trump-in-latest-iowa-poll-marking-turnaround-des-moines-register-survey-3698510"],"whyItMattered":"A late state poll contradicted the prevailing Trump narrative and could alter last-minute expectations.","observedResponse":"stabilized -3.45 pp; delayed cumulative +2.05 pp","caveat":"This is a state poll with a stated margin of error; the delayed window reaches election night and is contaminated by later information."}
+  ],
+  "scoring": {"profile":"months-hourly-v1","tieGroups":[["butler"],["rfk-endorsement","conviction"],["harris-debate","iowa-poll"]],"initialOrder":["rfk-endorsement","conviction","iowa-poll","butler","harris-debate"],"packet":"docs/launch-work/playable-drafts/trump/score-packet.json"},
+  "ending": {"text":"AP called the 2024 presidential race for Trump on November 6, 2024; the contract ultimately resolved YES.","sourceUrl":"https://www.ap.org/the-definitive-source/behind-the-news/calling-the-2024-presidential-race-state-by-state/","revealOnly":true}
+}

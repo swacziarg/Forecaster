@@ -136,7 +136,7 @@ equal(validateStudy(eaglesFiveCardStudy).length, 0, 'validates Eagles draft afte
 equal(validateStudy(oscarsFiveCard2026Study).length, 0, 'validates the playable Oscars v2 draft')
 equal(validateStudy(bitcoinFiveCardStudy).length, 0, 'validates the playable Bitcoin v2 draft')
 equal(validateStudy(canada2025Study).length, 0, 'validates the playable Canada v2 draft')
-equal(studyRegistry.length, 11, 'registers all eleven local study versions')
+equal(studyRegistry.length, 16, 'registers all sixteen local study versions')
 equal(studyRegistry[0].study.id, electionStudy.id, 'keeps the election first and default')
 equal(studyFromLocation('/').study.id, electionStudy.id, 'routes the root to the election')
 equal(studyFromLocation('/studies/bitcoin-100k-2024').study.id, bitcoinStudy.id, 'routes a named study')

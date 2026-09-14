@@ -1,0 +1,364 @@
+{
+  "id": "thunder-first-title-2025-v1",
+  "slug": "thunder-first-title-2025",
+  "category": "Sports",
+  "version": 1,
+  "status": "draft",
+  "question": "Which moments most changed Oklahoma City’s chance of winning the 2025 NBA Finals?",
+  "orientation": "Rank five consequential games, injuries, and playoff moments by their expected effect on the Thunder YES contract. The resolved Finals result and full market record stay hidden until you lock your ranking.",
+  "measurementNotes": [
+    "Selection order was frozen before reviewing the calculated impacts: denver-opener, chet-injury, regular-season-best, grizzlies-sweep, west-finals.",
+    "Use pairwise-anchor-1pt-v2: inclusive one-point ties with 1e-12 tolerance and no chaining. All five months-hourly windows are usable; three unrelated hourly buckets are missing from the full history.",
+    "Timing freeze v2: exact retained publication metadata is used for the WCF release and Holmgren update; timezone-naive NBA recap pages use a conservative next-day 12:00Z information bound. No price-driven timing changes were made.",
+    "NBA game recap timestamps omit timezone. Treat as date-only and use 12:00 UTC the following day, covering even UTC-12 rather than inventing a timezone. Other source timestamps use retained exact UTC metadata. These bounds are conservative and can include later news; they do not identify isolated causal effects."
+  ],
+  "market": {
+    "id": "507884",
+    "provider": "Polymarket",
+    "title": "Will the Oklahoma City Thunder win the 2025 NBA Finals?",
+    "rules": "YES if Oklahoma City wins the 2024–25 NBA Championship; otherwise NO. The contract can resolve NO when the outcome becomes impossible under NBA rules. Resolution source: NBA information.",
+    "openedAt": "2024-09-24T17:04:06.478Z",
+    "closedAt": "2025-06-23T07:32:33Z",
+    "settledAt": "2025-06-23T07:32:33Z",
+    "status": "settled",
+    "resolutionSourceUrl": "https://www.nba.com/game/IND-vs-OKC-0042400407",
+    "marketUrl": "https://polymarket.com/event/nba-champion-2024-2025/will-the-oklahoma-city-thunder-win-the-2025-nba-finals",
+    "volume": 17203993.307106
+  },
+  "contract": {
+    "id": "83527644927648970835156950007024690327726158617181889316317174894904268227846",
+    "proposition": "Oklahoma City Thunder win the 2025 NBA Finals",
+    "nativeSide": "YES",
+    "selectedPerspective": "YES",
+    "resolution": "YES"
+  },
+  "dataset": {
+    "id": "polymarket-thunder-2025-hourly-v1",
+    "provider": "Polymarket",
+    "path": "/data/thunder-first-title-2025/thunder-hourly.csv",
+    "rawPath": "/data/thunder-first-title-2025/thunder-history-raw.json",
+    "marketMetadataPath": "/data/thunder-first-title-2025/nba-champion-2024-2025-metadata.json",
+    "manifestPath": "/data/thunder-first-title-2025/thunder-history-manifest.json",
+    "rawSha256": "e2a215cb995e4fcaf52e923e9809df1dcf78680d91f004cdfb33f328bd523130",
+    "marketMetadataSha256": "15a94415c2be5b93830986e23b76cdae77e5bbaa4e8f68f105c860ec4df6b768",
+    "normalizedSha256": "558a508d02ddf5ef25a91a5a56d95b3e35220e2e82c6bc880626e604ae892664",
+    "retrievedAt": "2026-09-10T11:01:01Z",
+    "coverageStart": "2024-09-24T19:00:00Z",
+    "coverageEnd": "2025-06-23T07:00:00Z",
+    "fullMarketLifetime": false,
+    "cadenceMinutes": 60,
+    "transformVersion": "polymarket-hourly-v1",
+    "provenanceUrl": "https://docs.polymarket.com/api-reference/markets/get-prices-history",
+    "requestParameters": "token_id=83527644927648970835156950007024690327726158617181889316317174894904268227846; fidelity=60; 28 ten-day chunks"
+  },
+  "measurementProfile": {
+    "id": "months-hourly-v1",
+    "label": "Months / hourly",
+    "cadenceMinutes": 60,
+    "anticipation": {
+      "startHours": -84,
+      "endHours": -12
+    },
+    "reference": {
+      "startHours": -12,
+      "endHours": 0
+    },
+    "immediate": {
+      "startHours": 0,
+      "endHours": 6
+    },
+    "stabilized": {
+      "startHours": 18,
+      "endHours": 36
+    },
+    "delayed": {
+      "startHours": 48,
+      "endHours": 72
+    },
+    "quality": {
+      "minimumCoverage": 0.6,
+      "maximumGapShare": 0.5,
+      "minimumDistinctUpdates": 3,
+      "maximumSpread": 0.2
+    },
+    "tieThreshold": 0.01
+  },
+  "presentation": {
+    "topicLabel": "Thunder first title",
+    "selectedContractShort": "Thunder win",
+    "selectedContractLong": "Oklahoma City Thunder win the 2025 NBA Finals",
+    "seriesLabel": "Thunder championship probability",
+    "positiveLabel": "Probability rose",
+    "negativeLabel": "Probability fell",
+    "neutralLabel": "Ambiguous",
+    "eventNoun": "basketball moment",
+    "timezone": "America/Chicago",
+    "accent": "#d44b2f",
+    "zoomChoices": [
+      {
+        "label": "All",
+        "hours": null
+      },
+      {
+        "label": "30d",
+        "hours": 720
+      },
+      {
+        "label": "14d",
+        "hours": 336
+      },
+      {
+        "label": "7d",
+        "hours": 168
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "nba-denver-opener",
+      "title": "Thunder roll past Nuggets",
+      "publisher": "NBA / Associated Press",
+      "url": "https://www.nba.com/game/OKC-vs-DEN-0022400075/boxscore",
+      "publishedAt": "2024-10-25",
+      "publishedPrecision": "day",
+      "retrievedAt": "2026-09-10T16:06:41.319513+00:00",
+      "archivedUrl": "https://www.nba.com/game/OKC-vs-DEN-0022400075/boxscore",
+      "snapshotHash": "ca659cf44cabd3806063d3f98f24422028fe73c72ff6c8b3b7fa2cbe433c70fd",
+      "correctionStatus": "none"
+    },
+    {
+      "id": "nba-chet-injury",
+      "title": "Thunder center Chet Holmgren (pelvic fracture) out at least 8–10 weeks",
+      "publisher": "NBA News Services",
+      "url": "https://cdn-uat.nba.com/news/chet-holmgren-thunder-hip-injury",
+      "publishedAt": "2024-11-11T02:08:25Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-10T16:06:42.666675+00:00",
+      "archivedUrl": "https://cdn-uat.nba.com/news/chet-holmgren-thunder-hip-injury",
+      "snapshotHash": "9737ea23a2b9d4549797f6df6fab9c0b2f0c96c7dab582014f289af4ca49f7d1",
+      "correctionStatus": "none",
+      "updatedAt": "2024-11-11T12:47:34Z"
+    },
+    {
+      "id": "nba-regular-season-finale",
+      "title": "Wiggins and Carlson lift Thunder past Pelicans 115–100",
+      "publisher": "NBA / Associated Press",
+      "url": "https://www.nba.com/game/okc-vs-nop-0022401196",
+      "publishedAt": "2025-04-13",
+      "publishedPrecision": "day",
+      "retrievedAt": "2026-09-10T16:06:46.860817+00:00",
+      "archivedUrl": "https://www.nba.com/game/okc-vs-nop-0022401196",
+      "snapshotHash": "4b72a57a81c7e0322adb9c7e411ba6dcf24a4e06f7f912f0df17a509e5620481",
+      "correctionStatus": "none"
+    },
+    {
+      "id": "nba-grizzlies-sweep",
+      "title": "Thunder complete sweep of Grizzlies",
+      "publisher": "NBA / Associated Press",
+      "url": "https://www.nba.com/game/0042400144",
+      "publishedAt": "2025-04-26",
+      "publishedPrecision": "day",
+      "retrievedAt": "2026-09-10T16:06:48.390852+00:00",
+      "archivedUrl": "https://www.nba.com/game/0042400144",
+      "snapshotHash": "668e45192753fcc82940b7200487ad366d85fbad19fdc1fa3df35b82ff179e32",
+      "correctionStatus": "none"
+    },
+    {
+      "id": "nba-west-finals",
+      "title": "Thunder advances to NBA Finals",
+      "publisher": "Oklahoma City Thunder",
+      "url": "https://www.nba.com/thunder/news/release-finals-250528",
+      "publishedAt": "2025-05-29T03:20:17Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-10T16:06:50.183255+00:00",
+      "archivedUrl": "https://www.nba.com/thunder/news/release-finals-250528",
+      "snapshotHash": "dfe12b85dc151a90b458ea39808edafac884066d96779319ce90a936a0d7b876",
+      "correctionStatus": "none"
+    },
+    {
+      "id": "thunder-ending",
+      "title": "Game 7: Thunder beat Pacers 103–91 for NBA title",
+      "publisher": "NBA.com",
+      "url": "https://www.nba.com/game/IND-vs-OKC-0042400407",
+      "publishedAt": "2025-06-23",
+      "publishedPrecision": "day",
+      "retrievedAt": "2026-09-10T16:06:51.219828+00:00",
+      "archivedUrl": "https://www.nba.com/game/IND-vs-OKC-0042400407",
+      "snapshotHash": "212822549afd69236e017eb4215087d33fbe89265dc71a0362b2be57c652192d",
+      "correctionStatus": "none"
+    }
+  ],
+  "events": [
+    {
+      "id": "denver-opener",
+      "title": "Thunder open by beating Denver 102–87",
+      "shortTitle": "Denver opener",
+      "occurredAt": "2024-10-26T12:00:00Z",
+      "informationKnownAt": "2024-10-26T12:00:00Z",
+      "precision": "interval",
+      "timezone": "America/Chicago",
+      "dateLabel": "Oct 24",
+      "category": "Season opener",
+      "mechanism": "A road win over a leading Western rival validates the young core and raises the projected ceiling for the season-long title path.",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "denver-opener-fact",
+          "text": "Oklahoma City beat Denver 102–87 in the season opener; Gilgeous-Alexander scored 28 and Holmgren had 25 with 14 rebounds.",
+          "knownAt": "2024-10-26T12:00:00Z",
+          "sourceIds": [
+            "nba-denver-opener"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "nba-denver-opener",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "The measured response is a market movement around the public information cutoff, not proof that this event alone caused the change.",
+      "competingExplanation": "The response also includes other opening-week results and league-wide repricing. The conservative recap-day bound means later opening-week news and the next game may enter the broad windows.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "chet-injury",
+      "title": "Chet Holmgren suffers a pelvic fracture",
+      "shortTitle": "Holmgren injury",
+      "occurredAt": "2024-11-11T12:47:34Z",
+      "informationKnownAt": "2024-11-11T12:47:34Z",
+      "precision": "interval",
+      "timezone": "America/Chicago",
+      "dateLabel": "Nov 10",
+      "category": "Injury",
+      "mechanism": "A core two-way starter’s injury changes the Thunder’s playoff ceiling and frontcourt depth, even with a return expected during the season.",
+      "expectedDirection": "negative",
+      "claims": [
+        {
+          "id": "chet-injury-fact",
+          "text": "The Thunder announced a right iliac wing fracture and a return-to-play update in eight to ten weeks.",
+          "knownAt": "2024-11-11T12:47:34Z",
+          "sourceIds": [
+            "nba-chet-injury"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "nba-chet-injury",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "The measured response is a market movement around the public information cutoff, not proof that this event alone caused the change.",
+      "competingExplanation": "The injury announcement followed the Golden State loss and coincided with other early-season information.",
+      "attributionAssessment": "likely dominant"
+    },
+    {
+      "id": "regular-season-best",
+      "title": "Thunder finish 68–14 with NBA’s best record",
+      "shortTitle": "68–14 finish",
+      "occurredAt": "2025-04-14T12:00:00Z",
+      "informationKnownAt": "2025-04-14T12:00:00Z",
+      "precision": "interval",
+      "timezone": "America/Chicago",
+      "dateLabel": "Apr 13",
+      "category": "Regular season",
+      "mechanism": "The finished record confirms the strongest available baseline and home-court advantage through the playoffs; home court had been clinched earlier.",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "regular-season-best-fact",
+          "text": "Oklahoma City beat New Orleans 115–100 to finish 68–14, the best record in the NBA and the best regular season in franchise history.",
+          "knownAt": "2025-04-14T12:00:00Z",
+          "sourceIds": [
+            "nba-regular-season-finale"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "nba-regular-season-finale",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "The measured response is a market movement around the public information cutoff, not proof that this event alone caused the change.",
+      "competingExplanation": "The result was expected late in the season and playoff seeding information arrived alongside it.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "grizzlies-sweep",
+      "title": "Thunder sweep Memphis in the first round",
+      "shortTitle": "Memphis sweep",
+      "occurredAt": "2025-04-27T12:00:00Z",
+      "informationKnownAt": "2025-04-27T12:00:00Z",
+      "precision": "interval",
+      "timezone": "America/Chicago",
+      "dateLabel": "Apr 26",
+      "category": "Playoffs",
+      "mechanism": "A clean opening-series win removes a playoff branch and demonstrates that the top seed can close a tight road game.",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "grizzlies-sweep-fact",
+          "text": "Oklahoma City completed a 4–0 sweep of Memphis with a 117–115 Game 4 win and became the first team into the second round.",
+          "knownAt": "2025-04-27T12:00:00Z",
+          "sourceIds": [
+            "nba-grizzlies-sweep"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "nba-grizzlies-sweep",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "The measured response is a market movement around the public information cutoff, not proof that this event alone caused the change.",
+      "competingExplanation": "The four-game series and possible second-round opponents updated in overlapping windows.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "west-finals",
+      "title": "Thunder reach the NBA Finals",
+      "shortTitle": "Finals berth",
+      "occurredAt": "2025-05-29T03:21:00Z",
+      "informationKnownAt": "2025-05-29T03:21:00Z",
+      "precision": "interval",
+      "timezone": "America/Chicago",
+      "dateLabel": "May 28",
+      "category": "Playoffs",
+      "mechanism": "Only one best-of-seven series remains, sharply reducing uncertainty in the championship contract.",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "west-finals-fact",
+          "text": "Oklahoma City beat Minnesota 124–94 to win the Western Conference finals 4–1 and advance to the NBA Finals.",
+          "knownAt": "2025-05-29T03:21:00Z",
+          "sourceIds": [
+            "nba-west-finals"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "nba-west-finals",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "The measured response is a market movement around the public information cutoff, not proof that this event alone caused the change.",
+      "competingExplanation": "The Eastern Conference finals and award information arrived in the same broad window.",
+      "attributionAssessment": "likely dominant"
+    }
+  ],
+  "contextMarkers": [],
+  "conclusion": {
+    "title": "2025 NBA Finals: Thunder win first title",
+    "text": "Oklahoma City defeated Indiana 4–3 in the 2025 NBA Finals, winning Game 7 103–91 on June 22, 2025. The Polymarket Thunder YES contract resolved YES.",
+    "sourceId": "thunder-ending"
+  }
+}

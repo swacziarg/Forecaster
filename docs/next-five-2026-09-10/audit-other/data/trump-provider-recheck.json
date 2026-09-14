@@ -1,0 +1,14 @@
+{
+  "provider": "https://clob.polymarket.com/prices-history",
+  "retrieved": "2026-09-10",
+  "tokenId": "21742633143463906290569050155826241533067272736897614950488156847949938836455",
+  "startTs": 1714521600,
+  "endTs": 1714694400,
+  "fidelity": 60,
+  "providerRows": 47,
+  "retainedRows": 47,
+  "exactTimestampPriceMatches": 47,
+  "providerFirst": {"t": 1714521603, "p": 0.445},
+  "providerLast": {"t": 1714690802, "p": 0.455},
+  "note": "Comparison uses original provider seconds and prices before hourly flooring; no out-of-range retained row was included."
+}

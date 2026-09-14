@@ -10,6 +10,10 @@ export type DailyScoringRule = {
   tieGrouping: 'anchor-window'
 }
 
+export const EXACT_MOVE_SCORING: DailyScoringRule = { version: 'pairwise-exact-v3', tieThreshold: 0, tieGrouping: 'anchor-window' }
+// Absorb only binary subtraction noise, not meaningful differences in observed moves.
+export const NUMERICAL_TIE_TOLERANCE = Number.EPSILON * 4
+
 export type DailyPuzzle = {
   id: string
   number: number
@@ -101,7 +105,7 @@ export function validateDailyRegistry(puzzles: readonly DailyPuzzle[], studies: 
     previousNumber = puzzle.number
     if (puzzle.eventIds.length !== 5 || new Set(puzzle.eventIds).size !== 5) errors.push(`Daily puzzle ${puzzle.id} must contain five unique event IDs.`)
     if (!isPermutation(puzzle.initialOrder, puzzle.eventIds)) errors.push(`Daily puzzle ${puzzle.id} initial order must be a permutation of its event IDs.`)
-    if (!puzzle.scoring.version || puzzle.scoring.tieGrouping !== 'anchor-window' || !Number.isFinite(puzzle.scoring.tieThreshold) || puzzle.scoring.tieThreshold < 0) errors.push(`Daily puzzle ${puzzle.id} has an invalid scoring rule.`)
+    if ((puzzle.scoring.version === EXACT_MOVE_SCORING.version && puzzle.scoring.tieThreshold !== 0) || !puzzle.scoring.version || puzzle.scoring.tieGrouping !== 'anchor-window' || !Number.isFinite(puzzle.scoring.tieThreshold) || puzzle.scoring.tieThreshold < 0) errors.push(`Daily puzzle ${puzzle.id} has an invalid scoring rule.`)
     const study = studyById.get(puzzle.studyId)
     if (!study || study.version !== puzzle.studyVersion) {
       errors.push(`Daily puzzle ${puzzle.id} references an unknown study version.`)
@@ -160,9 +164,10 @@ export function resolveDailyPuzzle(puzzles: readonly DailyPuzzle[], now: Date, r
 }
 
 export function scoreDailyOrder(order: readonly string[], impacts: StudyEventImpact[], scoring: DailyScoringRule) {
-  // v2 absorbs floating-point subtraction noise at the inclusive one-point boundary.
+  // New games compare unrounded responses. Preserve historical v1/v2 grading.
   // Historical v1 submissions and their comparison groups retain the original rule.
-  const tieGroups = createTieGroups(impacts, scoring.tieThreshold, scoring.version === 'pairwise-anchor-1pt-v2' ? 1e-12 : 0)
+  const exact = scoring.version === EXACT_MOVE_SCORING.version
+  const tieGroups = createTieGroups(impacts, exact ? 0 : scoring.tieThreshold, exact ? NUMERICAL_TIE_TOLERANCE : scoring.version === 'pairwise-anchor-1pt-v2' ? 1e-12 : 0)
   return { tieGroups, agreement: pairwiseAgreement([...order], tieGroups) }
 }
 

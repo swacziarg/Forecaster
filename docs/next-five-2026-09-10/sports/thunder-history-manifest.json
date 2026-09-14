@@ -1,0 +1,31 @@
+{
+  "provider": "Polymarket",
+  "tokenId": "83527644927648970835156950007024690327726158617181889316317174894904268227846",
+  "marketSlug": "nba-champion-2024-2025-thunder-yes",
+  "retrievedAt": "2026-09-10T16:01:01.306Z",
+  "request": {
+    "endpoint": "https://clob.polymarket.com/prices-history",
+    "startTs": 1727200967,
+    "endTs": 1750663953,
+    "fidelityMinutes": 60,
+    "chunkSeconds": 864000,
+    "chunks": 28
+  },
+  "coverageStart": "2024-09-24T19:00:00.000Z",
+  "coverageEnd": "2025-06-23T07:00:00.000Z",
+  "rawSha256": "e2a215cb995e4fcaf52e923e9809df1dcf78680d91f004cdfb33f328bd523130",
+  "normalizedSha256": "558a508d02ddf5ef25a91a5a56d95b3e35220e2e82c6bc880626e604ae892664",
+  "rawObservations": 6516,
+  "normalizedObservations": 6514,
+  "duplicateCadenceBuckets": 1,
+  "missingBucketCount": 3,
+  "missingBuckets": [
+    "2024-11-05T22:00:00.000Z",
+    "2025-06-13T07:00:00.000Z",
+    "2025-06-23T03:00:00.000Z"
+  ],
+  "rejectedProbabilities": 1,
+  "transformVersion": "polymarket-hourly-v1",
+  "markPolicy": "Use each API history price as a traded mark; sort chronologically and keep the latest source observation in each UTC hour. Do not fill missing hours.",
+  "provenanceUrl": "https://docs.polymarket.com/api-reference/markets/get-prices-history"
+}

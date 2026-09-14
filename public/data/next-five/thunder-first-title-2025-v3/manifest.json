@@ -1,0 +1,24 @@
+{
+  "dataset": {
+    "id": "polymarket-thunder-2025-hourly-v1",
+    "provider": "Polymarket",
+    "path": "/data/next-five/thunder-first-title-2025-v3/hourly.csv",
+    "rawPath": "/data/next-five/thunder-first-title-2025-v3/raw-history.json",
+    "marketMetadataPath": "/data/next-five/thunder-first-title-2025-v3/market.json",
+    "manifestPath": "/data/next-five/thunder-first-title-2025-v3/manifest.json",
+    "rawSha256": "e2a215cb995e4fcaf52e923e9809df1dcf78680d91f004cdfb33f328bd523130",
+    "marketMetadataSha256": "15a94415c2be5b93830986e23b76cdae77e5bbaa4e8f68f105c860ec4df6b768",
+    "normalizedSha256": "558a508d02ddf5ef25a91a5a56d95b3e35220e2e82c6bc880626e604ae892664",
+    "retrievedAt": "2026-09-10T16:01:01.306Z",
+    "coverageStart": "2024-09-24T19:00:00Z",
+    "coverageEnd": "2025-06-23T07:00:00Z",
+    "fullMarketLifetime": false,
+    "cadenceMinutes": 60,
+    "transformVersion": "polymarket-hourly-v1",
+    "provenanceUrl": "https://docs.polymarket.com/api-reference/markets/get-prices-history",
+    "requestParameters": "token_id=83527644927648970835156950007024690327726158617181889316317174894904268227846; fidelity=60; 28 ten-day chunks"
+  },
+  "sourceDraft": "docs/next-five-2026-09-10/sports-repair/study-draft-v3.json",
+  "reviewedStudySha256": "881eb3560e65aaf90834dc2fc58a2914a4bd23c6385ccb55fc26d2322119c0e6",
+  "packaging": "Original dataset bytes copied unchanged; runtime paths and hashes verified."
+}

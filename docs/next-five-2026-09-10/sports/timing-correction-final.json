@@ -1,0 +1,44 @@
+{
+  "preparedAt": "2026-09-10T16:18:07.436171+00:00",
+  "frozenBeforeCorrectedScores": true,
+  "reason": "Parent source-capture audit found unsupported timezone assumptions and source rounding earlier than publication. Corrections selected solely from metadata, not resulting scores.",
+  "policy": "NBA game recap timestamps omit timezone. Treat as date-only and use 12:00 UTC the following day, covering even UTC-12 rather than inventing a timezone. Other source timestamps use retained exact UTC metadata. These bounds are conservative and can include later news; they do not identify isolated causal effects.",
+  "events": {
+    "denver-opener": {
+      "source": "nba-denver-opener",
+      "raw": "2024-10-25T09:05:30",
+      "publishedAt": "2024-10-25",
+      "publishedPrecision": "day",
+      "cutoff": "2024-10-26T12:00:00Z"
+    },
+    "chet-injury": {
+      "source": "nba-chet-injury",
+      "raw": "published2024-11-11T02:08:25Z;modified2024-11-11T12:47:34Z",
+      "publishedAt": "2024-11-11T02:08:25Z",
+      "updatedAt": "2024-11-11T12:47:34Z",
+      "publishedPrecision": "instant",
+      "cutoff": "2024-11-11T12:47:34Z"
+    },
+    "regular-season-best": {
+      "source": "nba-regular-season-finale",
+      "raw": "2025-04-13T19:39:22",
+      "publishedAt": "2025-04-13",
+      "publishedPrecision": "day",
+      "cutoff": "2025-04-14T12:00:00Z"
+    },
+    "grizzlies-sweep": {
+      "source": "nba-grizzlies-sweep",
+      "raw": "2025-04-26T19:51:20",
+      "publishedAt": "2025-04-26",
+      "publishedPrecision": "day",
+      "cutoff": "2025-04-27T12:00:00Z"
+    },
+    "west-finals": {
+      "source": "nba-west-finals",
+      "raw": "2025-05-29T03:20:17Z",
+      "publishedAt": "2025-05-29T03:20:17Z",
+      "publishedPrecision": "instant",
+      "cutoff": "2025-05-29T03:21:00Z"
+    }
+  }
+}

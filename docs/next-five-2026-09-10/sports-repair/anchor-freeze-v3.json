@@ -1,0 +1,59 @@
+{
+  "preparedAt": "2026-09-10T16:48:40.949872+00:00",
+  "frozenBeforeCorrectedScores": true,
+  "priorScoreVisibility": "Earlier bad-anchor scores and the Game7 raw jump were already seen. These corrections follow independent event records and announcement evidence; no score-based timestamp tuning.",
+  "initialOrder": [
+    "chet-return",
+    "cup-loss",
+    "west-finals",
+    "chet-injury",
+    "denver-game-seven"
+  ],
+  "anchors": {
+    "cup-loss": {
+      "occurredAt": "2024-12-18T04:01:00Z",
+      "informationKnownAt": "2024-12-18T04:02:00Z",
+      "gameStartUTC": "2024-12-18T01:41:00+00:00",
+      "finishLocal": "20:01",
+      "timezone": "America/Los_Angeles",
+      "precision": "minute",
+      "evidence": "https://statsdmz.nba.com/pdfs/20241217/20241217_MILOKC_book.pdf",
+      "policy": "Public live result at recorded game finish. Advance one minute to cover minute precision. This is NOT a PDF upload timestamp. Scorebook is retained retrospective evidence for the historical live event."
+    },
+    "denver-game-seven": {
+      "occurredAt": "2025-05-18T22:01:00Z",
+      "informationKnownAt": "2025-05-18T22:02:00Z",
+      "gameStartUTC": "2025-05-18T19:40:00+00:00",
+      "finishLocal": "17:01",
+      "timezone": "America/Chicago",
+      "precision": "minute",
+      "evidence": "https://statsdmz.nba.com/pdfs/20250518/20250518_DENOKC_book.pdf",
+      "policy": "Public live result at recorded game finish. Advance one minute to cover minute precision. This is NOT a PDF upload timestamp. Scorebook is retained retrospective evidence for the historical live event."
+    },
+    "west-finals": {
+      "occurredAt": "2025-05-29T02:57:00Z",
+      "informationKnownAt": "2025-05-29T02:58:00Z",
+      "gameStartUTC": "2025-05-29T00:44:00+00:00",
+      "finishLocal": "21:57",
+      "timezone": "America/Chicago",
+      "precision": "minute",
+      "evidence": "https://statsdmz.nba.com/pdfs/20250528/20250528_MINOKC_book.pdf",
+      "policy": "Public live result at recorded game finish. Advance one minute to cover minute precision. This is NOT a PDF upload timestamp. Scorebook is retained retrospective evidence for the historical live event."
+    },
+    "chet-injury": {
+      "occurredAt": "2024-11-11T06:26:15Z",
+      "informationKnownAt": "2024-11-11T06:26:15Z",
+      "precision": "minute",
+      "evidence": "https://www.nba.com/thunder/news/holmgren-241111",
+      "policy": "Original team diagnosis release, whose datePublished and dateModified match. Earlier reporter reproduction means this is a conservative bound, not guaranteed first announcement."
+    },
+    "chet-return": {
+      "occurredAt": "2025-02-06T14:42:10.195000Z",
+      "informationKnownAt": "2025-02-06T14:42:10.195000Z",
+      "precision": "minute",
+      "evidence": "https://twitter.com/ChetHolmgren/status/1887512110986633513",
+      "policy": "Player’s own return announcement. Tweet snowflake timestamp; text and ID retained in NBA article embed. Not the subsequent Toronto game."
+    }
+  },
+  "measurementPolicy": "Preserve MONTHS_PROFILE and one-point v2 tie rule. Compare median [-12,0) vs [18,36) hours relative to public result/announcement cutoff. Game reference includes live play, so explicitly compare with a separately reported pre-tip baseline diagnostic."
+}

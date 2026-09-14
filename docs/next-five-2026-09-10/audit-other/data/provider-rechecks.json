@@ -1,0 +1,12 @@
+{
+  "provider": "https://clob.polymarket.com/prices-history",
+  "retrieved": "2026-09-10",
+  "windowSeconds": 172800,
+  "method": "Public bounded GET at the first retained request anchor; compare returned (t,p) pairs with retained raw history.",
+  "results": {
+    "fed": {"startTs": 1721930400, "endTs": 1722103200, "providerRows": 47, "retainedRows": 47, "exactTimestampPriceMatches": 47},
+    "thunder": {"startTs": 1727200967, "endTs": 1727373767, "providerRows": 48, "retainedRows": 48, "exactTimestampPriceMatches": 48},
+    "dodgers": {"startTs": 1740595047, "endTs": 1740767847, "providerRows": 46, "retainedRows": 46, "exactTimestampPriceMatches": 46},
+    "nyc": {"startTs": 1745341206, "endTs": 1745514006, "providerRows": 48, "retainedRows": 49, "exactTimestampPriceMatches": 48, "note": "One retained point lies at the inclusive upper-bound edge; all 48 provider points match exactly by timestamp and price."}
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "retrievedAt": "2026-09-10T16:20:00.473715+00:00",
+  "sources": [
+    {
+      "id": "cup-loss",
+      "url": "https://www.nba.com/news/starting-5-dec-18-2024",
+      "path": "docs/next-five-2026-09-10/sports/evidence/cup-loss.html",
+      "success": true,
+      "error": "",
+      "sha256": "672189b99f3c2029ed89f52755c3865a3e8f51a3c22d8f3f5f266cb5e65d02e7"
+    },
+    {
+      "id": "chet-return",
+      "url": "https://www.nba.com/news/thunder-chet-holmgren-to-return-friday",
+      "path": "docs/next-five-2026-09-10/sports/evidence/chet-return.html",
+      "success": true,
+      "error": "",
+      "sha256": "2418d7cd8b58e976921a9f25564fa98a236a32816d5c5a03d95f3f617c4c6ad0"
+    },
+    {
+      "id": "denver-game-seven",
+      "url": "https://www.nba.com/news/nuggets-thunder-takeaways-game-7-2025-nba-playoffs",
+      "path": "docs/next-five-2026-09-10/sports/evidence/denver-game-seven.html",
+      "success": true,
+      "error": "",
+      "sha256": "d8e5951c301fc7dc3aa64202c95c35205655e2361f23c2af5ffb03e9835538f3"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import { completedScoreBands, createDailySharePayload, currentDailyPuzzle, getPreRevealCard, performShare, resolveDailyPuzzle, scoreDailyOrder, validateDailyRegistry, type DailyPuzzle } from './dailyGame.ts'
+import { EXACT_MOVE_SCORING, completedScoreBands, createDailySharePayload, currentDailyPuzzle, getPreRevealCard, performShare, resolveDailyPuzzle, scoreDailyOrder, validateDailyRegistry, type DailyPuzzle } from './dailyGame.ts'
 import { collectDailyStats, dailyAttemptKey, hasSeenDailyIntro, rememberDailyIntro, readDailyAttempt, saveDailyDraft, submitDailyAttempt, type StorageLike } from './dailyStorage.ts'
 import { dailyPuzzles } from '../data/dailyPuzzles.ts'
 import { studyRegistry } from '../data/studies.ts'
@@ -166,8 +166,8 @@ const v2Scoring = { ...schedule[0].scoring, version: 'pairwise-anchor-1pt-v2' }
 const boundaryImpacts = [impact('a', 0.05), impact('b', 0.04), impact('c', 0.03), impact('d', 0.019999), impact('e', null)]
 equal(scoreDailyOrder(ids, boundaryImpacts, schedule[0].scoring).tieGroups[0].join('+'), 'a', 'preserves historical v1 floating-point behavior')
 equal(scoreDailyOrder(ids, boundaryImpacts, v2Scoring).tieGroups.map((group) => group.join('+')).join(','), 'a+b,c,d', 'v2 includes the exact boundary without chaining or admitting larger differences')
-equal(dailyPuzzles.length, 6, 'has six official launch editions')
-equal(dailyPuzzles.map(puzzle => puzzle.number).join(','), '1,2,3,4,5,6', 'numbers official editions consecutively from launch day')
+equal(dailyPuzzles.length, 11, 'has eleven approved editions')
+equal(dailyPuzzles.map(puzzle => puzzle.number).join(','), '1,2,3,4,5,6,7,8,9,10,11', 'numbers official editions consecutively from launch day')
 for (let i = 1; i < dailyPuzzles.length; i++) {
   const puzzle = dailyPuzzles[i]
   const start = Date.parse(puzzle.releaseTime)
@@ -176,9 +176,9 @@ for (let i = 1; i < dailyPuzzles.length; i++) {
   equal(resolveDailyPuzzle(dailyPuzzles, new Date(start - 1), puzzle.id).kind, 'unreleased', 'future launch link remains sealed')
   const archived = resolveDailyPuzzle(dailyPuzzles, new Date(start + 86400000), puzzle.id)
   assert(archived.kind === 'puzzle' && archived.playMode === 'archive', 'shared edition link remains playable after its daily window')
-  equal(puzzle.scoring.version, 'pairwise-anchor-1pt-v2', 'future launch editions use inclusive v2 scoring')
+  equal(puzzle.scoring.version, puzzle.number >= 7 ? 'pairwise-exact-v3' : 'pairwise-anchor-1pt-v2', 'upcoming editions use exact moves while released editions retain their scoring')
 }
-equal(resolveDailyPuzzle(dailyPuzzles, new Date('2026-09-13T05:00:00Z')).kind, 'exhausted', 'reports the next real queue gap after Canada')
+equal(resolveDailyPuzzle(dailyPuzzles, new Date('2026-09-18T05:00:00Z')).kind, 'exhausted', 'reports the next real queue gap after Dodgers')
 
 // Renumbering must not discard drafts, change scores, or allow a second submission.
 const launchStorage = new MemoryStorage()
@@ -208,3 +208,11 @@ rememberDailyIntro(unavailableStorage)
 rememberDailyIntro(quotaStorage)
 rememberDailyIntro(null)
 equal(hasSeenDailyIntro(unavailableStorage), false, 'blocked storage does not crash the introduction')
+
+// Equal display labels must not erase real market differences; only arithmetic noise ties.
+const exactImpacts = [impact('a', 0.01), impact('b', 0.0000001), impact('c', 0), impact('d', -0.01), impact('e', null)]
+equal(scoreDailyOrder(ids, exactImpacts, EXACT_MOVE_SCORING).tieGroups.map(g => g.join('+')).join(','), 'a,b,c,d', 'exact scoring separates one-point and sub-display differences')
+equal(scoreDailyOrder(ids, exactImpacts, EXACT_MOVE_SCORING).agreement.comparable, 6, 'all unequal valid pairs count')
+const equalMoves = [impact('a', 0.3 - 0.2), impact('b', 0.2 - 0.1), impact('c', 0), impact('d', 0), impact('e', null)]
+equal(scoreDailyOrder(ids, equalMoves, EXACT_MOVE_SCORING).tieGroups.map(g => [...g].sort().join('+')).join(','), 'a+b,c+d', 'equal decimal differences and equal zeros remain ties')
+assert(dailyAttemptKey({...schedule[0], scoring: EXACT_MOVE_SCORING}) !== dailyAttemptKey(schedule[0]), 'new scoring cannot reuse a historical grade')

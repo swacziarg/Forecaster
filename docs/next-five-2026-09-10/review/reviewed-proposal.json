@@ -1,0 +1,3599 @@
+{
+  "preparedAt": "2026-09-10T17:12:38.522Z",
+  "status": "PROPOSAL ONLY — no schedule approval recorded",
+  "scope": "Five reviewed content drafts. Runtime integration, packaging and dated schedule activation follow owner approval.",
+  "checks": {
+    "strictStudies": 5,
+    "eligibleCards": 25,
+    "usableWindows": 125,
+    "distinctContracts": 5,
+    "releaseScheduleUnchanged": true,
+    "upcomingScoringChangeAuthorized": true
+  },
+  "editions": [
+    {
+      "date": "2026-09-13",
+      "number": 7,
+      "topic": "Trump’s 2024 comeback",
+      "study": "docs/next-five-2026-09-10/audit-other/trump/study-draft-v2.json",
+      "csv": "docs/launch-queue-research/datasets/trump-hourly.csv",
+      "initialOrder": [
+        "rfk-endorsement",
+        "conviction",
+        "iowa-poll",
+        "butler",
+        "harris-debate"
+      ],
+      "verdict": "Audited sources and unrounded moves; 5 ranking groups under exact-move scoring. Only numerically equal calculated responses tie. See scoring-change/REVIEW.md for the updated ordering; previous one-point grouping is superseded.",
+      "releaseTime": "2026-09-13T05:00:00Z",
+      "timezone": "America/Chicago",
+      "status": "proposed-awaiting-owner-approval",
+      "studyId": "trump-comeback-2024-v2",
+      "studyVersion": 2,
+      "studySha256": "41aeeee4dde6c3ba6939b70fa17e366d0ca7da2a9580d71b24f50e6cfa1ea372",
+      "csvSha256": "7756111859cbca9f2185795608029323fb21e9505f0314d4700cf7d8b9cc579d",
+      "observations": 4549,
+      "audit": {
+        "observations": 4549,
+        "duplicateTimestamps": [],
+        "missingBuckets": [
+          "2024-05-01T19:00:00.000Z",
+          "2024-07-21T18:00:00.000Z",
+          "2024-11-05T22:00:00.000Z"
+        ],
+        "outOfOrderRows": 0,
+        "coverageStart": "2024-05-01T00:00:00Z",
+        "coverageEnd": "2024-11-06T15:00:00Z"
+      },
+      "contract": {
+        "id": "21742633143463906290569050155826241533067272736897614950488156847949938836455",
+        "proposition": "Donald Trump wins the 2024 US presidential election",
+        "nativeSide": "YES",
+        "selectedPerspective": "YES",
+        "resolution": "YES"
+      },
+      "market": {
+        "id": "253591",
+        "provider": "Polymarket",
+        "title": "Will Donald Trump win the 2024 US Presidential Election?",
+        "rules": "YES if Donald J. Trump wins the 2024 US presidential election. AP, Fox News and NBC must all call the same winner; if they had not agreed by January 20, 2025, the inauguration determined resolution.",
+        "openedAt": "2024-01-04T22:58:00Z",
+        "closedAt": "2024-11-06T15:17:41Z",
+        "status": "settled",
+        "resolutionSourceUrl": "https://www.ap.org/the-definitive-source/behind-the-news/calling-the-2024-presidential-race-state-by-state/",
+        "marketUrl": "https://polymarket.com/event/presidential-election-winner-2024/will-donald-trump-win-the-2024-us-presidential-election"
+      },
+      "scoring": {
+        "version": "pairwise-exact-v3",
+        "tieThreshold": 0,
+        "tieGrouping": "anchor-window",
+        "boundaryTolerance": 8.881784197001252e-16
+      },
+      "tieGroups": [
+        [
+          "butler"
+        ],
+        [
+          "rfk-endorsement"
+        ],
+        [
+          "conviction"
+        ],
+        [
+          "harris-debate"
+        ],
+        [
+          "iowa-poll"
+        ]
+      ],
+      "cards": [
+        {
+          "id": "conviction",
+          "title": "New York jury finds Trump guilty on 34 felony counts",
+          "dateLabel": "May 30",
+          "informationKnownAt": "2024-05-30T21:15:07Z",
+          "claims": [
+            "A New York jury finds Trump guilty on 34 felony counts of falsifying business records in the first degree."
+          ],
+          "sources": [
+            {
+              "id": "cnn-conviction-broadcast",
+              "title": "CNN contemporary verdict coverage",
+              "publisher": "CNN",
+              "url": "https://transcripts.cnn.com/show/se/date/2024-05-30/segment/05",
+              "publishedAt": "2024-05-30T21:15:07Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-06T05:12:35.552586Z",
+              "snapshotHash": "f54b40c115dce68ee8e5aec94164807c530b122271e73f14821f9bcad9c356d3",
+              "sourceIdentity": "historical-public-broadcast",
+              "snapshotKind": "retrospective-transcript",
+              "timestampMeaning": "Historical broadcast upper bound based on transcript markers, not HTML upload time. Transcript retained later and may contain corrections."
+            }
+          ],
+          "mechanism": "Historic legal verdict versus campaign mobilization.",
+          "measuredChangePercentagePoints": -1.9999999999999907,
+          "referenceProbability": 0.565,
+          "stabilizedProbability": 0.545,
+          "windows": {
+            "anticipation": {
+              "level": 0.565,
+              "start": "2024-05-27T09:15:07.000Z",
+              "end": "2024-05-30T09:15:07.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.565,
+              "start": "2024-05-30T09:15:07.000Z",
+              "end": "2024-05-30T21:15:07.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.535,
+              "start": "2024-05-30T21:15:07.000Z",
+              "end": "2024-05-31T03:15:07.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.545,
+              "start": "2024-05-31T15:15:07.000Z",
+              "end": "2024-06-01T09:15:07.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.535,
+              "start": "2024-06-01T21:15:07.000Z",
+              "end": "2024-06-02T21:15:07.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "butler",
+          "title": "Trump survives a shooting at his Pennsylvania rally",
+          "dateLabel": "Jul 13",
+          "informationKnownAt": "2024-07-13T23:35:06Z",
+          "claims": [
+            "Contemporary coverage reported that Trump survived a shooting at his Pennsylvania rally on July 13, 2024."
+          ],
+          "sources": [
+            {
+              "id": "cnn-butler-broadcast",
+              "title": "CNN contemporary Butler coverage",
+              "publisher": "CNN",
+              "url": "https://transcripts.cnn.com/show/cnr/date/2024-07-13/segment/08",
+              "publishedAt": "2024-07-13T23:35:06Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-06T00:26:48.413330Z",
+              "snapshotHash": "4108d635e69bc8b700d6402210932f9ffe5cea8175974140abff9f51ca852196",
+              "sourceIdentity": "historical-public-broadcast",
+              "snapshotKind": "retrospective-transcript",
+              "timestampMeaning": "Historical broadcast upper bound based on transcript markers, not HTML upload time. Transcript retained later and may contain corrections."
+            }
+          ],
+          "mechanism": "A major campaign shock may change attention and coalition narratives.",
+          "measuredChangePercentagePoints": 9.999999999999998,
+          "referenceProbability": 0.595,
+          "stabilizedProbability": 0.695,
+          "windows": {
+            "anticipation": {
+              "level": 0.605,
+              "start": "2024-07-10T11:35:06.000Z",
+              "end": "2024-07-13T11:35:06.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.595,
+              "start": "2024-07-13T11:35:06.000Z",
+              "end": "2024-07-13T23:35:06.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.695,
+              "start": "2024-07-13T23:35:06.000Z",
+              "end": "2024-07-14T05:35:06.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.695,
+              "start": "2024-07-14T17:35:06.000Z",
+              "end": "2024-07-15T11:35:06.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.705,
+              "start": "2024-07-15T23:35:06.000Z",
+              "end": "2024-07-16T23:35:06.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "rfk-endorsement",
+          "title": "Robert F. Kennedy Jr. suspends his campaign and endorses Trump",
+          "dateLabel": "Aug 23",
+          "informationKnownAt": "2024-08-23T19:10:00Z",
+          "claims": [
+            "Kennedy says he is suspending his presidential campaign and supporting Donald Trump."
+          ],
+          "sources": [
+            {
+              "id": "cnn-rfk-broadcast",
+              "title": "CNN contemporary RFK Jr. coverage",
+              "publisher": "CNN",
+              "url": "https://transcripts.cnn.com/show/cnc/date/2024-08-23/segment/11",
+              "publishedAt": "2024-08-23T19:10:00Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-06T05:12:35.427398Z",
+              "snapshotHash": "c8e8bdf6a92f95738c6cf6b367e259c42f559853bd22d2bb587b66e33f526125",
+              "sourceIdentity": "historical-public-broadcast",
+              "snapshotKind": "retrospective-transcript",
+              "timestampMeaning": "Historical broadcast upper bound based on transcript markers, not HTML upload time. Transcript retained later and may contain corrections."
+            }
+          ],
+          "mechanism": "A rival campaign suspension and endorsement may change coalition narratives.",
+          "measuredChangePercentagePoints": -1.1749999999999927,
+          "referenceProbability": 0.5097499999999999,
+          "stabilizedProbability": 0.498,
+          "windows": {
+            "anticipation": {
+              "level": 0.518,
+              "start": "2024-08-20T07:10:00.000Z",
+              "end": "2024-08-23T07:10:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.5097499999999999,
+              "start": "2024-08-23T07:10:00.000Z",
+              "end": "2024-08-23T19:10:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.5017499999999999,
+              "start": "2024-08-23T19:10:00.000Z",
+              "end": "2024-08-24T01:10:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.498,
+              "start": "2024-08-24T13:10:00.000Z",
+              "end": "2024-08-25T07:10:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.4955,
+              "start": "2024-08-25T19:10:00.000Z",
+              "end": "2024-08-26T19:10:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "harris-debate",
+          "title": "Harris and Trump meet in their first presidential debate",
+          "dateLabel": "Sep 10",
+          "informationKnownAt": "2024-09-11T02:45:00Z",
+          "claims": [
+            "ABC hosts the first presidential debate between Harris and Trump on September 10."
+          ],
+          "sources": [
+            {
+              "id": "debate-live-event",
+              "title": "ABC Harris–Trump debate broadcast",
+              "publisher": "ABC News",
+              "url": "https://abcnews.com/Politics/watch-full-abc-news-presidential-debate/story?id=113470583",
+              "publishedAt": "2024-09-11T02:45:00Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-06T20:18:05Z",
+              "snapshotHash": "f61999a59e32ad6d3e0e588ae2144dc97a84e790fde652b892688dde705506f2",
+              "sourceIdentity": "historical-public-broadcast",
+              "snapshotKind": "retrospective-broadcast-record",
+              "snapshotSourceId": "abc-replay",
+              "timestampMeaning": "Approximate live broadcast end per Nielsen 9:00–10:45pm EDT interval, not publication of the replay page. Full replay is retrospective corroboration of a publicly observable event."
+            }
+          ],
+          "mechanism": "A nationally televised debate may change campaign narratives.",
+          "measuredChangePercentagePoints": -2.599999999999997,
+          "referenceProbability": 0.5195,
+          "stabilizedProbability": 0.4935,
+          "windows": {
+            "anticipation": {
+              "level": 0.51625,
+              "start": "2024-09-07T14:45:00.000Z",
+              "end": "2024-09-10T14:45:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.5195,
+              "start": "2024-09-10T14:45:00.000Z",
+              "end": "2024-09-11T02:45:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.49075,
+              "start": "2024-09-11T02:45:00.000Z",
+              "end": "2024-09-11T08:45:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.4935,
+              "start": "2024-09-11T20:45:00.000Z",
+              "end": "2024-09-12T14:45:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.4915,
+              "start": "2024-09-13T02:45:00.000Z",
+              "end": "2024-09-14T02:45:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "iowa-poll",
+          "title": "Final Iowa Poll puts Harris ahead of Trump, 47% to 44%",
+          "dateLabel": "Nov 2",
+          "informationKnownAt": "2024-11-02T23:05:01Z",
+          "claims": [
+            "The Des Moines Register/Mediacom Iowa poll shows Harris at 47% and Trump at 44%, within its 3.4-point margin of error."
+          ],
+          "sources": [
+            {
+              "id": "cnn-iowa-broadcast",
+              "title": "CNN contemporary Iowa poll coverage",
+              "publisher": "CNN",
+              "url": "https://transcripts.cnn.com/show/cnr/date/2024-11-02/segment/08",
+              "publishedAt": "2024-11-02T23:05:01Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-06T05:44:52.283926Z",
+              "snapshotHash": "1ad80d8fe3c5fcdf853458e504dab6556557c387356d50a4941319fdb0e11152",
+              "sourceIdentity": "historical-public-broadcast",
+              "snapshotKind": "retrospective-transcript",
+              "timestampMeaning": "Historical broadcast upper bound based on transcript markers, not HTML upload time. Transcript retained later and may contain corrections."
+            }
+          ],
+          "mechanism": "A late state poll may change campaign narratives.",
+          "measuredChangePercentagePoints": -3.4500000000000086,
+          "referenceProbability": 0.5895,
+          "stabilizedProbability": 0.5549999999999999,
+          "windows": {
+            "anticipation": {
+              "level": 0.627,
+              "start": "2024-10-30T11:05:01.000Z",
+              "end": "2024-11-02T11:05:01.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.5895,
+              "start": "2024-11-02T11:05:01.000Z",
+              "end": "2024-11-02T23:05:01.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.548,
+              "start": "2024-11-02T23:05:01.000Z",
+              "end": "2024-11-03T05:05:01.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.5549999999999999,
+              "start": "2024-11-03T17:05:01.000Z",
+              "end": "2024-11-04T11:05:01.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.61,
+              "start": "2024-11-04T23:05:01.000Z",
+              "end": "2024-11-05T23:05:01.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 23,
+                "tradedBuckets": 23,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 0.9583333333333334,
+                "maximumGapBuckets": 1,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 23,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        }
+      ],
+      "ending": {
+        "title": "Reveal-only resolution",
+        "text": "The AP documented its 2024 presidential race call for Trump on November 6, 2024. This conclusion is reveal-only and is excluded from pre-reveal claims and the five event cards.",
+        "sourceId": "ap-election-call"
+      },
+      "measurementNotes": [
+        "Audit tightens Butler, RFK and Iowa to complete-claim broadcast bounds. Conviction and debate unchanged. Price series and tie threshold unchanged.",
+        "Iowa sample size removed because the retained CNN segment does not state 808. Conviction claim describes the verdict rather than claiming a timestamped DA release. Debate historical live-event evidence is separate from retrospective replay publication.",
+        "Butler is anchored to confirmed contemporary coverage, later than actual shots; earlier rally footage and other campaign news can affect the reference window. Marginal ties must be treated as window-dependent.",
+        "Audit corrected raw versus normalized file-hash labels. Original provider responses and CSV bytes remain unchanged."
+      ]
+    },
+    {
+      "date": "2026-09-14",
+      "number": 8,
+      "topic": "Thunder’s first title",
+      "study": "docs/next-five-2026-09-10/sports-repair/study-draft-v3.json",
+      "csv": "docs/next-five-2026-09-10/sports/thunder-hourly.csv",
+      "initialOrder": [
+        "chet-return",
+        "cup-loss",
+        "west-finals",
+        "chet-injury",
+        "denver-game-seven"
+      ],
+      "verdict": "Audited sources and unrounded moves; 5 ranking groups under exact-move scoring. Only numerically equal calculated responses tie. See scoring-change/REVIEW.md for the updated ordering; previous one-point grouping is superseded.",
+      "releaseTime": "2026-09-14T05:00:00Z",
+      "timezone": "America/Chicago",
+      "status": "proposed-awaiting-owner-approval",
+      "studyId": "thunder-first-title-2025-v3",
+      "studyVersion": 3,
+      "studySha256": "881eb3560e65aaf90834dc2fc58a2914a4bd23c6385ccb55fc26d2322119c0e6",
+      "csvSha256": "558a508d02ddf5ef25a91a5a56d95b3e35220e2e82c6bc880626e604ae892664",
+      "observations": 6514,
+      "audit": {
+        "observations": 6514,
+        "duplicateTimestamps": [],
+        "missingBuckets": [
+          "2024-11-05T22:00:00.000Z",
+          "2025-06-13T07:00:00.000Z",
+          "2025-06-23T03:00:00.000Z"
+        ],
+        "outOfOrderRows": 0,
+        "coverageStart": "2024-09-24T19:00:00.000Z",
+        "coverageEnd": "2025-06-23T07:00:00.000Z"
+      },
+      "contract": {
+        "id": "83527644927648970835156950007024690327726158617181889316317174894904268227846",
+        "proposition": "Oklahoma City Thunder win the 2025 NBA Finals",
+        "nativeSide": "YES",
+        "selectedPerspective": "YES",
+        "resolution": "YES"
+      },
+      "market": {
+        "id": "507884",
+        "provider": "Polymarket",
+        "title": "Will the Oklahoma City Thunder win the 2025 NBA Finals?",
+        "rules": "YES if Oklahoma City wins the 2024–25 NBA Championship; otherwise NO. The contract can resolve NO when the outcome becomes impossible under NBA rules. Resolution source: NBA information.",
+        "openedAt": "2024-09-24T17:04:06.478Z",
+        "closedAt": "2025-06-23T07:32:33Z",
+        "status": "settled",
+        "resolutionSourceUrl": "https://www.nba.com/game/IND-vs-OKC-0042400407",
+        "marketUrl": "https://polymarket.com/event/nba-champion-2024-2025/will-the-oklahoma-city-thunder-win-the-2025-nba-finals",
+        "volume": 17203993.307106
+      },
+      "scoring": {
+        "version": "pairwise-exact-v3",
+        "tieThreshold": 0,
+        "tieGrouping": "anchor-window",
+        "boundaryTolerance": 8.881784197001252e-16
+      },
+      "tieGroups": [
+        [
+          "denver-game-seven"
+        ],
+        [
+          "west-finals"
+        ],
+        [
+          "cup-loss"
+        ],
+        [
+          "chet-return"
+        ],
+        [
+          "chet-injury"
+        ]
+      ],
+      "cards": [
+        {
+          "id": "chet-injury",
+          "title": "Chet Holmgren suffers a pelvic fracture",
+          "dateLabel": "Nov 11",
+          "informationKnownAt": "2024-11-11T06:26:15Z",
+          "claims": [
+            "The Thunder announced Holmgren’s right iliac wing fracture, with an update on his return-to-play protocol to follow in eight to ten weeks."
+          ],
+          "sources": [
+            {
+              "id": "fracture-official",
+              "title": "Chet Holmgren Injury Update",
+              "publisher": "Oklahoma City Thunder",
+              "url": "https://www.nba.com/thunder/news/holmgren-241111",
+              "publishedAt": "2024-11-11T06:26:15Z",
+              "updatedAt": "2024-11-11T06:26:15Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-10T16:48:40.949872+00:00",
+              "snapshotHash": "d70d087e781f8151037927d185da034537eb830f1fbb59db0ba637466989d7f2"
+            }
+          ],
+          "mechanism": "A core two-way starter’s injury changes the Thunder’s playoff ceiling and frontcourt depth, even with a return expected during the season.",
+          "measuredChangePercentagePoints": -0.5000000000000004,
+          "referenceProbability": 0.16,
+          "stabilizedProbability": 0.155,
+          "windows": {
+            "anticipation": {
+              "level": 0.16,
+              "start": "2024-11-07T18:26:15.000Z",
+              "end": "2024-11-10T18:26:15.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.16,
+              "start": "2024-11-10T18:26:15.000Z",
+              "end": "2024-11-11T06:26:15.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.16,
+              "start": "2024-11-11T06:26:15.000Z",
+              "end": "2024-11-11T12:26:15.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.155,
+              "start": "2024-11-12T00:26:15.000Z",
+              "end": "2024-11-12T18:26:15.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.15,
+              "start": "2024-11-13T06:26:15.000Z",
+              "end": "2024-11-14T06:26:15.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "cup-loss",
+          "title": "Thunder lose the NBA Cup final to Milwaukee",
+          "dateLabel": "2024-12-17",
+          "informationKnownAt": "2024-12-18T04:02:00Z",
+          "claims": [
+            "The Bucks win 97–81."
+          ],
+          "sources": [
+            {
+              "id": "cup-loss-live-result",
+              "title": "NBA live game result: cup-loss",
+              "publisher": "NBA (public live game)",
+              "url": "https://www.nba.com/game/0062400001",
+              "publishedAt": "2024-12-18T04:02:00Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-10T16:48:40.949872+00:00",
+              "snapshotHash": "b14142fb0c3a5d257162359fe8a998d2d5edccfa4bc0fe1bb1bfd5768ade81b4",
+              "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/sports-repair/games/cup-book.pdf",
+              "sourceIdentity": "public-live-event",
+              "snapshotKind": "retrospective-evidence",
+              "snapshotSourceId": "cup-loss-scorebook",
+              "captureMeaning": "Retrospective official record of the live event, not an archived webpage or a recording of the broadcast.",
+              "timestampMeaning": "Historical public game result, not publication time of this mutable page or the subsequently retrieved PDF. Reconstructed from official scorer record and arena timezone."
+            }
+          ],
+          "mechanism": "A high-profile loss to an experienced contender tests whether the young team is ready for postseason pressure. The Cup is separate from the NBA championship and does not resolve this contract.",
+          "measuredChangePercentagePoints": 0.9999999999999981,
+          "referenceProbability": 0.165,
+          "stabilizedProbability": 0.175,
+          "windows": {
+            "anticipation": {
+              "level": 0.165,
+              "start": "2024-12-14T16:02:00.000Z",
+              "end": "2024-12-17T16:02:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.165,
+              "start": "2024-12-17T16:02:00.000Z",
+              "end": "2024-12-18T04:02:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.18,
+              "start": "2024-12-18T04:02:00.000Z",
+              "end": "2024-12-18T10:02:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.175,
+              "start": "2024-12-18T22:02:00.000Z",
+              "end": "2024-12-19T16:02:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.175,
+              "start": "2024-12-20T04:02:00.000Z",
+              "end": "2024-12-21T04:02:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "chet-return",
+          "title": "Chet Holmgren announces his return",
+          "dateLabel": "Feb 6",
+          "informationKnownAt": "2025-02-06T14:42:10.195000Z",
+          "claims": [
+            "Holmgren publicly announces that he is returning."
+          ],
+          "sources": [
+            {
+              "id": "return-player-announcement",
+              "title": "Chet Holmgren announces his return",
+              "publisher": "Chet Holmgren",
+              "url": "https://twitter.com/ChetHolmgren/status/1887512110986633513",
+              "publishedAt": "2025-02-06T14:42:10.195000Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-10T16:48:40.949872+00:00",
+              "snapshotHash": "2418d7cd8b58e976921a9f25564fa98a236a32816d5c5a03d95f3f617c4c6ad0",
+              "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/sports/evidence/chet-return.html",
+              "captureMeaning": "Article HTML embeds the original player post text and ID. Later article game recap is excluded from the pre-reveal claim."
+            }
+          ],
+          "mechanism": "Restoring a key two-way starter improves depth and lineup options. An announced return may already be anticipated.",
+          "measuredChangePercentagePoints": 0,
+          "referenceProbability": 0.255,
+          "stabilizedProbability": 0.255,
+          "windows": {
+            "anticipation": {
+              "level": 0.26,
+              "start": "2025-02-03T02:42:10.195Z",
+              "end": "2025-02-06T02:42:10.195Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.255,
+              "start": "2025-02-06T02:42:10.195Z",
+              "end": "2025-02-06T14:42:10.195Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.255,
+              "start": "2025-02-06T14:42:10.195Z",
+              "end": "2025-02-06T20:42:10.195Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.255,
+              "start": "2025-02-07T08:42:10.195Z",
+              "end": "2025-02-08T02:42:10.195Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.26,
+              "start": "2025-02-08T14:42:10.195Z",
+              "end": "2025-02-09T14:42:10.195Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "denver-game-seven",
+          "title": "Thunder eliminate Denver in Game 7",
+          "dateLabel": "2025-05-18",
+          "informationKnownAt": "2025-05-18T22:02:00Z",
+          "claims": [
+            "Oklahoma City reaches the Western Conference finals."
+          ],
+          "sources": [
+            {
+              "id": "denver-game-seven-live-result",
+              "title": "NBA live game result: denver-game-seven",
+              "publisher": "NBA (public live game)",
+              "url": "https://www.nba.com/game/0042400227",
+              "publishedAt": "2025-05-18T22:02:00Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-10T16:48:40.949872+00:00",
+              "snapshotHash": "9e14132473c953430ed64216c1e4d2b41e66e0695c8b2f84065ce442301640a4",
+              "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/sports-repair/games/denver-book.pdf",
+              "sourceIdentity": "public-live-event",
+              "snapshotKind": "retrospective-evidence",
+              "snapshotSourceId": "denver-game-seven-scorebook",
+              "captureMeaning": "Retrospective official record of the live event, not an archived webpage or a recording of the broadcast.",
+              "timestampMeaning": "Historical public game result, not publication time of this mutable page or the subsequently retrieved PDF. Reconstructed from official scorer record and arena timezone."
+            }
+          ],
+          "mechanism": "Surviving an elimination game against a recent champion removes a major title obstacle. Other playoff results share the window.",
+          "measuredChangePercentagePoints": 19,
+          "referenceProbability": 0.425,
+          "stabilizedProbability": 0.615,
+          "windows": {
+            "anticipation": {
+              "level": 0.425,
+              "start": "2025-05-15T10:02:00.000Z",
+              "end": "2025-05-18T10:02:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.425,
+              "start": "2025-05-18T10:02:00.000Z",
+              "end": "2025-05-18T22:02:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.61,
+              "start": "2025-05-18T22:02:00.000Z",
+              "end": "2025-05-19T04:02:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.615,
+              "start": "2025-05-19T16:02:00.000Z",
+              "end": "2025-05-20T10:02:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.67,
+              "start": "2025-05-20T22:02:00.000Z",
+              "end": "2025-05-21T22:02:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "west-finals",
+          "title": "Thunder reach the NBA Finals",
+          "dateLabel": "May 28",
+          "informationKnownAt": "2025-05-29T02:58:00Z",
+          "claims": [
+            "Oklahoma City beat Minnesota 124–94 to win the Western Conference finals 4–1 and advance to the NBA Finals."
+          ],
+          "sources": [
+            {
+              "id": "west-finals-live-result",
+              "title": "NBA live game result: west-finals",
+              "publisher": "NBA (public live game)",
+              "url": "https://www.nba.com/game/0042400315",
+              "publishedAt": "2025-05-29T02:58:00Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-10T16:48:40.949872+00:00",
+              "snapshotHash": "49df067d7d4b1a3ac1d90960a39f4fa7516d41b7cf7886dee31eff21bbe43235",
+              "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/sports-repair/games/finals-berth-book.pdf",
+              "sourceIdentity": "public-live-event",
+              "snapshotKind": "retrospective-evidence",
+              "snapshotSourceId": "west-finals-scorebook",
+              "captureMeaning": "Retrospective official record of the live event, not an archived webpage or a recording of the broadcast.",
+              "timestampMeaning": "Historical public game result, not publication time of this mutable page or the subsequently retrieved PDF. Reconstructed from official scorer record and arena timezone."
+            }
+          ],
+          "mechanism": "Only one best-of-seven series remains, sharply reducing uncertainty in the championship contract.",
+          "measuredChangePercentagePoints": 4.999999999999993,
+          "referenceProbability": 0.775,
+          "stabilizedProbability": 0.825,
+          "windows": {
+            "anticipation": {
+              "level": 0.7175,
+              "start": "2025-05-25T14:58:00.000Z",
+              "end": "2025-05-28T14:58:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.775,
+              "start": "2025-05-28T14:58:00.000Z",
+              "end": "2025-05-29T02:58:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.81,
+              "start": "2025-05-29T02:58:00.000Z",
+              "end": "2025-05-29T08:58:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.825,
+              "start": "2025-05-29T20:58:00.000Z",
+              "end": "2025-05-30T14:58:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.835,
+              "start": "2025-05-31T02:58:00.000Z",
+              "end": "2025-06-01T02:58:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        }
+      ],
+      "ending": {
+        "title": "2025 NBA Finals: Thunder win first title",
+        "text": "Oklahoma City defeated Indiana 4–3 in the 2025 NBA Finals, winning Game 7 103–91 on June 22, 2025. The Polymarket Thunder YES contract resolved YES.",
+        "sourceId": "thunder-ending"
+      },
+      "measurementNotes": [
+        "Preserve MONTHS_PROFILE and one-point v2 tie rule. Compare median [-12,0) vs [18,36) hours relative to public result/announcement cutoff. Game reference includes live play, so explicitly compare with a separately reported pre-tip baseline diagnostic.",
+        "Game timestamps describe publicly observable results, not website/PDF upload times. The official scorer PDFs have unknown publication times and are retrospective corroboration only.",
+        "Fracture uses the original team diagnosis release, not the earlier fall report. Return uses the player’s announcement, not a later recap of his first game back.",
+        "Historical price changes are descriptive; no isolated causality is claimed. In-game repricing and other league news can enter event windows.",
+        "The NBA Cup is separate from the June NBA championship contract. Its result does not settle the selected contract.",
+        "All raw observations, gaps, and rejected rows are preserved. No rounding or tie-threshold change was made to improve the puzzle."
+      ]
+    },
+    {
+      "date": "2026-09-15",
+      "number": 9,
+      "topic": "The Fed’s half-point decision",
+      "study": "docs/next-five-2026-09-10/audit-other/fed/study-draft-v2.json",
+      "csv": "public/data/fed-2024/polymarket-hourly.csv",
+      "initialOrder": [
+        "july-jobs",
+        "july-cpi",
+        "powell-jackson-hole",
+        "august-jobs",
+        "august-cpi"
+      ],
+      "verdict": "Audited sources and unrounded moves; 5 ranking groups under exact-move scoring. Only numerically equal calculated responses tie. See scoring-change/REVIEW.md for the updated ordering; previous one-point grouping is superseded.",
+      "releaseTime": "2026-09-15T05:00:00Z",
+      "timezone": "America/Chicago",
+      "status": "proposed-awaiting-owner-approval",
+      "studyId": "fed-september-2024-v2",
+      "studyVersion": 2,
+      "studySha256": "813a7e79363f50d4b72860c964dfd22940a1a95e3a1d2d5ed1c6f40630efc475",
+      "csvSha256": "070e10e264ba2f78b4dff984b6fb22d6f2a45305375a71de24c458dfc0dd0d26",
+      "observations": 1323,
+      "audit": {
+        "observations": 1323,
+        "duplicateTimestamps": [],
+        "missingBuckets": [],
+        "outOfOrderRows": 0,
+        "coverageStart": "2024-07-25T19:00:00.000Z",
+        "coverageEnd": "2024-09-18T21:00:00.000Z"
+      },
+      "contract": {
+        "id": "106191328358576540351439267765925450329859429577455659884974413809922495874408",
+        "proposition": "The Fed decreases rates by at least 50 basis points after its September 2024 meeting",
+        "nativeSide": "YES",
+        "selectedPerspective": "YES",
+        "resolution": "YES"
+      },
+      "market": {
+        "id": "504069",
+        "provider": "Polymarket",
+        "title": "Fed decreases interest rates by 50+ bps after September 2024 meeting?",
+        "rules": "YES if the upper bound of the federal-funds target range falls by at least 50 basis points after the September 2024 meeting.",
+        "openedAt": "2024-07-25T14:47:42.952096Z",
+        "providerStartDate": "2024-08-02T20:43:54.565Z",
+        "closedAt": "2024-09-18T21:09:08Z",
+        "status": "settled",
+        "resolutionSourceUrl": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240918a.htm",
+        "marketUrl": "https://polymarket.com/event/fed-interest-rates-september-2024/fed-decreases-interest-rates-by-50-bps-after-september-2024-meeting"
+      },
+      "scoring": {
+        "version": "pairwise-exact-v3",
+        "tieThreshold": 0,
+        "tieGrouping": "anchor-window",
+        "boundaryTolerance": 8.881784197001252e-16
+      },
+      "tieGroups": [
+        [
+          "july-jobs"
+        ],
+        [
+          "powell-jackson-hole"
+        ],
+        [
+          "august-jobs"
+        ],
+        [
+          "august-cpi"
+        ],
+        [
+          "july-cpi"
+        ]
+      ],
+      "cards": [
+        {
+          "id": "july-jobs",
+          "title": "July jobs report shows a sharp hiring slowdown",
+          "dateLabel": "Aug 2",
+          "informationKnownAt": "2024-08-02T12:30:00Z",
+          "claims": [
+            "Payroll employment rose by 114,000 in July and unemployment increased to 4.3%."
+          ],
+          "sources": [
+            {
+              "id": "bls-jobs-aug",
+              "title": "The Employment Situation — July 2024",
+              "publisher": "U.S. Bureau of Labor Statistics",
+              "url": "https://www.bls.gov/news.release/archives/empsit_08022024.htm",
+              "publishedAt": "2024-08-02T12:30:00Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-04T03:44:31.385Z",
+              "archivedUrl": "https://www.bls.gov/news.release/archives/empsit_08022024.htm",
+              "correctionStatus": "none"
+            }
+          ],
+          "mechanism": "A weaker labor market increases the case for front-loading rate cuts, including a half-point move.",
+          "measuredChangePercentagePoints": 27.750000000000004,
+          "referenceProbability": 0.185,
+          "stabilizedProbability": 0.4625,
+          "windows": {
+            "anticipation": {
+              "level": 0.11,
+              "start": "2024-07-30T00:30:00.000Z",
+              "end": "2024-08-02T00:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.185,
+              "start": "2024-08-02T00:30:00.000Z",
+              "end": "2024-08-02T12:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.5375,
+              "start": "2024-08-02T12:30:00.000Z",
+              "end": "2024-08-02T18:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.4625,
+              "start": "2024-08-03T06:30:00.000Z",
+              "end": "2024-08-04T00:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.5275000000000001,
+              "start": "2024-08-04T12:30:00.000Z",
+              "end": "2024-08-05T12:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "july-cpi",
+          "title": "July CPI confirms further disinflation",
+          "dateLabel": "Aug 14",
+          "informationKnownAt": "2024-08-14T12:30:00Z",
+          "claims": [
+            "Headline CPI rose 0.2% in July and 2.9% over twelve months; core CPI rose 0.2%."
+          ],
+          "sources": [
+            {
+              "id": "bls-cpi-aug",
+              "title": "Consumer Price Index — July 2024",
+              "publisher": "U.S. Bureau of Labor Statistics",
+              "url": "https://www.bls.gov/news.release/archives/cpi_08142024.htm",
+              "publishedAt": "2024-08-14T12:30:00Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-04T03:44:31.385Z",
+              "archivedUrl": "https://www.bls.gov/news.release/archives/cpi_08142024.htm",
+              "correctionStatus": "none"
+            }
+          ],
+          "mechanism": "Continued disinflation gives the FOMC more room to respond forcefully to labor-market weakness.",
+          "measuredChangePercentagePoints": -19,
+          "referenceProbability": 0.325,
+          "stabilizedProbability": 0.135,
+          "windows": {
+            "anticipation": {
+              "level": 0.315,
+              "start": "2024-08-11T00:30:00.000Z",
+              "end": "2024-08-14T00:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.325,
+              "start": "2024-08-14T00:30:00.000Z",
+              "end": "2024-08-14T12:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.245,
+              "start": "2024-08-14T12:30:00.000Z",
+              "end": "2024-08-14T18:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.135,
+              "start": "2024-08-15T06:30:00.000Z",
+              "end": "2024-08-16T00:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.145,
+              "start": "2024-08-16T12:30:00.000Z",
+              "end": "2024-08-17T12:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "powell-jackson-hole",
+          "title": "Powell says the time has come to adjust policy",
+          "dateLabel": "Aug 23",
+          "informationKnownAt": "2024-08-23T14:00:00Z",
+          "claims": [
+            "Powell said the time had come for policy to adjust and emphasized downside employment risks."
+          ],
+          "sources": [
+            {
+              "id": "fed-jackson-hole",
+              "title": "Review and Outlook",
+              "publisher": "Federal Reserve Board",
+              "url": "https://www.federalreserve.gov/newsevents/speech/powell20240823a.htm",
+              "publishedAt": "2024-08-23T14:00:00Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-04T03:44:31.385Z",
+              "archivedUrl": "https://www.federalreserve.gov/newsevents/speech/powell20240823a.htm",
+              "correctionStatus": "none",
+              "timestampMeaning": "Release-on-delivery time of 10:00 a.m. EDT in the official speech PDF, not the HTML footer Last Update date.",
+              "timingEvidenceUrl": "https://www.federalreserve.gov/newsevents/speech/files/powell20240823a.pdf"
+            }
+          ],
+          "mechanism": "An explicit pivot confirms a September cut and leaves the opening move’s size responsive to incoming labor data.",
+          "measuredChangePercentagePoints": 4.000000000000001,
+          "referenceProbability": 0.175,
+          "stabilizedProbability": 0.215,
+          "windows": {
+            "anticipation": {
+              "level": 0.18,
+              "start": "2024-08-20T02:00:00.000Z",
+              "end": "2024-08-23T02:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.175,
+              "start": "2024-08-23T02:00:00.000Z",
+              "end": "2024-08-23T14:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.215,
+              "start": "2024-08-23T14:00:00.000Z",
+              "end": "2024-08-23T20:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.215,
+              "start": "2024-08-24T08:00:00.000Z",
+              "end": "2024-08-25T02:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.215,
+              "start": "2024-08-25T14:00:00.000Z",
+              "end": "2024-08-26T14:00:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "august-jobs",
+          "title": "August adds 142,000 jobs; earlier months revised lower",
+          "dateLabel": "Sep 6",
+          "informationKnownAt": "2024-09-06T12:30:00Z",
+          "claims": [
+            "Payrolls rose by 142,000 in August, prior months were revised lower, and unemployment was 4.2%, little changed."
+          ],
+          "sources": [
+            {
+              "id": "bls-jobs-sep",
+              "title": "The Employment Situation — August 2024",
+              "publisher": "U.S. Bureau of Labor Statistics",
+              "url": "https://www.bls.gov/news.release/archives/empsit_09062024.htm",
+              "publishedAt": "2024-09-06T12:30:00Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-04T03:44:31.385Z",
+              "archivedUrl": "https://www.bls.gov/news.release/archives/empsit_09062024.htm",
+              "correctionStatus": "none"
+            }
+          ],
+          "mechanism": "Weak revisions support a larger cut, while the unemployment decline reduces the urgency for an emergency-sized move.",
+          "measuredChangePercentagePoints": -6.5,
+          "referenceProbability": 0.33,
+          "stabilizedProbability": 0.265,
+          "windows": {
+            "anticipation": {
+              "level": 0.275,
+              "start": "2024-09-03T00:30:00.000Z",
+              "end": "2024-09-06T00:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.33,
+              "start": "2024-09-06T00:30:00.000Z",
+              "end": "2024-09-06T12:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.245,
+              "start": "2024-09-06T12:30:00.000Z",
+              "end": "2024-09-06T18:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.265,
+              "start": "2024-09-07T06:30:00.000Z",
+              "end": "2024-09-08T00:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.255,
+              "start": "2024-09-08T12:30:00.000Z",
+              "end": "2024-09-09T12:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "august-cpi",
+          "title": "August core inflation rises 0.3%",
+          "dateLabel": "Sep 11",
+          "informationKnownAt": "2024-09-11T12:30:00Z",
+          "claims": [
+            "Headline CPI rose 0.2% in August while core CPI rose 0.3%."
+          ],
+          "sources": [
+            {
+              "id": "bls-cpi-sep",
+              "title": "Consumer Price Index — August 2024",
+              "publisher": "U.S. Bureau of Labor Statistics",
+              "url": "https://www.bls.gov/news.release/archives/cpi_09112024.htm",
+              "publishedAt": "2024-09-11T12:30:00Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-04T03:44:31.385Z",
+              "archivedUrl": "https://www.bls.gov/news.release/archives/cpi_09112024.htm",
+              "correctionStatus": "none"
+            }
+          ],
+          "mechanism": "A firmer core reading weakens the case for a half-point cut at the immediately following meeting.",
+          "measuredChangePercentagePoints": -16.249999999999996,
+          "referenceProbability": 0.2425,
+          "stabilizedProbability": 0.08,
+          "windows": {
+            "anticipation": {
+              "level": 0.245,
+              "start": "2024-09-08T00:30:00.000Z",
+              "end": "2024-09-11T00:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.2425,
+              "start": "2024-09-11T00:30:00.000Z",
+              "end": "2024-09-11T12:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.08,
+              "start": "2024-09-11T12:30:00.000Z",
+              "end": "2024-09-11T18:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.08,
+              "start": "2024-09-12T06:30:00.000Z",
+              "end": "2024-09-13T00:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.335,
+              "start": "2024-09-13T12:30:00.000Z",
+              "end": "2024-09-14T12:30:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        }
+      ],
+      "ending": {
+        "title": "The FOMC cuts by 50 basis points",
+        "text": "The September 18, 2024 FOMC statement records a 50-basis-point reduction; the exact contract resolved YES. This is reveal-only and is not a scored card.",
+        "sourceId": "fed-decision"
+      },
+      "measurementNotes": [
+        "The provider metadata createdAt is July 25 at 14:47:42.952096Z; openedAt uses that creation bound, not a separately verified first-trade timestamp. Provider startDate is August 2, a different field.",
+        "On September 10, the lead fetched the original July 25–August 4 public prices-history request with the exact YES token. All 239 observations match the retained first response exactly, including the pre-August-2 baseline. See review/fed-early-history-check.json.",
+        "Provider closedTime is not represented as a separately verified settlement transaction time. Full market lifetime is not asserted.",
+        "Independent timing audit: all five scheduled issuer release times confirmed. The official Powell PDF supplies the 10:00 a.m. EDT embargo. No scored timestamp or raw price changed. Changes describe contract prices, not isolated causality; core CPI means all items less food and energy."
+      ]
+    },
+    {
+      "date": "2026-09-16",
+      "number": 10,
+      "topic": "Mamdani’s New York upset",
+      "study": "docs/next-five-2026-09-10/audit-other/nyc/study-draft-v2.json",
+      "csv": "docs/launch-queue-research/datasets/nyc-hourly.csv",
+      "initialOrder": [
+        "cuomo-independent",
+        "aoc-endorsement",
+        "hochul-endorsement",
+        "primary-breakthrough",
+        "adams-exit"
+      ],
+      "verdict": "Audited sources and unrounded moves; 5 ranking groups under exact-move scoring. Only numerically equal calculated responses tie. See scoring-change/REVIEW.md for the updated ordering; previous one-point grouping is superseded.",
+      "releaseTime": "2026-09-16T05:00:00Z",
+      "timezone": "America/Chicago",
+      "status": "proposed-awaiting-owner-approval",
+      "studyId": "nyc-mamdani-2025-v2",
+      "studyVersion": 2,
+      "studySha256": "f8a81323b69c109dc0ee35e660081e26059f7f2e20d332b76f3cdb05519915b7",
+      "csvSha256": "a2bf3f12c21289f5718135859fe0018819a595a958503a2b096a7bd474560b13",
+      "observations": 4711,
+      "audit": {
+        "observations": 4711,
+        "duplicateTimestamps": [],
+        "missingBuckets": [
+          "2025-06-13T07:00:00.000Z",
+          "2025-09-17T18:00:00.000Z",
+          "2025-10-29T10:00:00.000Z",
+          "2025-10-29T11:00:00.000Z",
+          "2025-10-29T12:00:00.000Z",
+          "2025-10-29T13:00:00.000Z"
+        ],
+        "outOfOrderRows": 0,
+        "coverageStart": "2025-04-22T17:00:00Z",
+        "coverageEnd": "2025-11-05T05:00:00Z"
+      },
+      "contract": {
+        "id": "33945469250963963541781051637999677727672635213493648594066577298999471399137",
+        "proposition": "Zohran Mamdani wins the 2025 NYC mayoral election",
+        "nativeSide": "YES",
+        "selectedPerspective": "YES",
+        "resolution": "YES"
+      },
+      "market": {
+        "id": "538932",
+        "provider": "Polymarket",
+        "title": "Will Zohran Mamdani win the 2025 NYC mayoral election?",
+        "rules": "YES if Mamdani wins the November 4, 2025 NYC general election; AP, Fox News and NBC agreement or official certification determines resolution.",
+        "openedAt": "2025-04-22T16:10:05.987Z",
+        "closedAt": "2025-11-05T05:44:47Z",
+        "status": "settled",
+        "resolutionSourceUrl": "https://vote.nyc/page/election-results-summary-2025",
+        "marketUrl": "https://polymarket.com/event/new-york-city-mayoral-election/will-zohran-mamdani-win-the-2025-nyc-mayoral-election"
+      },
+      "scoring": {
+        "version": "pairwise-exact-v3",
+        "tieThreshold": 0,
+        "tieGrouping": "anchor-window",
+        "boundaryTolerance": 8.881784197001252e-16
+      },
+      "tieGroups": [
+        [
+          "primary-breakthrough"
+        ],
+        [
+          "hochul-endorsement"
+        ],
+        [
+          "aoc-endorsement"
+        ],
+        [
+          "cuomo-independent"
+        ],
+        [
+          "adams-exit"
+        ]
+      ],
+      "cards": [
+        {
+          "id": "aoc-endorsement",
+          "title": "Alexandria Ocasio-Cortez endorses Zohran Mamdani",
+          "dateLabel": "Jun 5",
+          "informationKnownAt": "2025-06-05T11:05:00Z",
+          "claims": [
+            "Alexandria Ocasio-Cortez endorses Zohran Mamdani for New York City mayor."
+          ],
+          "sources": [
+            {
+              "id": "aoc-confirmation",
+              "title": "NY1: campaigns confirm AOC endorsement",
+              "publisher": "Spectrum NY1",
+              "url": "https://ny1.com/nyc/All-Boroughs/politics/2025/06/05/mamdani-picks-up-endorsement-from-alexandria-ocasio-cortez-",
+              "publishedAt": "2025-06-05T11:05:00Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-10T16:56:34.052383+00:00",
+              "snapshotHash": "85e000dd566dd50be9be8635b148bba3f04eb5ec7b57266f42ecbc2281c7c715",
+              "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/nyc/aoc-ny1.html",
+              "snapshotKind": "original-report",
+              "captureMeaning": "Original reporting publication, confirmed directly with both campaigns. Earliest retained supported bound; original NYT interview inaccessible, so exact first-public minute remains uncertain."
+            }
+          ],
+          "mechanism": "A nationally recognizable endorsement can signal outsider momentum and coalition support.",
+          "measuredChangePercentagePoints": 0.1999999999999974,
+          "referenceProbability": 0.14,
+          "stabilizedProbability": 0.142,
+          "windows": {
+            "anticipation": {
+              "level": 0.12075,
+              "start": "2025-06-01T23:05:00.000Z",
+              "end": "2025-06-04T23:05:00.000Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.14,
+              "start": "2025-06-04T23:05:00.000Z",
+              "end": "2025-06-05T11:05:00.000Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.13375,
+              "start": "2025-06-05T11:05:00.000Z",
+              "end": "2025-06-05T17:05:00.000Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.142,
+              "start": "2025-06-06T05:05:00.000Z",
+              "end": "2025-06-06T23:05:00.000Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.1755,
+              "start": "2025-06-07T11:05:00.000Z",
+              "end": "2025-06-08T11:05:00.000Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "primary-breakthrough",
+          "title": "Cuomo concedes the Democratic primary to Mamdani",
+          "dateLabel": "Jun 24",
+          "informationKnownAt": "2025-06-25T02:26:09.916000Z",
+          "claims": [
+            "Contemporary primary-night coverage reports Andrew Cuomo conceding the Democratic primary to Zohran Mamdani."
+          ],
+          "sources": [
+            {
+              "id": "primary-reporter-post",
+              "title": "Reporter at Cuomo concession",
+              "publisher": "Annie McDonough / City & State",
+              "url": "https://twitter.com/Annie_McDonough/status/1937698802670146006",
+              "publishedAt": "2025-06-25T02:26:09.916000Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-10T16:56:34.052383+00:00",
+              "snapshotHash": "8a0423881e85db8a015a5873d5fa37202ac833c6e1ad4bcc2c198efe2c68251e",
+              "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/nyc/primary-citystate.html",
+              "snapshotKind": "embedded-original-post",
+              "captureMeaning": "Original eyewitness post ID and text embedded in live blog. Snowflake supplies post time; live blog labels concession 10:25pm. This is reporting of the concession, not certified primary results."
+            }
+          ],
+          "mechanism": "A primary-night breakthrough strengthens Mamdani’s position for November; Cuomo could still run independently.",
+          "measuredChangePercentagePoints": 33.80000000000001,
+          "referenceProbability": 0.40349999999999997,
+          "stabilizedProbability": 0.7415,
+          "windows": {
+            "anticipation": {
+              "level": 0.1935,
+              "start": "2025-06-21T14:26:09.916Z",
+              "end": "2025-06-24T14:26:09.916Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.40349999999999997,
+              "start": "2025-06-24T14:26:09.916Z",
+              "end": "2025-06-25T02:26:09.916Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.7435,
+              "start": "2025-06-25T02:26:09.916Z",
+              "end": "2025-06-25T08:26:09.916Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.7415,
+              "start": "2025-06-25T20:26:09.916Z",
+              "end": "2025-06-26T14:26:09.916Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.7415,
+              "start": "2025-06-27T02:26:09.916Z",
+              "end": "2025-06-28T02:26:09.916Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "cuomo-independent",
+          "title": "Cuomo announces he will continue as an independent",
+          "dateLabel": "Jul 14",
+          "informationKnownAt": "2025-07-14T18:41:18.099000Z",
+          "claims": [
+            "Andrew Cuomo announces that he will continue running for mayor as an independent."
+          ],
+          "sources": [
+            {
+              "id": "cuomo-announcement",
+              "title": "Cuomo independent campaign video",
+              "publisher": "Andrew Cuomo",
+              "url": "https://twitter.com/andrewcuomo/status/1944829573222338765",
+              "publishedAt": "2025-07-14T18:41:18.099000Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-10T16:56:34.052383+00:00",
+              "snapshotHash": "9145f6f540b7d79181de43fde006d1a679ee04fdd90e7f1bbb4e4a1f59254699",
+              "capturePath": "docs/launch-queue-research/evidence/nyc-cuomo.html",
+              "snapshotKind": "embedded-original-post",
+              "captureMeaning": "Original candidate video post ID embedded in NY1 report. Post caption and reporting establish independent continuation. Snowflake time is original post creation, not article update."
+            }
+          ],
+          "mechanism": "A defeated rival returning to the general election preserves a credible anti-Mamdani lane.",
+          "measuredChangePercentagePoints": -0.8500000000000063,
+          "referenceProbability": 0.72975,
+          "stabilizedProbability": 0.72125,
+          "windows": {
+            "anticipation": {
+              "level": 0.73275,
+              "start": "2025-07-11T06:41:18.099Z",
+              "end": "2025-07-14T06:41:18.099Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.72975,
+              "start": "2025-07-14T06:41:18.099Z",
+              "end": "2025-07-14T18:41:18.099Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.7330000000000001,
+              "start": "2025-07-14T18:41:18.099Z",
+              "end": "2025-07-15T00:41:18.099Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.72125,
+              "start": "2025-07-15T12:41:18.099Z",
+              "end": "2025-07-16T06:41:18.099Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.71075,
+              "start": "2025-07-16T18:41:18.099Z",
+              "end": "2025-07-17T18:41:18.099Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "hochul-endorsement",
+          "title": "Governor Kathy Hochul endorses Mamdani",
+          "dateLabel": "Sep 14",
+          "informationKnownAt": "2025-09-14T23:28:21.601000Z",
+          "claims": [
+            "Governor Kathy Hochul endorses Zohran Mamdani for New York City mayor."
+          ],
+          "sources": [
+            {
+              "id": "hochul-announcement",
+              "title": "Hochul endorses Mamdani",
+              "publisher": "Kathy Hochul",
+              "url": "https://twitter.com/KathyHochul/status/1967369861493072135",
+              "publishedAt": "2025-09-14T23:28:21.601000Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-10T16:56:34.052383+00:00",
+              "snapshotHash": "d08b3d2e38a39cf560fb1324ad60416e86f50b33cf87d7395a78506bb2e11f4b",
+              "capturePath": "docs/launch-queue-research/evidence/nyc-hochul.html",
+              "snapshotKind": "embedded-original-post",
+              "captureMeaning": "Original governor post embedded in NY1 report links her endorsement op-ed. Original op-ed timestamp inaccessible; this is a supported public-by bound, not guaranteed first public instant."
+            }
+          ],
+          "mechanism": "A major party establishment endorsement can broaden coalition support for the insurgent nominee.",
+          "measuredChangePercentagePoints": 1.1749999999999927,
+          "referenceProbability": 0.81025,
+          "stabilizedProbability": 0.822,
+          "windows": {
+            "anticipation": {
+              "level": 0.809,
+              "start": "2025-09-11T11:28:21.601Z",
+              "end": "2025-09-14T11:28:21.601Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.81025,
+              "start": "2025-09-14T11:28:21.601Z",
+              "end": "2025-09-14T23:28:21.601Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.81475,
+              "start": "2025-09-14T23:28:21.601Z",
+              "end": "2025-09-15T05:28:21.601Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.822,
+              "start": "2025-09-15T17:28:21.601Z",
+              "end": "2025-09-16T11:28:21.601Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.835,
+              "start": "2025-09-16T23:28:21.601Z",
+              "end": "2025-09-17T23:28:21.601Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 23,
+                "tradedBuckets": 23,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 0.9583333333333334,
+                "maximumGapBuckets": 1,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 23,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "adams-exit",
+          "title": "Mayor Eric Adams ends his reelection campaign",
+          "dateLabel": "Sep 28",
+          "informationKnownAt": "2025-09-28T17:11:44.355000Z",
+          "claims": [
+            "Mayor Eric Adams ends his reelection campaign."
+          ],
+          "sources": [
+            {
+              "id": "adams-announcement",
+              "title": "Adams withdrawal announcement",
+              "publisher": "Eric Adams",
+              "url": "https://twitter.com/ericadamsfornyc/status/1972348511892262962",
+              "publishedAt": "2025-09-28T17:11:44.355000Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-10T16:56:34.052383+00:00",
+              "snapshotHash": "d45098d3aaf4d8aa26ae2982274ad2e704aaabd006ed13dd7061d9501e1673be",
+              "capturePath": "docs/launch-queue-research/evidence/nyc-adams-ny1.html",
+              "snapshotKind": "embedded-original-post",
+              "captureMeaning": "Original candidate video post embedded in contemporaneous NY1 reporting; separately preserved in Perma archive and later court record. Snowflake time is post creation. Court filing publication is not backdated."
+            }
+          ],
+          "mechanism": "An incumbent exit changes the opposition field and possible vote distribution.",
+          "measuredChangePercentagePoints": -1.0250000000000092,
+          "referenceProbability": 0.8705,
+          "stabilizedProbability": 0.86025,
+          "windows": {
+            "anticipation": {
+              "level": 0.87375,
+              "start": "2025-09-25T05:11:44.355Z",
+              "end": "2025-09-28T05:11:44.355Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.8705,
+              "start": "2025-09-28T05:11:44.355Z",
+              "end": "2025-09-28T17:11:44.355Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.83925,
+              "start": "2025-09-28T17:11:44.355Z",
+              "end": "2025-09-28T23:11:44.355Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.86025,
+              "start": "2025-09-29T11:11:44.355Z",
+              "end": "2025-09-30T05:11:44.355Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.86175,
+              "start": "2025-09-30T17:11:44.355Z",
+              "end": "2025-10-01T17:11:44.355Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        }
+      ],
+      "ending": {
+        "title": "Reveal-only resolution",
+        "text": "Zohran Mamdani won the November 4, 2025 NYC mayoral general election. The Board of Elections record is retrospective and excluded from all five pre-reveal cards.",
+        "sourceId": "nyc-ending"
+      },
+      "measurementNotes": [
+        "The six missing hourly buckets are preserved and not filled.",
+        "Source timestamps are conservative public by bounds. They do not claim the first public minute unless the retained source supports it.",
+        "Version 2 uses original candidate posts or earlier contemporaneous confirmation instead of later coverage. Announcement versus post-publication uncertainty is disclosed in each source.",
+        "Primary-night response includes rolling returns; it is not isolated concession causality. Original NYT endorsement timings could not be independently established, so AOC/ Hochul use the earliest retained supported bounds with wider sensitivity checks.",
+        "Market closedAt comes from provider closedTime; an exact settlement time is not asserted. Retrospective court/archive/election records have unknown publication times and are excluded from pre-reveal evidence.",
+        "Audit corrected raw versus normalized file-hash labels. Original provider responses and CSV bytes remain unchanged."
+      ]
+    },
+    {
+      "date": "2026-09-17",
+      "number": 11,
+      "topic": "Dodgers’ title defense",
+      "study": "docs/next-five-2026-09-10/audit-other/dodgers/study-draft-v3.json",
+      "csv": "docs/next-five-2026-09-10/sports-dodgers/hourly.csv",
+      "initialOrder": [
+        "seven-losses",
+        "nlds-escape",
+        "glasnow-injury",
+        "pennant-sweep",
+        "ohtani-return"
+      ],
+      "verdict": "Audited sources and unrounded moves; 4 ranking groups under exact-move scoring. Only numerically equal calculated responses tie. See scoring-change/REVIEW.md for the updated ordering; previous one-point grouping is superseded.",
+      "releaseTime": "2026-09-17T05:00:00Z",
+      "timezone": "America/Chicago",
+      "status": "proposed-awaiting-owner-approval",
+      "studyId": "dodgers-repeat-2025-v3",
+      "studyVersion": 3,
+      "studySha256": "5091abe4904e35410081cf2db8044d322d20d83b2e247d511f441866112448aa",
+      "csvSha256": "d09119662e51d073983ce01096cb239f8205dbb07566b945da1e630a1a431aa8",
+      "observations": 5957,
+      "audit": {
+        "observations": 5957,
+        "duplicateTimestamps": [],
+        "missingBuckets": [
+          "2025-06-13T07:00:00.000Z",
+          "2025-09-17T18:00:00.000Z",
+          "2025-10-29T10:00:00.000Z",
+          "2025-10-29T11:00:00.000Z",
+          "2025-10-29T12:00:00.000Z",
+          "2025-10-29T13:00:00.000Z"
+        ],
+        "outOfOrderRows": 0,
+        "coverageStart": "2025-02-26T21:00:00.000Z",
+        "coverageEnd": "2025-11-02T07:00:00.000Z"
+      },
+      "contract": {
+        "id": "50056291296373013403053264672448796961558656386670931029485176637893947669174",
+        "proposition": "Will the Los Angeles Dodgers win the 2025 World Series?",
+        "nativeSide": "YES",
+        "selectedPerspective": "YES",
+        "resolution": "YES"
+      },
+      "market": {
+        "id": "525410",
+        "provider": "Polymarket",
+        "title": "Will the Los Angeles Dodgers win the 2025 World Series?",
+        "rules": "This market will resolve according to the team that wins the 2025 MLB World Series. \n\nIf at any point it becomes impossible for this team to win the World Series based on the rules of the MLB (e.g., they are eliminated in the playoff bracket), this market will resolve immediately to “No”.\n\nIf the 2025  MLB season is permanently canceled or has not been completed by February 28, 2026, 11:59 PM this market will resolve to “Other”.\n",
+        "openedAt": "2025-02-26T20:10:37.66Z",
+        "closedAt": "2025-11-02T07:46:27.000Z",
+        "status": "settled",
+        "resolutionSourceUrl": "https://www.mlb.com/news/dodgers-win-2025-world-series",
+        "marketUrl": "https://polymarket.com/event/world-series-champion-2025/will-the-los-angeles-dodgers-win-the-2025-world-series",
+        "volume": 10561644.990771
+      },
+      "scoring": {
+        "version": "pairwise-exact-v3",
+        "tieThreshold": 0,
+        "tieGrouping": "anchor-window",
+        "boundaryTolerance": 8.881784197001252e-16
+      },
+      "tieGroups": [
+        [
+          "nlds-escape"
+        ],
+        [
+          "pennant-sweep"
+        ],
+        [
+          "glasnow-injury",
+          "ohtani-return"
+        ],
+        [
+          "seven-losses"
+        ]
+      ],
+      "cards": [
+        {
+          "id": "glasnow-injury",
+          "title": "Tyler Glasnow goes on the injured list",
+          "dateLabel": "2025-04-28",
+          "informationKnownAt": "2025-04-29T00:37:19.495Z",
+          "claims": [
+            "The Dodgers place Tyler Glasnow on the 15-day injured list with right shoulder inflammation."
+          ],
+          "sources": [
+            {
+              "id": "glasnow-injury-public-event",
+              "title": "Dodgers roster announcement",
+              "publisher": "Los Angeles Dodgers",
+              "url": "https://www.mlb.com/dodgers/press-release/press-release-dodgers-recall-noah-davis-042825",
+              "publishedAt": "2025-04-29T00:37:19.495Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-10T17:01:02.190286+00:00",
+              "snapshotHash": "194e122924a694901d5bf165d5e51ea3d6719090dbf191b03f7bf9fae4c02495",
+              "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/dodgers/glasnow-transaction-release-apr28.html",
+              "sourceIdentity": "original-team-announcement",
+              "snapshotKind": "original-release",
+              "timestampMeaning": "Original team roster announcement publication. Official transaction date corroborates April28; no precise earlier social announcement was established. Prior game exit occurred April27."
+            }
+          ],
+          "mechanism": "Losing a leading starter threatens rotation depth and the postseason pitching plan. The earlier exit may have priced in part of the news.",
+          "measuredChangePercentagePoints": 0,
+          "referenceProbability": 0.265,
+          "stabilizedProbability": 0.265,
+          "windows": {
+            "anticipation": {
+              "level": 0.27,
+              "start": "2025-04-25T12:37:19.495Z",
+              "end": "2025-04-28T12:37:19.495Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.265,
+              "start": "2025-04-28T12:37:19.495Z",
+              "end": "2025-04-29T00:37:19.495Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.27,
+              "start": "2025-04-29T00:37:19.495Z",
+              "end": "2025-04-29T06:37:19.495Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.265,
+              "start": "2025-04-29T18:37:19.495Z",
+              "end": "2025-04-30T12:37:19.495Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.27,
+              "start": "2025-05-01T00:37:19.495Z",
+              "end": "2025-05-02T00:37:19.495Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "ohtani-return",
+          "title": "Ohtani makes his Dodgers pitching debut",
+          "dateLabel": "2025-06-16",
+          "informationKnownAt": "2025-06-17T02:31:59.850Z",
+          "claims": [
+            "Ohtani completes one inning, allowing one run, in his Dodgers pitching debut."
+          ],
+          "sources": [
+            {
+              "id": "ohtani-return-public-event",
+              "title": "MLB public game record: Ohtani makes his Dodgers pitching debut",
+              "publisher": "MLB",
+              "url": "https://statsapi.mlb.com/api/v1.1/game/777490/feed/live",
+              "publishedAt": "2025-06-17T02:31:59.850Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-10T17:01:02.190286+00:00",
+              "snapshotHash": "84336f5f5723fcd14a15877f141e54392483b850846ba7cf1b8d8591d38e406d",
+              "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/dodgers/mlb-api/game-777490-live.json",
+              "sourceIdentity": "historical-public-live-event",
+              "snapshotKind": "retrospective-official-play-by-play",
+              "timestampMeaning": "Historical pitching replacement makes the one-inning line final; inning top ended02:22:02, Banda replaced Ohtani02:31:59.850UTC. Scored event is the debut, not the June15 announcement or end of the whole game."
+            }
+          ],
+          "mechanism": "Ohtani’s first pitching appearance for Los Angeles demonstrates his return to a two-way role.",
+          "measuredChangePercentagePoints": 0,
+          "referenceProbability": 0.265,
+          "stabilizedProbability": 0.265,
+          "windows": {
+            "anticipation": {
+              "level": 0.255,
+              "start": "2025-06-13T14:31:59.850Z",
+              "end": "2025-06-16T14:31:59.850Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.265,
+              "start": "2025-06-16T14:31:59.850Z",
+              "end": "2025-06-17T02:31:59.850Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.265,
+              "start": "2025-06-17T02:31:59.850Z",
+              "end": "2025-06-17T08:31:59.850Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.265,
+              "start": "2025-06-17T20:31:59.850Z",
+              "end": "2025-06-18T14:31:59.850Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.265,
+              "start": "2025-06-19T02:31:59.850Z",
+              "end": "2025-06-20T02:31:59.850Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "seven-losses",
+          "title": "Dodgers lose their seventh straight game",
+          "dateLabel": "2025-07-11",
+          "informationKnownAt": "2025-07-12T05:01:14.061Z",
+          "claims": [
+            "Los Angeles loses 8–7 to San Francisco, its seventh consecutive defeat."
+          ],
+          "sources": [
+            {
+              "id": "seven-losses-public-event",
+              "title": "MLB public game record: Dodgers lose their seventh straight game",
+              "publisher": "MLB",
+              "url": "https://statsapi.mlb.com/api/v1.1/game/777143/feed/live",
+              "publishedAt": "2025-07-12T05:01:14.061Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-10T17:01:02.190286+00:00",
+              "snapshotHash": "23724358272302c711e8ef2a935e03a413fdd96ca27a0553155db601ec71dfb0",
+              "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/dodgers/mlb-api/game-777143-live.json",
+              "sourceIdentity": "historical-public-live-event",
+              "snapshotKind": "retrospective-official-play-by-play",
+              "timestampMeaning": "Historical public live-game result timestamp recorded in official MLB play-by-play, not retrieval or publication time of this current API snapshot."
+            }
+          ],
+          "mechanism": "A sustained slump challenges confidence in the favorite and tightens the division race. Much of the deterioration may have been reflected before the seventh loss.",
+          "measuredChangePercentagePoints": -0.9999999999999953,
+          "referenceProbability": 0.285,
+          "stabilizedProbability": 0.275,
+          "windows": {
+            "anticipation": {
+              "level": 0.29,
+              "start": "2025-07-08T17:01:14.061Z",
+              "end": "2025-07-11T17:01:14.061Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.285,
+              "start": "2025-07-11T17:01:14.061Z",
+              "end": "2025-07-12T05:01:14.061Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.28,
+              "start": "2025-07-12T05:01:14.061Z",
+              "end": "2025-07-12T11:01:14.061Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.275,
+              "start": "2025-07-12T23:01:14.061Z",
+              "end": "2025-07-13T17:01:14.061Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.275,
+              "start": "2025-07-14T05:01:14.061Z",
+              "end": "2025-07-15T05:01:14.061Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "nlds-escape",
+          "title": "Dodgers advance on an 11th-inning walk-off error",
+          "dateLabel": "2025-10-09",
+          "informationKnownAt": "2025-10-10T01:39:19.872Z",
+          "claims": [
+            "Los Angeles beats Philadelphia 2–1 to win the NLDS three games to one."
+          ],
+          "sources": [
+            {
+              "id": "nlds-escape-public-event",
+              "title": "MLB public game record: Dodgers advance on an 11th-inning throwing error",
+              "publisher": "MLB",
+              "url": "https://statsapi.mlb.com/api/v1.1/game/813042/feed/live",
+              "publishedAt": "2025-10-10T01:39:19.872Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-10T17:01:02.190286+00:00",
+              "snapshotHash": "4a74b3bb935cdab88428ee188d330528829929a3064c5334ef55bcfc18670639",
+              "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/dodgers/mlb-api/game-813042-live.json",
+              "sourceIdentity": "historical-public-live-event",
+              "snapshotKind": "retrospective-official-play-by-play",
+              "timestampMeaning": "Historical public live-game result timestamp recorded in official MLB play-by-play, not retrieval or publication time of this current API snapshot."
+            }
+          ],
+          "mechanism": "A tense elimination of a major contender removes another playoff hurdle. Earlier series wins and other teams’ results also shape the title market.",
+          "measuredChangePercentagePoints": 10.999999999999998,
+          "referenceProbability": 0.325,
+          "stabilizedProbability": 0.435,
+          "windows": {
+            "anticipation": {
+              "level": 0.36,
+              "start": "2025-10-06T13:39:19.872Z",
+              "end": "2025-10-09T13:39:19.872Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.325,
+              "start": "2025-10-09T13:39:19.872Z",
+              "end": "2025-10-10T01:39:19.872Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.4025,
+              "start": "2025-10-10T01:39:19.872Z",
+              "end": "2025-10-10T07:39:19.872Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.435,
+              "start": "2025-10-10T19:39:19.872Z",
+              "end": "2025-10-11T13:39:19.872Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.415,
+              "start": "2025-10-12T01:39:19.872Z",
+              "end": "2025-10-13T01:39:19.872Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        },
+        {
+          "id": "pennant-sweep",
+          "title": "Dodgers sweep Milwaukee to reach the World Series",
+          "dateLabel": "2025-10-17",
+          "informationKnownAt": "2025-10-18T03:20:26.349Z",
+          "claims": [
+            "Los Angeles beats Milwaukee 5–1 to complete a four-game sweep and reach the World Series."
+          ],
+          "sources": [
+            {
+              "id": "pennant-sweep-public-event",
+              "title": "MLB public game record: Dodgers sweep Milwaukee to reach the World Series",
+              "publisher": "MLB",
+              "url": "https://statsapi.mlb.com/api/v1.1/game/813031/feed/live",
+              "publishedAt": "2025-10-18T03:20:26.349Z",
+              "publishedPrecision": "instant",
+              "retrievedAt": "2026-09-10T17:01:02.190286+00:00",
+              "snapshotHash": "cc4aad50cde836ee10c6a004f010835c03856b05a800fafd307f949ffef85d18",
+              "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/dodgers/mlb-api/game-813031-live.json",
+              "sourceIdentity": "historical-public-live-event",
+              "snapshotKind": "retrospective-official-play-by-play",
+              "timestampMeaning": "Historical public live-game result timestamp recorded in official MLB play-by-play, not retrieval or publication time of this current API snapshot."
+            }
+          ],
+          "mechanism": "Only the championship series remains; this is advancement toward the contract outcome, not the resolving victory.",
+          "measuredChangePercentagePoints": 2.0000000000000018,
+          "referenceProbability": 0.655,
+          "stabilizedProbability": 0.675,
+          "windows": {
+            "anticipation": {
+              "level": 0.59,
+              "start": "2025-10-14T15:20:26.349Z",
+              "end": "2025-10-17T15:20:26.349Z",
+              "quality": {
+                "expectedBuckets": 72,
+                "validBuckets": 72,
+                "tradedBuckets": 72,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 72,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "reference": {
+              "level": 0.655,
+              "start": "2025-10-17T15:20:26.349Z",
+              "end": "2025-10-18T03:20:26.349Z",
+              "quality": {
+                "expectedBuckets": 12,
+                "validBuckets": 12,
+                "tradedBuckets": 12,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 12,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "immediate": {
+              "level": 0.69,
+              "start": "2025-10-18T03:20:26.349Z",
+              "end": "2025-10-18T09:20:26.349Z",
+              "quality": {
+                "expectedBuckets": 6,
+                "validBuckets": 6,
+                "tradedBuckets": 6,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 6,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "stabilized": {
+              "level": 0.675,
+              "start": "2025-10-18T21:20:26.349Z",
+              "end": "2025-10-19T15:20:26.349Z",
+              "quality": {
+                "expectedBuckets": 18,
+                "validBuckets": 18,
+                "tradedBuckets": 18,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 18,
+                "status": "usable",
+                "reasons": []
+              }
+            },
+            "delayed": {
+              "level": 0.675,
+              "start": "2025-10-20T03:20:26.349Z",
+              "end": "2025-10-21T03:20:26.349Z",
+              "quality": {
+                "expectedBuckets": 24,
+                "validBuckets": 24,
+                "tradedBuckets": 24,
+                "quoteBuckets": 0,
+                "staleBuckets": 0,
+                "coverage": 1,
+                "maximumGapBuckets": 0,
+                "medianSpread": null,
+                "totalVolume": 0,
+                "distinctUpdates": 24,
+                "status": "usable",
+                "reasons": []
+              }
+            }
+          }
+        }
+      ],
+      "ending": {
+        "title": "The repeat",
+        "text": "The Dodgers won the 2025 World Series. The selected contract resolved YES.",
+        "sourceId": "ending"
+      },
+      "measurementNotes": [
+        "Scores describe observed contract-price changes, not isolated causal effects.",
+        "Version3 replaces late article updates with official game-event times; Glasnow uses the original team press release. Raw prices, window profile and one-point tie rule remain unchanged.",
+        "MLB feeds are retrieved retrospective records of public live events. Their play endTime fields are not API publication times; later season outcome is not used in any scored claim.",
+        "Ohtani card concerns his actual pitching debut. The June15 return announcement predates it; original announcement evidence is retained in the audit folder and not conflated with the debut.",
+        "The 12-hour reference can include in-game trading. A separate six-hour pre-start comparison is diagnostic only. Repricing from previous losses/series games and simultaneous league news is not isolated.",
+        "The first source-supported Glasnow publication bound may be later than the original roster disclosure. Prior injury exit on April27 already conveyed negative news; wider timing sensitivity is reported.",
+        "The original selection remains five cards. No event was substituted to optimize a score; wording has been aligned with contemporaneous game facts."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "method": "Floor retained raw Unix seconds to UTC hours and compare each CSV q/raw_price with the last raw point in that hour; no interpolation.",
+  "csv": "docs/launch-queue-research/datasets/trump-hourly.csv",
+  "raw": "docs/launch-queue-research/evidence/trump-history-000.json through trump-history-018.json",
+  "metadata": "docs/launch-queue-research/evidence/trump-market.json",
+  "marketId": "253591",
+  "tokenId": "21742633143463906290569050155826241533067272736897614950488156847949938836455",
+  "csvRows": 4549,
+  "rawRows": 4550,
+  "uniqueRawHours": 4549,
+  "missingCsvHours": 0,
+  "priceMismatches": 0,
+  "duplicateHour": "2024-10-02T14:00:00.000Z",
+  "duplicatePoints": [{"t": 1727877602, "p": 0.4935}, {"t": 1727877607, "p": 0.4935}],
+  "csvSha256": "7756111859cbca9f2185795608029323fb21e9505f0314d4700cf7d8b9cc579d",
+  "studyRawSha256": "7756111859cbca9f2185795608029323fb21e9505f0314d4700cf7d8b9cc579d",
+  "marketMetadataSha256": "7c59b9a4930ed53711cdb971d7f0c15e3a403c4f18e711fa0381ac7b8b993636",
+  "markTypes": ["trade"],
+  "staleValues": ["false"]
+}

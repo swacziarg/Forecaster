@@ -1,0 +1,992 @@
+{
+  "artifactType": "Thunder five-card measurements; generated with existing event-study functions",
+  "invocation": "node --experimental-strip-types docs/next-five-2026-09-10/sports/evaluate-thunder.mjs",
+  "contract": {
+    "provider": "Polymarket",
+    "eventId": "12815",
+    "marketId": "507884",
+    "conditionId": "0x6edc6c77c16ef3ba1bcd646159f12f8b8a39528e500dcff95b9220ccfbb75141",
+    "yesToken": "83527644927648970835156950007024690327726158617181889316317174894904268227846",
+    "selectedPerspective": "YES",
+    "question": "Will the Oklahoma City Thunder win the 2025 NBA Finals?",
+    "outcome": "YES"
+  },
+  "dataset": {
+    "csvPath": "docs/next-five-2026-09-10/sports/thunder-hourly.csv",
+    "csvSha256": "558a508d02ddf5ef25a91a5a56d95b3e35220e2e82c6bc880626e604ae892664",
+    "rawPath": "docs/next-five-2026-09-10/sports/thunder-history-raw.json",
+    "rawSha256": "e2a215cb995e4fcaf52e923e9809df1dcf78680d91f004cdfb33f328bd523130",
+    "manifestPath": "docs/next-five-2026-09-10/sports/thunder-history-manifest.json",
+    "manifestSha256": "45b3d555a8840a3e32ffbceb7b3b75d658f573a0b3e2993a630e5704f10fa7ca",
+    "audit": {
+      "observations": 6514,
+      "duplicateTimestamps": [],
+      "missingBuckets": [
+        "2024-11-05T22:00:00.000Z",
+        "2025-06-13T07:00:00.000Z",
+        "2025-06-23T03:00:00.000Z"
+      ],
+      "outOfOrderRows": 0,
+      "coverageStart": "2024-09-24T19:00:00.000Z",
+      "coverageEnd": "2025-06-23T07:00:00.000Z"
+    },
+    "profile": {
+      "id": "months-hourly-v1",
+      "label": "Months / hourly",
+      "cadenceMinutes": 60,
+      "anticipation": {
+        "startHours": -84,
+        "endHours": -12
+      },
+      "reference": {
+        "startHours": -12,
+        "endHours": 0
+      },
+      "immediate": {
+        "startHours": 0,
+        "endHours": 6
+      },
+      "stabilized": {
+        "startHours": 18,
+        "endHours": 36
+      },
+      "delayed": {
+        "startHours": 48,
+        "endHours": 72
+      },
+      "quality": {
+        "minimumCoverage": 0.6,
+        "maximumGapShare": 0.5,
+        "minimumDistinctUpdates": 3,
+        "maximumSpread": 0.2
+      },
+      "tieThreshold": 0.01
+    },
+    "markPolicy": "Latest Polymarket history observation per UTC hour treated as trade; no interpolation or cross-contract splicing."
+  },
+  "events": [
+    {
+      "id": "denver-opener",
+      "title": "Thunder open by beating Denver 102–87",
+      "shortTitle": "Denver opener",
+      "occurredAt": "2024-10-26T12:00:00Z",
+      "informationKnownAt": "2024-10-26T12:00:00Z",
+      "precision": "interval",
+      "timezone": "America/Chicago",
+      "dateLabel": "Oct 24",
+      "category": "Season opener",
+      "mechanism": "A road win over a leading Western rival validates the young core and raises the projected ceiling for the season-long title path.",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "denver-opener-fact",
+          "text": "Oklahoma City beat Denver 102–87 in the season opener; Gilgeous-Alexander scored 28 and Holmgren had 25 with 14 rebounds.",
+          "knownAt": "2024-10-26T12:00:00Z",
+          "sourceIds": [
+            "nba-denver-opener"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "nba-denver-opener",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "The measured response is a market movement around the public information cutoff, not proof that this event alone caused the change.",
+      "competingExplanation": "The response also includes other opening-week results and league-wide repricing. The conservative recap-day bound means later opening-week news and the next game may enter the broad windows.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "chet-injury",
+      "title": "Chet Holmgren suffers a pelvic fracture",
+      "shortTitle": "Holmgren injury",
+      "occurredAt": "2024-11-11T12:47:34Z",
+      "informationKnownAt": "2024-11-11T12:47:34Z",
+      "precision": "interval",
+      "timezone": "America/Chicago",
+      "dateLabel": "Nov 10",
+      "category": "Injury",
+      "mechanism": "A core two-way starter’s injury changes the Thunder’s playoff ceiling and frontcourt depth, even with a return expected during the season.",
+      "expectedDirection": "negative",
+      "claims": [
+        {
+          "id": "chet-injury-fact",
+          "text": "The Thunder announced a right iliac wing fracture and a return-to-play update in eight to ten weeks.",
+          "knownAt": "2024-11-11T12:47:34Z",
+          "sourceIds": [
+            "nba-chet-injury"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "nba-chet-injury",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "The measured response is a market movement around the public information cutoff, not proof that this event alone caused the change.",
+      "competingExplanation": "The injury announcement followed the Golden State loss and coincided with other early-season information.",
+      "attributionAssessment": "likely dominant"
+    },
+    {
+      "id": "regular-season-best",
+      "title": "Thunder finish 68–14 with NBA’s best record",
+      "shortTitle": "68–14 finish",
+      "occurredAt": "2025-04-14T12:00:00Z",
+      "informationKnownAt": "2025-04-14T12:00:00Z",
+      "precision": "interval",
+      "timezone": "America/Chicago",
+      "dateLabel": "Apr 13",
+      "category": "Regular season",
+      "mechanism": "The finished record confirms the strongest available baseline and home-court advantage through the playoffs; home court had been clinched earlier.",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "regular-season-best-fact",
+          "text": "Oklahoma City beat New Orleans 115–100 to finish 68–14, the best record in the NBA and the best regular season in franchise history.",
+          "knownAt": "2025-04-14T12:00:00Z",
+          "sourceIds": [
+            "nba-regular-season-finale"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "nba-regular-season-finale",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "The measured response is a market movement around the public information cutoff, not proof that this event alone caused the change.",
+      "competingExplanation": "The result was expected late in the season and playoff seeding information arrived alongside it.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "grizzlies-sweep",
+      "title": "Thunder sweep Memphis in the first round",
+      "shortTitle": "Memphis sweep",
+      "occurredAt": "2025-04-27T12:00:00Z",
+      "informationKnownAt": "2025-04-27T12:00:00Z",
+      "precision": "interval",
+      "timezone": "America/Chicago",
+      "dateLabel": "Apr 26",
+      "category": "Playoffs",
+      "mechanism": "A clean opening-series win removes a playoff branch and demonstrates that the top seed can close a tight road game.",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "grizzlies-sweep-fact",
+          "text": "Oklahoma City completed a 4–0 sweep of Memphis with a 117–115 Game 4 win and became the first team into the second round.",
+          "knownAt": "2025-04-27T12:00:00Z",
+          "sourceIds": [
+            "nba-grizzlies-sweep"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "nba-grizzlies-sweep",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "The measured response is a market movement around the public information cutoff, not proof that this event alone caused the change.",
+      "competingExplanation": "The four-game series and possible second-round opponents updated in overlapping windows.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "west-finals",
+      "title": "Thunder reach the NBA Finals",
+      "shortTitle": "Finals berth",
+      "occurredAt": "2025-05-29T03:21:00Z",
+      "informationKnownAt": "2025-05-29T03:21:00Z",
+      "precision": "interval",
+      "timezone": "America/Chicago",
+      "dateLabel": "May 28",
+      "category": "Playoffs",
+      "mechanism": "Only one best-of-seven series remains, sharply reducing uncertainty in the championship contract.",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "west-finals-fact",
+          "text": "Oklahoma City beat Minnesota 124–94 to win the Western Conference finals 4–1 and advance to the NBA Finals.",
+          "knownAt": "2025-05-29T03:21:00Z",
+          "sourceIds": [
+            "nba-west-finals"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "nba-west-finals",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "The measured response is a market movement around the public information cutoff, not proof that this event alone caused the change.",
+      "competingExplanation": "The Eastern Conference finals and award information arrived in the same broad window.",
+      "attributionAssessment": "likely dominant"
+    }
+  ],
+  "impacts": [
+    {
+      "eventId": "denver-opener",
+      "event": {
+        "id": "denver-opener",
+        "title": "Thunder open by beating Denver 102–87",
+        "shortTitle": "Denver opener",
+        "occurredAt": "2024-10-26T12:00:00Z",
+        "informationKnownAt": "2024-10-26T12:00:00Z",
+        "precision": "interval",
+        "timezone": "America/Chicago",
+        "dateLabel": "Oct 24",
+        "category": "Season opener",
+        "mechanism": "A road win over a leading Western rival validates the young core and raises the projected ceiling for the season-long title path.",
+        "expectedDirection": "positive",
+        "claims": [
+          {
+            "id": "denver-opener-fact",
+            "text": "Oklahoma City beat Denver 102–87 in the season opener; Gilgeous-Alexander scored 28 and Holmgren had 25 with 14 rebounds.",
+            "knownAt": "2024-10-26T12:00:00Z",
+            "sourceIds": [
+              "nba-denver-opener"
+            ],
+            "visibility": "pre-reveal"
+          }
+        ],
+        "sourceRoles": [
+          {
+            "sourceId": "nba-denver-opener",
+            "role": "primary"
+          }
+        ],
+        "retrospectiveInterpretation": "The measured response is a market movement around the public information cutoff, not proof that this event alone caused the change.",
+        "competingExplanation": "The response also includes other opening-week results and league-wide repricing. The conservative recap-day bound means later opening-week news and the next game may enter the broad windows.",
+        "attributionAssessment": "mixed"
+      },
+      "windows": {
+        "anticipation": {
+          "level": 0.115,
+          "start": "2024-10-23T00:00:00.000Z",
+          "end": "2024-10-26T00:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 72,
+            "validBuckets": 72,
+            "tradedBuckets": 72,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 72,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "reference": {
+          "level": 0.12,
+          "start": "2024-10-26T00:00:00.000Z",
+          "end": "2024-10-26T12:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 12,
+            "validBuckets": 12,
+            "tradedBuckets": 12,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 12,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "immediate": {
+          "level": 0.12,
+          "start": "2024-10-26T12:00:00.000Z",
+          "end": "2024-10-26T18:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 6,
+            "validBuckets": 6,
+            "tradedBuckets": 6,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 6,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "stabilized": {
+          "level": 0.12,
+          "start": "2024-10-27T06:00:00.000Z",
+          "end": "2024-10-28T00:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 18,
+            "validBuckets": 18,
+            "tradedBuckets": 18,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 18,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "delayed": {
+          "level": 0.12,
+          "start": "2024-10-28T12:00:00.000Z",
+          "end": "2024-10-29T12:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 24,
+            "validBuckets": 24,
+            "tradedBuckets": 24,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 24,
+            "status": "usable",
+            "reasons": []
+          }
+        }
+      },
+      "anticipationMove": 0.0049999999999999906,
+      "immediateResponse": 0,
+      "shortTermResponse": 0,
+      "delayedIncrement": 0,
+      "cumulativeDelayedResponse": 0,
+      "logOddsResponse": 0,
+      "sensitivityShare": 0,
+      "counterfactualProbability": 0.12,
+      "attributedImpact": 0,
+      "qualityStatus": "usable",
+      "ordinaryMovement": {
+        "classification": "not detectable",
+        "threshold": 0.040000000000000036,
+        "sampleCount": 172
+      },
+      "overlaps": []
+    },
+    {
+      "eventId": "chet-injury",
+      "event": {
+        "id": "chet-injury",
+        "title": "Chet Holmgren suffers a pelvic fracture",
+        "shortTitle": "Holmgren injury",
+        "occurredAt": "2024-11-11T12:47:34Z",
+        "informationKnownAt": "2024-11-11T12:47:34Z",
+        "precision": "interval",
+        "timezone": "America/Chicago",
+        "dateLabel": "Nov 10",
+        "category": "Injury",
+        "mechanism": "A core two-way starter’s injury changes the Thunder’s playoff ceiling and frontcourt depth, even with a return expected during the season.",
+        "expectedDirection": "negative",
+        "claims": [
+          {
+            "id": "chet-injury-fact",
+            "text": "The Thunder announced a right iliac wing fracture and a return-to-play update in eight to ten weeks.",
+            "knownAt": "2024-11-11T12:47:34Z",
+            "sourceIds": [
+              "nba-chet-injury"
+            ],
+            "visibility": "pre-reveal"
+          }
+        ],
+        "sourceRoles": [
+          {
+            "sourceId": "nba-chet-injury",
+            "role": "primary"
+          }
+        ],
+        "retrospectiveInterpretation": "The measured response is a market movement around the public information cutoff, not proof that this event alone caused the change.",
+        "competingExplanation": "The injury announcement followed the Golden State loss and coincided with other early-season information.",
+        "attributionAssessment": "likely dominant"
+      },
+      "windows": {
+        "anticipation": {
+          "level": 0.16,
+          "start": "2024-11-08T00:47:34.000Z",
+          "end": "2024-11-11T00:47:34.000Z",
+          "quality": {
+            "expectedBuckets": 72,
+            "validBuckets": 72,
+            "tradedBuckets": 72,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 72,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "reference": {
+          "level": 0.16,
+          "start": "2024-11-11T00:47:34.000Z",
+          "end": "2024-11-11T12:47:34.000Z",
+          "quality": {
+            "expectedBuckets": 12,
+            "validBuckets": 12,
+            "tradedBuckets": 12,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 12,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "immediate": {
+          "level": 0.155,
+          "start": "2024-11-11T12:47:34.000Z",
+          "end": "2024-11-11T18:47:34.000Z",
+          "quality": {
+            "expectedBuckets": 6,
+            "validBuckets": 6,
+            "tradedBuckets": 6,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 6,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "stabilized": {
+          "level": 0.155,
+          "start": "2024-11-12T06:47:34.000Z",
+          "end": "2024-11-13T00:47:34.000Z",
+          "quality": {
+            "expectedBuckets": 18,
+            "validBuckets": 18,
+            "tradedBuckets": 18,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 18,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "delayed": {
+          "level": 0.15,
+          "start": "2024-11-13T12:47:34.000Z",
+          "end": "2024-11-14T12:47:34.000Z",
+          "quality": {
+            "expectedBuckets": 24,
+            "validBuckets": 24,
+            "tradedBuckets": 24,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 24,
+            "status": "usable",
+            "reasons": []
+          }
+        }
+      },
+      "anticipationMove": 0,
+      "immediateResponse": -0.0050000000000000044,
+      "shortTermResponse": -0.0050000000000000044,
+      "delayedIncrement": -0.0050000000000000044,
+      "cumulativeDelayedResponse": -0.010000000000000009,
+      "logOddsResponse": -0.037683433834394986,
+      "sensitivityShare": 0,
+      "counterfactualProbability": 0.155,
+      "attributedImpact": 0,
+      "qualityStatus": "usable",
+      "ordinaryMovement": {
+        "classification": "not detectable",
+        "threshold": 0.040000000000000036,
+        "sampleCount": 172
+      },
+      "overlaps": []
+    },
+    {
+      "eventId": "regular-season-best",
+      "event": {
+        "id": "regular-season-best",
+        "title": "Thunder finish 68–14 with NBA’s best record",
+        "shortTitle": "68–14 finish",
+        "occurredAt": "2025-04-14T12:00:00Z",
+        "informationKnownAt": "2025-04-14T12:00:00Z",
+        "precision": "interval",
+        "timezone": "America/Chicago",
+        "dateLabel": "Apr 13",
+        "category": "Regular season",
+        "mechanism": "The finished record confirms the strongest available baseline and home-court advantage through the playoffs; home court had been clinched earlier.",
+        "expectedDirection": "positive",
+        "claims": [
+          {
+            "id": "regular-season-best-fact",
+            "text": "Oklahoma City beat New Orleans 115–100 to finish 68–14, the best record in the NBA and the best regular season in franchise history.",
+            "knownAt": "2025-04-14T12:00:00Z",
+            "sourceIds": [
+              "nba-regular-season-finale"
+            ],
+            "visibility": "pre-reveal"
+          }
+        ],
+        "sourceRoles": [
+          {
+            "sourceId": "nba-regular-season-finale",
+            "role": "primary"
+          }
+        ],
+        "retrospectiveInterpretation": "The measured response is a market movement around the public information cutoff, not proof that this event alone caused the change.",
+        "competingExplanation": "The result was expected late in the season and playoff seeding information arrived alongside it.",
+        "attributionAssessment": "mixed"
+      },
+      "windows": {
+        "anticipation": {
+          "level": 0.325,
+          "start": "2025-04-11T00:00:00.000Z",
+          "end": "2025-04-14T00:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 72,
+            "validBuckets": 72,
+            "tradedBuckets": 72,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 72,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "reference": {
+          "level": 0.325,
+          "start": "2025-04-14T00:00:00.000Z",
+          "end": "2025-04-14T12:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 12,
+            "validBuckets": 12,
+            "tradedBuckets": 12,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 12,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "immediate": {
+          "level": 0.325,
+          "start": "2025-04-14T12:00:00.000Z",
+          "end": "2025-04-14T18:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 6,
+            "validBuckets": 6,
+            "tradedBuckets": 6,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 6,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "stabilized": {
+          "level": 0.325,
+          "start": "2025-04-15T06:00:00.000Z",
+          "end": "2025-04-16T00:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 18,
+            "validBuckets": 18,
+            "tradedBuckets": 18,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 18,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "delayed": {
+          "level": 0.335,
+          "start": "2025-04-16T12:00:00.000Z",
+          "end": "2025-04-17T12:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 24,
+            "validBuckets": 24,
+            "tradedBuckets": 24,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 24,
+            "status": "usable",
+            "reasons": []
+          }
+        }
+      },
+      "anticipationMove": 0,
+      "immediateResponse": 0,
+      "shortTermResponse": 0,
+      "delayedIncrement": 0.010000000000000009,
+      "cumulativeDelayedResponse": 0.010000000000000009,
+      "logOddsResponse": 0,
+      "sensitivityShare": 0,
+      "counterfactualProbability": 0.32499999999999996,
+      "attributedImpact": 5.551115123125783e-17,
+      "qualityStatus": "usable",
+      "ordinaryMovement": {
+        "classification": "not detectable",
+        "threshold": 0.040000000000000036,
+        "sampleCount": 172
+      },
+      "overlaps": []
+    },
+    {
+      "eventId": "grizzlies-sweep",
+      "event": {
+        "id": "grizzlies-sweep",
+        "title": "Thunder sweep Memphis in the first round",
+        "shortTitle": "Memphis sweep",
+        "occurredAt": "2025-04-27T12:00:00Z",
+        "informationKnownAt": "2025-04-27T12:00:00Z",
+        "precision": "interval",
+        "timezone": "America/Chicago",
+        "dateLabel": "Apr 26",
+        "category": "Playoffs",
+        "mechanism": "A clean opening-series win removes a playoff branch and demonstrates that the top seed can close a tight road game.",
+        "expectedDirection": "positive",
+        "claims": [
+          {
+            "id": "grizzlies-sweep-fact",
+            "text": "Oklahoma City completed a 4–0 sweep of Memphis with a 117–115 Game 4 win and became the first team into the second round.",
+            "knownAt": "2025-04-27T12:00:00Z",
+            "sourceIds": [
+              "nba-grizzlies-sweep"
+            ],
+            "visibility": "pre-reveal"
+          }
+        ],
+        "sourceRoles": [
+          {
+            "sourceId": "nba-grizzlies-sweep",
+            "role": "primary"
+          }
+        ],
+        "retrospectiveInterpretation": "The measured response is a market movement around the public information cutoff, not proof that this event alone caused the change.",
+        "competingExplanation": "The four-game series and possible second-round opponents updated in overlapping windows.",
+        "attributionAssessment": "mixed"
+      },
+      "windows": {
+        "anticipation": {
+          "level": 0.35,
+          "start": "2025-04-24T00:00:00.000Z",
+          "end": "2025-04-27T00:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 72,
+            "validBuckets": 72,
+            "tradedBuckets": 72,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 72,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "reference": {
+          "level": 0.355,
+          "start": "2025-04-27T00:00:00.000Z",
+          "end": "2025-04-27T12:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 12,
+            "validBuckets": 12,
+            "tradedBuckets": 12,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 12,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "immediate": {
+          "level": 0.355,
+          "start": "2025-04-27T12:00:00.000Z",
+          "end": "2025-04-27T18:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 6,
+            "validBuckets": 6,
+            "tradedBuckets": 6,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 6,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "stabilized": {
+          "level": 0.36,
+          "start": "2025-04-28T06:00:00.000Z",
+          "end": "2025-04-29T00:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 18,
+            "validBuckets": 18,
+            "tradedBuckets": 18,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 18,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "delayed": {
+          "level": 0.375,
+          "start": "2025-04-29T12:00:00.000Z",
+          "end": "2025-04-30T12:00:00.000Z",
+          "quality": {
+            "expectedBuckets": 24,
+            "validBuckets": 24,
+            "tradedBuckets": 24,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 24,
+            "status": "usable",
+            "reasons": []
+          }
+        }
+      },
+      "anticipationMove": 0.0050000000000000044,
+      "immediateResponse": 0,
+      "shortTermResponse": 0.0050000000000000044,
+      "delayedIncrement": 0.015000000000000013,
+      "cumulativeDelayedResponse": 0.020000000000000018,
+      "logOddsResponse": 0.021768382416794907,
+      "sensitivityShare": 0,
+      "counterfactualProbability": 0.36,
+      "attributedImpact": 0,
+      "qualityStatus": "usable",
+      "ordinaryMovement": {
+        "classification": "not detectable",
+        "threshold": 0.040000000000000036,
+        "sampleCount": 172
+      },
+      "overlaps": []
+    },
+    {
+      "eventId": "west-finals",
+      "event": {
+        "id": "west-finals",
+        "title": "Thunder reach the NBA Finals",
+        "shortTitle": "Finals berth",
+        "occurredAt": "2025-05-29T03:21:00Z",
+        "informationKnownAt": "2025-05-29T03:21:00Z",
+        "precision": "interval",
+        "timezone": "America/Chicago",
+        "dateLabel": "May 28",
+        "category": "Playoffs",
+        "mechanism": "Only one best-of-seven series remains, sharply reducing uncertainty in the championship contract.",
+        "expectedDirection": "positive",
+        "claims": [
+          {
+            "id": "west-finals-fact",
+            "text": "Oklahoma City beat Minnesota 124–94 to win the Western Conference finals 4–1 and advance to the NBA Finals.",
+            "knownAt": "2025-05-29T03:21:00Z",
+            "sourceIds": [
+              "nba-west-finals"
+            ],
+            "visibility": "pre-reveal"
+          }
+        ],
+        "sourceRoles": [
+          {
+            "sourceId": "nba-west-finals",
+            "role": "primary"
+          }
+        ],
+        "retrospectiveInterpretation": "The measured response is a market movement around the public information cutoff, not proof that this event alone caused the change.",
+        "competingExplanation": "The Eastern Conference finals and award information arrived in the same broad window.",
+        "attributionAssessment": "likely dominant"
+      },
+      "windows": {
+        "anticipation": {
+          "level": 0.74,
+          "start": "2025-05-25T15:21:00.000Z",
+          "end": "2025-05-28T15:21:00.000Z",
+          "quality": {
+            "expectedBuckets": 72,
+            "validBuckets": 72,
+            "tradedBuckets": 72,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 72,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "reference": {
+          "level": 0.775,
+          "start": "2025-05-28T15:21:00.000Z",
+          "end": "2025-05-29T03:21:00.000Z",
+          "quality": {
+            "expectedBuckets": 12,
+            "validBuckets": 12,
+            "tradedBuckets": 12,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 12,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "immediate": {
+          "level": 0.815,
+          "start": "2025-05-29T03:21:00.000Z",
+          "end": "2025-05-29T09:21:00.000Z",
+          "quality": {
+            "expectedBuckets": 6,
+            "validBuckets": 6,
+            "tradedBuckets": 6,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 6,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "stabilized": {
+          "level": 0.825,
+          "start": "2025-05-29T21:21:00.000Z",
+          "end": "2025-05-30T15:21:00.000Z",
+          "quality": {
+            "expectedBuckets": 18,
+            "validBuckets": 18,
+            "tradedBuckets": 18,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 18,
+            "status": "usable",
+            "reasons": []
+          }
+        },
+        "delayed": {
+          "level": 0.835,
+          "start": "2025-05-31T03:21:00.000Z",
+          "end": "2025-06-01T03:21:00.000Z",
+          "quality": {
+            "expectedBuckets": 24,
+            "validBuckets": 24,
+            "tradedBuckets": 24,
+            "quoteBuckets": 0,
+            "staleBuckets": 0,
+            "coverage": 1,
+            "maximumGapBuckets": 0,
+            "medianSpread": null,
+            "totalVolume": 0,
+            "distinctUpdates": 24,
+            "status": "usable",
+            "reasons": []
+          }
+        }
+      },
+      "anticipationMove": 0.03500000000000003,
+      "immediateResponse": 0.039999999999999925,
+      "shortTermResponse": 0.04999999999999993,
+      "delayedIncrement": 0.010000000000000009,
+      "cumulativeDelayedResponse": 0.05999999999999994,
+      "logOddsResponse": 0.3138347852622394,
+      "sensitivityShare": 0,
+      "counterfactualProbability": 0.825,
+      "attributedImpact": 0,
+      "qualityStatus": "usable",
+      "ordinaryMovement": {
+        "classification": "unusually large",
+        "threshold": 0.040000000000000036,
+        "sampleCount": 172
+      },
+      "overlaps": []
+    }
+  ],
+  "tieGroups": [
+    [
+      "west-finals"
+    ],
+    [
+      "grizzlies-sweep",
+      "denver-opener",
+      "regular-season-best",
+      "chet-injury"
+    ]
+  ]
+}

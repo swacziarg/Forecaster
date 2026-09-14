@@ -1,3 +1,4 @@
+import { nextFivePuzzles } from './nextFive2026.ts'
 import { tiktokStudy } from './tiktok2025.ts'
 import { eaglesFiveCardStudy } from './eaglesFiveCard2025.ts'
 import { oscarsFiveCard2026Study } from './oscarsFiveCard2026.ts'
@@ -95,6 +96,7 @@ export const dailyPuzzles: readonly DailyPuzzle[] = [
     scoring: {"version": "pairwise-anchor-1pt-v2", "tieThreshold": 0.01, "tieGrouping": "anchor-window"},
     question: canada2025Study.question,
   },
+  ...nextFivePuzzles,
 ]
 
 assertValidDailyRegistry(dailyPuzzles, studyRegistry.map(({ study }) => study))

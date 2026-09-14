@@ -1,0 +1,66 @@
+{
+  "artifactType": "NexusPoint sports candidate research handoff",
+  "preparedAt": "2026-09-10T16:14:17Z",
+  "readiness": "review-required",
+  "scope": "Two concluded, distinct sports storylines; no runtime or schedule changes made.",
+  "candidates": [
+    {
+      "topic": "2025 NBA champion",
+      "slug": "thunder-first-title-2025",
+      "rank": 1,
+      "contract": {
+        "provider": "Polymarket",
+        "marketUrl": "https://polymarket.com/event/nba-champion-2024-2025/will-the-oklahoma-city-thunder-win-the-2025-nba-finals",
+        "eventSlug": "nba-champion-2024-2025",
+        "question": "Will the Oklahoma City Thunder win the 2024-2025 NBA Championship?",
+        "selectedSide": "YES",
+        "resolvedOutcome": "YES",
+        "openedAt": "2024-09-24T18:02:00Z",
+        "closedAt": "2025-06-23T00:00:00Z",
+        "resolutionEvidence": "Polymarket page shows End Date Jun 23, 2025, Outcome proposed Yes, No dispute, Final outcome Yes; NBA sources confirm Oklahoma City won the Finals.",
+        "exactMarketId": "507884",
+        "conditionId": "0x6edc6c77c16ef3ba1bcd646159f12f8b8a39528e500dcff95b9220ccfbb75141",
+        "exactTokenId": "83527644927648970835156950007024690327726158617181889316317174894904268227846",
+        "contractGap": "Exact Gamma event/market/token metadata and retained hourly history are captured in the sports evidence folder; scored measurements are reproducible with evaluate-thunder.mjs."
+      },
+      "cards": [
+        {"id":"denver-opener","date":"2024-10-24","title":"Thunder open by beating Denver 102–87","claim":"Oklahoma City beat the reigning MVP's Nuggets 102–87 in Denver; Shai Gilgeous-Alexander scored 28 and Chet Holmgren had 25 with 14 rebounds.","expectedDirection":"positive","whyCouldMoveOdds":"A road win over a leading Western rival immediately raises the team's ceiling and validates the young core.","source":{"url":"https://www.nba.com/game/OKC-vs-DEN-0022400075/boxscore","publishedAt":"2024-10-25","publishedPrecision":"day","role":"NBA/AP game recap; page timestamp is timezone-naive"}},
+        {"id":"chet-injury","date":"2024-11-10","title":"Chet Holmgren suffers a pelvic fracture","claim":"The Thunder announced Holmgren sustained a right iliac wing fracture and would receive a return-to-play update in eight to ten weeks after the November 10 loss to Golden State.","expectedDirection":"negative","whyCouldMoveOdds":"A core two-way starter's injury changes the team's playoff ceiling and frontcourt depth, even with a return expected during the season.","source":{"url":"https://cdn-uat.nba.com/news/chet-holmgren-thunder-hip-injury","publishedAt":"2024-11-11T12:47:34Z","role":"NBA News Services; retained page update timestamp"}},
+        {"id":"regular-season-best","date":"2025-04-13","title":"Thunder finish 68–14 with NBA's best record","claim":"Oklahoma City beat New Orleans 115–100 to finish 68–14, the best record in the NBA and the best regular season in franchise history.","expectedDirection":"positive","whyCouldMoveOdds":"The finished record confirms the strongest available baseline and home-court advantage through the playoffs; home court had been clinched earlier, so this is not treated as a newly secured benefit.","source":{"url":"https://www.nba.com/game/okc-vs-nop-0022401196","publishedAt":"2025-04-13","publishedPrecision":"day","role":"NBA/AP contemporary game recap; page timestamp is timezone-naive"}},
+        {"id":"grizzlies-sweep","date":"2025-04-26","title":"Thunder sweep Memphis in the first round","claim":"Oklahoma City completed a 4–0 sweep of Memphis with a 117–115 Game 4 win and became the first team into the second round.","expectedDirection":"positive","whyCouldMoveOdds":"A clean opening-series win removes a playoff branch while demonstrating the top seed can close tight games.","source":{"url":"https://www.nba.com/game/0042400144","publishedAt":"2025-04-26","publishedPrecision":"day","role":"NBA/AP game recap; page timestamp is timezone-naive"}},
+        {"id":"west-finals","date":"2025-05-28","title":"Thunder reach the NBA Finals","claim":"Oklahoma City beat Minnesota 124–94 to win the Western Conference finals 4–1 and advance to the NBA Finals.","expectedDirection":"positive","whyCouldMoveOdds":"Only one best-of-seven series remained, sharply reducing uncertainty in the championship contract.","source":{"url":"https://www.nba.com/thunder/news/release-finals-250528","publishedAt":"2025-05-29T03:20:17Z","role":"Thunder official release; exact retained publication timestamp"}}
+      ],
+      "ending":{"text":"Oklahoma City defeated Indiana 4–3 in the 2025 NBA Finals, winning Game 7 103–91 on June 22, 2025. Polymarket's Thunder YES contract resolved YES.","source":"https://www.nba.com/game/IND-vs-OKC-0042400407"},
+      "dataset":{"csv":"thunder-hourly.csv","raw":"thunder-history-raw.json","manifest":"thunder-history-manifest.json","measurements":"thunder-measurements.json","normalizedObservations":6514,"missingBuckets":["2024-11-05T22:00:00Z","2025-06-13T07:00:00Z","2025-06-23T03:00:00Z"],"rejectedProbabilities":1,"normalizedSha256":"558a508d02ddf5ef25a91a5a56d95b3e35220e2e82c6bc880626e604ae892664"},
+      "observedMovement":"Measured with months-hourly-v1 after the frozen timing correction: Finals berth +5.00 pp short-term; Memphis sweep +0.50 pp; Holmgren injury −0.50 pp; 68–14 finish 0.00 pp; Denver opener 0.00 pp. Delayed responses are +5.00, +2.00, −1.00, +1.00, and 0.00 pp respectively. Under pairwise-anchor-1pt-v2 with 1e-12 boundary tolerance, tie groups are [west-finals] and [grizzlies-sweep, denver-opener, regular-season-best, chet-injury]. All five windows usable."
+    },
+    {
+      "topic": "2025 MLB World Series champion",
+      "slug": "dodgers-repeat-2025",
+      "rank": 2,
+      "contract": {
+        "provider": "Polymarket",
+        "marketUrl": "https://polymarket.com/event/world-series-champion-2025",
+        "eventSlug": "world-series-champion-2025",
+        "question": "Which team will win the 2025 MLB World Series? (Los Angeles Dodgers outcome)",
+        "selectedSide": "Los Angeles Dodgers",
+        "resolvedOutcome": "Los Angeles Dodgers",
+        "openedAt": null,
+        "closedAt": "2025-11-02T00:00:00Z",
+        "resolutionEvidence":"Polymarket page reports World Series Champion 2025, rules tied to the team that wins the 2025 World Series, and Los Angeles Dodgers as the final leader; MLB confirms Dodgers won Game 7 5–4 in 11 innings.",
+        "exactMarketId": null,
+        "exactTokenId": null,
+        "contractGap":"The public page and slug are exact enough for editorial review, but this packet does not yet contain the selected outcome's Gamma/CTF IDs or retained historical price series. The two-outcome World Series Winner market is a separate, later contract and should not be substituted without review."
+      },
+      "cards":[
+        {"id":"sasaki-signing","date":"2025-01-22","title":"Dodgers sign Roki Sasaki","claim":"Los Angeles signed 23-year-old Japanese right-hander Roki Sasaki after a three-team finalist process; he had a 2.35 ERA and 129 strikeouts in 111 NPB innings in 2024.","expectedDirection":"positive","whyCouldMoveOdds":"Adding a high-upside starter to a defending champion's rotation strengthens the perceived depth of the title favorite.","source":{"url":"https://www.mlb.com/press-release/press-release-dodgers-sign-roki-sasaki","publishedAt":"2025-01-22T00:00:00Z","role":"MLB official press release; page date only, exact time to be captured"}},
+        {"id":"sasaki-injury","date":"2025-06-16","title":"Sasaki pauses throwing with no return timeline","claim":"The Dodgers said Sasaki stopped playing catch and had no timeline to resume, prompting the club to plan for life without him for the 2025 season.","expectedDirection":"negative","whyCouldMoveOdds":"The highly anticipated rotation addition became uncertain, reducing depth and increasing reliance on other injured starters.","source":{"url":"https://www.mlb.com/dodgers/news/roki-sasaki-faces-setback-no-timeline-for-return","publishedAt":"2025-06-16T00:00:00Z","role":"MLB/Dodgers report; exact publication time to be captured"}},
+        {"id":"deadline-depth","date":"2025-07-31","title":"Dodgers add deadline depth","claim":"On July 31 the Dodgers acquired Brock Stewart, Paul Gervase, Adam Serwinowski, Ben Rortvedt and Alex Call in deadline transactions, while trading Dustin May.","expectedDirection":"positive","whyCouldMoveOdds":"A multi-player deadline reshaped pitching and roster depth for the stretch run, a direct signal about championship intent.","source":{"url":"https://www.mlb.com/dodgers/roster/transactions/2025/07","publishedAt":"2025-07-31T00:00:00Z","role":"MLB official transactions; date shown, exact time unavailable"}},
+        {"id":"nl-west","date":"2025-09-25","title":"Dodgers clinch the NL West","claim":"Los Angeles beat Arizona 8–0 to clinch a fourth straight NL West title and its 12th division title in 13 years.","expectedDirection":"positive","whyCouldMoveOdds":"The division title secures a playoff berth and confirms a season-long contender despite a less dominant regular-season record than expected.","source":{"url":"https://www.mlb.com/news/dodgers-win-2025-nl-west-title","publishedAt":"2025-09-26T00:00:00Z","role":"MLB official recap; page date shown, exact time unavailable"}},
+        {"id":"nlcs-pennant","date":"2025-10-17","title":"Dodgers sweep Brewers to win the NL pennant","claim":"Los Angeles beat Milwaukee 5–1 in NLCS Game 4; Shohei Ohtani hit three home runs, struck out 10 and pitched six scoreless innings as the Dodgers completed a four-game sweep.","expectedDirection":"positive","whyCouldMoveOdds":"The defending champion reached the World Series with its star performing as a two-way ace, reducing the title path to one series.","source":{"url":"https://www.mlb.com/dodgers/news/dodgers-win-2025-nlcs","publishedAt":"2025-10-18T00:00:00Z","role":"MLB official recap; page date shown, exact time unavailable"}}
+      ],
+      "ending":{"text":"The Dodgers defeated Toronto 5–4 in 11 innings in Game 7 on November 1, 2025, becoming MLB's first repeat champions since 1998–2000. The Polymarket Dodgers outcome resolved as the winner.","source":"https://www.mlb.com/news/dodgers-win-2025-world-series?sf104662642=1"},
+      "observedMovement":"Not claimed. Exact token/history packet is missing and must be retrieved before measurement."
+    }
+  ]
+}

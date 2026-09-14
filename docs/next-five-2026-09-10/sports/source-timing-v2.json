@@ -1,0 +1,24 @@
+{
+  "preparedAt": "2026-09-10T16:20:56.989423+00:00",
+  "frozenBeforeNewScoring": true,
+  "timings": {
+    "cup-loss": {
+      "publishedAt": "2024-12-18T14:40:15Z",
+      "updatedAt": "2024-12-18T14:40:15Z",
+      "informationKnownAt": "2024-12-18T14:40:15Z",
+      "rule": "Latest declared article update; not first event instant."
+    },
+    "chet-return": {
+      "publishedAt": "2025-02-06T15:00:14Z",
+      "updatedAt": "2025-02-08T06:38:24Z",
+      "informationKnownAt": "2025-02-08T06:38:24Z",
+      "rule": "Latest declared article update; not first event instant."
+    },
+    "denver-game-seven": {
+      "publishedAt": "2025-05-19T01:11:50Z",
+      "updatedAt": "2025-05-19T11:48:17Z",
+      "informationKnownAt": "2025-05-19T11:48:17Z",
+      "rule": "Latest declared article update; not first event instant."
+    }
+  }
+}

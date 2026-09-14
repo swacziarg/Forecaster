@@ -1,0 +1,452 @@
+{
+  "id": "nyc-mamdani-2025-v2",
+  "slug": "nyc-mamdani-2025",
+  "category": "Politics",
+  "version": 2,
+  "status": "editorial-review",
+  "question": "Will Zohran Mamdani win the 2025 NYC mayoral election?",
+  "orientation": "Historical YES-contract series study. Contract prices are observed market data, not a forecast or causal assessment.",
+  "market": {
+    "id": "538932",
+    "provider": "Polymarket",
+    "title": "Will Zohran Mamdani win the 2025 NYC mayoral election?",
+    "rules": "YES if Mamdani wins the November 4, 2025 NYC general election; AP, Fox News and NBC agreement or official certification determines resolution.",
+    "openedAt": "2025-04-22T16:10:05.987Z",
+    "closedAt": "2025-11-05T05:44:47Z",
+    "status": "settled",
+    "resolutionSourceUrl": "https://vote.nyc/page/election-results-summary-2025",
+    "marketUrl": "https://polymarket.com/event/new-york-city-mayoral-election/will-zohran-mamdani-win-the-2025-nyc-mayoral-election"
+  },
+  "contract": {
+    "id": "33945469250963963541781051637999677727672635213493648594066577298999471399137",
+    "proposition": "Zohran Mamdani wins the 2025 NYC mayoral election",
+    "nativeSide": "YES",
+    "selectedPerspective": "YES",
+    "resolution": "YES"
+  },
+  "dataset": {
+    "id": "polymarket-nyc-mamdani-2025-hourly-v1",
+    "provider": "Polymarket",
+    "path": "docs/launch-queue-research/datasets/nyc-hourly.csv",
+    "rawPath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/data/nyc-raw-bundle.json",
+    "marketMetadataPath": "docs/launch-queue-research/evidence/nyc-event.json",
+    "manifestPath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/data/audited-file-hashes.json",
+    "rawSha256": "9723bf56433b040c8c1e31e244b5ae326c52454d32c302369b118c6e635028bc",
+    "marketMetadataSha256": "0fc388ea6ee570076fea0cb6be694c02138f19d57b39ce167381a08db8e06b01",
+    "normalizedSha256": "a2bf3f12c21289f5718135859fe0018819a595a958503a2b096a7bd474560b13",
+    "retrievedAt": "2026-09-06T05:12:35Z",
+    "coverageStart": "2025-04-22T17:00:00Z",
+    "coverageEnd": "2025-11-05T05:00:00Z",
+    "fullMarketLifetime": false,
+    "cadenceMinutes": 60,
+    "transformVersion": "polymarket-hourly-v1",
+    "provenanceUrl": "https://docs.polymarket.com/api-reference/markets/get-prices-history",
+    "requestParameters": "token_id=33945469250963963541781051637999677727672635213493648594066577298999471399137; fidelity=60; bounded hourly chunks; latest source price per UTC hour; no filling",
+    "rawHashMeaning": "SHA-256 of rawPath bundle; individual original response file byte hashes are also retained inside it.",
+    "normalizedHashMeaning": "SHA-256 of the exact CSV at dataset.path. Previous draft put the CSV hash in rawSha256 and the separately normalized JSON hash in normalizedSha256."
+  },
+  "measurementProfile": {
+    "id": "months-hourly-v1",
+    "label": "Months / hourly",
+    "cadenceMinutes": 60,
+    "anticipation": {
+      "startHours": -84,
+      "endHours": -12
+    },
+    "reference": {
+      "startHours": -12,
+      "endHours": 0
+    },
+    "immediate": {
+      "startHours": 0,
+      "endHours": 6
+    },
+    "stabilized": {
+      "startHours": 18,
+      "endHours": 36
+    },
+    "delayed": {
+      "startHours": 48,
+      "endHours": 72
+    },
+    "quality": {
+      "minimumCoverage": 0.6,
+      "maximumGapShare": 0.5,
+      "minimumDistinctUpdates": 3,
+      "maximumSpread": 0.2
+    },
+    "tieThreshold": 0.01
+  },
+  "measurementNotes": [
+    "The six missing hourly buckets are preserved and not filled.",
+    "Source timestamps are conservative public by bounds. They do not claim the first public minute unless the retained source supports it.",
+    "Version 2 uses original candidate posts or earlier contemporaneous confirmation instead of later coverage. Announcement versus post-publication uncertainty is disclosed in each source.",
+    "Primary-night response includes rolling returns; it is not isolated concession causality. Original NYT endorsement timings could not be independently established, so AOC/ Hochul use the earliest retained supported bounds with wider sensitivity checks.",
+    "Market closedAt comes from provider closedTime; an exact settlement time is not asserted. Retrospective court/archive/election records have unknown publication times and are excluded from pre-reveal evidence.",
+    "Audit corrected raw versus normalized file-hash labels. Original provider responses and CSV bytes remain unchanged."
+  ],
+  "presentation": {
+    "topicLabel": "NYC mayoral contract",
+    "selectedContractShort": "YES",
+    "selectedContractLong": "Observed YES-contract price",
+    "seriesLabel": "Polymarket YES contract price",
+    "positiveLabel": "Higher observed contract price",
+    "negativeLabel": "Lower observed contract price",
+    "positiveShortLabel": "Higher",
+    "negativeShortLabel": "Lower",
+    "neutralLabel": "No detectable change",
+    "eventNoun": "development",
+    "timezone": "UTC",
+    "accent": "#7C3AED",
+    "zoomChoices": [
+      {
+        "label": "All",
+        "hours": null
+      },
+      {
+        "label": "30 days",
+        "hours": 720
+      },
+      {
+        "label": "7 days",
+        "hours": 168
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "aoc-post",
+      "title": "Mamdani acknowledges AOC endorsement",
+      "publisher": "Zohran Mamdani / Bluesky",
+      "url": "https://public.api.bsky.app/xrpc/app.bsky.feed.getPostThread?uri=at%3A%2F%2Fdid%3Aplc%3Aj5hrotody26iqi24hcusufxu%2Fapp.bsky.feed.post%2F3lqucxtqkss2o&depth=0",
+      "publishedAt": "2025-06-05T12:27:13.349Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-06T05:12:35.948993Z",
+      "snapshotHash": "5485b67f4a3d31aadd21e48e867de15f90e45b59c4cf6ac3b4e898c9482c1454",
+      "timestampMeaning": "indexedAt is the observed API indexing bound; createdAt belongs to Mamdani’s acknowledgement, not AOC’s original announcement."
+    },
+    {
+      "id": "primary-cnn",
+      "title": "Contemporary primary-night concession coverage",
+      "publisher": "CNN",
+      "url": "https://transcripts.cnn.com/show/lcl/date/2025-06-24/segment/01",
+      "publishedAt": "2025-06-25T04:00:00Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-06T05:44:52.313242Z",
+      "snapshotHash": "d5292cf4d645506a17e013a8ba59f7cb93ce7035755fd5d4ff5b3c92c45f08f2",
+      "timestampMeaning": "End of broadcast bracket, not HTML publication time. Superseded for scoring by earlier eyewitness report."
+    },
+    {
+      "id": "primary-fox",
+      "title": "Cuomo concedes as Mamdani leads",
+      "publisher": "FOX5 New York",
+      "url": "https://www.fox5ny.com/election/zohran-mamdani-lead-cuomo-concedes/",
+      "publishedAt": "2025-06-25T02:44:46Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-06T05:12:36.481940Z",
+      "snapshotHash": "238efdf81aa93865d0ec1a6f9b94bc51fcc6c8002e7584e1e24494f089daae4f",
+      "timestampMeaning": "Retained article metadata; final updated content is not used for the tighter pre-reveal cutoff."
+    },
+    {
+      "id": "cuomo-ny1",
+      "title": "Cuomo officially launches independent bid for mayor",
+      "publisher": "NY1",
+      "url": "https://ny1.com/nyc/all-boroughs/politics/2025/07/14/andrew-cuomo-officially-launches-independent-bid-for-mayor",
+      "publishedAt": "2025-07-14T19:03:00Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-06T00:26:49.354638Z",
+      "snapshotHash": "9145f6f540b7d79181de43fde006d1a679ee04fdd90e7f1bbb4e4a1f59254699"
+    },
+    {
+      "id": "adams-ny1",
+      "title": "Mayor Eric Adams ends his reelection bid",
+      "publisher": "NY1",
+      "url": "https://ny1.com/nyc/all-boroughs/politics/2025/09/28/eric-adams-drops-out",
+      "publishedAt": "2025-09-28T17:18:00Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-06T13:54:10.085632Z",
+      "snapshotHash": "d45098d3aaf4d8aa26ae2982274ad2e704aaabd006ed13dd7061d9501e1673be"
+    },
+    {
+      "id": "adams-court",
+      "title": "Court record preserving Adams announcement timing",
+      "publisher": "U.S. Courts",
+      "url": "https://www.govinfo.gov/content/pkg/USCOURTS-nyed-1_25-cv-04558/pdf/USCOURTS-nyed-1_25-cv-04558-0.pdf",
+      "publishedAt": "",
+      "publishedPrecision": "unknown",
+      "retrievedAt": "2026-09-06T13:54:11.160828Z",
+      "snapshotHash": "e7153916b8004562a4a7da97f4a5dcae25e6328a3071972d01a4b264792d8149",
+      "timestampMeaning": "Historical announcement/election time is not publication time of this retrospective record. Exact publication time unverified."
+    },
+    {
+      "id": "adams-archive",
+      "title": "Archived original Adams post",
+      "publisher": "Perma.cc",
+      "url": "https://perma.cc/B8BX-S9BU",
+      "publishedAt": "",
+      "publishedPrecision": "unknown",
+      "retrievedAt": "2026-09-06T05:12:36.081702Z",
+      "snapshotHash": "bde50921be3d427d450aa5bbfe1ec2e01bdbe43bde55deefbc0bce47dd74d6fa",
+      "timestampMeaning": "Historical announcement/election time is not publication time of this retrospective record. Exact publication time unverified."
+    },
+    {
+      "id": "hochul-ny1",
+      "title": "Hochul endorses Mamdani in NYC mayor's race",
+      "publisher": "NY1",
+      "url": "https://ny1.com/nyc/arts/news/2025/09/15/hochul-endorses-mamdani-in-nyc-mayor-s-race",
+      "publishedAt": "2025-09-15T00:31:00Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-06T00:26:49.325995Z",
+      "snapshotHash": "d08b3d2e38a39cf560fb1324ad60416e86f50b33cf87d7395a78506bb2e11f4b"
+    },
+    {
+      "id": "nyc-ending",
+      "title": "2025 NYC election results summary",
+      "publisher": "New York City Board of Elections",
+      "url": "https://vote.nyc/page/election-results-summary-2025",
+      "publishedAt": "",
+      "publishedPrecision": "unknown",
+      "retrievedAt": "2026-09-06T05:27:18.404407Z",
+      "snapshotHash": "a2d160e2a2c7b1008a13d2738ca39f89092e2d5ebbb4cd4369cb5470d153ec78",
+      "timestampMeaning": "Historical announcement/election time is not publication time of this retrospective record. Exact publication time unverified."
+    },
+    {
+      "id": "aoc-confirmation",
+      "title": "NY1: campaigns confirm AOC endorsement",
+      "publisher": "Spectrum NY1",
+      "url": "https://ny1.com/nyc/All-Boroughs/politics/2025/06/05/mamdani-picks-up-endorsement-from-alexandria-ocasio-cortez-",
+      "publishedAt": "2025-06-05T11:05:00Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-10T16:56:34.052383+00:00",
+      "snapshotHash": "85e000dd566dd50be9be8635b148bba3f04eb5ec7b57266f42ecbc2281c7c715",
+      "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/nyc/aoc-ny1.html",
+      "snapshotKind": "original-report",
+      "captureMeaning": "Original reporting publication, confirmed directly with both campaigns. Earliest retained supported bound; original NYT interview inaccessible, so exact first-public minute remains uncertain."
+    },
+    {
+      "id": "primary-reporter-post",
+      "title": "Reporter at Cuomo concession",
+      "publisher": "Annie McDonough / City & State",
+      "url": "https://twitter.com/Annie_McDonough/status/1937698802670146006",
+      "publishedAt": "2025-06-25T02:26:09.916000Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-10T16:56:34.052383+00:00",
+      "snapshotHash": "8a0423881e85db8a015a5873d5fa37202ac833c6e1ad4bcc2c198efe2c68251e",
+      "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/nyc/primary-citystate.html",
+      "snapshotKind": "embedded-original-post",
+      "captureMeaning": "Original eyewitness post ID and text embedded in live blog. Snowflake supplies post time; live blog labels concession 10:25pm. This is reporting of the concession, not certified primary results."
+    },
+    {
+      "id": "cuomo-announcement",
+      "title": "Cuomo independent campaign video",
+      "publisher": "Andrew Cuomo",
+      "url": "https://twitter.com/andrewcuomo/status/1944829573222338765",
+      "publishedAt": "2025-07-14T18:41:18.099000Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-10T16:56:34.052383+00:00",
+      "snapshotHash": "9145f6f540b7d79181de43fde006d1a679ee04fdd90e7f1bbb4e4a1f59254699",
+      "capturePath": "docs/launch-queue-research/evidence/nyc-cuomo.html",
+      "snapshotKind": "embedded-original-post",
+      "captureMeaning": "Original candidate video post ID embedded in NY1 report. Post caption and reporting establish independent continuation. Snowflake time is original post creation, not article update."
+    },
+    {
+      "id": "hochul-announcement",
+      "title": "Hochul endorses Mamdani",
+      "publisher": "Kathy Hochul",
+      "url": "https://twitter.com/KathyHochul/status/1967369861493072135",
+      "publishedAt": "2025-09-14T23:28:21.601000Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-10T16:56:34.052383+00:00",
+      "snapshotHash": "d08b3d2e38a39cf560fb1324ad60416e86f50b33cf87d7395a78506bb2e11f4b",
+      "capturePath": "docs/launch-queue-research/evidence/nyc-hochul.html",
+      "snapshotKind": "embedded-original-post",
+      "captureMeaning": "Original governor post embedded in NY1 report links her endorsement op-ed. Original op-ed timestamp inaccessible; this is a supported public-by bound, not guaranteed first public instant."
+    },
+    {
+      "id": "adams-announcement",
+      "title": "Adams withdrawal announcement",
+      "publisher": "Eric Adams",
+      "url": "https://twitter.com/ericadamsfornyc/status/1972348511892262962",
+      "publishedAt": "2025-09-28T17:11:44.355000Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-10T16:56:34.052383+00:00",
+      "snapshotHash": "d45098d3aaf4d8aa26ae2982274ad2e704aaabd006ed13dd7061d9501e1673be",
+      "capturePath": "docs/launch-queue-research/evidence/nyc-adams-ny1.html",
+      "snapshotKind": "embedded-original-post",
+      "captureMeaning": "Original candidate video post embedded in contemporaneous NY1 reporting; separately preserved in Perma archive and later court record. Snowflake time is post creation. Court filing publication is not backdated."
+    }
+  ],
+  "events": [
+    {
+      "id": "aoc-endorsement",
+      "title": "Alexandria Ocasio-Cortez endorses Zohran Mamdani",
+      "shortTitle": "AOC endorsement",
+      "occurredAt": "2025-06-05T11:05:00Z",
+      "informationKnownAt": "2025-06-05T11:05:00Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "dateLabel": "Jun 5",
+      "category": "Endorsement",
+      "mechanism": "A nationally recognizable endorsement can signal outsider momentum and coalition support.",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "aoc-fact",
+          "text": "Alexandria Ocasio-Cortez endorses Zohran Mamdani for New York City mayor.",
+          "knownAt": "2025-06-05T11:05:00Z",
+          "sourceIds": [
+            "aoc-confirmation"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "aoc-confirmation",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "The observed contract response was small immediately and larger over the delayed window; this is descriptive, not causal.",
+      "competingExplanation": "Other endorsements, polling and ranked-choice strategy were also in the information set.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "primary-breakthrough",
+      "title": "Cuomo concedes the Democratic primary to Mamdani",
+      "shortTitle": "Primary breakthrough",
+      "occurredAt": "2025-06-25T02:26:09.916000Z",
+      "informationKnownAt": "2025-06-25T02:26:09.916000Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "dateLabel": "Jun 24",
+      "category": "Primary election",
+      "mechanism": "A primary-night breakthrough strengthens Mamdani’s position for November; Cuomo could still run independently.",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "primary-fact",
+          "text": "Contemporary primary-night coverage reports Andrew Cuomo conceding the Democratic primary to Zohran Mamdani.",
+          "knownAt": "2025-06-25T02:26:09.916000Z",
+          "sourceIds": [
+            "primary-reporter-post"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "primary-reporter-post",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "The measured window includes rolling primary returns before the concession. It is a primary-night information cluster, not the isolated effect of conceding.",
+      "competingExplanation": "Returns were already rolling in before the concession and other primary-night reports shared the window.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "cuomo-independent",
+      "title": "Cuomo announces he will continue as an independent",
+      "shortTitle": "Cuomo independent bid",
+      "occurredAt": "2025-07-14T18:41:18.099000Z",
+      "informationKnownAt": "2025-07-14T18:41:18.099000Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "dateLabel": "Jul 14",
+      "category": "Candidate change",
+      "mechanism": "A defeated rival returning to the general election preserves a credible anti-Mamdani lane.",
+      "expectedDirection": "negative",
+      "claims": [
+        {
+          "id": "cuomo-fact",
+          "text": "Andrew Cuomo announces that he will continue running for mayor as an independent.",
+          "knownAt": "2025-07-14T18:41:18.099000Z",
+          "sourceIds": [
+            "cuomo-announcement"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "cuomo-announcement",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "The observed response was modestly lower; the window does not establish causality.",
+      "competingExplanation": "The independent bid had been discussed earlier and was not wholly new information.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "hochul-endorsement",
+      "title": "Governor Kathy Hochul endorses Mamdani",
+      "shortTitle": "Hochul endorsement",
+      "occurredAt": "2025-09-14T23:28:21.601000Z",
+      "informationKnownAt": "2025-09-14T23:28:21.601000Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "dateLabel": "Sep 14",
+      "category": "Endorsement",
+      "mechanism": "A major party establishment endorsement can broaden coalition support for the insurgent nominee.",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "hochul-fact",
+          "text": "Governor Kathy Hochul endorses Zohran Mamdani for New York City mayor.",
+          "knownAt": "2025-09-14T23:28:21.601000Z",
+          "sourceIds": [
+            "hochul-announcement"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "hochul-announcement",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "The observed response was modestly higher; surrounding September campaign news also matters.",
+      "competingExplanation": "The endorsement followed public discussions and coalition expectations.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "adams-exit",
+      "title": "Mayor Eric Adams ends his reelection campaign",
+      "shortTitle": "Adams exits",
+      "occurredAt": "2025-09-28T17:11:44.355000Z",
+      "informationKnownAt": "2025-09-28T17:11:44.355000Z",
+      "precision": "minute",
+      "timezone": "America/New_York",
+      "dateLabel": "Sep 28",
+      "category": "Candidate change",
+      "mechanism": "An incumbent exit changes the opposition field and possible vote distribution.",
+      "expectedDirection": "ambiguous",
+      "claims": [
+        {
+          "id": "adams-fact",
+          "text": "Mayor Eric Adams ends his reelection campaign.",
+          "knownAt": "2025-09-28T17:11:44.355000Z",
+          "sourceIds": [
+            "adams-announcement"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "adams-announcement",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "The observed response was modestly lower; it is a descriptive association, not a causal estimate.",
+      "competingExplanation": "Withdrawal was publicly speculated about and another major anti-Mamdani candidate remained.",
+      "attributionAssessment": "mixed"
+    }
+  ],
+  "contextMarkers": [],
+  "conclusion": {
+    "title": "Reveal-only resolution",
+    "text": "Zohran Mamdani won the November 4, 2025 NYC mayoral general election. The Board of Elections record is retrospective and excluded from all five pre-reveal cards.",
+    "sourceId": "nyc-ending"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "dataset": {
+    "id": "polymarket-nyc-mamdani-2025-hourly-v1",
+    "provider": "Polymarket",
+    "path": "/data/next-five/nyc-mamdani-2025-v2/hourly.csv",
+    "rawPath": "/data/next-five/nyc-mamdani-2025-v2/raw-history.json",
+    "marketMetadataPath": "/data/next-five/nyc-mamdani-2025-v2/market.json",
+    "manifestPath": "/data/next-five/nyc-mamdani-2025-v2/manifest.json",
+    "rawSha256": "9723bf56433b040c8c1e31e244b5ae326c52454d32c302369b118c6e635028bc",
+    "marketMetadataSha256": "0fc388ea6ee570076fea0cb6be694c02138f19d57b39ce167381a08db8e06b01",
+    "normalizedSha256": "a2bf3f12c21289f5718135859fe0018819a595a958503a2b096a7bd474560b13",
+    "retrievedAt": "2026-09-06T05:12:35Z",
+    "coverageStart": "2025-04-22T17:00:00Z",
+    "coverageEnd": "2025-11-05T05:00:00Z",
+    "fullMarketLifetime": false,
+    "cadenceMinutes": 60,
+    "transformVersion": "polymarket-hourly-v1",
+    "provenanceUrl": "https://docs.polymarket.com/api-reference/markets/get-prices-history",
+    "requestParameters": "token_id=33945469250963963541781051637999677727672635213493648594066577298999471399137; fidelity=60; bounded hourly chunks; latest source price per UTC hour; no filling",
+    "rawHashMeaning": "SHA-256 of rawPath bundle; individual original response file byte hashes are also retained inside it.",
+    "normalizedHashMeaning": "SHA-256 of the exact CSV at dataset.path. Previous draft put the CSV hash in rawSha256 and the separately normalized JSON hash in normalizedSha256."
+  },
+  "sourceDraft": "docs/next-five-2026-09-10/audit-other/nyc/study-draft-v2.json",
+  "reviewedStudySha256": "f8a81323b69c109dc0ee35e660081e26059f7f2e20d332b76f3cdb05519915b7",
+  "packaging": "Original dataset bytes copied unchanged; runtime paths and hashes verified."
+}

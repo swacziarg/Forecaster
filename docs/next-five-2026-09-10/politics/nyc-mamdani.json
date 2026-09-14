@@ -1,0 +1,40 @@
+{
+  "artifactType": "NexusPoint candidate edition",
+  "title": "The New York upset",
+  "category": "Politics",
+  "status": "editorial-review",
+  "contract": {
+    "provider": "Polymarket",
+    "marketId": "538932",
+    "tokenId": "33945469250963963541781051637999677727672635213493648594066577298999471399137",
+    "question": "Will Zohran Mamdani win the 2025 NYC mayoral election?",
+    "selectedSide": "YES",
+    "resolvedOutcome": "YES",
+    "marketUrl": "https://polymarket.com/event/new-york-city-mayoral-election/will-zohran-mamdani-win-the-2025-nyc-mayoral-election",
+    "resolutionUrl": "https://gamma-api.polymarket.com/markets/538932",
+    "rulesSummary": "YES if Mamdani wins the November 4, 2025 NYC general election; AP, Fox News and NBC agreement or official certification determines resolution."
+  },
+  "dataReadiness": {
+    "status": "ready-for-review-with-editorial-caveat",
+    "series": "docs/launch-queue-research/datasets/nyc-hourly.csv",
+    "seriesSha256": "a2bf3f12c21289f5718135859fe0018819a595a958503a2b096a7bd474560b13",
+    "normalized": "docs/launch-queue-research/evidence/nyc-normalized.json",
+    "normalizedSha256": "53e961b3828d1d393f346b8b65509fee2db504749836dabc36c20df7f3b6ed03",
+    "observations": 4711,
+    "rawRows": 4713,
+    "coverage": "2025-04-22T17:00:00Z/2025-11-05T05:00:00Z",
+    "missingHourlyBuckets": 6,
+    "windowStatus": "25/25 usable",
+    "measurement": "Hourly YES contract price; descriptive percentage-point response, no causal attribution and no missing-bucket filling.",
+    "editorialCaveat": "The primary breakthrough is +33.80 pp; the other four cards range from -1.025 to +1.80 pp. This is a real consequence pattern, but not five similarly sized shocks."
+  },
+  "cards": [
+    {"id":"aoc-endorsement","date":"2025-06-05","publicationTime":"2025-06-05T12:27:13.349Z","timePrecision":"Bluesky indexedAt","text":"Alexandria Ocasio-Cortez endorses Zohran Mamdani for New York City mayor.","sourceUrls":["https://public.api.bsky.app/xrpc/app.bsky.feed.getPostThread?uri=at%3A%2F%2Fdid%3Aplc%3Aj5hrotody26iqi24hcusufxu%2Fapp.bsky.feed.post%2F3lqucxtqkss2o&depth=0"],"whyItMattered":"A nationally recognizable progressive endorsement signaled outsider momentum and coalition support.","observedResponse":"stabilized +0.275 pp; delayed cumulative +3.55 pp","caveat":"The post confirms support but does not prove it was the first public announcement."},
+    {"id":"primary-breakthrough","date":"2025-06-24","publicationTime":"2025-06-25T04:00:00Z","timePrecision":"broadcast upper bound","text":"Andrew Cuomo concedes the Democratic primary to Zohran Mamdani.","sourceUrls":["https://transcripts.cnn.com/show/lcl/date/2025-06-24/segment/01","https://www.fox5ny.com/election/zohran-mamdani-lead-cuomo-concedes/"],"whyItMattered":"The insurgent's primary breakthrough removed the establishment favorite from the Democratic contest and changed the general-election field.","observedResponse":"stabilized +33.80 pp; delayed cumulative +33.775 pp","caveat":"Returns were already rolling in; this card captures the primary-night breakthrough around the concession, not the November resolving result."},
+    {"id":"cuomo-independent","date":"2025-07-14","publicationTime":"2025-07-14T19:03:00Z","timePrecision":"NY1 publication/modification time","text":"Andrew Cuomo announces he will continue running for mayor as an independent.","sourceUrls":["https://ny1.com/nyc/all-boroughs/politics/2025/07/14/andrew-cuomo-officially-launches-independent-bid-for-mayor"],"whyItMattered":"The defeated rival re-entered the general election, preserving a credible anti-Mamdani lane.","observedResponse":"stabilized -0.925 pp; delayed cumulative -1.975 pp","caveat":"The continuation had been discussed earlier, so the announcement confirmed an anticipated option."},
+    {"id":"hochul-endorsement","date":"2025-09-14","publicationTime":"2025-09-15T00:31:00Z","timePrecision":"NY1 publication/modification time","text":"Governor Kathy Hochul endorses Mamdani for New York City mayor.","sourceUrls":["https://ny1.com/nyc/arts/news/2025/09/15/hochul-endorses-mamdani-in-nyc-mayor-s-race"],"whyItMattered":"The sitting governor's support brought a major party establishment figure behind the insurgent nominee.","observedResponse":"stabilized +1.80 pp; delayed cumulative +2.45 pp","caveat":"The endorsement followed public discussions and coalition expectations; the response cannot be isolated from surrounding September news."},
+    {"id":"adams-exit","date":"2025-09-28","publicationTime":"2025-09-28T17:18:00Z","timePrecision":"NY1 publication/modification time","text":"Mayor Eric Adams ends his re-election campaign.","sourceUrls":["https://ny1.com/nyc/all-boroughs/politics/2025/09/28/eric-adams-drops-out","https://www.govinfo.gov/content/pkg/USCOURTS-nyed-1_25-cv-04558/pdf/USCOURTS-nyed-1_25-cv-04558-0.pdf","https://perma.cc/B8BX-S9BU"],"whyItMattered":"The incumbent's exit changed the opposition field and how anti-Mamdani votes could be distributed.","observedResponse":"stabilized -1.025 pp; delayed cumulative -0.875 pp","caveat":"Withdrawal had been speculated about and another major anti-Mamdani candidate remained in the race."}
+  ],
+  "scoring": {"profile":"months-hourly-v1","tieGroups":[["primary-breakthrough"],["hochul-endorsement"],["aoc-endorsement"],["cuomo-independent","adams-exit"]],"initialOrder":["cuomo-independent","aoc-endorsement","hochul-endorsement","primary-breakthrough","adams-exit"],"packet":"docs/launch-queue-research/briefs/005-nyc.json"},
+  "ending": {"text":"Zohran Mamdani won the November 4, 2025 NYC general election; the contract resolved YES.","sourceUrl":"https://vote.nyc/page/election-results-summary-2025","revealOnly":true}
+}

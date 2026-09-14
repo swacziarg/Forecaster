@@ -1,0 +1,90 @@
+[
+  {
+    "edition": "trump",
+    "files": {
+      "path": {
+        "path": "docs/launch-queue-research/datasets/trump-hourly.csv",
+        "sha256": "7756111859cbca9f2185795608029323fb21e9505f0314d4700cf7d8b9cc579d"
+      },
+      "rawPath": {
+        "path": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/data/trump-raw-bundle.json",
+        "sha256": "c001a6215404757baa1b2a0efab0e23aa9ed90d571abdd5cb1ed2b89f6321673"
+      },
+      "marketMetadataPath": {
+        "path": "docs/launch-queue-research/evidence/trump-market.json",
+        "sha256": "7c59b9a4930ed53711cdb971d7f0c15e3a403c4f18e711fa0381ac7b8b993636"
+      }
+    },
+    "originalHashLabels": {
+      "rawSha256": "7756111859cbca9f2185795608029323fb21e9505f0314d4700cf7d8b9cc579d",
+      "normalizedSha256": "7b75c8dd3b85c151c76bded476ae6e32fa3084781c77cfa176f632e527bdd380"
+    },
+    "note": "Only provenance labels/bundle packaging corrected. Original data untouched."
+  },
+  {
+    "edition": "fed",
+    "files": {
+      "path": {
+        "path": "/data/fed-2024/polymarket-hourly.csv",
+        "sha256": "070e10e264ba2f78b4dff984b6fb22d6f2a45305375a71de24c458dfc0dd0d26"
+      },
+      "rawPath": {
+        "path": "/data/fed-2024/raw-prices-history.json",
+        "sha256": "be919d763a5464a2d6198c7cb0ebb7f7ec8d99c1243f50e4bf4f0e2b0a5f67dd"
+      },
+      "marketMetadataPath": {
+        "path": "/data/fed-2024/raw-market.json",
+        "sha256": "efaad084b9ff1cfdbdb481fd9c00450aa23c38ddf8cec55912ff2664eb9ae72e"
+      }
+    },
+    "originalHashLabels": {
+      "rawSha256": "be919d763a5464a2d6198c7cb0ebb7f7ec8d99c1243f50e4bf4f0e2b0a5f67dd",
+      "normalizedSha256": "070e10e264ba2f78b4dff984b6fb22d6f2a45305375a71de24c458dfc0dd0d26"
+    },
+    "note": "Only provenance labels/bundle packaging corrected. Original data untouched."
+  },
+  {
+    "edition": "nyc",
+    "files": {
+      "path": {
+        "path": "docs/launch-queue-research/datasets/nyc-hourly.csv",
+        "sha256": "a2bf3f12c21289f5718135859fe0018819a595a958503a2b096a7bd474560b13"
+      },
+      "rawPath": {
+        "path": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/data/nyc-raw-bundle.json",
+        "sha256": "9723bf56433b040c8c1e31e244b5ae326c52454d32c302369b118c6e635028bc"
+      },
+      "marketMetadataPath": {
+        "path": "docs/launch-queue-research/evidence/nyc-event.json",
+        "sha256": "0fc388ea6ee570076fea0cb6be694c02138f19d57b39ce167381a08db8e06b01"
+      }
+    },
+    "originalHashLabels": {
+      "rawSha256": "a2bf3f12c21289f5718135859fe0018819a595a958503a2b096a7bd474560b13",
+      "normalizedSha256": "53e961b3828d1d393f346b8b65509fee2db504749836dabc36c20df7f3b6ed03"
+    },
+    "note": "Only provenance labels/bundle packaging corrected. Original data untouched."
+  },
+  {
+    "edition": "dodgers",
+    "files": {
+      "path": {
+        "path": "docs/next-five-2026-09-10/sports-dodgers/hourly.csv",
+        "sha256": "d09119662e51d073983ce01096cb239f8205dbb07566b945da1e630a1a431aa8"
+      },
+      "rawPath": {
+        "path": "docs/next-five-2026-09-10/sports-dodgers/raw-history.json",
+        "sha256": "aeb332243b883b899c219e3e3ab87867ebc30f7558a9079a17d51ed62e3271c1"
+      },
+      "marketMetadataPath": {
+        "path": "docs/next-five-2026-09-10/sports-dodgers/raw-market.json",
+        "sha256": "18f0e41653d894c5e7a38f85ae83aa94f2080b587e3a4107163b02a853b1179d"
+      }
+    },
+    "originalHashLabels": {
+      "rawSha256": "aeb332243b883b899c219e3e3ab87867ebc30f7558a9079a17d51ed62e3271c1",
+      "normalizedSha256": "d09119662e51d073983ce01096cb239f8205dbb07566b945da1e630a1a431aa8"
+    },
+    "note": "Only provenance labels/bundle packaging corrected. Original data untouched."
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "preparedAt": "2026-09-10T16:19:55.509397+00:00",
+  "selectionReason": "Replace routine opener and final season record with high-profile cup adversity and a key starter’s return; replace routine first-round sweep with a Game 7 elimination test. Retain major injury and Finals berth. This improves narrative significance after editorial review of v1.",
+  "priorScoreVisibility": "The first set and its corrected cutoffs have been scored. New replacements selected before calculating their response windows; no candle search.",
+  "newCards": [
+    {
+      "id": "cup-loss",
+      "date": "2024-12-17",
+      "title": "Thunder lose the NBA Cup final to Milwaukee",
+      "fact": "The Bucks win 97–81.",
+      "url": "https://www.nba.com/news/starting-5-dec-18-2024",
+      "direction": "negative",
+      "mechanism": "A high-profile loss to an experienced contender tests whether the young team is ready for postseason pressure. The Cup is separate from the NBA championship and does not resolve this contract."
+    },
+    {
+      "id": "chet-return",
+      "date": "2025-02-07",
+      "title": "Chet Holmgren returns from injury",
+      "fact": "The center rejoins the Thunder after nearly three months out.",
+      "url": "https://www.nba.com/news/thunder-chet-holmgren-to-return-friday",
+      "direction": "positive",
+      "mechanism": "Restoring a key two-way starter improves depth and lineup options. An announced return may already be anticipated."
+    },
+    {
+      "id": "denver-game-seven",
+      "date": "2025-05-18",
+      "title": "Thunder eliminate Denver in Game 7",
+      "fact": "Oklahoma City reaches the Western Conference finals.",
+      "url": "https://www.nba.com/news/nuggets-thunder-takeaways-game-7-2025-nba-playoffs",
+      "direction": "positive",
+      "mechanism": "Surviving an elimination game against a recent champion removes a major title obstacle. Other playoff results share the window."
+    }
+  ],
+  "eventIds": [
+    "chet-injury",
+    "cup-loss",
+    "chet-return",
+    "denver-game-seven",
+    "west-finals"
+  ],
+  "initialOrder": [
+    "chet-return",
+    "cup-loss",
+    "west-finals",
+    "chet-injury",
+    "denver-game-seven"
+  ]
+}

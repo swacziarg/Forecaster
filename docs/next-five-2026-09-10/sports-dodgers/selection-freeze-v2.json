@@ -1,0 +1,62 @@
+{
+  "preparedAt": "2026-09-10T16:07:21.084924+00:00",
+  "revision": 2,
+  "supersedes": "selection-freeze.json",
+  "priceVisibilityDisclosure": "Version 1 scores were reviewed. These replacements were selected for star relevance, meaningful adversity and a dramatic playoff event before calculating their event-window scores. No candle search or anchor tuning was used. Retained pennant card already measured in version 1.",
+  "selectionReason": "Independent Luna editorial review judged minor reliever and routine division clinch weak. Use Glasnow injury, Ohtani return, prolonged slump and meaningful playoff progress.",
+  "cards": [
+    {
+      "id": "glasnow-injury",
+      "date": "2025-04-28",
+      "title": "Tyler Glasnow goes on the injured list",
+      "fact": "Shoulder inflammation sidelines the Dodgers starter.",
+      "sourceUrl": "https://www.mlb.com/news/tyler-glasnow-injured-list-shoulder-inflammation",
+      "rationale": "Losing a leading starter threatens rotation depth and the postseason pitching plan. The earlier exit may have priced in part of the news.",
+      "direction": "negative"
+    },
+    {
+      "id": "ohtani-return",
+      "date": "2025-06-16",
+      "title": "Ohtani makes his Dodgers pitching debut",
+      "fact": "He allows one run in one inning.",
+      "sourceUrl": "https://www.mlb.com/news/shohei-ohtani-makes-dodgers-pitching-debut",
+      "rationale": "A two-way superstar returning to the mound offers a meaningful new option for the title defense. The return was announced earlier and Sasaki injury news shares this window.",
+      "direction": "positive"
+    },
+    {
+      "id": "seven-losses",
+      "date": "2025-07-11",
+      "title": "Dodgers lose their seventh straight game",
+      "fact": "Their division lead shrinks to four games.",
+      "sourceUrl": "https://www.mlb.com/dodgers/news/dodgers-lose-7th-straight-game",
+      "rationale": "A sustained slump challenges confidence in the favorite and tightens the division race. Much of the deterioration may have been reflected before the seventh loss.",
+      "direction": "negative"
+    },
+    {
+      "id": "nlds-escape",
+      "date": "2025-10-09",
+      "title": "Dodgers advance on an 11th-inning throwing error",
+      "fact": "Los Angeles eliminates Philadelphia from the NLDS.",
+      "sourceUrl": "https://www.mlb.com/news/dodgers-win-nlds-2025-vs-phillies",
+      "rationale": "A tense elimination of a major contender removes another playoff hurdle. Earlier series wins and other teams’ results also shape the title market.",
+      "direction": "positive"
+    },
+    {
+      "id": "pennant-sweep",
+      "date": "2025-10-17",
+      "title": "Dodgers sweep Milwaukee to reach the World Series",
+      "fact": "Ohtani hits three home runs in the clincher.",
+      "sourceUrl": "https://www.mlb.com/dodgers/news/dodgers-win-2025-nlcs",
+      "sourceDate": "2025-10-18",
+      "rationale": "Only the championship series remains; this is advancement toward the contract outcome, not the resolving victory.",
+      "direction": "positive"
+    }
+  ],
+  "initialOrder": [
+    "seven-losses",
+    "nlds-escape",
+    "glasnow-injury",
+    "pennant-sweep",
+    "ohtani-return"
+  ]
+}

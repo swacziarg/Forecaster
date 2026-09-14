@@ -1,0 +1,24 @@
+{
+  "id": "gpt5-release-august-2025-five-card-v1",
+  "status": "conditional-review",
+  "topic": "technology",
+  "title": "The countdown to GPT-5",
+  "market": {
+    "provider": "Polymarket",
+    "eventUrl": "https://polymarket.com/event/what-day-will-gpt-5-be-released-on",
+    "contractText": "What day will GPT-5 be released?",
+    "resolvedOutcome": "August 7, 2025",
+    "resolutionDate": "2025-08-07",
+    "rulesSource": "https://polymarket.com/event/what-day-will-gpt-5-be-released-on"
+  },
+  "events": [
+    {"id":"gpt45-preview","date":"2025-02-27","headline":"OpenAI releases GPT-4.5 as a research preview","source":"https://openai.com/index/introducing-gpt-4-5/","sourceDate":"2025-02-27","direction":"negative","plausibleImpact":"A large interim GPT release could make an imminent GPT-5 launch less likely while clarifying the product ladder."},
+    {"id":"gpt41-api","date":"2025-04-14","headline":"OpenAI launches the GPT-4.1 family in its API","source":"https://openai.com/index/gpt-4-1/","sourceDate":"2025-04-14","direction":"ambiguous","plausibleImpact":"A new named family and the announced GPT-4.5 deprecation created information about sequencing and successor timing."},
+    {"id":"o3-o4-mini","date":"2025-04-16","headline":"OpenAI releases o3 and o4-mini and previews o3-pro","source":"https://openai.com/index/introducing-o3-and-o4-mini/","sourceDate":"2025-04-16","direction":"ambiguous","plausibleImpact":"Another frontier-model launch could delay GPT-5, while the promise of a near-term o3-pro release could signal a staged rollout before the next GPT generation."},
+    {"id":"o3-pro","date":"2025-06-10","headline":"OpenAI makes o3-pro available to Pro users and developers","source":"https://openai.com/index/introducing-o3-and-o4-mini/","sourceDate":"2025-06-10","direction":"negative","plausibleImpact":"A major reasoning-model release just weeks before the market's target window could push expectations for GPT-5 later."},
+    {"id":"chatgpt-agent","date":"2025-07-17","headline":"OpenAI introduces ChatGPT agent, combining research and browser action","source":"https://openai.com/index/introducing-chatgpt-agent/","sourceDate":"2025-07-17","direction":"ambiguous","plausibleImpact":"A substantial product launch creates both a possible pre-GPT-5 distraction and evidence that OpenAI was shipping the capabilities expected around a new flagship release."}
+  ],
+  "ending": {"date":"2025-08-07","source":"https://openai.com/index/introducing-gpt-5/","text":"OpenAI announced GPT-5 and made it available to the public; the selected date outcome was August 7. Keep the release announcement separate from the five cards."},
+  "readinessGap":"Exact outcome token, retained same-contract price history, market metadata, and five measured windows still need to be retrieved and hashed. Do not claim any observed market move or score until that packet exists.",
+  "approval":"pending"
+}

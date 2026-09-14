@@ -1,0 +1,24 @@
+{
+  "dataset": {
+    "id": "dodgers-repeat-2025-hourly-v1",
+    "provider": "Polymarket",
+    "path": "/data/next-five/dodgers-repeat-2025-v3/hourly.csv",
+    "rawPath": "/data/next-five/dodgers-repeat-2025-v3/raw-history.json",
+    "marketMetadataPath": "/data/next-five/dodgers-repeat-2025-v3/market.json",
+    "manifestPath": "/data/next-five/dodgers-repeat-2025-v3/manifest.json",
+    "rawSha256": "aeb332243b883b899c219e3e3ab87867ebc30f7558a9079a17d51ed62e3271c1",
+    "marketMetadataSha256": "18f0e41653d894c5e7a38f85ae83aa94f2080b587e3a4107163b02a853b1179d",
+    "normalizedSha256": "d09119662e51d073983ce01096cb239f8205dbb07566b945da1e630a1a431aa8",
+    "retrievedAt": "2026-09-10T16:03:07.145711+00:00",
+    "coverageStart": "2025-02-26T21:00:00.000Z",
+    "coverageEnd": "2025-11-02T07:00:00.000Z",
+    "fullMarketLifetime": false,
+    "cadenceMinutes": 60,
+    "transformVersion": "polymarket-hourly-v1",
+    "provenanceUrl": "https://clob.polymarket.com/prices-history",
+    "requestParameters": "Exact YES token; 10-day chunks, fidelity=60; latest observation per UTC hour; no filling."
+  },
+  "sourceDraft": "docs/next-five-2026-09-10/audit-other/dodgers/study-draft-v3.json",
+  "reviewedStudySha256": "5091abe4904e35410081cf2db8044d322d20d83b2e247d511f441866112448aa",
+  "packaging": "Original dataset bytes copied unchanged; runtime paths and hashes verified."
+}

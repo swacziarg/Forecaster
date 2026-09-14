@@ -1,0 +1,50 @@
+{
+  "policy": "Evidence-driven corrections before viewing corrected scores; prior draft scores already known. Preserve raw prices, five cards, measurement profile, initial order and ties.",
+  "entries": [
+    {
+      "eventId": "aoc-endorsement",
+      "oldCutoff": "2025-06-05T12:27:13.349Z",
+      "newCutoff": "2025-06-05T11:05:00Z",
+      "source": "https://ny1.com/nyc/All-Boroughs/politics/2025/06/05/mamdani-picks-up-endorsement-from-alexandria-ocasio-cortez-",
+      "capture": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/nyc/aoc-ny1.html",
+      "sha256": "85e000dd566dd50be9be8635b148bba3f04eb5ec7b57266f42ecbc2281c7c715",
+      "reason": "Original reporting publication, confirmed directly with both campaigns. Earliest retained supported bound; original NYT interview inaccessible, so exact first-public minute remains uncertain."
+    },
+    {
+      "eventId": "primary-breakthrough",
+      "oldCutoff": "2025-06-25T04:00:00Z",
+      "newCutoff": "2025-06-25T02:26:09.916000Z",
+      "source": "https://twitter.com/Annie_McDonough/status/1937698802670146006",
+      "capture": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/audit-other/nyc/primary-citystate.html",
+      "sha256": "8a0423881e85db8a015a5873d5fa37202ac833c6e1ad4bcc2c198efe2c68251e",
+      "reason": "Original eyewitness post ID and text embedded in live blog. Snowflake supplies post time; live blog labels concession 10:25pm. This is reporting of the concession, not certified primary results."
+    },
+    {
+      "eventId": "cuomo-independent",
+      "oldCutoff": "2025-07-14T19:03:00Z",
+      "newCutoff": "2025-07-14T18:41:18.099000Z",
+      "source": "https://twitter.com/andrewcuomo/status/1944829573222338765",
+      "capture": "docs/launch-queue-research/evidence/nyc-cuomo.html",
+      "sha256": "9145f6f540b7d79181de43fde006d1a679ee04fdd90e7f1bbb4e4a1f59254699",
+      "reason": "Original candidate video post ID embedded in NY1 report. Post caption and reporting establish independent continuation. Snowflake time is original post creation, not article update."
+    },
+    {
+      "eventId": "hochul-endorsement",
+      "oldCutoff": "2025-09-15T00:31:00Z",
+      "newCutoff": "2025-09-14T23:28:21.601000Z",
+      "source": "https://twitter.com/KathyHochul/status/1967369861493072135",
+      "capture": "docs/launch-queue-research/evidence/nyc-hochul.html",
+      "sha256": "d08b3d2e38a39cf560fb1324ad60416e86f50b33cf87d7395a78506bb2e11f4b",
+      "reason": "Original governor post embedded in NY1 report links her endorsement op-ed. Original op-ed timestamp inaccessible; this is a supported public-by bound, not guaranteed first public instant."
+    },
+    {
+      "eventId": "adams-exit",
+      "oldCutoff": "2025-09-28T17:18:00Z",
+      "newCutoff": "2025-09-28T17:11:44.355000Z",
+      "source": "https://twitter.com/ericadamsfornyc/status/1972348511892262962",
+      "capture": "docs/launch-queue-research/evidence/nyc-adams-ny1.html",
+      "sha256": "d45098d3aaf4d8aa26ae2982274ad2e704aaabd006ed13dd7061d9501e1673be",
+      "reason": "Original candidate video post embedded in contemporaneous NY1 reporting; separately preserved in Perma archive and later court record. Snowflake time is post creation. Court filing publication is not backdated."
+    }
+  ]
+}

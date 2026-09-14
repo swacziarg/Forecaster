@@ -1,0 +1,223 @@
+{
+  "retrievedAt": "2026-09-10T16:03:07.145711+00:00",
+  "tokenId": "50056291296373013403053264672448796961558656386670931029485176637893947669174",
+  "requests": [
+    {
+      "path": "history-000.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1740595047&endTs=1741459047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "9aa0092505b009175b423ebf6bf59028fd8ca14784d1c0e1d866c170d3fcf854"
+    },
+    {
+      "path": "history-001.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1741459047&endTs=1742323047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "1eef348ce6c7dd147bdd6ecf97a0cb042e6ab636bd9ba46ccb4d227fe72c157a"
+    },
+    {
+      "path": "history-002.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1742323047&endTs=1743187047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "4e0d99788eda85a5b7a4b3ec68e2fccff6a100b2b070a806d9afdbc93d633b6e"
+    },
+    {
+      "path": "history-003.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1743187047&endTs=1744051047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "b34d9db4d281f2f8c4121c9f8ecd53f3b1a0371b8cc86e64b615186214829421"
+    },
+    {
+      "path": "history-004.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1744051047&endTs=1744915047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "9dd524987da74885c4eb631c5b72d89d6acc9bfa2ec8783d6c773ebe24a13685"
+    },
+    {
+      "path": "history-005.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1744915047&endTs=1745779047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "5715eaa79fd2e1aad466eff1c5fd54a300b99c27b5a36b8077d3e44e38a6938c"
+    },
+    {
+      "path": "history-006.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1745779047&endTs=1746643047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "738460b122e43e6b0f51cc6c9296f1b6192f5de660535352d2a7bb7659d456a0"
+    },
+    {
+      "path": "history-007.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1746643047&endTs=1747507047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "228f0ff326b3fdf0ef7faac417224d3c736f4860eeb1fd92f961a4e0f1d2b073"
+    },
+    {
+      "path": "history-008.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1747507047&endTs=1748371047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "9f212c9c3527ea28720ef260699a479c87397eddf69302b5a0a844e01062eae4"
+    },
+    {
+      "path": "history-009.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1748371047&endTs=1749235047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "f60812cc97fb5ea27fbc67a09a7845278e67e4a7d10928c5ff88e84d69493e84"
+    },
+    {
+      "path": "history-010.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1749235047&endTs=1750099047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "599a01509cbc8528a7ee3dd0c3e81ad77878815b227967e77db52bdb40f19cad"
+    },
+    {
+      "path": "history-011.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1750099047&endTs=1750963047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "870b81789855386b1ed182ab1d897c6b9ba3268582a0ee21b32eb293ec48b56a"
+    },
+    {
+      "path": "history-012.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1750963047&endTs=1751827047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "f1381a16d5358bca05fb73563ef204f6c961a7d29bc490803bbe0b1fa0ebf07b"
+    },
+    {
+      "path": "history-013.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1751827047&endTs=1752691047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "b0d181a809bd22f4f5941d1b554712145a2464ea9baa8e8bbd97e1561e851a28"
+    },
+    {
+      "path": "history-014.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1752691047&endTs=1753555047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "eda4e070de4607aa3c40d337ef89c50e2405c3cb409fe3586d590fc505530052"
+    },
+    {
+      "path": "history-015.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1753555047&endTs=1754419047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "106bf29f77aafb700497419f23fc56a8185fa895d6a932c8a368af97cbaeb88c"
+    },
+    {
+      "path": "history-016.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1754419047&endTs=1755283047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "773366ad095ce2ad087238a5232d2134e11278542517d53c3fc80a37784e2718"
+    },
+    {
+      "path": "history-017.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1755283047&endTs=1756147047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "da67b8388ae5f6cef64e4e8f0aab86a1b912b1304281fae6090711c9e3004d10"
+    },
+    {
+      "path": "history-018.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1756147047&endTs=1757011047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "67d436067ca1ea3008b6d4a7af2702ba9a0c4b532bc15c09eae3cc4e0f821f08"
+    },
+    {
+      "path": "history-019.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1757011047&endTs=1757875047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "3e9ba4b9b5809265b00b24fbcbdb2245d53d85886c39ade098d06da4f4678dd7"
+    },
+    {
+      "path": "history-020.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1757875047&endTs=1758739047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "993a09e8239579e457b53c667124ec964cbd99076beb21351ae655b87e41c4ab"
+    },
+    {
+      "path": "history-021.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1758739047&endTs=1759603047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "157691760cfea2bebcb425c349023d46318814b2c0f3e6dd9d1385055ac742c0"
+    },
+    {
+      "path": "history-022.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1759603047&endTs=1760467047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "899c5d255fc66e2c9d799aaa4428dc944bdd3773daa4c680c4c6d3d6e682723b"
+    },
+    {
+      "path": "history-023.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1760467047&endTs=1761331047&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "8c217ce969abae73332b8da0a5165c33afb59a1da7a501aa78d822db56a30ded"
+    },
+    {
+      "path": "history-024.json",
+      "url": "https://clob.polymarket.com/prices-history?market=50056291296373013403053264672448796961558656386670931029485176637893947669174&startTs=1761331047&endTs=1762128000&fidelity=60",
+      "success": true,
+      "error": null,
+      "sha256": "eebb93836d50b5e34e8899439ee007a53f287c489f899e087331512dad52ee00"
+    },
+    {
+      "path": "perfect-start.html",
+      "url": "https://www.mlb.com/news/shohei-ohtani-hits-walk-off-homer-to-send-dodgers-to-8-0-start",
+      "success": true,
+      "error": null,
+      "sha256": "c06c556493a13da10d2dd647fe180fbab973264be76575284e7820f721105cd0"
+    },
+    {
+      "path": "sasaki-setback.html",
+      "url": "https://www.mlb.com/news/roki-sasaki-faces-setback-no-timeline-for-return",
+      "success": true,
+      "error": null,
+      "sha256": "00601caa8be89c95a515af62fd6eb37355a7f5964e34fa1401dbc47c3a06865b"
+    },
+    {
+      "path": "stewart-deadline.html",
+      "url": "https://www.mlb.com/press-release/dodgers-acquire-brock-stewart",
+      "success": true,
+      "error": null,
+      "sha256": "fd706fd0287acda99b1966bf716b9777898dc4eae14430630cf0965c6d713eac"
+    },
+    {
+      "path": "division-clinch.html",
+      "url": "https://www.mlb.com/news/dodgers-win-2025-nl-west-title",
+      "success": true,
+      "error": null,
+      "sha256": "424cec282e051c6e0b450ceae0511fa6ae21c60cad70c637b8c4eae7dd541df3"
+    },
+    {
+      "path": "pennant-sweep.html",
+      "url": "https://www.mlb.com/dodgers/news/dodgers-win-2025-nlcs",
+      "success": true,
+      "error": null,
+      "sha256": "f6a0ddba16d44a81ed1d2f3598094d83ad6dda772fc41eb0fae5a709c59e055e"
+    },
+    {
+      "path": "ending.html",
+      "url": "https://www.mlb.com/news/dodgers-win-2025-world-series",
+      "success": true,
+      "error": null,
+      "sha256": "fc17ca07a988fa7198a5af347ca6928b0115dd576652500726a2cfb6a4980c15"
+    }
+  ]
+}

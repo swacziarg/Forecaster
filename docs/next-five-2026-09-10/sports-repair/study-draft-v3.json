@@ -1,0 +1,420 @@
+{
+  "id": "thunder-first-title-2025-v3",
+  "slug": "thunder-first-title-2025",
+  "category": "Sports",
+  "version": 3,
+  "status": "editorial-review",
+  "question": "What changed the Thunder’s chance of winning their first title?",
+  "orientation": "November 2024–May 2025. Rank five headlines from the biggest rise in Oklahoma City’s chance of winning the NBA championship to the biggest fall.",
+  "measurementNotes": [
+    "Preserve MONTHS_PROFILE and one-point v2 tie rule. Compare median [-12,0) vs [18,36) hours relative to public result/announcement cutoff. Game reference includes live play, so explicitly compare with a separately reported pre-tip baseline diagnostic.",
+    "Game timestamps describe publicly observable results, not website/PDF upload times. The official scorer PDFs have unknown publication times and are retrospective corroboration only.",
+    "Fracture uses the original team diagnosis release, not the earlier fall report. Return uses the player’s announcement, not a later recap of his first game back.",
+    "Historical price changes are descriptive; no isolated causality is claimed. In-game repricing and other league news can enter event windows.",
+    "The NBA Cup is separate from the June NBA championship contract. Its result does not settle the selected contract.",
+    "All raw observations, gaps, and rejected rows are preserved. No rounding or tie-threshold change was made to improve the puzzle."
+  ],
+  "market": {
+    "id": "507884",
+    "provider": "Polymarket",
+    "title": "Will the Oklahoma City Thunder win the 2025 NBA Finals?",
+    "rules": "YES if Oklahoma City wins the 2024–25 NBA Championship; otherwise NO. The contract can resolve NO when the outcome becomes impossible under NBA rules. Resolution source: NBA information.",
+    "openedAt": "2024-09-24T17:04:06.478Z",
+    "closedAt": "2025-06-23T07:32:33Z",
+    "status": "settled",
+    "resolutionSourceUrl": "https://www.nba.com/game/IND-vs-OKC-0042400407",
+    "marketUrl": "https://polymarket.com/event/nba-champion-2024-2025/will-the-oklahoma-city-thunder-win-the-2025-nba-finals",
+    "volume": 17203993.307106
+  },
+  "contract": {
+    "id": "83527644927648970835156950007024690327726158617181889316317174894904268227846",
+    "proposition": "Oklahoma City Thunder win the 2025 NBA Finals",
+    "nativeSide": "YES",
+    "selectedPerspective": "YES",
+    "resolution": "YES"
+  },
+  "dataset": {
+    "id": "polymarket-thunder-2025-hourly-v1",
+    "provider": "Polymarket",
+    "path": "/data/thunder-first-title-2025/thunder-hourly.csv",
+    "rawPath": "/data/thunder-first-title-2025/thunder-history-raw.json",
+    "marketMetadataPath": "/data/thunder-first-title-2025/nba-champion-2024-2025-metadata.json",
+    "manifestPath": "/data/thunder-first-title-2025/thunder-history-manifest.json",
+    "rawSha256": "e2a215cb995e4fcaf52e923e9809df1dcf78680d91f004cdfb33f328bd523130",
+    "marketMetadataSha256": "15a94415c2be5b93830986e23b76cdae77e5bbaa4e8f68f105c860ec4df6b768",
+    "normalizedSha256": "558a508d02ddf5ef25a91a5a56d95b3e35220e2e82c6bc880626e604ae892664",
+    "retrievedAt": "2026-09-10T16:01:01.306Z",
+    "coverageStart": "2024-09-24T19:00:00Z",
+    "coverageEnd": "2025-06-23T07:00:00Z",
+    "fullMarketLifetime": false,
+    "cadenceMinutes": 60,
+    "transformVersion": "polymarket-hourly-v1",
+    "provenanceUrl": "https://docs.polymarket.com/api-reference/markets/get-prices-history",
+    "requestParameters": "token_id=83527644927648970835156950007024690327726158617181889316317174894904268227846; fidelity=60; 28 ten-day chunks"
+  },
+  "measurementProfile": {
+    "id": "months-hourly-v1",
+    "label": "Months / hourly",
+    "cadenceMinutes": 60,
+    "anticipation": {
+      "startHours": -84,
+      "endHours": -12
+    },
+    "reference": {
+      "startHours": -12,
+      "endHours": 0
+    },
+    "immediate": {
+      "startHours": 0,
+      "endHours": 6
+    },
+    "stabilized": {
+      "startHours": 18,
+      "endHours": 36
+    },
+    "delayed": {
+      "startHours": 48,
+      "endHours": 72
+    },
+    "quality": {
+      "minimumCoverage": 0.6,
+      "maximumGapShare": 0.5,
+      "minimumDistinctUpdates": 3,
+      "maximumSpread": 0.2
+    },
+    "tieThreshold": 0.01
+  },
+  "presentation": {
+    "topicLabel": "Thunder first title",
+    "selectedContractShort": "Thunder win",
+    "selectedContractLong": "Oklahoma City Thunder win the 2025 NBA Finals",
+    "seriesLabel": "Thunder championship probability",
+    "positiveLabel": "Probability rose",
+    "negativeLabel": "Probability fell",
+    "neutralLabel": "Ambiguous",
+    "eventNoun": "basketball moment",
+    "timezone": "America/Chicago",
+    "accent": "#d44b2f",
+    "zoomChoices": [
+      {
+        "label": "All",
+        "hours": null
+      },
+      {
+        "label": "30d",
+        "hours": 720
+      },
+      {
+        "label": "14d",
+        "hours": 336
+      },
+      {
+        "label": "7d",
+        "hours": 168
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "cup-loss-live-result",
+      "title": "NBA live game result: cup-loss",
+      "publisher": "NBA (public live game)",
+      "url": "https://www.nba.com/game/0062400001",
+      "publishedAt": "2024-12-18T04:02:00Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-10T16:48:40.949872+00:00",
+      "snapshotHash": "b14142fb0c3a5d257162359fe8a998d2d5edccfa4bc0fe1bb1bfd5768ade81b4",
+      "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/sports-repair/games/cup-book.pdf",
+      "sourceIdentity": "public-live-event",
+      "snapshotKind": "retrospective-evidence",
+      "snapshotSourceId": "cup-loss-scorebook",
+      "captureMeaning": "Retrospective official record of the live event, not an archived webpage or a recording of the broadcast.",
+      "timestampMeaning": "Historical public game result, not publication time of this mutable page or the subsequently retrieved PDF. Reconstructed from official scorer record and arena timezone."
+    },
+    {
+      "id": "cup-loss-scorebook",
+      "title": "Official NBA scorer report: cup-loss",
+      "publisher": "NBA official scorer",
+      "url": "https://statsdmz.nba.com/pdfs/20241217/20241217_MILOKC_book.pdf",
+      "publishedAt": "",
+      "publishedPrecision": "unknown",
+      "retrievedAt": "2026-09-10T16:48:40.949872+00:00",
+      "snapshotHash": "b14142fb0c3a5d257162359fe8a998d2d5edccfa4bc0fe1bb1bfd5768ade81b4",
+      "timestampMeaning": "PDF publication time is unknown. Retrospective corroboration of game date, venue, score and finish only."
+    },
+    {
+      "id": "denver-game-seven-live-result",
+      "title": "NBA live game result: denver-game-seven",
+      "publisher": "NBA (public live game)",
+      "url": "https://www.nba.com/game/0042400227",
+      "publishedAt": "2025-05-18T22:02:00Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-10T16:48:40.949872+00:00",
+      "snapshotHash": "9e14132473c953430ed64216c1e4d2b41e66e0695c8b2f84065ce442301640a4",
+      "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/sports-repair/games/denver-book.pdf",
+      "sourceIdentity": "public-live-event",
+      "snapshotKind": "retrospective-evidence",
+      "snapshotSourceId": "denver-game-seven-scorebook",
+      "captureMeaning": "Retrospective official record of the live event, not an archived webpage or a recording of the broadcast.",
+      "timestampMeaning": "Historical public game result, not publication time of this mutable page or the subsequently retrieved PDF. Reconstructed from official scorer record and arena timezone."
+    },
+    {
+      "id": "denver-game-seven-scorebook",
+      "title": "Official NBA scorer report: denver-game-seven",
+      "publisher": "NBA official scorer",
+      "url": "https://statsdmz.nba.com/pdfs/20250518/20250518_DENOKC_book.pdf",
+      "publishedAt": "",
+      "publishedPrecision": "unknown",
+      "retrievedAt": "2026-09-10T16:48:40.949872+00:00",
+      "snapshotHash": "9e14132473c953430ed64216c1e4d2b41e66e0695c8b2f84065ce442301640a4",
+      "timestampMeaning": "PDF publication time is unknown. Retrospective corroboration of game date, venue, score and finish only."
+    },
+    {
+      "id": "west-finals-live-result",
+      "title": "NBA live game result: west-finals",
+      "publisher": "NBA (public live game)",
+      "url": "https://www.nba.com/game/0042400315",
+      "publishedAt": "2025-05-29T02:58:00Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-10T16:48:40.949872+00:00",
+      "snapshotHash": "49df067d7d4b1a3ac1d90960a39f4fa7516d41b7cf7886dee31eff21bbe43235",
+      "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/sports-repair/games/finals-berth-book.pdf",
+      "sourceIdentity": "public-live-event",
+      "snapshotKind": "retrospective-evidence",
+      "snapshotSourceId": "west-finals-scorebook",
+      "captureMeaning": "Retrospective official record of the live event, not an archived webpage or a recording of the broadcast.",
+      "timestampMeaning": "Historical public game result, not publication time of this mutable page or the subsequently retrieved PDF. Reconstructed from official scorer record and arena timezone."
+    },
+    {
+      "id": "west-finals-scorebook",
+      "title": "Official NBA scorer report: west-finals",
+      "publisher": "NBA official scorer",
+      "url": "https://statsdmz.nba.com/pdfs/20250528/20250528_MINOKC_book.pdf",
+      "publishedAt": "",
+      "publishedPrecision": "unknown",
+      "retrievedAt": "2026-09-10T16:48:40.949872+00:00",
+      "snapshotHash": "49df067d7d4b1a3ac1d90960a39f4fa7516d41b7cf7886dee31eff21bbe43235",
+      "timestampMeaning": "PDF publication time is unknown. Retrospective corroboration of game date, venue, score and finish only."
+    },
+    {
+      "id": "fracture-official",
+      "title": "Chet Holmgren Injury Update",
+      "publisher": "Oklahoma City Thunder",
+      "url": "https://www.nba.com/thunder/news/holmgren-241111",
+      "publishedAt": "2024-11-11T06:26:15Z",
+      "updatedAt": "2024-11-11T06:26:15Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-10T16:48:40.949872+00:00",
+      "snapshotHash": "d70d087e781f8151037927d185da034537eb830f1fbb59db0ba637466989d7f2"
+    },
+    {
+      "id": "return-player-announcement",
+      "title": "Chet Holmgren announces his return",
+      "publisher": "Chet Holmgren",
+      "url": "https://twitter.com/ChetHolmgren/status/1887512110986633513",
+      "publishedAt": "2025-02-06T14:42:10.195000Z",
+      "publishedPrecision": "instant",
+      "retrievedAt": "2026-09-10T16:48:40.949872+00:00",
+      "snapshotHash": "2418d7cd8b58e976921a9f25564fa98a236a32816d5c5a03d95f3f617c4c6ad0",
+      "capturePath": "/Users/simonwacziarg/Documents/ChatGPT/Forecast/docs/next-five-2026-09-10/sports/evidence/chet-return.html",
+      "captureMeaning": "Article HTML embeds the original player post text and ID. Later article game recap is excluded from the pre-reveal claim."
+    },
+    {
+      "id": "thunder-ending",
+      "title": "Game 7: Thunder beat Pacers 103–91 for NBA title",
+      "publisher": "NBA.com",
+      "url": "https://www.nba.com/game/IND-vs-OKC-0042400407",
+      "publishedAt": "2025-06-23",
+      "publishedPrecision": "day",
+      "retrievedAt": "2026-09-10T16:06:51.219828+00:00",
+      "archivedUrl": "https://www.nba.com/game/IND-vs-OKC-0042400407",
+      "snapshotHash": "212822549afd69236e017eb4215087d33fbe89265dc71a0362b2be57c652192d",
+      "correctionStatus": "none"
+    }
+  ],
+  "events": [
+    {
+      "id": "chet-injury",
+      "title": "Chet Holmgren suffers a pelvic fracture",
+      "shortTitle": "Holmgren injury",
+      "occurredAt": "2024-11-11T06:26:15Z",
+      "informationKnownAt": "2024-11-11T06:26:15Z",
+      "precision": "minute",
+      "timezone": "America/Chicago",
+      "dateLabel": "Nov 11",
+      "category": "Injury",
+      "mechanism": "A core two-way starter’s injury changes the Thunder’s playoff ceiling and frontcourt depth, even with a return expected during the season.",
+      "expectedDirection": "negative",
+      "claims": [
+        {
+          "id": "chet-injury-fact",
+          "text": "The Thunder announced Holmgren’s right iliac wing fracture, with an update on his return-to-play protocol to follow in eight to ten weeks.",
+          "knownAt": "2024-11-11T06:26:15Z",
+          "sourceIds": [
+            "fracture-official"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "fracture-official",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "Observed response around the corrected public-result or announcement cutoff; not a causal estimate.",
+      "competingExplanation": "The injury announcement followed the Golden State loss and coincided with other early-season information.",
+      "attributionAssessment": "likely dominant"
+    },
+    {
+      "id": "cup-loss",
+      "title": "Thunder lose the NBA Cup final to Milwaukee",
+      "shortTitle": "Thunder lose the NBA Cup final to Milwaukee",
+      "occurredAt": "2024-12-18T04:01:00Z",
+      "informationKnownAt": "2024-12-18T04:02:00Z",
+      "precision": "minute",
+      "timezone": "America/Los_Angeles",
+      "dateLabel": "2024-12-17",
+      "category": "Team development",
+      "mechanism": "A high-profile loss to an experienced contender tests whether the young team is ready for postseason pressure. The Cup is separate from the NBA championship and does not resolve this contract.",
+      "expectedDirection": "negative",
+      "claims": [
+        {
+          "id": "cup-loss-fact",
+          "text": "The Bucks win 97–81.",
+          "knownAt": "2024-12-18T04:02:00Z",
+          "sourceIds": [
+            "cup-loss-live-result"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "cup-loss-live-result",
+          "role": "primary"
+        },
+        {
+          "sourceId": "cup-loss-scorebook",
+          "role": "retrospective"
+        }
+      ],
+      "retrospectiveInterpretation": "Observed response around the corrected public-result or announcement cutoff; not a causal estimate.",
+      "competingExplanation": "A high-profile loss to an experienced contender tests whether the young team is ready for postseason pressure. The Cup is separate from the NBA championship and does not resolve this contract.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "chet-return",
+      "title": "Chet Holmgren announces his return",
+      "shortTitle": "Holmgren’s return announcement",
+      "occurredAt": "2025-02-06T14:42:10.195000Z",
+      "informationKnownAt": "2025-02-06T14:42:10.195000Z",
+      "precision": "minute",
+      "timezone": "America/Chicago",
+      "dateLabel": "Feb 6",
+      "category": "Team development",
+      "mechanism": "Restoring a key two-way starter improves depth and lineup options. An announced return may already be anticipated.",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "chet-return-fact",
+          "text": "Holmgren publicly announces that he is returning.",
+          "knownAt": "2025-02-06T14:42:10.195000Z",
+          "sourceIds": [
+            "return-player-announcement"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "return-player-announcement",
+          "role": "primary"
+        }
+      ],
+      "retrospectiveInterpretation": "Observed response around the corrected public-result or announcement cutoff; not a causal estimate.",
+      "competingExplanation": "The return was anticipated; the Feb7 Toronto game also falls inside the broad follow-up interval.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "denver-game-seven",
+      "title": "Thunder eliminate Denver in Game 7",
+      "shortTitle": "Thunder eliminate Denver in Game 7",
+      "occurredAt": "2025-05-18T22:01:00Z",
+      "informationKnownAt": "2025-05-18T22:02:00Z",
+      "precision": "minute",
+      "timezone": "America/Chicago",
+      "dateLabel": "2025-05-18",
+      "category": "Team development",
+      "mechanism": "Surviving an elimination game against a recent champion removes a major title obstacle. Other playoff results share the window.",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "denver-game-seven-fact",
+          "text": "Oklahoma City reaches the Western Conference finals.",
+          "knownAt": "2025-05-18T22:02:00Z",
+          "sourceIds": [
+            "denver-game-seven-live-result"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "denver-game-seven-live-result",
+          "role": "primary"
+        },
+        {
+          "sourceId": "denver-game-seven-scorebook",
+          "role": "retrospective"
+        }
+      ],
+      "retrospectiveInterpretation": "Observed response around the corrected public-result or announcement cutoff; not a causal estimate.",
+      "competingExplanation": "Surviving an elimination game against a recent champion removes a major title obstacle. Other playoff results share the window.",
+      "attributionAssessment": "mixed"
+    },
+    {
+      "id": "west-finals",
+      "title": "Thunder reach the NBA Finals",
+      "shortTitle": "Finals berth",
+      "occurredAt": "2025-05-29T02:57:00Z",
+      "informationKnownAt": "2025-05-29T02:58:00Z",
+      "precision": "minute",
+      "timezone": "America/Chicago",
+      "dateLabel": "May 28",
+      "category": "Playoffs",
+      "mechanism": "Only one best-of-seven series remains, sharply reducing uncertainty in the championship contract.",
+      "expectedDirection": "positive",
+      "claims": [
+        {
+          "id": "west-finals-fact",
+          "text": "Oklahoma City beat Minnesota 124–94 to win the Western Conference finals 4–1 and advance to the NBA Finals.",
+          "knownAt": "2025-05-29T02:58:00Z",
+          "sourceIds": [
+            "west-finals-live-result"
+          ],
+          "visibility": "pre-reveal"
+        }
+      ],
+      "sourceRoles": [
+        {
+          "sourceId": "west-finals-live-result",
+          "role": "primary"
+        },
+        {
+          "sourceId": "west-finals-scorebook",
+          "role": "retrospective"
+        }
+      ],
+      "retrospectiveInterpretation": "Observed response around the corrected public-result or announcement cutoff; not a causal estimate.",
+      "competingExplanation": "The Eastern Conference finals and award information arrived in the same broad window.",
+      "attributionAssessment": "likely dominant"
+    }
+  ],
+  "contextMarkers": [],
+  "conclusion": {
+    "title": "2025 NBA Finals: Thunder win first title",
+    "text": "Oklahoma City defeated Indiana 4–3 in the 2025 NBA Finals, winning Game 7 103–91 on June 22, 2025. The Polymarket Thunder YES contract resolved YES.",
+    "sourceId": "thunder-ending"
+  }
+}

@@ -1,3 +1,4 @@
+import { nextFiveStudies } from './nextFive2026.ts'
 import { electionStudy } from './election2024.ts'
 import { oscarsStudy } from './oscars2026.ts'
 import { fedStudy } from './fed2024.ts'
@@ -23,6 +24,7 @@ const register = (study: Study): StudyRegistration => {
 export const studyRegistry: StudyRegistration[] = [
   register(electionStudy), register(oscarsStudy), register(fedStudy), register(eaglesStudy), register(bitcoinStudy), register(bidenDropoutStudy),
   register(tiktokStudy), register(eaglesFiveCardStudy), register(oscarsFiveCard2026Study), register(bitcoinFiveCardStudy), register(canada2025Study),
+  ...nextFiveStudies.map(register),
 ]
 
 export function studyById(id: string) {

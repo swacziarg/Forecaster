@@ -1,0 +1,25 @@
+{
+  "retrievedAt": "2026-09-10T16:03:07.145711+00:00",
+  "tokenId": "50056291296373013403053264672448796961558656386670931029485176637893947669174",
+  "rawSha256": "aeb332243b883b899c219e3e3ab87867ebc30f7558a9079a17d51ed62e3271c1",
+  "normalizedSha256": "d09119662e51d073983ce01096cb239f8205dbb07566b945da1e630a1a431aa8",
+  "marketMetadataSha256": "18f0e41653d894c5e7a38f85ae83aa94f2080b587e3a4107163b02a853b1179d",
+  "observations": 5957,
+  "duplicates": 2,
+  "rejected": [],
+  "audit": {
+    "observations": 5957,
+    "duplicateTimestamps": [],
+    "missingBuckets": [
+      "2025-06-13T07:00:00.000Z",
+      "2025-09-17T18:00:00.000Z",
+      "2025-10-29T10:00:00.000Z",
+      "2025-10-29T11:00:00.000Z",
+      "2025-10-29T12:00:00.000Z",
+      "2025-10-29T13:00:00.000Z"
+    ],
+    "outOfOrderRows": 0,
+    "coverageStart": "2025-02-26T21:00:00.000Z",
+    "coverageEnd": "2025-11-02T07:00:00.000Z"
+  }
+}
